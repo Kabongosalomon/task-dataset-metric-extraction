@@ -22,9 +22,9 @@ public class BaseDirInfo {
     }
 
  
-    public static void main(String[] args){ 
-        System.err.println(BaseDirInfo.getBaseDir());
-    }
+//    public static void main(String[] args){
+//        System.err.println(BaseDirInfo.getBaseDir());
+//    }
         
     
 }

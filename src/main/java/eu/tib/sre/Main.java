@@ -21,7 +21,9 @@ public class Main {
         }
 
         String pdf_file = args[0];
+
         FileOutputStream output = new FileOutputStream(args[1]+"/output.tsv");
+
         System.out.println(">>>> Processing file: " + pdf_file);
 
         String docTEATStr = DocTAET.getDocTAETRepresentation(pdf_file);

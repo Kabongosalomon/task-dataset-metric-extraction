@@ -254,12 +254,12 @@ public class GenerateTestDataOnPDFPapers {
         return resultsPredictions4TestPapers;
     }
 
-    public static void main(String[] args) throws IOException, Exception {
-        GenerateTestDataOnPDFPapers createTestdata = new GenerateTestDataOnPDFPapers();
-        createTestdata.generateTestData4TDMPrediction("D:\\ORKG\\NLP\\science-result-extractor\\nlpLeaderboard\\src\\main\\java\\com\\ibm\\sre\\data\\pdfFile\\",
-                "D:\\ORKG\\NLP\\science-result-extractor\\nlpLeaderboard\\src\\main\\java\\com\\ibm\\sre\\data\\test\\test_TDM.tsv");
-        createTestdata.generateTestData4ScorePrediction("D:\\ORKG\\NLP\\science-result-extractor\\nlpLeaderboard\\src\\main\\java\\com\\ibm\\sre\\data\\pdfFile\\",
-                "D:\\ORKG\\NLP\\science-result-extractor\\nlpLeaderboard\\src\\main\\java\\com\\ibm\\sre\\data\\test\\test_score.tsv");
-    }
+//    public static void main(String[] args) throws IOException, Exception {
+//        GenerateTestDataOnPDFPapers createTestdata = new GenerateTestDataOnPDFPapers();
+//        createTestdata.generateTestData4TDMPrediction("D:\\ORKG\\NLP\\science-result-extractor\\nlpLeaderboard\\src\\main\\java\\com\\ibm\\sre\\data\\pdfFile\\",
+//                "D:\\ORKG\\NLP\\science-result-extractor\\nlpLeaderboard\\src\\main\\java\\com\\ibm\\sre\\data\\test\\test_TDM.tsv");
+//        createTestdata.generateTestData4ScorePrediction("D:\\ORKG\\NLP\\science-result-extractor\\nlpLeaderboard\\src\\main\\java\\com\\ibm\\sre\\data\\pdfFile\\",
+//                "D:\\ORKG\\NLP\\science-result-extractor\\nlpLeaderboard\\src\\main\\java\\com\\ibm\\sre\\data\\test\\test_score.tsv");
+//    }
 
 }

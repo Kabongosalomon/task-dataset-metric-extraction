@@ -102,135 +102,135 @@ public class CoreNLP {
         return tokFollTokens;
     }
 
-    public static void main(String[] args) throws IOException {
-
-        //tasks = FileUtils.readLines(new File("C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\tasks-p1.txt"));
-        Map<String, List<String>> taskTokPrevTokens = new HashMap<>();//setPrevTokens(tasks);
-        System.out.println(taskTokPrevTokens);
-
-        //System.out.println("set prev Task");
-        //Map<String, List<String>> taskTokFollowTokens = setFollTokens(tasks);
-        //System.out.println(taskTokFollowTokens);
-        //System.out.println("set follow Task");
-        //software = FileUtils.readLines(new File("C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\software-p1.txt"));
-        Map<String, List<String>> softwareTokPrevTokens = new HashMap<>();//setPrevTokens(software);
-        System.out.println(softwareTokPrevTokens);
-
-        //Map<String, List<String>> softwareTokFollowTokens = setFollTokens(software);
-        //datasets = FileUtils.readLines(new File("C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\datasets-p1.txt"));
-        Map<String, List<String>> datasetTokPrevTokens = new HashMap<>();//setPrevTokens(datasets);
-        System.out.println(datasetTokPrevTokens);
-
-        //Map<String, List<String>> datasetTokFollowTokens = setFollTokens(datasets);
-
-        Properties props = new Properties();
-        props.put("annotators", "tokenize, ssplit, parse, lemma, ner, depparse, coref");
-        StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
-        File texts = new File("C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\nlp\\all\\txt");
-        for (File textfile : texts.listFiles()) {
-            String pdftext = FileUtils.readFileToString(textfile);
-            //String pdftext = FileUtils.readFileToString(new File("C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\nlp\\p1\\txt\\D17-1120.txt"));
-            CoreDocument document = new CoreDocument(pdftext);
-            System.out.println("begin annotating!");
-            pipeline.annotate(document);
-            System.out.println("done annotating!");
-
-            for (CoreSentence sentence : document.sentences()) {
-                int size = sentence.tokens().size();
-
-                for (int i = 0; i < size; i++) {
-                    CoreLabel token = sentence.tokens().get(i);
-                    token.setNER("O");
-
-                    if (taskTokPrevTokens.containsKey(token.word())) {
-                        List<String> precede = taskTokPrevTokens.get(token.word());
-                        if (precede.size() == 1 && precede.contains("")) {
-                            token.setNER("TASK");
-                        } else {
-                            List<Integer> prevIndexes = new ArrayList<>();
-                            String precedePhrase = "";
-                            int j = i;
-                            while (j > 0) {
-                                j--;
-                                precedePhrase = sentence.tokens().get(j).word() + " " + precedePhrase;
-                                precedePhrase = precedePhrase.trim();
-                                //System.out.println(precedePhrase);
-                                if (!precede.contains(precedePhrase)) {
-                                    prevIndexes.add(j);
-                                    continue;
-                                }
-
-                                prevIndexes.add(j);
-                                for (int prevIndex : prevIndexes) {
-                                    sentence.tokens().get(prevIndex).setNER("TASK");
-                                }
-                                token.setNER("TASK");
-                                break;
-                            }
-                        }
-                    }
-
-                    if (softwareTokPrevTokens.containsKey(token.word())) {
-                        List<String> precede = softwareTokPrevTokens.get(token.word());
-                        if (precede.size() == 1 && precede.contains("")) {
-                            token.setNER("SOFTWARE");
-                        } else {
-                            List<Integer> prevIndexes = new ArrayList<>();
-                            String precedePhrase = "";
-                            int j = i;
-                            while (j > 0) {
-                                j--;
-                                precedePhrase = sentence.tokens().get(j).word() + " " + precedePhrase;
-                                precedePhrase = precedePhrase.trim();
-                                //System.out.println(precedePhrase);
-                                if (!precede.contains(precedePhrase)) {
-                                    prevIndexes.add(j);
-                                    continue;
-                                }
-
-                                prevIndexes.add(j);
-                                for (int prevIndex : prevIndexes) {
-                                    sentence.tokens().get(prevIndex).setNER("SOFTWARE");
-                                }
-                                token.setNER("SOFTWARE");
-                                break;
-                            }
-                        }
-                    }
-
-                    if (datasetTokPrevTokens.containsKey(token.word())) {
-                        List<String> precede = datasetTokPrevTokens.get(token.word());
-                        if (precede.size() == 1 && precede.contains("")) {
-                            token.setNER("DATASET");
-                        } else {
-                            List<Integer> prevIndexes = new ArrayList<>();
-                            String precedePhrase = "";
-                            int j = i;
-                            while (j > 0) {
-                                j--;
-                                precedePhrase = sentence.tokens().get(j).word() + " " + precedePhrase;
-                                precedePhrase = precedePhrase.trim();
-                                //System.out.println(precedePhrase);
-                                if (!precede.contains(precedePhrase)) {
-                                    prevIndexes.add(j);
-                                    continue;
-                                }
-
-                                prevIndexes.add(j);
-                                for (int prevIndex : prevIndexes) {
-                                    sentence.tokens().get(prevIndex).setNER("DATASET");
-                                }
-                                token.setNER("DATASET");
-                                break;
-                            }
-                        }
-                    }
-                }
-            }
-
-            FileOutputStream os = new FileOutputStream(new File("C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\nlp\\all\\coref\\"+textfile.getName()+".txt"));
-            pipeline.xmlPrint(document.annotation(), os);
-        }
-    }
+//    public static void main(String[] args) throws IOException {
+//
+//        //tasks = FileUtils.readLines(new File("C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\tasks-p1.txt"));
+//        Map<String, List<String>> taskTokPrevTokens = new HashMap<>();//setPrevTokens(tasks);
+//        System.out.println(taskTokPrevTokens);
+//
+//        //System.out.println("set prev Task");
+//        //Map<String, List<String>> taskTokFollowTokens = setFollTokens(tasks);
+//        //System.out.println(taskTokFollowTokens);
+//        //System.out.println("set follow Task");
+//        //software = FileUtils.readLines(new File("C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\software-p1.txt"));
+//        Map<String, List<String>> softwareTokPrevTokens = new HashMap<>();//setPrevTokens(software);
+//        System.out.println(softwareTokPrevTokens);
+//
+//        //Map<String, List<String>> softwareTokFollowTokens = setFollTokens(software);
+//        //datasets = FileUtils.readLines(new File("C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\datasets-p1.txt"));
+//        Map<String, List<String>> datasetTokPrevTokens = new HashMap<>();//setPrevTokens(datasets);
+//        System.out.println(datasetTokPrevTokens);
+//
+//        //Map<String, List<String>> datasetTokFollowTokens = setFollTokens(datasets);
+//
+//        Properties props = new Properties();
+//        props.put("annotators", "tokenize, ssplit, parse, lemma, ner, depparse, coref");
+//        StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
+//        File texts = new File("C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\nlp\\all\\txt");
+//        for (File textfile : texts.listFiles()) {
+//            String pdftext = FileUtils.readFileToString(textfile);
+//            //String pdftext = FileUtils.readFileToString(new File("C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\nlp\\p1\\txt\\D17-1120.txt"));
+//            CoreDocument document = new CoreDocument(pdftext);
+//            System.out.println("begin annotating!");
+//            pipeline.annotate(document);
+//            System.out.println("done annotating!");
+//
+//            for (CoreSentence sentence : document.sentences()) {
+//                int size = sentence.tokens().size();
+//
+//                for (int i = 0; i < size; i++) {
+//                    CoreLabel token = sentence.tokens().get(i);
+//                    token.setNER("O");
+//
+//                    if (taskTokPrevTokens.containsKey(token.word())) {
+//                        List<String> precede = taskTokPrevTokens.get(token.word());
+//                        if (precede.size() == 1 && precede.contains("")) {
+//                            token.setNER("TASK");
+//                        } else {
+//                            List<Integer> prevIndexes = new ArrayList<>();
+//                            String precedePhrase = "";
+//                            int j = i;
+//                            while (j > 0) {
+//                                j--;
+//                                precedePhrase = sentence.tokens().get(j).word() + " " + precedePhrase;
+//                                precedePhrase = precedePhrase.trim();
+//                                //System.out.println(precedePhrase);
+//                                if (!precede.contains(precedePhrase)) {
+//                                    prevIndexes.add(j);
+//                                    continue;
+//                                }
+//
+//                                prevIndexes.add(j);
+//                                for (int prevIndex : prevIndexes) {
+//                                    sentence.tokens().get(prevIndex).setNER("TASK");
+//                                }
+//                                token.setNER("TASK");
+//                                break;
+//                            }
+//                        }
+//                    }
+//
+//                    if (softwareTokPrevTokens.containsKey(token.word())) {
+//                        List<String> precede = softwareTokPrevTokens.get(token.word());
+//                        if (precede.size() == 1 && precede.contains("")) {
+//                            token.setNER("SOFTWARE");
+//                        } else {
+//                            List<Integer> prevIndexes = new ArrayList<>();
+//                            String precedePhrase = "";
+//                            int j = i;
+//                            while (j > 0) {
+//                                j--;
+//                                precedePhrase = sentence.tokens().get(j).word() + " " + precedePhrase;
+//                                precedePhrase = precedePhrase.trim();
+//                                //System.out.println(precedePhrase);
+//                                if (!precede.contains(precedePhrase)) {
+//                                    prevIndexes.add(j);
+//                                    continue;
+//                                }
+//
+//                                prevIndexes.add(j);
+//                                for (int prevIndex : prevIndexes) {
+//                                    sentence.tokens().get(prevIndex).setNER("SOFTWARE");
+//                                }
+//                                token.setNER("SOFTWARE");
+//                                break;
+//                            }
+//                        }
+//                    }
+//
+//                    if (datasetTokPrevTokens.containsKey(token.word())) {
+//                        List<String> precede = datasetTokPrevTokens.get(token.word());
+//                        if (precede.size() == 1 && precede.contains("")) {
+//                            token.setNER("DATASET");
+//                        } else {
+//                            List<Integer> prevIndexes = new ArrayList<>();
+//                            String precedePhrase = "";
+//                            int j = i;
+//                            while (j > 0) {
+//                                j--;
+//                                precedePhrase = sentence.tokens().get(j).word() + " " + precedePhrase;
+//                                precedePhrase = precedePhrase.trim();
+//                                //System.out.println(precedePhrase);
+//                                if (!precede.contains(precedePhrase)) {
+//                                    prevIndexes.add(j);
+//                                    continue;
+//                                }
+//
+//                                prevIndexes.add(j);
+//                                for (int prevIndex : prevIndexes) {
+//                                    sentence.tokens().get(prevIndex).setNER("DATASET");
+//                                }
+//                                token.setNER("DATASET");
+//                                break;
+//                            }
+//                        }
+//                    }
+//                }
+//            }
+//
+//            FileOutputStream os = new FileOutputStream(new File("C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\nlp\\all\\coref\\"+textfile.getName()+".txt"));
+//            pipeline.xmlPrint(document.annotation(), os);
+//        }
+//    }
 
 }

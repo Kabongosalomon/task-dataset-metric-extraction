@@ -109,8 +109,8 @@ public class ComputeJRF {
         return list;
     }
 
-    public static void main(String[] args) {
-        unpickle("C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\cv\\fold2\\schemas-CT-C3-PMI-L1.00-B0.30-s6.00-S800.00.pkl-.pkl");
-    }
+//    public static void main(String[] args) {
+//        unpickle("C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\cv\\fold2\\schemas-CT-C3-PMI-L1.00-B0.30-s6.00-S800.00.pkl-.pkl");
+//    }
 
 }

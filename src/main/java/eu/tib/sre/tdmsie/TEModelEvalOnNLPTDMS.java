@@ -196,9 +196,9 @@ public class TEModelEvalOnNLPTDMS {
 
 
     
-    public static void main(String[] args) throws IOException, Exception{
-        TEModelEvalOnNLPTDMS teEval = new TEModelEvalOnNLPTDMS();
-        teEval.evaluateTDMSExtraction();
-    }
+//    public static void main(String[] args) throws IOException, Exception{
+//        TEModelEvalOnNLPTDMS teEval = new TEModelEvalOnNLPTDMS();
+//        teEval.evaluateTDMSExtraction();
+//    }
 
 }
