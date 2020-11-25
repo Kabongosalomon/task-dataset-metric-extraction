@@ -1,0 +1,1504 @@
+Optical Character Recognition#FSNS - Test#Sequence error	3
+Deblurring#GoPro#PSNR	1
+Deblurring#GoPro#SSIM	1
+Deblurring#REDS#Average PSNR	2
+Trajectory Prediction#STATS SportVu NBA [ATK]#ADE	1
+Trajectory Prediction#STATS SportVu NBA [ATK]#FDE	1
+Trajectory Prediction#ForkingPaths#ADE	1
+Trajectory Prediction#Stanford Drone#ADE	1
+Trajectory Prediction#Stanford Drone#FDE	1
+Trajectory Prediction#Stanford Drone#ADE-8/12	1
+Trajectory Prediction#Stanford Drone#FDE-8/12	1
+Trajectory Prediction#ETH/UCY#ADE-8/12	3
+Depth Estimation#ScanNet#RMSE	1
+Depth Estimation#NYU-Depth V2#RMS	1
+Depth Estimation#NYU-Depth V2#RMSE	1
+Depth Estimation#NYU-Depth V2#mAP	1
+Stock Market Prediction#S&P 500#Average daily returns	1
+Link Prediction#Citeseer (nonstandard variant)#AP	1
+Link Prediction#Citeseer (nonstandard variant)#AUC	1
+Link Prediction#Alibaba-S#F1-Score	1
+Link Prediction#Alibaba-S#PR AUC	1
+Link Prediction#Alibaba-S#ROC AUC	1
+Link Prediction#Cora#AP	4
+Link Prediction#Cora#AUC	4
+Link Prediction#Cora#Accuracy	2
+Link Prediction#IMDb#AUC	1
+Link Prediction#Yelp#AUC	1
+Link Prediction#Citeseer (biased eu.tib.sre.evaluation)#AP	2
+Link Prediction#Citeseer (biased eu.tib.sre.evaluation)#AUC	2
+Link Prediction#Citeseer (biased eu.tib.sre.evaluation)#Accuracy	1
+Link Prediction#YAGO3-10#Hits@1	5
+Link Prediction#YAGO3-10#Hits@10	7
+Link Prediction#YAGO3-10#Hits@3	4
+Link Prediction#YAGO3-10#MRR	7
+Link Prediction#Wiki-Vote#AUC	1
+Link Prediction#OpenBioLink#Hits@10	1
+Link Prediction#ICEWS05-15#MRR	1
+Link Prediction#LiveJournal#Hits@10	1
+Link Prediction#LiveJournal#MR	1
+Link Prediction#AKSW-bib#Hits@1	1
+Link Prediction#AKSW-bib#Hits@10	1
+Link Prediction#AKSW-bib#Hits@3	1
+Link Prediction#WN18#Hits@10	19
+Link Prediction#WN18#MRR	16
+Link Prediction#WN18#Hits@1	12
+Link Prediction#WN18#Hits@3	11
+Link Prediction#WN18#MR	11
+Link Prediction#WN18#training time (s)	1
+Link Prediction#NELL-995#Hits@1	1
+Link Prediction#NELL-995#Hits@10	1
+Link Prediction#NELL-995#MRR	1
+Link Prediction#NELL-995#Mean AP	1
+Link Prediction#Last.FM#AP	1
+Link Prediction#Last.FM#AUC	1
+Link Prediction#YAGO39K#Hits@1	1
+Link Prediction#YAGO39K#Hits@10	1
+Link Prediction#YAGO39K#Hits@3	1
+Link Prediction#YAGO39K#MRR	1
+Link Prediction# FB15k#Hits@1	2
+Link Prediction# FB15k#Hits@10	2
+Link Prediction# FB15k#Hits@3	2
+Link Prediction# FB15k#MRR	2
+Link Prediction#FB15k-237#Hits@1	6
+Link Prediction#FB15k-237#Hits@10	9
+Link Prediction#FB15k-237#Hits@3	6
+Link Prediction#FB15k-237#MR	6
+Link Prediction#FB15k-237#MRR	8
+Link Prediction#YAGO37#Hits@1	1
+Link Prediction#YAGO37#Hits@10	1
+Link Prediction#YAGO37#Hits@3	1
+Link Prediction#YAGO37#Hits@5	1
+Link Prediction#YAGO37#MRR	1
+Link Prediction#WordNet#Accuracy	1
+Link Prediction#PPI#Accuracy	1
+Link Prediction#WN18RR#Hits@1	2
+Link Prediction#WN18RR#Hits@10	2
+Link Prediction#WN18RR#MRR	3
+Link Prediction#WN18RR#MR	1
+Link Prediction#WN18RR#Hits@3	1
+Word Alignment#MUSE en-pt#P@1	1
+Word Alignment#en-es#P@1	1
+Super-Resolution#Set5 - 4x upscaling#PSNR	1
+EEG#SEED-IV#Accuracy	2
+Image-to-Image Translation#COCO-Stuff Labels-to-Photos#Accuracy	4
+Image-to-Image Translation#COCO-Stuff Labels-to-Photos#FID	5
+Image-to-Image Translation#COCO-Stuff Labels-to-Photos#mIoU	5
+Image-to-Image Translation#GTAV-to-Cityscapes Labels#mIoU	3
+Image-to-Image Translation#RaFD#Classification Error	4
+Image-to-Image Translation#Aerial-to-Map#Class IOU	2
+Image-to-Image Translation#Aerial-to-Map#Per-class Accuracy	2
+Image-to-Image Translation#Aerial-to-Map#Per-pixel Accuracy	2
+Image-to-Image Translation#Deep-Fashion#FID	1
+Image-to-Image Translation#Cityscapes Labels-to-Photo#Class IOU	3
+Image-to-Image Translation#Cityscapes Labels-to-Photo#Per-class Accuracy	3
+Image-to-Image Translation#Cityscapes Labels-to-Photo#Per-pixel Accuracy	3
+Image-to-Image Translation#Cityscapes Labels-to-Photo#FID	1
+Image-to-Image Translation#SYNTHIA Fall-to-Winter#Per-pixel Accuracy	1
+Image-to-Image Translation#SYNTHIA Fall-to-Winter#fwIOU	1
+Image-to-Image Translation#SYNTHIA Fall-to-Winter#mIoU	2
+Image-to-Image Translation#SYNTHIA-to-Cityscapes#mIoU	13
+Image-to-Image Translation#portrait2photo#Kernel Inception Distance	1
+Image-to-Image Translation#KITTI Object Tracking Evaluation 2012#Average PSNR	1
+Image-to-Image Translation#AFHQ#FID	1
+Image-to-Image Translation#AFHQ#LPIPS	1
+Image-to-Image Translation#horse2zebra#Frechet Inception Distance	1
+Image-to-Image Translation#horse2zebra#Number of params	1
+Image-to-Image Translation#Cityscapes-to-Foggy Cityscapes#mAP	3
+Image-to-Image Translation#selfie-to-anime#Kernel Inception Distance	1
+Domain Adaptation#Synth Objects-to-LINEMOD#Classification Accuracy	1
+Domain Adaptation#Synth Objects-to-LINEMOD#Mean Angle Error	1
+Domain Adaptation#Office-Caltech#Average Accuracy	8
+Domain Adaptation#ImageCLEF-DA#Accuracy	10
+Domain Adaptation#UCF-to-HMDBfull#Accuracy	4
+Domain Adaptation#Office-Home#Accuracy	2
+Domain Adaptation#Synth Digits-to-SVHN#Accuracy	2
+Domain Adaptation#USPS-to-MNIST#Accuracy	4
+Domain Adaptation#MNIST-to-USPS#Accuracy	1
+Domain Adaptation#SVHN-to-MNIST#Accuracy	2
+Domain Adaptation#SYNSIG-to-GTSRB#Accuracy	1
+Domain Adaptation#Office-31#Average Accuracy	8
+Domain Adaptation#HMDB --> UCF (full)#Accuracy	1
+Domain Adaptation#VisDA2017#Accuracy	1
+Speech Recognition#LibriSpeech test-other#Word Error Rate (WER)	14
+Speech Recognition#LibriSpeech test-clean#Word Error Rate (WER)	5
+Speech Recognition#Libri-Light test-clean#Word Error Rate (WER)	2
+Speech Recognition#Libri-Light test-clean#ABX-across	1
+Speech Recognition#Libri-Light test-clean#ABX-within	1
+Speech Recognition#swb_hub_500 WER fullSWBCH#Percentage error	5
+Speech Recognition#Switchboard + Hub500#Percentage error	3
+Speech Recognition#WSJ eval92#Percentage error	1
+Speech Recognition#TIMIT#Percentage error	7
+Part-Of-Speech Tagging#Sequoia Treebank#UPOS	1
+Part-Of-Speech Tagging#UD#Avg accuracy	4
+Part-Of-Speech Tagging#Penn Treebank#Accuracy	12
+Text-To-Speech Synthesis#CMUDict 0.7b#Phoneme Error Rate	1
+Text-To-Speech Synthesis#CMUDict 0.7b#Word Error Rate (WER)	1
+Text-To-Speech Synthesis#LJSpeech#Audio Quality MOS	2
+Text-To-Speech Synthesis#LJSpeech#Pleasantness MOS	1
+3D Multi-Person Pose Estimation (root-relative)#MuPoTS-3D#MPJPE	2
+3D Multi-Person Pose Estimation (root-relative)#MuPoTS-3D#3DPCK	2
+Relation Extraction#DocRED#F1	5
+Relation Extraction#WLPC#F1	1
+Relation Extraction#TACRED#F1	11
+Relation Extraction#TACRED#Precision	2
+Relation Extraction#TACRED#Recall	2
+Relation Extraction#NYT-single#F1	2
+Relation Extraction#NYT#F1	4
+Relation Extraction#ACE 2004#Entity F1	4
+Relation Extraction#ACE 2004#Entity+Relation F1	4
+Relation Extraction#2010 i2b2/VA#F1	1
+Relation Extraction#ChemProt#F1	2
+Relation Extraction#CoNLL04#Entity F1	3
+Relation Extraction#CoNLL04#Relation F1 	3
+Relation Extraction#CoNLL04#Relation F1	2
+Relation Extraction#SemEval-2010 Task 8#F1	2
+Hypernym Discovery#Medical domain#MAP	1
+Hypernym Discovery#Medical domain#MRR	1
+Hypernym Discovery#Medical domain#P@5	1
+Stochastic Optimization#CIFAR-10 ResNet-18 - 200 Epochs#Accuracy	1
+3D Human Pose Estimation#HumanEva-I#Mean Reconstruction Error (mm)	4
+3D Human Pose Estimation#Surreal#MPJPE	3
+3D Human Pose Estimation#Surreal#PCK3D	1
+3D Human Pose Estimation#3DPW#PA-MPJPE	5
+3D Human Pose Estimation#Geometric Pose Affordance #MPJPE (CA)	2
+3D Human Pose Estimation#Geometric Pose Affordance #MPJPE (CS)	2
+3D Human Pose Estimation#Geometric Pose Affordance #PCK3D (CA)	2
+3D Human Pose Estimation#Geometric Pose Affordance #PCK3D (CS)	2
+3D Human Pose Estimation#Total Capture#Average MPJPE (mm)	5
+3D Human Pose Estimation#CHALL H80K#MPJPE	1
+3D Human Pose Estimation#MPI-INF-3DHP#3DPCK	9
+3D Human Pose Estimation#MPI-INF-3DHP#AUC	9
+3D Human Pose Estimation#MPI-INF-3DHP#MJPE	4
+3D Human Pose Estimation#Human3.6M#Average MPJPE (mm)	30
+3D Human Pose Estimation#Human3.6M#Multi-View or Monocular	7
+3D Human Pose Estimation#Human3.6M#Using 2D ground-truth joints	7
+Image Enhancement#MIT-Adobe 5k#LPIPS	1
+Image Enhancement#MIT-Adobe 5k#PSNR	1
+Image Enhancement#MIT-Adobe 5k#SSIM	1
+Rain Removal#DID-MDN#PSNR	1
+Machine Translation#WMT2016 Czech-English#BLEU score	1
+Machine Translation#WMT2019 English-German#BLEU score	1
+Machine Translation#WMT2019 English-German#SacreBLEU	1
+Machine Translation#WMT 2017 English-Chinese#BLEU score	2
+Machine Translation#WMT2019 Finnish-English#BLEU	1
+Machine Translation#WMT2014 German-English#BLEU score	4
+Machine Translation#IWSLT2015 English-Vietnamese#BLEU	6
+Machine Translation#WMT2016 English-French#BLEU score	1
+Machine Translation#WMT2016 English-Russian#BLEU score	1
+Machine Translation#WMT 2014 EN-DE#BLEU score	1
+Machine Translation#IWSLT2015 Chinese-English#BLEU	1
+Machine Translation#IWSLT2015 German-English#BLEU score	13
+Machine Translation#20NEWS#1-of-100 Accuracy	1
+Machine Translation#20NEWS#Accuracy	1
+Machine Translation#WMT2015 English-Russian#BLEU score	1
+Machine Translation#IWSLT2015 Thai-English#BLEU score	1
+Machine Translation#IWSLT2014 German-English#BLEU score	6
+Machine Translation#WMT2016 Romanian-English#BLEU score	2
+Machine Translation#WMT 2018 Finnish-English#BLEU	1
+Machine Translation#WMT2016 English-German#BLEU score	5
+Machine Translation#WMT2014 English-German#BLEU score	26
+Machine Translation#WMT2014 English-German#SacreBLEU	3
+Machine Translation#WMT2015 English-German#BLEU score	2
+Machine Translation#WMT 2017 Latvian-English#BLEU	2
+Machine Translation#WMT2014 English-French#BLEU score	5
+Medical Image Segmentation#HSVM#Dice Score	1
+Medical Image Segmentation#HSVM#MSD	1
+Medical Image Segmentation#HSVM#VS	1
+Medical Image Segmentation#Kvasir-SEG#Dice	2
+Medical Image Segmentation#2015 MICCAI Polyp Detection#Dice	1
+Medical Image Segmentation#EM#IoU	1
+Medical Image Segmentation#DRIVE#F1 score	1
+Medical Image Segmentation#ISBI 2012 EM Segmentation#VInfo	1
+Medical Image Segmentation#ISBI 2012 EM Segmentation#VRand	1
+Medical Image Segmentation#ISBI 2012 EM Segmentation#Warping Error	1
+Medical Image Segmentation#iSEG 2017 Challenge#Dice Score	1
+Image Generation#CelebA 128 x 128#FID	2
+Image Generation#LSUN Horse 256 x 256#FID	1
+Image Generation#LSUN Churches 256 x 256#FID	3
+Image Generation#Fashion-MNIST#FID	3
+Image Generation#CelebA 64x64#FID	1
+Image Generation#Stanford Dogs#FID	3
+Image Generation#Stanford Dogs#Inception score	3
+Image Generation#LSUN Bedroom 256 x 256#FID	6
+Image Generation#Binarized MNIST#bits/dimension	1
+Image Generation#Binarized MNIST#nats	5
+Image Generation#MNIST#bits/dimension	3
+Image Generation#CIFAR-10#FID	18
+Image Generation#CIFAR-10#Inception score	19
+Image Generation#CIFAR-10#bits/dimension	20
+Image Generation#CIFAR-10#Model Entropy	3
+Image Generation#FFHQ#FID	1
+Image Generation#ImageNet 32x32#bpd	1
+Image Generation#STL-10#Inception score	1
+Image Generation#ImageNet 64x64#Bits per dim	3
+Person Re-Identification#Market-1501->DukeMTMC-reID#Rank-1	3
+Person Re-Identification#Market-1501->DukeMTMC-reID#mAP	3
+Person Re-Identification#MARS#mAP	7
+Person Re-Identification#MARS#Rank-1	6
+Person Re-Identification#MARS#Rank-5	3
+Person Re-Identification#MARS#Rank-10	2
+Person Re-Identification#MARS#Rank-20	1
+Person Re-Identification#DukeMTMC-reID#MAP	40
+Person Re-Identification#DukeMTMC-reID#Rank-1	39
+Person Re-Identification#DukeMTMC-reID#Rank-5	3
+Person Re-Identification#DukeMTMC-reID#Rank-10	2
+Person Re-Identification#Market-1501#MAP	15
+Person Re-Identification#Market-1501#Rank-1	16
+Person Re-Identification#CUHK-SYSU#MAP	2
+Person Re-Identification#CUHK-SYSU#Rank-1	2
+Person Re-Identification#CUHK03 labeled#MAP	2
+Person Re-Identification#CUHK03 labeled#Rank-1	2
+Person Re-Identification#PRID2011#Rank-1	4
+Person Re-Identification#PRID2011#Rank-20	3
+Person Re-Identification#PRID2011#Rank-5	3
+Person Re-Identification#CUHK03#Rank-1	1
+Person Re-Identification#MSMT17#Rank-1	1
+Person Re-Identification#MSMT17#mAP	1
+Person Re-Identification#CUHK03 detected#MAP	1
+Person Re-Identification#CUHK03 detected#Rank-1	1
+Person Identification#BioEye#R1	1
+3D Reconstruction#300W#1-of-100 Accuracy	1
+3D Reconstruction#Scan2CAD#Average Accuracy	2
+3D Reconstruction#Data3D−R2N2#3DIoU	4
+Music Source Separation#MUSDB18#SDR (bass)	5
+Music Source Separation#MUSDB18#SDR (drums)	5
+Music Source Separation#MUSDB18#SDR (other)	5
+Music Source Separation#MUSDB18#SDR (vocals)	5
+Temporal Action Localization#J-HMDB-21#Frame-mAP	4
+Temporal Action Localization#J-HMDB-21#Video-mAP 0.2	1
+Temporal Action Localization#J-HMDB-21#Video-mAP 0.5	2
+Temporal Action Localization#J-HMDB-21#Video-mAP 0.75	1
+Temporal Action Localization#ActivityNet-1.3#mAP	7
+Temporal Action Localization#ActivityNet-1.3#mAP IOU@0.5	8
+Temporal Action Localization#ActivityNet-1.3#mAP IOU@0.75	5
+Temporal Action Localization#ActivityNet-1.3#mAP IOU@0.95	5
+Temporal Action Localization#ActivityNet-1.3#mAP IOU@0.7	1
+Temporal Action Localization#ActivityNet-1.3#mAP IOU@0.9	1
+Temporal Action Localization#CrossTask#Recall	3
+Temporal Action Localization#THUMOS’14#mAP IOU@0.3	7
+Temporal Action Localization#THUMOS’14#mAP IOU@0.4	6
+Temporal Action Localization#THUMOS’14#mAP IOU@0.5	7
+Temporal Action Localization#THUMOS’14#mAP IOU@0.6	3
+Temporal Action Localization#THUMOS’14#mAP IOU@0.7	4
+Temporal Action Localization#THUMOS’14#mAP IOU@0.1	5
+Temporal Action Localization#THUMOS’14#mAP IOU@0.2	4
+Anomaly Detection#CIFAR-10 model detecting CIFAR-10#AUPR	4
+Anomaly Detection#Thyroid#AUC	1
+Anomaly Detection#Thyroid#Average Precision	1
+Anomaly Detection#Numenta Anomaly Benchmark#NAB score	2
+Reading Comprehension#CrowdSource QA#MSE	1
+Reading Comprehension#RACE#Accuracy	5
+Reading Comprehension#RACE#Accuracy (High)	5
+Reading Comprehension#RACE#Accuracy (Middle)	5
+Few-Shot Learning#Mini-ImageNet - 1-Shot Learning#Acc	1
+Zero-Shot Learning#CUB-200 - 0-Shot Learning#Average Per-Class Accuracy	1
+Question Answering#MultiRC#F1a	1
+Question Answering#COMPLEXQUESTIONS#F1	2
+Question Answering#RACE#RACE	1
+Question Answering#RACE#RACE-h	1
+Question Answering#RACE#RACE-m	1
+Question Answering#QuAC#F1	1
+Question Answering#QuAC#HEQD	1
+Question Answering#QuAC#HEQQ	1
+Question Answering#MS MARCO#BLEU-1	4
+Question Answering#MS MARCO#Rouge-L	4
+Question Answering#bAbi#Accuracy (trained on 10k)	5
+Question Answering#bAbi#Mean Error Rate	8
+Question Answering#bAbi#Accuracy (trained on 1k)	7
+Question Answering#WebQuestions#F1	3
+Question Answering#Children's Book Test#Accuracy-CN	4
+Question Answering#Children's Book Test#Accuracy-NE	5
+Question Answering#SCDE#BA	1
+Question Answering#SCDE#DE	1
+Question Answering#SCDE#PA	1
+Question Answering#SQuAD1.1#EM	28
+Question Answering#SQuAD1.1#F1	29
+Question Answering#YahooCQA#MRR	3
+Question Answering#YahooCQA#P@1	3
+Question Answering#QASent#MAP	3
+Question Answering#QASent#MRR	3
+Question Answering#SWAG#Accuracy	1
+Question Answering#WikiHop#Test	6
+Question Answering#HotpotQA#Ans	1
+Question Answering#HotpotQA#Joint F1	2
+Question Answering#HotpotQA#Sup	1
+Question Answering#CODAH#Accuracy	2
+Question Answering#FQuAD#EM	1
+Question Answering#FQuAD#F1	1
+Question Answering#JD Product Question Answer#BLEU	1
+Question Answering#CoQA#In-domain	3
+Question Answering#CoQA#Out-of-domain	3
+Question Answering#CoQA#Overall	3
+Question Answering#SQuAD1.1 dev#EM	3
+Question Answering#SQuAD1.1 dev#F1	5
+Question Answering#NewsQA#EM	3
+Question Answering#NewsQA#F1	3
+Question Answering#MCTest-500#Accuracy	1
+Question Answering#SQuAD2.0 dev#EM	5
+Question Answering#SQuAD2.0 dev#F1	5
+Question Answering#TrecQA#MAP	4
+Question Answering#TrecQA#MRR	4
+Question Answering#SQuAD2.0#EM	1
+Question Answering#SQuAD2.0#F1	1
+Question Answering#Quora Question Pairs#Accuracy	3
+Question Answering#Natural Questions#F1 (Long)	1
+Question Answering#Natural Questions#F1 (Short)	1
+Question Answering#TriviaQA#EM	1
+Question Answering#TriviaQA#F1	1
+Question Answering#CNN / Daily Mail#CNN	3
+Question Answering#CNN / Daily Mail#Daily Mail	1
+Question Answering#NarrativeQA#Rouge-L	1
+Question Answering#NarrativeQA#BLEU-1	1
+Question Answering#NarrativeQA#BLEU-4	1
+Question Answering#SemEvalCQA#MAP	1
+Question Answering#SemEvalCQA#P@1	1
+Question Answering#WikiQA#MAP	3
+Question Answering#WikiQA#MRR	3
+Feature Selection#Mice Protein#Accuracy	1
+Visual Question Answering#CLEVR#Accuracy	2
+Visual Question Answering#Visual Genome (pairs)#Percentage correct	1
+Visual Question Answering#HowmanyQA#Accuracy	1
+Visual Question Answering#VQA v2#Accuracy	2
+Visual Question Answering#DocVQA val#ANLS	1
+Visual Question Answering#DocVQA val#Accuracy	1
+Visual Question Answering#GQA test-std#Accuracy	3
+Visual Question Answering#COCO Visual Question Answering (VQA) real images 1.0 open ended#Percentage correct	13
+Visual Question Answering#VCR (QA-R) test#Accuracy	3
+Visual Question Answering#Visual7W#Percentage correct	1
+Visual Question Answering#MSVD-QA#Accuracy	5
+Visual Question Answering#VQA v2 test-std#Accuracy	13
+Visual Question Answering#COCO Visual Question Answering (VQA) abstract 1.0 multiple choice#Percentage correct	1
+Visual Question Answering#VQA v1 test-dev#Accuracy	3
+Visual Question Answering#VQA v2 test-dev#Accuracy	4
+Visual Question Answering#VQA-CP#Score	4
+Image Inpainting#Paris StreetView#10-20% Mask PSNR	2
+Image Inpainting#Paris StreetView#20-30% Mask PSNR	2
+Image Inpainting#Paris StreetView#30-40% Mask PSNR	2
+Image Inpainting#Paris StreetView#40-50% Mask PSNR	2
+Image Inpainting#Places2 val#free-form mask l1 err	2
+Image Inpainting#Places2 val#free-form mask l2 err	2
+Image Inpainting#Places2 val#rect mask l1 error	2
+Image Inpainting#Places2 val#rect mask l2 err	2
+Length-of-Stay prediction#MIMIC-III#Accuracy (LOS>3 Days)	1
+Length-of-Stay prediction#MIMIC-III#Accuracy (LOS>7 Days)	1
+Multi-Object Tracking#MOT20#MOTA	1
+Multi-Object Tracking#MOT16#MOTA	9
+Multi-Object Tracking#MOT16#IDF1	1
+Time Series Classification#Shapes#Accuracy	1
+Time Series Classification#AATLD Gesture Recognition#Absolute Time (ms)	1
+Time Series Classification#PhysioNet Challenge 2012#AUC	4
+Time Series Classification#PhysioNet Challenge 2012#AUC Stdev	4
+Time Series Classification#Physionet 2017 Atrial Fibrillation#AUC	2
+Human Interaction Recognition#UT#Accuracy	3
+Text Generation#EMNLP2017 WMT#BLEU-2	3
+Text Generation#EMNLP2017 WMT#BLEU-3	3
+Text Generation#EMNLP2017 WMT#BLEU-4	3
+Text Generation#EMNLP2017 WMT#BLEU-5	3
+Text Generation#LDC2016E25#BLEU	1
+Text Generation#CommonGen#CIDEr	1
+Text Generation#CMU-SE#BLEU-3	1
+Text Generation#Yahoo Questions#KL	3
+Text Generation#Yahoo Questions#NLL	3
+Text Generation#Yahoo Questions#Perplexity	3
+Text Generation#DailyDialog#BLEU-1	1
+Text Generation#DailyDialog#BLEU-2	1
+Text Generation#DailyDialog#BLEU-3	1
+Text Generation#DailyDialog#BLEU-4	1
+Code Generation#Django#Accuracy	2
+Code Generation#WikiSQL#Execution Accuracy	4
+Code Generation#WikiSQL#Exact Match Accuracy	3
+Code Generation#100 sleep nights of 8 caregivers#14 gestures accuracy	1
+Code Generation#Android Repos#Perplexity	1
+Relational Reasoning#CLUTRR (k=3)#10 Hops	1
+Relational Reasoning#CLUTRR (k=3)#4 Hops	1
+Relational Reasoning#CLUTRR (k=3)#5 Hops	1
+Relational Reasoning#CLUTRR (k=3)#6 Hops	1
+Relational Reasoning#CLUTRR (k=3)#7 Hops	1
+Relational Reasoning#CLUTRR (k=3)#8 Hops	1
+Relational Reasoning#CLUTRR (k=3)#9 Hops	1
+Representation Learning#Circle Data#Accuracy	1
+Speech Separation#WSJ0-5mix#SI-SDRi	1
+Speech Separation#TCD-TIMIT corpus (mixed-speech)#SDR	1
+Speech Separation#wsj0-2mix#SI-SDRi	8
+Common Sense Reasoning#CommonsenseQA#Accuracy	3
+Common Sense Reasoning#Visual Dialog  v0.9#1 in 10 R@5	2
+Common Sense Reasoning#Visual Dialog  v0.9#Recall@10	2
+Common Sense Reasoning#Winograd Schema Challenge#Score	1
+Common Sense Reasoning#Event2Mind#Dev	1
+Common Sense Reasoning#Event2Mind#Test	1
+Word Sense Disambiguation#SemEval 2007 Task 7#F1	4
+Word Sense Disambiguation#SensEval 3 Task 1#F1	1
+Word Sense Disambiguation#SensEval 3 Lexical Sample#F1	2
+Word Sense Disambiguation#Knowledge-based:#All	1
+Word Sense Disambiguation#Knowledge-based:#SemEval 2007	1
+Word Sense Disambiguation#Knowledge-based:#SemEval 2013	1
+Word Sense Disambiguation#Knowledge-based:#SemEval 2015	1
+Word Sense Disambiguation#Knowledge-based:#Senseval 2	1
+Word Sense Disambiguation#Knowledge-based:#Senseval 3	1
+Natural Language Inference#SciTail#Accuracy	3
+Natural Language Inference#XNLI Chinese#Accuracy	1
+Natural Language Inference#V-SNLI#Accuracy	1
+Natural Language Inference#MultiNLI#Matched	6
+Natural Language Inference#MultiNLI#Mismatched	5
+Natural Language Inference#MultiNLI#Accuracy	1
+Natural Language Inference#SNLI#% Test Accuracy	36
+Natural Language Inference#SNLI#% Train Accuracy	29
+Natural Language Inference#SNLI#Parameters	29
+Natural Language Inference#XNLI French#Accuracy	1
+Language Modelling#WikiText-2#Number of params	11
+Language Modelling#WikiText-2#Test perplexity	13
+Language Modelling#WikiText-2#Validation perplexity	12
+Language Modelling#Text8#Bit per Character (BPC)	11
+Language Modelling#Text8#Number of params	9
+Language Modelling#enwik8#Bit per Character (BPC)	10
+Language Modelling#enwik8#Number of params	9
+Language Modelling#One Billion Word#Number of params	5
+Language Modelling#One Billion Word#PPL	7
+Language Modelling#One Billion Word#Validation perplexity	1
+Language Modelling#Penn Treebank (Word Level)#Test perplexity	10
+Language Modelling#Penn Treebank (Word Level)#Params	5
+Language Modelling#Penn Treebank (Word Level)#Validation perplexity	4
+Language Modelling#Penn Treebank (Character Level)#Bit per Character (BPC)	2
+Language Modelling#WikiText-103#Number of params	2
+Language Modelling#WikiText-103#Test perplexity	4
+Language Modelling#WikiText-103#Validation perplexity	4
+Speaker Identification#VoxCeleb1#Number of Params	1
+Speaker Identification#VoxCeleb1#Top-1 (%)	1
+Speaker Identification#VoxCeleb1#Top-5 (%)	1
+Drug Discovery#ToxCast#AUC	3
+Drug Discovery#MUV#AUC	1
+Drug Discovery#SIDER#AUC	1
+Drug Discovery#BBBP#AUC	1
+Drug Discovery#Tox21#AUC	3
+Drug Discovery#QM9#Error ratio	3
+Drug Discovery#egfr-inh#AUC	1
+Drug Discovery#QED#Diversity	1
+Drug Discovery#QED#Success	1
+Seizure Detection#CHB-MIT#Accuracy	1
+Saliency Detection#HKU-IS#MAE	1
+Saliency Detection#DUT-OMRON#MAE	1
+Intrusion Detection#20NEWS#Actions Top-1 (S2)	1
+Outlier Detection#ECG5000#Accuracy	2
+Stance Detection#RumourEval#Accuracy	1
+Edge Detection#CID#ODS	1
+Edge Detection#Cityscapes test#AP	1
+Edge Detection#Cityscapes test#Maximum F-measure	1
+Edge Detection#BSDS500#F1	1
+Edge Detection#BIPED#ODS	2
+Adversarial Defense#TrojAI Round 1#Detection Accuracy	1
+Adversarial Defense#ImageNet#Accuracy	1
+Adversarial Defense#CIFAR-10#Accuracy	1
+Robotic Grasping#Cornell Grasp Dataset#5 fold cross validation	6
+Open Information Extraction#OIE2016#F1	1
+Recipe Generation#Recipe1M#F1	1
+Recipe Generation#Recipe1M#Mean IoU	1
+Recipe Generation#Food.com#BLEU-1	1
+Recipe Generation#Food.com#BLEU-4	1
+Recipe Generation#Food.com#BPE Perplexity	1
+Recipe Generation#Food.com#D-1	1
+Recipe Generation#Food.com#D-2	1
+Recipe Generation#Food.com#Rouge-L	1
+Recipe Generation#allrecipes.com#BLEU	1
+Recipe Generation#allrecipes.com#Perplexity	1
+Semantic Segmentation#S3DIS Area5#mIoU	1
+Semantic Segmentation#SkyScapes-Lane#Mean IoU	1
+Semantic Segmentation#KITTI Semantic Segmentation#Mean IoU (class)	1
+Semantic Segmentation#Semantic3D#mIoU	8
+Semantic Segmentation#38-Cloud#Jaccard (Mean)	1
+Semantic Segmentation#COCO 2017#AP	1
+Semantic Segmentation#Cityscapes test#Mean IoU (class)	59
+Semantic Segmentation#Cityscapes test#Category mIoU	1
+Semantic Segmentation#Cityscapes test#GFlops	1
+Semantic Segmentation#CamVid#Mean IoU	3
+Semantic Segmentation#CamVid#Global Accuracy	2
+Semantic Segmentation#ADE20K val#Pixel Accuracy	1
+Semantic Segmentation#ADE20K val#mIoU	4
+Semantic Segmentation#Cityscapes val#mIoU	5
+Semantic Segmentation#ADE20K#Test Score	1
+Semantic Segmentation#ADE20K#Validation mIoU	2
+Semantic Segmentation#LIP val#mIoU	5
+Semantic Segmentation#ScanNet#3DIoU	12
+Semantic Segmentation#NYU Depth v2#Mean IoU	5
+Semantic Segmentation#ShapeNet#Mean IoU	3
+Semantic Segmentation#PASCAL VOC 2007#Mean IoU	1
+Semantic Segmentation#GTAV-to-Cityscapes Labels#mIoU	2
+Semantic Segmentation#S3DIS#Mean IoU	5
+Semantic Segmentation#PASCAL VOC 2012 val#mIoU	7
+Semantic Segmentation#COCO-Stuff test#mIoU	1
+Semantic Segmentation#PASCAL VOC 2012 test#Mean IoU	8
+Semantic Segmentation#PASCAL Context#mIoU	5
+Object Localization#Mall#Precision	1
+Object Localization#KITTI Cars Moderate#AP	2
+Lexical Normalization#LexNorm#Accuracy	2
+Semantic Role Labeling#CoNLL 2005#F1	4
+Semantic Role Labeling#OntoNotes#F1	1
+Semantic Textual Similarity#STS Benchmark#Pearson Correlation	1
+Semantic Textual Similarity#STS Benchmark#Spearman Correlation	1
+Semantic Parsing#WikiSQL#Accuracy	1
+Semantic Parsing#spider#Accuracy	1
+Semantic Parsing#WikiTableQuestions#Accuracy (Dev)	2
+Semantic Parsing#WikiTableQuestions#Accuracy (Test)	2
+Semantic Parsing#Geo#Accuracy	1
+Semantic Parsing#ATIS#Accuracy	2
+Grammatical Error Correction#Unrestricted#F0.5	1
+Grammatical Error Correction#Restricted#F0.5	1
+Grammatical Error Correction#BEA-2019 (test)#F0.5	1
+Grammatical Error Correction#CoNLL-2014 Shared Task#F0.5	1
+Grammatical Error Correction#CoNLL-2014 Shared Task#Precision	1
+Grammatical Error Correction#CoNLL-2014 Shared Task#Recall	1
+Dependency Parsing#Universal Dependencies#LAS	2
+Dependency Parsing#Universal Dependencies#UAS	2
+Dependency Parsing#CoNLL-2009#LAS	1
+Dependency Parsing#CoNLL-2009#UAS	1
+Dependency Parsing#GENIA - LAS#F1	1
+Dependency Parsing#Penn Treebank#LAS	8
+Dependency Parsing#Penn Treebank#UAS	8
+Dependency Parsing#Penn Treebank#POS	7
+Object Classification#Pubmed#Accuracy	1
+Music Classification#20NEWS#Accuracy	1
+Environmental Sound Classification#UrbanSound8k#Accuracy (10-fold)	1
+Pose Estimation#COCO test-dev#AP	9
+Pose Estimation#COCO test-dev#AP50	9
+Pose Estimation#COCO test-dev#AP75	9
+Pose Estimation#COCO test-dev#APL	9
+Pose Estimation#COCO test-dev#APM	5
+Pose Estimation#COCO test-dev#AR	8
+Pose Estimation#FLIC Elbows#PCK@0.2	1
+Pose Estimation# ITOP front-view#Mean mAP	3
+Pose Estimation#UPenn Action#Mean PCK@0.2	3
+Pose Estimation#UPenn Action#PCK	1
+Pose Estimation#DensePose-COCO#AP	2
+Pose Estimation#COCO minival#AP	1
+Pose Estimation#MPII Human Pose#PCKh-0.5	23
+Pose Estimation#Leeds Sports Poses#PCK	2
+Sentiment Analysis#Financial PhraseBank#Accuracy	1
+Sentiment Analysis#Financial PhraseBank#F1 score	1
+Sentiment Analysis#AJGT#Accuracy	1
+Sentiment Analysis#ChnSentiCorp Dev#F1	1
+Sentiment Analysis#Yelp Fine-grained classification#Error	9
+Sentiment Analysis#IMDb#Accuracy	6
+Sentiment Analysis#SemEval#F1-score	1
+Sentiment Analysis#MR#Accuracy	7
+Sentiment Analysis#SST-2 Binary classification#Accuracy	11
+Sentiment Analysis#Twitter#Accuracy	1
+Sentiment Analysis#Yelp Binary classification#Error	2
+Sentiment Analysis#SST-5 Fine-grained classification#Accuracy	1
+Sentiment Analysis#Multi-Domain Sentiment Dataset#Average	4
+Sentiment Analysis#Multi-Domain Sentiment Dataset#Books	4
+Sentiment Analysis#Multi-Domain Sentiment Dataset#DVD	4
+Sentiment Analysis#Multi-Domain Sentiment Dataset#Electronics	4
+Sentiment Analysis#Multi-Domain Sentiment Dataset#Kitchen	4
+Sentiment Analysis#Amazon Review Full#Accuracy	2
+Sentiment Analysis#DBRD#Accuracy	1
+Sentiment Analysis#DBRD#F1	1
+Action Classification#UCF101#split-1 Top-1 Accuracy	1
+Action Classification#UCF101#split-1 Top-5 Accuracy	1
+Action Classification#ActivityNet-1.2#mAP	2
+Action Classification#HMDB51#Accuracy	3
+Action Classification#Charades#MAP	10
+Action Classification#Moments in Time#Top 5 Accuracy	1
+Action Classification#AViD#Accuracy	1
+Action Classification#Kinetics-600#Top-1 Accuracy	1
+Action Classification#Kinetics-600#Top-5 Accuracy	1
+Action Classification#YouCook2#Object Top 5 Accuracy	1
+Action Classification#YouCook2#Object Top-1 Accuracy	1
+Action Classification#YouCook2#Verb Top-1 Accuracy	1
+Action Classification#YouCook2#Verb Top-5 Accuracy	1
+Action Classification#Kinetics-400#Accuracy	10
+Entity Alignment#DBP15k zh-en#Hits@1	5
+Entity Linking#N3-Reuters-128#Micro-F1	1
+Entity Linking#CoNLL-Aida#Accuracy	1
+Entity Linking#WebQSP-WD#F1	1
+Entity Linking#AIDA-CoNLL#Accuracy	1
+Named Entity Recognition#SoSciSoCi#F1	1
+Named Entity Recognition#SoSciSoCi#Precision	1
+Named Entity Recognition#SoSciSoCi#Recall	1
+Named Entity Recognition#SciERC#F1	3
+Named Entity Recognition#WetLab#F1	1
+Named Entity Recognition#LINNAEUS#F1	1
+Named Entity Recognition#BC5CDR#F1	1
+Named Entity Recognition#GENIA#F1	5
+Named Entity Recognition#Code-Switching English-Spanish NER#F1	1
+Named Entity Recognition#ACE 2005#F1	3
+Named Entity Recognition#Ontonotes v5 (English)#F1	7
+Named Entity Recognition#Ontonotes v5 (English)#Precision	1
+Named Entity Recognition#Ontonotes v5 (English)#Recall	1
+Named Entity Recognition#CoNLL 2003 (English)#F1	9
+Table-based Fact Verification#TabFact#Test	1
+Table-based Fact Verification#TabFact#Val	1
+Horizon Line Estimation#York Urban Dataset#AUC (horizon error)	3
+Horizon Line Estimation#Horizon Lines in the Wild#AUC (horizon error)	1
+Horizon Line Estimation#KITTI Horizon#ATV	1
+Horizon Line Estimation#KITTI Horizon#AUC	1
+Horizon Line Estimation#KITTI Horizon#MSE	1
+ECG Classification#Electrocardiography (ECG) on Telehealth Network of Minas Gerais (TNMG)#F1 (1dAVb)	1
+ECG Classification#Electrocardiography (ECG) on Telehealth Network of Minas Gerais (TNMG)#F1 (AF)	1
+ECG Classification#Electrocardiography (ECG) on Telehealth Network of Minas Gerais (TNMG)#F1 (LBBB)	1
+ECG Classification#Electrocardiography (ECG) on Telehealth Network of Minas Gerais (TNMG)#F1 (RBBB)	1
+ECG Classification#Electrocardiography (ECG) on Telehealth Network of Minas Gerais (TNMG)#F1 (SB)	1
+ECG Classification#Electrocardiography (ECG) on Telehealth Network of Minas Gerais (TNMG)#F1 (ST)	1
+Image Super-Resolution#PIRM-test#NIQE	3
+Image Super-Resolution#KITTI 2015 - 4x upscaling#PSNR	1
+Image Super-Resolution#Urban100 - 8x upscaling#PSNR	4
+Image Super-Resolution#Urban100 - 8x upscaling#SSIM	4
+Image Super-Resolution#Set5 - 8x upscaling#PSNR	1
+Image Super-Resolution#FFHQ 1024 x 1024 - 4x upscaling#FID	6
+Image Super-Resolution#FFHQ 1024 x 1024 - 4x upscaling#MS-SSIM	6
+Image Super-Resolution#FFHQ 1024 x 1024 - 4x upscaling#PSNR	6
+Image Super-Resolution#FFHQ 1024 x 1024 - 4x upscaling#SSIM	6
+Image Super-Resolution#Set5 - 4x upscaling#PSNR	42
+Image Super-Resolution#Set5 - 4x upscaling#SSIM	30
+Image Super-Resolution#Set5 - 4x upscaling#MOS	2
+Image Super-Resolution#Urban100 - 2x upscaling#PSNR	2
+Image Super-Resolution#BSD100 - 3x upscaling#PSNR	1
+Image Super-Resolution#VggFace2 - 8x upscaling#PSNR	3
+Image Super-Resolution#BSD100 - 4x upscaling#PSNR	2
+Image Super-Resolution#Sun80 - 4x upscaling#PSNR	1
+Image Super-Resolution#USR-248 - 4x upscaling#PSNR	1
+Image Super-Resolution#USR-248 - 4x upscaling#SSIM	1
+Image Super-Resolution#USR-248 - 4x upscaling#UIQM	1
+Slot Filling#Polyvore#FITB	1
+Slot Filling#SNIPS#F1	2
+Action Detection#UCF101-24#Video-mAP 0.2	3
+Action Detection#UCF101-24#Video-mAP 0.1	2
+Action Detection#UCF101-24#mAP	1
+Action Detection#Charades#mAP	2
+Action Detection#Multi-THUMOS#mAP	1
+Fake News Detection#FNC-1#Per-class Accuracy (Agree)	2
+Fake News Detection#FNC-1#Per-class Accuracy (Disagree)	2
+Fake News Detection#FNC-1#Per-class Accuracy (Discuss)	2
+Fake News Detection#FNC-1#Per-class Accuracy (Unrelated)	2
+Fake News Detection#FNC-1#Weighted Accuracy	3
+Fake News Detection#Grover-Mega#Unpaired Accuracy	1
+Sarcasm Detection#FigLang 2020 Twitter Dataset#F1	1
+Sarcasm Detection#SARC (pol-bal)#Accuracy	2
+Sarcasm Detection#SCv1#F1	1
+Hate Speech Detection#Ethos Binary#Classification Accuracy	1
+Hate Speech Detection#Ethos Binary#F1-score	1
+Hate Speech Detection#Ethos Binary#Precision	1
+Hate Speech Detection#Automatic Misogynistic Identification#Accuracy	1
+Shadow Detection#SBU#BER	4
+Scene Text Detection#SCUT-CTW1500#F-Measure	6
+Scene Text Detection#SCUT-CTW1500#Precision	7
+Scene Text Detection#SCUT-CTW1500#Recall	7
+Scene Text Detection#SCUT-CTW1500#TIoU	1
+Scene Text Detection#SCUT-CTW1500#H-Mean	2
+Scene Text Detection#ICDAR 2017 MLT#F-Measure	7
+Scene Text Detection#ICDAR 2017 MLT#Precision	7
+Scene Text Detection#ICDAR 2017 MLT#Recall	7
+Scene Text Detection#MSRA-TD500#H-Mean	2
+Scene Text Detection#MSRA-TD500#Precision	5
+Scene Text Detection#MSRA-TD500#Recall	5
+Scene Text Detection#MSRA-TD500#F-Measure	3
+Scene Text Detection#Total-Text#F-Measure	5
+Scene Text Detection#Total-Text#Precision	3
+Scene Text Detection#Total-Text#Recall	3
+Scene Text Detection#ICDAR 2015#F-Measure	5
+Scene Text Detection#ICDAR 2015#Precision	5
+Scene Text Detection#ICDAR 2015#Recall	5
+Scene Text Detection#ICDAR 2013#F-Measure	4
+Scene Text Detection#ICDAR 2013#Precision	3
+Scene Text Detection#ICDAR 2013#Recall	3
+Scene Text Detection#IC19-ReCTs#F-Measure	1
+Scene Text Detection#COCO-Text#F-Measure	1
+Scene Text Detection#COCO-Text#Precision	1
+Scene Text Detection#COCO-Text#Recall	1
+Continuous Control#PyBullet HalfCheetah#Return	1
+Continuous Control#Swimmer + Maze#Score	1
+Continuous Control#Walker, walk (DMControl100k)#Score	1
+Continuous Control#DeepMind Cheetah Run (Images)#Return	2
+Continuous Control#Cart Pole (OpenAI Gym)#Score	1
+Image Registration# Osteoarthritis Initiative#Dice	2
+Image Captioning#COCO Captions#CIDER	1
+Image Captioning#COCO Captions#SPICE	1
+Image Captioning#COCO#BLEU-1	1
+Image Captioning#COCO#BLEU-2	1
+Image Captioning#COCO#BLEU-3	1
+Image Captioning#COCO#BLEU-4	1
+Image Captioning#COCO#CIDEr	1
+Image Captioning#COCO#METEOR	1
+Image Captioning#COCO#ROUGE	1
+Video Captioning#VATEX#BLEU-4	1
+Video Captioning#VATEX#CIDEr	1
+Video Captioning#VATEX#METEOR	1
+Video Captioning#VATEX#ROUGE-L	1
+Video Captioning#YouCook2#BLEU-3	1
+Video Captioning#YouCook2#BLEU-4	1
+Video Captioning#YouCook2#METEOR	1
+Video Captioning#YouCook2#ROUGE-L	1
+Visual Navigation#Help, Anna! (HANNA)#spl	1
+Visual Navigation#Dmlab-30#Medium Human-Normalized Score	1
+Visual Navigation#Cooperative Vision-and-Dialogue Navigation#Goal Progress	1
+Visual Navigation#Room-to-Room#spl	2
+Visual Tracking#OTB-2015#AUC	1
+Ad-Hoc Information Retrieval#TREC Robust04#P@20	5
+Ad-Hoc Information Retrieval#TREC Robust04#nDCG@20	5
+Ad-Hoc Information Retrieval#TREC Robust04#MAP	5
+Text Clustering#20 Newsgroups#Accuracy	1
+Point Cloud Generation#ShapeNet Car#1-NNA-CD	2
+Point Cloud Generation#ShapeNet Car#MMD-CD	1
+Subjectivity Analysis#SUBJ#Accuracy	3
+Neural Architecture Search#Food-101#Accuracy (%)	1
+Neural Architecture Search#Food-101#FLOPS	1
+Neural Architecture Search#Food-101#PARAMS	1
+Neural Architecture Search#NAS-Bench-201, ImageNet-16-120#Accuracy (Test)	9
+Neural Architecture Search#NAS-Bench-201, ImageNet-16-120#Search time (s)	8
+Neural Architecture Search#NAS-Bench-201, ImageNet-16-120#Accuracy (val)	7
+Neural Architecture Search#CIFAR-10#Search Time (GPU days)	5
+Neural Architecture Search#CIFAR-10#Top-1 Error Rate	6
+Neural Architecture Search#CIFAR-10#FLOPS	2
+Neural Architecture Search#CIFAR-10#Parameters	2
+Neural Architecture Search#ImageNet#Accuracy	8
+Neural Architecture Search#ImageNet#FLOPS	3
+Neural Architecture Search#ImageNet#Params	3
+Neural Architecture Search#ImageNet#Top-1 Error Rate	8
+Neural Architecture Search#CIFAR-10 Image Classification#Params	4
+Neural Architecture Search#CIFAR-10 Image Classification#Percentage error	4
+Community Detection#Facebook Athletes#Modularity	1
+Community Detection#Amazon#F1-score	1
+Community Detection#Amazon#Accuracy-NE	1
+Community Detection#Cora#NMI	1
+Community Detection#2010 i2b2/VA#14 gestures accuracy	1
+Human-Object Interaction Detection#HICO-DET#MAP	8
+Human-Object Interaction Detection#HICO#mAP	5
+Human-Object Interaction Detection#V-COCO#MAP	1
+Protein Secondary Structure Prediction#CullPDB#Q8	1
+Protein Secondary Structure Prediction#CB513#Q3	1
+Protein Secondary Structure Prediction#CB513#Q8	1
+Gesture Recognition#Chalearn 2014#Accuracy	1
+Gesture Recognition#CapgMyo DB-a#Accuracy	1
+Gesture Recognition#ChaLearn 2013#Accuracy	1
+Gesture Recognition#Montalbano#Error rate	1
+Gesture Recognition#Montalbano#Jaccard (Mean)	1
+Gesture Recognition#Montalbano#Precision	1
+Gesture Recognition#Montalbano#Recall	1
+Nested Mention Recognition#ACE 2005#F1	1
+Multi-Label Classification Of Biomedical Texts#MIMIC-III#Micro F1	1
+Multi-Label Text Classification#AAPD#P@1	1
+Multi-Label Text Classification#AAPD#P@3	1
+Multi-Label Text Classification#AAPD#P@5	1
+Multi-Label Text Classification#AAPD#nDCG@3	1
+Multi-Label Text Classification#AAPD#nDCG@5	1
+Multi-Label Text Classification#MIMIC-III#Precision	1
+Multi-Label Text Classification#MIMIC-III#Recall	1
+Multi-Label Text Classification#EUR-Lex#Micro F1	1
+Multi-Label Text Classification#EUR-Lex#P@5	1
+Multi-Label Text Classification#EUR-Lex#RP@5	1
+Multi-Label Text Classification#EUR-Lex#nDCG@5	1
+Image Reconstruction#Edge-to-Handbags#FID	3
+Image Reconstruction#Edge-to-Handbags#HP	1
+Image Reconstruction#Edge-to-Handbags#LPIPS	3
+Image Reconstruction#Edge-to-Handbags#MMD	1
+Image Clustering#CUB Birds#Accuracy	2
+Image Clustering#CUB Birds#NMI	2
+Image Clustering#MNIST-test#Accuracy	4
+Image Clustering#MNIST-test#NMI	5
+Image Clustering#CIFAR-10#Accuracy	4
+Image Clustering#CIFAR-10#NMI	4
+Image Clustering#ImageNet#NMI	1
+Image Clustering#Extended Yale-B#Accuracy	5
+Image Clustering#Extended Yale-B#NMI	2
+Image Clustering#MNIST-full#Accuracy	3
+Image Clustering#MNIST-full#NMI	3
+Multi-Label Classification#NUS-WIDE#MAP	1
+Multi-Label Classification#MS-COCO#mAP	4
+Document Image Classification#RVL-CDIP#Accuracy	6
+Document Image Classification#Noisy Bangla Numeral#Accuracy	2
+Image Dehazing#I-Haze#PSNR	1
+Image Dehazing#I-Haze#SSIM	1
+Image Dehazing#SOTS Indoor#PSNR	3
+Image Dehazing#SOTS Indoor#SSIM	3
+Image Dehazing#O-Haze#PSNR	3
+Image Dehazing#O-Haze#SIMM	2
+Image Dehazing#SOTS Outdoor#PSNR	1
+Image Dehazing#SOTS Outdoor#SIMM	1
+Image Denoising#ultracold fermions Technion system, pixelfly#ODRMSE	1
+Coreference Resolution#CoNLL 2012#Avg F1	1
+Coreference Resolution#OntoNotes#F1	5
+Image Compression#ImageNet32#bpsp	1
+Optical Flow Estimation#Sintel Clean unsupervised#Average End-Point Error	1
+Optical Flow Estimation#KITTI 2012#Average End-Point Error	4
+Optical Flow Estimation#Sintel-clean#Average End-Point Error	6
+Optical Flow Estimation#Sintel-final#Average End-Point Error	1
+Object Counting#Pascal VOC 2007 count-test#m-reIRMSE-nz	3
+Object Counting#Pascal VOC 2007 count-test#m-relRMSE	3
+Object Counting#Pascal VOC 2007 count-test#mRMSE	3
+Object Counting#Pascal VOC 2007 count-test#mRMSE-nz	3
+Object Counting#CARPK#MAE	7
+Object Counting#CARPK#RMSE	7
+Motion Segmentation#Apolloscape#Accuracy	1
+Motion Segmentation#Hopkins155#Classification Error	3
+Denoising#Darmstadt Noise Dataset#PSNR	5
+3D Action Recognition#100 sleep nights of 8 caregivers#10%	1
+Chunking#Penn Treebank#F1 score	1
+Amr Parsing#LDC2014T12:#F1 Full	2
+Amr Parsing#LDC2014T12:#F1 Newswire	2
+Constituency Parsing#Penn Treebank#F1 score	5
+Automated Theorem Proving#HOList benchmark#Percentage correct	3
+Automated Theorem Proving#Metamath set.mm#Percentage correct	1
+Automated Theorem Proving#HolStep (Unconditional)#Classification Accuracy	2
+Automated Theorem Proving#CompCert#Percentage correct	1
+Automated Theorem Proving#HolStep (Conditional)#Classification Accuracy	1
+Automated Theorem Proving#CoqGym#Percentage correct	1
+Graph Clustering#Pubmed#Accuracy	2
+Graph Clustering#Citeseer#Accuracy	1
+Saliency Prediction#2010 i2b2/VA#1 in 10 R@1	1
+Gaze Estimation#EYEDIAP (floating target)#Angular Error	1
+Gaze Estimation#MPII Gaze#Angular Error	1
+Code Summarization#CodeSearchNet#F1	1
+Video Summarization#TvSum#F1-score (Augmented)	2
+Video Summarization#TvSum#F1-score (Canonical)	2
+Text Summarization#BBC XSum#ROUGE-1	1
+Text Summarization#BBC XSum#ROUGE-2	1
+Text Summarization#BBC XSum#ROUGE-L	1
+Text Summarization#WikiHow#ROUGE-1	1
+Text Summarization#WikiHow#ROUGE-2	1
+Text Summarization#WikiHow#ROUGE-L	1
+Text Summarization#GigaWord-10k#ROUGE-1	1
+Text Summarization#GigaWord-10k#ROUGE-2	1
+Text Summarization#GigaWord-10k#ROUGE-L	1
+Text Summarization#GigaWord#ROUGE-1	8
+Text Summarization#GigaWord#ROUGE-2	8
+Text Summarization#GigaWord#ROUGE-L	8
+Text Summarization#arXiv#ROUGE-1	4
+Text Summarization#arXiv#ROUGE-2	1
+Text Summarization#arXiv#ROUGE-L	1
+Text Summarization#DUC 2004 Task 1#ROUGE-1	3
+Text Summarization#DUC 2004 Task 1#ROUGE-2	3
+Text Summarization#DUC 2004 Task 1#ROUGE-L	3
+Human Part Segmentation#CIHP#Mean IoU	1
+Human Part Segmentation#PASCAL-Person-Part#mIoU	4
+Lipreading#GRID corpus (mixed-speech)#Word Error Rate (WER)	4
+Lipreading#LRS2#Word Error Rate (WER)	5
+Lipreading#LRW-1000#Top-1 Accuracy	6
+Lipreading#CMLR#CER	1
+Lipreading#Lip Reading in the Wild#Top-1 Accuracy	4
+Atari Games#Atari 2600 Fishing Derby#Score	22
+Atari Games#Atari 2600 Breakout#Score	5
+Atari Games#Atari 2600 Q*Bert#Score	3
+Atari Games#Atari 2600 HERO#Score	1
+Atari Games#Atari 2600 Bowling#Score	2
+Atari Games#Atari 2600 Freeway#Score	5
+Atari Games#Atari 2600 Montezuma's Revenge#Score	3
+Atari Games#Atari-57#Medium Human-Normalized Score	2
+Talking Head Generation#VoxCeleb2 - 1-shot learning#FID	1
+Talking Head Generation#100 sleep nights of 8 caregivers#10%	1
+Recommendation Systems#Netflix#Recall@20	5
+Recommendation Systems#Netflix#Recall@50	5
+Recommendation Systems#Netflix#nDCG@100	5
+Recommendation Systems#Netflix#HR@10	1
+Recommendation Systems#Netflix#nDCG@10	1
+Recommendation Systems#Netflix#Recall@10	1
+Recommendation Systems#Netflix#mAP@10	1
+Recommendation Systems#MovieLens 1M#RMSE	7
+Recommendation Systems#MovieLens 1M#HR@10	5
+Recommendation Systems#MovieLens 1M#nDCG@10	4
+Recommendation Systems#MovieLens 1M#NDCG	1
+Recommendation Systems#Last.FM#Recall@10	1
+Recommendation Systems#Last.FM#Recall@100	1
+Recommendation Systems#Last.FM#Recall@2	1
+Recommendation Systems#Last.FM#Recall@50	1
+Recommendation Systems#Pinterest#Hits@10	1
+Recommendation Systems#Pinterest#Hits@20	1
+Recommendation Systems#Pinterest#nDCG@10	1
+Recommendation Systems#Pinterest#nDCG@20	1
+Recommendation Systems#MovieLens 10M#RMSE	1
+Recommendation Systems#Douban Monti#RMSE	1
+Recommendation Systems#Amazon-CDs#Recall@10	1
+Recommendation Systems#Amazon-CDs#nDCG@10	1
+Recommendation Systems#Douban#NDCG	1
+Recommendation Systems#Douban#Recall@20	1
+Recommendation Systems#WeChat#AUC	2
+Recommendation Systems#WeChat#P@10	2
+Recommendation Systems#MovieLens 100K#RMSE (u1 Splits)	1
+Recommendation Systems#Polyvore#Accuracy	1
+Recommendation Systems#Frappe#RMSE	1
+Paraphrase Identification#2017_test set#10 fold Cross validation	1
+Paraphrase Identification#Quora Question Pairs#Accuracy	2
+Question Generation#Visual Question Generation#BLEU-1	1
+Question Generation#SQuAD1.1#BLEU-4	4
+Question Generation#COCO Visual Question Answering (VQA) real images 1.0 open ended#BLEU-1	2
+Hand Pose Estimation#NYU Hands#Average 3D Error	4
+Hand Pose Estimation#HANDS 2017#Average 3D Error	1
+Hand Pose Estimation#HANDS 2019#Average 3D Error	1
+Image Retrieval#ROxford (Medium)#mAP	1
+Image Retrieval#street2shop - topwear#Accuracy	2
+Image Retrieval#Oxf5k#MAP	4
+Image Retrieval#CARS196#R@1	7
+Image Retrieval#In-Shop#R@1	2
+Image Retrieval#Oxf105k#MAP	1
+Image Retrieval#DeepFashion#Recall@20	1
+Image Retrieval#NUS-WIDE#MAP	1
+Image Retrieval#Flickr30K 1K test#R@1	9
+Image Retrieval#Flickr30K 1K test#R@10	8
+Image Retrieval#Flickr30K 1K test#R@5	7
+Image Retrieval#INRIA Holidays#Mean mAP	1
+Image Retrieval#SOP#R@1	2
+Phrase Grounding#Visual Genome#Pointing Game Accuracy	1
+Hand Gesture Recognition#VIVA Hand Gestures Dataset#Accuracy	1
+Hand Gesture Recognition#Cambridge#Accuracy	2
+Hand Gesture Recognition#ChaLean test#Accuracy	1
+Hand Gesture Recognition#SHREC 2017#14 gestures accuracy	1
+Hand Gesture Recognition#SHREC 2017#28 gestures accuracy	1
+Hand Gesture Recognition#MGB#Accuracy	1
+Hand Gesture Recognition#EgoGesture#Accuracy	1
+Hand Gesture Recognition#SHREC 2017 track on 3D Hand Gesture Recognition#14 gestures accuracy	1
+Hand Gesture Recognition#ChaLearn val#Accuracy	2
+Extractive Document Summarization#CNN / Daily Mail#ROUGE-1	3
+Extractive Document Summarization#CNN / Daily Mail#ROUGE-2	3
+Extractive Document Summarization#CNN / Daily Mail#ROUGE-L	2
+Video Classification#Kinetics#Top-1	1
+Video Classification#YouTube-8M#Hit@1	2
+Video Classification#YouTube-8M#Hit@5	1
+Video Classification#YouTube-8M#PERR	1
+Video Classification#COIN#Accuracy	1
+Object Detection#COCO 2014#mAP	1
+Object Detection#WiderPerson#AP	2
+Object Detection#WiderPerson#mMR	2
+Object Detection#PASCAL VOC 2007#MAP	19
+Object Detection#10-Monty-Hall#10-20% Mask PSNR	1
+Object Detection#PASCAL Part 2010 - Animals#mAP@0.5	1
+Object Detection#BDD100k#mAP@0.5	1
+Object Detection#KITTI Cars Moderate#AP	4
+Object Detection#PeopleArt#MAP	1
+Object Detection#CrowdHuman (full body)#AP	2
+Object Detection#CrowdHuman (full body)#mMR	2
+Object Detection#COCO minival#AP50	26
+Object Detection#COCO minival#AP75	23
+Object Detection#COCO minival#APL	18
+Object Detection#COCO minival#APM	19
+Object Detection#COCO minival#APS	19
+Object Detection#COCO minival#box AP	29
+Object Detection#Visual Genome#MAP	2
+Object Detection#COCO test-dev#AP50	28
+Object Detection#COCO test-dev#AP75	27
+Object Detection#COCO test-dev#APL	30
+Object Detection#COCO test-dev#APM	30
+Object Detection#COCO test-dev#APS	30
+Object Detection#COCO test-dev#box AP	40
+Object Detection#KITTI Cars Easy#AP	1
+Text Classification#Amazon-2#Error	2
+Text Classification#AffCon 2020 Emotion Detection#F1 score	1
+Text Classification#Yelp-5#Accuracy	2
+Text Classification#TREC-6#Error	2
+Text Classification#AG News#Error	2
+Text Classification#R8#Accuracy	3
+Text Classification#R8#F-measure	2
+Text Classification#IMDb#Accuracy	3
+Text Classification#RCV1#Macro F1	1
+Text Classification#RCV1#Micro F1	1
+Text Classification#Ohsumed#Accuracy	2
+Text Classification#20NEWS#Accuracy	1
+Text Classification#20NEWS#F-measure	1
+Text Classification#20NEWS#Precision	1
+Text Classification#20NEWS#Recall	1
+Facial Landmark Detection#300W#NME	6
+Facial Landmark Detection#300W#Mean Error Rate	1
+Facial Landmark Detection#300-VW (C)#AUC0.08 private	1
+Image Classification#CINIC-10#Accuracy	1
+Image Classification#EMNIST-Letters#Accuracy	4
+Image Classification#EMNIST-Balanced#Accuracy	1
+Image Classification#Imbalanced CUB-200-2011#Accuracy	1
+Image Classification#Imbalanced CUB-200-2011#Average Per-Class Accuracy	1
+Image Classification#ImageNet#Number of params	33
+Image Classification#ImageNet#Top 1 Accuracy	60
+Image Classification#ImageNet#Top 5 Accuracy	47
+Image Classification#QMNIST#Accuracy (%)	1
+Image Classification#iCassava'19#Top-1 Accuracy	1
+Image Classification#iNaturalist#Top 1 Accuracy	1
+Image Classification#iNaturalist#Top 5 Accuracy	1
+Image Classification#Clothing1M#Accuracy	10
+Image Classification#Tiered ImageNet 5-way (5-shot)#Accuracy	5
+Image Classification#CIFAR-100#Percentage correct	42
+Image Classification#CIFAR-100#Percentage error	13
+Image Classification#CIFAR-10#Percentage correct	17
+Image Classification#CIFAR-10#Percentage error	2
+Image Classification#MNIST#Accuracy	6
+Image Classification#MNIST#Percentage error	12
+Image Classification#MNIST#Trainable Parameters	1
+Image Classification#ObjectNet (Bounding Box)#Top 5 Accuracy	1
+Image Classification#SVHN#Percentage error	8
+Image Classification#VTAB-1k#Top-1 Accuracy	2
+Image Classification#Fashion-MNIST#Accuracy	1
+Image Classification#Fashion-MNIST#Percentage error	1
+Image Classification#Kuzushiji-MNIST#Accuracy	5
+Image Classification#Kuzushiji-MNIST#Error	2
+Image Classification#Flowers-102#Accuracy	1
+Image Classification#Tiny ImageNet Classification#Validation	1
+Image Classification#STL-10#Percentage correct	7
+Image Classification#smallNORB#Classification Error	1
+Topic Models#20 Newsgroups#Test perplexity	1
+Causal Inference#IDHP#Average Treatment Effect Error	3
+Traffic Prediction#PeMS04#12 Steps MAE	1
+Traffic Prediction#METR-LA#MAE @ 12 step	5
+Traffic Prediction#PeMS-M#MAE (60 min)	1
+Voice Conversion#ZeroSpeech 2019 English#Speaker Similarity	1
+Out-of-Distribution Detection#CIFAR-100#FPR95	1
+Out-of-Distribution Detection#CIFAR-100 vs CIFAR-10#AUROC	1
+Cross-Lingual Bitext Mining#BUCC German-to-English#F1 score	3
+Graph Regression#Tox21 #AUC@80%Train	1
+Graph Regression#Lipophilicity #RMSE	4
+Face Detection#Annotated Faces in the Wild#AP	9
+Face Detection#WIDER Face (Hard)#AP	16
+Face Verification#CK+#Accuracy	4
+Face Verification#CASIA NIR-VIS 2.0#TAR @ FAR=0.001	3
+Face Verification#CFP-FP#Accuracy	3
+Face Verification#IJB-B#TAR @ FAR=0.01	2
+Face Verification#IJB-B#TAR @ FAR=0.001	1
+Face Verification#YouTube Faces DB#Accuracy	8
+Face Verification#Labeled Faces in the Wild#Accuracy	8
+Face Verification#IJB-A#TAR @ FAR=0.01	10
+Face Verification#MegaFace#Accuracy	1
+Face Verification#Trillion Pairs Dataset#Accuracy	1
+Face Verification#IJB-C#TAR @ FAR=0.01	2
+Medical Image Registration#OASIS+ADIBE+ADHD200+MCIC+PPMI+HABS+HarvardGSP#Dice Score	1
+Video Prediction#Human3.6M#MAE	2
+Video Prediction#Human3.6M#MSE	2
+Video Prediction#Human3.6M#SSIM	2
+Video Prediction#Colored dSprites#MSE	1
+Video Prediction#CMU Mocap-2#Test Error	2
+Face Recognition#LFW (Online Open Set)#Average Accuracy (10 times)	1
+Facial Expression Recognition#Oulu-CASIA#Accuracy (10-fold)	2
+Facial Expression Recognition#FER2013#Accuracy	3
+Facial Expression Recognition#AffectNet#Accuracy	6
+Facial Expression Recognition#MMI#Accuracy	1
+Facial Expression Recognition#JAFFE#Accuracy	1
+Facial Expression Recognition# Static Facial Expressions in the Wild#Accuracy	2
+Facial Expression Recognition#Cohn-Kanade#Accuracy	1
+Facial Expression Recognition#FERPlus#Accuracy	2
+Facial Expression Recognition#CK+#Accuracy (10-fold)	2
+Facial Expression Recognition#SFEW#Accuracy	1
+Data-to-Text Generation#AGENDA#BLEU	2
+Data-to-Text Generation#Rotowire (Content Selection)#Precision	3
+Data-to-Text Generation#Rotowire (Content Selection)#Recall	3
+Data-to-Text Generation#LDC2017T10#BLEU	2
+Data-to-Text Generation#ViGGO#BLEU	1
+Data-to-Text Generation#Cleaned E2E NLG Challenge#BLEU	1
+Data-to-Text Generation#WebNLG Full#BLEU	2
+Data-to-Text Generation#MULTIWOZ 2.1#BLEU	3
+Data-to-Text Generation#ToTTo#BLEU	1
+Data-to-Text Generation#ToTTo#PARENT	1
+Data-to-Text Generation#Czech Restaurant NLG#BLEU score	1
+Data-to-Text Generation#Czech Restaurant NLG#CIDER	1
+Data-to-Text Generation#Czech Restaurant NLG#METEOR	1
+Data-to-Text Generation#Czech Restaurant NLG#NIST	1
+Data-to-Text Generation#SR11Deep#BLEU	1
+Data-to-Text Generation#E2E NLG Challenge#BLEU	4
+Data-to-Text Generation#E2E NLG Challenge#CIDEr	3
+Data-to-Text Generation#E2E NLG Challenge#METEOR	4
+Data-to-Text Generation#E2E NLG Challenge#NIST	4
+Data-to-Text Generation#E2E NLG Challenge#ROUGE-L	4
+Data-to-Text Generation#WebNLG#BLEU	1
+Pain Intensity Regression#UNBC-McMaster ShoulderPain dataset#MAE	1
+Memex Question Answering#MemexQA#Accuracy	1
+Defocus Estimation#CUHK - Blur Detection Dataset#Blur Segmentation Accuracy	1
+Game of Go#ELO Ratings#ELO Rating	1
+Multi-agent Reinforcement Learning#ParticleEnvs Cooperative Communication#final agent reward	1
+Meta-Learning#MT50#Average Success Rate	3
+Point Cloud Super Resolution#SHREC15#F-measure (%)	2
+Face Anonymization#2019_test set#10%	1
+Graph-to-Sequence#LDC2015E86:#BLEU	1
+Passage Re-Ranking#MS MARCO#MRR	3
+Depth Completion#Matterport3D#RMSE	2
+Depth Completion#KITTI Depth Completion#MAE	7
+Depth Completion#KITTI Depth Completion#RMSE	7
+Depth Completion#KITTI Depth Completion#iMAE	2
+Depth Completion#KITTI Depth Completion#iRMSE	2
+Lung Nodule Detection#LUNA2016 FPRED#AUC	1
+Aspect-Based Sentiment Analysis#SemEval 2014 Task 4 Subtask 4#Accuracy (3-way)	1
+Aspect-Based Sentiment Analysis#SemEval 2014 Task 4 Subtask 4#Accuracy (4-way)	1
+Aspect-Based Sentiment Analysis#SemEval 2014 Task 4 Subtask 4#Binary Accuracy	1
+Aspect-Based Sentiment Analysis# SemEval 2015 Task 12#Restaurant (Acc)	1
+Aspect-Based Sentiment Analysis#SemEval 2014 Task 4 Sub Task 2#Laptop (Acc)	17
+Aspect-Based Sentiment Analysis#SemEval 2014 Task 4 Sub Task 2#Mean Acc (Restaurant + Laptop)	17
+Aspect-Based Sentiment Analysis#SemEval 2014 Task 4 Sub Task 2#Restaurant (Acc)	17
+Aspect-Based Sentiment Analysis#Sentihood#Aspect	1
+Aspect-Based Sentiment Analysis#Sentihood#Sentiment	1
+DeepFake Detection#FaceForensics#DF	1
+DeepFake Detection#FaceForensics#FS	1
+DeepFake Detection#FaceForensics#FSF	1
+DeepFake Detection#FaceForensics#NT	1
+DeepFake Detection#FaceForensics#Real	1
+DeepFake Detection#FaceForensics#Total Accuracy	1
+Humor Detection#200k Short Texts for Humor Detection#F1-score	1
+Seizure prediction#Melbourne University Seizure Prediction#AUC	2
+graph partitioning#custom#All	1
+Time Series Clustering#eICU Collaborative Research Database#NMI (physiology_12_hours)	1
+Time Series Clustering#eICU Collaborative Research Database#NMI (physiology_24_hours)	1
+Time Series Clustering#eICU Collaborative Research Database#NMI (physiology_6_hours)	1
+Network Pruning#CIFAR-100#Accuracy	1
+Network Pruning#CIFAR-100#GFLOPs	1
+Network Pruning#CIFAR-10#Inference Time (ms)	1
+Network Pruning#ImageNet#Accuracy	1
+Network Pruning#ImageNet#GFLOPs	1
+Network Pruning#ImageNet#Accuracy (%)	1
+Instance Segmentation#COCO minival#mask AP	2
+Instance Segmentation#Cityscapes test#Average Precision	5
+Instance Segmentation#COCO test-dev#AP50	8
+Instance Segmentation#COCO test-dev#AP75	7
+Instance Segmentation#COCO test-dev#APL	7
+Instance Segmentation#COCO test-dev#APM	7
+Instance Segmentation#COCO test-dev#APS	7
+Instance Segmentation#COCO test-dev#mask AP	10
+Pose Tracking#Multi-Person PoseTrack#MOTA	1
+Pose Tracking#Multi-Person PoseTrack#MOTP	1
+Pose Tracking#PoseTrack2017#MOTA	5
+Direction of Arrival Estimation#SOFA#Angular Error	1
+Unsupervised Image-To-Image Translation#Freiburg Forest Dataset#PSNR	2
+Unsupervised Image-To-Image Translation#SVNH-to-MNIST#Classification Accuracy	1
+Few-Shot Semantic Segmentation#FSS-1000#Mean IoU	3
+Few-Shot Semantic Segmentation#Pascal5i#meanIOU	1
+Safety Perception Recognition#Google Street Images#Accuracy	1
+Line Segment Detection#York Urban Dataset#F1 score	2
+Line Segment Detection#York Urban Dataset#sAP10	4
+Line Segment Detection#York Urban Dataset#sAP15	2
+Line Segment Detection#York Urban Dataset#sAP5	4
+Activity Recognition In Videos#DogCentric#Accuracy	2
+Query Wellformedness#Query Wellformedness#Accuracy	1
+Metric Learning#In-Shop#R@1	2
+Metric Learning#Stanford Online Products#R@1	1
+Metric Learning#CARS196#R@1	3
+Metric Learning# CUB-200-2011#R@1	1
+Table Detection#ICDAR2013#Avg F1	2
+Question Similarity#Q2Q Arabic Benchmark#F1 score	2
+Participant Intervention Comparison Outcome Extraction#EBM-NLP#F1	1
+Music Genre Recognition#chords#Accuracy	1
+Quantization#ImageNet#Accuracy (%)	2
+Dense Pixel Correspondence Estimation#HPatches#Viewpoint I AEPE	3
+Dense Pixel Correspondence Estimation#HPatches#Viewpoint II AEPE	3
+Dense Pixel Correspondence Estimation#HPatches#Viewpoint III AEPE	3
+Dense Pixel Correspondence Estimation#HPatches#Viewpoint IV AEPE	3
+Dense Pixel Correspondence Estimation#HPatches#Viewpoint V AEPE	3
+Image Matting#Composition-1K#MSE	3
+Image Matting#Adobe Matting#MSE	1
+Image Matting#Adobe Matting#SAD	1
+Density Estimation#ImageNet#NLL	1
+Density Estimation#Freyfaces#Negative ELBO	2
+Density Estimation#Freyfaces#NLL	1
+Density Estimation#UCI HEPMASS#Log-likelihood	1
+Interactive Segmentation#SBD#NoC@85	2
+Interactive Segmentation#SBD#NoC@90	2
+Image Cropping#AVA#Bounding Box AP	1
+Audio Denoising#AV-Bench - Violin Yanni#NSDR	1
+Pneumonia Detection#COVID-19 CXR Dataset#F-Score	1
+Pneumonia Detection#ChestX-ray14#AUROC	2
+Pneumonia Detection#ChestX-ray14#Params	2
+Pneumonia Detection#ChestX-ray14#FLOPS	1
+Conversational Response Selection#PolyAI AmazonQA#1-of-100 Accuracy	2
+Conversational Response Selection#Ubuntu Dialogue (v1, Ranking)#R10@1	11
+Conversational Response Selection#Ubuntu Dialogue (v1, Ranking)#R10@2	10
+Conversational Response Selection#Ubuntu Dialogue (v1, Ranking)#R10@5	10
+Conversational Response Selection#Ubuntu Dialogue (v1, Ranking)#R2@1	8
+Conversational Response Selection#DSTC7 Ubuntu#1-of-100 Accuracy	2
+Lung Nodule Classification#LIDC-IDRI#Acc	1
+Lung Nodule Classification#LIDC-IDRI#Accuracy	1
+Lung Nodule Classification#LIDC-IDRI#AUC	2
+Lung Nodule Classification#LIDC-IDRI#Accuracy(10-fold)	2
+Sign Language Translation#ASLG-PC12#BLEU-4	1
+Weakly Supervised Action Localization#THUMOS’14#mAP@0.5	1
+Weakly Supervised Action Localization#ActivityNet-1.2#mAP@0.5	2
+Weakly Supervised Action Localization#ActivityNet-1.3#mAP@0.5	2
+Weakly Supervised Action Localization#THUMOS 2014#mAP@0.5	1
+Birds Eye View Object Detection#KITTI Cars Hard#AP	2
+Birds Eye View Object Detection#KITTI Cars Easy val#AP	1
+Birds Eye View Object Detection#KITTI Cyclist Moderate val#AP	1
+Link Sign Prediction#Epinions#AUC	2
+Link Sign Prediction#Epinions#Accuracy	1
+Link Sign Prediction#Epinions#Macro-F1	1
+Fine-Grained Image Classification#FGVC Aircraft#Accuracy	16
+Fine-Grained Image Classification#Con-Text#mAP	1
+Fine-Grained Image Classification#CompCars#Accuracy	1
+Fine-Grained Image Classification#Caltech-101#Top-1 Error Rate	1
+Fine-Grained Image Classification#NABirds#Accuracy	2
+Fine-Grained Image Classification#Stanford Cars#Accuracy	2
+Fine-Grained Image Classification# CUB-200-2011#Accuracy	7
+3D Object Classification#ModelNet10#Accuracy	2
+3D Object Classification#ModelNet40#Classification Accuracy	2
+3D Multi-Person Pose Estimation#CMU Panoptic#MPJPE	1
+3D Multi-Person Pose Estimation#MuPoTS-3D#3DPCK	1
+Table-to-Text Generation#WikiBio#BLEU	2
+Table-to-Text Generation#WikiBio#ROUGE	2
+Table-to-Text Generation#Wikipedia Person and Animal Dataset#BLEU	1
+Table-to-Text Generation#Wikipedia Person and Animal Dataset#METEOR	1
+Table-to-Text Generation#Wikipedia Person and Animal Dataset#ROUGE	1
+Feature Engineering#2019_test set#14 gestures accuracy	1
+3D Semantic Segmentation#SemanticKITTI#mIoU	8
+Game of Suduko#Sudoko 9x9#Accuracy	1
+Action Recognition#ICVL-4#Accuracy	1
+Action Recognition#Something-Something V1#Top 1 Accuracy	12
+Action Recognition#Something-Something V1#Top 5 Accuracy	3
+Action Recognition#ActivityNet#mAP	2
+Action Recognition#THUMOS’14#mAP@0.3	3
+Action Recognition#THUMOS’14#mAP@0.4	4
+Action Recognition#THUMOS’14#mAP@0.5	4
+Action Recognition#THUMOS’14#mAP@0.1	2
+Action Recognition#THUMOS’14#mAP@0.2	2
+Action Recognition#HMDB-51#Average accuracy of 3 splits	13
+Action Recognition#Volleyball#Accuracy	2
+Action Recognition#Kinetics-400#Video hit@1 	1
+Action Recognition#Kinetics-400#Video hit@5	1
+Action Recognition#UCF-101#Top 1 Accuracy	1
+Action Recognition#miniSports#Accuracy	1
+Action Recognition#AVA v2.1#GFlops	1
+Action Recognition#AVA v2.1#Params (M)	1
+Action Recognition#AVA v2.1#mAP (Val)	2
+Action Recognition#NTU RGB+D#Accuracy (CS)	8
+Action Recognition#NTU RGB+D#Accuracy (CV)	5
+Action Recognition#NTU RGB+D 120#Accuracy (Cross-Setup)	3
+Action Recognition#NTU RGB+D 120#Accuracy (Cross-Subject)	3
+Action Recognition#Jester#Val	3
+Action Recognition#Sports-1M#Video hit@1 	3
+Action Recognition#Sports-1M#Video hit@5	3
+Action Recognition#Sports-1M#Clip Hit@1	1
+Action Recognition#Something-Something V2#Top-1 Accuracy	4
+Action Recognition#Something-Something V2#Top-5 Accuracy	1
+Action Recognition#UCF101#3-fold Accuracy	5
+Text-To-Sql#WikiSQL#Accuracy (agg)	1
+Text-To-Sql#WikiSQL#Accuracy (anywhere)	1
+Text-To-Sql#WikiSQL#Accuracy (sel)	1
+Text-To-Sql#spider#Accuracy (Dev)	1
+Text-To-Sql#spider#Accuracy (Test)	1
+Speech Enhancement#CHiME-3#PESQ	1
+Speech Enhancement#CHiME-3#SDR	1
+Speech Enhancement#CHiME-3#ΔPESQ	1
+Speech Enhancement#DEMAND#PESQ	11
+Speech Enhancement#DEMAND#CBAK	2
+Speech Enhancement#DEMAND#COVL	2
+Speech Enhancement#DEMAND#CSIG	2
+Speech Enhancement#DEMAND#STOI	1
+Speech Enhancement#Librispeech#Audio Quality MOS	1
+Speech Enhancement#WHAMR!#PESQ	2
+Speech Enhancement#WHAMR!#SI-SDR	2
+Speech Enhancement#WHAMR!#ΔPESQ	1
+Speech Enhancement#Deep Noise Suppression (DNS) Challenge#PESQ	2
+Speech Enhancement#Deep Noise Suppression (DNS) Challenge#ΔPESQ	2
+Time Series#Bitcoin-Alpha#Accuracy	1
+Speech Synthesis#North American English#Mean Opinion Score	3
+Relationship Extraction (Distant Supervised)#New York Times Corpus#P@10%	2
+Relationship Extraction (Distant Supervised)#New York Times Corpus#P@30%	2
+Relationship Extraction (Distant Supervised)#New York Times Corpus#AUC	1
+Relationship Extraction (Distant Supervised)#New York Times Corpus#Average Precision	1
+Graph Classification#NC1#Accuracy	1
+Graph Classification#REDDIT-MULTI-5k#Accuracy	2
+Graph Classification#ogbg-molhiv#ROC-AUC	1
+Graph Classification#Bench-hard#Accuracy	1
+Graph Classification#Web#Accuracy	1
+Graph Classification#HIV-fMRI-77 #Accuracy	2
+Graph Classification#HIV-fMRI-77 #F1	2
+Graph Classification#IPC-lifted#Accuracy	1
+Graph Classification#RE-M5K#Accuracy	2
+Graph Classification#REDDIT-B#Accuracy	2
+Graph Classification#PTC#Accuracy	18
+Graph Classification#NCI109#Accuracy	6
+Graph Classification#IMDb-B#Accuracy	3
+Graph Classification#NCI1#Accuracy	5
+Graph Classification#REDDIT-MULTI-12K#Accuracy	1
+Graph Classification#NEURON-BINARY#Accuracy	3
+Graph Classification#COLLAB#Accuracy	2
+Graph Classification#ENZYMES#Accuracy	1
+Graph Classification#MUTAG#Accuracy	2
+Graph Classification#D&D#Accuracy	1
+Graph Classification#PROTEINS#Accuracy	3
+Multi-Armed Bandits#Mushroom#Cumulative regret	1
+Vision-Language Navigation#Room2Room#spl	2
+SQL-to-Text#WikiSQL#BLEU-4	1
+Node Classification#Coauthor Physics#Accuracy	1
+Node Classification#Cora with Public Split: fixed 20 nodes per class#Accuracy	12
+Node Classification#Wikipedia#Accuracy	5
+Node Classification#Wikipedia#Macro-F1	5
+Node Classification#BGS#Accuracy	1
+Node Classification#Reddit#Accuracy	5
+Node Classification#Reddit#Micro-F1	1
+Node Classification#Pubmed#Accuracy	25
+Node Classification#Pubmed#Training Split	1
+Node Classification#Pubmed#Validation	2
+Node Classification#Pubmed#F1	1
+Node Classification#DBLP#Macro F1	1
+Node Classification#DBLP#Micro F1	1
+Node Classification#NELL#Accuracy	1
+Node Classification#Citeseer#Accuracy	2
+Node Classification#Amazon2M#F1	1
+Node Classification#Flickr#Accuracy	1
+Node Classification#Cora#Accuracy	2
+Node Classification#CiteSeer (0.5%)#Accuracy	1
+Node Classification#PPI#F1	2
+Surgical Skills Evaluation#JIGSAWS#Accuracy	2
+Surgical Skills Evaluation#JIGSAWS#Edit Distance	1
+Music Modeling#JSB Chorales#NLL	2
+Mortality Prediction#MIMIC-III#F1 score	1
+Mortality Prediction#MIMIC-III#Precision	1
+Mortality Prediction#MIMIC-III#Recall	1
+Click-Through Rate Prediction#Dianping#AUC	4
+Click-Through Rate Prediction#Dianping#Log Loss	4
+Click-Through Rate Prediction#Bing News#AUC	2
+Click-Through Rate Prediction#Bing News#Accuracy	1
+Click-Through Rate Prediction#Criteo#AUC	11
+Click-Through Rate Prediction#Criteo#Log Loss	10
+Click-Through Rate Prediction#MovieLens 20M#AUC	3
+Click-Through Rate Prediction#MovieLens 20M#F1	1
+Click-Through Rate Prediction#MovieLens 1M#AUC	1
+Click-Through Rate Prediction#MovieLens 1M#Accuracy	1
+Click-Through Rate Prediction#Company*#AUC	1
+Click-Through Rate Prediction#Company*#Log Loss	1
+Click-Through Rate Prediction#Avazu#AUC	1
+Click-Through Rate Prediction#Avito#AUC	1
+Click-Through Rate Prediction#Avito#Log Loss	1
+Sentence Compression#Google Dataset#CR	2
+Sentence Compression#Google Dataset#F1	2
+Entity Typing#Ontonotes v5 (English)#F1	3
+Entity Typing#Ontonotes v5 (English)#Precision	3
+Entity Typing#Ontonotes v5 (English)#Recall	3
+Sparse Learning#ImageNet#Top-1 Accuracy	1
+Entity Disambiguation#ACE2004#Micro-F1	2
+Entity Disambiguation#TAC2010#Micro-F1	1
+Salient Object Detection#SOD#F-measure	1
+Salient Object Detection#SOD#MAE	1
+Salient Object Detection#SBU#Balanced Error Rate	2
+Salient Object Detection#DUTS-TE#F-measure	4
+Salient Object Detection#DUTS-TE#MAE	4
+3D Absolute Human Pose Estimation#Human3.6M#MPJPE	1
+Latent Variable Models#200k Short Texts for Humor Detection#10-20% Mask PSNR	1
+3D Object Reconstruction#ShapeNet#3DIoU	1
+3D Object Reconstruction#Data3D−R2N2#3DIoU	3
+3D Object Reconstruction#Data3D−R2N2#Avg F1	4
+Continual Learning#CUBS (Fine-grained 6 Tasks)#Accuracy	3
+Acoustic Novelty Detection#A3Lab PASCAL CHiME#F1	1
+3D Shape Modeling#Pix3D S1#box AP	1
+3D Shape Modeling#Pix3D S1#mask AP	1
+3D Shape Modeling#Pix3D S1#mesh AP	1
+Few-Shot Image Classification#Mini-Imagenet 20-way (5-shot)#Accuracy	2
+Few-Shot Image Classification#CIFAR-FS 5-way (5-shot)#Accuracy	6
+Few-Shot Image Classification#Stanford Dogs 5-way (1-shot)#Accuracy	1
+Few-Shot Image Classification#Stanford Cars 5-way (1-shot)#Accuracy	2
+Few-Shot Image Classification#CIFAR100 5-way (1-shot)#Accuracy	1
+Few-Shot Image Classification#AWA - 0-Shot#Accuracy	1
+Few-Shot Image Classification#OMNIGLOT - 1-Shot, 1000 way#Accuracy	1
+Few-Shot Image Classification#AWA2 - 0-Shot#Accuracy	1
+Few-Shot Image Classification#ImageNet - 0-Shot#Accuracy	1
+Few-Shot Image Classification#OMNIGLOT - 1-Shot, 5-way#Accuracy	10
+Few-Shot Image Classification#FC100 5-way (5-shot)#Accuracy	2
+Few-Shot Image Classification#Mini-ImageNet-CUB 5-way (5-shot)#Accuracy	4
+Few-Shot Image Classification#Mini-Imagenet 5-way (10-shot)#Accuracy	2
+Few-Shot Image Classification#CUB 200 50-way (0-shot)#Accuracy	2
+Few-Shot Image Classification#Mini-ImageNet to CUB - 5 shot learning#Accuracy	1
+Few-Shot Image Classification#Mini-Imagenet 5-way (5-shot)#Accuracy	13
+Few-Shot Image Classification#mini-ImageNet - 100-Way#Accuracy	1
+Few-Shot Image Classification#Mini-ImageNet - 1-Shot Learning#Accuracy	5
+Few-Shot Image Classification#OMNIGLOT - 5-Shot, 20-way#Accuracy	1
+Few-Shot Image Classification#CUB-200-2011 - 0-Shot#Top-1 Accuracy	1
+Few-Shot Image Classification#Mini-Imagenet 5-way (1-shot)#Accuracy	1
+Text Style Transfer#Yelp Review Dataset (Small)#G-Score (BLEU, Accuracy)	4
+Compressive Sensing#Set5#Average PSNR	1
+Cross-Domain Few-Shot#miniImagenet#Accuracy (%)	1
+3D Object Detection#SUN-RGBD#MAP	1
+3D Object Detection#KITTI Pedestrian Hard val#AP	1
+3D Object Detection#ScanNetV2#mAP@0.25	5
+3D Object Detection#ScanNetV2#mAP@0.5	5
+3D Object Detection#KITTI Pedestrians Moderate#AP	4
+3D Object Detection#nuScenes#MAP	2
+3D Object Detection#nuScenes#NDS	3
+3D Object Detection#KITTI Cars Easy#AP	2
+3D Object Detection#SUN-RGBD val#MAP	1
+3D Object Detection#nuScenes-F#AP	1
+3D Object Detection#nuScenes-F#AP50	1
+3D Object Detection#nuScenes-F#AP75	1
+3D Object Detection#nuScenes-F#AR	1
+3D Object Detection#nuScenes-F#ARI	1
+3D Object Detection#nuScenes-F#ARm	1
+3D Object Detection#nuScenes-F#ARs	1
+Synthetic Data Generation#UCI Epileptic Seizure Recognition#AUROC	1
+Arabic Text Diacritization#Tashkeela#Diacritic Error Rate	2
+Value prediction#Py150#MRR	1
+Rotated MNIST#Rotated MNIST#Test error	1
+Bias Detection#Wiki Neutrality Corpus#F1	1
+Bias Detection#StereoSet#ICAT Score	1
+Self-Supervised Learning#STL-10#Accuracy (%)	1
+Document Classification#Cora#Accuracy	1
+Document Classification#Reuters En-De#Accuracy	1
+Document Classification#WOS-5736#Accuracy	1
+Cover song identification#Covers80#MAP	2
+Thai Word Tokenization#BEST-2010#F1-Score	1
+Breast Tumour Classification#PCam#AUC	6
+Colorectal Gland Segmentation:#CRAG#Dice	1
+Colorectal Gland Segmentation:#CRAG#F1-score	1
+Colorectal Gland Segmentation:#CRAG#Hausdorff Distance (mm)	1
+Multi-tissue Nucleus Segmentation#Kumar#Dice	3
+Multi-tissue Nucleus Segmentation#Kumar#Hausdorff Distance (mm)	3
+Lip to Speech Synthesis#LRW#ESTOI	1
+Lip to Speech Synthesis#LRW#PESQ	1
+Lip to Speech Synthesis#LRW#STOI	1
+Multilingual Machine Comprehension in English Hindi#Extended XQuAD#EM(QE-PE)	1
+Multilingual Machine Comprehension in English Hindi#Extended XQuAD#EM(QE-PH)	1
+Multilingual Machine Comprehension in English Hindi#Extended XQuAD#EM(QH-PE)	1
+Multilingual Machine Comprehension in English Hindi#Extended XQuAD#EM(QH-PH)	1
+Multilingual Machine Comprehension in English Hindi#Extended XQuAD#F1 (QE-PE)	1
+Multilingual Machine Comprehension in English Hindi#Extended XQuAD#F1 (QE-PH)	1
+Multilingual Machine Comprehension in English Hindi#Extended XQuAD#F1(QH-PE)	1
+Multilingual Machine Comprehension in English Hindi#Extended XQuAD#F1(QH-PH)	1
+Knowledge Graph Completion#WN18RR#Hits@1	1
+Knowledge Graph Completion#WN18RR#Hits@10	1
+Knowledge Graph Completion#WN18RR#Hits@3	1
+Core set discovery#Credit-g#F1(10-fold)	1
+3D Face Reconstruction#AFLW2000-3D#Mean NME 	2
+3D Face Reconstruction#Florence#Mean NME 	1
+3D Face Reconstruction#Florence#Average 3D Error	2
+Historical Color Image Dating#HCI#MAE	2
+General Reinforcement Learning#Obstacle Tower (No Gen) fixed#Score	1
+Multi-target regression#Google 5 qubit random Hamiltonian#Average mean absolute error	1
+Action Quality Assessment#MTL-AQA#Spearman Correlation	1
+Action Quality Assessment#AQA-7#Spearman Correlation	1
+Human action generation#Human3.6M#MMD	3
+3D Canonical Hand Pose Estimation#RHP#AUC	1
+3D Point Cloud Classification#ModelNet40#Mean Accuracy	2
+3D Point Cloud Classification#ModelNet40#Overall Accuracy	2
+3D Shape Reconstruction#Pix3D#CD	2
+3D Shape Reconstruction#Pix3D#EMD	2
+3D Shape Reconstruction#Pix3D#TIoU	2
+Local Distortion#DocUNet#LD	1
+Incremental Learning#CIFAR-100 - 50 classes + 10 steps of 5 classes#Average Incremental Accuracy	3
+Camouflaged Object Segmentation#CAMO#E-Measure	1
+Camouflaged Object Segmentation#CAMO#F-Measure	1
+Camouflaged Object Segmentation#CAMO#MAE	1
+Camouflaged Object Segmentation#CAMO#S-Measure	1
+Camouflaged Object Segmentation#CAMO#Weighted F-Measure	1
+Pose Retrieval#MPI-INF-3DHP#Hit@1	1
+Pose Retrieval#MPI-INF-3DHP#Hit@10	1
+Sketch-Based Image Retrieval#Shoes#R@1	1
+Sketch-Based Image Retrieval#Shoes#R@10	1
+Sketch-Based Image Retrieval#Chairs#R@1	1
+Sketch-Based Image Retrieval#Chairs#R@10	1
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (test-dev)#F-measure (Decay)	16
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (test-dev)#F-measure (Mean)	17
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (test-dev)#F-measure (Recall)	17
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (test-dev)#J&F	17
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (test-dev)#Jaccard (Decay)	16
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (test-dev)#Jaccard (Mean)	17
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (test-dev)#Jaccard (Recall)	17
+Semi-Supervised Video Object Segmentation#YouTube-VOS#F-Measure (Seen)	1
+Semi-Supervised Video Object Segmentation#YouTube-VOS#F-Measure (Unseen)	1
+Semi-Supervised Video Object Segmentation#YouTube-VOS#Jaccard (Seen)	1
+Semi-Supervised Video Object Segmentation#YouTube-VOS#Jaccard (Unseen)	1
+Semi-Supervised Video Object Segmentation#YouTube-VOS#Overall	1
+Semi-Supervised Video Object Segmentation#YouTube-VOS#Speed  (FPS)	1
+Semi-Supervised Video Object Segmentation#DAVIS 2016#F-measure (Mean)	9
+Semi-Supervised Video Object Segmentation#DAVIS 2016#J&F	9
+Semi-Supervised Video Object Segmentation#DAVIS 2016#Jaccard (Mean)	10
+Semi-Supervised Video Object Segmentation#DAVIS 2016#F-measure (Decay)	8
+Semi-Supervised Video Object Segmentation#DAVIS 2016#F-measure (Recall)	8
+Semi-Supervised Video Object Segmentation#DAVIS 2016#Jaccard (Decay)	8
+Semi-Supervised Video Object Segmentation#DAVIS 2016#Jaccard (Recall)	8
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (val)#F-measure (Mean)	2
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (val)#J&F	2
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (val)#Jaccard (Mean)	2
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (val)#F-measure (Decay)	1
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (val)#F-measure (Recall)	1
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (val)#Jaccard (Decay)	1
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (val)#Jaccard (Recall)	1
+6D Pose Estimation#YCB-Video#ADDS AUC	3
+6D Pose Estimation#NOCS-REAL275#5°5 cm	1
+6D Pose Estimation#NOCS-REAL275#IOU25	1
+6D Pose Estimation#NOCS-REAL275#Rerr	1
+6D Pose Estimation#NOCS-REAL275#Terr	1
+Video Generation#Kinetics-600 12 frames, 128x128#FID	1
+Video Generation#UCF-101 16 frames, Unconditional, Single GPU#Inception Score	6

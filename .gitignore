@@ -1,0 +1,10 @@
+data/paperwithcode/pdf
+data/paperwithcode/source_files/
+data/paperwithcode/.ipynb_checkpoints/
+.vscode/
+grobid-0.6.0/
+build/
+.git/
+drive/
+data/.ipynb_checkpoints/
+.ipynb_checkpoints/
