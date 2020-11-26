@@ -11,9 +11,6 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-
-import org.apache.commons.lang3.StringUtils;
-
 import eu.tib.sre.NLPResult;
 
 import au.com.bytecode.opencsv.CSVReader;

@@ -101,7 +101,7 @@ plugins {
     id 'java'
 }
 
-//group 'eu.tib'
+group 'eu.tib'
 
 version '1.0'
 
@@ -109,9 +109,9 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
-    //maven {
-    //    url "https://dl.bintray.com/rookies/maven"
-    //}
+    maven {
+        url "https://dl.bintray.com/rookies/maven"
+    }
 }
 
 //repositories {
@@ -135,14 +135,21 @@ dependencies {
     // https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox
 //    compile group: 'org.apache.pdfbox', name: 'pdfbox', version: '2.0.18'
 
+//     ToDO : I need to make this run on grobid 0.6.07
+    compile group: 'org.grobid', name: 'grobid-core', version: '0.5.3'
+
     //    compile files('/mnt/d/ORKG/NLP/task-dataset-metric-extraction/drive/traprange.jar')
     compile files('D:\\ORKG\\NLP\\Try\\task-dataset-metric-extraction\\drive\\traprange.jar')
 
 //    compile files('/mnt/d/ORKG/NLP/task-dataset-metric-extraction/drive/grobid-core-0.6.0-SNAPSHOT-onejar.jar')
-    compile files('D:\\ORKG\\NLP\\Try\\task-dataset-metric-extraction\\drive\\grobid-core-0.6.0-SNAPSHOT-onejar.jar')
+//    compile files('D:\\ORKG\\NLP\\Try\\task-dataset-metric-extraction\\drive\\grobid-core-0.6.0-SNAPSHOT-onejar.jar')
 
 //    compile files('/mnt/d/ORKG/NLP/task-dataset-metric-extraction/drive/grobid-core-0.6.0-SNAPSHOT.jar')
-    compile files('D:\\ORKG\\NLP\\Try\\task-dataset-metric-extraction\\drive\\grobid-core-0.6.0-SNAPSHOT.jar')
+//    compile files('D:\\ORKG\\NLP\\Try\\task-dataset-metric-extraction\\drive\\grobid-core-0.6.0-SNAPSHOT.jar')
+
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.11'
+
 
     // https://mvnrepository.com/artifact/edu.stanford.nlp/stanford-corenlp
     compile group: 'edu.stanford.nlp', name: 'stanford-corenlp', version: '4.0.0'
@@ -163,7 +170,7 @@ dependencies {
 jar {
     zip64=true
     manifest {
-        attributes 'Main-Class': 'Main'
+        attributes 'Main-Class': 'eu.tib.sre.Main'
     }
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
 }
