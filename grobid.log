@@ -627,3 +627,501 @@ null
 26 Nov 2020 12:02.46 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\citation\model.wapiti (size: 16235248)
 26 Nov 2020 12:02.48 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\reference-segmenter\model.wapiti (size: 4829569)
 26 Nov 2020 12:03.11 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\date\model.wapiti (size: 102435)
+26 Nov 2020 12:10.54 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+26 Nov 2020 12:10.54 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 12:10.54 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home
+26 Nov 2020 12:10.54 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 12:10.54 [WARN ] GrobidHomeFinder          - Grobid property file location was not explicitly set via 'org.grobid.property' system variable, defaulting to: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\config\grobid.properties
+26 Nov 2020 12:10.54 [INFO ] LibraryLoader             - Loading external native CRF library
+26 Nov 2020 12:10.54 [INFO ] LibraryLoader             - Loading Wapiti native library...
+26 Nov 2020 12:10.54 [INFO ] LibraryLoader             - Library crfpp loaded
+26 Nov 2020 12:10.54 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\fulltext\model.wapiti (size: 20462507)
+26 Nov 2020 12:12.50 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\Try\task-dataset-metric-extraction\grobid-0.6.0\grobid-home\models\date\model.wapiti (size: 102435)
+26 Nov 2020 12:12.50 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\Try\task-dataset-metric-extraction\grobid-0.6.0\grobid-home\models\reference-segmenter\model.wapiti (size: 4921245)
+26 Nov 2020 12:14.13 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+26 Nov 2020 12:14.13 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 12:14.13 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home
+26 Nov 2020 12:14.13 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 12:14.13 [WARN ] GrobidHomeFinder          - Grobid property file location was not explicitly set via 'org.grobid.property' system variable, defaulting to: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\config\grobid.properties
+26 Nov 2020 12:14.13 [INFO ] LibraryLoader             - Loading external native CRF library
+26 Nov 2020 12:14.13 [INFO ] LibraryLoader             - Loading Wapiti native library...
+26 Nov 2020 12:14.13 [INFO ] LibraryLoader             - Library crfpp loaded
+26 Nov 2020 12:14.16 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\fulltext\model.wapiti (size: 20462507)
+26 Nov 2020 12:15.25 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\Try\task-dataset-metric-extraction\grobid-0.6.0\grobid-home\models\date\model.wapiti (size: 102435)
+26 Nov 2020 12:15.25 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\Try\task-dataset-metric-extraction\grobid-0.6.0\grobid-home\models\reference-segmenter\model.wapiti (size: 4921245)
+26 Nov 2020 12:16.52 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+26 Nov 2020 12:16.52 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 12:16.52 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home
+26 Nov 2020 12:16.52 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 12:16.52 [WARN ] GrobidHomeFinder          - Grobid property file location was not explicitly set via 'org.grobid.property' system variable, defaulting to: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\config\grobid.properties
+26 Nov 2020 12:16.52 [INFO ] LibraryLoader             - Loading external native CRF library
+26 Nov 2020 12:16.52 [INFO ] LibraryLoader             - Loading Wapiti native library...
+26 Nov 2020 12:16.52 [INFO ] LibraryLoader             - Library crfpp loaded
+26 Nov 2020 12:16.53 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\fulltext\model.wapiti (size: 20462507)
+26 Nov 2020 12:16.56 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\segmentation\model.wapiti (size: 15807193)
+26 Nov 2020 12:16.58 [INFO ] Lexicon                   - Initiating dictionary
+26 Nov 2020 12:16.58 [INFO ] Lexicon                   - End of Initialization of dictionary
+26 Nov 2020 12:16.58 [INFO ] Lexicon                   - Initiating names
+26 Nov 2020 12:16.58 [INFO ] Lexicon                   - End of initialization of names
+26 Nov 2020 12:17.12 [INFO ] Lexicon                   - Initiating country codes
+26 Nov 2020 12:17.12 [INFO ] Lexicon                   - End of initialization of country codes
+26 Nov 2020 12:17.55 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\figure\model.wapiti (size: 679648)
+26 Nov 2020 12:18.01 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\table\model.wapiti (size: 1337339)
+26 Nov 2020 12:18.07 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\header\model.wapiti (size: 36094028)
+26 Nov 2020 12:18.22 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\header\model.wapiti (size: 2225578)
+26 Nov 2020 12:18.22 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\citation\model.wapiti (size: 393118)
+26 Nov 2020 12:18.24 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\affiliation-address\model.wapiti (size: 2700194)
+26 Nov 2020 12:18.37 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+26 Nov 2020 12:18.37 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 12:18.37 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home
+26 Nov 2020 12:18.37 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 12:18.37 [WARN ] GrobidHomeFinder          - Grobid property file location was not explicitly set via 'org.grobid.property' system variable, defaulting to: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\config\grobid.properties
+26 Nov 2020 12:18.37 [INFO ] LibraryLoader             - Loading external native CRF library
+26 Nov 2020 12:18.37 [INFO ] LibraryLoader             - Loading Wapiti native library...
+26 Nov 2020 12:18.37 [INFO ] LibraryLoader             - Library crfpp loaded
+26 Nov 2020 12:18.37 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\fulltext\model.wapiti (size: 20462507)
+26 Nov 2020 12:18.40 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\segmentation\model.wapiti (size: 15807193)
+26 Nov 2020 12:18.42 [INFO ] Lexicon                   - Initiating dictionary
+26 Nov 2020 12:18.42 [INFO ] Lexicon                   - End of Initialization of dictionary
+26 Nov 2020 12:18.42 [INFO ] Lexicon                   - Initiating names
+26 Nov 2020 12:18.42 [INFO ] Lexicon                   - End of initialization of names
+26 Nov 2020 12:18.42 [INFO ] Lexicon                   - Initiating country codes
+26 Nov 2020 12:18.42 [INFO ] Lexicon                   - End of initialization of country codes
+26 Nov 2020 12:18.43 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\figure\model.wapiti (size: 679648)
+26 Nov 2020 12:18.43 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\table\model.wapiti (size: 1337339)
+26 Nov 2020 12:18.44 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\header\model.wapiti (size: 36094028)
+26 Nov 2020 12:18.48 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\header\model.wapiti (size: 2225578)
+26 Nov 2020 12:18.48 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\citation\model.wapiti (size: 393118)
+26 Nov 2020 12:18.49 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\affiliation-address\model.wapiti (size: 2700194)
+26 Nov 2020 12:18.50 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\citation\model.wapiti (size: 16235248)
+26 Nov 2020 12:18.52 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\reference-segmenter\model.wapiti (size: 4829569)
+26 Nov 2020 12:19.08 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\date\model.wapiti (size: 102435)
+26 Nov 2020 12:19.14 [INFO ] ReferenceMarkerMatcher    - +++++
+26 Nov 2020 12:19.14 [INFO ] ReferenceMarkerMatcher    -   Nguyen, T.-P. and Le, A.-C. (2016). A Hybrid Ap-
+proach to Vietnamese Word Segmentation. In Pro-
+ceedings of the 2016 IEEE RIVF International Con-
+ference on Computing and Communication Tech-
+nologies: Research, Innovation, and Vision for the 
+Future, pages 114-119.
+26 Nov 2020 12:19.14 [INFO ] ReferenceMarkerMatcher    - +++++
+26 Nov 2020 12:19.14 [INFO ] ReferenceMarkerMatcher    -   Nguyen, D. Q., Nguyen, D. Q., Pham, D. D., and 
+Pham, S. B. (2016). A Robust Transformation-
+Based Learning Approach Using Ripple Down 
+Rules for Part-of-Speech Tagging. AI Communica-
+tions, 29(3):409-422.
+26 Nov 2020 12:19.14 [INFO ] ReferenceMarkerMatcher    - +++++
+26 Nov 2020 12:19.14 [INFO ] ReferenceMarkerMatcher    -   Nguyen, T.-P. and Le, A.-C. (2016). A Hybrid Ap-
+proach to Vietnamese Word Segmentation. In Pro-
+ceedings of the 2016 IEEE RIVF International Con-
+ference on Computing and Communication Tech-
+nologies: Research, Innovation, and Vision for the 
+Future, pages 114-119.
+26 Nov 2020 12:19.14 [INFO ] ReferenceMarkerMatcher    - +++++
+26 Nov 2020 12:19.14 [INFO ] ReferenceMarkerMatcher    -   Nguyen, D. Q., Nguyen, D. Q., Pham, D. D., and 
+Pham, S. B. (2016). A Robust Transformation-
+Based Learning Approach Using Ripple Down 
+Rules for Part-of-Speech Tagging. AI Communica-
+tions, 29(3):409-422.
+26 Nov 2020 12:19.16 [INFO ] ReferenceMarkerMatcher    - +++++
+26 Nov 2020 12:19.16 [INFO ] ReferenceMarkerMatcher    -   Nguyen, T.-P. and Le, A.-C. (2016). A Hybrid Ap-
+proach to Vietnamese Word Segmentation. In Pro-
+ceedings of the 2016 IEEE RIVF International Con-
+ference on Computing and Communication Tech-
+nologies: Research, Innovation, and Vision for the 
+Future, pages 114-119.
+26 Nov 2020 12:19.16 [INFO ] ReferenceMarkerMatcher    - +++++
+26 Nov 2020 12:19.16 [INFO ] ReferenceMarkerMatcher    -   Nguyen, D. Q., Nguyen, D. Q., Pham, D. D., and 
+Pham, S. B. (2016). A Robust Transformation-
+Based Learning Approach Using Ripple Down 
+Rules for Part-of-Speech Tagging. AI Communica-
+tions, 29(3):409-422.
+26 Nov 2020 12:19.16 [INFO ] ReferenceMarkerMatcher    - +++++
+26 Nov 2020 12:19.16 [INFO ] ReferenceMarkerMatcher    -   Nguyen, T.-P. and Le, A.-C. (2016). A Hybrid Ap-
+proach to Vietnamese Word Segmentation. In Pro-
+ceedings of the 2016 IEEE RIVF International Con-
+ference on Computing and Communication Tech-
+nologies: Research, Innovation, and Vision for the 
+Future, pages 114-119.
+26 Nov 2020 12:19.16 [INFO ] ReferenceMarkerMatcher    - +++++
+26 Nov 2020 12:19.16 [INFO ] ReferenceMarkerMatcher    -   Nguyen, D. Q., Nguyen, D. Q., Pham, D. D., and 
+Pham, S. B. (2016). A Robust Transformation-
+Based Learning Approach Using Ripple Down 
+Rules for Part-of-Speech Tagging. AI Communica-
+tions, 29(3):409-422.
+26 Nov 2020 12:57.58 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+26 Nov 2020 12:57.58 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 12:57.58 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home
+26 Nov 2020 12:57.58 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 12:57.58 [WARN ] GrobidHomeFinder          - Grobid property file location was not explicitly set via 'org.grobid.property' system variable, defaulting to: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\config\grobid.properties
+26 Nov 2020 12:57.58 [INFO ] LibraryLoader             - Loading external native CRF library
+26 Nov 2020 12:57.58 [INFO ] LibraryLoader             - Loading Wapiti native library...
+26 Nov 2020 12:57.58 [INFO ] LibraryLoader             - Library crfpp loaded
+26 Nov 2020 12:57.58 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\fulltext\model.wapiti (size: 20462507)
+26 Nov 2020 12:58.01 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\segmentation\model.wapiti (size: 15807193)
+26 Nov 2020 12:58.03 [INFO ] Lexicon                   - Initiating dictionary
+26 Nov 2020 12:58.03 [INFO ] Lexicon                   - End of Initialization of dictionary
+26 Nov 2020 12:58.03 [INFO ] Lexicon                   - Initiating names
+26 Nov 2020 12:58.03 [INFO ] Lexicon                   - End of initialization of names
+26 Nov 2020 12:58.03 [INFO ] Lexicon                   - Initiating country codes
+26 Nov 2020 12:58.03 [INFO ] Lexicon                   - End of initialization of country codes
+26 Nov 2020 12:58.04 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\figure\model.wapiti (size: 679648)
+26 Nov 2020 12:58.05 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\table\model.wapiti (size: 1337339)
+26 Nov 2020 12:58.05 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\header\model.wapiti (size: 36094028)
+26 Nov 2020 12:58.10 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\header\model.wapiti (size: 2225578)
+26 Nov 2020 12:58.10 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\citation\model.wapiti (size: 393118)
+26 Nov 2020 12:58.10 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\affiliation-address\model.wapiti (size: 2700194)
+26 Nov 2020 12:58.12 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\citation\model.wapiti (size: 16235248)
+26 Nov 2020 12:58.14 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\reference-segmenter\model.wapiti (size: 4829569)
+26 Nov 2020 12:58.31 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\date\model.wapiti (size: 102435)
+26 Nov 2020 12:59.02 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+26 Nov 2020 12:59.02 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 12:59.02 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home
+26 Nov 2020 12:59.02 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 12:59.02 [WARN ] GrobidHomeFinder          - Grobid property file location was not explicitly set via 'org.grobid.property' system variable, defaulting to: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\config\grobid.properties
+26 Nov 2020 12:59.02 [INFO ] LibraryLoader             - Loading external native CRF library
+26 Nov 2020 12:59.02 [INFO ] LibraryLoader             - Loading Wapiti native library...
+26 Nov 2020 12:59.02 [INFO ] LibraryLoader             - Library crfpp loaded
+26 Nov 2020 12:59.02 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\fulltext\model.wapiti (size: 20462507)
+26 Nov 2020 12:59.05 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\segmentation\model.wapiti (size: 15807193)
+26 Nov 2020 12:59.07 [INFO ] Lexicon                   - Initiating dictionary
+26 Nov 2020 12:59.07 [INFO ] Lexicon                   - End of Initialization of dictionary
+26 Nov 2020 12:59.07 [INFO ] Lexicon                   - Initiating names
+26 Nov 2020 12:59.07 [INFO ] Lexicon                   - End of initialization of names
+26 Nov 2020 12:59.07 [INFO ] Lexicon                   - Initiating country codes
+26 Nov 2020 12:59.07 [INFO ] Lexicon                   - End of initialization of country codes
+26 Nov 2020 12:59.08 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\figure\model.wapiti (size: 679648)
+26 Nov 2020 12:59.09 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\table\model.wapiti (size: 1337339)
+26 Nov 2020 12:59.09 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\header\model.wapiti (size: 36094028)
+26 Nov 2020 12:59.13 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\header\model.wapiti (size: 2225578)
+26 Nov 2020 12:59.14 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\citation\model.wapiti (size: 393118)
+26 Nov 2020 12:59.14 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\affiliation-address\model.wapiti (size: 2700194)
+26 Nov 2020 12:59.16 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\citation\model.wapiti (size: 16235248)
+26 Nov 2020 12:59.18 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\reference-segmenter\model.wapiti (size: 4829569)
+26 Nov 2020 12:59.34 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\date\model.wapiti (size: 102435)
+26 Nov 2020 13:00.54 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+26 Nov 2020 13:00.54 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 13:00.54 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home
+26 Nov 2020 13:00.54 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 13:00.54 [WARN ] GrobidHomeFinder          - Grobid property file location was not explicitly set via 'org.grobid.property' system variable, defaulting to: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\config\grobid.properties
+26 Nov 2020 13:00.54 [INFO ] LibraryLoader             - Loading external native CRF library
+26 Nov 2020 13:00.54 [INFO ] LibraryLoader             - Loading Wapiti native library...
+26 Nov 2020 13:00.54 [INFO ] LibraryLoader             - Library crfpp loaded
+26 Nov 2020 13:00.54 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\fulltext\model.wapiti (size: 20462507)
+26 Nov 2020 13:00.57 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\segmentation\model.wapiti (size: 15807193)
+26 Nov 2020 13:00.59 [INFO ] Lexicon                   - Initiating dictionary
+26 Nov 2020 13:00.59 [INFO ] Lexicon                   - End of Initialization of dictionary
+26 Nov 2020 13:00.59 [INFO ] Lexicon                   - Initiating names
+26 Nov 2020 13:00.59 [INFO ] Lexicon                   - End of initialization of names
+26 Nov 2020 13:01.00 [INFO ] Lexicon                   - Initiating country codes
+26 Nov 2020 13:01.00 [INFO ] Lexicon                   - End of initialization of country codes
+26 Nov 2020 13:01.01 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\figure\model.wapiti (size: 679648)
+26 Nov 2020 13:01.01 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\table\model.wapiti (size: 1337339)
+26 Nov 2020 13:01.02 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\header\model.wapiti (size: 36094028)
+26 Nov 2020 13:01.07 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\header\model.wapiti (size: 2225578)
+26 Nov 2020 13:01.07 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\citation\model.wapiti (size: 393118)
+26 Nov 2020 13:01.07 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\affiliation-address\model.wapiti (size: 2700194)
+26 Nov 2020 13:01.10 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\citation\model.wapiti (size: 16235248)
+26 Nov 2020 13:01.12 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\reference-segmenter\model.wapiti (size: 4829569)
+26 Nov 2020 13:01.31 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\date\model.wapiti (size: 102435)
+26 Nov 2020 13:11.06 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+26 Nov 2020 13:11.06 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 13:11.06 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home
+26 Nov 2020 13:11.06 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 13:11.06 [WARN ] GrobidHomeFinder          - Grobid property file location was not explicitly set via 'org.grobid.property' system variable, defaulting to: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\config\grobid.properties
+26 Nov 2020 13:11.06 [INFO ] LibraryLoader             - Loading external native CRF library
+26 Nov 2020 13:11.06 [INFO ] LibraryLoader             - Loading Wapiti native library...
+26 Nov 2020 13:11.06 [INFO ] LibraryLoader             - Library crfpp loaded
+26 Nov 2020 13:11.06 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\fulltext\model.wapiti (size: 20462507)
+26 Nov 2020 13:11.09 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\segmentation\model.wapiti (size: 15807193)
+26 Nov 2020 13:11.11 [INFO ] Lexicon                   - Initiating dictionary
+26 Nov 2020 13:11.11 [INFO ] Lexicon                   - End of Initialization of dictionary
+26 Nov 2020 13:11.11 [INFO ] Lexicon                   - Initiating names
+26 Nov 2020 13:11.11 [INFO ] Lexicon                   - End of initialization of names
+26 Nov 2020 13:11.11 [INFO ] Lexicon                   - Initiating country codes
+26 Nov 2020 13:11.11 [INFO ] Lexicon                   - End of initialization of country codes
+26 Nov 2020 13:11.12 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\figure\model.wapiti (size: 679648)
+26 Nov 2020 13:11.13 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\table\model.wapiti (size: 1337339)
+26 Nov 2020 13:11.13 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\header\model.wapiti (size: 36094028)
+26 Nov 2020 13:11.17 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\header\model.wapiti (size: 2225578)
+26 Nov 2020 13:11.18 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\citation\model.wapiti (size: 393118)
+26 Nov 2020 13:11.18 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\affiliation-address\model.wapiti (size: 2700194)
+26 Nov 2020 13:11.20 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\citation\model.wapiti (size: 16235248)
+26 Nov 2020 13:11.22 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\reference-segmenter\model.wapiti (size: 4829569)
+26 Nov 2020 13:11.39 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\date\model.wapiti (size: 102435)
+26 Nov 2020 13:16.16 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+26 Nov 2020 13:16.16 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 13:16.16 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home
+26 Nov 2020 13:16.16 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 13:16.16 [WARN ] GrobidHomeFinder          - Grobid property file location was not explicitly set via 'org.grobid.property' system variable, defaulting to: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\config\grobid.properties
+26 Nov 2020 13:16.16 [INFO ] LibraryLoader             - Loading external native CRF library
+26 Nov 2020 13:16.16 [INFO ] LibraryLoader             - Loading Wapiti native library...
+26 Nov 2020 13:16.16 [INFO ] LibraryLoader             - Library crfpp loaded
+26 Nov 2020 13:16.16 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\fulltext\model.wapiti (size: 20462507)
+26 Nov 2020 13:16.19 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\segmentation\model.wapiti (size: 15807193)
+26 Nov 2020 13:16.20 [INFO ] Lexicon                   - Initiating dictionary
+26 Nov 2020 13:16.20 [INFO ] Lexicon                   - End of Initialization of dictionary
+26 Nov 2020 13:16.20 [INFO ] Lexicon                   - Initiating names
+26 Nov 2020 13:16.20 [INFO ] Lexicon                   - End of initialization of names
+26 Nov 2020 13:16.21 [INFO ] Lexicon                   - Initiating country codes
+26 Nov 2020 13:16.21 [INFO ] Lexicon                   - End of initialization of country codes
+26 Nov 2020 13:16.22 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\figure\model.wapiti (size: 679648)
+26 Nov 2020 13:16.22 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\table\model.wapiti (size: 1337339)
+26 Nov 2020 13:16.22 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\header\model.wapiti (size: 36094028)
+26 Nov 2020 13:16.27 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\header\model.wapiti (size: 2225578)
+26 Nov 2020 13:16.27 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\citation\model.wapiti (size: 393118)
+26 Nov 2020 13:16.27 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\affiliation-address\model.wapiti (size: 2700194)
+26 Nov 2020 13:16.30 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\citation\model.wapiti (size: 16235248)
+26 Nov 2020 13:16.31 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\reference-segmenter\model.wapiti (size: 4829569)
+26 Nov 2020 13:16.50 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\date\model.wapiti (size: 102435)
+26 Nov 2020 13:25.38 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+26 Nov 2020 13:25.38 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 13:25.38 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home
+26 Nov 2020 13:25.38 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 13:25.38 [WARN ] GrobidHomeFinder          - Grobid property file location was not explicitly set via 'org.grobid.property' system variable, defaulting to: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\config\grobid.properties
+26 Nov 2020 13:25.38 [INFO ] LibraryLoader             - Loading external native CRF library
+26 Nov 2020 13:25.38 [INFO ] LibraryLoader             - Loading Wapiti native library...
+26 Nov 2020 13:25.38 [INFO ] LibraryLoader             - Library crfpp loaded
+26 Nov 2020 13:25.38 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\fulltext\model.wapiti (size: 20462507)
+26 Nov 2020 13:25.41 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\segmentation\model.wapiti (size: 15807193)
+26 Nov 2020 13:25.43 [INFO ] Lexicon                   - Initiating dictionary
+26 Nov 2020 13:25.43 [INFO ] Lexicon                   - End of Initialization of dictionary
+26 Nov 2020 13:25.43 [INFO ] Lexicon                   - Initiating names
+26 Nov 2020 13:25.43 [INFO ] Lexicon                   - End of initialization of names
+26 Nov 2020 13:25.43 [INFO ] Lexicon                   - Initiating country codes
+26 Nov 2020 13:25.43 [INFO ] Lexicon                   - End of initialization of country codes
+26 Nov 2020 13:25.45 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\figure\model.wapiti (size: 679648)
+26 Nov 2020 13:25.45 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\table\model.wapiti (size: 1337339)
+26 Nov 2020 13:25.45 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\header\model.wapiti (size: 36094028)
+26 Nov 2020 13:25.50 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\header\model.wapiti (size: 2225578)
+26 Nov 2020 13:25.50 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\citation\model.wapiti (size: 393118)
+26 Nov 2020 13:25.50 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\affiliation-address\model.wapiti (size: 2700194)
+26 Nov 2020 13:25.52 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\citation\model.wapiti (size: 16235248)
+26 Nov 2020 13:25.54 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\reference-segmenter\model.wapiti (size: 4829569)
+26 Nov 2020 13:26.10 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\date\model.wapiti (size: 102435)
+26 Nov 2020 13:26.16 [INFO ] ReferenceMarkerMatcher    - +++++
+26 Nov 2020 13:26.16 [INFO ] ReferenceMarkerMatcher    -   Nguyen, T.-P. and Le, A.-C. (2016). A Hybrid Ap-
+proach to Vietnamese Word Segmentation. In Pro-
+ceedings of the 2016 IEEE RIVF International Con-
+ference on Computing and Communication Tech-
+nologies: Research, Innovation, and Vision for the 
+Future, pages 114-119.
+26 Nov 2020 13:26.16 [INFO ] ReferenceMarkerMatcher    - +++++
+26 Nov 2020 13:26.16 [INFO ] ReferenceMarkerMatcher    -   Nguyen, D. Q., Nguyen, D. Q., Pham, D. D., and 
+Pham, S. B. (2016). A Robust Transformation-
+Based Learning Approach Using Ripple Down 
+Rules for Part-of-Speech Tagging. AI Communica-
+tions, 29(3):409-422.
+26 Nov 2020 13:26.16 [INFO ] ReferenceMarkerMatcher    - +++++
+26 Nov 2020 13:26.16 [INFO ] ReferenceMarkerMatcher    -   Nguyen, T.-P. and Le, A.-C. (2016). A Hybrid Ap-
+proach to Vietnamese Word Segmentation. In Pro-
+ceedings of the 2016 IEEE RIVF International Con-
+ference on Computing and Communication Tech-
+nologies: Research, Innovation, and Vision for the 
+Future, pages 114-119.
+26 Nov 2020 13:26.16 [INFO ] ReferenceMarkerMatcher    - +++++
+26 Nov 2020 13:26.16 [INFO ] ReferenceMarkerMatcher    -   Nguyen, D. Q., Nguyen, D. Q., Pham, D. D., and 
+Pham, S. B. (2016). A Robust Transformation-
+Based Learning Approach Using Ripple Down 
+Rules for Part-of-Speech Tagging. AI Communica-
+tions, 29(3):409-422.
+26 Nov 2020 13:26.18 [INFO ] ReferenceMarkerMatcher    - +++++
+26 Nov 2020 13:26.18 [INFO ] ReferenceMarkerMatcher    -   Nguyen, T.-P. and Le, A.-C. (2016). A Hybrid Ap-
+proach to Vietnamese Word Segmentation. In Pro-
+ceedings of the 2016 IEEE RIVF International Con-
+ference on Computing and Communication Tech-
+nologies: Research, Innovation, and Vision for the 
+Future, pages 114-119.
+26 Nov 2020 13:26.18 [INFO ] ReferenceMarkerMatcher    - +++++
+26 Nov 2020 13:26.18 [INFO ] ReferenceMarkerMatcher    -   Nguyen, D. Q., Nguyen, D. Q., Pham, D. D., and 
+Pham, S. B. (2016). A Robust Transformation-
+Based Learning Approach Using Ripple Down 
+Rules for Part-of-Speech Tagging. AI Communica-
+tions, 29(3):409-422.
+26 Nov 2020 13:26.18 [INFO ] ReferenceMarkerMatcher    - +++++
+26 Nov 2020 13:26.18 [INFO ] ReferenceMarkerMatcher    -   Nguyen, T.-P. and Le, A.-C. (2016). A Hybrid Ap-
+proach to Vietnamese Word Segmentation. In Pro-
+ceedings of the 2016 IEEE RIVF International Con-
+ference on Computing and Communication Tech-
+nologies: Research, Innovation, and Vision for the 
+Future, pages 114-119.
+26 Nov 2020 13:26.18 [INFO ] ReferenceMarkerMatcher    - +++++
+26 Nov 2020 13:26.18 [INFO ] ReferenceMarkerMatcher    -   Nguyen, D. Q., Nguyen, D. Q., Pham, D. D., and 
+Pham, S. B. (2016). A Robust Transformation-
+Based Learning Approach Using Ripple Down 
+Rules for Part-of-Speech Tagging. AI Communica-
+tions, 29(3):409-422.
+26 Nov 2020 19:42.42 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+26 Nov 2020 19:42.42 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 19:42.42 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home
+26 Nov 2020 19:42.42 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 19:42.42 [WARN ] GrobidHomeFinder          - Grobid property file location was not explicitly set via 'org.grobid.property' system variable, defaulting to: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\config\grobid.properties
+26 Nov 2020 19:42.42 [INFO ] LibraryLoader             - Loading external native CRF library
+26 Nov 2020 19:42.42 [INFO ] LibraryLoader             - Loading Wapiti native library...
+26 Nov 2020 19:42.42 [INFO ] LibraryLoader             - Library crfpp loaded
+26 Nov 2020 19:42.42 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\fulltext\model.wapiti (size: 20462507)
+26 Nov 2020 19:42.45 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\segmentation\model.wapiti (size: 15807193)
+26 Nov 2020 19:42.47 [INFO ] Lexicon                   - Initiating dictionary
+26 Nov 2020 19:42.47 [INFO ] Lexicon                   - End of Initialization of dictionary
+26 Nov 2020 19:42.47 [INFO ] Lexicon                   - Initiating names
+26 Nov 2020 19:42.47 [INFO ] Lexicon                   - End of initialization of names
+26 Nov 2020 19:42.48 [INFO ] Lexicon                   - Initiating country codes
+26 Nov 2020 19:42.48 [INFO ] Lexicon                   - End of initialization of country codes
+26 Nov 2020 19:42.49 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\figure\model.wapiti (size: 679648)
+26 Nov 2020 19:42.49 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\table\model.wapiti (size: 1337339)
+26 Nov 2020 19:42.50 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\header\model.wapiti (size: 36094028)
+26 Nov 2020 19:42.55 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\header\model.wapiti (size: 2225578)
+26 Nov 2020 19:42.55 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\citation\model.wapiti (size: 393118)
+26 Nov 2020 19:42.55 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\affiliation-address\model.wapiti (size: 2700194)
+26 Nov 2020 19:42.58 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\citation\model.wapiti (size: 16235248)
+26 Nov 2020 19:43.00 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\reference-segmenter\model.wapiti (size: 4829569)
+26 Nov 2020 19:43.19 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\date\model.wapiti (size: 102435)
+26 Nov 2020 19:47.08 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+26 Nov 2020 19:47.08 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 19:47.08 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home
+26 Nov 2020 19:47.08 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 19:47.08 [WARN ] GrobidHomeFinder          - Grobid property file location was not explicitly set via 'org.grobid.property' system variable, defaulting to: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\config\grobid.properties
+26 Nov 2020 19:47.08 [INFO ] LibraryLoader             - Loading external native CRF library
+26 Nov 2020 19:47.08 [INFO ] LibraryLoader             - Loading Wapiti native library...
+26 Nov 2020 19:47.08 [INFO ] LibraryLoader             - Library crfpp loaded
+26 Nov 2020 19:47.08 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\fulltext\model.wapiti (size: 20462507)
+26 Nov 2020 19:47.11 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\segmentation\model.wapiti (size: 15807193)
+26 Nov 2020 19:47.13 [INFO ] Lexicon                   - Initiating dictionary
+26 Nov 2020 19:47.13 [INFO ] Lexicon                   - End of Initialization of dictionary
+26 Nov 2020 19:47.13 [INFO ] Lexicon                   - Initiating names
+26 Nov 2020 19:47.13 [INFO ] Lexicon                   - End of initialization of names
+26 Nov 2020 19:47.14 [INFO ] Lexicon                   - Initiating country codes
+26 Nov 2020 19:47.14 [INFO ] Lexicon                   - End of initialization of country codes
+26 Nov 2020 19:47.15 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\figure\model.wapiti (size: 679648)
+26 Nov 2020 19:47.15 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\table\model.wapiti (size: 1337339)
+26 Nov 2020 19:47.16 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\header\model.wapiti (size: 36094028)
+26 Nov 2020 19:47.21 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\header\model.wapiti (size: 2225578)
+26 Nov 2020 19:47.21 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\citation\model.wapiti (size: 393118)
+26 Nov 2020 19:47.21 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\affiliation-address\model.wapiti (size: 2700194)
+26 Nov 2020 19:47.23 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\citation\model.wapiti (size: 16235248)
+26 Nov 2020 19:47.25 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\reference-segmenter\model.wapiti (size: 4829569)
+26 Nov 2020 19:47.45 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\date\model.wapiti (size: 102435)
+26 Nov 2020 19:50.25 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+26 Nov 2020 19:50.25 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 19:50.25 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home
+26 Nov 2020 19:50.25 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 19:50.25 [WARN ] GrobidHomeFinder          - Grobid property file location was not explicitly set via 'org.grobid.property' system variable, defaulting to: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\config\grobid.properties
+26 Nov 2020 19:50.25 [INFO ] LibraryLoader             - Loading external native CRF library
+26 Nov 2020 19:50.25 [INFO ] LibraryLoader             - Loading Wapiti native library...
+26 Nov 2020 19:50.25 [INFO ] LibraryLoader             - Library crfpp loaded
+26 Nov 2020 19:50.25 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\fulltext\model.wapiti (size: 20462507)
+26 Nov 2020 19:50.29 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\segmentation\model.wapiti (size: 15807193)
+26 Nov 2020 19:50.31 [INFO ] Lexicon                   - Initiating dictionary
+26 Nov 2020 19:50.31 [INFO ] Lexicon                   - End of Initialization of dictionary
+26 Nov 2020 19:50.31 [INFO ] Lexicon                   - Initiating names
+26 Nov 2020 19:50.31 [INFO ] Lexicon                   - End of initialization of names
+26 Nov 2020 19:50.31 [INFO ] Lexicon                   - Initiating country codes
+26 Nov 2020 19:50.31 [INFO ] Lexicon                   - End of initialization of country codes
+26 Nov 2020 19:50.33 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\figure\model.wapiti (size: 679648)
+26 Nov 2020 19:50.33 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\table\model.wapiti (size: 1337339)
+26 Nov 2020 19:50.33 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\header\model.wapiti (size: 36094028)
+26 Nov 2020 19:50.39 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\header\model.wapiti (size: 2225578)
+26 Nov 2020 19:50.39 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\citation\model.wapiti (size: 393118)
+26 Nov 2020 19:50.39 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\affiliation-address\model.wapiti (size: 2700194)
+26 Nov 2020 19:50.41 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\citation\model.wapiti (size: 16235248)
+26 Nov 2020 19:50.43 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\reference-segmenter\model.wapiti (size: 4829569)
+26 Nov 2020 19:51.02 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\date\model.wapiti (size: 102435)
+26 Nov 2020 20:12.28 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+26 Nov 2020 20:12.28 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 20:12.28 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home
+26 Nov 2020 20:12.28 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 20:12.28 [WARN ] GrobidHomeFinder          - Grobid property file location was not explicitly set via 'org.grobid.property' system variable, defaulting to: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\config\grobid.properties
+26 Nov 2020 20:12.28 [INFO ] LibraryLoader             - Loading external native CRF library
+26 Nov 2020 20:12.28 [INFO ] LibraryLoader             - Loading Wapiti native library...
+26 Nov 2020 20:12.28 [INFO ] LibraryLoader             - Library crfpp loaded
+26 Nov 2020 20:12.28 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\fulltext\model.wapiti (size: 20462507)
+26 Nov 2020 20:12.32 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\segmentation\model.wapiti (size: 15807193)
+26 Nov 2020 20:12.34 [INFO ] Lexicon                   - Initiating dictionary
+26 Nov 2020 20:12.34 [INFO ] Lexicon                   - End of Initialization of dictionary
+26 Nov 2020 20:12.34 [INFO ] Lexicon                   - Initiating names
+26 Nov 2020 20:12.34 [INFO ] Lexicon                   - End of initialization of names
+26 Nov 2020 20:12.34 [INFO ] Lexicon                   - Initiating country codes
+26 Nov 2020 20:12.34 [INFO ] Lexicon                   - End of initialization of country codes
+26 Nov 2020 20:12.35 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\figure\model.wapiti (size: 679648)
+26 Nov 2020 20:12.36 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\table\model.wapiti (size: 1337339)
+26 Nov 2020 20:12.36 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\header\model.wapiti (size: 36094028)
+26 Nov 2020 20:12.41 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\header\model.wapiti (size: 2225578)
+26 Nov 2020 20:12.41 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\citation\model.wapiti (size: 393118)
+26 Nov 2020 20:12.42 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\affiliation-address\model.wapiti (size: 2700194)
+26 Nov 2020 20:12.44 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\citation\model.wapiti (size: 16235248)
+26 Nov 2020 20:12.46 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\reference-segmenter\model.wapiti (size: 4829569)
+26 Nov 2020 20:13.05 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\date\model.wapiti (size: 102435)
+26 Nov 2020 20:17.43 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+26 Nov 2020 20:17.43 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 20:17.43 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home
+26 Nov 2020 20:17.43 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 20:17.43 [WARN ] GrobidHomeFinder          - Grobid property file location was not explicitly set via 'org.grobid.property' system variable, defaulting to: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\config\grobid.properties
+26 Nov 2020 20:17.43 [INFO ] LibraryLoader             - Loading external native CRF library
+26 Nov 2020 20:17.43 [INFO ] LibraryLoader             - Loading Wapiti native library...
+26 Nov 2020 20:17.43 [INFO ] LibraryLoader             - Library crfpp loaded
+26 Nov 2020 20:17.43 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\fulltext\model.wapiti (size: 20462507)
+26 Nov 2020 20:17.48 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\segmentation\model.wapiti (size: 15807193)
+26 Nov 2020 20:17.52 [INFO ] Lexicon                   - Initiating dictionary
+26 Nov 2020 20:17.52 [INFO ] Lexicon                   - End of Initialization of dictionary
+26 Nov 2020 20:17.52 [INFO ] Lexicon                   - Initiating names
+26 Nov 2020 20:17.52 [INFO ] Lexicon                   - End of initialization of names
+26 Nov 2020 20:17.52 [INFO ] Lexicon                   - Initiating country codes
+26 Nov 2020 20:17.52 [INFO ] Lexicon                   - End of initialization of country codes
+26 Nov 2020 20:17.53 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\figure\model.wapiti (size: 679648)
+26 Nov 2020 20:17.54 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\table\model.wapiti (size: 1337339)
+26 Nov 2020 20:17.54 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\header\model.wapiti (size: 36094028)
+26 Nov 2020 20:17.59 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\header\model.wapiti (size: 2225578)
+26 Nov 2020 20:17.59 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\citation\model.wapiti (size: 393118)
+26 Nov 2020 20:18.00 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\affiliation-address\model.wapiti (size: 2700194)
+26 Nov 2020 20:18.02 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\citation\model.wapiti (size: 16235248)
+26 Nov 2020 20:18.04 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\reference-segmenter\model.wapiti (size: 4829569)
+26 Nov 2020 20:18.25 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\date\model.wapiti (size: 102435)
+26 Nov 2020 20:22.20 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+26 Nov 2020 20:22.20 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 20:22.20 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home
+26 Nov 2020 20:22.20 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 20:22.20 [WARN ] GrobidHomeFinder          - Grobid property file location was not explicitly set via 'org.grobid.property' system variable, defaulting to: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\config\grobid.properties
+26 Nov 2020 20:22.20 [INFO ] LibraryLoader             - Loading external native CRF library
+26 Nov 2020 20:22.20 [INFO ] LibraryLoader             - Loading Wapiti native library...
+26 Nov 2020 20:22.20 [INFO ] LibraryLoader             - Library crfpp loaded
+26 Nov 2020 20:22.20 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\fulltext\model.wapiti (size: 20462507)
+26 Nov 2020 20:22.23 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\segmentation\model.wapiti (size: 15807193)
+26 Nov 2020 20:22.25 [INFO ] Lexicon                   - Initiating dictionary
+26 Nov 2020 20:22.25 [INFO ] Lexicon                   - End of Initialization of dictionary
+26 Nov 2020 20:22.25 [INFO ] Lexicon                   - Initiating names
+26 Nov 2020 20:22.25 [INFO ] Lexicon                   - End of initialization of names
+26 Nov 2020 20:22.26 [INFO ] Lexicon                   - Initiating country codes
+26 Nov 2020 20:22.26 [INFO ] Lexicon                   - End of initialization of country codes
+26 Nov 2020 20:22.27 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\figure\model.wapiti (size: 679648)
+26 Nov 2020 20:22.27 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\table\model.wapiti (size: 1337339)
+26 Nov 2020 20:22.28 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\header\model.wapiti (size: 36094028)
+26 Nov 2020 20:22.33 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\header\model.wapiti (size: 2225578)
+26 Nov 2020 20:22.33 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\citation\model.wapiti (size: 393118)
+26 Nov 2020 20:22.33 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\affiliation-address\model.wapiti (size: 2700194)
+26 Nov 2020 20:22.36 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\citation\model.wapiti (size: 16235248)
+26 Nov 2020 20:22.38 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\reference-segmenter\model.wapiti (size: 4829569)
+26 Nov 2020 20:22.58 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\date\model.wapiti (size: 102435)
+26 Nov 2020 20:24.35 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+26 Nov 2020 20:24.35 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 20:24.35 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home
+26 Nov 2020 20:24.35 [WARN ] GrobidHomeFinder          - ***************************************************************
+26 Nov 2020 20:24.35 [WARN ] GrobidHomeFinder          - Grobid property file location was not explicitly set via 'org.grobid.property' system variable, defaulting to: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\config\grobid.properties
+26 Nov 2020 20:24.35 [INFO ] LibraryLoader             - Loading external native CRF library
+26 Nov 2020 20:24.35 [INFO ] LibraryLoader             - Loading Wapiti native library...
+26 Nov 2020 20:24.35 [INFO ] LibraryLoader             - Library crfpp loaded
+26 Nov 2020 20:24.36 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\fulltext\model.wapiti (size: 20462507)
+26 Nov 2020 20:24.43 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\segmentation\model.wapiti (size: 15807193)
+26 Nov 2020 20:24.48 [INFO ] Lexicon                   - Initiating dictionary
+26 Nov 2020 20:24.48 [INFO ] Lexicon                   - End of Initialization of dictionary
+26 Nov 2020 20:24.48 [INFO ] Lexicon                   - Initiating names
+26 Nov 2020 20:24.48 [INFO ] Lexicon                   - End of initialization of names
+26 Nov 2020 20:24.49 [INFO ] Lexicon                   - Initiating country codes
+26 Nov 2020 20:24.49 [INFO ] Lexicon                   - End of initialization of country codes
+26 Nov 2020 20:24.50 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\figure\model.wapiti (size: 679648)
+26 Nov 2020 20:24.50 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\table\model.wapiti (size: 1337339)
+26 Nov 2020 20:24.50 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\header\model.wapiti (size: 36094028)
+26 Nov 2020 20:24.56 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\header\model.wapiti (size: 2225578)
+26 Nov 2020 20:24.56 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\name\citation\model.wapiti (size: 393118)
+26 Nov 2020 20:24.56 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\affiliation-address\model.wapiti (size: 2700194)
+26 Nov 2020 20:24.59 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\citation\model.wapiti (size: 16235248)
+26 Nov 2020 20:25.01 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\reference-segmenter\model.wapiti (size: 4829569)
+26 Nov 2020 20:25.42 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\date\model.wapiti (size: 102435)
