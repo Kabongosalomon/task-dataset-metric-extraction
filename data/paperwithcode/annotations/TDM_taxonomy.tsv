@@ -25,9 +25,9 @@ Link Prediction#Cora#AUC	4
 Link Prediction#Cora#Accuracy	2
 Link Prediction#IMDb#AUC	1
 Link Prediction#Yelp#AUC	1
-Link Prediction#Citeseer (biased eu.tib.sre.evaluation)#AP	2
-Link Prediction#Citeseer (biased eu.tib.sre.evaluation)#AUC	2
-Link Prediction#Citeseer (biased eu.tib.sre.evaluation)#Accuracy	1
+Link Prediction#Citeseer (biased evaluation)#AP	2
+Link Prediction#Citeseer (biased evaluation)#AUC	2
+Link Prediction#Citeseer (biased evaluation)#Accuracy	1
 Link Prediction#YAGO3-10#Hits@1	5
 Link Prediction#YAGO3-10#Hits@10	7
 Link Prediction#YAGO3-10#Hits@3	4

@@ -26,8 +26,8 @@
 1611.07308v1.pdf	Link Prediction#Cora#Accuracy#92.00%
 1901.10234v2.pdf	Link Prediction#IMDb#AUC#89.4
 1902.06684v1.pdf	Link Prediction#Yelp#AUC#90.1
-1906.12330v1.pdf	Link Prediction#Citeseer (biased eu.tib.sre.evaluation)#AP#97.93$Link Prediction#Citeseer (biased eu.tib.sre.evaluation)#AUC#97.47$Link Prediction#Citeseer (biased eu.tib.sre.evaluation)#Accuracy#97.7
-1809.10851v2.pdf	Link Prediction#Citeseer (biased eu.tib.sre.evaluation)#AP#97.57$Link Prediction#Citeseer (biased eu.tib.sre.evaluation)#AUC#97.27
+1906.12330v1.pdf	Link Prediction#Citeseer (biased evaluation)#AP#97.93$Link Prediction#Citeseer (biased evaluation)#AUC#97.47$Link Prediction#Citeseer (biased evaluation)#Accuracy#97.7
+1809.10851v2.pdf	Link Prediction#Citeseer (biased evaluation)#AP#97.57$Link Prediction#Citeseer (biased evaluation)#AUC#97.27
 2005.00545.pdf	Link Prediction#YAGO3-10#Hits@1#0.503$Link Prediction#YAGO3-10#Hits@10#0.712$Link Prediction#YAGO3-10#Hits@3#0.621$Link Prediction#YAGO3-10#MRR#0.577
 1806.07297v1.pdf	Link Prediction#YAGO3-10#Hits@10#0.71$Link Prediction#YAGO3-10#MRR#0.58
 1911.09419v2.pdf	Link Prediction#YAGO3-10#Hits@1#0.462$Link Prediction#YAGO3-10#Hits@10#0.694$Link Prediction#YAGO3-10#Hits@3#0.596$Link Prediction#YAGO3-10#MRR#0.545

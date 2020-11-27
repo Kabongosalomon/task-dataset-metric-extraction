@@ -23,8 +23,9 @@ public class Main {
         String b = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\";
         // Only consider leaderboard that have atleast 5 papers
         Integer threshold = 5;
+        Integer numbNegative = 800000;
 
-        DatasetGeneration.getTrainData(pdfDir , b, threshold);
+        DatasetGeneration.getTrainData(pdfDir , b, threshold, numbNegative);
 
     }
 

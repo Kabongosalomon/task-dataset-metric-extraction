@@ -6,10 +6,7 @@ import org.apache.commons.io.FileUtils;
 
 import java.io.*;
 import java.text.ParseException;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
+import java.util.*;
 
 public class DatasetGeneration {
 
@@ -17,7 +14,7 @@ public class DatasetGeneration {
     private static String TDM_taxonomy;
     private static String resultsAnnotation;
     private  static HashMap<String,Integer> mapDict;
-    private  static HashMap<String,String> mapLabel;
+    private  static HashMap<String,ArrayList<String>> mapLabel;
 
 
 
@@ -28,7 +25,7 @@ public class DatasetGeneration {
     ;
 
 //    public static String getTrainingData(String pdfDir, String[] args) throws IOException, Exception {
-    public static String getTrainData(String pdfDir, String b, Integer threshold) throws IOException, Exception {
+    public static String getTrainData(String pdfDir, String b, Integer threshold, Integer numbNegative) throws IOException, Exception {
 
 //        prop = new Properties();
 //        prop.load(new FileReader("config.properties"));
@@ -48,7 +45,7 @@ public class DatasetGeneration {
 //                String pdf_file = FileUtils.readFileToString(file);
                 String pdf_file = file.getPath();
 //                String pdf_file pdf_file = file;
-
+                Set<String> trueTDM = new HashSet<String>();
                 System.out.println(">>>> Processing file: " + pdf_file);
 
 
@@ -68,52 +65,84 @@ public class DatasetGeneration {
                     List<String> labels = FileUtils.readLines(new File(labels_file));
                     String pdf_filename = new File(pdf_file).getName();
 
-                    for (String label : labels) {
-                        output.write(("true\t" + pdf_filename + "\t"+label+"\t" + docTEATStr + "\n").getBytes());
+
+                    for (int i = 0; i < mapLabel.get(pdf_filename).size(); i++) {
+                        output.write(("true\t" + pdf_filename + "\t"+mapLabel.get(pdf_filename).get(i)+"\t" + docTEATStr + "\n").getBytes());
+                        trueTDM.add(mapLabel.get(pdf_filename).get(i));
                     }
 
-                    output.write(("true\t" + pdf_filename + "\tunknown\t" + docTEATStr + "\n").getBytes());
+                    int limit = 0;
+                    for (String label : labels) {
+                        if (limit>=numbNegative){
+                            break;
+                        }
+                        if (!trueTDM.contains(label)) {
+                            output.write(("False\t" + pdf_filename + "\t" + label + "\t" + docTEATStr + "\n").getBytes());
+                        }
+                        limit += 1;
+                    }
+
                 }
             }
         }
 
-
+        output.close();
 
         return "Done";
     }
 
-    private static HashMap<String, String> getMapTitlepdfLabel(String resultsAnnotation, HashMap<String, Integer> mapDict, Integer threshold) throws ParseException, IOException{
+    private static HashMap<String, ArrayList<String>> getMapTitlepdfLabel(String resultsAnnotation, HashMap<String, Integer> mapDict, Integer threshold) throws ParseException, IOException {
         BufferedReader br = new BufferedReader(new FileReader(resultsAnnotation));
-        String line =  null;
-        HashMap<String,String> map = new HashMap<String, String>();
+        String line = null;
+        HashMap<String, ArrayList<String>> map = new HashMap<String, ArrayList<String>>();
 
         String TDM;
 
-        while((line=br.readLine())!=null){
-            String str[] = line.split("\t");
+        Integer j = 0;
+        while ((line = br.readLine()) != null) {
+            if (line.length() != 0) {
+                j += 1;
+                String str[] = line.split("\t");
 
-            String TDMs[] = str[1].split("$");
+                String TDMs[] = str[1].split("\\$");
 
-//            String preTDM = str[1].split("#")[0];
+    //            String preTDM = str[1].split("#")[0];
 
-            for(int i=0;i<TDMs.length;i++){
-//                String preTDM = TDMs[i].substring(TDMs[i].lastIndexOf("#") + 1);
-                int sepPos = TDMs[i].lastIndexOf("#");
-                if (sepPos == -1) {
-                    System.out.println("");
+                for (int i = 0; i < TDMs.length; i++) {
+    //                String preTDM = TDMs[i].substring(TDMs[i].lastIndexOf("#") + 1);
+                    int sepPos = TDMs[i].lastIndexOf("#");
+                    if (sepPos == -1) {
+                        System.out.println("");
+                    }
+
+                    String preTDM = TDMs[i].substring(0, sepPos);
+
+//                    if (j == 2583) {
+//                        System.out.println("Usage: java eu.tib.sre.Main.java <pdf-file-path> <resources-dir>");
+//                    }
+
+                    if (mapDict.get(preTDM) >= threshold) {
+                        TDM = preTDM;
+                    } else {
+                        TDM = "unknow";
+                    }
+
+                    ArrayList<String> list;
+                    if(map.containsKey(str[0]) && map.get(str[0]).get(0) != "unknow" ){
+                        // if the key has already been used,
+                        // we'll just grab the array list and add the value to it
+                        list = map.get(str[0]);
+                        list.add(TDM);
+                    } else {
+                        // if the key hasn't been used yet,
+                        // we'll create a new ArrayList<String> object, add the value
+                        // and put it in the array list with the new key
+                        list = new ArrayList<String>();
+                        list.add(TDM);
+                        map.put(str[0], list);
+                    }
+//                    map.put(str[0], TDM);
                 }
-
-                String preTDM = TDMs[i].substring(0,sepPos);
-
-                if (mapDict.get(preTDM) >= threshold){
-                    TDM = preTDM;
-                }
-                else{
-                    TDM = "unknown";
-                }
-
-                map.put(str[0], TDM);
-
             }
         }
         return map;
