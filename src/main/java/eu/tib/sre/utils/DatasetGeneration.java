@@ -117,10 +117,6 @@ public class DatasetGeneration {
 
                     String preTDM = TDMs[i].substring(0, sepPos);
 
-//                    if (j == 2583) {
-//                        System.out.println("Usage: java eu.tib.sre.Main.java <pdf-file-path> <resources-dir>");
-//                    }
-
                     if (mapDict.get(preTDM) >= threshold) {
                         TDM = preTDM;
                     } else {
@@ -201,6 +197,8 @@ public class DatasetGeneration {
 
     //    public static String getTestingData(String pdfDir, String[] args) throws IOException, Exception {
     public static String getTestData(String pdfDir, String b) throws IOException, Exception {
+
+        System.out.println("## Now Generating Test Data ##");
 
         FileOutputStream output = new FileOutputStream(b+"testOutput.tsv");
 //        FileOutputStream output = new FileOutputStream(args[2]+"testOutput.tsv");

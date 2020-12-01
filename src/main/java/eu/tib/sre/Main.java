@@ -21,11 +21,14 @@ public class Main {
 
         String pdfDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\";
         String b = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\";
+
         // Only consider leaderboard that have atleast 5 papers
-        Integer threshold = 5;
-        Integer numbNegative = 800000;
+        Integer threshold = 3;
+        Integer numbNegative = 50;
 
         DatasetGeneration.getTrainData(pdfDir , b, threshold, numbNegative);
+
+        DatasetGeneration.getTestData(pdfDir , b);
 
     }
 
