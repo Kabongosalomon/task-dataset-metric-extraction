@@ -353,33 +353,45 @@ def get_TDM_taxonomy(task, dataset, metric, score):
     TDM_taxonomy[task+"#"+dataset+"#"+metric] += 1
 
 def get_title_taxonomy(paper_title):
-    title_taxonomy[paper_title] += 1
+    paper_name_taxonomy[paper_title] += 1
 
 
-def resultsAnnotation(paper_title, task, dataset, metric, score, first=True):      
-    
-    with open("./annotations/resultsAnnotation.tsv", \
-                        "a+", encoding="utf-8") as text_file:
+def resultsAnnotation(paper_name, task, dataset, metric, score):
+    path = "./annotations/resultsAnnotation.tsv"
+    with open(path, "a+", encoding="utf-8") as text_file:
 
-        if first:
-            text_file.write(paper_title+"\t"+task+"#"+dataset+"#"+metric+"#"+score)
+        if paper_name not in paper_name_taxonomy:
+            # if first:
+            text_file.write(paper_name+"\t"+task+"#"+dataset+"#"+metric+"#"+score+"\n")
         else:
-            text_file.write("$")   
-            text_file.write(task+"#"+dataset+"#"+metric+"#"+score) 
+            # TODO: This approach is not optimal nor scalable, need to redo this
+            with open(path, 'r',encoding="utf-8") as file:
+                # read a list of lines into data
+                data = file.readlines()
+
+            for i, key in enumerate(reversed(data)):
+                if key.split("\t")[0] == paper_name:
+                    data[len(data)-i-1] = data[len(data)-i-1].replace("\n", '')+\
+                            '$'+task+"#"+dataset+"#"+metric+"#"+score+"\n"
+                    break
+
+            # # and write everything back
+            with open(path, 'w', encoding="utf-8") as file:
+                file.writelines( data )
 
         # this is to keep track of occurance of a leaderboard     
         TDM_taxonomy[task+"#"+dataset+"#"+metric]+=1
 
-        title_taxonomy[paper_title]+=1
+        paper_name_taxonomy[paper_name]+=1
 
 def parse_TDM_taxonomy(TDM_taxonomy):      
     with open("./annotations/TDM_taxonomy.tsv", "a+", encoding="utf-8") as text_file:
         for key, value in TDM_taxonomy.items():
             text_file.write(key+"\t"+str(value)+"\n")
 
-def parse_title_taxonomy(title_taxonomy):      
-    with open("./annotations/title_taxonomy.tsv", "a+", encoding="utf-8") as text_file:
-        for key, value in title_taxonomy.items():
+def parse_title_taxonomy(paper_name_taxonomy):
+    with open("./annotations/paper_name_taxonomy.tsv", "a+", encoding="utf-8") as text_file:
+        for key, value in paper_name_taxonomy.items():
             text_file.write(key+"\t"+str(value)+"\n")
         
 
@@ -454,8 +466,6 @@ def parseTask(obj):
             
             paper_url = row['paper_url']
 
-            # ipdb.set_trace()
-
             if paper_url == "" or paper_url[-4:] == "html":
                 continue
 
@@ -469,9 +479,13 @@ def parseTask(obj):
 
             paper_title = paper_url.split('/')[-1]
 
-            if (paper_title in title_taxonomy) or (paper_url.split("//")[1][:5] != 'arxiv'):
-                # TODO need to find a clever way to deal with the case of repeated paper 
-                # at different part of the json 
+            # if (paper_title in paper_name_taxonomy) or (paper_url.split("//")[1][:5] != 'arxiv'):
+            #     # TODO need to find a clever way to deal with the case of repeated paper
+            #     # at different part of the json
+            #     continue
+
+            if (paper_url.split("//")[1][:5] != 'arxiv'):
+                # TODO need to find a clever way to deal with paper not from arxiv
                 continue
 
             # TODO I need to improve this for many metrics 
@@ -480,24 +494,23 @@ def parseTask(obj):
                 # rows = dt["sota"]["rows"]
                 # not all the metrics in sota are in metrics rows
 
-                if i == 0:
-                    resultsAnnotation(paper_title, task, \
-                                dataset, metric, score, first=True)
+                resultsAnnotation(paper_title, task, \
+                                  dataset, metric, score)
 
-                else:
-                    resultsAnnotation(paper_title, task, \
-                                dataset, metric, score, first=False)
-                    # datasetAnnotation(paper_title, dataset, first=False)
-                    # taskAnnotation(paper_title, task, first=False)
-                
-            with open("./annotations/resultsAnnotation.tsv", "a+", encoding="utf-8") as text_file:
-                text_file.write("\n")
+            # with open("./annotations/resultsAnnotation.tsv", "a+", encoding="utf-8") as text_file:
+            #     text_file.write("\n")
 
             taskAnnotation(paper_title, task, first=True)
 
             datasetAnnotation(paper_title, dataset, first=True)
 
             paper_links(paper_title, paper_url)
+
+    subtasks = obj["subtasks"]
+
+    for subtask in subtasks:
+        parseTask(subtask)
+
         
     
 def createEvaluationSubgraph(obj):
@@ -532,7 +545,7 @@ def is_not_blank(string):
 
 import  os
 
-title_taxonomy = defaultdict(lambda : 0)
+paper_name_taxonomy = defaultdict(lambda : 0)
 
 
 if __name__ == '__main__':
@@ -552,11 +565,11 @@ if __name__ == '__main__':
     filePath_task = "./annotations/taskAnnotation.tsv"
     filePath_links = "./downloader/paper_links.tsv"
     filePath_TDM = "./annotations/TDM_taxonomy.tsv"
+    filePath_PaperName = "./annotations/paper_name_taxonomy.tsv"
 
 
     for filePath in [filePath_result, filePath_dataset, \
-                    filePath_task, filePath_links, filePath_TDM]:
-
+                    filePath_task, filePath_links, filePath_TDM, filePath_PaperName]:
         if os.path.exists(filePath):
             os.remove(filePath)
     
@@ -591,7 +604,7 @@ if __name__ == '__main__':
 
     # Saving the file from default dic to .tsv 
     parse_TDM_taxonomy(TDM_taxonomy)
-    parse_title_taxonomy(title_taxonomy)
+    parse_title_taxonomy(paper_name_taxonomy)
 
     # Clean the previously downloaded files for a minimum number of paper 
 
