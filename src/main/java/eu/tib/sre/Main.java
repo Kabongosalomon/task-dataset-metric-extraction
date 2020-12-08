@@ -20,22 +20,23 @@ public class Main {
 //        args[0] = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\50.pdf";
 //        args[1] = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\";
 
-        String pdfDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\";
+        String pdfDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\paperwithcode\\pdf\\";
+//        String pdfDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\";
 //        String pdfDir = "D:\\ORKG\\NLP\\science-result-extractor\\nlpLeaderboard\\src\\main\\java\\com\\ibm\\sre\\data\\pdfFile\\";
         String b = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\";
 
         // Only consider leaderboard that have atleast 5 papers
         Integer threshold = 5;
-        Integer numbNegative = 50;
+        Integer numbNegative = 100;
 
         DatasetGeneration.getTrainData(pdfDir , b, threshold, numbNegative);
 ////
-//        DatasetGeneration.getTestData(pdfDir , b);
+        DatasetGeneration.getTestData(pdfDir , b);
 
-        GenerateTestDataOnPDFPapers createTestdata = new GenerateTestDataOnPDFPapers();
+//        GenerateTestDataOnPDFPapers createTestdata = new GenerateTestDataOnPDFPapers();
 //
-        createTestdata.generateTestData4ScorePrediction("D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\",
-                "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\test_score.tsv");
+//        createTestdata.generateTestData4ScorePrediction("D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\",
+//                "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\test_score.tsv");
 
 //        createTestdata.generateTestData4ScorePrediction("D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\",
 //                "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\train_score.tsv");
