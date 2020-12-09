@@ -52,8 +52,9 @@ public class TwoFoldCrossValidation {
         //"C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\paperswithcodeTrainingData.tsv";
                 //"C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\paperswithcodeFullData.tsv";
                 //"C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\paperswithcode500UnkData.tsv";
-                "C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\paperswithcode600UnkDataTitleAbstract.tsv";
+        "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperswithcodedatawith600unk\\paperswithcode600UnkDataTitleAbstract.tsv";
         String[] lines = readFile(data_file, StandardCharsets.UTF_8).split("\\n");
+
         for (String line : lines) {
             line = line.trim();
             String[] tokens = line.split("\t");
@@ -77,7 +78,7 @@ public class TwoFoldCrossValidation {
         Map<Integer, List<Integer>> perfoldTestIndexes = getPerFoldTestIndexes(0, datasize, test_datasize);
 
         String outputDir = //"C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\twofold";
-                "C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\twofoldwithunk";
+                "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\twofoldwithunk";
         List<String> dataFiles = new ArrayList<>(data.keySet());
 
         for (int fold : perfoldTestIndexes.keySet()) {
