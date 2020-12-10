@@ -119,7 +119,8 @@ public class GenerateTestDataOnPDFPapers {
     public void generateTestData4ScorePrediction(String PdfFileFolder, String OutputFile) throws IOException, Exception {
         //collect predicting labels seen in the train.tsv
         Set<String> evaluatedLabels = new HashSet();
-        String file3 = prop.getProperty("projectPath") + "/" + "data/exp/few-shot-setup/NLP-TDMS/train.tsv";
+//        String file3 = prop.getProperty("projectPath") + "/" + "data/exp/few-shot-setup/NLP-TDMS/train.tsv";
+        String file3 = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\trainOutput.tsv";
         BufferedReader br3 = new BufferedReader(new FileReader(file3));
         String line3 = "";
         while ((line3 = br3.readLine()) != null) {
@@ -127,10 +128,10 @@ public class GenerateTestDataOnPDFPapers {
             if (leaderboard.equalsIgnoreCase("unknow")) {
                 continue;
             }
-            String task = leaderboard.split(",")[0];
-            String dataset = leaderboard.split(",")[1];
-            String eval = leaderboard.split(",")[2];
-            evaluatedLabels.add(dataset.trim() + ", " + eval.trim());
+            String task = leaderboard.split(";")[0];
+            String dataset = leaderboard.split(";")[1];
+            String eval = leaderboard.split(";")[2];
+            evaluatedLabels.add(dataset.trim() + "; " + eval.trim());
         }
 
         FileWriter writer1 = new FileWriter(new File(OutputFile));
@@ -256,10 +257,11 @@ public class GenerateTestDataOnPDFPapers {
 
 //    public static void main(String[] args) throws IOException, Exception {
 //        GenerateTestDataOnPDFPapers createTestdata = new GenerateTestDataOnPDFPapers();
-//        createTestdata.generateTestData4TDMPrediction("D:\\ORKG\\NLP\\science-result-extractor\\nlpLeaderboard\\src\\main\\java\\com\\ibm\\sre\\data\\pdfFile\\",
-//                "D:\\ORKG\\NLP\\science-result-extractor\\nlpLeaderboard\\src\\main\\java\\com\\ibm\\sre\\data\\test\\test_TDM.tsv");
-//        createTestdata.generateTestData4ScorePrediction("D:\\ORKG\\NLP\\science-result-extractor\\nlpLeaderboard\\src\\main\\java\\com\\ibm\\sre\\data\\pdfFile\\",
-//                "D:\\ORKG\\NLP\\science-result-extractor\\nlpLeaderboard\\src\\main\\java\\com\\ibm\\sre\\data\\test\\test_score.tsv");
+////        createTestdata.generateTestData4TDMPrediction("D:\\ORKG\\NLP\\science-result-extractor\\nlpLeaderboard\\src\\main\\java\\com\\ibm\\sre\\data\\pdfFile\\",
+////                "D:\\ORKG\\NLP\\science-result-extractor\\nlpLeaderboard\\src\\main\\java\\com\\ibm\\sre\\data\\test\\test_TDM.tsv");
+//        createTestdata.generateTestData4ScorePrediction("D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\",
+//                "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\test_score.tsv");
+////        "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\trainOutput.tsv"
 //    }
 
 }

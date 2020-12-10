@@ -1,6 +1,8 @@
 package eu.tib.sre;
 
 import eu.tib.sre.pdfparser.DocTAET;
+import eu.tib.sre.tdmsie.GenerateTestDataOnPDFPapers;
+import eu.tib.sre.utils.DatasetGeneration;
 import org.apache.commons.io.FileUtils;
 
 //import eu.tib.sre.pdfbox.*;
@@ -15,44 +17,29 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
-
 //        args[0] = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\50.pdf";
 //        args[1] = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\";
 
-        String a = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\50.pdf";
+        String pdfDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\paperwithcode\\pdf\\";
+//        String pdfDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\";
+//        String pdfDir = "D:\\ORKG\\NLP\\science-result-extractor\\nlpLeaderboard\\src\\main\\java\\com\\ibm\\sre\\data\\pdfFile\\";
         String b = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\";
 
-//        if (args.length != 2) {
-//            System.err.println("Usage: java eu.tib.sre.Main.java <pdf-file-path> <resources-dir>");
-//            System.exit(-1);
-//        }
+        // Only consider leaderboard that have atleast 5 papers
+        Integer threshold = 5;
+        Integer numbNegative = 100;
 
-//        String pdf_file = args[0];
-        String pdf_file = a;
+        DatasetGeneration.getTrainData(pdfDir , b, threshold, numbNegative);
+////
+        DatasetGeneration.getTestData(pdfDir , b);
 
-//        FileOutputStream output = new FileOutputStream(args[1]+"output.tsv");
-        FileOutputStream output = new FileOutputStream(b+"output_2.tsv");
+//        GenerateTestDataOnPDFPapers createTestdata = new GenerateTestDataOnPDFPapers();
+//
+//        createTestdata.generateTestData4ScorePrediction("D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\",
+//                "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\test_score.tsv");
 
-        System.out.println(">>>> Processing file: " + pdf_file);
-
-        String docTEATStr = DocTAET.getDocTAETRepresentation(pdf_file);
-        if (docTEATStr.equals("")) {
-            System.err.print("PDF parsing error!");
-        }
-        else {
-//            String labels_file = args[1]+"tdmGoldLabels.tsv";
-            String labels_file = b+"tdmGoldLabels.tsv";
-            List<String> labels = FileUtils.readLines(new File(labels_file));
-            String pdf_filename = new File(pdf_file).getName();
-
-            for (String label : labels) {
-                output.write(("true\t" + pdf_filename + "\t"+label+"\t" + docTEATStr + "\n").getBytes());
-            }
-
-            output.write(("true\t" + pdf_filename + "\tunknown\t" + docTEATStr + "\n").getBytes());
-        }
-
-
+//        createTestdata.generateTestData4ScorePrediction("D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\",
+//                "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\train_score.tsv");
     }
 
 }

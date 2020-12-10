@@ -8,3 +8,5 @@ build/
 drive/
 data/.ipynb_checkpoints/
 .ipynb_checkpoints/
+src/main/resources/twofoldwithunk/
+data/paperswithcodedatawith600unk/twofold/
