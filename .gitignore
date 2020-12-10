@@ -10,3 +10,6 @@ data/.ipynb_checkpoints/
 .ipynb_checkpoints/
 src/main/resources/twofoldwithunk/
 data/paperswithcodedatawith600unk/twofold/
+bert/
+data/exp/
+data/NLP-TDMS/
