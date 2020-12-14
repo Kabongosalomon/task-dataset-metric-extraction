@@ -169,41 +169,6 @@ def createPaperSubgraph(obj):
     tasks = obj["tasks"]
     
     return {title : {'url_pdf': url, 'tasks':tasks, 'dataset': [], 'metric': [], 'score': []}}
-
-    #--------------------------------------
-    # paper = createResource(title)['id']
-    # createResourceStatement(paper, 'P3', 'R10')
-    # #--------------------------------------
-    # RC = createResource("Contribution 1")['id']
-    # createResourceStatement(paper, 'P31', RC)
-    # resources[title] = RC
-    #--------------------------------------
-    # if arxiv_id is not None:
-    #     l_arxiv = createLiteral(arxiv_id)['id']
-    #     p_arxiv = createOrFindPredicate('has arxiv id')
-    #     createStatement(RC,p_arxiv,l_arxiv)
-    # #--------------------------------------
-    # if title is not None:
-    #     l_title = createLiteral(title)['id']
-    #     p_title = createOrFindPredicate('has title')
-    #     createStatement(RC,p_title,l_title)
-    # #--------------------------------------
-    # if abstract is not None:
-    #     l_abstract = createLiteral(abstract)['id']
-    #     p_abstract = createOrFindPredicate('has abstract')
-    #     createStatement(RC,p_abstract,l_abstract)
-    # #--------------------------------------
-    # if url is not None:
-    #     l_url = createLiteral(url)['id']
-    #     p_url = createOrFindPredicate('has url')
-    #     createStatement(RC,p_url,l_url)
-    # #--------------------------------------
-    # if proceeding is not None:
-    #     l_proceeding = createLiteral(proceeding)['id']
-    #     p_proceeding = createOrFindPredicate('has proceeding')
-    #     createStatement(RC,p_proceeding,l_proceeding)
-    # #print("added paper ({})".format(title))
-    
 def createCodeSubgraph(obj):
     """
     Create the subgraph relating to the provided json strucutre,
@@ -430,29 +395,6 @@ def parseTask(obj):
     obj : dict
         the json representation of the Task object
     """
-    # task = obj["task"]
-    # task_description = obj["description"]
-    # task_categories = obj["categories"]
-    # if task not in tasks:
-    #     task_id = createResource(task)["id"]
-    #     tasks[task] = task_id
-    #     desc_id = createLiteral(task_description)["id"]
-    #     pred_id = createOrFindPredicate("has description")
-    #     createStatement(task_id, pred_id, desc_id)
-    #     pred_id = createOrFindPredicate("has category")
-    #     for category in task_categories:
-    #         if category not in categories:
-    #             cat_id = createResource(category)["id"]
-    #             categories[category] = cat_id
-    #         else:
-    #             cat_id = categories[category]
-    #         createResourceStatement(task_id, pred_id, cat_id)
-    # for dataset in obj["datasets"]:
-    #     # need to add link between task and dataset (I think)
-    #     parseDataset(dataset)
-    # for subtask in obj["subtasks"]:
-    #     # need to add link between task and sub-task
-    #     parseTask(subtask)
 
     datasets = obj["datasets"]
 
@@ -497,8 +439,7 @@ def parseTask(obj):
                 resultsAnnotation(paper_title, task, \
                                   dataset, metric, score)
 
-            # with open("./annotations/resultsAnnotation.tsv", "a+", encoding="utf-8") as text_file:
-            #     text_file.write("\n")
+
 
             taskAnnotation(paper_title, task, first=True)
 
@@ -573,31 +514,6 @@ if __name__ == '__main__':
         if os.path.exists(filePath):
             os.remove(filePath)
     
-    #-------------------------------------------------
-    # for index, paper in enumerate(papersWithAbstracts):
-    #     if paper['title'] is None:
-    #         continue
-    #     #if index > 10000:
-    #     #    break
-
-    #     paper_data_metric_score.update(createPaperSubgraph(paper))
-
-    #     if index % 1000 == 0:
-    #         print(f"Paper #{index} done")
-    #-------------------------------------------------
-    # ipdb.set_trace()
-    # for index, paper in enumerate(papersWithCode):
-    #     createCodeSubgraph(paper)
-    #     if index % 50 == 0:
-    #         print("Implementation #{} done".format(index))
-    # for node in notfound:
-    #     new = createResource(node)['id']
-    #     resources[node] = new
-    #     result = findPaperInMemory(node, papersWithCode, 'paper_title')
-    #     createCodeSubgraph(result)
-
-    #-------------------------------------------------
-
     for entry in evalTables:
         createEvaluationSubgraph(entry)
    #-------------------------------------------------
