@@ -48,11 +48,15 @@ public class TwoFoldCrossValidation {
             System.out.println("Usage: java TwoFoldCrossValidation.java <data-file>");
             System.exit(-1);
         }*/
-        String data_file = //args[0];
-        //"C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\paperswithcodeTrainingData.tsv";
-                //"C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\paperswithcodeFullData.tsv";
-                //"C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\paperswithcode500UnkData.tsv";
-        "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperswithcodedatawith600unk\\paperswithcode600UnkDataTitleAbstract.tsv";
+//        String data_file = //args[0];
+//        //"C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\paperswithcodeTrainingData.tsv";
+//                //"C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\paperswithcodeFullData.tsv";
+//                //"C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\paperswithcode500UnkData.tsv";
+//        "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperswithcodedatawith600unk\\paperswithcode600UnkDataTitleAbstract.tsv";
+
+        String data_file =
+                "U:\\Documents\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperswithcodedatawith600unk\\paperswithcode600UnkDataTitleAbstract.tsv";
+
         String[] lines = readFile(data_file, StandardCharsets.UTF_8).split("\\n");
 
         for (String line : lines) {
@@ -77,8 +81,12 @@ public class TwoFoldCrossValidation {
 
         Map<Integer, List<Integer>> perfoldTestIndexes = getPerFoldTestIndexes(0, datasize, test_datasize);
 
+//        String outputDir = //"C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\twofold";
+//                "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\twofoldwithunk";
         String outputDir = //"C:\\Users\\DSouzaJ\\Desktop\\Datasets\\paperswithcode\\twofold";
-                "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\twofoldwithunk";
+                "U:\\Documents\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\twofoldwithunk";
+
+
         List<String> dataFiles = new ArrayList<>(data.keySet());
 
         for (int fold : perfoldTestIndexes.keySet()) {

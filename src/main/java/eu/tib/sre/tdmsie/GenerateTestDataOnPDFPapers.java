@@ -120,7 +120,10 @@ public class GenerateTestDataOnPDFPapers {
         //collect predicting labels seen in the train.tsv
         Set<String> evaluatedLabels = new HashSet();
 //        String file3 = prop.getProperty("projectPath") + "/" + "data/exp/few-shot-setup/NLP-TDMS/train.tsv";
-        String file3 = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\trainOutput.tsv";
+//        String file3 = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\trainOutput.tsv";
+        String file3 = "U:\\Documents\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\trainOutput.tsv";
+
+
         BufferedReader br3 = new BufferedReader(new FileReader(file3));
         String line3 = "";
         while ((line3 = br3.readLine()) != null) {

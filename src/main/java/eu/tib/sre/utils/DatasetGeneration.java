@@ -25,13 +25,14 @@ public class DatasetGeneration {
 
     ;
 
-//    public static String getTrainingData(String pdfDir, String[] args) throws IOException, Exception {
+    //    public static String getTrainingData(String pdfDir, String[] args) throws IOException, Exception {
     public static String getTrainData(String pdfDir, String b, Integer threshold, Integer numbNegative) throws IOException, Exception {
 
 //        prop = new Properties();
 //        prop.load(new FileReader("config.properties"));
 //        TDM_taxonomy = prop.getProperty("TDM_taxonomy");
-        TDM_taxonomy = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\annotations\\TDM_taxonomy.tsv";
+//        TDM_taxonomy = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\annotations\\TDM_taxonomy.tsv";
+        TDM_taxonomy = "U:\\Documents\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\annotations\\TDM_taxonomy.tsv";
 
         FileOutputStream output = new FileOutputStream(b+"trainOutput.tsv");
 //        FileOutputStream output = new FileOutputStream(args[1]+"trainOutput.tsv");
@@ -40,6 +41,8 @@ public class DatasetGeneration {
 
         File[] filesList = dir.listFiles();
 
+        int progress = 0;
+
         for (File file : filesList) {
             if (file.isFile()) {
 
@@ -47,7 +50,7 @@ public class DatasetGeneration {
                 String pdf_file = file.getPath();
 //                String pdf_file pdf_file = file;
                 Set<String> trueTDM = new HashSet<String>();
-                System.out.println(">>>> Processing file: " + pdf_file);
+                System.out.println(">>>> ("+ progress++ +") Processing file: " + pdf_file);
 
 
                 String docTEATStr = DocTAET.getDocTAETRepresentation(pdf_file);
@@ -56,7 +59,8 @@ public class DatasetGeneration {
                 }
                 else {
                     // resultsAnnotation = prop.getProperty("result_annotation")
-                    resultsAnnotation = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\annotations\\resultsAnnotation.tsv";
+//                    resultsAnnotation = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\annotations\\resultsAnnotation.tsv";
+                    resultsAnnotation = "U:\\Documents\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\annotations\\resultsAnnotation.tsv";
 
 //                    String labels_file = args[1]+"/tdmGoldLabels.tsv";
                     mapDict = getTdmGoldLabelsAndloadDict(TDM_taxonomy, b, threshold);
@@ -78,7 +82,7 @@ public class DatasetGeneration {
                             break;
                         }
                         if (!trueTDM.contains(label)) {
-                            output.write(("False\t" + pdf_filename + "\t" + label.replace("#", "; ") + "\t" + docTEATStr + "\n").getBytes());
+                            output.write(("false\t" + pdf_filename + "\t" + label.replace("#", "; ") + "\t" + docTEATStr + "\n").getBytes());
                         }
                         limit += 1;
                     }
@@ -98,7 +102,8 @@ public class DatasetGeneration {
 //        prop = new Properties();
 //        prop.load(new FileReader("config.properties"));
 //        TDM_taxonomy = prop.getProperty("TDM_taxonomy");
-        TDM_taxonomy = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\annotations\\TDM_taxonomy.tsv";
+//        TDM_taxonomy = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\annotations\\TDM_taxonomy.tsv";
+        TDM_taxonomy = "U:\\Documents\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\annotations\\TDM_taxonomy.tsv";
 
         FileOutputStream output = new FileOutputStream(b+"trainOutput.tsv");
 //        FileOutputStream output = new FileOutputStream(args[1]+"trainOutput.tsv");
@@ -123,7 +128,8 @@ public class DatasetGeneration {
                 }
                 else {
                     // resultsAnnotation = prop.getProperty("result_annotation")
-                    resultsAnnotation = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\annotations\\resultsAnnotation.tsv";
+//                    resultsAnnotation = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\annotations\\resultsAnnotation.tsv";
+                    resultsAnnotation = "U:\\Documents\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\annotations\\resultsAnnotation.tsv";
 
 //                    String labels_file = args[1]+"/tdmGoldLabels.tsv";
                     mapDict = getTdmGoldLabelsAndloadDict(TDM_taxonomy, b, threshold);
@@ -146,7 +152,7 @@ public class DatasetGeneration {
                             break;
                         }
                         if (!trueTDM.contains(label)) {
-                            output.write(("False\t" + pdf_filename + "\t" + label.replace("#", ", ") + "\t" + docTEATStr + "\n").getBytes());
+                            output.write(("false\t" + pdf_filename + "\t" + label.replace("#", ", ") + "\t" + docTEATStr + "\n").getBytes());
                         }
                         limit += 1;
                     }
@@ -175,10 +181,10 @@ public class DatasetGeneration {
 
                 String TDMs[] = str[1].split("\\$");
 
-    //            String preTDM = str[1].split("#")[0];
+                //            String preTDM = str[1].split("#")[0];
 
                 for (int i = 0; i < TDMs.length; i++) {
-    //                String preTDM = TDMs[i].substring(TDMs[i].lastIndexOf("#") + 1);
+                    //                String preTDM = TDMs[i].substring(TDMs[i].lastIndexOf("#") + 1);
                     int sepPos = TDMs[i].lastIndexOf("#");
                     if (sepPos == -1) {
                         System.out.println("");
@@ -365,3 +371,4 @@ public class DatasetGeneration {
         return "Done";
     }
 }
+
