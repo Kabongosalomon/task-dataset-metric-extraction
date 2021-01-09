@@ -76,8 +76,8 @@ public class GrobidPDFProcessor {
 
     public GrobidPDFProcessor() throws IOException, Exception {
         // This is set manually here 
-//         String pGrobidHome = "D:\\ORKG\\NLP\\Try\\task-dataset-metric-extraction\\grobid-0.6.0\\grobid-home\\";
-//        String pGrobidHome = "D:\\ORKG\\NLP\\Try\\task-dataset-metric-extraction";
+//         String grobidHome = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\grobid-0.6.0\\grobid-home\\";
+//        String pGrobidHome = "D:\\ORKG\\NLP\\task-dataset-metric-extraction";
 
         // get info from config.properties
         prop = new Properties();
@@ -232,8 +232,8 @@ public class GrobidPDFProcessor {
 
     //title, abstract, sections
     public Map<String, String> getPDFSectionAndText(String pdfPath) throws IOException, Exception {
-//        String dicPath = "D:\\ORKG\\NLP\\Try\\task-dataset-metric-extraction\\resources\\en_US.dic";
-        String dicPath = BaseDirInfo.getBaseDir() + "resources/en_US.dic";
+        String dicPath = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\resources\\en_US.dic";
+//        String dicPath = BaseDirInfo.getBaseDir() + "resources/en_US.dic";
         File file = new File(dicPath);
         BufferedReader br = new BufferedReader(new FileReader(file));
         String st;
@@ -243,8 +243,9 @@ public class GrobidPDFProcessor {
         }
 
         String xml = "";
-//        String pdf_xml_dir = "D:\\ORKG\\NLP\\Try\\task-dataset-metric-extraction\\data\\pdf_xml";
-        String pdf_xml_dir = prop.getProperty("projectPath") + "\\" + prop.getProperty("pdf_xml");
+        String pdf_xml_dir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdfFile_txt";
+//        String pdf_xml_dir = prop.getProperty("projectPath") + "\\" + prop.getProperty("pdf_xml");
+
         String pdfxmlName = pdfPath.split("/")[pdfPath.split("/").length - 1].replace(".pdf", ".tei.xml");
         String pdfxmlName1 = pdfPath.split("/")[pdfPath.split("/").length - 1].replace(".pdf", ".xml");
         File xmlfile = new File(pdf_xml_dir + "/" + pdfxmlName);
