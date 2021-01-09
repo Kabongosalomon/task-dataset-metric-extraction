@@ -26,12 +26,16 @@ public class DatasetGeneration {
     ;
 
 //    public static String getTrainingData(String pdfDir, String[] args) throws IOException, Exception {
-    public static String getTrainData(String pdfDir, String b, Integer threshold, Integer numbNegative) throws IOException, Exception {
+    public static String getTrainData(String pdfDir, String b,
+                                      Integer threshold, Integer numbUnk, Integer numbNegative, FileOutputStream fold_stats) throws IOException, Exception {
 
 //        prop = new Properties();
 //        prop.load(new FileReader("config.properties"));
 //        TDM_taxonomy = prop.getProperty("TDM_taxonomy");
+
+        // The full taxonomy obtains from paper with code json
         TDM_taxonomy = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\annotations\\TDM_taxonomy.tsv";
+
 
         FileOutputStream output = new FileOutputStream(b+"trainOutput.tsv");
 //        FileOutputStream output = new FileOutputStream(args[1]+"trainOutput.tsv");
@@ -40,6 +44,10 @@ public class DatasetGeneration {
 
         File[] filesList = dir.listFiles();
 
+        int progress = 0;
+        Integer trueUnk = 0;
+        Integer falseUnk = 0;
+
         for (File file : filesList) {
             if (file.isFile()) {
 
@@ -47,8 +55,7 @@ public class DatasetGeneration {
                 String pdf_file = file.getPath();
 //                String pdf_file pdf_file = file;
                 Set<String> trueTDM = new HashSet<String>();
-                System.out.println(">>>> Processing file: " + pdf_file);
-
+                System.out.println(">>>> ("+ progress++ +") Processing file: " + pdf_file);
 
                 String docTEATStr = DocTAET.getDocTAETRepresentation(pdf_file);
                 if (docTEATStr.equals("")) {
@@ -56,6 +63,8 @@ public class DatasetGeneration {
                 }
                 else {
                     // resultsAnnotation = prop.getProperty("result_annotation")
+
+                    // This contains a dict like file that have file name and TDMs informations
                     resultsAnnotation = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\annotations\\resultsAnnotation.tsv";
 
 //                    String labels_file = args[1]+"/tdmGoldLabels.tsv";
@@ -66,26 +75,47 @@ public class DatasetGeneration {
                     List<String> labels = FileUtils.readLines(new File(labels_file));
                     String pdf_filename = new File(pdf_file).getName();
 
-
                     for (int i = 0; i < mapLabel.get(pdf_filename).size(); i++) {
+
                         output.write(("true\t" + pdf_filename + "\t"+mapLabel.get(pdf_filename).get(i).replace("#", "; ")+"\t" + docTEATStr + "\n").getBytes());
+
+                        if (mapLabel.get(pdf_filename).get(i).replace("#", "; ").equals("unknow")){
+                            trueUnk = trueUnk + 1;
+                        }
+
+                        // Keep track of positive TDM
                         trueTDM.add(mapLabel.get(pdf_filename).get(i));
                     }
 
+
+                    // Thits takes only the first numbNegative example, we may need to make it random
                     int limit = 0;
+
                     for (String label : labels) {
-                        if (limit>=numbNegative){
+                        if (limit>=numbUnk){
                             break;
                         }
+
+                        // Check if the TDM is not a true label for a given paper
                         if (!trueTDM.contains(label)) {
-                            output.write(("False\t" + pdf_filename + "\t" + label.replace("#", "; ") + "\t" + docTEATStr + "\n").getBytes());
+                            output.write(("false\t" + pdf_filename + "\t" + label.replace("#", "; ") + "\t" + docTEATStr + "\n").getBytes());
+
+                            if (label.replace("#", "; ").equals("unknow")){
+                                falseUnk = falseUnk + 1;
+                            }
+
+                            limit += 1;
                         }
-                        limit += 1;
+
                     }
 
                 }
             }
         }
+
+        fold_stats.write(("Main Data stats :\n").getBytes());
+        fold_stats.write(("Positive Unk : "+trueUnk+"\n").getBytes());
+        fold_stats.write(("Negative Unk : "+falseUnk+"\n\n").getBytes());
 
         output.close();
 
@@ -141,14 +171,20 @@ public class DatasetGeneration {
                     }
 
                     int limit = 0;
+
+
+                    // To randomly allow to get the false for a numNeg threshold
+                    Collections.shuffle(labels);
+
                     for (String label : labels) {
                         if (limit>=numbNegative){
                             break;
                         }
                         if (!trueTDM.contains(label)) {
-                            output.write(("False\t" + pdf_filename + "\t" + label.replace("#", ", ") + "\t" + docTEATStr + "\n").getBytes());
+                            output.write(("false\t" + pdf_filename + "\t" + label.replace("#", ", ") + "\t" + docTEATStr + "\n").getBytes());
+                            limit += 1;
                         }
-                        limit += 1;
+
                     }
 
                 }

@@ -79,7 +79,7 @@ public class GrobidPDFProcessor {
 //         String pGrobidHome = "D:\\ORKG\\NLP\\Try\\task-dataset-metric-extraction\\grobid-0.6.0\\grobid-home\\";
 //        String pGrobidHome = "D:\\ORKG\\NLP\\Try\\task-dataset-metric-extraction";
 
-//        // get info from config.properties
+        // get info from config.properties
         prop = new Properties();
         prop.load(new FileReader("config.properties"));
         pGrobidHome = prop.getProperty("pGrobidHome");

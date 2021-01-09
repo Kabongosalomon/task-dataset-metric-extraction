@@ -1,0 +1,94 @@
+03 Jan 2021 00:00.27 [INFO ] ReferenceMarkerMatcher    - +++++
+03 Jan 2021 00:00.27 [INFO ] ReferenceMarkerMatcher    -   Wang, X. and Gupta, A. Unsupervised learning of visual 
+representations using videos. In Proceedings of the IEEE 
+International Conference on Computer Vision, pp. 2794-
+2802, 2015.
+03 Jan 2021 00:00.27 [INFO ] ReferenceMarkerMatcher    - +++++
+03 Jan 2021 00:00.27 [INFO ] ReferenceMarkerMatcher    -   Wang, Z., Schaul, T., Hessel, M., Van Hasselt, H., Lanc-
+tot, M., and De Freitas, N. Dueling network architec-
+tures for deep reinforcement learning. arXiv preprint 
+arXiv:1511.06581, 2015.
+03 Jan 2021 00:00.32 [INFO ] ReferenceMarkerMatcher    - +++++
+03 Jan 2021 00:00.32 [INFO ] ReferenceMarkerMatcher    -   Wang, X. and Gupta, A. Unsupervised learning of visual 
+representations using videos. In Proceedings of the IEEE 
+International Conference on Computer Vision, pp. 2794-
+2802, 2015.
+03 Jan 2021 00:00.32 [INFO ] ReferenceMarkerMatcher    - +++++
+03 Jan 2021 00:00.32 [INFO ] ReferenceMarkerMatcher    -   Wang, Z., Schaul, T., Hessel, M., Van Hasselt, H., Lanc-
+tot, M., and De Freitas, N. Dueling network architec-
+tures for deep reinforcement learning. arXiv preprint 
+arXiv:1511.06581, 2015.
+03 Jan 2021 00:04.29 [ERROR] FullTextParser            - DocumentPointer for block 609 points to 395 token, but block token size is 395
+03 Jan 2021 00:04.33 [ERROR] FullTextParser            - DocumentPointer for block 609 points to 395 token, but block token size is 395
+03 Jan 2021 00:04.36 [ERROR] FullTextParser            - DocumentPointer for block 609 points to 395 token, but block token size is 395
+03 Jan 2021 00:14.01 [ERROR] FullTextParser            - DocumentPointer for block 108 points to 73 token, but block token size is 69
+03 Jan 2021 00:14.05 [ERROR] FullTextParser            - DocumentPointer for block 108 points to 73 token, but block token size is 69
+03 Jan 2021 00:14.06 [ERROR] FullTextParser            - DocumentPointer for block 108 points to 73 token, but block token size is 69
+03 Jan 2021 00:16.29 [INFO ] ReferenceMarkerMatcher    - +++++
+03 Jan 2021 00:16.29 [INFO ] ReferenceMarkerMatcher    -   Li, C. and Goldwasser, D. Encoding social information with 
+graph convolutional networks forpolitical perspective de-
+tection in news media. In ACL, 2019.
+03 Jan 2021 00:16.29 [INFO ] ReferenceMarkerMatcher    - +++++
+03 Jan 2021 00:16.29 [INFO ] ReferenceMarkerMatcher    -   Liu, Z., Chen, C., Li, L., Zhou, J., Li, X., Song, L., and 
+Qi, Y. Geniepath: Graph neural networks with adaptive 
+receptive paths. In AAAI, 2019.
+03 Jan 2021 00:16.29 [INFO ] ReferenceMarkerMatcher    - +++++
+03 Jan 2021 00:16.29 [INFO ] ReferenceMarkerMatcher    -   Shang, J., Xiao, C., Ma, T., Li, H., and Sun, J. Gamenet: 
+Graph augmented memory networks for recommending 
+medication combination. In AAAI, 2019.
+03 Jan 2021 00:16.29 [INFO ] ReferenceMarkerMatcher    - +++++
+03 Jan 2021 00:16.29 [INFO ] ReferenceMarkerMatcher    -   Ma, J., Wen, J., Zhong, M., Chen, W., and Li, X. MMM: 
+multi-source multi-net micro-video recommendation with 
+clustered hidden item representation learning. Data Sci-
+ence and Engineering, 4(3):240-253, 2019.
+03 Jan 2021 00:16.29 [INFO ] ReferenceMarkerMatcher    - +++++
+03 Jan 2021 00:16.29 [INFO ] ReferenceMarkerMatcher    -   Li, J., Han, Z., Cheng, H., Su, J., Wang, P., Zhang, J., and 
+Pan, L. Predicting path failure in time-evolving graphs. 
+In KDD. ACM, 2019.
+03 Jan 2021 00:16.29 [INFO ] ReferenceMarkerMatcher    - +++++
+03 Jan 2021 00:16.29 [INFO ] ReferenceMarkerMatcher    -   Zhang, J. and Ghanem, B. 
+Ista-net: Interpretable 
+optimization-inspired deep network for image compres-
+sive sensing. In CVPR, pp. 1828-1837, 2018.
+03 Jan 2021 00:16.29 [INFO ] ReferenceMarkerMatcher    - +++++
+03 Jan 2021 00:16.29 [INFO ] ReferenceMarkerMatcher    -   Huang, W., Zhang, T., Rong, Y., and Huang, J. Adaptive 
+sampling towards fast graph representation learning. In 
+NeurIPS, pp. 4563-4572, 2018.
+03 Jan 2021 00:16.29 [INFO ] ReferenceMarkerMatcher    - +++++
+03 Jan 2021 00:16.29 [INFO ] ReferenceMarkerMatcher    -   Zhang, J., Shi, X., Xie, J., Ma, H., King, I., and Yeung, D. 
+Gaan: Gated attention networks for learning on large and 
+spatiotemporal graphs. In UAI, 2018.
+03 Jan 2021 00:16.32 [INFO ] ReferenceMarkerMatcher    - +++++
+03 Jan 2021 00:16.32 [INFO ] ReferenceMarkerMatcher    -   Li, C. and Goldwasser, D. Encoding social information with 
+graph convolutional networks forpolitical perspective de-
+tection in news media. In ACL, 2019.
+03 Jan 2021 00:16.32 [INFO ] ReferenceMarkerMatcher    - +++++
+03 Jan 2021 00:16.32 [INFO ] ReferenceMarkerMatcher    -   Liu, Z., Chen, C., Li, L., Zhou, J., Li, X., Song, L., and 
+Qi, Y. Geniepath: Graph neural networks with adaptive 
+receptive paths. In AAAI, 2019.
+03 Jan 2021 00:16.32 [INFO ] ReferenceMarkerMatcher    - +++++
+03 Jan 2021 00:16.32 [INFO ] ReferenceMarkerMatcher    -   Shang, J., Xiao, C., Ma, T., Li, H., and Sun, J. Gamenet: 
+Graph augmented memory networks for recommending 
+medication combination. In AAAI, 2019.
+03 Jan 2021 00:16.32 [INFO ] ReferenceMarkerMatcher    - +++++
+03 Jan 2021 00:16.32 [INFO ] ReferenceMarkerMatcher    -   Ma, J., Wen, J., Zhong, M., Chen, W., and Li, X. MMM: 
+multi-source multi-net micro-video recommendation with 
+clustered hidden item representation learning. Data Sci-
+ence and Engineering, 4(3):240-253, 2019.
+03 Jan 2021 00:16.32 [INFO ] ReferenceMarkerMatcher    - +++++
+03 Jan 2021 00:16.32 [INFO ] ReferenceMarkerMatcher    -   Li, J., Han, Z., Cheng, H., Su, J., Wang, P., Zhang, J., and 
+Pan, L. Predicting path failure in time-evolving graphs. 
+In KDD. ACM, 2019.
+03 Jan 2021 00:16.32 [INFO ] ReferenceMarkerMatcher    - +++++
+03 Jan 2021 00:16.32 [INFO ] ReferenceMarkerMatcher    -   Zhang, J. and Ghanem, B. 
+Ista-net: Interpretable 
+optimization-inspired deep network for image compres-
+sive sensing. In CVPR, pp. 1828-1837, 2018.
+03 Jan 2021 00:16.32 [INFO ] ReferenceMarkerMatcher    - +++++
+03 Jan 2021 00:16.32 [INFO ] ReferenceMarkerMatcher    -   Huang, W., Zhang, T., Rong, Y., and Huang, J. Adaptive 
+sampling towards fast graph representation learning. In 
+NeurIPS, pp. 4563-4572, 2018.
+03 Jan 2021 00:16.32 [INFO ] ReferenceMarkerMatcher    - +++++
+03 Jan 2021 00:16.32 [INFO ] ReferenceMarkerMatcher    -   Zhang, J., Shi, X., Xie, J., Ma, H., King, I., and Yeung, D. 
+Gaan: Gated attention networks for learning on large and 
+spatiotemporal graphs. In UAI, 2018.

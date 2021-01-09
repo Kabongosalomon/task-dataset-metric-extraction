@@ -2,7 +2,7 @@
 
 This program produces the test data for classification over a set of predefined task#dataset#metrics#software labels.
 
-Given input a pdf file, it scrapes the text from the filw using the Grobid parser, subsequently generating the test data file for input to the neural network classifier.
+Given input a pdf file, it scrapes the text from the file using the Grobid parser, subsequently generating the test data file for input to the neural network classifier.
 
 ## Steps to run the program
  
@@ -34,11 +34,18 @@ We release the training/testing datasets for all experiments described in the pa
 
 5) Download BERT embeddings.  We use the [base uncased models](https://storage.googleapis.com/bert_models/2018_10_18/uncased_L-12_H-768_A-12.zip).
 
+    - cd bert/
+    - wget https://storage.googleapis.com/bert_models/2018_10_18/uncased_L-12_H-768_A-12.zip
+    - unzip -r uncased_L-12_H-768_A-12.zi
+    - cd ..
+    - cp bert_tdms/run_classifier_sci.py bert/
+
+
 6) If we use `BERT_DIR` to point to the directory with the embeddings and `DATA_DIR` to point to the [directory with our train and test data](./data/exp/few-shot-setup/NLP-TDMS/), we can run the textual entailment system with  [run_classifier_sci.py](./bert_tdms/run_classifier_sci.py). For example:
 
 ```
 > DATA_DIR=../data/exp/few-shot-setup/NLP-TDMS/
-> BERT_DIR=./model/uncased_L-12_H-768_A-12
+> BERT_DIR=./uncased_L-12_H-768_A-12
 > python run_classifier_sci.py --do_train=true --do_eval=false --do_predict=true --data_dir=${DATA_DIR} --task_name=sci --vocab_file=${BERT_DIR}/vocab.txt --bert_config_file=${BERT_DIR}/bert_config.json --init_checkpoint=${BERT_DIR}/bert_model.ckpt --output_dir=bert_tdms --max_seq_length=512 --train_batch_size=6 --predict_batch_size=6
 
 > # To run on TPU

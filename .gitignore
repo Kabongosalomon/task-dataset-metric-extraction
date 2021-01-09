@@ -141,7 +141,7 @@ grobid-0.6.0/
 drive/
 data/
 bert/
-src/main/resources
+src/main/resources/
 bin/
 
 

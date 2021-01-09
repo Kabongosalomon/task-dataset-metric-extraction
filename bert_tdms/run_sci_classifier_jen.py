@@ -523,6 +523,15 @@ def main(_):
         "At least one of `do_train`, `do_eval, `do_predict` or "
         "`do_submit` must be True.")
 
+  # bert_config = modeling.BertConfig.from_json_file(FLAGS.bert_config_file)
+  #
+  # if FLAGS.max_seq_length > bert_config.max_position_embeddings:
+  #     raise ValueError(
+  #         "Cannot use sequence length %d because the BERT model "
+  #         "was only trained up to sequence length %d" %
+  #         (FLAGS.max_seq_length, bert_config.max_position_embeddings))
+
+
   if not tf.gfile.Exists(FLAGS.output_dir):
     tf.gfile.MakeDirs(FLAGS.output_dir)
 

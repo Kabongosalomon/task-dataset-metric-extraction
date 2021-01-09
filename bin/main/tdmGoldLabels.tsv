@@ -1,578 +1,1468 @@
-Question Answering#SQuAD1.1#F1
-Question Answering#SQuAD1.1#EM
+Question Answering#YahooCQA#P@1
+Few-Shot Image Classification#Caltech-256 5-way (1-shot)#Accuracy
 Atari Games#Atari 2600 Private Eye#Score
-Question Answering#NarrativeQA#Rouge-L
+Semi-Supervised Video Object Segmentation#YouTube#mIoU
+Skeleton Based Action Recognition#JHMDB Pose Tracking#PCK@0.1
+Skeleton Based Action Recognition#JHMDB Pose Tracking#PCK@0.3
+Skeleton Based Action Recognition#JHMDB Pose Tracking#PCK@0.2
+Skeleton Based Action Recognition#JHMDB Pose Tracking#PCK@0.5
+Skeleton Based Action Recognition#JHMDB Pose Tracking#PCK@0.4
+Keypoint Detection#COCO test-challenge#ARL
+Keypoint Detection#COCO test-challenge#ARM
+Cross-Lingual Document Classification#MLDoc Zero-Shot English-to-Chinese#Accuracy
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (test-dev)#Jaccard (Decay)
 Question Answering#WikiQA#MRR
+Fine-Grained Image Classification#FGVC Aircraft#FLOPS
+Real-time Instance Segmentation#MSCOCO#Frame (fps)
 Image-to-Image Translation#Cityscapes Labels-to-Photo#FID
-Language Modelling#One Billion Word#Number of params
-Image Classification#Clothing1M#Accuracy
-Node Classification#BlogCatalog#Macro-F1
-Text Classification#DBpedia#Error
+Neural Architecture Search#ImageNet#Accuracy
+Few-Shot Image Classification#FC100 5-way (5-shot)#Accuracy
+Atari Games#Atari 2600 Pooyan#Score
+Cross-Lingual NER#CoNLL Dutch#F1
+Activity Prediction#ActEV#mAP
+Video Super-Resolution#Ultra Video Group HD - 4x upscaling#Average PSNR
 Human Pose Forecasting#Human3.6M#MAR, walking, 400ms
 Face Detection#WIDER Face (Medium)#AP
-Visual Object Tracking#DAVIS 2016#F-measure (Mean)
-Action Recognition In Videos#Something-Something V1#Top 1 Accuracy
+Scene Text Detection#Total-Text#Precision
+Link Prediction#YAGO3-10#Hits@1
+Heterogeneous Node Classification#DBLP (PACT) 14k#Macro-F1 (60% training data)
+Word Sense Disambiguation#SemEval 2007 Task 17#F1
+Neural Architecture Search#CIFAR-10#Search Time (GPU days)
 3D Object Detection#KITTI Pedestrians Hard#AP
-Atari Games#Atari 2600 Ice Hockey#Score
-Visual Object Tracking#DAVIS 2016#F-measure (Recall)
+Few-Shot Image Classification#CUB-200-2011 - 0-Shot#Top-1 Accuracy
+Neural Architecture Search#Oxford 102 Flowers#PARAMS
+Visual Dialog#VisDial v0.9 val#R@10
+Image Clustering#Tiny-ImageNet#Accuracy
+Skeleton Based Action Recognition#SHREC 2017 track on 3D Hand Gesture Recognition#Speed  (FPS)
 Link Prediction#WN18RR#MR
-Skeleton Based Action Recognition#Varying-view RGB-D Action-Skeleton#Accuracy (AV I)
-Machine Translation#IWSLT2015 English-Vietnamese#BLEU
-Sequential Image Classification#Sequential MNIST#Unpermuted Accuracy
+Visual Question Answering#VQA-CP#Score
+Node Classification#USA Air-Traffic#Accuracy
+Table-to-Text Generation#WikiBio#BLEU
+Multi-Label Text Classification#EUR-Lex#P@5
+Action Segmentation#GTEA#Edit
 Weakly Supervised Action Localization#ActivityNet-1.3#mAP@0.5
-Atari Games#Atari 2600 Freeway#Score
-Image-to-Image Translation#Cityscapes Photo-to-Labels#Per-class Accuracy
+Skeleton Based Action Recognition#Florence 3D#Accuracy
+Question Answering#WikiHop#Test
+Panoptic Segmentation#Cityscapes test#PQ
+Colorectal Gland Segmentation:#CRAG#Dice
+Keypoint Detection#COCO test-challenge#APL
+Image Super-Resolution#Set14 - 4x upscaling#MOS
+Semantic Segmentation#NYU Depth v2#Mean IoU
+Formation Energy#QM9#MAE
+Action Recognition#ICVL-4#Accuracy
 Document Summarization#CNN / Daily Mail#ROUGE-1
-Real-Time Object Detection#COCO#MAP
 Document Summarization#CNN / Daily Mail#ROUGE-2
-Sentiment Analysis#Multi-Domain Sentiment Dataset#Books
-Aspect-Based Sentiment Analysis#SemEval 2014 Task 4 Sub Task 2#Restaurant (Acc)
-Semantic Segmentation#Semantic3D#mIoU
+Recommendation Systems#Netflix#Recall@50
+6D Pose Estimation using RGB#LineMOD#Mean ADD
 3D Human Pose Estimation#Human3.6M#Average MPJPE (mm)
 Unsupervised Machine Translation#WMT2016 German-English#BLEU
+Semantic Segmentation#SkyScapes-Dense#Mean IoU
+Object Counting#COCO count-test#m-reIRMSE
+Image Dehazing#SOTS Outdoor#PSNR
 Video Retrieval#LSMDC#text-to-video R@5
 Video Retrieval#LSMDC#text-to-video R@1
-Conditional Image Generation#ImageNet 128x128#Inception score
-Face Alignment#WFLW#AUC@0.1 (all)
-Image Classification#SVHN#Percentage error
+Speech Enhancement#DEMAND#PESQ
+Recommendation Systems#Netflix#Recall@20
 Document Summarization#CNN / Daily Mail#ROUGE-L
 Natural Language Inference#SNLI#Parameters
-Gesture-to-Gesture Translation#Senz3D#AMT
-Visual Object Tracking#DAVIS 2016#F-measure (Decay)
+Lipreading#LRS2#Word Error Rate (WER)
+Few-Shot Image Classification#CUB-200-2011 - 0-Shot#AP50
+Click-Through Rate Prediction#Amazon#AUC
+Data-to-Text Generation#Rotowire (Content Selection)#Precision
+Few-Shot Image Classification#Flowers-102 - 0-Shot#AP50
 Skeleton Based Action Recognition#NTU RGB+D 120#Accuracy (Cross-Setup)
-Open-Domain Question Answering#SearchQA#N-gram F1
 Few-Shot Image Classification#Mini-ImageNet - 1-Shot Learning#Accuracy
-Image Classification#CIFAR-100#Percentage error
-Graph Classification#MUTAG#Accuracy
-Data-to-Text Generation#E2E NLG Challenge#CIDEr
-3D Object Detection#KITTI Pedestrians Easy#AP
-Graph Classification#PTC#Accuracy
-Image Classification#MNIST#Accuracy
-Real-Time Object Detection#PASCAL VOC 2007#FPS
-Pedestrian Detection#CityPersons#Bare MR^-2
-Semantic Segmentation#Cityscapes val#mIoU
-Image Super-Resolution#Set5 - 4x upscaling#PSNR
+Keypoint Detection#COCO test-challenge#AR50
+Recommendation Systems#WeChat#P@10
+Unsupervised Video Object Segmentation#DAVIS 2017 (test-dev)#J&F
+Domain Adaptation#SYNSIG-to-GTSRB#Accuracy
+Neural Architecture Search#FGVC Aircraft#FLOPS
+Image Super-Resolution#FFHQ 256 x 256 - 4x upscaling#PSNR
+Image Super-Resolution#Set14 - 3x upscaling#SSIM
+Keypoint Detection#COCO test-challenge#AR75
+Multi-Label Text Classification#EUR-Lex#nDCG@5
+Supervised Video Summarization#SumMe#F1-score (Canonical)
+3D Semantic Segmentation#SemanticKITTI#mIoU
+Text Summarization#arXiv#ROUGE-1
+Text Summarization#arXiv#ROUGE-2
+Fine-Grained Image Classification#Oxford 102 Flowers#Accuracy
+Object Counting#COCO count-test#mRMSE
 Atari Games#Atari 2600 Demon Attack#Score
-Hypernym Discovery#Music domain#P@5
+Lipreading#Lip Reading in the Wild#Top-1 Accuracy
+Text Summarization#arXiv#ROUGE-L
 Face Detection#Annotated Faces in the Wild#AP
+Skeleton Based Action Recognition#PKU-MMD#mAP@0.50 (CS)
 Image-to-Image Translation#Cityscapes Labels-to-Photo#mIoU
-Real-Time Semantic Segmentation#CamVid#Time (ms)
-Open-Domain Question Answering#SearchQA#F1
-Fine-Grained Image Classification#FGVC Aircraft#Accuracy
-Visual Object Tracking#TrackingNet#Precision
-3D Human Pose Estimation#Human3.6M#Using 2D ground-truth joints
-Horizon Line Estimation#Horizon Lines in the Wild#AUC (horizon error)
-Data-to-Text Generation#E2E NLG Challenge#METEOR
+Visual Question Answering#VQA v1 test-dev#Accuracy
+Word Sense Disambiguation#SemEval 2007 Task 7#F1
+Multimodal Activity Recognition#EV-Action#Accuracy
+Image Retrieval#Flickr30K 1K test#R@5
+Image Retrieval#Flickr30K 1K test#R@1
+Semi-Supervised Video Object Segmentation#DAVIS 2016#F-measure (Mean)
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (val)#Jaccard (Decay)
+Image Super-Resolution#FFHQ 1024 x 1024 - 4x upscaling#MS-SSIM
 Pedestrian Detection#CityPersons#Heavy MR^-2
+Data-to-Text Generation#E2E NLG Challenge#METEOR
 Atari Games#Atari 2600 Skiing#Score
-Node Classification#PubMed with Public Split: fixed 20 nodes per class#Accuracy
-Named Entity Recognition#ACE 2004#F1
-Image Denoising#BSD68 sigma50#PSNR
+Recommendation Systems#MovieLens 1M#HR@10
+Aspect-Based Sentiment Analysis#Sentihood#Sentiment
+Node Classification#Facebook#Accuracy
+Action Detection#Charades#mAP
 Atari Games#Atari 2600 Amidar#Score
-6D Pose Estimation using RGB#LineMOD#Accuracy (ADD)
-Pedestrian Detection#CityPersons#Partial MR^-2
-Visual Object Tracking#TrackingNet#Accuracy
-Graph Regression#Lipophilicity #RMSE
 Face Alignment#WFLW#ME (%, all) 
-Atari Games#Atari 2600 Asterix#Score
+Graph Regression#Lipophilicity #RMSE
+Neural Architecture Search#STL-10#FLOPS
+Neural Architecture Search#STL-10#PARAMS
+Scene Text Detection#ICDAR 2017 MLT#Precision
+Action Recognition#NTU RGB+D 120#Accuracy (Cross-Subject)
 Language Modelling#WikiText-103#Number of params
+Few-Shot Image Classification#OMNIGLOT-EMNIST 5-way (5-shot)#Accuracy
+Action Recognition#Sports-1M#Clip Hit@1
 Paraphrase Identification#Quora Question Pairs#Accuracy
-3D Human Pose Estimation#MPI-INF-3DHP#3DPCK
+Skeleton Based Action Recognition#PKU-MMD#mAP@0.50 (CV)
+3D Object Detection#KITTI Cyclist Hard val#AP
+Action Recognition#miniSports#Clip Hit@1
+Unsupervised Video Summarization#SumMe#F1-score
 Skeleton Based Action Recognition#N-UCLA#Accuracy
-Node Classification#PubMed (0.05%)#Accuracy
+Scene Text Detection#ICDAR 2017 MLT#Recall
+Robotic Grasping#Cornell Grasp Dataset#5 fold cross validation
 Conditional Image Generation#ImageNet 128x128#FID
-Link Prediction#FB15k-237#Hits@10
-Link Prediction#WN18RR#Hits@10
+6D Pose Estimation#YCB-Video#ADDS AUC
 Semi-Supervised Image Classification#CIFAR-10, 250 Labels#Accuracy
-3D Human Pose Estimation#HumanEva-I#Mean Reconstruction Error (mm)
+Semi-Supervised Video Object Segmentation#YouTube-VOS#F-Measure (Seen)
 Image Super-Resolution#Manga109 - 4x upscaling#SSIM
 Skeleton Based Action Recognition#Kinetics-Skeleton dataset#Accuracy
-Atari Games#Atari 2600 Enduro#Score
-Atari Games#Atari 2600 Surround#Score
-Atari Games#Atari 2600 Boxing#Score
+Pose Estimation#COCO test-dev#AP50
+Few-Shot Image Classification#Stanford Dogs 5-way (5-shot)#Accuracy
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (test-dev)#F-measure (Mean)
 Atari Games#Atari 2600 Chopper Command#Score
+Action Recognition#Something-Something V1#Top 5 Accuracy
 Image Generation#LSUN Bedroom 256 x 256#FID
+Face Verification#Oulu-CASIA NIR-VIS#TAR @ FAR=0.001
 Question Answering#SQuAD2.0 dev#F1
 Skeleton Based Action Recognition#NTU RGB+D#Accuracy (CS)
 Question Answering#SQuAD2.0 dev#EM
+Recommendation Systems#Pinterest#nDCG@10
 Natural Language Inference#MultiNLI#Matched
+Action Recognition#EgoGesture#Top-5 Accuracy
 Dense Pixel Correspondence Estimation#HPatches#Viewpoint V AEPE
-Traffic Prediction#METR-LA#MAE @ 12 step
+Unsupervised Domain Adaptation#Market to Duke#mAP
 Semantic Textual Similarity#STS Benchmark#Pearson Correlation
-Skeleton Based Action Recognition#Varying-view RGB-D Action-Skeleton#Accuracy (CV II)
 Speech Recognition#LibriSpeech test-clean#Word Error Rate (WER)
-Atari Games#Atari 2600 Bank Heist#Score
-Open-Domain Question Answering#SearchQA#Unigram Acc
-Skeleton Based Action Recognition#SBU#Accuracy
+Video Retrieval#MSR-VTT#text-to-video R@10
+3D Room Layouts From A Single RGB Panorama#Stanford 2D-3D#3DIoU
+Youtube-VOS#YouTube-VOS#F-Measure (Seen)
+Chinese Named Entity Recognition#OntoNotes 4#F1
 Node Classification#PPI#F1
-Node Classification#Cora (1%)#Accuracy
+Temporal Action Proposal Generation#ActivityNet-1.3#AR@100
 Sequential Image Classification#Sequential MNIST#Permuted Accuracy
 Scene Text Detection#Total-Text#F-Measure
-Question Answering#SQuAD2.0#EM
-Image Classification#STL-10#Percentage correct
+Image Super-Resolution#BSD100 - 8x upscaling#PSNR
 Atari Games#Atari 2600 James Bond#Score
-Question Answering#SQuAD2.0#F1
-6D Pose Estimation using RGB#LineMOD#Accuracy
+Action Recognition#miniSports#Video hit@5
 Neural Architecture Search#CIFAR-10 Image Classification#Percentage error
-Speech Recognition#Switchboard + Hub500#Percentage error
 Skeleton Based Action Recognition#Varying-view RGB-D Action-Skeleton#Accuracy (CV I)
+Action Recognition#miniSports#Video hit@1
 Graph Classification#IMDb-M#Accuracy
 Skeleton Based Action Recognition#NTU RGB+D#Accuracy (CV)
+Data-to-Text Generation#WebNLG Full#BLEU
 Neural Architecture Search#CIFAR-10 Image Classification#Params
-Facial Landmark Detection#300W#NME
 Nested Mention Recognition#ACE 2004#F1
-Language Modelling#Text8#Number of params
+Action Classification#HMDB51#Accuracy
 Pose Estimation#Leeds Sports Poses#PCK
+Talking Head Generation#VoxCeleb1 - 8-shot learning#FID
+Person Re-Identification#Market-1501#Rank-5
 Semantic Segmentation#COCO-Stuff test#mIoU
 Person Re-Identification#Market-1501#Rank-1
-Atari Games#Atari 2600 River Raid#Score
-Data-to-Text Generation#E2E NLG Challenge#ROUGE-L
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (test-dev)#F-measure (Recall)
+Few-Shot Image Classification#CIFAR-FS 5-way (1-shot)#Accuracy
 Conditional Image Generation#CIFAR-10#Inception score
-Image Denoising#Urban100 sigma50#PSNR
+Interactive Video Object Segmentation#DAVIS 2017#AUC-J
+Pose Estimation#COCO test-dev#AP75
+Supervised Video Summarization#SumMe#F1-score (Augmented)
+Image Generation#CelebA 256x256#bpd
+Object Detection#KITTI Cars Easy#AP
+Reading Comprehension#RACE#Accuracy (Middle)
+Unsupervised Video Object Segmentation#DAVIS 2016#Jaccard (Recall)
 Real-Time Semantic Segmentation#Cityscapes test#Time (ms)
-Person Re-Identification#DukeMTMC-reID#Rank-1
+Conversational Response Selection#Ubuntu Dialogue (v1, Ranking)#R2@1
 Ad-Hoc Information Retrieval#TREC Robust04#MAP
+Image Clustering#CIFAR-100#Accuracy
 Image Clustering#USPS#Accuracy
-Action Recognition In Videos#Sports-1M#Video hit@5
+Age-Invariant Face Recognition#CAFR#Accuracy
+Action Recognition#IRD#Accuracy
+Music Source Separation#MUSDB18#SDR (bass)
 Language Modelling#Penn Treebank (Word Level)#Params
 Object Detection#PASCAL VOC 2007#MAP
 Question Answering#CNN / Daily Mail#CNN
-Question Answering#TrecQA#MAP
-Sentiment Analysis#Yelp Fine-grained classification#Error
+Image Retrieval#CARS196#R@1
+Person Re-Identification#CUHK03 detected#Rank-1
+Image Super-Resolution#Set5 - 8x upscaling#SSIM
+Fine-Grained Image Classification#Oxford-IIIT Pets#Top-1 Error Rate
+Neural Architecture Search#CIFAR-10#Top-1 Error Rate
 Image Clustering#USPS#NMI
+Visual Object Tracking#YouTube-VOS#Jaccard (Seen)
+Image Generation#ImageNet 128x128#FID
+Real-Time Semantic Segmentation#NYU Depth v2#mIoU
 Node Classification#Citeseer Full-supervised#Accuracy
-Atari Games#Atari 2600 Battle Zone#Score
 Dependency Parsing#Penn Treebank#LAS
+Atari Games#Atari 2600 Battle Zone#Score
 Language Modelling#Hutter Prize#Number of params
-Atari Games#Atari 2600 Venture#Score
-Nested Named Entity Recognition#GENIA#F1
-Citation Intent Classification#ACL-ARC#F1
 Link Prediction# FB15k#Hits@1
 Link Prediction# FB15k#Hits@3
-Machine Translation#WMT2016 English-Romanian#BLEU score
+Unsupervised Video Object Segmentation#DAVIS 2017 (test-dev)#Jaccard (Recall)
+Action Segmentation#Breakfast#Acc
 Hand Pose Estimation#NYU Hands#Average 3D Error
-Question Answering#CoQA#Out-of-domain
-Semantic Textual Similarity#MRPC#Accuracy
+Conversational Response Selection#Ubuntu Dialogue (v1, Ranking)#R10@5
+Visual Dialog#VisDial v0.9 val#Mean Rank
+Conversational Response Selection#Ubuntu Dialogue (v1, Ranking)#R10@1
+Conversational Response Selection#Ubuntu Dialogue (v1, Ranking)#R10@2
+Semi-Supervised Video Object Segmentation#DAVIS 2016#F-measure (Decay)
+Neural Architecture Search#STL-10#Accuracy (%)
+Person Re-Identification#CUHK03#MAP
 Retinal Vessel Segmentation#CHASE_DB1#F1 score
 Image-to-Image Translation#Cityscapes Labels-to-Photo#Class IOU
-Atari Games#Atari 2600 Phoenix#Score
-Semantic Segmentation#Cityscapes test#Mean IoU (class)
-Natural Language Inference#SNLI#% Train Accuracy
+Cross-Modal Retrieval#COCO 2014#Image-to-text R@10
+Object Counting#Pascal VOC 2007 count-test#m-relRMSE
 Link Prediction#FB15k-237#MR
+Multivariate Time Series Forecasting#MIMIC-III#NegLL
+Text Classification#R8#Accuracy
 Node Classification#Wikipedia#Macro-F1
+Brain Tumor Segmentation#BRATS-2015#Dice Score
+Facial Expression Recognition#AffectNet#Accuracy
 Atari Games#Atari 2600 Alien#Score
 Atari Games#Atari 2600 Q*Bert#Score
-Hypernym Discovery#General#P@5
-Node Classification#PubMed (0.03%)#Accuracy
-Image-to-Image Translation#Cityscapes Photo-to-Labels#Per-pixel Accuracy
-Sentiment Analysis#Yelp Binary classification#Error
-Skeleton Based Action Recognition#NTU RGB+D 120#Accuracy (Cross-Subject)
+Image Super-Resolution#Set14 - 8x upscaling#PSNR
+Neural Architecture Search#Food-101#PARAMS
+3D Object Detection#KITTI Pedestrian Easy val#AP
+Image Super-Resolution#BSD100 - 3x upscaling#PSNR
+Fine-Grained Image Classification#Oxford 102 Flowers#Top-1 Error Rate
 Click-Through Rate Prediction#Criteo#Log Loss
+Action Recognition#ActivityNet#mAP
+Domain Generalization#ImageNet-R#Top-1 Error Rate
 Question Answering#NarrativeQA#METEOR
-Dependency Parsing#Penn Treebank#POS
-Language Modelling#Penn Treebank (Character Level)#Bit per Character (BPC)
+Neural Architecture Search#Stanford Cars#Accuracy (%)
+Domain Adaptation#USPS-to-MNIST#Accuracy
 Atari Games#Atari 2600 Crazy Climber#Score
-Few-Shot Image Classification#OMNIGLOT - 1-Shot Learning#Accuracy
+Heterogeneous Node Classification#DBLP (PACT) 14k#Macro-F1 (80% training data)
 Optical Flow Estimation#Sintel-clean#Average End-Point Error
-Action Recognition In Videos#Sports-1M#Video hit@1 
-Open-Domain Question Answering#Quasar#EM (Quasar-T)
-Gesture-to-Gesture Translation#Senz3D#IS
+Object Detection#KITTI Cars Moderate#AP
 Question Answering#bAbi#Mean Error Rate
 Atari Games#Atari 2600 Defender#Score
-Few-Shot Image Classification#Mini-ImageNet - 5-Shot Learning#Accuracy
-3D Object Detection#KITTI Cars Easy#AP
-Image-to-Image Translation#Cityscapes Photo-to-Labels#Class IOU
-Node Classification#Cora (3%)#Accuracy
+Few-Shot Image Classification#Mini-Imagenet 5-way (1-shot)#Accuracy
+Unsupervised Video Object Segmentation#DAVIS 2017 (val)#Jaccard (Mean)
 3D Human Pose Estimation#MPI-INF-3DHP#MJPE
-Image Classification#ImageNet#Top 5 Accuracy
-Atari Games#Atari 2600 Wizard of Wor#Score
-Atari Games#Atari 2600 Up and Down#Score
-Pose Tracking#PoseTrack2017#MOTA
+Keypoint Detection#COCO test-challenge#AR
+Continuous Control#PyBullet Ant#Return
+Neural Architecture Search#Stanford Cars#FLOPS
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (val)#J&F
+Keypoint Detection#COCO test-challenge#AP
+Multimodal Unsupervised Image-To-Image Translation#Edge-to-Handbags#Quality
+Temporal Action Proposal Generation#ActivityNet-1.3#AUC (test)
 Image-to-Image Translation#SYNTHIA-to-Cityscapes#mIoU
 Text Classification#TREC-6#Error
+Text Classification#Yelp-5#Accuracy
 Atari Games#Atari 2600 Ms. Pacman#Score
-Sentiment Analysis#SST-5 Fine-grained classification#Accuracy
 Text Classification#AG News#Error
-Person Re-Identification#DukeMTMC-reID#MAP
-Graph Classification#NCI1#Accuracy
-Atari Games#Atari 2600 Atlantis#Score
-Atari Games#Atari 2600 Road Runner#Score
-Semantic Segmentation#LIP val#mIoU
+Named Entity Recognition#SciERC#F1
+Document Classification#BBCSport#Accuracy
+Video Generation#UCF-101 16 frames, 64x64, Unconditional#Inception Score
+Image Classification#Kuzushiji-MNIST#Accuracy
+Few-Shot Image Classification#Stanford Cars 5-way (5-shot)#Accuracy
 Question Answering#CNN / Daily Mail#Daily Mail
-CCG Supertagging#CCGBank#Accuracy
-Lesion Segmentation#Anatomical Tracings of Lesions After Stroke (ATLAS) #Dice
+Video Object Detection#ImageNet VID#MAP
+Weakly Supervised Action Localization#THUMOS 2014#mAP@0.5
+Humor Detection#200k Short Texts for Humor Detection#F1-score
 Sentiment Analysis#Multi-Domain Sentiment Dataset#DVD
-Grammatical Error Detection#FCE#F0.5
+Node Classification#Flickr#Accuracy
+Unsupervised Video Object Segmentation#DAVIS 2017 (val)#F-measure (Decay)
+Multi-Object Tracking#MOT17#MOTA
 Sentiment Analysis#Amazon Review Full#Accuracy
-Language Modelling#Penn Treebank (Word Level)#Validation perplexity
 Language Modelling#Hutter Prize#Bit per Character (BPC)
-Relation Extraction#NYT#F1
 Semantic Segmentation#ScanNet#3DIoU
-Retinal Vessel Segmentation#DRIVE#AUC
+Semantic Segmentation#ADE20K#Test Score
 Language Modelling#WikiText-103#Validation perplexity
-Face Alignment#300W#AUC0.08 private
-Action Classification#Kinetics-400#Accuracy
+Crowd Counting#UCF-QNRF#MAE
+Image-to-Image Translation#ADE20K Labels-to-Photos#Accuracy
+Recommendation Systems#Million Song Dataset#nDCG@100
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (val)#F-measure (Recall)
 Instance Segmentation#COCO test-dev#mask AP
-Object Detection#COCO test-dev#box AP
+Few-Shot Image Classification#iNaturalist (227-way multi-shot)#Accuracy
 Question Answering#WikiQA#MAP
-Image Super-Resolution#BSD100 - 4x upscaling#PSNR
+Recommendation Systems#DBbook2014#HR@10
+Visual Object Tracking#OTB-100#AUC
+Action Segmentation#GTEA#Acc
+Image-to-Image Translation#COCO-Stuff Labels-to-Photos#mIoU
+Self-Supervised Action Recognition#UCF101#3-fold Accuracy
+Recommendation Systems#YahooMusic Monti#RMSE
+Talking Head Generation#100 sleep nights of 8 caregivers#10%
+Keypoint Detection#COCO test-dev#AP50
 3D Object Detection#KITTI Cyclists Easy#AP
-Atari Games#Atari 2600 Name This Game#Score
+Image Generation#STL-10#Inception score
+Visual Dialog#VisDial v0.9 val#R@5
+Visual Dialog#VisDial v0.9 val#R@1
+Salient Object Detection#ISTD#Balanced Error Rate
 Text Summarization#DUC 2004 Task 1#ROUGE-1
 Text Summarization#DUC 2004 Task 1#ROUGE-2
+Text-to-Image Generation#CUB#Inception score
 Dense Pixel Correspondence Estimation#HPatches#Viewpoint III AEPE
+Mortality Prediction#MIMIC-III#Precision
+3D Object Detection#KITTI Pedestrian Moderate val#AP
 3D Part Segmentation#ShapeNet-Part#Class Average IoU
+Few-Shot Image Classification#OMNIGLOT - 1-Shot, 423 way#Accuracy
+Action Recognition#UCF-101#Top 1 Accuracy
+Keypoint Detection#COCO test-dev#AP75
+Talking Head Generation#VoxCeleb1 - 32-shot learning#FID
 Dependency Parsing#Penn Treebank#UAS
+Image-to-Image Translation#ADE20K-Outdoor Labels-to-Photos#Accuracy
 Text Summarization#DUC 2004 Task 1#ROUGE-L
 Relation Extraction#ACE 2004#Entity+Relation F1
 Gesture-to-Gesture Translation#NTU Hand Digit#AMT
-Document Classification#Cora#Accuracy
-Data-to-Text Generation#E2E NLG Challenge#BLEU
+Youtube-VOS#YouTube-VOS#Jaccard (Seen)
+Nested Named Entity Recognition#ACE 2005#F1
+Visual Object Tracking#YouTube-VOS#F-Measure (Unseen)
 Graph Classification#NCI109#Accuracy
+Image Classification#CIFAR-10#FLOPS
 Atari Games#Atari 2600 Pong#Score
 Skeleton Based Action Recognition#Varying-view RGB-D Action-Skeleton#Accuracy (AV II)
-Atari Games#Atari 2600 Star Gunner#Score
-3D Object Reconstruction#Data3D?R2N2#Avg F1
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (val)#Jaccard (Mean)
+Unsupervised Domain Adaptation#Duke to MSMT#rank-1
+Unsupervised Domain Adaptation#Duke to MSMT#rank-5
 Semantic Role Labeling#OntoNotes#F1
-Visual Object Tracking#DAVIS 2016#Jaccard (Recall)
-Link Prediction#FB15k-237#Hits@3
-Link Prediction#FB15k-237#Hits@1
-Text Classification#Yahoo! Answers#Accuracy
+Semantic Similarity#SICK#Pearson Correlation
+Photo geolocation estimation#Im2GPS#Region level (200 km)
+Unsupervised Video Object Segmentation#DAVIS 2017 (val)#Jaccard (Decay)
 Skeleton Based Action Recognition#Varying-view RGB-D Action-Skeleton#Accuracy (CS)
-Visual Object Tracking#DAVIS-2017#Jaccard (Decay)
 Video Retrieval#LSMDC#text-to-video R@10
-Question Answering#TrecQA#MRR
-Action Recognition In Videos#Something-Something V2#Top-1 Accuracy
-Machine Translation#IWSLT2015 German-English#BLEU score
+Chinese Named Entity Recognition#MSRA#F1
+Image Classification#VTAB-1k#Top-1 Accuracy
+Neural Architecture Search#Oxford 102 Flowers#FLOPS
+Neural Architecture Search#NAS-Bench-201, ImageNet-16-120#Accuracy (val)
+Depth Completion#KITTI Depth Completion#MAE
+Few-Shot Image Classification#Mini-Imagenet 20-way (5-shot)#Accuracy
+Domain Adaptation#SVNH-to-MNIST#Accuracy
 Person Re-Identification#Market-1501#MAP
 Recommendation Systems#MovieLens 10M#RMSE
-Face Detection#WIDER Face (Hard)#AP
-Hypernym Discovery#Medical domain#P@5
 Weakly Supervised Object Detection#PASCAL VOC 2012 test#MAP
-Atari Games#Atari 2600 Bowling#Score
+Image Super-Resolution#Set14 - 8x upscaling#SSIM
 Aspect-Based Sentiment Analysis#SemEval 2014 Task 4 Sub Task 2#Laptop (Acc)
+Few-Shot Image Classification#OMNIGLOT - 1-Shot, 5-way#Accuracy
+Few-Shot Image Classification#CUB-200 - 0-Shot Learning#Accuracy
+Image Retrieval#CUB-200-2011#R@1
 Language Modelling#WikiText-2#Test perplexity
+Node Classification#Cora#Validation
 Graph Classification#IMDb-B#Accuracy
-Graph Classification#COLLAB#Accuracy
-Skeleton Based Action Recognition#CAD-120#Accuracy
-Gesture-to-Gesture Translation#NTU Hand Digit#IS
-Semantic Segmentation#PASCAL VOC 2012 val#mIoU
+Few-Shot Image Classification#AWA - 0-Shot#Accuracy
+Salient Object Detection#DUTS-TE#F-measure
+Temporal Action Localization#THUMOS’14#mAP IOU@0.6
+Temporal Action Localization#THUMOS’14#mAP IOU@0.5
+Multi-tissue Nucleus Segmentation#Kumar#Hausdorff Distance (mm)
+Temporal Action Localization#THUMOS’14#mAP IOU@0.7
+Temporal Action Localization#THUMOS’14#mAP IOU@0.2
+Hate Speech Detection#Ethos Binary#Precision
+Temporal Action Localization#THUMOS’14#mAP IOU@0.1
+Temporal Action Localization#THUMOS’14#mAP IOU@0.4
+Temporal Action Localization#THUMOS’14#mAP IOU@0.3
+Few-Shot Image Classification#mini-ImageNet - 100-Way#Accuracy
 Atari Games#Atari 2600 Breakout#Score
-Sentiment Analysis#Multi-Domain Sentiment Dataset#Kitchen
-Question Answering#bAbi#Accuracy (trained on 1k)
-Recommendation Systems#MovieLens 100K#RMSE
+Image Super-Resolution#BSD100 - 3x upscaling#SSIM
+Face Verification#Trillion Pairs Dataset#Accuracy
 Sentiment Analysis#MR#Accuracy
-Dense Pixel Correspondence Estimation#HPatches#Viewpoint II AEPE
+Video Generation#UCF-101 16 frames, Unconditional, Single GPU#Inception Score
+Language Modelling#enwik8#Number of params
 Unsupervised Machine Translation#WMT2016 English-German#BLEU
-Coreference Resolution#OntoNotes#F1
-Question Answering#SemEvalCQA#MAP
-Speech Recognition#WSJ eval92#Percentage error
+Node Classification#Brazil Air-Traffic#Accuracy
+Music Source Separation#MUSDB18#SDR (other)
+Unsupervised Video Object Segmentation#DAVIS 2016#F-measure (Recall)
+Few-Shot Image Classification#OMNIGLOT - 5-Shot, 1000 way#Accuracy
 Question Answering#NewsQA#F1
 Sentiment Analysis#Amazon Review Polarity#Accuracy
-Human-Object Interaction Detection#HICO#mAP
+Visual Object Tracking#VOT2017#Expected Average Overlap (EAO)
 Node Classification#Wikipedia#Accuracy
-Semantic Segmentation#PASCAL VOC 2012 test#Mean IoU
-Relation Extraction#ACE 2005#Entity F1
-Atari Games#Atari 2600 Yars Revenge#Score
-Image Classification#MNIST#Percentage error
+Visual Question Answering#VQA v2 test-std#Accuracy
 Named Entity Recognition#JNLPBA#F1
 Question Answering#CoQA#In-domain
-Relation Extraction#ACE 2005#Relation F1
+Action Classification#Kinetics-700#Top-1 Accuracy
 Atari Games#Atari 2600 Kung-Fu Master#Score
 Panoptic Segmentation#Cityscapes val#AP
-Hypernym Discovery#Medical domain#MRR
 Image Classification#CIFAR-100#Percentage correct
+Machine Translation#WMT2014 German-English#BLEU score
+Object Counting#Pascal VOC 2007 count-test#m-reIRMSE-nz
 Keypoint Detection#COCO#Test AP
-Visual Object Tracking#DAVIS 2016#Jaccard (Mean)
-Word Sense Disambiguation#Supervised:#SemEval 2015
-Word Sense Disambiguation#Supervised:#SemEval 2013
-Action Classification#Charades#MAP
+Neural Architecture Search#Oxford 102 Flowers#Accuracy (%)
+Data-to-Text Generation#RotoWire (Relation Generation)#Precision
+Photo geolocation estimation#Im2GPS#City level (25 km)
 Fine-Grained Image Classification#Stanford Cars#Accuracy
-Visual Object Tracking#DAVIS-2017#F-measure (Decay)
-Word Sense Disambiguation#Supervised:#SemEval 2007
 Language Modelling#WikiText-2#Number of params
-Real-Time Object Detection#COCO#FPS
+Temporal Action Localization#UCF101-24#Video-mAP 0.5
+Few-Shot Image Classification#miniImagenet → CUB (5-way 1-shot)#Accuracy
 Node Classification#Pubmed#Accuracy
+Breast Tumour Classification#PCam#AUC
 Real-Time Semantic Segmentation#Cityscapes test#Frame (fps)
-Gesture-to-Gesture Translation#Senz3D#PSNR
-Graph Classification#HIV-fMRI-77 #F1
+Neural Architecture Search#CIFAR-10 Image Classification#FLOPS
+Person Re-Identification#MSMT17#Rank-1
 Lane Detection#TuSimple#Accuracy
+Skeleton Based Action Recognition#J-HMBD Early Action#10%
 Unsupervised MNIST#MNIST#Accuracy
+3D Reconstruction#Data3D−R2N2#3DIoU
 3D Object Detection#KITTI Cars Moderate#AP
 Link Prediction# FB15k#MRR
-Pedestrian Detection#CityPersons#Reasonable MR^-2
+Few-Shot Image Classification#miniImagenet → CUB (5-way 5-shot)#Accuracy
+Data-to-Text Generation#Rotowire (Content Selection)#Recall
 Link Prediction# FB15k#Hits@10
+6D Pose Estimation using RGBD#LineMOD#Mean ADD
+3D Object Detection#KITTI Cyclist Easy val#AP
+Image Super-Resolution#Urban100 - 3x upscaling#PSNR
+Person Re-Identification#MARS#mAP
 Visual Question Answering#COCO Visual Question Answering (VQA) real images 1.0 multiple choice#Percentage correct
-Link Prediction#WN18#MRR
-Face Identification#MegaFace#Accuracy
+Panoptic Segmentation#COCO test-dev#PQ
+3D Instance Segmentation#S3DIS#mPrec
 Atari Games#Atari-57#Medium Human-Normalized Score
-Face Verification#MegaFace#Accuracy
+Hyperspectral Image Classification#Pavia University#Overall Accuracy
 Head Pose Estimation#BIWI#MAE
+Image Classification#Tiered ImageNet 5-way (5-shot)#Accuracy
 Multi-Person Pose Estimation#MPII Multi-Person#AP
 Atari Games#Atari 2600 Asteroids#Score
-Relation Extraction#TACRED#F1
 Instance Segmentation#COCO test-dev#AP75
+Graph Clustering#Cora#Accuracy
+Action Classification#AViD#Accuracy
+Fine-Grained Image Classification#Food-101#FLOPS
+Crowd Counting#UCF CC 50#MAE
+Denoising#Darmstadt Noise Dataset#PSNR
+Keypoint Detection#COCO test-challenge#AP50
 Atari Games#Atari 2600 Assault#Score
-Hypernym Discovery#Music domain#MAP
 Atari Games#Atari 2600 Time Pilot#Score
-Gesture-to-Gesture Translation#NTU Hand Digit#PSNR
 Hand Pose Estimation#ICVL Hands#Average 3D Error
 Atari Games#Atari 2600 Robotank#Score
-3D Reconstruction#Data3D?R2N2#3DIoU
-Graph Classification#HIV-DTI-77#Accuracy
 Video Retrieval#LSMDC#text-to-video Median Rank
+Pose Estimation#COCO test-dev#APL
+3D Human Pose Estimation#Geometric Pose Affordance #MPJPE (CS)
+Pose Estimation#COCO test-dev#APM
 Face Alignment#AFLW2000-3D#Mean NME 
-Machine Translation#WMT2014 English-French#BLEU score
+Temporal Action Localization#ActivityNet-1.3#mAP IOU@0.95
+Action Classification#UCF101#split-1 Top-1 Accuracy
+Age-Invariant Face Recognition#MORPH Album2#Rank-1 Recognition Rate
 Node Classification#Reddit#Accuracy
 Face Verification#IJB-A#TAR @ FAR=0.01
+Pose Transfer#Deep-Fashion#IS
 Atari Games#Atari 2600 Gopher#Score
-3D Human Pose Estimation#MPI-INF-3DHP#AUC
 Natural Language Inference#WNLI#Accuracy
-Atari Games#Atari 2600 Solaris#Score
+Keypoint Detection#COCO test-challenge#AP75
+Semi-Supervised Image Classification#ImageNet - 10% labeled data#Top 1 Accuracy
 Atari Games#Atari 2600 HERO#Score
-Few-Shot Image Classification#OMNIGLOT - 5-Shot Learning#Accuracy
+Multi-tissue Nucleus Segmentation#Kumar#Dice
 Link Prediction#WN18#Hits@10
 Hand Pose Estimation#MSRA Hands#Average 3D Error
-Machine Translation#WMT2016 German-English#BLEU score
+Heterogeneous Node Classification#DBLP (PACT) 14k#Micro-F1 (80% training data)
 Recommendation Systems#Douban#RMSE
+Skeleton Based Action Recognition#JHMDB (2D poses only)#Average accuracy of 3 splits
+Node Classification#Europe Air-Traffic#Accuracy
 Image Super-Resolution#BSD100 - 4x upscaling#SSIM
+Temporal Action Localization#ActivityNet-1.3#mAP IOU@0.75
+Few-Shot Image Classification#AWA2 - 0-Shot#Accuracy
+Supervised Video Summarization#TvSum#F1-score (Augmented)
 Atari Games#Atari 2600 Montezuma's Revenge#Score
-Semi-Supervised Image Classification#STL-10, 1000 Labels#Accuracy
+Hand Gesture Recognition#Jester test#Top 1 Accuracy
+Unsupervised Video Object Segmentation#DAVIS 2016#F-measure (Decay)
+Formation Energy#Materials Project#MAE
+Few-Shot Image Classification#Tiered ImageNet 5-way (1-shot)#Accuracy
 Real-Time Semantic Segmentation#CamVid#mIoU
 Semantic Segmentation#CamVid#Mean IoU
+Neural Architecture Search#ImageNet#Params
 Instance Segmentation#COCO test-dev#AP50
+Multimodal Activity Recognition#Moments in Time Dataset#Top-5 (%)
 Speech Recognition#LibriSpeech test-other#Word Error Rate (WER)
+Unsupervised Video Object Segmentation#DAVIS 2017 (test-dev)#F-measure (Recall)
 Link Prediction#WN18RR#Hits@3
 Panoptic Segmentation#Cityscapes val#PQ
 Link Prediction#WN18RR#Hits@1
-Semantic Segmentation#PASCAL Context#mIoU
-Visual Question Answering#COCO Visual Question Answering (VQA) real images 1.0 open ended#Percentage correct
+Data-to-Text Generation#ToTTo#BLEU
 Image-to-Image Translation#Cityscapes Labels-to-Photo#Per-pixel Accuracy
+Click-Through Rate Prediction#Company*#Log Loss
+Text Summarization#GigaWord-10k#ROUGE-L
 Fine-Grained Image Classification# CUB-200-2011#Accuracy
-Retinal Vessel Segmentation#STARE#F1 score
-Image Classification#CIFAR-10#Percentage error
+Document Classification#Reuters-21578#F1
 Real-Time Semantic Segmentation#CamVid#Frame (fps)
+Image Classification#CIFAR-10#Percentage error
 Image Generation#CIFAR-10#Inception score
+Click-Through Rate Prediction#MovieLens 20M#AUC
+Video Retrieval#MSR-VTT#text-to-video Median Rank
+Hand Gesture Recognition#EgoGesture#Accuracy
+Text Summarization#GigaWord-10k#ROUGE-2
+Text Summarization#GigaWord-10k#ROUGE-1
 Nested Named Entity Recognition#ACE 2004#F1
-Scene Text Detection#IC17-MLT#F-Measure
-Hypernym Discovery#Medical domain#MAP
+Action Recognition#NTU RGB+D#Accuracy (CV)
+Facial Expression Recognition#FERPlus#Accuracy
 Semantic Segmentation#ADE20K val#mIoU
-Machine Translation#WMT2014 English-German#BLEU score
-Relation Extraction#ACE 2004#Entity F1
+Unsupervised Facial Landmark Detection#AFLW (Zhang CVPR 2018 crops)#NME
+Skeleton Based Action Recognition#Skeletics-152#Accuracy (Cross-Subject)
 Image Generation#FFHQ#FID
-Action Recognition In Videos#HMDB-51#Average accuracy of 3 splits
+Neural Architecture Search#Food-101#Accuracy (%)
 Ad-Hoc Information Retrieval#TREC Robust04#nDCG@20
-Image Super-Resolution#Urban100 - 4x upscaling#PSNR
-Chunking#Penn Treebank#F1 score
-Language Modelling#WikiText-103#Test perplexity
+Scene Text Detection#Total-Text#Recall
+Unsupervised Person Re-Identification#DukeMTMC-reID#Rank-1
+Birds Eye View Object Detection#KITTI Cars Easy#AP
+Emotion Recognition in Conversation#MELD#Weighted Macro-F1
+Neural Architecture Search#DTD#PARAMS
+Person Re-Identification#MSMT17#mAP
 Optical Flow Estimation#Sintel-final#Average End-Point Error
-Link Prediction#WN18#Hits@3
-Link Prediction#WN18#Hits@1
 Lesion Segmentation#Anatomical Tracings of Lesions After Stroke (ATLAS) #IoU
-Graph Classification#HIV-DTI-77#F1
+Birds Eye View Object Detection#KITTI Pedestrians Moderate#AP
+Salient Object Detection#PASCAL-S#F-measure
 Atari Games#Atari 2600 Space Invaders#Score
+Salient Object Detection#ECSSD#F-measure
 Skeleton Based Action Recognition#J-HMDB#Accuracy (RGB+pose)
-Link Prediction#FB15k-237#MRR
 Real-Time Object Detection#PASCAL VOC 2007#MAP
 Sentiment Analysis#Multi-Domain Sentiment Dataset#Electronics
+Action Recognition#NTU RGB+D#Accuracy (CS)
 3D Object Detection#KITTI Cyclists Hard#AP
-Face Verification#Labeled Faces in the Wild#Accuracy
-Few-Shot Image Classification#CUB 200 5-way 1-shot#Accuracy
-Scene Text Detection#MSRA-TD500#Recall
+Multi-Frame Super-Resolution#PROBA-V#Normalized cPSNR
+Recommendation Systems#Flixster Monti#RMSE
+Few-Shot Image Classification#SUN - 0-Shot#Accuracy
+Recommendation Systems#Epinions#MAE
+Semi-Supervised Video Object Segmentation#DAVIS 2016#Jaccard (Mean)
+Image-to-Image Translation#COCO-Stuff Labels-to-Photos#Accuracy
 Skeleton Based Action Recognition#SYSU 3D#Accuracy
-Machine Translation#IWSLT2015 English-German#BLEU score
-Semi-Supervised Image Classification#cifar10, 250 Labels#Percentage correct
+Video Frame Interpolation#Middlebury#Interpolation Error
+Self-Supervised Image Classification#ImageNet#Top 1 Accuracy
+3D Canonical Hand Pose Estimation#STB#AUC
+Click-Through Rate Prediction#Avazu#AUC
+Action Classification#HACS#Top-1 Accuracy
+Data-to-Text Generation#RotoWire#BLEU
+Image Dehazing#SOTS Indoor#SSIM
 Natural Language Inference#RTE#Accuracy
 Lesion Segmentation#Anatomical Tracings of Lesions After Stroke (ATLAS) #Precision
+Talking Head Generation#VoxCeleb2 - 1-shot learning#FID
 Link Prediction#WN18RR#MRR
-Object Detection#COCO test-dev#AP75
-Image Clustering#MNIST#NMI
+Domain Adaptation#Office-Home#Accuracy
 Linguistic Acceptability#CoLA#Accuracy
+Click-Through Rate Prediction#Bing News#AUC
+Domain Generalization#PACS#Average Accuracy
 Sentiment Analysis#Multi-Domain Sentiment Dataset#Average
-Hypernym Discovery#Music domain#MRR
+Image Super-Resolution#Set5 - 3x upscaling#PSNR
 Monocular Depth Estimation#NYU-Depth V2#RMSE
-Atari Games#Atari 2600 Kangaroo#Score
-Atari Games#Atari 2600 Gravitar#Score
-6D Pose Estimation using RGB#OccludedLINEMOD#Accuracy(ADD)
-Atari Games#Atari 2600 Seaquest#Score
+Fine-Grained Image Classification#Food-101#PARAMS
+Multivariate Time Series Imputation#MuJoCo#MSE (10^2, 50% missing)
+Colorectal Gland Segmentation:#CRAG#F1-score
+Scene Text Detection#ICDAR 2017 MLT#F-Measure
+Image Clustering#STL-10#Accuracy
+Photo geolocation estimation#Im2GPS#Reference images
+Few-Shot Image Classification#Tiered ImageNet 5-way (5-shot)#Accuracy
+Emotion Recognition in Conversation#EC#Micro-F1
+Video Alignment#UPenn Action#Kendall's Tau
 Weakly Supervised Action Localization#ActivityNet-1.2#mAP@0.5
 Metric Learning#CARS196#R@1
-Graph Classification#PROTEINS#Accuracy
+Neural Architecture Search#Oxford-IIIT Pets#Accuracy (%)
+3D Human Pose Estimation#Geometric Pose Affordance #MPJPE (CA)
+Action Classification#UCF101#split-1 Top-5 Accuracy
+Photo geolocation estimation#Im2GPS#Training images
 Action Classification#Moments in Time#Top 1 Accuracy
 Node Classification#Cora (0.5%)#Accuracy
 Question Answering#SQuAD1.1 dev#F1
-Visual Question Answering#VQA v2#Accuracy
 Question Answering#SQuAD1.1 dev#EM
 Image Classification#CIFAR-10#Percentage correct
+Reading Comprehension#RACE#Accuracy (High)
+Few-Shot Image Classification#Mini-ImageNet-CUB 5-way (1-shot)#Accuracy
 Weakly Supervised Object Detection#PASCAL VOC 2007#MAP
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (test-dev)#Jaccard (Recall)
+Object Detection#CrowdHuman (full body)#AP
+Temporal Action Localization#CrossTask#Recall
+Image Retrieval#Par106k#mAP
+Text-to-Image Generation#COCO#FID
+Fine-Grained Image Classification#FGVC Aircraft#PARAMS
+Fake News Detection#FNC-1#Per-class Accuracy (Agree)
+Image Super-Resolution#FFHQ 1024 x 1024 - 4x upscaling#PSNR
+Out-of-Distribution Detection#CIFAR-10#FPR95
+Atari Games#Atari 2600 Centipede#Score
+3D Face Reconstruction#Florence#Mean NME 
+Image Generation#STL-10#FID
+Node Classification#Pubmed Full-supervised#Accuracy
+Unsupervised Facial Landmark Detection#AFLW-MTFL#NME
+3D Canonical Hand Pose Estimation#RHP#AUC
+Image Super-Resolution#BSD100 - 8x upscaling#SSIM
+Weakly Supervised Object Detection#Charades#MAP
+Birds Eye View Object Detection#KITTI Cyclists Moderate#AP
+Unsupervised Domain Adaptation#Duke to Market#mAP
+Hand Pose Estimation#HANDS 2017#Average 3D Error
+Video Super-Resolution#Vid4 - 4x upscaling#SSIM
+Grammatical Error Detection#CoNLL-2014 A2#F0.5
+Image Super-Resolution#Set14 - 4x upscaling#SSIM
+Continuous Control#PyBullet Hopper#Return
+Salient Object Detection#DUT-OMRON#F-measure
+Action Recognition#Sports-1M#Video hit@1 
+Multi-Person Pose Estimation#COCO test-dev#AP75
+Object Counting#CARPK#MAE
+Atari Games#Atari 2600 Beam Rider#Score
+3D Object Reconstruction#Data3D−R2N2#Avg F1
+Few-Shot Image Classification#CUB 200 5-way 5-shot#Accuracy
+Action Recognition#miniSports#Accuracy
+Node Classification#BlogCatalog#Accuracy
+Speech Enhancement#DEMAND#COVL
+Multi-Person Pose Estimation#COCO test-dev#AP50
+Domain Adaptation#ImageCLEF-DA#Accuracy
+Part-Of-Speech Tagging#Penn Treebank#Accuracy
+Joint Entity and Relation Extraction#SciERC#Relation F1
+Action Segmentation#Breakfast#F1@50%
+Semi-Supervised Video Object Segmentation#YouTube-VOS#Jaccard (Unseen)
+Few-Shot Image Classification#CUB 200 50-way (0-shot)#Accuracy
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (test-dev)#J&F
+Face Detection#PASCAL Face#AP
+Action Recognition#Kinetics-400#Video hit@1 
+Face Identification#Trillion Pairs Dataset#Accuracy
+Sentiment Analysis#SST-2 Binary classification#Accuracy
+Image Dehazing#SOTS Outdoor#SSIM
+Multivariate Time Series Forecasting#MIMIC-III#MSE
+Atari Games#Atari 2600 Pitfall!#Score
+Relation Extraction#ChemProt#F1
+Atari Games#Atari 2600 Double Dunk#Score
+Node Classification#Citeseer#Validation
+Semi-Supervised Image Classification#SVHN, 250 Labels#Accuracy
+Data-to-Text Generation#MULTIWOZ 2.1#BLEU
+Image Super-Resolution#Set14 - 2x upscaling#PSNR
+Image Super-Resolution#Set5 - 4x upscaling#MOS
+Self-Supervised Action Recognition#HMDB51#Pre-Training Dataset
+Human Pose Forecasting#Human3.6M#MAR, walking, 1,000ms
+Click-Through Rate Prediction#Company*#AUC
+Object Detection#COCO test-dev#APS
+Link Prediction#YAGO3-10#MRR
+Image-to-Image Translation#ADE20K Labels-to-Photos#mIoU
+Recommendation Systems#MovieLens 20M#Recall@10
+Click-Through Rate Prediction#Criteo#AUC
+Node Classification#Citeseer#Accuracy
+Relation Extraction#CoNLL04#Relation F1 
+Recommendation Systems#MovieLens 20M#Recall@20
+Dense Pixel Correspondence Estimation#HPatches#Viewpoint IV AEPE
+Abstractive Text Summarization#CNN / Daily Mail#ROUGE-L
+Unsupervised Facial Landmark Detection#300W#NME
+Constituency Grammar Induction#PTB#Mean F1 (WSJ)
+Fine-Grained Image Classification#Stanford Cars#FLOPS
+Abstractive Text Summarization#CNN / Daily Mail#ROUGE-1
+Abstractive Text Summarization#CNN / Daily Mail#ROUGE-2
+Object Detection#COCO test-dev#APM
+Object Detection#COCO test-dev#APL
+Node Classification#Cora Full-supervised#Accuracy
+Retinal Vessel Segmentation#DRIVE#F1 score
+Relation Extraction#CoNLL04#Entity F1
+Atari Games#Atari 2600 Zaxxon#Score
+Music Modeling#Nottingham#NLL
+Fine-Grained Image Classification#Food-101#Accuracy
+Image Classification#CINIC-10#Accuracy
+Data-to-Text Generation#E2E NLG Challenge#NIST
+Face Verification#IJB-B#TAR @ FAR=0.01
+Monocular Depth Estimation#KITTI Eigen split unsupervised#absolute relative error
+Multi-Object Tracking#2D MOT 2015#MOTA
+Quantization#ImageNet#Accuracy (%)
+Language Modelling#Penn Treebank (Character Level)#Number of params
+Action Classification#ActivityNet-1.2#mAP
+Music Source Separation#MUSDB18#SDR (drums)
+Machine Translation#WMT2016 English-German#BLEU score
+Image Generation#ImageNet 64x64#Bits per dim
+Few-Shot Image Classification#Mini-ImageNet-CUB 5-way (5-shot)#Accuracy
+Fine-Grained Image Classification#Oxford-IIIT Pets#PARAMS
+Grammatical Error Detection#CoNLL-2014 A1#F0.5
+Object Counting#COCO count-test#m-reIRMSE-nz
+Image Clustering#MNIST-full#Accuracy
+Visual Object Tracking#OTB-2013#AUC
+Bias Detection#StereoSet#ICAT Score
+ECG Classification#Electrocardiography (ECG) on Telehealth Network of Minas Gerais (TNMG)#F1 (RBBB)
+Node Classification#Cora with Public Split: fixed 20 nodes per class#Accuracy
+Image-to-Image Translation#ADE20K-Outdoor Labels-to-Photos#FID
+Visual Object Tracking#YouTube-VOS#F-Measure (Seen)
+Text-to-Image Generation#COCO#Inception score
+Salient Object Detection#ECSSD#MAE
+Speech Enhancement#Deep Noise Suppression (DNS) Challenge#PESQ
+Causal Inference#IDHP#Average Treatment Effect Error
+3D Part Segmentation#ShapeNet-Part#Instance Average IoU
+Heterogeneous Node Classification#DBLP (PACT) 14k#Macro-F1 (20% training data)
+Face Detection#FDDB#AP
+Fine-Grained Image Classification#Oxford 102 Flowers#PARAMS
+Natural Language Inference#MultiNLI#Mismatched
+Curved Text Detection#SCUT-CTW1500#F-Measure
+Photo geolocation estimation#Im2GPS#Street level (1 km)
+Keypoint Detection#COCO#Validation AP
+Fake News Detection#FNC-1#Per-class Accuracy (Discuss)
+Neural Architecture Search#DTD#Accuracy (%)
+Image Generation#LSUN Churches 256 x 256#FID
+Birds Eye View Object Detection#KITTI Cars Moderate#AP
+Skeleton Based Action Recognition#JHMDB (2D poses only)#No. parameters
+Language Modelling#WikiText-2#Validation perplexity
+Visual Object Tracking#TrackingNet#Normalized Precision
+Machine Translation#IWSLT2014 German-English#BLEU score
+Graph Classification#REDDIT-B#Accuracy
+Recommendation Systems#Netflix#nDCG@100
+Image Classification#ImageNet#Top 1 Accuracy
+Machine Translation#WMT2016 Romanian-English#BLEU score
+Visual Object Tracking#OTB-50#AUC
+Ad-Hoc Information Retrieval#TREC Robust04#P@20
+Document Classification#Reuters-21578#Accuracy
+Skeleton Based Action Recognition#UPenn Action#Accuracy
+Face Verification#CFP-FP#Accuracy
+Named Entity Recognition#CoNLL 2003 (English)#F1
+Image Super-Resolution#Set5 - 3x upscaling#SSIM
+Crowd Counting#ShanghaiTech A#MAE
+Semi-Supervised Video Object Segmentation#YouTube-VOS#Overall
+Recommendation Systems#Douban Monti#RMSE
+Image-to-Image Translation#Cityscapes-to-Foggy Cityscapes#mAP
+Real-Time Semantic Segmentation#Cityscapes test#mIoU
+Semi-Supervised Video Object Segmentation#YouTube-VOS#Jaccard (Seen)
+Object Detection#KITTI Cars Hard#AP
+Face Verification#AgeDB-30#Accuracy
+Online Multi-Object Tracking#MOT16#MOTA
+3D Object Detection#KITTI Pedestrians Moderate#AP
+Data-to-Text Generation#AGENDA#BLEU
+Motion Segmentation#Apolloscape#Accuracy
+Unsupervised Video Object Segmentation#DAVIS 2017 (val)#F-measure (Recall)
+Semantic Segmentation#ADE20K#Validation mIoU
+Action Segmentation#GTEA#F1@10%
+Skeleton Based Action Recognition#SHREC 2017 track on 3D Hand Gesture Recognition#14 gestures accuracy
+Image-to-Image Translation#GTAV-to-Cityscapes Labels#mIoU
+Egocentric Activity Recognition#EPIC-Kitchens#Actions Top-1 (S2)
+Scene Text Detection#SCUT-CTW1500#Recall
+Image Super-Resolution#Set14 - 2x upscaling#SSIM
+Node Classification#CiteSeer (1%)#Accuracy
+3D Human Pose Estimation#Total Capture#Average MPJPE (mm)
+Automated Theorem Proving#HolStep (Conditional)#Classification Accuracy
+Neural Architecture Search#Oxford-IIIT Pets#FLOPS
+Image Super-Resolution#FFHQ 1024 x 1024 - 4x upscaling#SSIM
+Natural Language Inference#QNLI#Accuracy
+Document Image Classification#RVL-CDIP#Accuracy
+Multi-Person Pose Estimation#COCO test-dev#AP
+Monocular Depth Estimation#KITTI Eigen split#absolute relative error
+Atari Games#Atari 2600 Tutankham#Score
+Image Super-Resolution#Manga109 - 3x upscaling#PSNR
+Word Sense Disambiguation#SemEval 2013 Task 12#F1
+Semantic Textual Similarity#MRPC#F1
+Youtube-VOS#YouTube-VOS#F-Measure (Unseen)
+Object Counting#CARPK#RMSE
+Multimodal Activity Recognition#Moments in Time Dataset#Top-1 (%)
+Unsupervised Domain Adaptation#Duke to Market#rank-10
+Visual Object Tracking#YouTube-VOS#O (Average of Measures)
+3D Semantic Instance Segmentation#ScanNetV2#mAP@0.50
+Unsupervised Image-To-Image Translation#Freiburg Forest Dataset#PSNR
+Image Super-Resolution#Set14 - 4x upscaling#PSNR
+Video Super-Resolution#Vid4 - 4x upscaling#PSNR
+Neural Architecture Search#CINIC-10#FLOPS
+Human action generation#Human3.6M#MMD
+Domain Adaptation#Office-31#Average Accuracy
+3D Object Detection#KITTI Cyclists Moderate#AP
+Language Modelling#enwik8#Bit per Character (BPC)
+Reading Comprehension#RACE#Accuracy
+Hyperspectral Image Classification#Indian Pines#Overall Accuracy
+Panoptic Segmentation#Cityscapes val#PQst
+Scene Text Detection#SCUT-CTW1500#Precision
+Salient Object Detection#UCF#Balanced Error Rate
+Entity Disambiguation#AIDA-CoNLL#Micro-F1
+Speech Separation#wsj0-2mix#SI-SDRi
+Language Modelling#One Billion Word#PPL
+Panoptic Segmentation#Cityscapes val#PQth
+Chinese Named Entity Recognition#Weibo NER#F1
+Multimodal Unsupervised Image-To-Image Translation#Cats-and-Dogs#CIS
+Unsupervised Domain Adaptation#Market to Duke#rank-10
+Continuous Control#PyBullet HalfCheetah#Return
+Question Answering#SQuAD1.1#F1
+Question Answering#SQuAD1.1#EM
+Question Answering#NarrativeQA#Rouge-L
+Face Verification#IJB-C#TAR @ FAR=0.01
+Person Re-Identification#PRID2011#Rank-5
+Neural Architecture Search#ImageNet#Top-1 Error Rate
+Person Re-Identification#PRID2011#Rank-1
+Fine-Grained Image Classification#Birdsnap#Accuracy
+Text Classification#IMDb#Accuracy
+Language Modelling#One Billion Word#Number of params
+Image Classification#Clothing1M#Accuracy
+Node Classification#BlogCatalog#Macro-F1
+Fake News Detection#FNC-1#Per-class Accuracy (Unrelated)
+Text Classification#DBpedia#Error
+Word Sense Disambiguation#SensEval 2#F1
+3D Object Detection#KITTI Cars Moderate val#AP
+Action Recognition#UCF101#3-fold Accuracy
+Dense Object Detection#SKU-110K#AP
+Image Clustering#CIFAR-10#NMI
+Scene Text Detection#ICDAR 2013#Precision
+Image Retrieval#Oxf105k#MAP
+Atari Games#Atari 2600 Ice Hockey#Score
+Skeleton Based Action Recognition#Varying-view RGB-D Action-Skeleton#Accuracy (AV I)
+Machine Translation#IWSLT2015 English-Vietnamese#BLEU
+Face Verification#BUAA-VisNir#TAR @ FAR=0.01
+Lesion Segmentation#ISIC 2018#Dice Score
+Sequential Image Classification#Sequential MNIST#Unpermuted Accuracy
+Node Classification#Coauthor CS#Accuracy
+Atari Games#Atari 2600 Freeway#Score
+Skeleton Based Action Recognition#SHREC 2017 track on 3D Hand Gesture Recognition#Accuracy
+Unsupervised Video Summarization#TvSum#F1-score
+Action Recognition#AVA v2.1#mAP (Val)
+Image-to-Image Translation#Cityscapes Photo-to-Labels#Per-class Accuracy
+3D Object Detection#nuScenes#NDS
+Real-Time Object Detection#COCO#MAP
+Neural Architecture Search#NAS-Bench-201, ImageNet-16-120#Search time (s)
+Sentence Embeddings For Biomedical Texts#BIOSSES#Pearson Correlation
+Sentiment Analysis#Multi-Domain Sentiment Dataset#Books
+Temporal Action Proposal Generation#ActivityNet-1.3#AUC (val)
+Image Clustering#ImageNet-10#Accuracy
+Aspect-Based Sentiment Analysis#SemEval 2014 Task 4 Sub Task 2#Restaurant (Acc)
+Video Super-Resolution#Xiph HD - 4x upscaling#Average PSNR
+Semantic Segmentation#Semantic3D#mIoU
+Image Clustering#Tiny-ImageNet#NMI
+Skeleton Based Action Recognition#Skeleton-Mimetics#Accuracy (%)
+Object Counting#Pascal VOC 2007 count-test#mRMSE
+Conditional Image Generation#ImageNet 128x128#Inception score
+Crowd Counting#ShanghaiTech B#MAE
+Face Alignment#WFLW#AUC@0.1 (all)
+Image Generation#CIFAR-10#Model Entropy
+Image Classification#SVHN#Percentage error
+Cross-View Image-to-Image Translation#Ego2Top#SSIM
+Multi-Person Pose Estimation#COCO test-dev#APL
+Multi-Person Pose Estimation#COCO test-dev#APM
+3D Instance Segmentation#S3DIS#mRec
+Gesture-to-Gesture Translation#Senz3D#AMT
+Neural Architecture Search#FGVC Aircraft#PARAMS
+Image Retrieval#In-Shop#R@1
+Visual Object Tracking#YouTube-VOS#Jaccard (Unseen)
+Photo geolocation estimation#Im2GPS#Continent level (2500 km)
+Image Classification#CIFAR-100#Percentage error
+Few-Shot Image Classification#Mini-ImageNet to CUB - 5 shot learning#Accuracy
+Keypoint Detection#COCO test-dev#AR
+Image Retrieval#Par6k#mAP
+Graph Classification#MUTAG#Accuracy
+Recommendation Systems#MovieLens 100K#RMSE (u1 Splits)
+Action Recognition#Something-Something V2#Top-1 Accuracy
+Multimodal Unsupervised Image-To-Image Translation#EPFL NIR-VIS#PSNR
+Data-to-Text Generation#E2E NLG Challenge#CIDEr
+Real-Time Object Detection#COCO#inference time (ms)
+3D Object Detection#KITTI Pedestrians Easy#AP
+Graph Classification#PTC#Accuracy
+Image Classification#MNIST#Accuracy
+3D Room Layouts From A Single RGB Panorama#PanoContext#3DIoU
+Real-time Instance Segmentation#MSCOCO#AP
+Real-Time Object Detection#PASCAL VOC 2007#FPS
+Pedestrian Detection#CityPersons#Bare MR^-2
+Visual Question Answering#VQA v2 test-dev#Accuracy
+Unsupervised Domain Adaptation#Duke to Market#rank-5
+Semantic Segmentation#Cityscapes val#mIoU
+Unsupervised Domain Adaptation#Duke to Market#rank-1
+Image Super-Resolution#Set5 - 4x upscaling#PSNR
+Image Super-Resolution#FFHQ 256 x 256 - 4x upscaling#FID
+Anomaly Detection#Numenta Anomaly Benchmark#NAB score
+Semi-Supervised Video Object Segmentation#YouTube-VOS#Speed  (FPS)
+Unsupervised Video Object Segmentation#DAVIS 2016#J&F
+Semantic Segmentation#S3DIS#Mean IoU
+Dense Object Detection#SKU-110K#AP75
+Sentiment Analysis#CR#Accuracy
+Image Classification#CIFAR-10#PARAMS
+Data-to-Text Generation#RotoWire (Relation Generation)#count
+Real-Time Semantic Segmentation#CamVid#Time (ms)
+Action Recognition#Something-Something V1#Top-1 Accuracy
+Fine-Grained Image Classification#FGVC Aircraft#Accuracy
+Visual Object Tracking#TrackingNet#Precision
+Music Source Separation#MUSDB18#SDR (vocals)
+Few-Shot Image Classification#OMNIGLOT - 1-Shot, 20-way#Accuracy
+Reader-Aware Summarization#RASG#ROUGE-1
+Action Recognition#Kinetics-400#Video hit@5
+3D Human Pose Estimation#Human3.6M#Using 2D ground-truth joints
+Hand Gesture Recognition#Cambridge#Accuracy
+Recommendation Systems#MovieLens 20M#Recall@50
+3D Object Detection#KITTI Pedestrian Hard val#AP
+Video Prediction#CMU Mocap-2#Test Error
+Time Series Classification#PhysioNet Challenge 2012#AUC Stdev
+Node Classification#PubMed with Public Split: fixed 20 nodes per class#Accuracy
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (val)#F-measure (Mean)
+6D Pose Estimation using RGB#LineMOD#Accuracy (ADD)
+Pedestrian Detection#CityPersons#Partial MR^-2
+Visual Object Tracking#TrackingNet#Accuracy
+Multi-Person Pose Estimation#COCO#AP
+Atari Games#Atari 2600 Asterix#Score
+Image Classification#CIFAR-100#PARAMS
+3D Human Pose Estimation#MPI-INF-3DHP#3DPCK
+Few-Shot Image Classification#Mini-Imagenet 20-way (1-shot)#Accuracy
+Few-Shot Image Classification#OMNIGLOT - 5-Shot, 423 way#Accuracy
+Cross-Lingual NER#CoNLL German#F1
+Image Super-Resolution#Manga109 - 3x upscaling#SSIM
+Node Classification#PubMed (0.05%)#Accuracy
+Temporal Action Localization#ActivityNet-1.3#mAP
+Talking Head Generation#VoxCeleb2 - 32-shot learning#FID
+Link Prediction#FB15k-237#Hits@10
+Link Prediction#WN18RR#Hits@10
+3D Human Pose Estimation#HumanEva-I#Mean Reconstruction Error (mm)
+Atari Games#Atari 2600 Enduro#Score
+Photo geolocation estimation#Im2GPS#Country level (750 km)
+Person Re-Identification#CUHK03 detected#MAP
+Atari Games#Atari 2600 Surround#Score
+Neural Architecture Search#Oxford-IIIT Pets#PARAMS
+Atari Games#Atari 2600 Boxing#Score
+3D Instance Segmentation#ScanNet(v2)#Mean AP @ 0.5
+Unsupervised Video Object Segmentation#DAVIS 2016#F-measure (Mean)
+Traffic Prediction#METR-LA#MAE @ 12 step
+Skeleton Based Action Recognition#Varying-view RGB-D Action-Skeleton#Accuracy (CV II)
+Action Segmentation#GTEA#F1@25%
+Person Re-Identification#PRID2011#Rank-20
+Scene Text Detection#COCO-Text#F-Measure
+Neural Architecture Search#ImageNet#FLOPS
+Atari Games#Atari 2600 Bank Heist#Score
+Skeleton Based Action Recognition#SBU#Accuracy
+Node Classification#Cora (1%)#Accuracy
+Aspect-Based Sentiment Analysis#Sentihood#Aspect
+Object Counting#COCO count-test#mRMSE-nz
+Colorectal Gland Segmentation:#CRAG#Hausdorff Distance (mm)
+Question Answering#SQuAD2.0#EM
+Facial Expression Recognition#FER2013#Accuracy
+Image Classification#STL-10#Percentage correct
+Image Super-Resolution#BSD100 - 2x upscaling#PSNR
+Question Answering#SQuAD2.0#F1
+6D Pose Estimation using RGB#LineMOD#Accuracy
+Unsupervised Domain Adaptation#Market to MSMT#mAP
+Scene Text Detection#ICDAR 2015#F-Measure
+Speech Recognition#Switchboard + Hub500#Percentage error
+Facial Landmark Detection#300W#NME
+Unsupervised Domain Adaptation#Market to MSMT#rank-5
+Language Modelling#Text8#Number of params
+Skeleton Based Action Recognition#UT-Kinect#Accuracy
+Unsupervised Domain Adaptation#Market to MSMT#rank-1
+Interactive Video Object Segmentation#DAVIS 2017#J@60s
+Atari Games#Atari 2600 River Raid#Score
+Unsupervised Video Object Segmentation#DAVIS 2017 (val)#J&F
+Data-to-Text Generation#E2E NLG Challenge#ROUGE-L
+Temporal Action Localization#J-HMDB-21#Frame-mAP
+Named Entity Recognition#GENIA#F1
+Supervised Video Summarization#TvSum#F1-score (Canonical)
+Few-Shot Image Classification#OMNIGLOT - 5-Shot, 5-way#Accuracy
+Semi-Supervised Video Object Segmentation#DAVIS 2016#Jaccard (Recall)
+Person Re-Identification#DukeMTMC-reID#Rank-1
+Image Super-Resolution#BSD100 - 2x upscaling#SSIM
+Question Answering#TrecQA#MAP
+Visual Question Answering#VQA v1 test-std#Accuracy
+Sentiment Analysis#Yelp Fine-grained classification#Error
+Action Recognition#NTU RGB+D 120#Accuracy (Cross-Setup)
+Image Super-Resolution#Manga109 - 8x upscaling#SSIM
+Layout-to-Image Generation#COCO-Stuff 64x64#Inception Score
+Unsupervised Video Object Segmentation#DAVIS 2017 (test-dev)#Jaccard (Decay)
+Grasp Contact Prediction#ContactDB#Error rate
+Atari Games#Atari 2600 Venture#Score
+Nested Named Entity Recognition#GENIA#F1
+Hate Speech Detection#Ethos Binary#Classification Accuracy
+Machine Translation#WMT2016 English-Romanian#BLEU score
+Few-Shot Image Classification#Stanford Dogs 5-way (1-shot)#Accuracy
+Question Answering#CoQA#Out-of-domain
+Temporal Action Localization#UCF101-24#Frame-mAP
+Semantic Textual Similarity#MRPC#Accuracy
+Facial Expression Recognition#Oulu-CASIA#Accuracy (10-fold)
+Recommendation Systems#MovieLens 20M#nDCG@100
+Atari Games#Atari 2600 Phoenix#Score
+Semantic Segmentation#Cityscapes test#Mean IoU (class)
+Natural Language Inference#SNLI#% Train Accuracy
+Human-Object Interaction Detection#HICO-DET#MAP
+Time Series Classification#PhysioNet Challenge 2012#AUC
+Pose Transfer#Deep-Fashion#SSIM
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (val)#F-measure (Decay)
+Node Classification#PubMed (0.03%)#Accuracy
+Image-to-Image Translation#Cityscapes Photo-to-Labels#Per-pixel Accuracy
+Sentiment Analysis#Yelp Binary classification#Error
+Skeleton Based Action Recognition#SHREC 2017 track on 3D Hand Gesture Recognition#28 gestures accuracy
+Skeleton Based Action Recognition#NTU RGB+D 120#Accuracy (Cross-Subject)
+Action Recognition#Volleyball#Accuracy
+Word Sense Disambiguation#SensEval 3 Task 1#F1
+Dependency Parsing#Penn Treebank#POS
+Language Modelling#Penn Treebank (Character Level)#Bit per Character (BPC)
+Neural Architecture Search#DTD#FLOPS
+Salient Object Detection#PASCAL-S#MAE
+Speech Enhancement#CHiME-3#SDR
+Gesture-to-Gesture Translation#Senz3D#IS
+Action Recognition#AVA v2.1#Params (M)
+3D Object Detection#KITTI Cars Easy#AP
+Image Clustering#MNIST-test#Accuracy
+Image-to-Image Translation#Cityscapes Photo-to-Labels#Class IOU
+Few-Shot Image Classification#Mini-Imagenet 5-way (10-shot)#Accuracy
+Graph Classification#NEURON-Average#Accuracy
+Node Classification#Cora (3%)#Accuracy
+3D Object Detection#SUN-RGBD val#MAP
+Joint Entity and Relation Extraction#SciERC#Entity F1
+Image Classification#ImageNet#Top 5 Accuracy
+Atari Games#Atari 2600 Wizard of Wor#Score
+Image Clustering#CIFAR-10#Accuracy
+Atari Games#Atari 2600 Up and Down#Score
+Salient Object Detection#HKU-IS#F-measure
+Unsupervised Video Object Segmentation#DAVIS 2017 (test-dev)#F-measure (Mean)
+Pose Tracking#PoseTrack2017#MOTA
+Visual Question Answering#MSVD-QA#Accuracy
+Sentiment Analysis#SST-5 Fine-grained classification#Accuracy
+Person Re-Identification#DukeMTMC-reID#MAP
+Image Super-Resolution#WebFace - 8x upscaling#PSNR
+Graph Classification#NCI1#Accuracy
+Atari Games#Atari 2600 Atlantis#Score
+Recommendation Systems#MovieLens 20M#HR@10
+Atari Games#Atari 2600 Road Runner#Score
+Image Super-Resolution#Urban100 - 2x upscaling#PSNR
+Visual Dialog#VisDial v0.9 val#MRR
+Semantic Segmentation#LIP val#mIoU
+Data-to-Text Generation#RotoWire (Content Ordering)#DLD
+Lesion Segmentation#Anatomical Tracings of Lesions After Stroke (ATLAS) #Dice
+Domain Adaptation#Office-Caltech#Average Accuracy
+Relation Extraction#DocRED#F1
+Grammatical Error Detection#FCE#F0.5
+Node Classification#Wiki-Vote#Accuracy
+Emotion Recognition in Conversation#IEMOCAP#F1
+Link Prediction#FB15k#Hits@10
+Face Verification#CK+#Accuracy
+Semi-Supervised Video Object Segmentation#DAVIS 2016#J&F
+Language Modelling#Penn Treebank (Word Level)#Validation perplexity
+Relation Extraction#NYT#F1
+Semi-Supervised Semantic Segmentation#Pascal VOC 2012 12.5% labeled#Validation mIoU
+3D Point Cloud Classification#ModelNet40#Overall Accuracy
+Retinal Vessel Segmentation#DRIVE#AUC
+Face Alignment#300W#AUC0.08 private
+Scene Text Detection#COCO-Text#Precision
+Few-Shot Image Classification#CIFAR-FS 5-way (5-shot)#Accuracy
+Action Classification#Kinetics-400#Accuracy
+3D Object Detection#ScanNetV2#mAP@0.5
+Action Recognition#EgoGesture#Top-1 Accuracy
+Object Detection#COCO test-dev#box AP
+Image-to-Image Translation#RaFD#Classification Error
+Image Super-Resolution#BSD100 - 4x upscaling#PSNR
+Atari Games#Atari 2600 Name This Game#Score
+Data-to-Text Generation#LDC2017T10#BLEU
+Multivariate Time Series Forecasting#MuJoCo#MSE (10^-2, 50% missing)
+Hand Gesture Recognition#NVGesture#Accuracy
+Self-Supervised Action Recognition#UCF101#Pre-Training Dataset
+Link Prediction#YAGO3-10#Hits@10
+Talking Head Generation#VoxCeleb1 - 1-shot learning#FID
+Pose Estimation#COCO test-dev#AR
+Pose Estimation#COCO test-dev#AP
+Graph Classification#NEURON-MULTI#Accuracy
+Graph Classification#RE-M5K#Accuracy
+Image Generation#ImageNet 32x32#bpd
+Human Part Segmentation#PASCAL-Person-Part#mIoU
+Multimodal Unsupervised Image-To-Image Translation#CelebA-HQ#FID
+Action Recognition#HMDB-51#Average accuracy of 3 splits
+Face Verification#Oulu-CASIA#Accuracy
+Multiple Object Tracking#KITTI Tracking test#MOTA
+Document Classification#Cora#Accuracy
+Image Dehazing#SOTS Indoor#PSNR
+Salient Object Detection#SBU#Balanced Error Rate
+Few-Shot Image Classification#OMNIGLOT-EMNIST 5-way (1-shot)#Accuracy
+Data-to-Text Generation#E2E NLG Challenge#BLEU
+Fake News Detection#FNC-1#Weighted Accuracy
+Atari Games#Atari 2600 Star Gunner#Score
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (test-dev)#Jaccard (Mean)
+Scene Text Detection#SCUT-CTW1500#F-Measure
+3D Room Layouts From A Single RGB Panorama#Realtor360#3DIoU
+Action Recognition#Something-Something V1#Top 1 Accuracy
+Activity Recognition In Videos#DogCentric#Accuracy
+Self-Supervised Image Classification#ImageNet#Number of Params
+Link Prediction#FB15k-237#Hits@3
+Link Prediction#FB15k-237#Hits@1
+Text Classification#Yahoo! Answers#Accuracy
+Few-Shot Image Classification#OMNIGLOT - 5-Shot, 20-way#Accuracy
+Cross-View Image-to-Image Translation#Dayton (256×256) - ground-to-aerial#SSIM
+Partial Domain Adaptation#Office-Home#Accuracy (%)
+6D Pose Estimation using RGB#Occlusion LineMOD#Mean ADD
+Question Answering#TrecQA#MRR
+Image Generation#CIFAR-10#bits/dimension
+Fine-Grained Image Classification#Stanford Cars#PARAMS
+Multimodal Unsupervised Image-To-Image Translation#Edge-to-Shoes#Diversity
+Crowd Counting#WorldExpo’10#Average MAE
+Continuous Control#PyBullet Walker2D#Return
+Image-to-Image Translation#ADE20K Labels-to-Photos#FID
+Machine Translation#IWSLT2015 German-English#BLEU score
+Face Detection#WIDER Face (Hard)#AP
+Image Super-Resolution#PIRM-test#NIQE
+Image-to-Image Translation#ADE20K-Outdoor Labels-to-Photos#mIoU
+Neural Architecture Search#CINIC-10#Accuracy (%)
+Self-Supervised Image Classification#ImageNet#Top 5 Accuracy
+Atari Games#Atari 2600 Bowling#Score
+Recommendation Systems#Epinions#RMSE
+Scene Text Detection#ICDAR 2013#Recall
+Image Super-Resolution#FFHQ 256 x 256 - 4x upscaling#MS-SSIM
+3D Multi-Object Tracking#KITTI#MOTA
+Graph Classification#COLLAB#Accuracy
+Skeleton Based Action Recognition#CAD-120#Accuracy
+Unsupervised Person Re-Identification#Market-1501#Rank-1
+Gesture-to-Gesture Translation#NTU Hand Digit#IS
+3D Multi-Object Tracking#KITTI#MOTP
+Optical Flow Estimation#KITTI 2015#Fl-all
+Visual Object Tracking#VOT2019#Expected Average Overlap (EAO)
+Semantic Segmentation#PASCAL VOC 2012 val#mIoU
+Sentiment Analysis#Multi-Domain Sentiment Dataset#Kitchen
+3D Face Reconstruction#Florence#Average 3D Error
+Question Answering#bAbi#Accuracy (trained on 1k)
+Image Retrieval#Oxf5k#MAP
+Text Classification#Ohsumed#Accuracy
+Data-to-Text Generation#WebNLG#BLEU
+Image Dehazing#O-Haze#PSNR
+Talking Head Generation#VoxCeleb2 - 8-shot learning#FID
+Hand Gesture Recognition#VIVA Hand Gestures Dataset#Accuracy
+Dense Pixel Correspondence Estimation#HPatches#Viewpoint II AEPE
+Image Clustering#MNIST-full#NMI
+Synthetic-to-Real Translation#Syn2Real-C#Accuracy
+Machine Translation#WMT2015 English-German#BLEU score
+Few-Shot Image Classification#Stanford Cars 5-way (1-shot)#Accuracy
+Text Summarization#PubMed#ROUGE-1
+3D Instance Segmentation#ScanNet(v2)#mAP
+Coreference Resolution#OntoNotes#F1
+Image Generation#CelebA-HQ 1024x1024#FID
+Node Classification#Pubmed#Validation
+Recommendation Systems#Amazon-Book#Recall@10
+Multivariate Time Series Forecasting#USHCN-Daily#MSE
+Human-Object Interaction Detection#HICO#mAP
+Semantic Segmentation#PASCAL VOC 2012 test#Mean IoU
+Panoptic Segmentation#COCO test-dev#PQst
+Conversational Response Selection#DSTC7 Ubuntu#1-of-100 Accuracy
+Atari Games#Atari 2600 Yars Revenge#Score
+Image Classification#MNIST#Percentage error
+Code Generation#WikiSQL#Execution Accuracy
+Temporal Action Localization#ActivityNet-1.3#mAP IOU@0.5
+Unsupervised Video Object Segmentation#DAVIS 2016#Jaccard (Mean)
+Image Super-Resolution#Urban100 - 8x upscaling#SSIM
+Image Super-Resolution#Urban100 - 2x upscaling#SSIM
+Panoptic Segmentation#COCO test-dev#PQth
+Instance Segmentation#Cityscapes test#Average Precision
+Action Classification#Charades#MAP
+Scene Text Detection#MSRA-TD500#F-Measure
+Image Clustering#Imagenet-dog-15#Accuracy
+Mortality Prediction#MIMIC-III#F1 score
+Real-Time Object Detection#COCO#FPS
+Recommendation Systems#MovieLens 1M#nDCG@10
+Speech Enhancement#DEMAND#CBAK
+Few-Shot Image Classification#ImageNet - 0-Shot#Accuracy
+Gesture-to-Gesture Translation#Senz3D#PSNR
+Skeleton Based Action Recognition#UWA3D#Accuracy
+Skeleton Based Action Recognition#SHREC 2017 track on 3D Hand Gesture Recognition#No. parameters
+Fine-Grained Image Classification#CUB-200-2011#Accuracy
+3D Canonical Hand Pose Estimation#Ego3DHands#AUC
+ECG Classification#Electrocardiography (ECG) on Telehealth Network of Minas Gerais (TNMG)#F1 (AF)
+Pedestrian Detection#CityPersons#Reasonable MR^-2
+Semi-Supervised Image Classification#ImageNet - 1% labeled data#Top 1 Accuracy
+Recommendation Systems#Million Song Dataset#Recall@50
+Link Prediction#WN18#MRR
+Skeleton Based Action Recognition#JHMDB (2D poses only)#Accuracy
+Face Identification#MegaFace#Accuracy
+Domain Adaptation#VisDA2017#Accuracy
+Face Verification#MegaFace#Accuracy
+Question Answering#YahooCQA#MRR
+Image Clustering#Fashion-MNIST#NMI
+Relation Extraction#TACRED#F1
+Scene Text Detection#COCO-Text#Recall
+Fine-Grained Image Classification#Stanford Dogs#Accuracy
+Unsupervised Image-To-Image Translation#SVNH-to-MNIST#Classification Accuracy
+Video Frame Interpolation#Vimeo90k#PSNR
+Gesture-to-Gesture Translation#NTU Hand Digit#PSNR
+Image Retrieval#SOP#R@1
+Face Verification#BUAA-VisNir#TAR @ FAR=0.001
+Multi-Label Classification#MS-COCO#mAP
+Cross-Lingual NER#CoNLL Spanish#F1
+Machine Translation#WMT2014 English-French#BLEU score
+3D Multi-Person Pose Estimation (absolute)#MuPoTS-3D#3DPCK
+Data-to-Text Generation#ToTTo#PARENT
+3D Human Pose Estimation#MPI-INF-3DHP#AUC
+Atari Games#Atari 2600 Solaris#Score
+Depth Completion#KITTI Depth Completion#RMSE
+Action Recognition#THUMOS’14#mAP@0.5
+Action Recognition#THUMOS’14#mAP@0.4
+Keypoint Detection#COCO test-dev#ARM
+Keypoint Detection#COCO test-dev#ARL
+Action Recognition#THUMOS’14#mAP@0.1
+Machine Translation#WMT2016 German-English#BLEU score
+Action Classification#THUMOS’14#mAP
+Action Recognition#THUMOS’14#mAP@0.3
+Action Recognition#THUMOS’14#mAP@0.2
+Video Retrieval#MSR-VTT#video-to-text R@5
+Visual Question Answering#MSRVTT-QA#Accuracy
+Domain Generalization#ImageNet-A#Top-1 accuracy %
+Image Super-Resolution#Set5 - 2x upscaling#PSNR
+Action Recognition#Jester#Val
+Image Super-Resolution#Set5 - 8x upscaling#PSNR
+Image Super-Resolution#Manga109 - 2x upscaling#PSNR
+Keypoint Detection#COCO test-dev#APM
+Semi-Supervised Image Classification#STL-10, 1000 Labels#Accuracy
+Question Answering#QASent#MAP
+Image Super-Resolution#Manga109 - 8x upscaling#PSNR
+Image Clustering#Fashion-MNIST#Accuracy
+Keypoint Detection#COCO test-dev#APL
+Semantic Segmentation#PASCAL Context#mIoU
+3D Human Pose Estimation#Geometric Pose Affordance #PCK3D (CS)
+Visual Question Answering#COCO Visual Question Answering (VQA) real images 1.0 open ended#Percentage correct
+Semantic Similarity#SICK#MSE
+Few-Shot Image Classification#CIFAR100 5-way (1-shot)#Accuracy
+Retinal Vessel Segmentation#STARE#F1 score
+Hate Speech Detection#Ethos Binary#F1-score
+Unsupervised Video Object Segmentation#DAVIS 2017 (val)#F-measure (Mean)
+Action Segmentation#Breakfast#F1@25%
+Image Super-Resolution#FFHQ 1024 x 1024 - 4x upscaling#FID
+Machine Translation#WMT2014 English-German#BLEU score
+Relation Extraction#ACE 2004#Entity F1
+Action Segmentation#Breakfast#Edit
+3D Object Detection#KITTI Cars Hard val#AP
+Relation Extraction#CoNLL04#Relation F1
+Domain Adaptation#MNIST-to-USPS#Accuracy
+Image Super-Resolution#Urban100 - 4x upscaling#PSNR
+Language Modelling#WikiText-103#Test perplexity
+Action Recognition#EPIC-Kitchens#Top-1 Accuracy
+3D Human Pose Estimation#Human3.6M#Multi-View or Monocular
+Link Prediction#WN18#Hits@3
+Link Prediction#WN18#Hits@1
+Unsupervised Video Object Segmentation#DAVIS 2017 (test-dev)#F-measure (Decay)
+Birds Eye View Object Detection#KITTI Cars Hard#AP
+Image Super-Resolution#BSD100 - 4x upscaling#MOS
+Semi-Supervised Image Classification#ImageNet - 1% labeled data#Top 5 Accuracy
+Few-Shot Object Detection#MS-COCO (10-shot)#mAP
+Youtube-VOS#YouTube-VOS#Jaccard (Unseen)
+3D Action Recognition#100 sleep nights of 8 caregivers#10%
+Link Prediction#FB15k-237#MRR
+Video Super-Resolution#Vid4 - 4x upscaling#MOVIE
+Neural Architecture Search#CIFAR-10#Parameters
+Salient Object Detection#HKU-IS#MAE
+Face Verification#CASIA NIR-VIS 2.0#TAR @ FAR=0.001
+Face Verification#Labeled Faces in the Wild#Accuracy
+3D Multi-Person Pose Estimation (root-relative)#MuPoTS-3D#3DPCK
+Unsupervised Domain Adaptation#Duke to MSMT#mAP
+Few-Shot Image Classification#CUB 200 5-way 1-shot#Accuracy
+Video Retrieval#MSR-VTT#text-to-video R@1
+Scene Text Detection#MSRA-TD500#Recall
+Machine Translation#IWSLT2015 English-German#BLEU score
+Cross-Lingual Document Classification#MLDoc Zero-Shot English-to-Spanish#Accuracy
+Semantic Textual Similarity#STS Benchmark#Spearman Correlation
+Hand Gesture Recognition#ChaLearn val#Accuracy
+Image Clustering#Extended Yale-B#Accuracy
+Semi-Supervised Video Object Segmentation#DAVIS 2016#F-measure (Recall)
+Few-Shot Image Classification#OMNIGLOT - 1-Shot, 1000 way#Accuracy
+Object Detection#COCO test-dev#AP75
+Person Re-Identification#CUHK03#Rank-1
+Audio Super-Resolution#Piano#Log-Spectral Distance
+Neural Architecture Search#CIFAR-10#FLOPS
+Atari Games#Atari 2600 Kangaroo#Score
+Atari Games#Atari 2600 Gravitar#Score
+ECG Classification#Electrocardiography (ECG) on Telehealth Network of Minas Gerais (TNMG)#F1 (LBBB)
+Atari Games#Atari 2600 Seaquest#Score
+Code Generation#WikiSQL#Exact Match Accuracy
+Graph Classification#PROTEINS#Accuracy
+Visual Question Answering#VQA v2#Accuracy
+Few-Shot Image Classification#Mini-Imagenet 5-way (5-shot)#Accuracy
+3D Human Pose Estimation#Surreal#MPJPE
+Multi-Object Tracking#MOT16#MOTA
+Semi-Supervised Image Classification#cifar-100, 10000 Labels#Accuracy
+Semi-Supervised Video Object Segmentation#DAVIS 2016#Jaccard (Decay)
+Facial Expression Recognition#CK+#Accuracy (10-fold)
+Chinese Named Entity Recognition#Resume NER#F1
+Few-Shot Image Classification#aPY - 0-Shot#Accuracy
+Speech Enhancement#DEMAND#CSIG
 Object Detection#COCO minival#APL
-Hypernym Discovery#General#MAP
+Unsupervised Video Object Segmentation#DAVIS 2017 (val)#Jaccard (Recall)
 Object Detection#COCO minival#APM
 Image Generation#CIFAR-10#FID
 Object Detection#COCO minival#APS
 Atari Games#Atari 2600 Krull#Score
-Graph Classification#BP-fMRI-97#Accuracy
+Action Recognition#AVA v2.1#GFlops
+Cross-View Image-to-Image Translation#Dayton (256×256) - aerial-to-ground#SSIM
 Object Detection#COCO test-dev#AP50
-Atari Games#Atari 2600 Centipede#Score
-Node Classification#Pubmed Full-supervised#Accuracy
-Visual Object Tracking#DAVIS 2016#Jaccard (Decay)
-Video Super-Resolution#Vid4 - 4x upscaling#SSIM
-Grammatical Error Detection#CoNLL-2014 A2#F0.5
+Cross-Lingual Document Classification#MLDoc Zero-Shot English-to-German#Accuracy
+Semantic Role Labeling#CoNLL 2005#F1
+ECG Classification#Electrocardiography (ECG) on Telehealth Network of Minas Gerais (TNMG)#F1 (1dAVb)
+Fine-Grained Image Classification#Oxford-IIIT Pets#FLOPS
 Node Classification#PubMed (0.1%)#Accuracy
 Link Prediction#WN18#MR
+Salient Object Detection#DUTS-TE#MAE
+Scene Text Detection#ICDAR 2013#F-Measure
 Unsupervised Machine Translation#WMT2014 English-French#BLEU
-Image Super-Resolution#Set14 - 4x upscaling#SSIM
-Atari Games#Atari 2600 Beam Rider#Score
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (val)#Jaccard (Recall)
+Question Generation#SQuAD1.1#BLEU-4
+Image Super-Resolution#Set5 - 2x upscaling#SSIM
+Transfer Learning#Office-Home#Accuracy
+3D Multi-Person Pose Estimation#MuPoTS-3D#3DPCK
+Action Classification#HACS#Top-5 Accuracy
+Scene Text Detection#ICDAR 2015#Precision
+Image Super-Resolution#Manga109 - 2x upscaling#SSIM
+Cross-Lingual Document Classification#MLDoc Zero-Shot English-to-Russian#Accuracy
+3D Object Detection#KITTI Cars Easy val#AP
+3D Object Reconstruction#Data3D−R2N2#3DIoU
+Atari Games#Atari 2600 Elevator Action#Score
 Semi-Supervised Image Classification#ImageNet - 10% labeled data#Top 5 Accuracy
-Node Classification#BlogCatalog#Accuracy
-Visual Object Tracking#DAVIS-2017#F-measure (Recall)
+Optical Flow Estimation#KITTI 2012#Average End-Point Error
 Unsupervised Image Classification#MNIST#Accuracy
-Scene Text Detection#IC15#F-Measure
+Skeleton Based Action Recognition#Gaming 3D (G3D)#Accuracy
+Skeleton Based Action Recognition#J-HMDB#Accuracy (pose)
+Neural Architecture Search#FGVC Aircraft#Accuracy (%)
 Aspect-Based Sentiment Analysis#SemEval 2014 Task 4 Sub Task 2#Mean Acc (Restaurant + Laptop)
-Atari Games#Atari 2600 Video Pinball#Score
 Question Answering#CoQA#Overall
+Atari Games#Atari 2600 Video Pinball#Score
 Visual Object Tracking#VOT2017/18#Expected Average Overlap (EAO)
-Part-Of-Speech Tagging#Penn Treebank#Accuracy
 Node Classification#CiteSeer (0.5%)#Accuracy
-Face Detection#PASCAL Face#AP
-Sentiment Analysis#SST-2 Binary classification#Accuracy
-Atari Games#Atari 2600 Pitfall!#Score
-Atari Games#Atari 2600 Double Dunk#Score
+Image Classification#EMNIST-Balanced#Accuracy
+Age-Invariant Face Recognition#CACDVS#Accuracy
+Person Re-Identification#MARS#Rank-5
+Image Clustering#MNIST-test#NMI
+Semantic Similarity#SICK#Spearman Correlation
+Person Re-Identification#MARS#Rank-1
+Layout-to-Image Generation#COCO-Stuff 64x64#FID
+Neural Architecture Search#CIFAR-100#FLOPS
+Image Clustering#STL-10#NMI
 Question Answering#Quora Question Pairs#Accuracy
-Semi-Supervised Image Classification#SVHN, 250 Labels#Accuracy
-Visual Object Tracking#DAVIS-2017#Jaccard (Mean)
+Sentence Embeddings For Biomedical Texts#MedSTS#Pearson Correlation
+Word Sense Disambiguation#SemEval 2015 Task 13#F1
 Graph Classification#D&D#Accuracy
+Speech Synthesis#North American English#Mean Opinion Score
 Fine-Grained Image Classification#NABirds#Accuracy
-Action Recognition In Videos#Charades#MAP
 Text Summarization#GigaWord#ROUGE-L
-Human Pose Forecasting#Human3.6M#MAR, walking, 1,000ms
-Question Answering#SemEvalCQA#P@1
+Image Retrieval#Flickr30K 1K test#R@10
+3D Face Reconstruction#AFLW2000-3D#Mean NME 
+Fine-Grained Image Classification#CompCars#Accuracy
+Mortality Prediction#MIMIC-III#Recall
 Natural Language Inference#SNLI#% Test Accuracy
 Text Summarization#GigaWord#ROUGE-1
 Text Summarization#GigaWord#ROUGE-2
-Action Recognition In Videos#Something-Something V2#Top-5 Accuracy
+Unsupervised Domain Adaptation#Market to MSMT#rank-10
+Sentence Compression#Google Dataset#CR
 Named Entity Recognition#Ontonotes v5 (English)#F1
-Object Detection#COCO test-dev#APS
-Click-Through Rate Prediction#Criteo#AUC
+Unsupervised Video Object Segmentation#DAVIS 2017 (test-dev)#Jaccard (Mean)
+Neural Architecture Search#CIFAR-100#PARAMS
+Few-Shot Image Classification#FC100 5-way (10-shot)#Accuracy
 Link Prediction# FB15k#MR
+Scene Text Detection#ICDAR 2015#Recall
 3D Object Detection#KITTI Cars Hard#AP
-Node Classification#Citeseer#Accuracy
-Relation Extraction#CoNLL04#Relation F1 
+Neural Architecture Search#CIFAR-100#Percentage Error
+Cross-Lingual Document Classification#MLDoc Zero-Shot English-to-French#Accuracy
+Unsupervised Domain Adaptation#Market to Duke#rank-1
+Semi-Supervised Video Object Segmentation#DAVIS 2017 (test-dev)#F-measure (Decay)
+Heterogeneous Node Classification#DBLP (PACT) 14k#Micro-F1 (20% training data)
+Unsupervised Domain Adaptation#Market to Duke#rank-5
 Node Classification#CiteSeer with Public Split: fixed 20 nodes per class#Accuracy
-Dense Pixel Correspondence Estimation#HPatches#Viewpoint IV AEPE
 Atari Games#Atari 2600 Berzerk#Score
-Image Classification#ImageNet#Number of params
 Subjectivity Analysis#SUBJ#Accuracy
+Image Classification#ImageNet#Number of params
+Question Answering#bAbi#Accuracy (trained on 10k)
 Face Detection#WIDER Face (Easy)#AP
-Constituency Grammar Induction#PTB#Mean F1 (WSJ)
 Speech Recognition#TIMIT#Percentage error
-Action Recognition In Videos#NTU RGB+D#Accuracy (CS)
-Object Detection#COCO test-dev#APM
-Object Detection#COCO test-dev#APL
+Image Super-Resolution#FFHQ 256 x 256 - 4x upscaling#SSIM
+Temporal Action Localization#J-HMDB-21#Video-mAP 0.5
+Graph Classification#NEURON-BINARY#Accuracy
+Few-Shot Image Classification#AWA1 - 0-Shot#Accuracy
 Language Modelling#Penn Treebank (Word Level)#Test perplexity
 Unsupervised Machine Translation#WMT2014 French-English#BLEU
 Metric Learning# CUB-200-2011#R@1
-Node Classification#Cora Full-supervised#Accuracy
-Retinal Vessel Segmentation#DRIVE#F1 score
-Relation Extraction#CoNLL04#Entity F1
+ECG Classification#Electrocardiography (ECG) on Telehealth Network of Minas Gerais (TNMG)#F1 (ST)
+Action Classification#Kinetics-700#Top-5 Accuracy
 Pose Estimation#MPII Human Pose#PCKh-0.5
-Atari Games#Atari 2600 Zaxxon#Score
 Scene Text Detection#MSRA-TD500#Precision
-Graph Classification#HIV-fMRI-77 #Accuracy
+3D Human Pose Estimation#3DPW#PA-MPJPE
+Image Clustering#ImageNet-10#NMI
 Language Modelling#Text8#Bit per Character (BPC)
+Multimodal Unsupervised Image-To-Image Translation#AFHQ#FID
 Face Alignment#WFLW#FR@0.1(%, all)
-Visual Object Tracking#DAVIS-2017#F-measure (Mean)
-Hypernym Discovery#General#MRR
-Data-to-Text Generation#E2E NLG Challenge#NIST
-Language Modelling#Penn Treebank (Character Level)#Number of params
-Machine Translation#WMT2016 English-German#BLEU score
-Image Generation#CIFAR-10#NLL Test
+Image Super-Resolution#Urban100 - 8x upscaling#PSNR
+Image-to-Image Translation#COCO-Stuff Labels-to-Photos#FID
+Salient Object Detection#DUT-OMRON#MAE
+Recommendation Systems#MovieLens 20M#nDCG@10
+Human-Object Interaction Detection#V-COCO#MAP
+Recommendation Systems#WeChat#AUC
 Dense Pixel Correspondence Estimation#HPatches#Viewpoint I AEPE
+Neural Architecture Search#NAS-Bench-201, ImageNet-16-120#Accuracy (Test)
 Object Detection#COCO minival#AP50
-Grammatical Error Detection#CoNLL-2014 A1#F0.5
+Semi-Supervised Semantic Segmentation#Pascal VOC 2012 5% labeled#Validation mIoU
 Node Classification#Cora#Accuracy
+Object Counting#Pascal VOC 2007 count-test#mRMSE-nz
 Aesthetics Quality Assessment#AVA#Accuracy
 Named Entity Recognition#ACE 2005#F1
 Sentiment Analysis#IMDb#Accuracy
-Image Clustering#MNIST#Accuracy
-Node Classification#Cora with Public Split: fixed 20 nodes per class#Accuracy
+Fine-Grained Image Classification#Oxford 102 Flowers#FLOPS
 Instance Segmentation#COCO test-dev#APS
+Neural Architecture Search#Stanford Cars#PARAMS
+Fake News Detection#FNC-1#Per-class Accuracy (Disagree)
+Image Generation#Binarized MNIST#nats
 Instance Segmentation#COCO test-dev#APM
 Instance Segmentation#COCO test-dev#APL
-Text-to-Image Generation#COCO#Inception score
+Image Classification#CIFAR-100#FLOPS
+Entity Alignment#DBP15k zh-en#Hits@1
 Object Detection#COCO minival#AP75
-3D Part Segmentation#ShapeNet-Part#Instance Average IoU
+Face Verification#IJB-A#TAR @ FAR=0.001
+Action Segmentation#GTEA#F1@50%
+3D Object Detection#ScanNetV2#mAP@0.25
 Action Classification#Moments in Time#Top 5 Accuracy
+Lane Detection#CULane#F1 score
 Question Answering#Children's Book Test#Accuracy-NE
-Face Detection#FDDB#AP
-Image Generation#ImageNet 64x64#Bits per byte
-Natural Language Inference#MultiNLI#Mismatched
-Curved Text Detection#SCUT-CTW1500#F-Measure
-Keypoint Detection#COCO#Validation AP
-Word Sense Disambiguation#Supervised:#Senseval 3
-Word Sense Disambiguation#Supervised:#Senseval 2
-Language Modelling#WikiText-2#Validation perplexity
-Visual Object Tracking#TrackingNet#Normalized Precision
-Graph Classification#BP-fMRI-97#F1
+Cross-Modal Retrieval#COCO 2014#Image-to-text R@1
+Unsupervised Domain Adaptation#Duke to MSMT#rank-10
+Action Recognition#Sports-1M#Video hit@5
+Real-Time Semantic Segmentation#NYU Depth v2#Speed(ms/f)
+Cross-Modal Retrieval#COCO 2014#Image-to-text R@5
+Image Clustering#Imagenet-dog-15#NMI
+Image Super-Resolution#Set14 - 3x upscaling#PSNR
 Image-to-Image Translation#Cityscapes Labels-to-Photo#Per-class Accuracy
-Retinal Vessel Segmentation#CHASE_DB1#AUC
 Image Super-Resolution#Manga109 - 4x upscaling#PSNR
+Retinal Vessel Segmentation#CHASE_DB1#AUC
 Atari Games#Atari 2600 Frostbite#Score
-Image Classification#ImageNet#Top 1 Accuracy
 Lesion Segmentation#Anatomical Tracings of Lesions After Stroke (ATLAS) #Recall
-Visual Object Tracking#DAVIS-2017#Jaccard (Recall)
-Machine Translation#WMT2016 Romanian-English#BLEU score
-Ad-Hoc Information Retrieval#TREC Robust04#P@20
-Natural Language Inference#SciTail#Accuracy
 Relation Extraction#WebNLG#F1
 Drug Discovery#Tox21#AUC
 Pedestrian Detection#Caltech#Reasonable Miss Rate
-Named Entity Recognition#CoNLL 2003 (English)#F1
-Action Recognition In Videos#NTU RGB+D#Accuracy (CV)
-Action Recognition In Videos#UCF101#3-fold Accuracy
+Audio Super-Resolution#Voice Bank corpus (VCTK)#Log-Spectral Distance
+Sentence Compression#Google Dataset#F1
 Instance Segmentation#COCO minival#mask AP
 Question Answering#TriviaQA#F1
-Open-Domain Question Answering#Quasar#F1 (Quasar-T)
-Weakly Supervised Action Localization#THUMOS 2014#MAP
-Real-Time Semantic Segmentation#Cityscapes test#mIoU
+Semi-Supervised Semantic Segmentation#Pascal VOC 2012 2% labeled#Validation mIoU
+Extractive Document Summarization#CNN / Daily Mail#ROUGE-L
+Neural Architecture Search#CINIC-10#PARAMS
+3D Multi-Person Pose Estimation (root-relative)#MuPoTS-3D#MPJPE
+Unsupervised Video Object Segmentation#DAVIS 2016#Jaccard (Decay)
 Semi-Supervised Image Classification#SVHN, 1000 labels#Accuracy
-Question Answering#TriviaQA#EM
-3D Object Detection#KITTI Pedestrians Moderate#AP
+Few-Shot Image Classification#FC100 5-way (1-shot)#Accuracy
+Person Re-Identification#CUHK03 labeled#Rank-1
+Semi-Supervised Video Object Segmentation#YouTube-VOS#F-Measure (Unseen)
+Cross-View Image-to-Image Translation#Dayton (64x64) - ground-to-aerial#SSIM
 Speech Recognition#swb_hub_500 WER fullSWBCH#Percentage error
-Language Modelling#enwiki8#Number of params
-Semantic Segmentation#ADE20K#Validation mIoU
-Language Modelling#enwiki8#Bit per Character (BPC)
-Image Denoising#BSD68 sigma25#PSNR
+Face Verification#Oulu-CASIA NIR-VIS#TAR @ FAR=0.01
+Neural Architecture Search#Food-101#FLOPS
+Action Recognition#UTD-MHAD#Accuracy
+Image Classification#EMNIST-Letters#Accuracy
+Text Style Transfer#Yelp Review Dataset (Small)#G-Score (BLEU, Accuracy)
+Extractive Document Summarization#CNN / Daily Mail#ROUGE-2
 Atari Games#Atari 2600 Tennis#Score
+Self-Supervised Action Recognition#HMDB51#Top-1 Accuracy
+Extractive Document Summarization#CNN / Daily Mail#ROUGE-1
+Question Answering#QASent#MRR
 Traffic Prediction#PeMS-M#MAE (60 min)
-Image Denoising#BSD68 sigma15#PSNR
 Relation Extraction#SemEval-2010 Task 8#F1
+Lipreading#LRW-1000#Top-1 Accuracy
 Constituency Grammar Induction#PTB#Max F1 (WSJ)
-Node Classification#CiteSeer (1%)#Accuracy
-Natural Language Inference#QNLI#Accuracy
+Multimodal Unsupervised Image-To-Image Translation#Edge-to-Shoes#Quality
+3D Object Detection#KITTI Cyclist Moderate val#AP
+Recommendation Systems#Million Song Dataset#Recall@20
+Cross-View Image-to-Image Translation#cvusa#SSIM
+Conditional Image Generation#CIFAR-10#FID
+Image Clustering#CIFAR-100#NMI
 Face Verification#YouTube Faces DB#Accuracy
-Monocular Depth Estimation#KITTI Eigen split#absolute relative error
-Atari Games#Atari 2600 Tutankham#Score
+Multimodal Unsupervised Image-To-Image Translation#Edge-to-Handbags#Diversity
+Image Super-Resolution#VggFace2 - 8x upscaling#PSNR
 Synthetic-to-Real Translation#GTAV-to-Cityscapes Labels#mIoU
+Fine-Grained Image Classification#Oxford-IIIT Pets#Accuracy
+Image Classification#Fashion-MNIST#Percentage error
+Few-Shot Image Classification#Flowers-102 - 0-Shot#Accuracy
+Image Classification#Flowers-102#Accuracy
 Question Answering#Children's Book Test#Accuracy-CN
 Image Super-Resolution#Set5 - 4x upscaling#SSIM
 Recommendation Systems#MovieLens 1M#RMSE
+Action Recognition#Something-Something V2#Top-5 Accuracy
 Atari Games#Atari 2600 Fishing Derby#Score
 Question Answering#NarrativeQA#BLEU-4
+Action Segmentation#Breakfast#F1@10%
 Question Answering#NarrativeQA#BLEU-1
+Text Classification#20NEWS#Accuracy
 Graph Classification#ENZYMES#Accuracy
-Image Super-Resolution#Set14 - 4x upscaling#PSNR
 Unsupervised Facial Landmark Detection#MAFL#NME
-Video Super-Resolution#Vid4 - 4x upscaling#PSNR
-Constituency Parsing#Penn Treebank#F1 score
+Keypoint Detection#COCO test-dev#AR50
+Visual Object Tracking#VOT2016#Expected Average Overlap (EAO)
+Cross-View Image-to-Image Translation#Dayton (64×64) - aerial-to-ground#SSIM
+Multimodal Unsupervised Image-To-Image Translation#Cats-and-Dogs#IS
+Table-to-Text Generation#WikiBio#ROUGE
+Action Recognition#Something-Something V1#Top-5 Accuracy
+Unsupervised Person Re-Identification#DukeMTMC-reID#Rank-10
 Image Super-Resolution#Urban100 - 4x upscaling#SSIM
+Constituency Parsing#Penn Treebank#F1 score
 Nested Mention Recognition#ACE 2005#F1
-3D Object Detection#KITTI Cyclists Moderate#AP
+Domain Adaptation#SVHN-to-MNIST#Accuracy
 Object Detection#COCO minival#box AP
-Hyperspectral Image Classification#Indian Pines#Overall Accuracy
-Panoptic Segmentation#Cityscapes val#PQst
+3D Human Pose Estimation#Geometric Pose Affordance #PCK3D (CA)
+Person Re-Identification#CUHK03 labeled#MAP
 Semi-Supervised Image Classification#CIFAR-10, 4000 Labels#Accuracy
-Language Modelling#One Billion Word#PPL
-Panoptic Segmentation#Cityscapes val#PQth
+ECG Classification#Electrocardiography (ECG) on Telehealth Network of Minas Gerais (TNMG)#F1 (SB)
+Hate Speech Detection#Ethos MultiLabel#Hamming Loss
+Keypoint Detection#COCO test-dev#AR75
 Panoptic Segmentation#Cityscapes val#mIoU
 Face Alignment#300W#Fullset (public)
+unknow

@@ -3,12 +3,24 @@ package eu.tib.sre;
 import eu.tib.sre.pdfparser.DocTAET;
 import eu.tib.sre.tdmsie.GenerateTestDataOnPDFPapers;
 import eu.tib.sre.utils.DatasetGeneration;
+import eu.tib.sre.utils.TwoFoldCrossValidation;
 import org.apache.commons.io.FileUtils;
+import java.io.File;
+
 
 //import eu.tib.sre.pdfbox.*;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.concurrent.atomic.AtomicInteger;
+
+import static eu.tib.sre.utils.TwoFoldCrossValidation.getPerFoldTestIndexes;
+import static eu.tib.sre.utils.TwoFoldCrossValidation.writeOutput;
 
 /**
  * @author jld
@@ -17,21 +29,67 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
-//        args[0] = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\50.pdf";
-//        args[1] = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\";
+        // "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\pdf\\"
+        // "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\"
+        // "50"
 
-        String pdfDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\paperwithcode\\pdf\\";
-//        String pdfDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\";
-//        String pdfDir = "D:\\ORKG\\NLP\\science-result-extractor\\nlpLeaderboard\\src\\main\\java\\com\\ibm\\sre\\data\\pdfFile\\";
-        String b = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\";
+//        System.out.println(args[0]);
+//        System.out.println(args[1]);
+//        System.out.println(args[2]);
 
-        // Only consider leaderboard that have atleast 5 papers
+//        if (args.length != 3) {
+//            System.out.println("Usage: java Main.java <path_to_pdf> <path_to_output> <numb_negative>");
+//            System.out.println("java -jar task-dataset-metric-extraction-1.0.jar 'D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\pdf\\' 'D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\' '10'");
+//            System.exit(-1);
+//        }
+
+        // Only consider leaderboard that have at least 5 papers
         Integer threshold = 5;
-        Integer numbNegative = 100;
 
-        DatasetGeneration.getTrainData(pdfDir , b, threshold, numbNegative);
+//        Integer numbNegative = Integer.parseInt(args[2]);
+//        String pdfDir = args[0];
+//        String b = args[1]+numbNegative.toString()+"unk\\";
+//        String data_file = args[1]+numbNegative.toString()+"unk\\trainOutput.tsv";
+//        String outputDir = args[1]+numbNegative.toString()+"unk\\twofoldwithunk\\";
+
+
+
+//        Integer numbNegative = Integer.parseInt("2");
+//        String pdfDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\pdf\\";
+//        String b = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\"+numbNegative.toString()+"unk\\";
+//        String data_file = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\"+numbNegative.toString()+"unk\\trainOutput.tsv";
+//        String outputDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\"+numbNegative.toString()+"unk\\twofoldwithunk\\";
+
+        // This specify the number of negative instances
+        Integer numbNegative = Integer.parseInt("14");
+
+        // This specify the number of negative instances
+        Integer numbUnk = Integer.parseInt("14");
+
+        // Path to pdfs folder
+        String pdfDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\";
+        // Pre-output folder
+        String b = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\"+numbNegative.toString()+"unk\\";
+        // Main tsv datafile
+        String data_file = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\"+numbNegative.toString()+"unk\\trainOutput.tsv";
+        // fold output folder
+        String outputDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\"+numbNegative.toString()+"unk\\twofoldwithunk\\";
+
+
+        // check if the target folder exist if not create it.
+        File theDir = new File(b);
+        if (!theDir.exists()){
+            theDir.mkdirs();
+        }
+
+        // Added this to have the portion of unknown instances
+        FileOutputStream fold_stats = new FileOutputStream(b+"fold_stats.tsv");
+
+        // Generate the training data
+        DatasetGeneration.getTrainData(pdfDir , b, threshold, numbUnk, numbNegative, fold_stats);
+
 ////
-        DatasetGeneration.getTestData(pdfDir , b);
+//        DatasetGeneration.getTestData(pdfDir , b);
 
 //        GenerateTestDataOnPDFPapers createTestdata = new GenerateTestDataOnPDFPapers();
 //
@@ -40,6 +98,99 @@ public class Main {
 
 //        createTestdata.generateTestData4ScorePrediction("D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\",
 //                "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\train_score.tsv");
+
+
+
+        String[] lines = TwoFoldCrossValidation.readFile(data_file, StandardCharsets.UTF_8).split("\\n");
+
+        Map<String, List<String>> data = new HashMap<>();
+
+        List<String> tdms = new ArrayList<>();
+
+
+        for (String line : lines) {
+            line = line.trim();
+            String[] tokens = line.split("\t");
+            //System.out.println(tokens.length);
+
+            List<String> dataLines = data.get(tokens[1]);
+            if (dataLines == null) data.put(tokens[1], dataLines = new ArrayList<>());
+            dataLines.add(line);
+            if (!tdms.contains(tokens[2])) tdms.add(tokens[2]);
+        }
+
+        int datasize = data.keySet().size();
+        int training_datasize = (int)(0.7 * datasize)+1;
+        int test_datasize = (int)(0.3 * datasize);
+
+        // Set the number of fold (train/test)
+        int number_fold = 2;
+
+        //System.out.println(datasize);
+        //System.out.println(training_datasize);
+        //System.out.println(test_datasize);
+        //System.exit(-1);
+
+        // This returns randomly generated indeces for the testing examples
+        Map<Integer, List<Integer>> perfoldTestIndexes = getPerFoldTestIndexes(0, datasize, test_datasize, number_fold);
+
+
+        // check if the target folder exist if not create it.
+        File theDiroutput = new File(outputDir);
+        if (!theDiroutput.exists()){
+            theDiroutput.mkdirs();
+        }
+
+        // A list made of paper titles (e.g : 1404.4326v1.pdf, 2005.12661v1.pdf, ...)
+        List<String> dataFiles = new ArrayList<>(data.keySet());
+
+        for (int fold : perfoldTestIndexes.keySet()) {
+
+            String fold_i = outputDir+"fold"+fold+"\\";
+
+            // calculate stats (value in Java are pass by value
+            // ref (https://stackoverflow.com/questions/26185527/how-can-i-change-integer-value-when-it-is-an-argument-like-change-arrays-value)
+            AtomicInteger trueUnk = new AtomicInteger(0);
+            AtomicInteger falseUnk = new AtomicInteger(0);
+
+            // check if the target folder exist if not create it.
+            File theFoldDir = new File(fold_i);
+            if (!theFoldDir.exists()){
+                theFoldDir.mkdirs();
+            }
+
+
+            FileOutputStream train_output = new FileOutputStream(fold_i+"train.tsv");
+            FileOutputStream test_output = new FileOutputStream(fold_i+"dev.tsv");
+            FileOutputStream test_indexes = new FileOutputStream(fold_i+"test_indexes.tsv");
+
+//            // Added this to have the portion of unknown instances
+//            FileOutputStream fold_stats = new FileOutputStream(fold_i+"fold_stats.tsv");
+
+            List<Integer> testIndexes = perfoldTestIndexes.get(fold);
+
+            fold_stats.write(("Fold "+fold+" Data stats :\n").getBytes());
+
+            for (int i = 0; i < datasize; i++) {
+
+                String file = dataFiles.get(i);
+                List<String> dataLines = data.get(file);
+
+                if (testIndexes.contains(i)) {
+                    writeOutput(test_output, file, dataLines, tdms, fold_stats, trueUnk, falseUnk,"test");
+
+                    // Write test indexes per fold in a file
+                    test_indexes.write((i+"\n").getBytes());
+                }
+                else {
+                    writeOutput(train_output, file, dataLines, tdms, fold_stats, trueUnk, falseUnk, "train");
+                }
+            }
+
+            fold_stats.write(("Positive Unk : "+trueUnk+"\n").getBytes());
+            fold_stats.write(("Negative Unk : "+falseUnk+"\n\n").getBytes());
+
+        }
     }
 
 }

@@ -40,8 +40,6 @@ def main():
         paper = {'id': link_ID,\
                     'guidislink': True,\
                         'pdf_url': link_pdf}
-
-        # ipdb.set_trace()
         
         try:
 

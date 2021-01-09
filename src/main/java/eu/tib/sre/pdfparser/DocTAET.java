@@ -47,7 +47,9 @@ public class DocTAET {
 
     public static String getDocTAETRepresentation(String pdfFile) throws IOException, Exception {
         String DocTAETStr = "";
-        GrobidPDFProcessor gp = GrobidPDFProcessor.getInstance();
+        GrobidPDFProcessor gp = new GrobidPDFProcessor();
+
+//        GrobidPDFProcessor gp = GrobidPDFProcessor.getInstance();
         Map<String, String> sections = gp.getPDFSectionAndText(pdfFile);
         if (sections == null) return "";
         DocTAETStr = DocTAETStr + " " + sections.get("title") + " " + sections.get("abstract")
