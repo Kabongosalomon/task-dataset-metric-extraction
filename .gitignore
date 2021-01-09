@@ -144,7 +144,6 @@ bert/
 src/main/resources/
 bin/
 
-
 *.jar
 *.tsv
 *.pdf
