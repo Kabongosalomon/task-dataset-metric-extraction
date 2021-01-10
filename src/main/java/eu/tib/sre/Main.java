@@ -67,13 +67,23 @@ public class Main {
         Integer numbUnk = Integer.parseInt("14");
 
         // Path to pdfs folder
-        String pdfDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\";
+        // String pdfDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\";
         // Pre-output folder
-        String b = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\"+numbNegative.toString()+"unk\\";
+        // String b = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\"+numbNegative.toString()+"unk\\";
         // Main tsv datafile
-        String data_file = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\"+numbNegative.toString()+"unk\\trainOutput.tsv";
+        // String data_file = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\"+numbNegative.toString()+"unk\\trainOutput.tsv";
         // fold output folder
-        String outputDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\"+numbNegative.toString()+"unk\\twofoldwithunk\\";
+        // String outputDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\"+numbNegative.toString()+"unk\\twofoldwithunk\\";
+
+
+        // Path to pdfs folder
+        String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/pdf/";
+        // Pre-output folder
+        String b = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/"+numbNegative.toString()+"unk/";
+        // Main tsv datafile
+        String data_file = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/"+numbNegative.toString()+"unk/trainOutput.tsv";
+        // fold output folder
+        String outputDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/"+numbNegative.toString()+"unk/twofoldwithunk/";
 
 
         // check if the target folder exist if not create it.
@@ -146,7 +156,7 @@ public class Main {
 
         for (int fold : perfoldTestIndexes.keySet()) {
 
-            String fold_i = outputDir+"fold"+fold+"\\";
+            String fold_i = outputDir+"fold"+fold+"/";
 
             // calculate stats (value in Java are pass by value
             // ref (https://stackoverflow.com/questions/26185527/how-can-i-change-integer-value-when-it-is-an-argument-like-change-arrays-value)
