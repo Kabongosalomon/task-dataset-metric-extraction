@@ -79,22 +79,44 @@ public class DatasetGeneration {
 
                     for (int i = 0; i < mapLabel.get(pdf_filename).size(); i++) {
 
-                        output.write(("true\t" + pdf_filename + "\t"+mapLabel.get(pdf_filename).get(i).replace("#", "; ")+"\t" + docTEATStr + "\n").getBytes());
-
                         if (mapLabel.get(pdf_filename).get(i).replace("#", "; ").equals("unknow")){
-                            trueUnk = trueUnk + 1;
+
+                            if (trueUnk >= numbUnk){
+
+                                continue;
+
+                            }
+                            else {
+                                output.write(("true\t" + pdf_filename + "\t"+mapLabel.get(pdf_filename).get(i).replace("#", "; ")+"\t" + docTEATStr + "\n").getBytes());
+                                
+                                // Keep track of positive TDM
+                                trueTDM.add(mapLabel.get(pdf_filename).get(i));
+
+                                trueUnk = trueUnk + 1;
+                                
+                                continue;
+                            }
+
+
                         }
+
+                        output.write(("true\t" + pdf_filename + "\t"+mapLabel.get(pdf_filename).get(i).replace("#", "; ")+"\t" + docTEATStr + "\n").getBytes());
 
                         // Keep track of positive TDM
                         trueTDM.add(mapLabel.get(pdf_filename).get(i));
+
+
                     }
 
 
                     // Thits takes only the first numbNegative example, we may need to make it random
                     int limit = 0;
 
+                    // To randomly allow to get the false for a numNeg threshold
+                    Collections.shuffle(labels);
+
                     for (String label : labels) {
-                        if (limit>=numbUnk){
+                        if ( limit >= numbNegative ){
                             break;
                         }
 
@@ -106,6 +128,7 @@ public class DatasetGeneration {
                                 falseUnk = falseUnk + 1;
                             }
 
+                            // Update the count for one more false label
                             limit += 1;
                         }
 

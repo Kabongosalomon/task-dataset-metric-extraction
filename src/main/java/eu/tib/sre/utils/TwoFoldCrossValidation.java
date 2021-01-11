@@ -140,12 +140,14 @@ public class TwoFoldCrossValidation {
 
     public static void writeOutput(FileOutputStream output, String filename,
                                    List<String> dataLines, List<String> tdms, FileOutputStream fold_stats,
-                                   AtomicInteger trueUnk, AtomicInteger falseUnk, String mode) throws IOException {
+                                   AtomicInteger trueUnk, AtomicInteger falseUnk, 
+                                   Integer numbUnk, Integer numbNegative, String mode) throws IOException {
 
         String content = "";
 
         List<String> trueTDM = new ArrayList<>();
-
+        
+        // To look through all the true of a partuclar paper 
         for (String dataLine : dataLines) {
             if (content.equals("")) {
                 //System.out.println(dataLine);
@@ -158,28 +160,64 @@ public class TwoFoldCrossValidation {
 
             if (mode.equals("train")) {
                 if (label.equals("unknow") && dataLine.split("\t")[0].equals("true")) {
-                    trueUnk.set(trueUnk.intValue() +1);
+                    
+
+                        if (trueUnk.intValue() >= numbUnk){
+
+                            continue;
+
+                        }
+                        else {
+
+                            // This help to keep track of TDM that we have seen on a particular fold
+                            trueTDM.add(label);
+
+                            output.write((dataLine+"\n").getBytes());
+
+                            // trueUnk = trueUnk + 1;
+                            trueUnk.set(trueUnk.intValue() +1);
+                            
+                            continue;
+                        }
+
                 } else if (label.equals("unknow") && dataLine.split("\t")[0].equals("false")) {
                     falseUnk.set(falseUnk.intValue() +1);
                 }
-            }
-
-            // This help to keep track of TDM that we have seen on a particular fold
-            trueTDM.add(label);
-
-            output.write((dataLine+"\n").getBytes());
+            
         }
 
+        // This help to keep track of TDM that we have seen on a particular fold
+        trueTDM.add(label);
+
+        output.write((dataLine+"\n").getBytes());
+
+    }
+
+        // Thits takes only the first numbNegative example, we may need to make it random
+        int limit = 0;
+
+        // Suffle Collection
+        Collections.shuffle(tdms);
+
         for (String tdm : tdms) {
+
             if (trueTDM.contains(tdm)) continue;
+
+            if ( limit >= numbNegative ){
+                break;
+            }
 
             // All the remaining TDM from the overall are created with a false label
             output.write(("false\t"+filename+"\t"+tdm+"\t"+content+"\n").getBytes());
+
+            // Update the count for one more false label
+            limit += 1;
 
             if (tdm.equals("unknow") && mode.equals("train")) {
 //                falseUnk = falseUnk + 1;
                 falseUnk.set(falseUnk.intValue() +1);
             }
+
         }
 
 
