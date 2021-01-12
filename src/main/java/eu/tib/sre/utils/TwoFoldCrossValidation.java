@@ -193,32 +193,32 @@ public class TwoFoldCrossValidation {
 
     }
 
-        // Thits takes only the first numbNegative example, we may need to make it random
-        int limit = 0;
+//         // Thits takes only the first numbNegative example, we may need to make it random
+//         int limit = 0;
 
-        // Suffle Collection
-        Collections.shuffle(tdms);
+//         // Suffle Collection
+//         Collections.shuffle(tdms);
 
-        for (String tdm : tdms) {
+//         for (String tdm : tdms) {
 
-            if (trueTDM.contains(tdm)) continue;
+//             if (trueTDM.contains(tdm)) continue;
 
-            if ( limit >= numbNegative ){
-                break;
-            }
+//             if ( limit >= numbNegative ){
+//                 break;
+//             }
 
-            // All the remaining TDM from the overall are created with a false label
-            output.write(("false\t"+filename+"\t"+tdm+"\t"+content+"\n").getBytes());
+//             // All the remaining TDM from the overall are created with a false label
+//             output.write(("false\t"+filename+"\t"+tdm+"\t"+content+"\n").getBytes());
 
-            // Update the count for one more false label
-            limit += 1;
+//             // Update the count for one more false label
+//             limit += 1;
 
-            if (tdm.equals("unknow") && mode.equals("train")) {
-//                falseUnk = falseUnk + 1;
-                falseUnk.set(falseUnk.intValue() +1);
-            }
+//             if (tdm.equals("unknow") && mode.equals("train")) {
+// //                falseUnk = falseUnk + 1;
+//                 falseUnk.set(falseUnk.intValue() +1);
+//             }
 
-        }
+//         }
 
 
 

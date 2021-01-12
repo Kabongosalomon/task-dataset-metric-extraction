@@ -129,11 +129,12 @@ public class Main {
             List<String> dataLines = data.get(tokens[1]);
             if (dataLines == null) data.put(tokens[1], dataLines = new ArrayList<>());
 
-            // Fix issue with false label appended on the paper 
-            if(line.split("\t")[0].equals("true")){
-                dataLines.add(line);
-            }
-            // dataLines.add(line);
+            // // Fix issue with false label appended on the paper 
+            // if(line.split("\t")[0].equals("true")){
+            //     dataLines.add(line);
+            // }
+
+            dataLines.add(line);
 
             if (!tdms.contains(tokens[2])) tdms.add(tokens[2]);
         }
