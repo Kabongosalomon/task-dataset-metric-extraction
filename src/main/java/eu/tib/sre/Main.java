@@ -61,10 +61,10 @@ public class Main {
 //        String outputDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\"+numbNegative.toString()+"unk\\twofoldwithunk\\";
 
         // This specify the number of negative instances
-        Integer numbNegative = Integer.parseInt("80");
+        Integer numbNegative = Integer.parseInt("60");
 
         // This specify the number of negative instances
-        Integer numbUnk = Integer.parseInt("600");
+        Integer numbUnk = Integer.parseInt("800");
 
         // Path to pdfs folder
         // String pdfDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\";
