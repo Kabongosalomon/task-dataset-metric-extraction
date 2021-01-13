@@ -360,23 +360,49 @@ def parse_title_taxonomy(paper_name_taxonomy):
             text_file.write(key+"\t"+str(value)+"\n")
         
 
-def datasetAnnotation(paper_title, dataset, first=True):      
-    with open("./annotations/datasetAnnotation.tsv", "a+", encoding="utf-8") as text_file:
-        if first:
-            text_file.write(paper_title+"\t"+dataset)
-            text_file.write("\n")
-        else:
-            text_file.write("#")   
-            text_file.write(dataset) 
+def datasetAnnotation(paper_title, dataset):      
+    # with open("./annotations/datasetAnnotation.tsv", "a+", encoding="utf-8") as text_file:
+    #     if first:
+    #         text_file.write(paper_title+"\t"+dataset)
+    #         text_file.write("\n")
+    #     else:
+    #         text_file.write("#")   
+    #         text_file.write(dataset) 
 
-def taskAnnotation(paper_title, task, first=True):      
-    with open("./annotations/taskAnnotation.tsv", "a+", encoding="utf-8") as text_file:
-        if first:
+    path = "./annotations/datasetAnnotation.tsv"
+
+    with open(path, "a+", encoding="utf-8") as text_file:
+
+        if paper_title not in paper_title_taxonomy:
+            # if first:
+            text_file.write(paper_title+"\t"+dataset+"\n")
+        else:
+            # TODO: This approach is not optimal nor scalable, need to redo this
+            with open(path, 'r',encoding="utf-8") as file:
+                # read a list of lines into data
+                data = file.readlines()
+
+            for i, key in enumerate(reversed(data)):
+                if key.split("\t")[0] == paper_title:
+                    data[len(data)-i-1] = data[len(data)-i-1].replace("\n", '')+\
+                            '#'+dataset+"\n"
+                    break
+
+            # # and write everything back
+            with open(path, 'w', encoding="utf-8") as file:
+                file.writelines( data )
+
+        paper_title_taxonomy[paper_title]+=1
+
+
+def taskAnnotation(paper_title, task):     
+    path = "./annotations/taskAnnotation.tsv"
+    if paper_title not in paper_title_taskAnnotation: 
+        with open(path, "a+", encoding="utf-8") as text_file:
             text_file.write(paper_title+"\t"+task)
             text_file.write("\n")
-        else:
-            text_file.write("#")   
-            text_file.write(task) 
+        paper_title_taskAnnotation[paper_title]+=1
+        
 
 def paper_links(paper_title, paper_url):      
     with open("./downloader/paper_links.tsv", "a+", encoding="utf-8") as text_file:
@@ -441,9 +467,9 @@ def parseTask(obj):
 
 
 
-            taskAnnotation(paper_title, task, first=True)
+            taskAnnotation(paper_title, task)
 
-            datasetAnnotation(paper_title, dataset, first=True)
+            datasetAnnotation(paper_title, dataset)
 
             paper_links(paper_title, paper_url)
 
@@ -487,7 +513,8 @@ def is_not_blank(string):
 import  os
 
 paper_name_taxonomy = defaultdict(lambda : 0)
-
+paper_title_taxonomy = defaultdict(lambda : 0)
+paper_title_taskAnnotation = defaultdict(lambda : 0)
 
 if __name__ == '__main__':
     """

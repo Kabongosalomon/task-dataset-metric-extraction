@@ -188,9 +188,14 @@ public class GenerateTestDataOnPDFPapers {
                     result.setEvaluationScore("unknow");
                     resultsPredictionsTestPapers.get(filename).add(result);
                 } else {
-                    String task = leaderboard.split(",")[0].replace(" ", "_").trim();
-                    String dataset = leaderboard.split(",")[1].trim();
-                    String eval = leaderboard.split(",")[2].trim();
+                    // String task = leaderboard.split(",")[0].replace(" ", "_").trim();
+                    // String dataset = leaderboard.split(",")[1].trim();
+                    // String eval = leaderboard.split(",")[2].trim();
+
+                    String task = leaderboard.split(";")[0].replace(" ", "_").trim();
+                    String dataset = leaderboard.split(";")[1].trim();
+                    String eval = leaderboard.split(";")[2].trim();
+
                     NLPResult result = new NLPResult(filename, task, dataset);
                     result.setEvaluationMetric(eval);
                     resultsPredictionsTestPapers.get(filename).add(result);
@@ -243,9 +248,14 @@ public class GenerateTestDataOnPDFPapers {
                 resultsPredictions4TestPapers.put(filename, results);
             }
             if (Double.valueOf(f2.get(i).split("\t")[0]) > 0.5) {
-                String task = leaderboard.split(",")[0].replace(" ", "_").trim();
-                String dataset = leaderboard.split(",")[1].trim();
-                String eval = leaderboard.split(",")[2].trim();
+                // String task = leaderboard.split(",")[0].replace(" ", "_").trim();
+                // String dataset = leaderboard.split(",")[1].trim();
+                // String eval = leaderboard.split(",")[2].trim();
+
+                String task = leaderboard.split(";")[0].replace(" ", "_").trim();
+                String dataset = leaderboard.split(";")[1].trim();
+                String eval = leaderboard.split(";")[2].trim();
+
                 String title = context.substring(0, 50);
                 NLPResult result = new NLPResult(filename, task, dataset);
                 result.setEvaluationMetric(eval);

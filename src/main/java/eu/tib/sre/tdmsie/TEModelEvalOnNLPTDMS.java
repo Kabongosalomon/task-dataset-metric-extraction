@@ -40,8 +40,12 @@ public class TEModelEvalOnNLPTDMS {
 
     public Map<String, String> getPredictedSore() throws IOException, Exception {
         Map<String, String> scorePrediction = new HashMap();
-        String file1 = prop.getProperty("projectPath") + "/" + "data/exp/few-shot-setup/NLP-TDMS/paperVersion/test_score.tsv";
-        String file2 = prop.getProperty("projectPath") + "/" + "data/exp/few-shot-setup/NLP-TDMS/paperVersion/test_score_results.tsv";
+        // String file1 = prop.getProperty("projectPath") + "/" + "data/ibm/exp/few-shot-setup/NLP-TDMS/paperVersion/test_score.tsv";
+        // String file2 = prop.getProperty("projectPath") + "/" + "data/ibm/exp/few-shot-setup/NLP-TDMS/paperVersion/test_score_results.tsv";
+        
+        String file1 = prop.getProperty("projectPath") + "/" + prop.getProperty("test_score_path");
+        String file2 = prop.getProperty("projectPath") + "/" + prop.getProperty("test_score_results_path");
+
         BufferedReader br1 = new BufferedReader(new FileReader(file1));
         BufferedReader br2 = new BufferedReader(new FileReader(file2));
         List<String> f1 = new ArrayList();
@@ -56,8 +60,14 @@ public class TEModelEvalOnNLPTDMS {
         for (int i = 0; i < f1.size(); i++) {
             String filename = f1.get(i).split("\t")[1].split("#")[0];
             String board = f1.get(i).split("\t")[2];
-            String dataset = board.split(",")[0].trim();
-            String eval = board.split(",")[1].trim();
+
+            // String dataset = board.split(",")[0].trim();
+            // String eval = board.split(",")[1].trim();
+
+            // The file in my case a splited by ;
+            String dataset = board.split(";")[0].trim();
+            String eval = board.split(";")[1].trim();
+
             String scoreStr = f1.get(i).split("\t")[1].split("#")[1];
             if (Double.valueOf(f2.get(i).split("\t")[0]) > 0.0) {
                 if (scorePrediction.containsKey(filename + "#" + dataset + ":::" + eval)) {
@@ -79,9 +89,12 @@ public class TEModelEvalOnNLPTDMS {
     
 
     public void evaluateTDMSExtraction() throws IOException, Exception {
-        Map<String, String> scorePrediction = getPredictedSore();
-        String file1 = prop.getProperty("projectPath") + "/" + "data/exp/few-shot-setup/NLP-TDMS/paperVersion/test.tsv";
-        String file2 = prop.getProperty("projectPath") + "/" + "data/exp/few-shot-setup/NLP-TDMS/paperVersion/test_results.tsv";
+        // Map<String, String> scorePrediction = getPredictedSore();
+        // String file1 = prop.getProperty("projectPath") + "/" + "data/ibm/exp/few-shot-setup/NLP-TDMS/paperVersion/test.tsv";
+        // String file2 = prop.getProperty("projectPath") + "/" + "data/ibm/exp/few-shot-setup/NLP-TDMS/paperVersion/test_results.tsv";
+
+        String file1 = prop.getProperty("projectPath") + "/" + prop.getProperty("test_path");
+        String file2 = prop.getProperty("projectPath") + "/" +  prop.getProperty("test_results_path");
 
         
         BufferedReader br1 = new BufferedReader(new FileReader(file1));
@@ -119,21 +132,31 @@ public class TEModelEvalOnNLPTDMS {
                     result.setEvaluationScore("unknow");
                     resultsPredictionsTestPapers.get(filename).add(result);
                 } else {
-                    String task = leaderboard.split(",")[0].replace(" ", "_").trim();
-                    String dataset = leaderboard.split(",")[1].trim();
-                    String eval = leaderboard.split(",")[2].trim();
+                    // String task = leaderboard.split(",")[0].replace(" ", "_").trim();
+                    // String dataset = leaderboard.split(",")[1].trim();
+                    // String eval = leaderboard.split(",")[2].trim();
+
+                    String task = leaderboard.split(";")[0].replace(" ", "_").trim();
+                    String dataset = leaderboard.split(";")[1].trim();
+                    String eval = leaderboard.split(";")[2].trim();
+
+
                     NLPResult result = new NLPResult(filename, task, dataset);
                     result.setEvaluationMetric(eval);
-                    if (scorePrediction.containsKey(filename + "#" + dataset + ":::" + eval)) {
-                        result.setEvaluationScore(scorePrediction.get(filename + "#" + dataset + ":::" + eval).split("#")[0]);
-                    }
+                    
+                    // This is for score 
+                    // if (scorePrediction.containsKey(filename + "#" + dataset + ":::" + eval)) {
+                    //     result.setEvaluationScore(scorePrediction.get(filename + "#" + dataset + ":::" + eval).split("#")[0]);
+                    // }
+
                     resultsPredictionsTestPapers.get(filename).add(result);
                 }
             }
         }
         //collect eu.tib.sre.evaluation labels seen in the train.tsv
         Set<String> evaluatedLabels = new HashSet();
-        String file3 = prop.getProperty("projectPath") + "/" + "data/exp/few-shot-setup/NLP-TDMS/paperVersion/train.tsv";
+        // String file3 = prop.getProperty("projectPath") + "/" + "data/ibm/exp/few-shot-setup/NLP-TDMS/paperVersion/train.tsv";
+        String file3 = prop.getProperty("projectPath") + "/" + prop.getProperty("train_path");
         BufferedReader br3 = new BufferedReader(new FileReader(file3));
         String line3 = "";
         while ((line3 = br3.readLine()) != null) {
@@ -142,9 +165,14 @@ public class TEModelEvalOnNLPTDMS {
                 continue;
             } else {
                 // TODO I may need to change this 
-                String task = leaderboard.split(",")[0].replace(" ", "_");
-                String dataset = leaderboard.split(",")[1];
-                String eval = leaderboard.split(",")[2];
+                // String task = leaderboard.split(",")[0].replace(" ", "_");
+                // String dataset = leaderboard.split(",")[1];
+                // String eval = leaderboard.split(",")[2];
+
+                String task = leaderboard.split(";")[0].replace(" ", "_");
+                String dataset = leaderboard.split(";")[1];
+                String eval = leaderboard.split(";")[2];
+
                 evaluatedLabels.add(task.trim() + ":::" + dataset.trim() + ":::" + eval.trim());
             }
         }
@@ -160,8 +188,10 @@ public class TEModelEvalOnNLPTDMS {
         Map<String, Set<String>> trainTitle = new HashMap();
         Map<String, Set<String>> testTitle = new HashMap();
         Set<String> excludeFiles = new HashSet();
-        String file10 = prop.getProperty("projectPath") + "/" + "data/exp/few-shot-setup/NLP-TDMS/paperVersion/train.tsv";
-        String file20 = prop.getProperty("projectPath") + "/" + "data/exp/few-shot-setup/NLP-TDMS/paperVersion/test.tsv";
+        // String file10 = prop.getProperty("projectPath") + "/" + "data/ibm/exp/few-shot-setup/NLP-TDMS/paperVersion/train.tsv";
+        // String file20 = prop.getProperty("projectPath") + "/" + "data/ibm/exp/few-shot-setup/NLP-TDMS/paperVersion/test.tsv";
+        String file10 = prop.getProperty("projectPath") + "/" + prop.getProperty("train_path");
+        String file20 = prop.getProperty("projectPath") + "/" + prop.getProperty("test_path");
         String line0 = "";
         BufferedReader br10 = new BufferedReader(new FileReader(file10));
         BufferedReader br20 = new BufferedReader(new FileReader(file20));
@@ -199,9 +229,9 @@ public class TEModelEvalOnNLPTDMS {
 
 
     
-//    public static void main(String[] args) throws IOException, Exception{
-//        TEModelEvalOnNLPTDMS teEval = new TEModelEvalOnNLPTDMS();
-//        teEval.evaluateTDMSExtraction();
-//    }
+   public static void main(String[] args) throws IOException, Exception{
+       TEModelEvalOnNLPTDMS teEval = new TEModelEvalOnNLPTDMS();
+       teEval.evaluateTDMSExtraction();
+   }
 
 }

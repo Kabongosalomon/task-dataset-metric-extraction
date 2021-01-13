@@ -560,9 +560,14 @@ public class MultiLabelEvaluationMetrics {
                     prediction_on_known.remove(filename);
                 } else {
                     // TODO may need to change this as well 
-                    String task = leaderboard.split(",")[0].replace(" ", "_").trim();
-                    String dataset = leaderboard.split(",")[1].trim();
-                    String eval = leaderboard.split(",")[2].trim();
+                    // String task = leaderboard.split(",")[0].replace(" ", "_").trim();
+                    // String dataset = leaderboard.split(",")[1].trim();
+                    // String eval = leaderboard.split(",")[2].trim();
+
+                    String task = leaderboard.split(";")[0].replace(" ", "_").trim();
+                    String dataset = leaderboard.split(";")[1].trim();
+                    String eval = leaderboard.split(";")[2].trim();
+
                     Set<NLPResult> originalAnnotatedResults = resultAnnotation.get(filename);
                     for (NLPResult re : originalAnnotatedResults) {
                         if (re.taskName.equals(task) && re.datasetName.equalsIgnoreCase(dataset) && re.evaluationMetric.equalsIgnoreCase(eval)) {
