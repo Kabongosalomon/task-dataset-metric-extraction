@@ -105,12 +105,14 @@ public class TEModelEvalOnNLPTDMS {
         for (int i = 0; i < f1.size(); i++) {
             String filename = f1.get(i).split("\t")[1];
             if(excludeTestFiles.contains(filename)) continue;
+            //if(excludeTestFiles.contains(filename)) continue;
             String leaderboard = f1.get(i).split("\t")[2];
             if (!resultsPredictionsTestPapers.containsKey(filename)) {
                 Set<NLPResult> results = new HashSet();
                 resultsPredictionsTestPapers.put(filename, results);
             }
             if (Double.valueOf(f2.get(i).split("\t")[0]) > 0.5) {
+                //if (Double.valueOf(f2.get(i).split("\t")[0]) > Double.valueOf(f2.get(i).split("\t")[1])) {
                 if (leaderboard.equalsIgnoreCase("unknow")) {
                     NLPResult result = new NLPResult(filename, "unknow", "unknow");
                     result.setEvaluationMetric("unknow");
@@ -139,6 +141,7 @@ public class TEModelEvalOnNLPTDMS {
             if (leaderboard.equalsIgnoreCase("unknow")) {
                 continue;
             } else {
+                // TODO I may need to change this 
                 String task = leaderboard.split(",")[0].replace(" ", "_");
                 String dataset = leaderboard.split(",")[1];
                 String eval = leaderboard.split(",")[2];

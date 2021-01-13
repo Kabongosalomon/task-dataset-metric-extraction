@@ -60,9 +60,15 @@ public class MultiLabelEvaluationMetrics {
         while ((line = br.readLine()) != null) {
             String pdfFileName = line.split("\t")[0];
             String taskname = line.split("\t")[1];
+
             Set<String> tasks = new HashSet();
             tasks.add(taskname);
             taskAnnotation.put(pdfFileName, tasks);
+
+            // Jennifer
+            // Set<String> tasks = taskAnnotation.get(pdfFileName);
+            // if (tasks == null) taskAnnotation.put(pdfFileName, tasks = new HashSet<>());
+            // tasks.add(taskname);
         }
         br.close();
     }
@@ -96,6 +102,8 @@ public class MultiLabelEvaluationMetrics {
                     continue;//the paper doesn't report score
                 }
                 String task = resultsstr.split("\\$")[i].split("#")[0];
+                // String task = resultsstr.split("\\$")[i].split("#")[0].replace(" ", "_").trim();
+
                 String dataset = resultsstr.split("\\$")[i].split("#")[1];
                 String evaluationMatrix = resultsstr.split("\\$")[i].split("#")[2];
                 String scoreStr = resultsstr.split("\\$")[i].split("#")[3];
@@ -551,6 +559,7 @@ public class MultiLabelEvaluationMetrics {
                     revisedGoldAnnotation.get(filename).add(result);
                     prediction_on_known.remove(filename);
                 } else {
+                    // TODO may need to change this as well 
                     String task = leaderboard.split(",")[0].replace(" ", "_").trim();
                     String dataset = leaderboard.split(",")[1].trim();
                     String eval = leaderboard.split(",")[2].trim();
