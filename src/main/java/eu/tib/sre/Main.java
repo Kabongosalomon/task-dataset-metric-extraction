@@ -61,10 +61,10 @@ public class Main {
 //        String outputDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\"+numbNegative.toString()+"unk\\twofoldwithunk\\";
 
         // This specify the number of negative instances
-        Integer numbNegative = Integer.parseInt("10");
+        Integer numbNegative = Integer.parseInt("50");
 
         // This specify the number of negative instances
-        Integer numbUnk = Integer.parseInt("90");
+        Integer numbUnk = Integer.parseInt("50");
 
         // Path to pdfs folder
         // String pdfDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\";
@@ -77,14 +77,22 @@ public class Main {
 
 
         // Path to pdfs folder
-        String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/pdf/"; 
-        // String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/pdf/"; 
+        // String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/pdf/"; 
+        String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/pdf/"; 
+        
         // Pre-output folder
         String b = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
         // Main tsv datafile
         String data_file = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/trainOutput.tsv";
         // fold output folder
         String outputDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/twofoldwithunk/";
+
+        // // Pre-output folder
+        // String b = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperswithcodedatawith600unk/twofold/fold2/";
+        // // Main tsv datafile
+        // String data_file = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperswithcodedatawith600unk/twofold/fold2/train-full.tsv";
+        // // fold output folder
+        // String outputDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperswithcodedatawith600unk/twofold/fold2/";
 
 
         // check if the target folder exist if not create it.

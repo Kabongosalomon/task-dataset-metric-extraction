@@ -6,6 +6,7 @@
 package eu.tib.sre.tdmsie;
 
 import java.io.BufferedReader;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -89,6 +90,7 @@ public class TEModelEvalOnNLPTDMS {
     
 
     public void evaluateTDMSExtraction() throws IOException, Exception {
+    // public void evaluateTDMSExtraction(FileOutputStream fold_stats) throws IOException, Exception {
         // Map<String, String> scorePrediction = getPredictedSore();
         // String file1 = prop.getProperty("projectPath") + "/" + "data/ibm/exp/few-shot-setup/NLP-TDMS/paperVersion/test.tsv";
         // String file2 = prop.getProperty("projectPath") + "/" + "data/ibm/exp/few-shot-setup/NLP-TDMS/paperVersion/test_results.tsv";
@@ -121,35 +123,39 @@ public class TEModelEvalOnNLPTDMS {
             //if(excludeTestFiles.contains(filename)) continue;
             String leaderboard = f1.get(i).split("\t")[2];
             if (!resultsPredictionsTestPapers.containsKey(filename)) {
+
                 Set<NLPResult> results = new HashSet();
                 resultsPredictionsTestPapers.put(filename, results);
+
             }
             if (Double.valueOf(f2.get(i).split("\t")[0]) > 0.5) {
-                //if (Double.valueOf(f2.get(i).split("\t")[0]) > Double.valueOf(f2.get(i).split("\t")[1])) {
+                //if (Double.valueOf(f2.get(i).split("\t")[0]) > Double.valueOf(f2.get(i).split("\t")[1])) {            
                 if (leaderboard.equalsIgnoreCase("unknow")) {
-                    NLPResult result = new NLPResult(filename, "unknow", "unknow");
-                    result.setEvaluationMetric("unknow");
-                    result.setEvaluationScore("unknow");
-                    resultsPredictionsTestPapers.get(filename).add(result);
-                } else {
-                    // String task = leaderboard.split(",")[0].replace(" ", "_").trim();
-                    // String dataset = leaderboard.split(",")[1].trim();
-                    // String eval = leaderboard.split(",")[2].trim();
+                NLPResult result = new NLPResult(filename, "unknow", "unknow");
+                result.setEvaluationMetric("unknow");
+                result.setEvaluationScore("unknow");
+                resultsPredictionsTestPapers.get(filename).add(result);
 
-                    String task = leaderboard.split(";")[0].replace(" ", "_").trim();
-                    String dataset = leaderboard.split(";")[1].trim();
-                    String eval = leaderboard.split(";")[2].trim();
+                } 
+            else {
+                // String task = leaderboard.split(",")[0].replace(" ", "_").trim();
+                // String dataset = leaderboard.split(",")[1].trim();
+                // String eval = leaderboard.split(",")[2].trim();
+
+                String task = leaderboard.split(";")[0].replace(" ", "_").trim();
+                String dataset = leaderboard.split(";")[1].trim();
+                String eval = leaderboard.split(";")[2].trim();
 
 
-                    NLPResult result = new NLPResult(filename, task, dataset);
-                    result.setEvaluationMetric(eval);
-                    
-                    // This is for score 
-                    // if (scorePrediction.containsKey(filename + "#" + dataset + ":::" + eval)) {
-                    //     result.setEvaluationScore(scorePrediction.get(filename + "#" + dataset + ":::" + eval).split("#")[0]);
-                    // }
+                NLPResult result = new NLPResult(filename, task, dataset);
+                result.setEvaluationMetric(eval);
+                
+                // This is for score 
+                // if (scorePrediction.containsKey(filename + "#" + dataset + ":::" + eval)) {
+                //     result.setEvaluationScore(scorePrediction.get(filename + "#" + dataset + ":::" + eval).split("#")[0]);
+                // }
 
-                    resultsPredictionsTestPapers.get(filename).add(result);
+                resultsPredictionsTestPapers.get(filename).add(result);
                 }
             }
         }
@@ -165,6 +171,7 @@ public class TEModelEvalOnNLPTDMS {
                 continue;
             } else {
                 // TODO I may need to change this 
+
                 // String task = leaderboard.split(",")[0].replace(" ", "_");
                 // String dataset = leaderboard.split(",")[1];
                 // String eval = leaderboard.split(",")[2];
@@ -176,11 +183,23 @@ public class TEModelEvalOnNLPTDMS {
                 evaluatedLabels.add(task.trim() + ":::" + dataset.trim() + ":::" + eval.trim());
             }
         }
+
         logger.info("leaderboard eu.tib.sre.evaluation:");
+        // fold_stats.write(("leaderboard eu.tib.sre.evaluation:").getBytes());
+
         logger.info("per_label:");
+        // fold_stats.write(("per_label:").getBytes());
+
         logger.info(evalMatrix.perLabelEvaluation_Leaderboard_TaskDatasetEvaluationMatrix(resultsPredictionsTestPapers, false, evaluatedLabels));
+        // fold_stats.write((evalMatrix.perLabelEvaluation_Leaderboard_TaskDatasetEvaluationMatrix(resultsPredictionsTestPapers, false, evaluatedLabels)).getBytes());
+        
         logger.info("per_sample:");
+        // fold_stats.write(("per_sample:").getBytes());
+
         logger.info(evalMatrix.perSampleEvaluation_Leaderboard(resultsPredictionsTestPapers, file1));
+        // fold_stats.write((evalMatrix.perSampleEvaluation_Leaderboard(resultsPredictionsTestPapers, file1)).getBytes());
+        
+    
     }
     
 
@@ -231,6 +250,20 @@ public class TEModelEvalOnNLPTDMS {
     
    public static void main(String[] args) throws IOException, Exception{
        TEModelEvalOnNLPTDMS teEval = new TEModelEvalOnNLPTDMS();
+
+    //    // This specify the number of negative instances
+    //    Integer numbNegative = Integer.parseInt("10");
+
+    //    // This specify the number of negative instances
+    //    Integer numbUnk = Integer.parseInt("90");
+
+    //    String b = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
+    //    // Added this to have the portion of unknown instances
+    //    FileOutputStream fold_stats = new FileOutputStream(b+"fold_stats.tsv");
+
+       
+    //    teEval.evaluateTDMSExtraction(fold_stats);
+
        teEval.evaluateTDMSExtraction();
    }
 

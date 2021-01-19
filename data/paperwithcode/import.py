@@ -320,6 +320,15 @@ def get_TDM_taxonomy(task, dataset, metric, score):
 def get_title_taxonomy(paper_title):
     paper_name_taxonomy[paper_title] += 1
 
+def parse_TDM_taxonomy(TDM_taxonomy):      
+    with open("./annotations/TDM_taxonomy.tsv", "a+", encoding="utf-8") as text_file:
+        for key, value in TDM_taxonomy.items():
+            text_file.write(key+"\t"+str(value)+"\n")
+
+def parse_title_taxonomy(paper_name_taxonomy):
+    with open("./annotations/paper_name_taxonomy.tsv", "a+", encoding="utf-8") as text_file:
+        for key, value in paper_name_taxonomy.items():
+            text_file.write(key+"\t"+str(value)+"\n")
 
 def resultsAnnotation(paper_name, task, dataset, metric, score):
     path = "./annotations/resultsAnnotation.tsv"
@@ -349,16 +358,6 @@ def resultsAnnotation(paper_name, task, dataset, metric, score):
 
         paper_name_taxonomy[paper_name]+=1
 
-def parse_TDM_taxonomy(TDM_taxonomy):      
-    with open("./annotations/TDM_taxonomy.tsv", "a+", encoding="utf-8") as text_file:
-        for key, value in TDM_taxonomy.items():
-            text_file.write(key+"\t"+str(value)+"\n")
-
-def parse_title_taxonomy(paper_name_taxonomy):
-    with open("./annotations/paper_name_taxonomy.tsv", "a+", encoding="utf-8") as text_file:
-        for key, value in paper_name_taxonomy.items():
-            text_file.write(key+"\t"+str(value)+"\n")
-        
 
 def datasetAnnotation(paper_title, dataset):      
     # with open("./annotations/datasetAnnotation.tsv", "a+", encoding="utf-8") as text_file:
