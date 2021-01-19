@@ -62,12 +62,12 @@ public class TEModelEvalOnNLPTDMS {
             String filename = f1.get(i).split("\t")[1].split("#")[0];
             String board = f1.get(i).split("\t")[2];
 
-            // String dataset = board.split(",")[0].trim();
-            // String eval = board.split(",")[1].trim();
+            String dataset = board.split(",")[0].trim();
+            String eval = board.split(",")[1].trim();
 
             // The file in my case a splited by ;
-            String dataset = board.split(";")[0].trim();
-            String eval = board.split(";")[1].trim();
+            // String dataset = board.split(";")[0].trim();
+            // String eval = board.split(";")[1].trim();
 
             String scoreStr = f1.get(i).split("\t")[1].split("#")[1];
             if (Double.valueOf(f2.get(i).split("\t")[0]) > 0.0) {
@@ -138,13 +138,13 @@ public class TEModelEvalOnNLPTDMS {
 
                 } 
             else {
-                // String task = leaderboard.split(",")[0].replace(" ", "_").trim();
-                // String dataset = leaderboard.split(",")[1].trim();
-                // String eval = leaderboard.split(",")[2].trim();
+                String task = leaderboard.split(",")[0].replace(" ", "_").trim();
+                String dataset = leaderboard.split(",")[1].trim();
+                String eval = leaderboard.split(",")[2].trim();
 
-                String task = leaderboard.split(";")[0].replace(" ", "_").trim();
-                String dataset = leaderboard.split(";")[1].trim();
-                String eval = leaderboard.split(";")[2].trim();
+                // String task = leaderboard.split(";")[0].replace(" ", "_").trim();
+                // String dataset = leaderboard.split(";")[1].trim();
+                // String eval = leaderboard.split(";")[2].trim();
 
 
                 NLPResult result = new NLPResult(filename, task, dataset);
@@ -172,13 +172,13 @@ public class TEModelEvalOnNLPTDMS {
             } else {
                 // TODO I may need to change this 
 
-                // String task = leaderboard.split(",")[0].replace(" ", "_");
-                // String dataset = leaderboard.split(",")[1];
-                // String eval = leaderboard.split(",")[2];
+                String task = leaderboard.split(",")[0].replace(" ", "_");
+                String dataset = leaderboard.split(",")[1];
+                String eval = leaderboard.split(",")[2];
 
-                String task = leaderboard.split(";")[0].replace(" ", "_");
-                String dataset = leaderboard.split(";")[1];
-                String eval = leaderboard.split(";")[2];
+                // String task = leaderboard.split(";")[0].replace(" ", "_");
+                // String dataset = leaderboard.split(";")[1];
+                // String eval = leaderboard.split(";")[2];
 
                 evaluatedLabels.add(task.trim() + ":::" + dataset.trim() + ":::" + eval.trim());
             }
@@ -250,20 +250,6 @@ public class TEModelEvalOnNLPTDMS {
     
    public static void main(String[] args) throws IOException, Exception{
        TEModelEvalOnNLPTDMS teEval = new TEModelEvalOnNLPTDMS();
-
-    //    // This specify the number of negative instances
-    //    Integer numbNegative = Integer.parseInt("10");
-
-    //    // This specify the number of negative instances
-    //    Integer numbUnk = Integer.parseInt("90");
-
-    //    String b = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
-    //    // Added this to have the portion of unknown instances
-    //    FileOutputStream fold_stats = new FileOutputStream(b+"fold_stats.tsv");
-
-       
-    //    teEval.evaluateTDMSExtraction(fold_stats);
-
        teEval.evaluateTDMSExtraction();
    }
 
