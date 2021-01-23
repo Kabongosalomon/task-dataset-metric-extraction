@@ -45,6 +45,7 @@ public class Main {
 
         // Only consider leaderboard that have at least 5 papers
         Integer threshold = 5;
+        // Integer threshold = 50;
 
 //        Integer numbNegative = Integer.parseInt(args[2]);
 //        String pdfDir = args[0];
@@ -61,10 +62,10 @@ public class Main {
 //        String outputDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\"+numbNegative.toString()+"unk\\twofoldwithunk\\";
 
         // This specify the number of negative instances
-        Integer numbNegative = Integer.parseInt("50");
+        Integer numbNegative = Integer.parseInt("5");
 
         // This specify the number of negative instances
-        Integer numbUnk = Integer.parseInt("50");
+        Integer numbUnk = Integer.parseInt("10");
 
         // Path to pdfs folder
         // String pdfDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\";
@@ -77,8 +78,8 @@ public class Main {
 
 
         // Path to pdfs folder
-        // String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/pdf/"; 
-        String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/pdf/"; 
+        String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/pdf/"; 
+        // String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/pdf/"; 
         
         // Pre-output folder
         String b = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
@@ -119,33 +120,41 @@ public class Main {
 
 
 
-        // List of content in trainOutput.tsv
-        String[] lines = TwoFoldCrossValidation.readFile(data_file, StandardCharsets.UTF_8).split("\n");
-
         Map<String, List<String>> data = new HashMap<>();
-
         // This help to keep track of TDM seen so far
         List<String> tdms = new ArrayList<>();
 
 
-        for (String line : lines) {
-            line = line.trim();
-            String[] tokens = line.split("\t");
-            //System.out.println(tokens.length);
+        TwoFoldCrossValidation.readFile2(data_file, data, tdms, StandardCharsets.UTF_8);
 
-            // The help to have the paper with all it's true TDM
-            List<String> dataLines = data.get(tokens[1]);
-            if (dataLines == null) data.put(tokens[1], dataLines = new ArrayList<>());
 
-            // // Fix issue with false label appended on the paper 
-            // if(line.split("\t")[0].equals("true")){
-            //     dataLines.add(line);
-            // }
+        // // List of content in trainOutput.tsv
+        // String[] lines = TwoFoldCrossValidation.readFile(data_file, StandardCharsets.UTF_8).split("\n");
 
-            dataLines.add(line);
+        // Map<String, List<String>> data = new HashMap<>();
 
-            if (!tdms.contains(tokens[2])) tdms.add(tokens[2]);
-        }
+        // // This help to keep track of TDM seen so far
+        // List<String> tdms = new ArrayList<>();
+
+
+        // for (String line : lines) {
+        //     line = line.trim();
+        //     String[] tokens = line.split("\t");
+        //     //System.out.println(tokens.length);
+
+        //     // The help to have the paper with all it's true TDM
+        //     List<String> dataLines = data.get(tokens[1]);
+        //     if (dataLines == null) data.put(tokens[1], dataLines = new ArrayList<>());
+
+        //     // // Fix issue with false label appended on the paper 
+        //     // if(line.split("\t")[0].equals("true")){
+        //     //     dataLines.add(line);
+        //     // }
+
+        //     dataLines.add(line);
+
+        //     if (!tdms.contains(tokens[2])) tdms.add(tokens[2]);
+        // }
 
         // Data split
         int datasize = data.keySet().size();

@@ -1,7 +1,9 @@
 package eu.tib.sre.utils;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
@@ -9,6 +11,10 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
+
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.LineIterator;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * @author jld
@@ -24,7 +30,52 @@ public class TwoFoldCrossValidation {
     public static String readFile(String path, Charset encoding) throws IOException {
         byte[] encoded = Files.readAllBytes(Paths.get(path));
         return new String(encoded, encoding);
+
     }
+
+    public static void readFile2(String path,  Map<String, List<String>> data,
+                            List<String> tdms, Charset encoding) throws IOException {
+
+        /*
+            This solve the issue of Exception in thread "main" java.lang.NegativeArraySizeException: -1907719306
+            based on https://www.baeldung.com/java-read-lines-large-file
+        */
+        // List<String> stringList = FileUtils.readLines(new File(Paths.get(path).toString()), encoding);
+        // return StringUtils.join(stringList, "\n");
+        File theFile = new File(Paths.get(path).toString());
+        LineIterator it = FileUtils.lineIterator(theFile, "UTF-8");
+        try {
+            while (it.hasNext()) {
+                String line = it.nextLine();
+                // do something with line
+                line = line.trim();
+                String[] tokens = line.split("\t");
+                //System.out.println(tokens.length);
+
+                // The help to have the paper with all it's true TDM
+                List<String> dataLines = data.get(tokens[1]);
+                if (dataLines == null) data.put(tokens[1], dataLines = new ArrayList<>());
+
+                // // Fix issue with false label appended on the paper 
+                // if(line.split("\t")[0].equals("true")){
+                //     dataLines.add(line);
+                // }
+
+                dataLines.add(line);
+
+                if (!tdms.contains(tokens[2])) tdms.add(tokens[2]);
+
+
+            }
+        } finally {
+            LineIterator.closeQuietly(it);
+        }
+
+        
+        // return data, tdms
+
+    }
+    
 
     public static Map<Integer, List<Integer>> getPerFoldTestIndexes(int min_limit, int max_limit, int total_numbers, int number_fold) {
         Set<Integer> seen = new HashSet<>();
