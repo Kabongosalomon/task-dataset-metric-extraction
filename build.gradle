@@ -38,7 +38,9 @@ dependencies {
     // compile group: 'org.apache.pdfbox', name: 'pdfbox', version: '2.0.18'
 
     // ToDO : I need to make this run on grobid 0.6.07
-    implementation group: 'org.grobid', name: 'grobid-core', version: '0.5.3'
+    // implementation group: 'org.grobid', name: 'grobid-core', version: '0.5.3'
+    implementation group: 'org.grobid', name: 'grobid-core', version: '0.6.0'
+    implementation group: 'org.grobid', name: 'grobid-trainer', version: '0.6.0'
 
     // compile files('/mnt/d/ORKG/NLP/task-dataset-metric-extraction/drive/traprange.jar')
 //     implementation files('D:\\ORKG\\NLP\\Try\\task-dataset-metric-extraction\\drive\\traprange.jar')
@@ -68,6 +70,9 @@ dependencies {
 
     // https://mvnrepository.com/artifact/au.com.bytecode/opencsv
     implementation group: 'au.com.bytecode', name: 'opencsv', version: '2.4'
+
+    implementation "com.google.guava:guava:16+"
+    
 }
 
 jar {

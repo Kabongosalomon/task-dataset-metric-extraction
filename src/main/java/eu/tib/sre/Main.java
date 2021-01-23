@@ -22,12 +22,63 @@ import java.util.concurrent.atomic.AtomicInteger;
 import static eu.tib.sre.utils.TwoFoldCrossValidation.getPerFoldTestIndexes;
 import static eu.tib.sre.utils.TwoFoldCrossValidation.writeOutput;
 
+
+// import org.grobid.core.*;
+// import org.grobid.core.data.*;
+// import org.grobid.core.factory.*;
+// import org.grobid.core.main.GrobidHomeFinder;
+// // import org.grobid.core.mock.*;
+// import org.grobid.core.utilities.*;
+// import org.grobid.core.engines.Engine;
+
+// import java.io.FileInputStream;
+// import java.util.Arrays;
+// import java.util.Properties;
+
 /**
  * @author jld
  */
 public class Main {
 
     public static void main(String[] args) throws Exception {
+
+
+//         // String pdfPath = "/home/salomon/Desktop/grobid-example/src/test/resources/Wang_paperAVE2008.pdf";
+
+//         String pdfPath = "/home/salomon/Desktop/grobid-example/src/test/resources/HAL.pdf";
+//         try {
+//             String pGrobidHome = "/home/salomon/Desktop/grobid-0.6.0/grobid-home";
+// //                    "/Users/lopez/grobid/grobid-home";
+
+//             // The GrobidHomeFinder can be instantiate without parameters to verify the grobid home in the standard
+//             // location (classpath, ../grobid-home, ../../grobid-home)
+
+//             // If the location is customised:
+//             GrobidHomeFinder grobidHomeFinder = new GrobidHomeFinder(Arrays.asList(pGrobidHome));
+
+//             //The GrobidProperties needs to be instantiate using the correct grobidHomeFinder or it will use the default
+//             //locations
+//             GrobidProperties.getInstance(grobidHomeFinder);
+
+//             System.out.println(">>>>>>>> GROBID_HOME=" + GrobidProperties.get_GROBID_HOME_PATH());
+
+//             Engine engine = GrobidFactory.getInstance().createEngine();
+
+//             // Biblio object for the result
+//             BiblioItem resHeader = new BiblioItem();
+//             String tei = engine.processHeader(pdfPath, 1, resHeader);
+
+//             System.out.println("tei " + tei);
+//         } catch (Exception e) {
+//             // If an exception is generated, print a stack trace
+//             e.printStackTrace();
+//         }
+//     }
+
+
+
+
+
 
         // "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\pdf\\"
         // "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\"

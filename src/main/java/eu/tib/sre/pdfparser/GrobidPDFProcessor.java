@@ -5,7 +5,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.rits.cloning.Cloner;
 import eu.tib.sre.BaseDirInfo;
-//import org.apache.commons.lang3.tuple.Pair;
+import org.apache.commons.lang3.tuple.Pair;
 import org.grobid.core.GrobidModels;
 import org.grobid.core.data.BiblioItem;
 import org.grobid.core.data.Figure;
@@ -27,7 +27,7 @@ import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.LayoutTokensUtil;
 import static org.grobid.core.engines.FullTextParser.getBodyTextFeatured;
 
-import org.grobid.core.utilities.Pair;
+// import org.grobid.core.utilities.Pair;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -420,10 +420,10 @@ public class GrobidPDFProcessor {
             if (featSeg != null) {
                 // if featSeg is null, it usually means that no body segment is found in the
                 // document segmentation
-//                String bodytext = featSeg.getLeft();
-//                layoutTokenization = featSeg.getRight();
-                String bodytext = featSeg.getA();
-                layoutTokenization = featSeg.getB();
+               String bodytext = featSeg.getLeft();
+               layoutTokenization = featSeg.getRight();
+                // String bodytext = featSeg.getA();
+                // layoutTokenization = featSeg.getB();
                 if ((bodytext != null) && (bodytext.trim().length() > 0)) {
                     rese = parsers.getFullTextParser().label(bodytext);
                 }
