@@ -92,8 +92,6 @@ public class TEModelEvalOnNLPTDMS {
     public void evaluateTDMSExtraction() throws IOException, Exception {
     // public void evaluateTDMSExtraction(FileOutputStream fold_stats) throws IOException, Exception {
         // Map<String, String> scorePrediction = getPredictedSore();
-        // String file1 = prop.getProperty("projectPath") + "/" + "data/ibm/exp/few-shot-setup/NLP-TDMS/paperVersion/test.tsv";
-        // String file2 = prop.getProperty("projectPath") + "/" + "data/ibm/exp/few-shot-setup/NLP-TDMS/paperVersion/test_results.tsv";
 
         String file1 = prop.getProperty("projectPath") + "/" + prop.getProperty("test_path");
         String file2 = prop.getProperty("projectPath") + "/" +  prop.getProperty("test_results_path");
@@ -167,7 +165,7 @@ public class TEModelEvalOnNLPTDMS {
         String line3 = "";
         while ((line3 = br3.readLine()) != null) {
             String leaderboard = line3.split("\t")[2];
-            if (leaderboard.equalsIgnoreCase("unknow")) {
+            if (leaderboard.equalsIgnoreCase("unknow") ||  leaderboard.equalsIgnoreCase("unknown")) {
                 continue;
             } else {
                 // TODO I may need to change this 
@@ -207,8 +205,6 @@ public class TEModelEvalOnNLPTDMS {
         Map<String, Set<String>> trainTitle = new HashMap();
         Map<String, Set<String>> testTitle = new HashMap();
         Set<String> excludeFiles = new HashSet();
-        // String file10 = prop.getProperty("projectPath") + "/" + "data/ibm/exp/few-shot-setup/NLP-TDMS/paperVersion/train.tsv";
-        // String file20 = prop.getProperty("projectPath") + "/" + "data/ibm/exp/few-shot-setup/NLP-TDMS/paperVersion/test.tsv";
         String file10 = prop.getProperty("projectPath") + "/" + prop.getProperty("train_path");
         String file20 = prop.getProperty("projectPath") + "/" + prop.getProperty("test_path");
         String line0 = "";
