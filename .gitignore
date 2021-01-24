@@ -149,3 +149,5 @@ bin/
 *.pdf
 *.zip
 *.bin
+
+grobid.log.2021-01-23
