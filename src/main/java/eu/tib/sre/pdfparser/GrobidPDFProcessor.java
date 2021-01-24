@@ -313,8 +313,8 @@ public class GrobidPDFProcessor {
             if (nNode.getNodeType() == Node.ELEMENT_NODE) {
                 Element eElement = (Element) nNode;
                 Node head = (Element) xpath.evaluate("head", eElement, XPathConstants.NODE);
-//                String sectiontitle = head == null ? "narrative" : head.getTextContent();
-                String sectiontitle = head.getTextContent();
+                String sectiontitle = head == null ? "narrative" : head.getTextContent();
+                // String sectiontitle = head.getTextContent();
                 String sectionParagraphs = "";
                 NodeList nList2 = ((Element) eElement).getElementsByTagName("p");
                 for (int j = 0; j < nList2.getLength(); j++) {

@@ -22,71 +22,12 @@ import java.util.concurrent.atomic.AtomicInteger;
 import static eu.tib.sre.utils.TwoFoldCrossValidation.getPerFoldTestIndexes;
 import static eu.tib.sre.utils.TwoFoldCrossValidation.writeOutput;
 
-
-// import org.grobid.core.*;
-// import org.grobid.core.data.*;
-// import org.grobid.core.factory.*;
-// import org.grobid.core.main.GrobidHomeFinder;
-// // import org.grobid.core.mock.*;
-// import org.grobid.core.utilities.*;
-// import org.grobid.core.engines.Engine;
-
-// import java.io.FileInputStream;
-// import java.util.Arrays;
-// import java.util.Properties;
-
 /**
  * @author jld
  */
 public class Main {
 
     public static void main(String[] args) throws Exception {
-
-
-//         // String pdfPath = "/home/salomon/Desktop/grobid-example/src/test/resources/Wang_paperAVE2008.pdf";
-
-//         String pdfPath = "/home/salomon/Desktop/grobid-example/src/test/resources/HAL.pdf";
-//         try {
-//             String pGrobidHome = "/home/salomon/Desktop/grobid-0.6.0/grobid-home";
-// //                    "/Users/lopez/grobid/grobid-home";
-
-//             // The GrobidHomeFinder can be instantiate without parameters to verify the grobid home in the standard
-//             // location (classpath, ../grobid-home, ../../grobid-home)
-
-//             // If the location is customised:
-//             GrobidHomeFinder grobidHomeFinder = new GrobidHomeFinder(Arrays.asList(pGrobidHome));
-
-//             //The GrobidProperties needs to be instantiate using the correct grobidHomeFinder or it will use the default
-//             //locations
-//             GrobidProperties.getInstance(grobidHomeFinder);
-
-//             System.out.println(">>>>>>>> GROBID_HOME=" + GrobidProperties.get_GROBID_HOME_PATH());
-
-//             Engine engine = GrobidFactory.getInstance().createEngine();
-
-//             // Biblio object for the result
-//             BiblioItem resHeader = new BiblioItem();
-//             String tei = engine.processHeader(pdfPath, 1, resHeader);
-
-//             System.out.println("tei " + tei);
-//         } catch (Exception e) {
-//             // If an exception is generated, print a stack trace
-//             e.printStackTrace();
-//         }
-//     }
-
-
-
-
-
-
-        // "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\pdf\\"
-        // "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\"
-        // "50"
-
-//        System.out.println(args[0]);
-//        System.out.println(args[1]);
-//        System.out.println(args[2]);
 
 //        if (args.length != 3) {
 //            System.out.println("Usage: java Main.java <path_to_pdf> <path_to_output> <numb_negative>");
@@ -95,8 +36,8 @@ public class Main {
 //        }
 
         // Only consider leaderboard that have at least 5 papers
-        Integer threshold = 5;
-        // Integer threshold = 50;
+        // Integer threshold = 5;
+        Integer threshold = 50;
 
 //        Integer numbNegative = Integer.parseInt(args[2]);
 //        String pdfDir = args[0];
@@ -105,32 +46,16 @@ public class Main {
 //        String outputDir = args[1]+numbNegative.toString()+"unk\\twofoldwithunk\\";
 
 
-
-//        Integer numbNegative = Integer.parseInt("2");
-//        String pdfDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\pdf\\";
-//        String b = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\"+numbNegative.toString()+"unk\\";
-//        String data_file = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\"+numbNegative.toString()+"unk\\trainOutput.tsv";
-//        String outputDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\"+numbNegative.toString()+"unk\\twofoldwithunk\\";
+        // This specify the number of negative instances
+        Integer numbNegative = Integer.parseInt("60");
 
         // This specify the number of negative instances
-        Integer numbNegative = Integer.parseInt("5");
-
-        // This specify the number of negative instances
-        Integer numbUnk = Integer.parseInt("10");
-
-        // Path to pdfs folder
-        // String pdfDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\";
-        // Pre-output folder
-        // String b = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\"+numbNegative.toString()+"unk\\";
-        // Main tsv datafile
-        // String data_file = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\"+numbNegative.toString()+"unk\\trainOutput.tsv";
-        // fold output folder
-        // String outputDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\"+numbNegative.toString()+"unk\\twofoldwithunk\\";
+        Integer numbUnk = Integer.parseInt("100");
 
 
         // Path to pdfs folder
-        String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/pdf/"; 
-        // String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/pdf/"; 
+        // String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/pdf/"; 
+        String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/pdf/"; 
         
         // Pre-output folder
         String b = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
@@ -138,13 +63,6 @@ public class Main {
         String data_file = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/trainOutput.tsv";
         // fold output folder
         String outputDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/twofoldwithunk/";
-
-        // // Pre-output folder
-        // String b = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperswithcodedatawith600unk/twofold/fold2/";
-        // // Main tsv datafile
-        // String data_file = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperswithcodedatawith600unk/twofold/fold2/train-full.tsv";
-        // // fold output folder
-        // String outputDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperswithcodedatawith600unk/twofold/fold2/";
 
 
         // check if the target folder exist if not create it.
@@ -177,35 +95,6 @@ public class Main {
 
 
         TwoFoldCrossValidation.readFile2(data_file, data, tdms, StandardCharsets.UTF_8);
-
-
-        // // List of content in trainOutput.tsv
-        // String[] lines = TwoFoldCrossValidation.readFile(data_file, StandardCharsets.UTF_8).split("\n");
-
-        // Map<String, List<String>> data = new HashMap<>();
-
-        // // This help to keep track of TDM seen so far
-        // List<String> tdms = new ArrayList<>();
-
-
-        // for (String line : lines) {
-        //     line = line.trim();
-        //     String[] tokens = line.split("\t");
-        //     //System.out.println(tokens.length);
-
-        //     // The help to have the paper with all it's true TDM
-        //     List<String> dataLines = data.get(tokens[1]);
-        //     if (dataLines == null) data.put(tokens[1], dataLines = new ArrayList<>());
-
-        //     // // Fix issue with false label appended on the paper 
-        //     // if(line.split("\t")[0].equals("true")){
-        //     //     dataLines.add(line);
-        //     // }
-
-        //     dataLines.add(line);
-
-        //     if (!tdms.contains(tokens[2])) tdms.add(tokens[2]);
-        // }
 
         // Data split
         int datasize = data.keySet().size();

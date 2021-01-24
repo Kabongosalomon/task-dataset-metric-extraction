@@ -143,9 +143,13 @@ data/
 bert/
 src/main/resources/
 bin/
+.gradle/
+ bin/
 
 *.jar
 *.tsv
 *.pdf
 *.zip
 *.bin
+*.log
+
