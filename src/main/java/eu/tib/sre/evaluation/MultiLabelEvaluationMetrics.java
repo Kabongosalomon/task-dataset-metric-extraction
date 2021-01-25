@@ -101,8 +101,8 @@ public class MultiLabelEvaluationMetrics {
                 if (resultsstr.split("\\$")[i].split("#").length < 4) {
                     continue;//the paper doesn't report score
                 }
-                String task = resultsstr.split("\\$")[i].split("#")[0];
-                // String task = resultsstr.split("\\$")[i].split("#")[0].replace(" ", "_").trim();
+                // String task = resultsstr.split("\\$")[i].split("#")[0];
+                String task = resultsstr.split("\\$")[i].split("#")[0].replace(" ", "_").trim();
 
                 String dataset = resultsstr.split("\\$")[i].split("#")[1];
                 String evaluationMatrix = resultsstr.split("\\$")[i].split("#")[2];

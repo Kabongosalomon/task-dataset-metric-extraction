@@ -202,43 +202,46 @@ public class TEModelEvalOnNLPTDMS {
     
 
         public Set<String> getTestFilesInTrainsetWithDifferentName() throws IOException, Exception {
-        Map<String, Set<String>> trainTitle = new HashMap();
-        Map<String, Set<String>> testTitle = new HashMap();
-        Set<String> excludeFiles = new HashSet();
-        String file10 = prop.getProperty("projectPath") + "/" + prop.getProperty("train_path");
-        String file20 = prop.getProperty("projectPath") + "/" + prop.getProperty("test_path");
-        String line0 = "";
-        BufferedReader br10 = new BufferedReader(new FileReader(file10));
-        BufferedReader br20 = new BufferedReader(new FileReader(file20));
-        while ((line0 = br10.readLine()) != null) {
-            String filename = line0.split("\t")[1];
-            String title = line0.split("\t")[3].substring(0, 50);
-            if (trainTitle.containsKey(title)) {
-                trainTitle.get(title).add(filename);
-            } else {
-                Set<String> files = new HashSet();
-                files.add(filename);
-                trainTitle.put(title, files);
-            }
-        }
-        while ((line0 = br20.readLine()) != null) {
-            String filename = line0.split("\t")[1];
-            String title = line0.split("\t")[3].substring(0, 50);
-            if (testTitle.containsKey(title)) {
-                testTitle.get(title).add(filename);
-            } else {
-                Set<String> files = new HashSet();
-                files.add(filename);
-                testTitle.put(title, files);
-            }
-        }
+            Map<String, Set<String>> trainTitle = new HashMap();
+            Map<String, Set<String>> testTitle = new HashMap();
+            Set<String> excludeFiles = new HashSet();
 
-        for (String title : testTitle.keySet()) {
-            if (trainTitle.keySet().contains(title)) {
-                excludeFiles.addAll(testTitle.get(title));
+            String file10 = prop.getProperty("projectPath") + "/" + prop.getProperty("train_path");
+            String file20 = prop.getProperty("projectPath") + "/" + prop.getProperty("test_path");
+            
+            String line0 = "";
+            BufferedReader br10 = new BufferedReader(new FileReader(file10));
+            BufferedReader br20 = new BufferedReader(new FileReader(file20));
+
+            while ((line0 = br10.readLine()) != null) {
+                String filename = line0.split("\t")[1];
+                String title = line0.split("\t")[3].substring(0, 50);
+                if (trainTitle.containsKey(title)) {
+                    trainTitle.get(title).add(filename);
+                } else {
+                    Set<String> files = new HashSet();
+                    files.add(filename);
+                    trainTitle.put(title, files);
+                }
             }
-        }
-        return excludeFiles;
+            while ((line0 = br20.readLine()) != null) {
+                String filename = line0.split("\t")[1];
+                String title = line0.split("\t")[3].substring(0, 50);
+                if (testTitle.containsKey(title)) {
+                    testTitle.get(title).add(filename);
+                } else {
+                    Set<String> files = new HashSet();
+                    files.add(filename);
+                    testTitle.put(title, files);
+                }
+            }
+
+            for (String title : testTitle.keySet()) {
+                if (trainTitle.keySet().contains(title)) {
+                    excludeFiles.addAll(testTitle.get(title));
+                }
+            }
+            return excludeFiles;
     }
 
 
