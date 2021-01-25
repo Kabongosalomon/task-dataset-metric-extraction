@@ -539,6 +539,8 @@ public class MultiLabelEvaluationMetrics {
         Map<String, Set<NLPResult>> revisedGoldAnnotation = new HashMap();
         Map<String, Set<NLPResult>> revisedGoldAnnotation_wo_unknow = new HashMap();
         Map<String, Set<NLPResult>> prediction_on_known = new HashMap();
+        
+        // This make a replic of prediction 
         for(String file: prediction.keySet())
             prediction_on_known.put(file, prediction.get(file));
         
@@ -566,7 +568,8 @@ public class MultiLabelEvaluationMetrics {
                     // String dataset = leaderboard.split(",")[1].trim();
                     // String eval = leaderboard.split(",")[2].trim();
 
-                    String task = leaderboard.split(";")[0].replace(" ", "_").trim();
+                    // String task = leaderboard.split(";")[0].replace(" ", "_").trim();
+                    String task = leaderboard.split(";")[0].trim();
                     String dataset = leaderboard.split(";")[1].trim();
                     String eval = leaderboard.split(";")[2].trim();
 
@@ -581,16 +584,16 @@ public class MultiLabelEvaluationMetrics {
             }
         }
         br1.close();
-        //for debug
-//        for(String file: prediction.keySet()){
-//            System.err.println(file);
-//            System.err.println("prediction");
-//            for(NLPResult predict: prediction.get(file))
-//                System.err.println(predict.toString());
-//            System.err.println("goldAnno");
-//            for(NLPResult anno: revisedGoldAnnotation.get(file))
-//                System.err.println(anno.toString());
-//        }
+    //     //for debug
+    //    for(String file: prediction.keySet()){
+    //        System.err.println(file);
+    //        System.err.println("prediction");
+    //        for(NLPResult predict: prediction.get(file))
+    //            System.err.println(predict.toString());
+    //        System.err.println("goldAnno");
+    //        for(NLPResult anno: revisedGoldAnnotation.get(file))
+    //            System.err.println(anno.toString());
+    //    }
         
         
         String relaxEvalResult = perSampleEvaluation_leaderboardRelax(prediction, revisedGoldAnnotation);

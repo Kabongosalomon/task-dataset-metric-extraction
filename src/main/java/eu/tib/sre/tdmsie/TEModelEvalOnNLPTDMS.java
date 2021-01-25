@@ -145,7 +145,8 @@ public class TEModelEvalOnNLPTDMS {
                 // String dataset = leaderboard.split(",")[1].trim();
                 // String eval = leaderboard.split(",")[2].trim();
 
-                String task = leaderboard.split(";")[0].replace(" ", "_").trim();
+                // String task = leaderboard.split(";")[0].replace(" ", "_").trim();
+                String task = leaderboard.split(";")[0].trim();
                 String dataset = leaderboard.split(";")[1].trim();
                 String eval = leaderboard.split(";")[2].trim();
 
@@ -182,7 +183,8 @@ public class TEModelEvalOnNLPTDMS {
                 // String dataset = leaderboard.split(",")[1];
                 // String eval = leaderboard.split(",")[2];
 
-                String task = leaderboard.split(";")[0].replace(" ", "_");
+                // String task = leaderboard.split(";")[0].replace(" ", "_");
+                String task = leaderboard.split(";")[0];
                 String dataset = leaderboard.split(";")[1];
                 String eval = leaderboard.split(";")[2];
 
@@ -206,8 +208,8 @@ public class TEModelEvalOnNLPTDMS {
         // // fold_stats.write((evalMatrix.perSampleEvaluation_Leaderboard(resultsPredictionsTestPapers, file1)).getBytes());
 
         System.out.println("leaderboard eu.tib.sre.evaluation:");
-        System.out.println("per_label:");
-        System.out.println(evalMatrix.perLabelEvaluation_Leaderboard_TaskDatasetEvaluationMatrix(resultsPredictionsTestPapers, false, evaluatedLabels));
+        // System.out.println("per_label:");
+        // System.out.println(evalMatrix.perLabelEvaluation_Leaderboard_TaskDatasetEvaluationMatrix(resultsPredictionsTestPapers, false, evaluatedLabels));
         System.out.println("per_sample:");
         System.out.println(evalMatrix.perSampleEvaluation_Leaderboard(resultsPredictionsTestPapers, file1));
 
