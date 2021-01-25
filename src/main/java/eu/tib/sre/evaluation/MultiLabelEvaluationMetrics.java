@@ -47,8 +47,10 @@ public class MultiLabelEvaluationMetrics {
         taskDatasetMap = new HashMap();
         leaderboardMap = new HashMap();
         leaderboardMapDebug = new HashMap();
+        
         prop = new Properties();
         prop.load(new FileReader("config.properties"));
+
         loadTaskAnnotation(prop.getProperty("projectPath") + "/" + prop.getProperty("task_annotation"));
         loadDatasetAnnotation(prop.getProperty("projectPath") + "/" + prop.getProperty("dataset_annotation"));
         loadResultsAnnotation(prop.getProperty("projectPath") + "/" + prop.getProperty("result_annotation"));

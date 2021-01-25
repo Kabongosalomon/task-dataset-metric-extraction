@@ -47,15 +47,15 @@ public class Main {
 
 
         // This specify the number of negative instances
-        Integer numbNegative = Integer.parseInt("60");
+        Integer numbNegative = Integer.parseInt("5");
 
         // This specify the number of negative instances
-        Integer numbUnk = Integer.parseInt("100");
+        Integer numbUnk = Integer.parseInt("5");
 
 
         // Path to pdfs folder
-        // String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/pdf/"; 
-        String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/pdf/"; 
+        String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/pdf/"; 
+        // String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/pdf/"; 
         
         // Pre-output folder
         String b = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
@@ -63,6 +63,16 @@ public class Main {
         String data_file = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/trainOutput.tsv";
         // fold output folder
         String outputDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/twofoldwithunk/";
+
+
+        // String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/ibm/NLP-TDMS/pdfFile";
+        // // Pre-output folder
+        // String b = "/home/salomon/Desktop/task-dataset-metric-extraction/data/ibm/exp/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
+        // // Main tsv datafile
+        // String data_file = "/home/salomon/Desktop/task-dataset-metric-extraction/data/ibm/exp/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/trainOutput.tsv";
+        // // fold output folder
+        // String outputDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/ibm/exp/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/twofoldwithunk/";
+
 
 
         // check if the target folder exist if not create it.
