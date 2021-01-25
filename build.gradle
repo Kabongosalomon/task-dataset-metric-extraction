@@ -72,6 +72,10 @@ dependencies {
     implementation group: 'au.com.bytecode', name: 'opencsv', version: '2.4'
 
     implementation "com.google.guava:guava:16+"
+
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.0'
+
     
 }
 

@@ -116,11 +116,14 @@ public class TEModelEvalOnNLPTDMS {
         while ((line = br2.readLine()) != null) {
             f2.add(line);
         }
-        //
+
+        
         for (int i = 0; i < f1.size(); i++) {
             String filename = f1.get(i).split("\t")[1];
             if(excludeTestFiles.contains(filename)) continue;
+
             //if(excludeTestFiles.contains(filename)) continue;
+
             String leaderboard = f1.get(i).split("\t")[2];
             if (!resultsPredictionsTestPapers.containsKey(filename)) {
 
@@ -129,7 +132,7 @@ public class TEModelEvalOnNLPTDMS {
 
             }
             if (Double.valueOf(f2.get(i).split("\t")[0]) > 0.5) {
-                //if (Double.valueOf(f2.get(i).split("\t")[0]) > Double.valueOf(f2.get(i).split("\t")[1])) {            
+                // if (Double.valueOf(f2.get(i).split("\t")[0]) > Double.valueOf(f2.get(i).split("\t")[1])) {            
                 if (leaderboard.equalsIgnoreCase("unknow")) {
                 NLPResult result = new NLPResult(filename, "unknow", "unknow");
                 result.setEvaluationMetric("unknow");
@@ -161,9 +164,12 @@ public class TEModelEvalOnNLPTDMS {
         }
         //collect eu.tib.sre.evaluation labels seen in the train.tsv
         Set<String> evaluatedLabels = new HashSet();
+
         // String file3 = prop.getProperty("projectPath") + "/" + "data/ibm/exp/few-shot-setup/NLP-TDMS/paperVersion/train.tsv";
         String file3 = prop.getProperty("projectPath") + "/" + prop.getProperty("train_path");
+
         BufferedReader br3 = new BufferedReader(new FileReader(file3));
+
         String line3 = "";
         while ((line3 = br3.readLine()) != null) {
             String leaderboard = line3.split("\t")[2];
@@ -184,21 +190,27 @@ public class TEModelEvalOnNLPTDMS {
             }
         }
 
-        logger.info("leaderboard eu.tib.sre.evaluation:");
-        // fold_stats.write(("leaderboard eu.tib.sre.evaluation:").getBytes());
+        // logger.info("leaderboard eu.tib.sre.evaluation:");
+        // // fold_stats.write(("leaderboard eu.tib.sre.evaluation:").getBytes());
 
-        logger.info("per_label:");
-        // fold_stats.write(("per_label:").getBytes());
+        // logger.info("per_label:");
+        // // fold_stats.write(("per_label:").getBytes());
 
-        logger.info(evalMatrix.perLabelEvaluation_Leaderboard_TaskDatasetEvaluationMatrix(resultsPredictionsTestPapers, false, evaluatedLabels));
-        // fold_stats.write((evalMatrix.perLabelEvaluation_Leaderboard_TaskDatasetEvaluationMatrix(resultsPredictionsTestPapers, false, evaluatedLabels)).getBytes());
-        
-        logger.info("per_sample:");
-        // fold_stats.write(("per_sample:").getBytes());
+        // logger.info(evalMatrix.perLabelEvaluation_Leaderboard_TaskDatasetEvaluationMatrix(resultsPredictionsTestPapers, false, evaluatedLabels));
+        // // fold_stats.write((evalMatrix.perLabelEvaluation_Leaderboard_TaskDatasetEvaluationMatrix(resultsPredictionsTestPapers, false, evaluatedLabels)).getBytes());
 
-        logger.info(evalMatrix.perSampleEvaluation_Leaderboard(resultsPredictionsTestPapers, file1));
-        // fold_stats.write((evalMatrix.perSampleEvaluation_Leaderboard(resultsPredictionsTestPapers, file1)).getBytes());
-        
+        // logger.info("per_sample:");
+        // // fold_stats.write(("per_sample:").getBytes());
+
+        // logger.info(evalMatrix.perSampleEvaluation_Leaderboard(resultsPredictionsTestPapers, file1));
+        // // fold_stats.write((evalMatrix.perSampleEvaluation_Leaderboard(resultsPredictionsTestPapers, file1)).getBytes());
+
+        System.out.println("leaderboard eu.tib.sre.evaluation:");
+        System.out.println("per_label:");
+        System.out.println(evalMatrix.perLabelEvaluation_Leaderboard_TaskDatasetEvaluationMatrix(resultsPredictionsTestPapers, false, evaluatedLabels));
+        System.out.println("per_sample:");
+        System.out.println(evalMatrix.perSampleEvaluation_Leaderboard(resultsPredictionsTestPapers, file1));
+
     
     }
     
@@ -250,20 +262,6 @@ public class TEModelEvalOnNLPTDMS {
     
    public static void main(String[] args) throws IOException, Exception{
        TEModelEvalOnNLPTDMS teEval = new TEModelEvalOnNLPTDMS();
-
-    //    // This specify the number of negative instances
-    //    Integer numbNegative = Integer.parseInt("10");
-
-    //    // This specify the number of negative instances
-    //    Integer numbUnk = Integer.parseInt("90");
-
-    //    String b = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
-    //    // Added this to have the portion of unknown instances
-    //    FileOutputStream fold_stats = new FileOutputStream(b+"fold_stats.tsv");
-
-       
-    //    teEval.evaluateTDMSExtraction(fold_stats);
-
        teEval.evaluateTDMSExtraction();
    }
 

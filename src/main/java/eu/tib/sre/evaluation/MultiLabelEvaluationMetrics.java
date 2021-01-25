@@ -31,7 +31,7 @@ public class MultiLabelEvaluationMetrics {
     static Map<String, Set<String>> datasetAnnotation = new HashMap();
     static Map<String, Set<NLPResult>> resultAnnotation = new HashMap();
     private Properties prop;
-    static org.slf4j.Logger logger = LoggerFactory.getLogger(MultiLabelEvaluationMetrics.class);
+    // static org.slf4j.Logger logger = LoggerFactory.getLogger(MultiLabelEvaluationMetrics.class);
 
     private static final int TP = 0;
     private static final int FP = 1;
