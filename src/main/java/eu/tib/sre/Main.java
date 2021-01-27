@@ -36,8 +36,8 @@ public class Main {
 //        }
 
         // Only consider leaderboard that have at least 5 papers
-        // Integer threshold = 5;
-        Integer threshold = 50;
+        Integer threshold = 5;
+        // Integer threshold = 50;
 
 //        Integer numbNegative = Integer.parseInt(args[2]);
 //        String pdfDir = args[0];
