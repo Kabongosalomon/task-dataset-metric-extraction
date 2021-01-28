@@ -79,9 +79,10 @@ jar {
     manifest {
         attributes('Main-Class': 'eu.tib.sre.Main')
     }
+    // Include the classpath from the dependencies 
     from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
 }
 
-// application {
-//     mainClass = 'eu.tib.sre.Main'
-// }
+application {
+    mainClass = 'eu.tib.sre.Main'
+}
