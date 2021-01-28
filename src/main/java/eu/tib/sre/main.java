@@ -25,7 +25,7 @@ import static eu.tib.sre.utils.TwoFoldCrossValidation.writeOutput;
 /**
  * @author jld
  */
-public class Main {
+public class main {
 
     public static void main(String[] args) throws Exception {
 
