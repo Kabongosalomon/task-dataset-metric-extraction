@@ -144,8 +144,10 @@ bert/
 src/main/resources/
 bin/
 .gradle/
+gradle/
 bin/
 .idea/
+.settings/
 
 *.jar
 *.tsv
@@ -154,4 +156,5 @@ bin/
 *.bin
 *.log
 *.classpath
+.project
 grobid.log.*
