@@ -47,7 +47,7 @@ public class Main {
 
 
         // This specify the number of negative instances
-        Integer numbNegative = Integer.parseInt("5");
+        Integer numbNegative = Integer.parseInt("1");
 
         // This specify the number of negative instances
         Integer numbUnk = Integer.parseInt("5");
