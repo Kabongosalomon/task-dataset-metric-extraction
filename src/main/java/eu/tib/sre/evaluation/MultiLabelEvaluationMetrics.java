@@ -31,7 +31,7 @@ public class MultiLabelEvaluationMetrics {
     static Map<String, Set<String>> datasetAnnotation = new HashMap();
     static Map<String, Set<NLPResult>> resultAnnotation = new HashMap();
     private Properties prop;
-    static org.slf4j.Logger logger = LoggerFactory.getLogger(MultiLabelEvaluationMetrics.class);
+    // static org.slf4j.Logger logger = LoggerFactory.getLogger(MultiLabelEvaluationMetrics.class);
 
     private static final int TP = 0;
     private static final int FP = 1;
@@ -47,8 +47,10 @@ public class MultiLabelEvaluationMetrics {
         taskDatasetMap = new HashMap();
         leaderboardMap = new HashMap();
         leaderboardMapDebug = new HashMap();
+        
         prop = new Properties();
         prop.load(new FileReader("config.properties"));
+
         loadTaskAnnotation(prop.getProperty("projectPath") + "/" + prop.getProperty("task_annotation"));
         loadDatasetAnnotation(prop.getProperty("projectPath") + "/" + prop.getProperty("dataset_annotation"));
         loadResultsAnnotation(prop.getProperty("projectPath") + "/" + prop.getProperty("result_annotation"));
@@ -60,9 +62,15 @@ public class MultiLabelEvaluationMetrics {
         while ((line = br.readLine()) != null) {
             String pdfFileName = line.split("\t")[0];
             String taskname = line.split("\t")[1];
+
             Set<String> tasks = new HashSet();
             tasks.add(taskname);
             taskAnnotation.put(pdfFileName, tasks);
+
+            // Jennifer
+            // Set<String> tasks = taskAnnotation.get(pdfFileName);
+            // if (tasks == null) taskAnnotation.put(pdfFileName, tasks = new HashSet<>());
+            // tasks.add(taskname);
         }
         br.close();
     }
@@ -96,6 +104,8 @@ public class MultiLabelEvaluationMetrics {
                     continue;//the paper doesn't report score
                 }
                 String task = resultsstr.split("\\$")[i].split("#")[0];
+                // String task = resultsstr.split("\\$")[i].split("#")[0].replace(" ", "_").trim();
+
                 String dataset = resultsstr.split("\\$")[i].split("#")[1];
                 String evaluationMatrix = resultsstr.split("\\$")[i].split("#")[2];
                 String scoreStr = resultsstr.split("\\$")[i].split("#")[3];
@@ -529,6 +539,8 @@ public class MultiLabelEvaluationMetrics {
         Map<String, Set<NLPResult>> revisedGoldAnnotation = new HashMap();
         Map<String, Set<NLPResult>> revisedGoldAnnotation_wo_unknow = new HashMap();
         Map<String, Set<NLPResult>> prediction_on_known = new HashMap();
+        
+        // This make a replic of prediction 
         for(String file: prediction.keySet())
             prediction_on_known.put(file, prediction.get(file));
         
@@ -551,9 +563,16 @@ public class MultiLabelEvaluationMetrics {
                     revisedGoldAnnotation.get(filename).add(result);
                     prediction_on_known.remove(filename);
                 } else {
-                    String task = leaderboard.split(",")[0].replace(" ", "_").trim();
-                    String dataset = leaderboard.split(",")[1].trim();
-                    String eval = leaderboard.split(",")[2].trim();
+                    // TODO may need to change this as well 
+                    // String task = leaderboard.split(",")[0].replace(" ", "_").trim();
+                    // String dataset = leaderboard.split(",")[1].trim();
+                    // String eval = leaderboard.split(",")[2].trim();
+
+                    // String task = leaderboard.split(";")[0].replace(" ", "_").trim();
+                    String task = leaderboard.split(";")[0].trim();
+                    String dataset = leaderboard.split(";")[1].trim();
+                    String eval = leaderboard.split(";")[2].trim();
+
                     Set<NLPResult> originalAnnotatedResults = resultAnnotation.get(filename);
                     for (NLPResult re : originalAnnotatedResults) {
                         if (re.taskName.equals(task) && re.datasetName.equalsIgnoreCase(dataset) && re.evaluationMetric.equalsIgnoreCase(eval)) {
@@ -565,16 +584,16 @@ public class MultiLabelEvaluationMetrics {
             }
         }
         br1.close();
-        //for debug
-//        for(String file: prediction.keySet()){
-//            System.err.println(file);
-//            System.err.println("prediction");
-//            for(NLPResult predict: prediction.get(file))
-//                System.err.println(predict.toString());
-//            System.err.println("goldAnno");
-//            for(NLPResult anno: revisedGoldAnnotation.get(file))
-//                System.err.println(anno.toString());
-//        }
+    //     //for debug
+    //    for(String file: prediction.keySet()){
+    //        System.err.println(file);
+    //        System.err.println("prediction");
+    //        for(NLPResult predict: prediction.get(file))
+    //            System.err.println(predict.toString());
+    //        System.err.println("goldAnno");
+    //        for(NLPResult anno: revisedGoldAnnotation.get(file))
+    //            System.err.println(anno.toString());
+    //    }
         
         
         String relaxEvalResult = perSampleEvaluation_leaderboardRelax(prediction, revisedGoldAnnotation);

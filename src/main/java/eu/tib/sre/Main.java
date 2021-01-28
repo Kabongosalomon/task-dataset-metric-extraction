@@ -29,14 +29,6 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
-        // "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\pdf\\"
-        // "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\"
-        // "50"
-
-//        System.out.println(args[0]);
-//        System.out.println(args[1]);
-//        System.out.println(args[2]);
-
 //        if (args.length != 3) {
 //            System.out.println("Usage: java Main.java <path_to_pdf> <path_to_output> <numb_negative>");
 //            System.out.println("java -jar task-dataset-metric-extraction-1.0.jar 'D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\pdf\\' 'D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\' '10'");
@@ -45,6 +37,7 @@ public class Main {
 
         // Only consider leaderboard that have at least 5 papers
         Integer threshold = 5;
+        // Integer threshold = 50;
 
 //        Integer numbNegative = Integer.parseInt(args[2]);
 //        String pdfDir = args[0];
@@ -53,27 +46,33 @@ public class Main {
 //        String outputDir = args[1]+numbNegative.toString()+"unk\\twofoldwithunk\\";
 
 
-
-//        Integer numbNegative = Integer.parseInt("2");
-//        String pdfDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\pdf\\";
-//        String b = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\"+numbNegative.toString()+"unk\\";
-//        String data_file = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\"+numbNegative.toString()+"unk\\trainOutput.tsv";
-//        String outputDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\"+numbNegative.toString()+"unk\\twofoldwithunk\\";
+        // This specify the number of negative instances
+        Integer numbNegative = Integer.parseInt("5");
 
         // This specify the number of negative instances
-        Integer numbNegative = Integer.parseInt("14");
+        Integer numbUnk = Integer.parseInt("5");
 
-        // This specify the number of negative instances
-        Integer numbUnk = Integer.parseInt("14");
 
         // Path to pdfs folder
-        String pdfDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\";
+        String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/pdf/"; 
+        // String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/pdf/"; 
+        
         // Pre-output folder
-        String b = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\"+numbNegative.toString()+"unk\\";
+        String b = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
         // Main tsv datafile
-        String data_file = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\"+numbNegative.toString()+"unk\\trainOutput.tsv";
+        String data_file = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/trainOutput.tsv";
         // fold output folder
-        String outputDir = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\"+numbNegative.toString()+"unk\\twofoldwithunk\\";
+        String outputDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/twofoldwithunk/";
+
+
+        // String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/ibm/NLP-TDMS/pdfFile";
+        // // Pre-output folder
+        // String b = "/home/salomon/Desktop/task-dataset-metric-extraction/data/ibm/exp/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
+        // // Main tsv datafile
+        // String data_file = "/home/salomon/Desktop/task-dataset-metric-extraction/data/ibm/exp/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/trainOutput.tsv";
+        // // fold output folder
+        // String outputDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/ibm/exp/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/twofoldwithunk/";
+
 
 
         // check if the target folder exist if not create it.
@@ -86,9 +85,8 @@ public class Main {
         FileOutputStream fold_stats = new FileOutputStream(b+"fold_stats.tsv");
 
         // Generate the training data
-        DatasetGeneration.getTrainData(pdfDir , b, threshold, numbUnk, numbNegative, fold_stats);
+        DatasetGeneration.getTrainData(pdfDir, b, threshold, numbUnk, numbNegative, fold_stats);
 
-////
 //        DatasetGeneration.getTestData(pdfDir , b);
 
 //        GenerateTestDataOnPDFPapers createTestdata = new GenerateTestDataOnPDFPapers();
@@ -101,24 +99,14 @@ public class Main {
 
 
 
-        String[] lines = TwoFoldCrossValidation.readFile(data_file, StandardCharsets.UTF_8).split("\\n");
-
         Map<String, List<String>> data = new HashMap<>();
-
+        // This help to keep track of TDM seen so far
         List<String> tdms = new ArrayList<>();
 
 
-        for (String line : lines) {
-            line = line.trim();
-            String[] tokens = line.split("\t");
-            //System.out.println(tokens.length);
+        TwoFoldCrossValidation.readFile2(data_file, data, tdms, StandardCharsets.UTF_8);
 
-            List<String> dataLines = data.get(tokens[1]);
-            if (dataLines == null) data.put(tokens[1], dataLines = new ArrayList<>());
-            dataLines.add(line);
-            if (!tdms.contains(tokens[2])) tdms.add(tokens[2]);
-        }
-
+        // Data split
         int datasize = data.keySet().size();
         int training_datasize = (int)(0.7 * datasize)+1;
         int test_datasize = (int)(0.3 * datasize);
@@ -131,7 +119,7 @@ public class Main {
         //System.out.println(test_datasize);
         //System.exit(-1);
 
-        // This returns randomly generated indeces for the testing examples
+        // This returns randomly generated indices for the testing examples
         Map<Integer, List<Integer>> perfoldTestIndexes = getPerFoldTestIndexes(0, datasize, test_datasize, number_fold);
 
 
@@ -146,7 +134,7 @@ public class Main {
 
         for (int fold : perfoldTestIndexes.keySet()) {
 
-            String fold_i = outputDir+"fold"+fold+"\\";
+            String fold_i = outputDir+"fold"+fold+"/";
 
             // calculate stats (value in Java are pass by value
             // ref (https://stackoverflow.com/questions/26185527/how-can-i-change-integer-value-when-it-is-an-argument-like-change-arrays-value)
@@ -167,23 +155,28 @@ public class Main {
 //            // Added this to have the portion of unknown instances
 //            FileOutputStream fold_stats = new FileOutputStream(fold_i+"fold_stats.tsv");
 
+            // This give us the indeces of testing
             List<Integer> testIndexes = perfoldTestIndexes.get(fold);
 
             fold_stats.write(("Fold "+fold+" Data stats :\n").getBytes());
 
             for (int i = 0; i < datasize; i++) {
 
+                // pdf name as key 
                 String file = dataFiles.get(i);
+
                 List<String> dataLines = data.get(file);
 
                 if (testIndexes.contains(i)) {
-                    writeOutput(test_output, file, dataLines, tdms, fold_stats, trueUnk, falseUnk,"test");
+                    writeOutput(test_output, file, dataLines, tdms, fold_stats, 
+                                            trueUnk, falseUnk, numbUnk, numbNegative, "test");
 
                     // Write test indexes per fold in a file
                     test_indexes.write((i+"\n").getBytes());
                 }
                 else {
-                    writeOutput(train_output, file, dataLines, tdms, fold_stats, trueUnk, falseUnk, "train");
+                    writeOutput(train_output, file, dataLines, tdms, fold_stats, 
+                                            trueUnk, falseUnk, numbUnk, numbNegative, "train");
                 }
             }
 

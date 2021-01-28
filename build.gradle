@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-//    id 'application'
+    id 'application'
 }
 
 group 'eu.tib'
@@ -16,14 +16,9 @@ repositories {
     }
 }
 
-//repositories {
-//    maven {
-//        url "https://dl.bintray.com/rookies/maven"
-//    }
-//}
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
 
     // https://mvnrepository.com/artifact/commons-io/commons-io
     implementation group: 'commons-io', name: 'commons-io', version: '2.6'
@@ -38,7 +33,9 @@ dependencies {
     // compile group: 'org.apache.pdfbox', name: 'pdfbox', version: '2.0.18'
 
     // ToDO : I need to make this run on grobid 0.6.07
-    implementation group: 'org.grobid', name: 'grobid-core', version: '0.5.3'
+    // implementation group: 'org.grobid', name: 'grobid-core', version: '0.5.3'
+    implementation group: 'org.grobid', name: 'grobid-core', version: '0.6.0'
+    implementation group: 'org.grobid', name: 'grobid-trainer', version: '0.6.0'
 
     // compile files('/mnt/d/ORKG/NLP/task-dataset-metric-extraction/drive/traprange.jar')
 //     implementation files('D:\\ORKG\\NLP\\Try\\task-dataset-metric-extraction\\drive\\traprange.jar')
@@ -68,12 +65,24 @@ dependencies {
 
     // https://mvnrepository.com/artifact/au.com.bytecode/opencsv
     implementation group: 'au.com.bytecode', name: 'opencsv', version: '2.4'
+
+    implementation "com.google.guava:guava:16+"
+
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+    // api group: 'org.slf4j', name: 'slf4j-api', version: '1.7.0'
+
+    
 }
 
 jar {
-    zip64=true
+    // zip64=true
     manifest {
-        attributes 'Main-Class': 'eu.tib.sre.Main'
+        attributes('Main-Class': 'eu.tib.sre.Main')
     }
-    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    // Include the classpath from the dependencies 
+    from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
+}
+
+application {
+    mainClass = 'eu.tib.sre.Main'
 }

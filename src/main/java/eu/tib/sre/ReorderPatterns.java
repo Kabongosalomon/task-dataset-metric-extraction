@@ -1,14 +1,14 @@
 package eu.tib.sre;
 
-import edu.stanford.nlp.simple.Document;
-import edu.stanford.nlp.simple.Sentence;
-import scala.sys.process.ProcessBuilderImpl;
-import shadedwipo.org.apache.commons.io.FileUtils;
+// import edu.stanford.nlp.simple.Document;
+// import edu.stanford.nlp.simple.Sentence;
+// import scala.sys.process.ProcessBuilderImpl;
+// import shadedwipo.org.apache.commons.io.FileUtils;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.util.*;
+// import java.io.File;
+// import java.io.FileOutputStream;
+// import java.io.IOException;
+// import java.util.*;
 
 /**
  * @author jld

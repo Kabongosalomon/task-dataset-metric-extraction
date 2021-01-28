@@ -10,31 +10,35 @@ import java.util.*;
 
 public class DatasetGeneration {
 
-    private Properties prop;
+    private static Properties prop;
     private static String TDM_taxonomy;
     private static String resultsAnnotation;
-    private  static HashMap<String,Integer> mapDict;
-    private  static HashMap<String,ArrayList<String>> mapLabel;
+    private static HashMap<String, Integer> mapDict;
+    private static HashMap<String, ArrayList<String>> mapLabel;
 
-    private  static HashMap<String,ArrayList<Integer>> mapScore;
+    private static HashMap<String, ArrayList<Integer>> mapScore;
 
+    // public Properties getProperties() {
+    // return prop;
+    // }
 
-    public Properties getProperties() {
-        return prop;
+    public DatasetGeneration() throws IOException, Exception {
+        prop = new Properties();
+        prop.load(new FileReader("config.properties"));
     }
 
-    ;
+    // public static String getTrainingData(String pdfDir, String[] args) throws
+    // IOException, Exception {
+    public static String getTrainData(String pdfDir, String b, Integer threshold, Integer numbUnk, Integer numbNegative,
+            FileOutputStream fold_stats) throws IOException, Exception {
 
-//    public static String getTrainingData(String pdfDir, String[] args) throws IOException, Exception {
-    public static String getTrainData(String pdfDir, String b,
-                                      Integer threshold, Integer numbUnk, Integer numbNegative, FileOutputStream fold_stats) throws IOException, Exception {
-
-//        prop = new Properties();
-//        prop.load(new FileReader("config.properties"));
-//        TDM_taxonomy = prop.getProperty("TDM_taxonomy");
+        prop = new Properties();
+        prop.load(new FileReader("config.properties"));
+        TDM_taxonomy = prop.getProperty("projectPath") + "/" + prop.getProperty("TDM_taxonomy");
 
         // The full taxonomy obtains from paper with code json
-        TDM_taxonomy = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\annotations\\TDM_taxonomy.tsv";
+        // TDM_taxonomy = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\annotations\\TDM_taxonomy.tsv";
+        // TDM_taxonomy = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/annotations/TDM_taxonomy.tsv";
 
 
         FileOutputStream output = new FileOutputStream(b+"trainOutput.tsv");
@@ -65,7 +69,9 @@ public class DatasetGeneration {
                     // resultsAnnotation = prop.getProperty("result_annotation")
 
                     // This contains a dict like file that have file name and TDMs informations
-                    resultsAnnotation = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\annotations\\resultsAnnotation.tsv";
+                    // resultsAnnotation = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\annotations\\resultsAnnotation.tsv";
+                    resultsAnnotation = prop.getProperty("projectPath") + "/" + prop.getProperty("result_annotation");
+                    // resultsAnnotation = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/annotations/resultsAnnotation.tsv";
 
 //                    String labels_file = args[1]+"/tdmGoldLabels.tsv";
                     mapDict = getTdmGoldLabelsAndloadDict(TDM_taxonomy, b, threshold);
@@ -77,22 +83,44 @@ public class DatasetGeneration {
 
                     for (int i = 0; i < mapLabel.get(pdf_filename).size(); i++) {
 
-                        output.write(("true\t" + pdf_filename + "\t"+mapLabel.get(pdf_filename).get(i).replace("#", "; ")+"\t" + docTEATStr + "\n").getBytes());
-
                         if (mapLabel.get(pdf_filename).get(i).replace("#", "; ").equals("unknow")){
-                            trueUnk = trueUnk + 1;
+
+                            if (trueUnk >= numbUnk){
+
+                                continue;
+
+                            }
+                            else {
+                                output.write(("true\t" + pdf_filename + "\t"+mapLabel.get(pdf_filename).get(i).replace("#", "; ")+"\t" + docTEATStr + "\n").getBytes());
+                                
+                                // Keep track of positive TDM
+                                trueTDM.add(mapLabel.get(pdf_filename).get(i));
+
+                                trueUnk = trueUnk + 1;
+                                
+                                continue;
+                            }
+
+
                         }
+
+                        output.write(("true\t" + pdf_filename + "\t"+mapLabel.get(pdf_filename).get(i).replace("#", "; ")+"\t" + docTEATStr + "\n").getBytes());
 
                         // Keep track of positive TDM
                         trueTDM.add(mapLabel.get(pdf_filename).get(i));
+
+
                     }
 
 
                     // Thits takes only the first numbNegative example, we may need to make it random
                     int limit = 0;
 
+                    // To randomly allow to get the false for a numNeg threshold
+                    Collections.shuffle(labels);
+
                     for (String label : labels) {
-                        if (limit>=numbUnk){
+                        if ( limit >= numbNegative ){
                             break;
                         }
 
@@ -104,6 +132,7 @@ public class DatasetGeneration {
                                 falseUnk = falseUnk + 1;
                             }
 
+                            // Update the count for one more false label
                             limit += 1;
                         }
 
@@ -128,7 +157,8 @@ public class DatasetGeneration {
 //        prop = new Properties();
 //        prop.load(new FileReader("config.properties"));
 //        TDM_taxonomy = prop.getProperty("TDM_taxonomy");
-        TDM_taxonomy = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\annotations\\TDM_taxonomy.tsv";
+        // TDM_taxonomy = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\annotations\\TDM_taxonomy.tsv";
+        TDM_taxonomy = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/annotations/TDM_taxonomy.tsv";
 
         FileOutputStream output = new FileOutputStream(b+"trainOutput.tsv");
 //        FileOutputStream output = new FileOutputStream(args[1]+"trainOutput.tsv");
@@ -153,7 +183,8 @@ public class DatasetGeneration {
                 }
                 else {
                     // resultsAnnotation = prop.getProperty("result_annotation")
-                    resultsAnnotation = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\annotations\\resultsAnnotation.tsv";
+                    // resultsAnnotation = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\annotations\\resultsAnnotation.tsv";
+                    resultsAnnotation = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/annotations/resultsAnnotation.tsv";
 
 //                    String labels_file = args[1]+"/tdmGoldLabels.tsv";
                     mapDict = getTdmGoldLabelsAndloadDict(TDM_taxonomy, b, threshold);

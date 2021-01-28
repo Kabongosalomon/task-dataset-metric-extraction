@@ -87,7 +87,8 @@ public class DocTAET {
             }
             datasetContext_clean_150 = datasetContext_clean_150 + " " + s;
             dsCount++;
-            if (dsCount > 150) {
+            // TODO this was originally 150
+            if (dsCount > 450) {
                 break;
             }
         }
@@ -191,7 +192,8 @@ public class DocTAET {
             }
             tableContext_150 = tableContext_150 + " " + s;
             tableCount++;
-            if (tableCount > 150) {
+            // TODO this was initially 150
+            if (tableCount > 450) {
                 break;
             }
         }
@@ -258,9 +260,13 @@ public class DocTAET {
 
     public static void main(String[] args) throws IOException, Exception {
         // D:\ORKG\NLP\science-result-extractor\nlpLeaderboard\src\main\java\com\ibm\sre\data\NLP-TDMS\pdfFile_txt\50.txt
-        String pdfPath = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\pdf\\50.pdf";
+        String pdfPath = "/home/salomon/Desktop/task-dataset-metric-extraction/data/pdf/50.pdf";
 
-        DocTAET.getDocTAETRepresentation(pdfPath);
+        String docTEATStr = DocTAET.getDocTAETRepresentation(pdfPath);
+        List<String> numbersAndContext = DocTAET.getTableBoldNumberContext(pdfPath);
+
+        System.out.println(">>>>>>>> getTableBoldNumberContex :"  +numbersAndContext);
+        System.out.println(">>>>>>>> getDocTAETRepresentation :"  +docTEATStr);
     }
 
 }
