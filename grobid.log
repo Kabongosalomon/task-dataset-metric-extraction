@@ -388,3 +388,40 @@
 23 Jan 2021 16:07.27 [WARN ] GrobidHomeFinder          - ***************************************************************
 23 Jan 2021 16:07.27 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home
 23 Jan 2021 16:07.27 [WARN ] GrobidHomeFinder          - ***************************************************************
+28 Jan 2021 14:40.23 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+28 Jan 2021 14:40.23 [WARN ] GrobidHomeFinder          - ***************************************************************
+28 Jan 2021 14:40.23 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home
+28 Jan 2021 14:40.23 [WARN ] GrobidHomeFinder          - ***************************************************************
+28 Jan 2021 14:40.23 [WARN ] GrobidHomeFinder          - Grobid property file location was not explicitly set via 'org.grobid.property' system variable, defaulting to: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home/config/grobid.properties
+28 Jan 2021 14:40.23 [INFO ] GrobidProperties          - environment variables overrides: {}
+28 Jan 2021 14:40.23 [INFO ] LibraryLoader             - Loading external native sequence labelling library
+28 Jan 2021 14:40.23 [INFO ] LibraryLoader             - Loading Wapiti native library...
+28 Jan 2021 14:40.23 [INFO ] LibraryLoader             - Native library for sequence labelling loaded
+28 Jan 2021 14:40.23 [INFO ] Lexicon                   - Initiating dictionary
+28 Jan 2021 14:40.23 [INFO ] Lexicon                   - End of Initialization of dictionary
+28 Jan 2021 14:40.23 [INFO ] Lexicon                   - Initiating names
+28 Jan 2021 14:40.23 [INFO ] Lexicon                   - End of initialization of names
+28 Jan 2021 14:40.23 [INFO ] Lexicon                   - Initiating country codes
+28 Jan 2021 14:40.23 [INFO ] Lexicon                   - End of initialization of country codes
+28 Jan 2021 14:40.23 [INFO ] WapitiModel               - Loading model: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home/models/fulltext/model.wapiti (size: 22836546)
+28 Jan 2021 14:40.28 [INFO ] WapitiModel               - Loading model: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home/models/segmentation/model.wapiti (size: 17807323)
+28 Jan 2021 14:40.32 [INFO ] WapitiModel               - Loading model: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home/models/header/model.wapiti (size: 36094028)
+28 Jan 2021 14:41.22 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+28 Jan 2021 14:41.22 [WARN ] GrobidHomeFinder          - ***************************************************************
+28 Jan 2021 14:41.22 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: /home/salomon/Desktop/grobid-0.6.0/grobid-home
+28 Jan 2021 14:41.22 [WARN ] GrobidHomeFinder          - ***************************************************************
+28 Jan 2021 14:41.22 [WARN ] GrobidHomeFinder          - Grobid property file location was not explicitly set via 'org.grobid.property' system variable, defaulting to: /home/salomon/Desktop/grobid-0.6.0/grobid-home/config/grobid.properties
+28 Jan 2021 14:41.23 [INFO ] GrobidProperties          - environment variables overrides: {}
+28 Jan 2021 14:41.23 [INFO ] LibraryLoader             - Loading external native sequence labelling library
+28 Jan 2021 14:41.23 [INFO ] LibraryLoader             - Loading Wapiti native library...
+28 Jan 2021 14:41.23 [INFO ] LibraryLoader             - Native library for sequence labelling loaded
+28 Jan 2021 14:41.23 [INFO ] Lexicon                   - Initiating dictionary
+28 Jan 2021 14:41.23 [INFO ] Lexicon                   - End of Initialization of dictionary
+28 Jan 2021 14:41.23 [INFO ] Lexicon                   - Initiating names
+28 Jan 2021 14:41.23 [INFO ] Lexicon                   - End of initialization of names
+28 Jan 2021 14:41.23 [INFO ] Lexicon                   - Initiating country codes
+28 Jan 2021 14:41.23 [INFO ] Lexicon                   - End of initialization of country codes
+28 Jan 2021 14:41.23 [INFO ] WapitiModel               - Loading model: /home/salomon/Desktop/grobid-0.6.0/grobid-home/models/header/model.wapiti (size: 36094028)
+28 Jan 2021 14:41.27 [INFO ] WapitiModel               - Loading model: /home/salomon/Desktop/grobid-0.6.0/grobid-home/models/name/header/model.wapiti (size: 2225578)
+28 Jan 2021 14:41.28 [INFO ] WapitiModel               - Loading model: /home/salomon/Desktop/grobid-0.6.0/grobid-home/models/name/citation/model.wapiti (size: 440148)
+28 Jan 2021 14:41.28 [INFO ] WapitiModel               - Loading model: /home/salomon/Desktop/grobid-0.6.0/grobid-home/models/affiliation-address/model.wapiti (size: 2699936)

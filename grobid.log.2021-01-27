@@ -1,0 +1,79 @@
+27 Jan 2021 10:21.11 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+27 Jan 2021 10:21.11 [WARN ] GrobidHomeFinder          - ***************************************************************
+27 Jan 2021 10:21.11 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home
+27 Jan 2021 10:21.11 [WARN ] GrobidHomeFinder          - ***************************************************************
+27 Jan 2021 10:21.11 [WARN ] GrobidHomeFinder          - Grobid property file location was not explicitly set via 'org.grobid.property' system variable, defaulting to: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home/config/grobid.properties
+27 Jan 2021 10:21.11 [INFO ] GrobidProperties          - environment variables overrides: {}
+27 Jan 2021 10:21.11 [INFO ] LibraryLoader             - Loading external native sequence labelling library
+27 Jan 2021 10:21.11 [INFO ] LibraryLoader             - Loading Wapiti native library...
+27 Jan 2021 10:21.11 [INFO ] LibraryLoader             - Native library for sequence labelling loaded
+27 Jan 2021 10:21.11 [INFO ] Lexicon                   - Initiating dictionary
+27 Jan 2021 10:21.11 [INFO ] Lexicon                   - End of Initialization of dictionary
+27 Jan 2021 10:21.11 [INFO ] Lexicon                   - Initiating names
+27 Jan 2021 10:21.11 [INFO ] Lexicon                   - End of initialization of names
+27 Jan 2021 10:21.11 [INFO ] Lexicon                   - Initiating country codes
+27 Jan 2021 10:21.11 [INFO ] Lexicon                   - End of initialization of country codes
+27 Jan 2021 10:21.11 [INFO ] WapitiModel               - Loading model: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home/models/fulltext/model.wapiti (size: 22836546)
+27 Jan 2021 10:21.14 [INFO ] WapitiModel               - Loading model: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home/models/segmentation/model.wapiti (size: 17807323)
+27 Jan 2021 10:21.16 [INFO ] WapitiModel               - Loading model: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home/models/header/model.wapiti (size: 36094028)
+27 Jan 2021 10:21.22 [INFO ] WapitiModel               - Loading model: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home/models/name/header/model.wapiti (size: 2225578)
+27 Jan 2021 10:21.22 [INFO ] WapitiModel               - Loading model: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home/models/name/citation/model.wapiti (size: 440148)
+27 Jan 2021 10:21.23 [INFO ] WapitiModel               - Loading model: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home/models/affiliation-address/model.wapiti (size: 2699936)
+27 Jan 2021 11:07.24 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+27 Jan 2021 11:07.24 [WARN ] GrobidHomeFinder          - ***************************************************************
+27 Jan 2021 11:07.24 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home
+27 Jan 2021 11:07.24 [WARN ] GrobidHomeFinder          - ***************************************************************
+27 Jan 2021 11:07.24 [WARN ] GrobidHomeFinder          - Grobid property file location was not explicitly set via 'org.grobid.property' system variable, defaulting to: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home/config/grobid.properties
+27 Jan 2021 11:07.24 [INFO ] GrobidProperties          - environment variables overrides: {}
+27 Jan 2021 11:07.24 [INFO ] LibraryLoader             - Loading external native sequence labelling library
+27 Jan 2021 11:07.24 [INFO ] LibraryLoader             - Loading Wapiti native library...
+27 Jan 2021 11:07.24 [INFO ] LibraryLoader             - Native library for sequence labelling loaded
+27 Jan 2021 11:07.24 [INFO ] Lexicon                   - Initiating dictionary
+27 Jan 2021 11:07.24 [INFO ] Lexicon                   - End of Initialization of dictionary
+27 Jan 2021 11:07.24 [INFO ] Lexicon                   - Initiating names
+27 Jan 2021 11:07.24 [INFO ] Lexicon                   - End of initialization of names
+27 Jan 2021 11:07.25 [INFO ] Lexicon                   - Initiating country codes
+27 Jan 2021 11:07.25 [INFO ] Lexicon                   - End of initialization of country codes
+27 Jan 2021 11:07.25 [INFO ] WapitiModel               - Loading model: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home/models/fulltext/model.wapiti (size: 22836546)
+27 Jan 2021 11:07.29 [INFO ] WapitiModel               - Loading model: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home/models/segmentation/model.wapiti (size: 17807323)
+27 Jan 2021 11:07.31 [INFO ] WapitiModel               - Loading model: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home/models/header/model.wapiti (size: 36094028)
+27 Jan 2021 11:07.41 [INFO ] WapitiModel               - Loading model: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home/models/name/header/model.wapiti (size: 2225578)
+27 Jan 2021 11:07.42 [INFO ] WapitiModel               - Loading model: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home/models/name/citation/model.wapiti (size: 440148)
+27 Jan 2021 11:07.42 [INFO ] WapitiModel               - Loading model: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home/models/affiliation-address/model.wapiti (size: 2699936)
+27 Jan 2021 11:07.48 [INFO ] WapitiModel               - Loading model: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home/models/citation/model.wapiti (size: 16412787)
+27 Jan 2021 11:07.53 [INFO ] WapitiModel               - Loading model: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home/models/reference-segmenter/model.wapiti (size: 4921245)
+27 Jan 2021 11:08.23 [INFO ] WapitiModel               - Loading model: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home/models/date/model.wapiti (size: 102435)
+27 Jan 2021 11:08.25 [INFO ] WapitiModel               - Loading model: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home/models/figure/model.wapiti (size: 422671)
+27 Jan 2021 11:08.25 [INFO ] WapitiModel               - Loading model: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home/models/table/model.wapiti (size: 1202011)
+27 Jan 2021 11:08.26 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+27 Jan 2021 11:08.26 [WARN ] GrobidHomeFinder          - ***************************************************************
+27 Jan 2021 11:08.26 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home
+27 Jan 2021 11:08.26 [WARN ] GrobidHomeFinder          - ***************************************************************
+27 Jan 2021 11:08.31 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+27 Jan 2021 11:08.31 [WARN ] GrobidHomeFinder          - ***************************************************************
+27 Jan 2021 11:08.31 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home
+27 Jan 2021 11:08.31 [WARN ] GrobidHomeFinder          - ***************************************************************
+27 Jan 2021 11:08.37 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+27 Jan 2021 11:08.37 [WARN ] GrobidHomeFinder          - ***************************************************************
+27 Jan 2021 11:08.37 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home
+27 Jan 2021 11:08.37 [WARN ] GrobidHomeFinder          - ***************************************************************
+27 Jan 2021 11:08.46 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+27 Jan 2021 11:08.46 [WARN ] GrobidHomeFinder          - ***************************************************************
+27 Jan 2021 11:08.46 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home
+27 Jan 2021 11:08.46 [WARN ] GrobidHomeFinder          - ***************************************************************
+27 Jan 2021 11:08.52 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+27 Jan 2021 11:08.52 [WARN ] GrobidHomeFinder          - ***************************************************************
+27 Jan 2021 11:08.52 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home
+27 Jan 2021 11:08.52 [WARN ] GrobidHomeFinder          - ***************************************************************
+27 Jan 2021 11:08.55 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+27 Jan 2021 11:08.55 [WARN ] GrobidHomeFinder          - ***************************************************************
+27 Jan 2021 11:08.55 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home
+27 Jan 2021 11:08.55 [WARN ] GrobidHomeFinder          - ***************************************************************
+27 Jan 2021 11:08.59 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+27 Jan 2021 11:08.59 [WARN ] GrobidHomeFinder          - ***************************************************************
+27 Jan 2021 11:08.59 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home
+27 Jan 2021 11:08.59 [WARN ] GrobidHomeFinder          - ***************************************************************
+27 Jan 2021 11:09.04 [WARN ] GrobidHomeFinder          - No Grobid property was provided. Attempting to find Grobid home in the current directory...
+27 Jan 2021 11:09.04 [WARN ] GrobidHomeFinder          - ***************************************************************
+27 Jan 2021 11:09.04 [WARN ] GrobidHomeFinder          - *** USING GROBID HOME: /home/salomon/Desktop/task-dataset-metric-extraction/../grobid-0.6.0/grobid-home
+27 Jan 2021 11:09.04 [WARN ] GrobidHomeFinder          - ***************************************************************
