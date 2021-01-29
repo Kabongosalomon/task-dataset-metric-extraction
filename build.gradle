@@ -37,16 +37,7 @@ dependencies {
     implementation group: 'org.grobid', name: 'grobid-core', version: '0.6.0'
     implementation group: 'org.grobid', name: 'grobid-trainer', version: '0.6.0'
 
-    // compile files('/mnt/d/ORKG/NLP/task-dataset-metric-extraction/drive/traprange.jar')
-//     implementation files('D:\\ORKG\\NLP\\Try\\task-dataset-metric-extraction\\drive\\traprange.jar')
-
-//    compile files('/mnt/d/ORKG/NLP/task-dataset-metric-extraction/drive/grobid-core-0.6.0-SNAPSHOT-onejar.jar')
-//    compile files('/mnt/d/ORKG/NLP/task-dataset-metric-extraction/drive/grobid-core-0.6.0-SNAPSHOT.jar')
-
-    // https://github.com/kermitt2/grobid/releases/tag/0.5.3
-//    implementation files('D:\\ORKG\\NLP\\task-dataset-metric-extraction\\drive\\grobid-core-0.5.3-onejar.jar')
-//    implementation files('D:\\ORKG\\NLP\\task-dataset-metric-extraction\\drive\\grobid-core-0.5.3.jar')
-//    implementation files('D:\\ORKG\\NLP\\task-dataset-metric-extraction\\drive\\grobid-trainer-0.5.3.jar')
+    // implementation files('/mnt/d/ORKG/NLP/task-dataset-metric-extraction/drive/grobid-core-0.6.0-SNAPSHOT-onejar.jar')
 
     // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
     implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.11'

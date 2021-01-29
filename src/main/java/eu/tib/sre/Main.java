@@ -29,63 +29,54 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
-//        if (args.length != 3) {
-//            System.out.println("Usage: java Main.java <path_to_pdf> <path_to_output> <numb_negative>");
-//            System.out.println("java -jar task-dataset-metric-extraction-1.0.jar 'D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\pdf\\' 'D:\\ORKG\\NLP\\task-dataset-metric-extraction\\src\\main\\resources\\' '10'");
-//            System.exit(-1);
-//        }
+       if (args.length != 5) {
+            System.out.println("Syntax :\n########################################################################################");
+            System.out.println("java -jar task-dataset-metric-extraction-1.0.jar    <threshold> <numbNegative>  <numbUnk>   <pdfDir>    <outputDir>");
+            System.out.println("########################################################################################");
+
+            System.out.println("\nE.g How to use:\n");
+
+            System.out.println("If you are using windows OS");
+            System.out.println("java -jar task-dataset-metric-extraction-1.0.jar '5' '10' '20' 'D:\\path-to-pdf\\' 'D:\\output-folder\\'");
+            System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+            System.out.println("If you are using linux OS");
+            System.out.println("java -jar task-dataset-metric-extraction-1.0.jar '5' '10' '20' '/home/salomon/path-to-pdf/' '/home/salomon/output-folder/'");
+            System.exit(-1);
+       }
 
         // Only consider leaderboard that have at least 5 papers
-        Integer threshold = 5;
-        // Integer threshold = 50;
-
-//        Integer numbNegative = Integer.parseInt(args[2]);
-//        String pdfDir = args[0];
-//        String b = args[1]+numbNegative.toString()+"unk\\";
-//        String data_file = args[1]+numbNegative.toString()+"unk\\trainOutput.tsv";
-//        String outputDir = args[1]+numbNegative.toString()+"unk\\twofoldwithunk\\";
-
+        Integer threshold = Integer.parseInt(args[0]);
 
         // This specify the number of negative instances
-        Integer numbNegative = Integer.parseInt("1");
+        Integer numbNegative = Integer.parseInt(args[1]);
 
         // This specify the number of negative instances
-        Integer numbUnk = Integer.parseInt("5");
+        Integer numbUnk = Integer.parseInt(args[2]);
 
 
         // Path to pdfs folder
-        String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/pdf/"; 
-        // String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/pdf/"; 
+        // String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/pdf/"; 
+        String pdfDir = args[3]; 
         
         // Pre-output folder
-        String b = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
+        // String b = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
+        String preOutput = args[4]+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
         // Main tsv datafile
-        String data_file = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/trainOutput.tsv";
+        String data_file = args[4]+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/trainOutput.tsv";
         // fold output folder
-        String outputDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/twofoldwithunk/";
-
-
-        // String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/ibm/NLP-TDMS/pdfFile";
-        // // Pre-output folder
-        // String b = "/home/salomon/Desktop/task-dataset-metric-extraction/data/ibm/exp/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
-        // // Main tsv datafile
-        // String data_file = "/home/salomon/Desktop/task-dataset-metric-extraction/data/ibm/exp/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/trainOutput.tsv";
-        // // fold output folder
-        // String outputDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/ibm/exp/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/twofoldwithunk/";
-
-
+        String outputDir = args[4]+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/twofoldwithunk/";
 
         // check if the target folder exist if not create it.
-        File theDir = new File(b);
+        File theDir = new File(preOutput);
         if (!theDir.exists()){
             theDir.mkdirs();
         }
 
         // Added this to have the portion of unknown instances
-        FileOutputStream fold_stats = new FileOutputStream(b+"fold_stats.tsv");
+        FileOutputStream fold_stats = new FileOutputStream(preOutput+"fold_stats.tsv");
 
         // Generate the training data
-        DatasetGeneration.getTrainData(pdfDir, b, threshold, numbUnk, numbNegative, fold_stats);
+        DatasetGeneration.getTrainData(pdfDir, preOutput, threshold, numbUnk, numbNegative, fold_stats);
 
 //        DatasetGeneration.getTestData(pdfDir , b);
 
@@ -113,11 +104,6 @@ public class Main {
 
         // Set the number of fold (train/test)
         int number_fold = 2;
-
-        //System.out.println(datasize);
-        //System.out.println(training_datasize);
-        //System.out.println(test_datasize);
-        //System.exit(-1);
 
         // This returns randomly generated indices for the testing examples
         Map<Integer, List<Integer>> perfoldTestIndexes = getPerFoldTestIndexes(0, datasize, test_datasize, number_fold);
@@ -147,13 +133,9 @@ public class Main {
                 theFoldDir.mkdirs();
             }
 
-
             FileOutputStream train_output = new FileOutputStream(fold_i+"train.tsv");
             FileOutputStream test_output = new FileOutputStream(fold_i+"dev.tsv");
             FileOutputStream test_indexes = new FileOutputStream(fold_i+"test_indexes.tsv");
-
-//            // Added this to have the portion of unknown instances
-//            FileOutputStream fold_stats = new FileOutputStream(fold_i+"fold_stats.tsv");
 
             // This give us the indeces of testing
             List<Integer> testIndexes = perfoldTestIndexes.get(fold);
