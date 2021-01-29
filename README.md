@@ -6,6 +6,7 @@ Given input a pdf file, it scrapes the text from the file using the Grobid parse
 
 ## Steps to run the program
  
+The following procedure, suppose that you are using a linux OS, if otherwise kindly just clone the repo and rebuild the project. 
 
 1. Clone this repository (https://github.com/Kabongosalomon/task-dataset-metric-extraction/tree/trainTest) or clone a particular branch `git clone -b trainTest https://github.com/Kabongosalomon/task-dataset-metric-extraction.git`.
 2. move to the cloned directory `cd task-dataset-metric-extraction`
