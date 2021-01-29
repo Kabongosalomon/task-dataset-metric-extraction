@@ -12,7 +12,7 @@ The following procedure, suppose that you are using a linux OS, if otherwise kin
 2. move to the cloned directory `cd task-dataset-metric-extraction`
 3. run the command `bash starter.sh`
 4. You can either build the project or Download the `.jar` file by running this command   
-5. Depending on wheter you are doing Training or Testing run : 
+5. Depending on wheter you are doing Training or Testing run (you may need to run test atleast once for a specific configuration): 
     - Train 
         - `java -jar build/libs/task-dataset-metric-extraction-1.0.jar 'train' '5' '10' '5' "/home/salomon/Desktop/task-dataset-metric-extraction/data/pdf/" "/home/salomon/Desktop/"`
     - Test
