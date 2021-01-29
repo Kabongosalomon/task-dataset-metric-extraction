@@ -7,19 +7,19 @@ Given input a pdf file, it scrapes the text from the file using the Grobid parse
 ## Steps to run the program
  
 
-1. Clone this repository (https://github.com/jenlindadsouza/task-dataset-metric-extraction)
-2. The program jar file can be found at https://github.com/jenlindadsouza/task-dataset-metric-extraction/tree/master/build/libs <br>
-&nbsp;&nbsp;&nbsp;&nbsp; - It is called `tdm-1.0.jar`
-3. `Usage: java -jar tdm-1.0.jar <pdf-file-path> <resources-dir>`
-Where the `pdf-file-path` is the input pdf article to extract task, dataset, metric, software elements from and `resources-dir` should point to the directory at https://github.com/jenlindadsouza/task-dataset-metric-extraction/tree/master/src/main/resources
-4. To run directly from the source code, the build file will have to be updated for the local dependencies for jar files. See here: https://github.com/jenlindadsouza/task-dataset-metric-extraction/blob/master/build.gradle
-5. Either the jars can be obtained from source. For convenience, they are also made available here https://drive.google.com/drive/folders/1ax7ah8AInoD-_7amx27VKaSrFV73ggEk?usp=sharing
+1. Clone this repository (https://github.com/Kabongosalomon/task-dataset-metric-extraction/tree/trainTest)
+2. move to the cloned directory `cd task-dataset-metric-extraction`
+3. run the command `bash starter.sh`
+4. You can either build the project or Download the `.jar` file by running this command   
+5. Depending on wheter you are doing Training or Testing run : 
+    - Train 
+        - `java -jar build/libs/task-dataset-metric-extraction-1.0.jar 'train' '5' '10' '5' "/home/salomon/Desktop/task-dataset-metric-extraction/data/pdf/" "/home/salomon/Desktop/"`
+    - Test
+        - `java -jar build/libs/task-dataset-metric-extraction-1.0.jar 'test' '5' '10' '5' "/home/salomon/Desktop/task-dataset-metric-extraction/data/50.pdf" "/home/salomon/Desktop/"`
+6. The pre-build jar file can be found here https://drive.google.com/file/d/1xxXlJGz6EElOZAnLgj-lHAiYssvecGfe/view?usp=sharing
 
 
-You man need to install marven manually in linux using `sudo apt install maven`
-
-
-## Run experiments based on textual entailment system
+<!-- ## Run experiments based on textual entailment system
 
 We release the training/testing datasets for all experiments described in the paper. You can find them under the data/exp directory. The results reported in the paper are based on the datasets under the [data/exp/few-shot-setup/NLP-TDMS/paperVersion](data/exp/few-shot-setup/NLP-TDMS/paperVersion) directory. We later further clean the datasets (e.g., remove five pdf files from the testing datasets which appear in the training datasets with a different name) and the clean version is under the [data/exp/few-shot-setup/NLP-TDMS](data/exp/few-shot-setup/NLP-TDMS) folder. Below we illustrate how to run experiments on the NLP-TDSM dataset in the few-shot setup to extract TDM pairs. 
 
@@ -55,7 +55,7 @@ We release the training/testing datasets for all experiments described in the pa
 5) [TEModelEvalOnNLPTDMS](nlpLeaderboard/src/main/java/com/ibm/sre/tdmsie/TEModelEvalOnNLPTDMS.java) provides methods to evaluate TDMS tuples extraction.
 
 6) [GenerateTestDataOnPDFPapers](nlpLeaderboard/src/main/java/com/ibm/sre/tdmsie/GenerateTestDataOnPDFPapers.java) provides methods to generate testing dataset for any PDF papers.
-
+ -->
 
 ## Acknowledgement: 
 This program reuses code modules from IBM's science-result-extractor (https://github.com/IBM/science-result-extractor). A reference url to their paper on the ACL anthology is https://www.aclweb.org/anthology/P19-1513
