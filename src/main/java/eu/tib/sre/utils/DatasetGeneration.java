@@ -392,7 +392,7 @@ public class DatasetGeneration {
         br.close();
 
         return map;
-        
+
     }
 
 
@@ -455,7 +455,7 @@ public class DatasetGeneration {
             System.err.print("PDF parsing error!");
         }
         else {
-            String labels_file = b+"/tdmGoldLabels.tsv";tdmGoldLabels
+            String labels_file = b+"/tdmGoldLabels.tsv"; // tdmGoldLabels
             List<String> labels = FileUtils.readLines(new File(labels_file));
             String pdf_filename = new File(pdfFile).getName();
 
