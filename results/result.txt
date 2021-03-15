@@ -1,0 +1,8 @@
+80Neg600unk/twofoldwithunk/fold2: 
+    - BERT :
+        - Macro-averaged Precision: 0.8140 Macro-averaged Recall: 0.8469 Macro-averaged fscore: 0.8212 Micro-averaged Precision: 0.9353 Micro-averaged Recall: 0.9580 Micro-averaged fscore: 0.9465
+        - (wo_unk) Macro-averaged Precision: 0.8007 Macro-averaged Recall: 0.8333 Macro-averaged fscore: 0.8078 Micro-averaged Precision: 0.9388 Micro-averaged Recall: 0.9564 Micro-averaged fscore: 0.9475
+
+    - XLNet :
+        - Macro-averaged Precision: 0.7346 Macro-averaged Recall: 0.7512 Macro-averaged fscore: 0.7233 Micro-averaged Precision: 0.9181 Micro-averaged Recall: 0.8157 Micro-averaged fscore: 0.8639
+        - (wo_unk) Macro-averaged Precision: 0.7191 Macro-averaged Recall: 0.7346 Macro-averaged fscore: 0.7078 Micro-averaged Precision: 0.9237 Micro-averaged Recall: 0.8129 Micro-averaged fscore: 0.8648

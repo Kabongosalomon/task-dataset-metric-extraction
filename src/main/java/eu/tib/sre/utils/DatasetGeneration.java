@@ -151,21 +151,24 @@ public class DatasetGeneration {
         return "Done";
     }
 
-    //    public static String getTrainingData(String pdfDir, String[] args) throws IOException, Exception {
-    public static String getTrainScoreData(String pdfDir, String b, Integer threshold, Integer numbNegative) throws IOException, Exception {
 
-//        prop = new Properties();
-//        prop.load(new FileReader("config.properties"));
-//        TDM_taxonomy = prop.getProperty("TDM_taxonomy");
-        // TDM_taxonomy = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\annotations\\TDM_taxonomy.tsv";
-        TDM_taxonomy = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/annotations/TDM_taxonomy.tsv";
+    public static String getTrainScoreData(String pdfDir, String b, Integer threshold, Integer numbUnk, Integer numbNegative,
+            FileOutputStream fold_stats) throws IOException, Exception {
 
+        prop = new Properties();
+        prop.load(new FileReader("config.properties"));
+        TDM_taxonomy = prop.getProperty("projectPath") + "/" + prop.getProperty("TDM_taxonomy");
+
+        // The full taxonomy obtains from paper with code json
         FileOutputStream output = new FileOutputStream(b+"trainOutput.tsv");
-//        FileOutputStream output = new FileOutputStream(args[1]+"trainOutput.tsv");
 
         File dir = new File(pdfDir);
 
         File[] filesList = dir.listFiles();
+
+        int progress = 0;
+        Integer trueUnk = 0;
+        Integer falseUnk = 0;
 
         for (File file : filesList) {
             if (file.isFile()) {
@@ -174,45 +177,77 @@ public class DatasetGeneration {
                 String pdf_file = file.getPath();
 //                String pdf_file pdf_file = file;
                 Set<String> trueTDM = new HashSet<String>();
-                System.out.println(">>>> Processing file: " + pdf_file);
-
+                System.out.println(">>>> ("+ progress++ +") Processing file: " + pdf_file);
 
                 String docTEATStr = DocTAET.getDocTAETRepresentation(pdf_file);
                 if (docTEATStr.equals("")) {
                     System.err.print("PDF parsing error!");
                 }
                 else {
-                    // resultsAnnotation = prop.getProperty("result_annotation")
-                    // resultsAnnotation = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\annotations\\resultsAnnotation.tsv";
-                    resultsAnnotation = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/annotations/resultsAnnotation.tsv";
+                    // This contains a dict like file that have file name and TDMs informations
+                    resultsAnnotation = prop.getProperty("projectPath") + "/" + prop.getProperty("result_annotation");
+                    // resultsAnnotation = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/annotations/resultsAnnotation.tsv";
 
 //                    String labels_file = args[1]+"/tdmGoldLabels.tsv";
                     mapDict = getTdmGoldLabelsAndloadDict(TDM_taxonomy, b, threshold);
                     mapLabel = getMapTitlepdfLabel(resultsAnnotation, mapDict, threshold);
-                    mapScore = getTrainScoreDict(resultsAnnotation, mapDict, threshold);
 
                     String labels_file = b+"/tdmGoldLabels.tsv";
                     List<String> labels = FileUtils.readLines(new File(labels_file));
                     String pdf_filename = new File(pdf_file).getName();
 
-
                     for (int i = 0; i < mapLabel.get(pdf_filename).size(); i++) {
-                        output.write(("true\t" + pdf_filename + "\t"+mapLabel.get(pdf_filename).get(i).replace("#", ", ")+"\t" + docTEATStr + "\n").getBytes());
+
+                        if (mapLabel.get(pdf_filename).get(i).replace("#", "; ").equals("unknow")){
+
+                            if (trueUnk >= numbUnk){
+
+                                continue;
+
+                            }
+                            else {
+                                output.write(("true\t" + pdf_filename + "\t"+mapLabel.get(pdf_filename).get(i).replace("#", "; ")+"\t" + docTEATStr + "\n").getBytes());
+                                
+                                // Keep track of positive TDM
+                                trueTDM.add(mapLabel.get(pdf_filename).get(i));
+
+                                trueUnk = trueUnk + 1;
+                                
+                                continue;
+                            }
+
+
+                        }
+
+                        output.write(("true\t" + pdf_filename + "\t"+mapLabel.get(pdf_filename).get(i).replace("#", "; ")+"\t" + docTEATStr + "\n").getBytes());
+
+                        // Keep track of positive TDM
                         trueTDM.add(mapLabel.get(pdf_filename).get(i));
+
+
                     }
 
-                    int limit = 0;
 
+                    // Thits takes only the first numbNegative example, we may need to make it random
+                    int limit = 0;
 
                     // To randomly allow to get the false for a numNeg threshold
                     Collections.shuffle(labels);
 
                     for (String label : labels) {
-                        if (limit>=numbNegative){
+                        if ( limit >= numbNegative ){
                             break;
                         }
+
+                        // Check if the TDM is not a true label for a given paper
                         if (!trueTDM.contains(label)) {
-                            output.write(("false\t" + pdf_filename + "\t" + label.replace("#", ", ") + "\t" + docTEATStr + "\n").getBytes());
+                            output.write(("false\t" + pdf_filename + "\t" + label.replace("#", "; ") + "\t" + docTEATStr + "\n").getBytes());
+
+                            if (label.replace("#", "; ").equals("unknow")){
+                                falseUnk = falseUnk + 1;
+                            }
+
+                            // Update the count for one more false label
                             limit += 1;
                         }
 
@@ -222,10 +257,91 @@ public class DatasetGeneration {
             }
         }
 
+        fold_stats.write(("Main Data stats :\n").getBytes());
+        fold_stats.write(("Positive Unk : "+trueUnk+"\n").getBytes());
+        fold_stats.write(("Negative Unk : "+falseUnk+"\n\n").getBytes());
+
         output.close();
 
         return "Done";
     }
+
+
+    //    public static String getTrainingData(String pdfDir, String[] args) throws IOException, Exception {
+//     public static String getTrainScoreData(String pdfDir, String b, Integer threshold, Integer numbNegative) throws IOException, Exception {
+
+//        prop = new Properties();
+// //        prop.load(new FileReader("config.properties"));
+// //        TDM_taxonomy = prop.getProperty("TDM_taxonomy");
+//         // TDM_taxonomy = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\annotations\\TDM_taxonomy.tsv";
+//         // TDM_taxonomy = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/annotations/TDM_taxonomy.tsv";
+
+//         FileOutputStream output = new FileOutputStream(b+"trainOutput.tsv");
+// //        FileOutputStream output = new FileOutputStream(args[1]+"trainOutput.tsv");
+
+//         File dir = new File(pdfDir);
+
+//         File[] filesList = dir.listFiles();
+
+//         for (File file : filesList) {
+//             if (file.isFile()) {
+
+// //                String pdf_file = FileUtils.readFileToString(file);
+//                 String pdf_file = file.getPath();
+// //                String pdf_file pdf_file = file;
+//                 Set<String> trueTDM = new HashSet<String>();
+//                 System.out.println(">>>> Processing file: " + pdf_file);
+
+
+//                 String docTEATStr = DocTAET.getDocTAETRepresentation(pdf_file);
+//                 if (docTEATStr.equals("")) {
+//                     System.err.print("PDF parsing error!");
+//                 }
+//                 else {
+//                     resultsAnnotation = prop.getProperty("result_annotation");
+//                     // resultsAnnotation = "D:\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\annotations\\resultsAnnotation.tsv";
+//                     // resultsAnnotation = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/annotations/resultsAnnotation.tsv";
+
+// //                    String labels_file = args[1]+"/tdmGoldLabels.tsv";
+//                     mapDict = getTdmGoldLabelsAndloadDict(TDM_taxonomy, b, threshold);
+//                     mapLabel = getMapTitlepdfLabel(resultsAnnotation, mapDict, threshold);
+//                     mapScore = getTrainScoreDict(resultsAnnotation, mapDict, threshold);
+
+//                     String labels_file = b+"/tdmGoldLabels.tsv";
+//                     List<String> labels = FileUtils.readLines(new File(labels_file));
+//                     String pdf_filename = new File(pdf_file).getName();
+
+
+//                     for (int i = 0; i < mapLabel.get(pdf_filename).size(); i++) {
+//                         output.write(("true\t" + pdf_filename + "\t"+mapLabel.get(pdf_filename).get(i).replace("#", ", ")+"\t" + docTEATStr + "\n").getBytes());
+//                         trueTDM.add(mapLabel.get(pdf_filename).get(i));
+//                     }
+
+//                     int limit = 0;
+
+
+//                     // To randomly allow to get the false for a numNeg threshold
+//                     Collections.shuffle(labels);
+
+//                     for (String label : labels) {
+//                         if (limit>=numbNegative){
+//                             break;
+//                         }
+//                         if (!trueTDM.contains(label)) {
+//                             output.write(("false\t" + pdf_filename + "\t" + label.replace("#", ", ") + "\t" + docTEATStr + "\n").getBytes());
+//                             limit += 1;
+//                         }
+
+//                     }
+
+//                 }
+//             }
+//         }
+
+//         output.close();
+
+//         return "Done";
+//     }
 
     private static HashMap<String, ArrayList<String>> getMapTitlepdfLabel(String resultsAnnotation, HashMap<String, Integer> mapDict, Integer threshold) throws ParseException, IOException {
         BufferedReader br = new BufferedReader(new FileReader(resultsAnnotation));
@@ -276,6 +392,9 @@ public class DatasetGeneration {
                 }
             }
         }
+
+        br.close();
+
         return map;
 
     }
@@ -301,7 +420,8 @@ public class DatasetGeneration {
         }
         out.println("unknow");
         out.close();
-
+        
+        br.close();
         return  map;
     }
 
@@ -384,17 +504,20 @@ public class DatasetGeneration {
                 }
             }
         }
+
+        br.close();
+
         return map;
+
     }
 
 
     //    public static String getTestingData(String pdfDir, String[] args) throws IOException, Exception {
-    public static String getTestData(String pdfDir, String b) throws IOException, Exception {
+    public static String getTestFromFolderData(String pdfDir, String b) throws IOException, Exception {
 
         System.out.println("## Now Generating Test Data ##");
 
         FileOutputStream output = new FileOutputStream(b+"testOutput.tsv");
-//        FileOutputStream output = new FileOutputStream(args[2]+"testOutput.tsv");
 
         File dir = new File(pdfDir);
 
@@ -405,7 +528,6 @@ public class DatasetGeneration {
 
 //                String pdf_file = FileUtils.readFileToString(file);
                 String pdf_file = file.getPath();
-//                String pdf_file pdf_file = file;
 
                 System.out.println(">>>> Processing file: " + pdf_file);
 
@@ -415,7 +537,6 @@ public class DatasetGeneration {
                     System.err.print("PDF parsing error!");
                 }
                 else {
-//                    String labels_file = args[1]+"/tdmGoldLabels.tsv";
                     String labels_file = b+"/tdmGoldLabels.tsv";
                     List<String> labels = FileUtils.readLines(new File(labels_file));
                     String pdf_filename = new File(pdf_file).getName();
@@ -427,7 +548,39 @@ public class DatasetGeneration {
             }
         }
 
+        output.close();
 
+
+
+        return "Done";
+    }
+
+    public static String getTestFromFileData(String pdfFile, String b) throws IOException, Exception {
+
+        System.out.println("## Now Generating Test Data ##");
+
+        FileOutputStream output = new FileOutputStream(b+"testOutput.tsv");
+//        FileOutputStream output = new FileOutputStream(args[2]+"testOutput.tsv");
+
+
+        System.out.println(">>>> Processing file: " + pdfFile);
+
+
+        String docTEATStr = DocTAET.getDocTAETRepresentation(pdfFile);
+        if (docTEATStr.equals("")) {
+            System.err.print("PDF parsing error!");
+        }
+        else {
+            String labels_file = b+"/tdmGoldLabels.tsv"; // tdmGoldLabels
+            List<String> labels = FileUtils.readLines(new File(labels_file));
+            String pdf_filename = new File(pdfFile).getName();
+
+            for (String label : labels) {
+                output.write(("true\t" + pdf_filename + "\t"+label.replace("#", "; ")+"\t" + docTEATStr + "\n").getBytes());
+            }
+        }
+
+        output.close();
 
         return "Done";
     }
