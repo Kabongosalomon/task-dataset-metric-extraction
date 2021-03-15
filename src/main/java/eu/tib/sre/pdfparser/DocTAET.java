@@ -259,8 +259,7 @@ public class DocTAET {
     }
 
     public static void main(String[] args) throws IOException, Exception {
-        // D:\ORKG\NLP\science-result-extractor\nlpLeaderboard\src\main\java\com\ibm\sre\data\NLP-TDMS\pdfFile_txt\50.txt
-        String pdfPath = "/home/salomon/Desktop/task-dataset-metric-extraction/data/pdf/50.pdf";
+        String pdfPath = "/home/salomon/Desktop/task-dataset-metric-extraction/data/50.pdf";
 
         String docTEATStr = DocTAET.getDocTAETRepresentation(pdfPath);
         List<String> numbersAndContext = DocTAET.getTableBoldNumberContext(pdfPath);
