@@ -259,10 +259,19 @@ public class DocTAET {
     }
 
     public static void main(String[] args) throws IOException, Exception {
-        String pdfPath = "/home/salomon/Desktop/task-dataset-metric-extraction/data/50.pdf";
+        // String pdfPath = "/home/salomon/Desktop/task-dataset-metric-extraction/data/50.pdf";
+        String pdfPath = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/pdf/1408.1656v3.pdf";
 
         String docTEATStr = DocTAET.getDocTAETRepresentation(pdfPath);
         List<String> numbersAndContext = DocTAET.getTableBoldNumberContext(pdfPath);
+        
+        String str = "";
+        // for (String DMLabel : evaluatedLabels) {
+        for (String numberInfo : numbersAndContext) {
+            if (numberInfo.split("#").length >1){
+                str += " " + numberInfo.split("#")[1];
+            }
+        }
 
         System.out.println(">>>>>>>> getTableBoldNumberContex :"  +numbersAndContext);
         System.out.println(">>>>>>>> getDocTAETRepresentation :"  +docTEATStr);

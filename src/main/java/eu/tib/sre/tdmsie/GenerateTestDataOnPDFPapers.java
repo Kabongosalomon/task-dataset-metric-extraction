@@ -271,7 +271,7 @@ public class GenerateTestDataOnPDFPapers {
 //                "D:\\ORKG\\NLP\\science-result-extractor\\nlpLeaderboard\\src\\main\\java\\com\\ibm\\sre\\data\\test\\test_TDM.tsv");
        createTestdata.generateTestData4ScorePrediction(
            "/home/salomon/Desktop/task-dataset-metric-extraction/data/pdf/",
-           "/home/salomon/Desktop/task-dataset-metric-extraction/data/pdf/test_score.tsv");
+           "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/score/test_score.tsv");
    }
 
 }

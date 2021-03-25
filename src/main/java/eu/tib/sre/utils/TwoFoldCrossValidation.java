@@ -204,6 +204,9 @@ public class TwoFoldCrossValidation {
                 //System.out.println(dataLine);
 
                 // save the description of the file one time for all
+                if (dataLine.split("\t").length<4){
+                    continue;
+                }
                 content = dataLine.split("\t")[3];
             }
 

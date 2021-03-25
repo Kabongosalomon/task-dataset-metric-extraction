@@ -29,49 +29,61 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
-       if (args.length != 6) {
-            System.out.println("\nSyntax :\n########################################################################################");
-            System.out.println("java -jar task-dataset-metric-extraction-1.0.jar    <mode>    <threshold> <numbNegative>  <numbUnk>   <pdfDir>    <outputDir>");
-            System.out.println("########################################################################################");
+    //    if (args.length != 6) {
+    //         System.out.println("\nSyntax :\n########################################################################################");
+    //         System.out.println("java -jar task-dataset-metric-extraction-1.0.jar    <mode>    <threshold> <numbNegative>  <numbUnk>   <pdfDir>    <outputDir>");
+    //         System.out.println("########################################################################################");
 
-            System.out.println("\nE.g How to use:\n");
+    //         System.out.println("\nE.g How to use:\n");
 
-            System.out.println("If you are using windows OS");
-            System.out.println("java -jar task-dataset-metric-extraction-1.0.jar 'train'    '5' '10' '20' 'C:\\path-to-pdf\\' 'C:\\output-folder\\'");
-            System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-            System.out.println("If you are using linux OS");
-            System.out.println("java -jar task-dataset-metric-extraction-1.0.jar 'test' '5' '10' '20' '/home/salomon/path-to-pdf/' '/home/salomon/output-folder/'");
-            System.exit(-1);
+    //         System.out.println("If you are using windows OS");
+    //         System.out.println("java -jar task-dataset-metric-extraction-1.0.jar 'train'    '5' '10' '20' 'C:\\path-to-pdf\\' 'C:\\output-folder\\'");
+    //         System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+    //         System.out.println("If you are using linux OS");
+    //         System.out.println("java -jar task-dataset-metric-extraction-1.0.jar 'test' '5' '10' '20' '/home/salomon/path-to-pdf/' '/home/salomon/output-folder/'");
+    //         System.exit(-1);
 
-            // Test
-            // java -jar build/libs/task-dataset-metric-extraction-1.0.jar 'test' '5' '10' '20' "/home/salomon/Desktop/task-dataset-metric-extraction/data/50.pdf" "/home/salomon/Desktop/"
+    //         // Test
+    //         // java -jar build/libs/task-dataset-metric-extraction-1.0.jar 'test' '5' '10' '20' "/home/salomon/Desktop/task-dataset-metric-extraction/data/50.pdf" "/home/salomon/Desktop/"
 
-            // Train
-            // java -jar build/libs/task-dataset-metric-extraction-1.0.jar 'train' '5' '10' '20' "/home/salomon/Desktop/task-dataset-metric-extraction/data/pdf/" "/home/salomon/Desktop/"
+    //         // Train
+    //         // java -jar build/libs/task-dataset-metric-extraction-1.0.jar 'train' '5' '10' '20' "/home/salomon/Desktop/task-dataset-metric-extraction/data/pdf/" "/home/salomon/Desktop/"
 
-       }
+    //    }
 
-        // Only consider leaderboard that have at least 5 papers
-        Integer threshold = Integer.parseInt(args[1]);
-
-        // This specify the number of negative instances
-        Integer numbNegative = Integer.parseInt(args[2]);
-
-        // This specify the number of negative instances
-        Integer numbUnk = Integer.parseInt(args[3]);
-
-
-        // Path to pdfs folder
-        // String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/pdf/"; 
-        String pdfDir = args[4]; 
+        // // Only consider leaderboard that have at least 5 papers
+        // Integer threshold = Integer.parseInt(args[1]);
         
-        // Pre-output folder
-        // String b = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
-        String preOutput = args[5]+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
+        // // This specify the number of negative instances
+        // Integer numbNegative = Integer.parseInt(args[2]);
+
+        // // This specify the number of negative instances
+        // Integer numbUnk = Integer.parseInt(args[3]);
+
+
+        // // Path to pdfs folder
+        // String pdfDir = args[4]; 
+        
+        // // Pre-output folder
+        // String preOutput = args[5]+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
+        // // Main tsv datafile
+        // String data_file = args[5]+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/trainOutput.tsv";
+        // // fold output folder
+        // String outputDir = args[5]+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/twofoldwithunk/";
+
+
+
+        // For manual use only 
+        Integer threshold = 5;
+        Integer numbNegative = 10;
+        Integer numbUnk = 100;
+        // String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/pdf/"; 
+        String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/pdf/"; 
+        String preOutput = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/score/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
         // Main tsv datafile
-        String data_file = args[5]+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/trainOutput.tsv";
+        String data_file = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/score/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/trainOutput.tsv";
         // fold output folder
-        String outputDir = args[5]+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/twofoldwithunk/";
+        String outputDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/score/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/twofoldwithunk/";
 
         // check if the target folder exist if not create it.
         File theDir = new File(preOutput);
@@ -82,9 +94,10 @@ public class Main {
         // Added this to have the portion of unknown instances
         FileOutputStream fold_stats = new FileOutputStream(preOutput+"fold_stats.tsv");
 
-        if (args[0].equals("train")){
+        // if (args[0].equals("train")){
+        if (true){
             // Generate the training data
-            DatasetGeneration.getTrainData(pdfDir, preOutput, threshold, numbUnk, numbNegative, fold_stats);
+            // DatasetGeneration.getTrainScoreData(pdfDir, preOutput, threshold, numbUnk, numbNegative, fold_stats);
 
             Map<String, List<String>> data = new HashMap<>();
             // This help to keep track of TDM seen so far
@@ -163,9 +176,10 @@ public class Main {
                 test_indexes.close();
 
             }
-        }else{
-            DatasetGeneration.getTestFromFileData(pdfDir , preOutput);
         }
+        // else{
+        //     DatasetGeneration.getTestFromFileData(pdfDir , preOutput);
+        // }
         
         }
 
