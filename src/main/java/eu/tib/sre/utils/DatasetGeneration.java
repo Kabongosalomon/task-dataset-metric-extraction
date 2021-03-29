@@ -185,43 +185,6 @@ public class DatasetGeneration {
                 String docTEATStr = DocTAET.getDocTAETRepresentation(pdf_file);
                 List<String> numbersAndContext = DocTAET.getTableBoldNumberContext(pdf_file);
                 
-                // String str = "";
-                // // for (String DMLabel : evaluatedLabels) {
-                // for (String numberInfo : numbersAndContext) {
-                //     str += " " + numberInfo.split("#")[1];
-                // }
-                //         // }
-
-                // String tableContents  = str.strip();
-                
-                // /*
-                // * Since the words are separated by space,
-                // * we will split the string by one or more space
-                // */
-                
-                // String[] strWords = tableContents.split("\\s+");
-                
-                // //convert String array to LinkedHashSet to remove duplicates
-                // LinkedHashSet<String> lhSetWords 
-                //     = new LinkedHashSet<String>( Arrays.asList(strWords) );
-                
-                // //join the words again by space
-                // StringBuilder sbTemp = new StringBuilder();
-                // int index = 0;
-                
-                // for(String s : lhSetWords){
-                    
-                //     if(index > 0)
-                //         sbTemp.append(" ");
-                
-                //     sbTemp.append(s);
-                //     index++;
-                // }
-                
-                // // Get a content of the table from table caption 
-                // // by avoiding repeted informations
-                // tableContents = sbTemp.toString();
-
                 if (docTEATStr.equals("")) {
                     System.err.print("PDF parsing error!");
                 }
@@ -255,7 +218,10 @@ public class DatasetGeneration {
                         for (String numberInfo : numbersAndContext) {
                             if (numberInfo.split("#").length >1){
                                 if (score.equals(numberInfo.split("#")[0])){
-                                    output.write(("true\t" + pdf_filename +"#"+score+ "\t" + DM + "\t" + numberInfo.split("#")[1] + "\n").getBytes());
+                                    if (numberInfo.split("#")[1].length()<1){
+                                        continue;
+                                    }
+                                    output.write(("true\t" + pdf_filename +"#" + score + "\t" + DM +"; "+score+ "\t" + numberInfo.split("#")[1] + "\n").getBytes());
                                     missedPdF = true;
                                 }
                                 else {
@@ -286,7 +252,10 @@ public class DatasetGeneration {
                                         }
                                     }
 
-                                    output.write(("false\t" + pdf_filename +"#"+numberInfo.split("#")[0].replaceAll("[^\\.0123456789]","")+ "\t" + randGoldDM + "\t" + numberInfo.split("#")[1] + "\n").getBytes());
+                                    if (numberInfo.split("#")[1].length()<1){
+                                        continue;
+                                    }
+                                    output.write(("false\t" + pdf_filename + "#"+numberInfo.split("#")[0].replaceAll("[^\\.0123456789]","") + "\t" + randGoldDM +"; "+numberInfo.split("#")[0].replaceAll("[^\\.0123456789]","")+ "\t" + numberInfo.split("#")[1] + "\n").getBytes());
                                     
                                     limit += 1;
                                     trueTDMs.add(randGoldDM);

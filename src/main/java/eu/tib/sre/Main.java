@@ -76,7 +76,7 @@ public class Main {
         // For manual use only 
         Integer threshold = 5;
         Integer numbNegative = 10;
-        Integer numbUnk = 100;
+        Integer numbUnk = 0;
         // String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/pdf/"; 
         String pdfDir = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/pdf/"; 
         String preOutput = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/score/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
@@ -97,7 +97,7 @@ public class Main {
         // if (args[0].equals("train")){
         if (true){
             // Generate the training data
-            // DatasetGeneration.getTrainScoreData(pdfDir, preOutput, threshold, numbUnk, numbNegative, fold_stats);
+            DatasetGeneration.getTrainScoreData(pdfDir, preOutput, threshold, numbUnk, numbNegative, fold_stats);
 
             Map<String, List<String>> data = new HashMap<>();
             // This help to keep track of TDM seen so far
