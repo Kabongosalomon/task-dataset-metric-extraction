@@ -91,7 +91,7 @@ public class TEModelEvalOnNLPTDMS {
 
     public void evaluateTDMSExtraction() throws IOException, Exception {
     // public void evaluateTDMSExtraction(FileOutputStream fold_stats) throws IOException, Exception {
-        // Map<String, String> scorePrediction = getPredictedSore();
+        Map<String, String> scorePrediction = getPredictedSore();
 
         String file1 = prop.getProperty("projectPath") + "/" + prop.getProperty("test_path");
         String file2 = prop.getProperty("projectPath") + "/" +  prop.getProperty("test_results_path");
@@ -149,9 +149,9 @@ public class TEModelEvalOnNLPTDMS {
                 result.setEvaluationMetric(eval);
                 
                 // This is for score 
-                // if (scorePrediction.containsKey(filename + "#" + dataset + ":::" + eval)) {
-                //     result.setEvaluationScore(scorePrediction.get(filename + "#" + dataset + ":::" + eval).split("#")[0]);
-                // }
+                if (scorePrediction.containsKey(filename + "#" + dataset + ":::" + eval)) {
+                    result.setEvaluationScore(scorePrediction.get(filename + "#" + dataset + ":::" + eval).split("#")[0]);
+                }
 
                 resultsPredictionsTestPapers.get(filename).add(result);
                 }
