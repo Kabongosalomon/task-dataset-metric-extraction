@@ -60,7 +60,8 @@ public class DatasetGeneration {
 //                String pdf_file pdf_file = file;
                 Set<String> trueTDM = new HashSet<String>();
                 System.out.println(">>>> ("+ progress++ +") Processing file: " + pdf_file);
-
+                
+                // TODO : File to change for ablation study 
                 String docTEATStr = DocTAET.getDocTAETRepresentation(pdf_file);
                 if (docTEATStr.equals("")) {
                     System.err.print("PDF parsing error!");

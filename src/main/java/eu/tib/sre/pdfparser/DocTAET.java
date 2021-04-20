@@ -58,6 +58,52 @@ public class DocTAET {
         return DocTAETStr.replace("\n", "").trim();
     }
 
+    public static String getDocTAETRepresentationTitleAbstract(String pdfFile) throws IOException, Exception {
+        String DocTAETStr = "";
+        GrobidPDFProcessor gp = new GrobidPDFProcessor();
+
+        Map<String, String> sections = gp.getPDFSectionAndText(pdfFile);
+        if (sections == null) return "";
+        DocTAETStr = DocTAETStr + " " + sections.get("title") + " " + sections.get("abstract");
+        return DocTAETStr.replace("\n", "").trim();
+    }
+
+    public static String getDocTAETRepresentationTitleAbstractExpSetup(String pdfFile) throws IOException, Exception {
+        String DocTAETStr = "";
+        GrobidPDFProcessor gp = new GrobidPDFProcessor();
+
+        Map<String, String> sections = gp.getPDFSectionAndText(pdfFile);
+        if (sections == null) return "";
+        DocTAETStr = DocTAETStr + " " + sections.get("title") + " " + sections.get("abstract")
+                + " " + getPdfDatasetContext_Clean_150tokens(sections);
+        return DocTAETStr.replace("\n", "").trim();
+    }
+
+    public static String getDocTAETRepresentationTitleAbstractTableInfo(String pdfFile) throws IOException, Exception {
+        String DocTAETStr = "";
+        GrobidPDFProcessor gp = new GrobidPDFProcessor();
+
+        Map<String, String> sections = gp.getPDFSectionAndText(pdfFile);
+        if (sections == null) return "";
+        DocTAETStr = DocTAETStr + " " + sections.get("title") + " " + sections.get("abstract")
+                + " " + getTableInfo_150tokens(pdfFile);
+        return DocTAETStr.replace("\n", "").trim();
+    }
+
+//     public static String getDocTAETRepresentationTitleAbstractExpSetupTableInfo(String pdfFile) throws IOException, Exception {
+//         String DocTAETStr = "";
+//         GrobidPDFProcessor gp = new GrobidPDFProcessor();
+
+// //        GrobidPDFProcessor gp = GrobidPDFProcessor.getInstance();
+//         Map<String, String> sections = gp.getPDFSectionAndText(pdfFile);
+//         if (sections == null) return "";
+//         DocTAETStr = DocTAETStr + " " + sections.get("title") + " " + sections.get("abstract")
+//                 + " " + getPdfDatasetContext_Clean_150tokens(sections)
+//                 + " " + getTableInfo_150tokens(pdfFile);
+//         return DocTAETStr.replace("\n", "").trim();
+//     }
+
+
     //first 150 tokens of selected dataset context
     public static String getPdfDatasetContext_Clean_150tokens(String pdfFile) throws IOException, Exception {
         GrobidPDFProcessor gp = GrobidPDFProcessor.getInstance();
