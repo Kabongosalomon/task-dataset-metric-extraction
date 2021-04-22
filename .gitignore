@@ -127,8 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
-data/paperwithcode/pdf
+bin/
+BERT/
+XLNet/
+*.sif
+data/
 data/paperwithcode/source_files/
 data/paperwithcode/.ipynb_checkpoints/
 

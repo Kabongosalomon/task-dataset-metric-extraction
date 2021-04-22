@@ -31,6 +31,22 @@ dependencies {
 
     // https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox
     // compile group: 'org.apache.pdfbox', name: 'pdfbox', version: '2.0.18'
+<<<<<<< HEAD
+
+    // ToDO : I need to make this run on grobid 0.6.07
+    implementation group: 'org.grobid', name: 'grobid-core', version: '0.5.3'
+
+    // compile files('/mnt/d/ORKG/NLP/task-dataset-metric-extraction/drive/traprange.jar')
+//     implementation files('D:\\ORKG\\NLP\\Try\\task-dataset-metric-extraction\\drive\\traprange.jar')
+
+//    compile files('/mnt/d/ORKG/NLP/task-dataset-metric-extraction/drive/grobid-core-0.6.0-SNAPSHOT-onejar.jar')
+//    compile files('/mnt/d/ORKG/NLP/task-dataset-metric-extraction/drive/grobid-core-0.6.0-SNAPSHOT.jar')
+
+    // https://github.com/kermitt2/grobid/releases/tag/0.5.3
+//    implementation files('D:\\ORKG\\NLP\\task-dataset-metric-extraction\\drive\\grobid-core-0.5.3-onejar.jar')
+//    implementation files('D:\\ORKG\\NLP\\task-dataset-metric-extraction\\drive\\grobid-core-0.5.3.jar')
+//    implementation files('D:\\ORKG\\NLP\\task-dataset-metric-extraction\\drive\\grobid-trainer-0.5.3.jar')
+=======
 
     // ToDO : I need to make this run on grobid 0.6.07
     // implementation group: 'org.grobid', name: 'grobid-core', version: '0.5.3'
@@ -38,6 +54,7 @@ dependencies {
     implementation group: 'org.grobid', name: 'grobid-trainer', version: '0.6.0'
 
     // implementation files('/mnt/d/ORKG/NLP/task-dataset-metric-extraction/drive/grobid-core-0.6.0-SNAPSHOT-onejar.jar')
+>>>>>>> 555bf190856237e3221e87aa42fa1b349ae7b1e1
 
     // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
     implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.11'
@@ -56,6 +73,8 @@ dependencies {
 
     // https://mvnrepository.com/artifact/au.com.bytecode/opencsv
     implementation group: 'au.com.bytecode', name: 'opencsv', version: '2.4'
+<<<<<<< HEAD
+=======
 
     implementation "com.google.guava:guava:16+"
 
@@ -63,6 +82,7 @@ dependencies {
     // api group: 'org.slf4j', name: 'slf4j-api', version: '1.7.0'
 
     
+>>>>>>> 555bf190856237e3221e87aa42fa1b349ae7b1e1
 }
 
 jar {

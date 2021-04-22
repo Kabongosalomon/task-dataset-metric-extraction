@@ -41,6 +41,7 @@ public class DatasetGeneration {
         // TDM_taxonomy = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/annotations/TDM_taxonomy.tsv";
 
 
+
         FileOutputStream output = new FileOutputStream(b+"trainOutput.tsv");
 //        FileOutputStream output = new FileOutputStream(args[1]+"trainOutput.tsv");
 
@@ -243,16 +244,12 @@ public class DatasetGeneration {
                         // Check if the TDM is not a true label for a given paper
                         if (!trueTDM.contains(label)) {
                             output.write(("false\t" + pdf_filename + "\t" + label.replace("#", "; ") + "\t" + docTEATStr + "\n").getBytes());
-
-                            if (label.replace("#", "; ").equals("unknow")){
-                                falseUnk = falseUnk + 1;
                             }
 
                             // Update the count for one more false label
                             limit += 1;
                         }
 
-                    }
 
                 }
             }

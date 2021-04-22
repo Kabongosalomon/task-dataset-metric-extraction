@@ -1,6 +1,0 @@
-tensorflow==1.11.0   # CPU Version of TensorFlow.
-<<<<<<< HEAD
-tensorflow-gpu==1.11.0   # GPU version of TensorFlow.
-=======
-tensorflow-gpu==1.11.0  # GPU version of TensorFlow.
->>>>>>> 1881582c9516bf5fdf6dd39bb0a89cca9ff87a5e
