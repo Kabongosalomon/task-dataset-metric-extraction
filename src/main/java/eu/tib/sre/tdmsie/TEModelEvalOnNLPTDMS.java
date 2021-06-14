@@ -145,14 +145,20 @@ public class TEModelEvalOnNLPTDMS {
                 // String dataset = leaderboard.split(",")[1].trim();
                 // String eval = leaderboard.split(",")[2].trim();
 
-                // String task = leaderboard.split(";")[0].replace(" ", "_").trim();
-                String task = leaderboard.split(";")[0].trim();
+                String task = leaderboard.split(";")[0].replace(" ", "_").trim();
+                // String task = leaderboard.split(";")[0].trim();
                 String dataset = leaderboard.split(";")[1].trim();
                 String eval = leaderboard.split(";")[2].trim();
 
-
                 NLPResult result = new NLPResult(filename, task, dataset);
                 result.setEvaluationMetric(eval);
+                
+                // TODO: Evaluation, Task, Dataset, Metric ...
+                // NLPResult result = new NLPResult(filename, task, "None");
+                // NLPResult result = new NLPResult(filename, "None", dataset);
+                // result.setEvaluationMetric("None");
+                // NLPResult result = new NLPResult(filename, "None", "None");
+                // result.setEvaluationMetric(eval);
                 
                 // This is for score 
                 // if (scorePrediction.containsKey(filename + "#" + dataset + ":::" + eval)) {
@@ -183,8 +189,8 @@ public class TEModelEvalOnNLPTDMS {
                 // String dataset = leaderboard.split(",")[1];
                 // String eval = leaderboard.split(",")[2];
 
-                // String task = leaderboard.split(";")[0].replace(" ", "_");
-                String task = leaderboard.split(";")[0];
+                String task = leaderboard.split(";")[0].replace(" ", "_");
+                // String task = leaderboard.split(";")[0];
                 String dataset = leaderboard.split(";")[1];
                 String eval = leaderboard.split(";")[2];
 
@@ -230,7 +236,13 @@ public class TEModelEvalOnNLPTDMS {
         BufferedReader br20 = new BufferedReader(new FileReader(file20));
         while ((line0 = br10.readLine()) != null) {
             String filename = line0.split("\t")[1];
-            String title = line0.split("\t")[3].substring(0, 50);
+            String title;
+            if (line0.split("\t")[3].length() <50){
+                title = line0.split("\t")[3];
+                continue;
+            }else{
+                title = line0.split("\t")[3].substring(0, 50);
+            }
             if (trainTitle.containsKey(title)) {
                 trainTitle.get(title).add(filename);
             } else {
@@ -258,9 +270,6 @@ public class TEModelEvalOnNLPTDMS {
         }
         return excludeFiles;
     }
-
-
-
     
    public static void main(String[] args) throws IOException, Exception{
        TEModelEvalOnNLPTDMS teEval = new TEModelEvalOnNLPTDMS();

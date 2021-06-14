@@ -195,9 +195,17 @@ public class GenerateTestDataOnPDFPapers {
                     String task = leaderboard.split(";")[0].replace(" ", "_").trim();
                     String dataset = leaderboard.split(";")[1].trim();
                     String eval = leaderboard.split(";")[2].trim();
-
+                    
                     NLPResult result = new NLPResult(filename, task, dataset);
                     result.setEvaluationMetric(eval);
+                    
+                    // TODO: Evaluation, Task, Dataset, Metric ...
+                    // NLPResult result = new NLPResult(filename, task, "None");
+                    // NLPResult result = new NLPResult(filename, "None", dataset);
+                    // result.setEvaluationMetric("None");
+                    // NLPResult result = new NLPResult(filename, "None", "None");
+                    // result.setEvaluationMetric(eval);
+
                     resultsPredictionsTestPapers.get(filename).add(result);
                 }
             }
@@ -259,6 +267,16 @@ public class GenerateTestDataOnPDFPapers {
                 String title = context.substring(0, 50);
                 NLPResult result = new NLPResult(filename, task, dataset);
                 result.setEvaluationMetric(eval);
+
+                // TODO: Evaluation, Task, Dataset, Metric ...
+                // NLPResult result = new NLPResult(filename, task, "None");
+                // NLPResult result = new NLPResult(filename, "None", dataset);
+                // result.setEvaluationMetric("None");
+                // NLPResult result = new NLPResult(filename, "None", "None");
+                // result.setEvaluationMetric(eval);
+
+
+
                 resultsPredictions4TestPapers.get(filename).add(result);
             }
         }

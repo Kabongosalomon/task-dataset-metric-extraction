@@ -76,8 +76,6 @@ public class GrobidPDFProcessor {
 
     public GrobidPDFProcessor() throws IOException, Exception {
         // This is set manually here 
-//         String pGrobidHome = "D:\\ORKG\\NLP\\Try\\task-dataset-metric-extraction\\grobid-0.6.0\\grobid-home\\";
-//        String pGrobidHome = "D:\\ORKG\\NLP\\Try\\task-dataset-metric-extraction";
 
         // get info from config.properties
         prop = new Properties();
@@ -86,7 +84,6 @@ public class GrobidPDFProcessor {
         grobidProperties = prop.getProperty("pGrobidProperties");
 
         GrobidHomeFinder grobidHomeFinder = new GrobidHomeFinder(Arrays.asList(pGrobidHome));
-//        GrobidHomeFinder grobidHomeFinder = new GrobidHomeFinder(Arrays.asList(grobidHome));
         GrobidProperties.getInstance(grobidHomeFinder);
 //        System.out.println(">>>>>>>> GROBID_HOME="+GrobidProperties.get_GROBID_HOME_PATH());
         engine = GrobidFactory.getInstance().createEngine();
@@ -129,106 +126,11 @@ public class GrobidPDFProcessor {
         return val.trim();
     }
 
-//    //filePath store xml files extracted from pdf using grobid
-//    //java -Xmx4G -jar grobid-core/build/libs/grobid-core-0.5.4-SNAPSHOT-onejar.jar -gH grobid-home -dIn /Users/yhou/git/kbp-science/data/pdfFile -dOut /Users/yhou/git/kbp-science/data/pdfFile_txt -exe processFullText
-//    //this method extract cleantext from xml files
-//    private void extractTxtFromXml(String filePath, String outputPath) throws IOException, Exception {
-//        //load english dictionary
-//        String dicPath = BaseDirInfo.getBaseDir() + "resources/en_US.dic";
-//        File file = new File(dicPath);
-//        BufferedReader br = new BufferedReader(new FileReader(file));
-//        String st;
-//        Set<String> dic = new HashSet();
-//        while ((st = br.readLine()) != null) {
-//            dic.add(st.trim().split("/")[0]);
-//        }
-//
-//        //
-//        File output = new File(outputPath);
-//        if (!output.exists()) {
-//            output.mkdir();
-//        }
-//
-//        DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
-//        DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();
-//        XPathFactory xpathFactory = XPathFactory.newInstance();
-//        XPath xpath = xpathFactory.newXPath();
-//        Set<String> xmlFiles = new HashSet();
-//
-//        File folder = new File(filePath);
-//        for (File s : folder.listFiles()) {
-//            if (s.isDirectory()) {
-//                continue;
-//            }
-//            StringBuffer sb = new StringBuffer();
-//            String fileName = s.getName().replace(".tei.xml", "");
-//            xmlFiles.add(fileName);
-//            Document doc = docBuilder.parse(s);
-//            doc.getDocumentElement().normalize();
-//            sb.append("section: title").append("\n");
-//            NodeList nList0 = doc.getElementsByTagName("titleStmt");
-//            for (int i = 0; i < nList0.getLength(); i++) {
-//                Node nNode = nList0.item(i);
-//                if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-//                    Element eElement = (Element) nNode;
-//                    NodeList nList1 = ((Element) eElement).getElementsByTagName("title");
-//                    for (int j = 0; j < nList1.getLength(); j++) {
-//                        Node paragraph = nList1.item(j);
-//                        sb.append(correctMisSpelling(paragraph.getTextContent(), dic)).append("\n");
-//                    }
-//                }
-//            }
-//            NodeList nList = doc.getElementsByTagName("abstract");
-//            sb.append("section: abstract").append("\n");
-//            for (int i = 0; i < nList.getLength(); i++) {
-//                Node nNode = nList.item(i);
-//                if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-//                    Element eElement = (Element) nNode;
-//                    NodeList nList1 = ((Element) eElement).getElementsByTagName("p");
-//                    for (int j = 0; j < nList1.getLength(); j++) {
-//                        Node paragraph = nList1.item(j);
-//                        sb.append(correctMisSpelling(paragraph.getTextContent(), dic)).append("\n");
-//                    }
-//                }
-//            }
-//            Element bodyelement = (Element) xpath.evaluate("//TEI/text/body", doc, XPathConstants.NODE);
-//            NodeList nList1 = bodyelement.getElementsByTagName("div");
-//            for (int i = 0; i < nList1.getLength(); i++) {
-//                Node nNode = nList1.item(i);
-//                if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-//                    Element eElement = (Element) nNode;
-//                    Node head = (Element) xpath.evaluate("head", eElement, XPathConstants.NODE);
-//                    sb.append("section: " + head.getTextContent()).append("\n");
-//                    NodeList nList2 = ((Element) eElement).getElementsByTagName("p");
-//                    for (int j = 0; j < nList2.getLength(); j++) {
-//                        Node paragraph = nList2.item(j);
-//                        String para = "";
-//                        for (int k = 0; k < paragraph.getChildNodes().getLength(); k++) {
-//                            if (paragraph.getChildNodes().item(k).getNodeType() == Node.TEXT_NODE) {
-//                                para = para.trim() + paragraph.getChildNodes().item(k).getTextContent();
-//                            }
-//                        }
-//                        sb.append(correctMisSpelling(para.trim(), dic)).append("\n");
-//                    }
-//                }
-//            }
-//            FileWriter out = new FileWriter(outputPath + "/" + fileName + ".txt");
-//            out.write(sb.toString());
-//            out.close();
-//        }
-//    }
-//
     public String getPDFTitle(String pdfPath) throws IOException, Exception {
         BiblioItem resHeader = new BiblioItem();
         String tei = engine.processHeader(pdfPath, 1, resHeader);
         return resHeader.getTitle();
     }
-//
-//    public String getPDFAbstract(String pdfPath) throws IOException, Exception {
-//        BiblioItem resHeader = new BiblioItem();
-//        String tei = engine.processHeader(pdfPath, 1, resHeader);
-//        return resHeader.getAbstract();
-//    }
 
     //title, abstract, sections
     public Map<String, String> getPDFSectionAndText(String pdfPath) throws IOException, Exception {
@@ -428,18 +330,6 @@ public class GrobidPDFProcessor {
                 // we apply now the figure and table models based on the fulltext labeled output
                 tables = processTables(rese, layoutTokenization.getTokenization());
                 figs = processFigures(rese, layoutTokenization.getTokenization());
-//debug
-//            System.err.println("process tables");
-//            for (Table t : tables) {
-//                System.err.println("tableAll:" + LayoutTokensUtil.normalizeText(t.getLayoutTokens()));
-//                System.err.println("------");
-//            }
-//            System.err.println("process figures");
-//            for (Figure fig : figs) {
-////                System.err.println("figueAll:" + LayoutTokensUtil.normalizeText(fig.getLayoutTokens()));
-//                System.err.println("figueAll:" + normalizeText(fig.getLayoutTokens()));
-//                System.err.println("------");
-//            }
             }
 
             //first round, collect table caption
@@ -562,15 +452,6 @@ public class GrobidPDFProcessor {
             }
 
 //debug info
-//        System.err.println("process tables");
-//        for (NLPLeaderboardTable t : cleanedTable) {
-//                System.err.println("tableTitle:" + LayoutTokensUtil.normalizeText(t.getLayoutTokens()));
-//                System.err.println("tableTitle:" + normalizeText(t.getCaptionLayoutTokens()));
-//                System.err.println("tablecontent:" + normalizeText(t.getContentTokens_Clean()));
-//                System.err.println("bolded number cells info");
-//                getBoldedNumberCellsInfo(t);
-//                System.err.println("------");
-//            }
         } catch (Exception e) {
             System.err.println("can't parse pdf");
         }
@@ -694,7 +575,6 @@ public class GrobidPDFProcessor {
     }
     public List<CachedTable> getTableInfoFromPDF(String pdfPath) throws IOException, Exception {
         List<CachedTable> tables = new ArrayList();
-//        String pdf_table_dir = "D:\\ORKG\\NLP\\Try\\task-dataset-metric-extraction\\data\\pdf_tables";
         String pdf_table_dir = prop.getProperty("projectPath") + "\\" + prop.getProperty("pdf_table");
         String pdftableName = pdfPath.split("/")[pdfPath.split("/").length - 1].replace(".pdf", ".json");
         File tableJsonfile = new File(pdf_table_dir + "/" + pdftableName);
@@ -823,7 +703,6 @@ public class GrobidPDFProcessor {
 
     public String normalizeText(List<LayoutToken> tokens) {
 //        return StringUtils.normalizeSpace(toText(tokens).replace("\n", " "));
-//        return StringUtils.normalizeSpace(toText(tokens));
         return toText(tokens);
     }
 

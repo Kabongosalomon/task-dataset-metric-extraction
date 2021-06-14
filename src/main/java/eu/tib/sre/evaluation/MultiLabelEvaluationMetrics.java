@@ -78,7 +78,11 @@ public class MultiLabelEvaluationMetrics {
     public void loadDatasetAnnotation(String file) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(file));
         String line = "";
+
         while ((line = br.readLine()) != null) {
+            if (line.split("\t").length == 1) {
+                continue;
+            }
             String pdfFileName = line.split("\t")[0];
             String dataset = line.split("\t")[1];
             Set<String> datasetNames = new HashSet();
@@ -95,6 +99,9 @@ public class MultiLabelEvaluationMetrics {
         BufferedReader br = new BufferedReader(new FileReader(file));
         String line = "";
         while ((line = br.readLine()) != null) {
+            if (line.split("\t").length == 1) {
+                continue;
+            }
             String pdfFileName = line.split("\t")[0];
 
             String resultsstr = line.split("\t")[1];
@@ -103,14 +110,22 @@ public class MultiLabelEvaluationMetrics {
                 if (resultsstr.split("\\$")[i].split("#").length < 4) {
                     continue;//the paper doesn't report score
                 }
-                String task = resultsstr.split("\\$")[i].split("#")[0];
-                // String task = resultsstr.split("\\$")[i].split("#")[0].replace(" ", "_").trim();
-
+                // String task = resultsstr.split("\\$")[i].split("#")[0];
+                String task = resultsstr.split("\\$")[i].split("#")[0].replace(" ", "_").trim();
                 String dataset = resultsstr.split("\\$")[i].split("#")[1];
                 String evaluationMatrix = resultsstr.split("\\$")[i].split("#")[2];
                 String scoreStr = resultsstr.split("\\$")[i].split("#")[3];
+
                 NLPResult result = new NLPResult(pdfFileName, task, dataset);
                 result.setEvaluationMetric(evaluationMatrix);
+
+                // TODO: Evaluation, Task, Dataset, Metric ...
+                // NLPResult result = new NLPResult(pdfFileName, task, "None");
+                // NLPResult result = new NLPResult(pdfFileName, "None", dataset);
+                // result.setEvaluationMetric("None");
+                // NLPResult result = new NLPResult(pdfFileName, "None", "None");
+                // result.setEvaluationMetric(evaluationMatrix);
+
                 //extract score
                 Pattern pattern = Pattern.compile("(\\d+\\.\\d+|\\d+|\\d+\\%|\\d+\\.\\d+\\%|\\d+\\.)");
                 Matcher matcher = pattern.matcher(scoreStr);
@@ -568,10 +583,23 @@ public class MultiLabelEvaluationMetrics {
                     // String dataset = leaderboard.split(",")[1].trim();
                     // String eval = leaderboard.split(",")[2].trim();
 
-                    // String task = leaderboard.split(";")[0].replace(" ", "_").trim();
-                    String task = leaderboard.split(";")[0].trim();
+                    String task = leaderboard.split(";")[0].replace(" ", "_").trim();
+                    // String task = leaderboard.split(";")[0].trim();
                     String dataset = leaderboard.split(";")[1].trim();
                     String eval = leaderboard.split(";")[2].trim();
+
+                    // TODO: Evaluation, Task, Dataset, Metric ...
+                    // String task = leaderboard.split(";")[0].trim();
+                    // String dataset = "None";
+                    // String eval = "None";
+
+                    // String task = "None"; 
+                    // String dataset = leaderboard.split(";")[1].trim();;
+                    // String eval = "None";
+
+                    // String task = "None"; 
+                    // String dataset = "None";
+                    // String eval = leaderboard.split(";")[2].trim();
 
                     Set<NLPResult> originalAnnotatedResults = resultAnnotation.get(filename);
                     for (NLPResult re : originalAnnotatedResults) {

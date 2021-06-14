@@ -64,6 +64,10 @@ public class DatasetGeneration {
                 
                 // TODO : File to change for ablation study 
                 String docTEATStr = DocTAET.getDocTAETRepresentation(pdf_file);
+                // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstract(pdf_file);
+                // String docTEATStr = DocTAET.getDocTAETRepresentationAbstract(pdf_file);
+                // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstractExpSetup(pdf_file);
+                // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstractTableInfo(pdf_file);
                 if (docTEATStr.equals("")) {
                     System.err.print("PDF parsing error!");
                 }
@@ -354,6 +358,10 @@ public class DatasetGeneration {
                 j += 1;
                 String str[] = line.split("\t");
 
+                if (str.length <= 1) {
+                    continue;
+                }
+
                 String TDMs[] = str[1].split("\\$");
 
     //            String preTDM = str[1].split("#")[0];
@@ -553,7 +561,7 @@ public class DatasetGeneration {
         return "Done";
     }
 
-    public static String getTestFromFileData(String pdfFile, String b) throws IOException, Exception {
+    public static String getTestFromFileData(String pdfFile, String b, String pathToTDMGold) throws IOException, Exception {
 
         System.out.println("## Now Generating Test Data ##");
 
@@ -569,7 +577,7 @@ public class DatasetGeneration {
             System.err.print("PDF parsing error!");
         }
         else {
-            String labels_file = b+"/tdmGoldLabels.tsv"; // tdmGoldLabels
+            String labels_file = pathToTDMGold+"tdmGoldLabels.tsv"; // tdmGoldLabels
             List<String> labels = FileUtils.readLines(new File(labels_file));
             String pdf_filename = new File(pdfFile).getName();
 
