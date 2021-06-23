@@ -34,7 +34,7 @@ public class TEModelEvalOnNLPTDMS {
 
     public TEModelEvalOnNLPTDMS() throws IOException, Exception {
         prop = new Properties();
-        prop.load(new FileReader("config2.properties"));
+        prop.load(new FileReader("config.properties"));
     }
 
 
@@ -133,10 +133,10 @@ public class TEModelEvalOnNLPTDMS {
             }
             if (Double.valueOf(f2.get(i).split("\t")[0]) > 0.5) {
                 // if (Double.valueOf(f2.get(i).split("\t")[0]) > Double.valueOf(f2.get(i).split("\t")[1])) {            
-                if (leaderboard.equalsIgnoreCase("unknow")) {
-                NLPResult result = new NLPResult(filename, "unknow", "unknow");
-                result.setEvaluationMetric("unknow");
-                result.setEvaluationScore("unknow");
+                if (leaderboard.equalsIgnoreCase("unknown")) {
+                NLPResult result = new NLPResult(filename, "unknown", "unknown");
+                result.setEvaluationMetric("unknown");
+                result.setEvaluationScore("unknown");
                 resultsPredictionsTestPapers.get(filename).add(result);
 
                 } 
@@ -180,7 +180,7 @@ public class TEModelEvalOnNLPTDMS {
         String line3 = "";
         while ((line3 = br3.readLine()) != null) {
             String leaderboard = line3.split("\t")[2];
-            if (leaderboard.equalsIgnoreCase("unknow")) {
+            if (leaderboard.equalsIgnoreCase("unknown")) {
                 continue;
             } else {
                 // TODO I may need to change this 
@@ -188,7 +188,9 @@ public class TEModelEvalOnNLPTDMS {
                 // String task = leaderboard.split(",")[0].replace(" ", "_");
                 // String dataset = leaderboard.split(",")[1];
                 // String eval = leaderboard.split(",")[2];
-
+                if ( leaderboard.split(";").length !=3){
+                    continue;
+                }
                 String task = leaderboard.split(";")[0].replace(" ", "_");
                 // String task = leaderboard.split(";")[0];
                 String dataset = leaderboard.split(";")[1];

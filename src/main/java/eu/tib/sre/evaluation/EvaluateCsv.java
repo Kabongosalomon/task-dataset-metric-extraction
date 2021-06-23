@@ -145,7 +145,7 @@ public class EvaluateCsv {
 //        String[] entries = setString.split(",\\s*");
 //        if (entries.length > 3)
 //            throw new UnsupportedOperationException("Can't handle multiple 'merged' labels");
-//        if (entries[0].equals("'unknow'")) {
+//        if (entries[0].equals("'unknown'")) {
 //            tskSet.add(StringUtils.strip(entries[0], "'"));  // strip leading and trailing quotes
 //            dsSet.add(StringUtils.strip(entries[0], "'"));
 //            metSet.add(StringUtils.strip(entries[0], "'"));

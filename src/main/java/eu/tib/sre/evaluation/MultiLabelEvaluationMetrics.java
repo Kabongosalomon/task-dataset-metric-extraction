@@ -31,7 +31,7 @@ public class MultiLabelEvaluationMetrics {
     static Map<String, Set<String>> datasetAnnotation = new HashMap();
     static Map<String, Set<NLPResult>> resultAnnotation = new HashMap();
     private Properties prop;
-    // static org.slf4j.Logger logger = LoggerFactory.getLogger(MultiLabelEvaluationMetrics.class);
+    static org.slf4j.Logger logger = LoggerFactory.getLogger(MultiLabelEvaluationMetrics.class);
 
     private static final int TP = 0;
     private static final int FP = 1;
@@ -437,19 +437,19 @@ public class MultiLabelEvaluationMetrics {
         double p_micro = precision(tp_all, fp_all);
         double r_micro = recall(tp_all, fn_all);
         double f_micro = f1Score(p_micro, r_micro);
-        sb.append(String.format("Macro-averaged Precision: %.4f ", (macroP / prediction.size())));
-        sb.append(String.format("Macro-averaged Recall: %.4f ", macroR / prediction.size()));
-        sb.append(String.format("Macro-averaged fscore: %.4f ", macroF1 / prediction.size()));
-        sb.append(String.format("Micro-averaged Precision: %.4f ", p_micro));
-        sb.append(String.format("Micro-averaged Recall: %.4f ", r_micro));
-        sb.append(String.format("Micro-averaged fscore: %.4f ", f_micro));
+        // sb.append(String.format("Macro-averaged Precision: %.4f ", (macroP / prediction.size())));
+        // sb.append(String.format("Macro-averaged Recall: %.4f ", macroR / prediction.size()));
+        // sb.append(String.format("Macro-averaged fscore: %.4f ", macroF1 / prediction.size()));
+        // sb.append(String.format("Micro-averaged Precision: %.4f ", p_micro));
+        // sb.append(String.format("Micro-averaged Recall: %.4f ", r_micro));
+        // sb.append(String.format("Micro-averaged fscore: %.4f ", f_micro));
 
-        // sb.append(String.format("Macro-averaged Precision: %.4f ", Math.round((macroP / prediction.size())*10d)/10d));
-        // sb.append(String.format("Macro-averaged Recall: %.4f ", Math.round((macroR / prediction.size())*10d)/10d));
-        // sb.append(String.format("Macro-averaged fscore: %.4f ", Math.round((macroF1 / prediction.size())*10d)/10d));
-        // sb.append(String.format("Micro-averaged Precision: %.4f ", Math.round(p_micro*10d)/10d));
-        // sb.append(String.format("Micro-averaged Recall: %.4f ", Math.round(r_micro*10d)/10d));
-        // sb.append(String.format("Micro-averaged fscore: %.4f ", Math.round(f_micro*10d)/10d));
+        sb.append(String.format("Macro-averaged Precision: %.1f ", Math.round((macroP / prediction.size())*100*10d)/10d));
+        sb.append(String.format("Macro-averaged Recall: %.1f ", Math.round((macroR / prediction.size())*100*10d)/10d));
+        sb.append(String.format("Macro-averaged fscore: %.1f ", Math.round((macroF1 / prediction.size())*100*10d)/10d));
+        sb.append(String.format("Micro-averaged Precision: %.1f ", Math.round(p_micro*100*10d)/10d));
+        sb.append(String.format("Micro-averaged Recall: %.1f ", Math.round(r_micro*100*10d)/10d));
+        sb.append(String.format("Micro-averaged fscore: %.1f ", Math.round(f_micro*100*10d)/10d));
         return sb.toString();
     }
     
@@ -578,10 +578,10 @@ public class MultiLabelEvaluationMetrics {
                 revisedGoldAnnotation_wo_unknow.put(filename, anno1);
             }
             if (goldLabel.equalsIgnoreCase("true")) {
-                if (leaderboard.equalsIgnoreCase("unknow")) {
-                    NLPResult result = new NLPResult(filename, "unknow", "unknow");
-                    result.setEvaluationMetric("unknow");
-                    result.setEvaluationScore("unknow");
+                if (leaderboard.equalsIgnoreCase("unknown")) {
+                    NLPResult result = new NLPResult(filename, "unknown", "unknown");
+                    result.setEvaluationMetric("unknown");
+                    result.setEvaluationScore("unknown");
                     revisedGoldAnnotation.get(filename).add(result);
                     prediction_on_known.remove(filename);
                 } else {
@@ -638,8 +638,8 @@ public class MultiLabelEvaluationMetrics {
 
 
         return "relaxEval + \n" + relaxEvalResult + "\n\nstrictEval\n" + strictEvalResult
-               +"\n\nrelaxEval(wo_unknow)\n" + relaxEvalResult_wo_unknow
-                + "\n\nstrictEval(wo_unknow)\n" + strictEvalResult_wo_unknow;
+               +"\n\nrelaxEval(wo_unknown)\n" + relaxEvalResult_wo_unknow
+                + "\n\nstrictEval(wo_unknown)\n" + strictEvalResult_wo_unknow;
 
         //return relaxEvalResult_wo_unknow;
     }

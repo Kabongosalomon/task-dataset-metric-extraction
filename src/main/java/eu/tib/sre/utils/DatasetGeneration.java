@@ -92,7 +92,7 @@ public class DatasetGeneration {
 
                     for (int i = 0; i < mapLabel.get(pdf_filename).size(); i++) {
 
-                        if (mapLabel.get(pdf_filename).get(i).replace("#", "; ").equals("unknow")){
+                        if (mapLabel.get(pdf_filename).get(i).replace("#", "; ").equals("unknown")){
 
                             if (trueUnk >= numbUnk){
 
@@ -137,7 +137,7 @@ public class DatasetGeneration {
                         if (!trueTDM.contains(label)) {
                             output.write(("false\t" + pdf_filename + "\t" + label.replace("#", "; ") + "\t" + docTEATStr + "\n").getBytes());
 
-                            if (label.replace("#", "; ").equals("unknow")){
+                            if (label.replace("#", "; ").equals("unknown")){
                                 falseUnk = falseUnk + 1;
                             }
 
@@ -213,7 +213,7 @@ public class DatasetGeneration {
 
                     for (int i = 0; i < mapLabel.get(pdf_filename).size(); i++) {
 
-                        if (mapLabel.get(pdf_filename).get(i).replace("#", "; ").equals("unknow")){
+                        if (mapLabel.get(pdf_filename).get(i).replace("#", "; ").equals("unknown")){
 
                             if (trueUnk >= numbUnk){
 
@@ -389,11 +389,11 @@ public class DatasetGeneration {
                     if (mapDict.get(preTDM) >= threshold) {
                         TDM = preTDM;
                     } else {
-                        TDM = "unknow";
+                        TDM = "unknown";
                     }
 
                     ArrayList<String> list;
-                    if(map.containsKey(str[0]) && map.get(str[0]).get(0) != "unknow" ){
+                    if(map.containsKey(str[0]) && map.get(str[0]).get(0) != "unknown" ){
                         // if the key has already been used,
                         // we'll just grab the array list and add the value to it
                         list = map.get(str[0]);
@@ -435,7 +435,7 @@ public class DatasetGeneration {
                 out.println(key);
             }
         }
-        out.println("unknow");
+        out.println("unknown");
         out.close();
         
         br.close();
@@ -501,7 +501,7 @@ public class DatasetGeneration {
                     if (mapDict.get(preTDM) >= threshold) {
                         TDM = preTDM;
                     } else {
-                        TDM = "unknow";
+                        TDM = "unknown";
                     }
 
 //                    ArrayList<Integer> list;

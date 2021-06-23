@@ -137,7 +137,7 @@ public class GenerateTestDataOnPDFPapers {
         String line3 = "";
         while ((line3 = br3.readLine()) != null) {
             String leaderboard = line3.split("\t")[2];
-            if (leaderboard.equalsIgnoreCase("unknow")) {
+            if (leaderboard.equalsIgnoreCase("unknown")) {
                 continue;
             }
             String task = leaderboard.split(";")[0];
@@ -194,10 +194,10 @@ public class GenerateTestDataOnPDFPapers {
                 resultsPredictionsTestPapers.put(filename, results);
             }
             if (Double.valueOf(f2.get(i).split("\t")[0]) > 0.5) {
-                if (leaderboard.equalsIgnoreCase("unknow")) {
-                    NLPResult result = new NLPResult(filename, "unknow", "unknow");
-                    result.setEvaluationMetric("unknow");
-                    result.setEvaluationScore("unknow");
+                if (leaderboard.equalsIgnoreCase("unknown")) {
+                    NLPResult result = new NLPResult(filename, "unknown", "unknow");
+                    result.setEvaluationMetric("unknown");
+                    result.setEvaluationScore("unknown");
                     resultsPredictionsTestPapers.get(filename).add(result);
                 } else {
                     // String task = leaderboard.split(",")[0].replace(" ", "_").trim();
@@ -260,7 +260,7 @@ public class GenerateTestDataOnPDFPapers {
             String filename = f1.get(i).split("\t")[1];
             String leaderboard = f1.get(i).split("\t")[2];
             String context = f1.get(i).split("\t")[3];
-            if (leaderboard.equalsIgnoreCase("unknow")) {
+            if (leaderboard.equalsIgnoreCase("unknown")) {
                 continue;
             }
             if (!resultsPredictions4TestPapers.containsKey(filename)) {

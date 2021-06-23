@@ -210,7 +210,7 @@ public class TwoFoldCrossValidation {
             String label = dataLine.split("\t")[2];
 
             if (mode.equals("train")) {
-                if (label.equals("unknow") && dataLine.split("\t")[0].equals("true")) {
+                if (label.equals("unknown") && dataLine.split("\t")[0].equals("true")) {
                     
 
                         if (trueUnk.intValue() >= numbUnk){
@@ -231,7 +231,7 @@ public class TwoFoldCrossValidation {
                             continue;
                         }
 
-                } else if (label.equals("unknow") && dataLine.split("\t")[0].equals("false")) {
+                } else if (label.equals("unknown") && dataLine.split("\t")[0].equals("false")) {
                     falseUnk.set(falseUnk.intValue() +1);
                 }
             
@@ -264,7 +264,7 @@ public class TwoFoldCrossValidation {
 //             // Update the count for one more false label
 //             limit += 1;
 
-//             if (tdm.equals("unknow") && mode.equals("train")) {
+//             if (tdm.equals("unknown") && mode.equals("train")) {
 // //                falseUnk = falseUnk + 1;
 //                 falseUnk.set(falseUnk.intValue() +1);
 //             }
