@@ -1,0 +1,62 @@
+Directory ../data/paperwithcode/new/60Neg800unk/twofoldwithunk/fold1/models/cased_L-12_H-768_A-12_XLNet/ Exist
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:297: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From run_sci_classifier.py:751: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+WARNING:tensorflow:From run_sci_classifier.py:516: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+W0620 15:30:36.106881 139643977131840 module_wrapper.py:139] From run_sci_classifier.py:516: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+WARNING:tensorflow:From run_sci_classifier.py:516: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+W0620 15:30:36.107216 139643977131840 module_wrapper.py:139] From run_sci_classifier.py:516: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+WARNING:tensorflow:From run_sci_classifier.py:524: The name tf.gfile.Exists is deprecated. Please use tf.io.gfile.exists instead.
+
+W0620 15:30:36.107498 139643977131840 module_wrapper.py:139] From run_sci_classifier.py:524: The name tf.gfile.Exists is deprecated. Please use tf.io.gfile.exists instead.
+
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:29: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+W0620 15:30:36.164541 139643977131840 module_wrapper.py:139] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:29: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:38: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+W0620 15:30:36.164796 139643977131840 module_wrapper.py:139] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:38: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+INFO:tensorflow:Single device mode.
+I0620 15:30:36.164930 139643977131840 model_utils.py:38] Single device mode.
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+W0620 15:30:36.165086 139643977131840 lazy_loader.py:50] 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+INFO:tensorflow:Using config: {'_model_dir': '../data/paperwithcode/new/60Neg800unk/twofoldwithunk/fold1/models/cased_L-12_H-768_A-12_XLNet/', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': 500, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 0, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f00e86775c0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1, '_tpu_config': TPUConfig(iterations_per_loop=500, num_shards=1, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_cluster': None}
+I0620 15:30:38.091421 139643977131840 estimator.py:212] Using config: {'_model_dir': '../data/paperwithcode/new/60Neg800unk/twofoldwithunk/fold1/models/cased_L-12_H-768_A-12_XLNet/', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': 500, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 0, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f00e86775c0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1, '_tpu_config': TPUConfig(iterations_per_loop=500, num_shards=1, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_cluster': None}
+WARNING:tensorflow:Estimator's model_fn (<function get_model_fn.<locals>.model_fn at 0x7f00e8670c80>) includes params argument, but params are not passed to Estimator.
+W0620 15:30:38.092763 139643977131840 model_fn.py:630] Estimator's model_fn (<function get_model_fn.<locals>.model_fn at 0x7f00e8670c80>) includes params argument, but params are not passed to Estimator.
+Traceback (most recent call last):
+  File "run_sci_classifier.py", line 751, in <module>
+    tf.app.run()
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/absl/app.py", line 303, in run
+    _run_main(main, args)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "run_sci_classifier.py", line 605, in main
+    tf.logging.info("Num of eval samples: {}".format(len(eval_examples)))
+UnboundLocalError: local variable 'eval_examples' referenced before assignment
+srun: error: devbox3: task 0: Exited with exit code 1

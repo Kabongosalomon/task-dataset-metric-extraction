@@ -1,0 +1,36 @@
+Directory ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold1/models/XLNet/ Created
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:297: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From run_sci_classifier.py:744: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+WARNING:tensorflow:From run_sci_classifier.py:516: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+W0426 19:30:53.944487 139674276271936 module_wrapper.py:139] From run_sci_classifier.py:516: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+WARNING:tensorflow:From run_sci_classifier.py:516: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+W0426 19:30:53.944777 139674276271936 module_wrapper.py:139] From run_sci_classifier.py:516: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+WARNING:tensorflow:From run_sci_classifier.py:524: The name tf.gfile.Exists is deprecated. Please use tf.io.gfile.exists instead.
+
+W0426 19:30:53.945054 139674276271936 module_wrapper.py:139] From run_sci_classifier.py:524: The name tf.gfile.Exists is deprecated. Please use tf.io.gfile.exists instead.
+
+Traceback (most recent call last):
+  File "run_sci_classifier.py", line 744, in <module>
+    tf.app.run()
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/absl/app.py", line 303, in run
+    _run_main(main, args)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "run_sci_classifier.py", line 524, in main
+    if not tf.gfile.Exists(predict_dir):
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/lib/io/file_io.py", line 262, in file_exists
+    return file_exists_v2(filename)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/lib/io/file_io.py", line 280, in file_exists_v2
+    pywrap_tensorflow.FileExists(compat.as_bytes(path))
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/util/compat.py", line 71, in as_bytes
+    (bytes_or_text,))
+TypeError: Expected binary or unicode string, got None
+srun: error: devbox3: task 0: Exited with exit code 1

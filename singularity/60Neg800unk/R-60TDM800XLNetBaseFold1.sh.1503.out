@@ -1,0 +1,6 @@
+Directory ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold1/models/cased_L-12_H-768_A-12_XLNet/ Exist
+Traceback (most recent call last):
+  File "run_sci_classifier.py", line 22, in <module>
+    import sentencepiece as spm
+ModuleNotFoundError: No module named 'sentencepiece'
+srun: error: devbox4: task 0: Exited with exit code 1

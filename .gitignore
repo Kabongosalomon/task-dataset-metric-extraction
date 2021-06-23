@@ -149,5 +149,10 @@ bin/
 *.pdf
 *.zip
 *.bin
+*sif
 
 grobid.log.2021-01-23
+
+XLNet/
+Longformer/
+BERT/

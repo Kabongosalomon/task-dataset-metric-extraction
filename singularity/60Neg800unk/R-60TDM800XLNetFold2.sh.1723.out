@@ -1,0 +1,1786 @@
+Directory ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/ Exist
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:297: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From run_sci_classifier.py:744: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+WARNING:tensorflow:From run_sci_classifier.py:516: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+W0427 10:22:05.769488 139690383447872 module_wrapper.py:139] From run_sci_classifier.py:516: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+WARNING:tensorflow:From run_sci_classifier.py:516: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+W0427 10:22:05.769767 139690383447872 module_wrapper.py:139] From run_sci_classifier.py:516: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+WARNING:tensorflow:From run_sci_classifier.py:524: The name tf.gfile.Exists is deprecated. Please use tf.io.gfile.exists instead.
+
+W0427 10:22:05.770041 139690383447872 module_wrapper.py:139] From run_sci_classifier.py:524: The name tf.gfile.Exists is deprecated. Please use tf.io.gfile.exists instead.
+
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:29: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+W0427 10:22:05.832331 139690383447872 module_wrapper.py:139] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:29: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:38: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+W0427 10:22:05.832641 139690383447872 module_wrapper.py:139] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:38: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+INFO:tensorflow:Single device mode.
+I0427 10:22:05.832781 139690383447872 model_utils.py:38] Single device mode.
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+W0427 10:22:05.832947 139690383447872 lazy_loader.py:50] 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+INFO:tensorflow:Using config: {'_model_dir': '../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': 500, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 0, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f0bcad6b630>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1, '_tpu_config': TPUConfig(iterations_per_loop=500, num_shards=1, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_cluster': None}
+I0427 10:22:06.527729 139690383447872 estimator.py:212] Using config: {'_model_dir': '../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': 500, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 0, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f0bcad6b630>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1, '_tpu_config': TPUConfig(iterations_per_loop=500, num_shards=1, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_cluster': None}
+WARNING:tensorflow:Estimator's model_fn (<function get_model_fn.<locals>.model_fn at 0x7f0bcad6f7b8>) includes params argument, but params are not passed to Estimator.
+W0427 10:22:06.529226 139690383447872 model_fn.py:630] Estimator's model_fn (<function get_model_fn.<locals>.model_fn at 0x7f0bcad6f7b8>) includes params argument, but params are not passed to Estimator.
+INFO:tensorflow:Use tfrecord file ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/spiece.model.len-512.train.tf_record
+I0427 10:22:06.529862 139690383447872 run_sci_classifier.py:578] Use tfrecord file ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/spiece.model.len-512.train.tf_record
+INFO:tensorflow:Num of train samples: 143714
+I0427 10:22:11.748990 139690383447872 run_sci_classifier.py:582] Num of train samples: 143714
+WARNING:tensorflow:From run_sci_classifier.py:318: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+W0427 10:22:11.749624 139690383447872 module_wrapper.py:139] From run_sci_classifier.py:318: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+INFO:tensorflow:Input tfrecord file ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/spiece.model.len-512.train.tf_record
+I0427 10:22:11.749872 139690383447872 run_sci_classifier.py:327] Input tfrecord file ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/spiece.model.len-512.train.tf_record
+WARNING:tensorflow:From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0427 10:22:16.665446 139690383447872 deprecation.py:323] From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+WARNING:tensorflow:From run_sci_classifier.py:372: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+W0427 10:22:16.709686 139690383447872 deprecation.py:323] From run_sci_classifier.py:372: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+WARNING:tensorflow:From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/contrib/data/python/ops/batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+W0427 10:22:16.709925 139690383447872 deprecation.py:323] From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/contrib/data/python/ops/batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+WARNING:tensorflow:From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+W0427 10:22:16.769488 139690383447872 module_wrapper.py:139] From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+INFO:tensorflow:Calling model_fn.
+I0427 10:22:16.883652 139690383447872 estimator.py:1148] Calling model_fn.
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/xlnet.py:63: The name tf.gfile.Open is deprecated. Please use tf.io.gfile.GFile instead.
+
+W0427 10:22:16.910533 139690383447872 module_wrapper.py:139] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/xlnet.py:63: The name tf.gfile.Open is deprecated. Please use tf.io.gfile.GFile instead.
+
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/xlnet.py:220: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W0427 10:22:16.912257 139690383447872 module_wrapper.py:139] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/xlnet.py:220: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/xlnet.py:220: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+W0427 10:22:16.912458 139690383447872 module_wrapper.py:139] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/xlnet.py:220: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+INFO:tensorflow:memory input None
+I0427 10:22:16.912744 139690383447872 modeling.py:453] memory input None
+INFO:tensorflow:Use float type <dtype: 'float32'>
+I0427 10:22:16.912879 139690383447872 modeling.py:455] Use float type <dtype: 'float32'>
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/modeling.py:460: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+W0427 10:22:16.913133 139690383447872 module_wrapper.py:139] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/modeling.py:460: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/modeling.py:535: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+W0427 10:22:16.977266 139690383447872 deprecation.py:323] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/modeling.py:535: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+WARNING:tensorflow:From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/layers/core.py:271: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W0427 10:22:16.977880 139690383447872 deprecation.py:323] From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/layers/core.py:271: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/modeling.py:67: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+W0427 10:22:17.199690 139690383447872 deprecation.py:323] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/modeling.py:67: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From run_sci_classifier.py:394: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+W0427 10:22:19.719535 139690383447872 module_wrapper.py:139] From run_sci_classifier.py:394: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+INFO:tensorflow:#params: 117309698
+I0427 10:22:19.724902 139690383447872 run_sci_classifier.py:395] #params: 117309698
+INFO:tensorflow:Initialize from the ckpt ./model/xlnet_cased_L-12_H-768_A-12/xlnet_model.ckpt
+I0427 10:22:19.725075 139690383447872 model_utils.py:73] Initialize from the ckpt ./model/xlnet_cased_L-12_H-768_A-12/xlnet_model.ckpt
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:84: The name tf.train.init_from_checkpoint is deprecated. Please use tf.compat.v1.train.init_from_checkpoint instead.
+
+W0427 10:22:19.728591 139690383447872 module_wrapper.py:139] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:84: The name tf.train.init_from_checkpoint is deprecated. Please use tf.compat.v1.train.init_from_checkpoint instead.
+
+INFO:tensorflow:**** Global Variables ****
+I0427 10:22:20.104130 139690383447872 model_utils.py:87] **** Global Variables ****
+INFO:tensorflow:  name = model/transformer/r_w_bias:0, shape = (12, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.104351 139690383447872 model_utils.py:93]   name = model/transformer/r_w_bias:0, shape = (12, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/r_r_bias:0, shape = (12, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.104507 139690383447872 model_utils.py:93]   name = model/transformer/r_r_bias:0, shape = (12, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/word_embedding/lookup_table:0, shape = (32000, 768), *INIT_FROM_CKPT*
+I0427 10:22:20.104632 139690383447872 model_utils.py:93]   name = model/transformer/word_embedding/lookup_table:0, shape = (32000, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/r_s_bias:0, shape = (12, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.104750 139690383447872 model_utils.py:93]   name = model/transformer/r_s_bias:0, shape = (12, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/seg_embed:0, shape = (12, 2, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.104864 139690383447872 model_utils.py:93]   name = model/transformer/seg_embed:0, shape = (12, 2, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.104956 139690383447872 model_utils.py:93]   name = model/transformer/layer_0/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.105076 139690383447872 model_utils.py:93]   name = model/transformer/layer_0/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.105188 139690383447872 model_utils.py:93]   name = model/transformer/layer_0/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.105297 139690383447872 model_utils.py:93]   name = model/transformer/layer_0/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.105407 139690383447872 model_utils.py:93]   name = model/transformer/layer_0/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.105514 139690383447872 model_utils.py:93]   name = model/transformer/layer_0/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.105618 139690383447872 model_utils.py:93]   name = model/transformer/layer_0/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0427 10:22:20.105719 139690383447872 model_utils.py:93]   name = model/transformer/layer_0/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0427 10:22:20.105824 139690383447872 model_utils.py:93]   name = model/transformer/layer_0/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0427 10:22:20.105925 139690383447872 model_utils.py:93]   name = model/transformer/layer_0/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.106029 139690383447872 model_utils.py:93]   name = model/transformer/layer_0/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.106149 139690383447872 model_utils.py:93]   name = model/transformer/layer_0/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.106255 139690383447872 model_utils.py:93]   name = model/transformer/layer_0/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.106362 139690383447872 model_utils.py:93]   name = model/transformer/layer_1/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.106478 139690383447872 model_utils.py:93]   name = model/transformer/layer_1/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.106591 139690383447872 model_utils.py:93]   name = model/transformer/layer_1/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.106709 139690383447872 model_utils.py:93]   name = model/transformer/layer_1/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.106821 139690383447872 model_utils.py:93]   name = model/transformer/layer_1/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.106945 139690383447872 model_utils.py:93]   name = model/transformer/layer_1/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.107053 139690383447872 model_utils.py:93]   name = model/transformer/layer_1/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0427 10:22:20.107161 139690383447872 model_utils.py:93]   name = model/transformer/layer_1/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0427 10:22:20.107273 139690383447872 model_utils.py:93]   name = model/transformer/layer_1/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0427 10:22:20.107392 139690383447872 model_utils.py:93]   name = model/transformer/layer_1/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.107502 139690383447872 model_utils.py:93]   name = model/transformer/layer_1/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.107601 139690383447872 model_utils.py:93]   name = model/transformer/layer_1/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.107711 139690383447872 model_utils.py:93]   name = model/transformer/layer_1/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.107812 139690383447872 model_utils.py:93]   name = model/transformer/layer_2/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.107959 139690383447872 model_utils.py:93]   name = model/transformer/layer_2/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.108076 139690383447872 model_utils.py:93]   name = model/transformer/layer_2/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.108190 139690383447872 model_utils.py:93]   name = model/transformer/layer_2/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.108305 139690383447872 model_utils.py:93]   name = model/transformer/layer_2/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.108420 139690383447872 model_utils.py:93]   name = model/transformer/layer_2/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.108531 139690383447872 model_utils.py:93]   name = model/transformer/layer_2/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0427 10:22:20.108640 139690383447872 model_utils.py:93]   name = model/transformer/layer_2/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0427 10:22:20.108752 139690383447872 model_utils.py:93]   name = model/transformer/layer_2/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0427 10:22:20.108858 139690383447872 model_utils.py:93]   name = model/transformer/layer_2/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.108971 139690383447872 model_utils.py:93]   name = model/transformer/layer_2/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.109084 139690383447872 model_utils.py:93]   name = model/transformer/layer_2/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.109185 139690383447872 model_utils.py:93]   name = model/transformer/layer_2/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.109285 139690383447872 model_utils.py:93]   name = model/transformer/layer_3/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.109392 139690383447872 model_utils.py:93]   name = model/transformer/layer_3/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.109498 139690383447872 model_utils.py:93]   name = model/transformer/layer_3/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.109605 139690383447872 model_utils.py:93]   name = model/transformer/layer_3/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.109711 139690383447872 model_utils.py:93]   name = model/transformer/layer_3/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.109817 139690383447872 model_utils.py:93]   name = model/transformer/layer_3/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.109917 139690383447872 model_utils.py:93]   name = model/transformer/layer_3/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0427 10:22:20.110017 139690383447872 model_utils.py:93]   name = model/transformer/layer_3/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0427 10:22:20.110125 139690383447872 model_utils.py:93]   name = model/transformer/layer_3/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0427 10:22:20.110226 139690383447872 model_utils.py:93]   name = model/transformer/layer_3/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.110332 139690383447872 model_utils.py:93]   name = model/transformer/layer_3/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.110433 139690383447872 model_utils.py:93]   name = model/transformer/layer_3/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.110533 139690383447872 model_utils.py:93]   name = model/transformer/layer_3/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.110632 139690383447872 model_utils.py:93]   name = model/transformer/layer_4/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.110738 139690383447872 model_utils.py:93]   name = model/transformer/layer_4/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.110845 139690383447872 model_utils.py:93]   name = model/transformer/layer_4/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.110951 139690383447872 model_utils.py:93]   name = model/transformer/layer_4/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.111056 139690383447872 model_utils.py:93]   name = model/transformer/layer_4/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.111162 139690383447872 model_utils.py:93]   name = model/transformer/layer_4/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.111263 139690383447872 model_utils.py:93]   name = model/transformer/layer_4/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0427 10:22:20.111364 139690383447872 model_utils.py:93]   name = model/transformer/layer_4/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0427 10:22:20.111469 139690383447872 model_utils.py:93]   name = model/transformer/layer_4/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0427 10:22:20.111569 139690383447872 model_utils.py:93]   name = model/transformer/layer_4/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.111674 139690383447872 model_utils.py:93]   name = model/transformer/layer_4/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.111776 139690383447872 model_utils.py:93]   name = model/transformer/layer_4/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.111904 139690383447872 model_utils.py:93]   name = model/transformer/layer_4/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.112012 139690383447872 model_utils.py:93]   name = model/transformer/layer_5/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.112126 139690383447872 model_utils.py:93]   name = model/transformer/layer_5/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.112239 139690383447872 model_utils.py:93]   name = model/transformer/layer_5/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.112352 139690383447872 model_utils.py:93]   name = model/transformer/layer_5/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.112466 139690383447872 model_utils.py:93]   name = model/transformer/layer_5/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.112579 139690383447872 model_utils.py:93]   name = model/transformer/layer_5/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.112687 139690383447872 model_utils.py:93]   name = model/transformer/layer_5/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0427 10:22:20.112793 139690383447872 model_utils.py:93]   name = model/transformer/layer_5/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0427 10:22:20.112904 139690383447872 model_utils.py:93]   name = model/transformer/layer_5/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0427 10:22:20.113012 139690383447872 model_utils.py:93]   name = model/transformer/layer_5/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.113128 139690383447872 model_utils.py:93]   name = model/transformer/layer_5/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.113229 139690383447872 model_utils.py:93]   name = model/transformer/layer_5/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.113329 139690383447872 model_utils.py:93]   name = model/transformer/layer_5/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.113430 139690383447872 model_utils.py:93]   name = model/transformer/layer_6/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.113540 139690383447872 model_utils.py:93]   name = model/transformer/layer_6/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.113648 139690383447872 model_utils.py:93]   name = model/transformer/layer_6/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.113755 139690383447872 model_utils.py:93]   name = model/transformer/layer_6/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.113861 139690383447872 model_utils.py:93]   name = model/transformer/layer_6/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.113968 139690383447872 model_utils.py:93]   name = model/transformer/layer_6/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.114070 139690383447872 model_utils.py:93]   name = model/transformer/layer_6/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0427 10:22:20.114170 139690383447872 model_utils.py:93]   name = model/transformer/layer_6/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0427 10:22:20.114276 139690383447872 model_utils.py:93]   name = model/transformer/layer_6/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0427 10:22:20.114376 139690383447872 model_utils.py:93]   name = model/transformer/layer_6/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.114481 139690383447872 model_utils.py:93]   name = model/transformer/layer_6/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.114582 139690383447872 model_utils.py:93]   name = model/transformer/layer_6/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.114682 139690383447872 model_utils.py:93]   name = model/transformer/layer_6/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.114781 139690383447872 model_utils.py:93]   name = model/transformer/layer_7/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.114888 139690383447872 model_utils.py:93]   name = model/transformer/layer_7/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.114993 139690383447872 model_utils.py:93]   name = model/transformer/layer_7/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.115100 139690383447872 model_utils.py:93]   name = model/transformer/layer_7/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.115207 139690383447872 model_utils.py:93]   name = model/transformer/layer_7/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.115314 139690383447872 model_utils.py:93]   name = model/transformer/layer_7/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.115415 139690383447872 model_utils.py:93]   name = model/transformer/layer_7/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0427 10:22:20.115515 139690383447872 model_utils.py:93]   name = model/transformer/layer_7/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0427 10:22:20.115622 139690383447872 model_utils.py:93]   name = model/transformer/layer_7/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0427 10:22:20.115722 139690383447872 model_utils.py:93]   name = model/transformer/layer_7/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.115826 139690383447872 model_utils.py:93]   name = model/transformer/layer_7/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.115961 139690383447872 model_utils.py:93]   name = model/transformer/layer_7/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.116069 139690383447872 model_utils.py:93]   name = model/transformer/layer_7/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.116175 139690383447872 model_utils.py:93]   name = model/transformer/layer_8/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.116289 139690383447872 model_utils.py:93]   name = model/transformer/layer_8/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.116402 139690383447872 model_utils.py:93]   name = model/transformer/layer_8/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.116515 139690383447872 model_utils.py:93]   name = model/transformer/layer_8/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.116628 139690383447872 model_utils.py:93]   name = model/transformer/layer_8/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.116742 139690383447872 model_utils.py:93]   name = model/transformer/layer_8/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.116851 139690383447872 model_utils.py:93]   name = model/transformer/layer_8/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0427 10:22:20.116960 139690383447872 model_utils.py:93]   name = model/transformer/layer_8/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0427 10:22:20.117081 139690383447872 model_utils.py:93]   name = model/transformer/layer_8/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0427 10:22:20.117181 139690383447872 model_utils.py:93]   name = model/transformer/layer_8/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.117285 139690383447872 model_utils.py:93]   name = model/transformer/layer_8/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.117385 139690383447872 model_utils.py:93]   name = model/transformer/layer_8/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.117484 139690383447872 model_utils.py:93]   name = model/transformer/layer_8/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.117584 139690383447872 model_utils.py:93]   name = model/transformer/layer_9/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.117691 139690383447872 model_utils.py:93]   name = model/transformer/layer_9/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.117797 139690383447872 model_utils.py:93]   name = model/transformer/layer_9/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.117903 139690383447872 model_utils.py:93]   name = model/transformer/layer_9/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.118009 139690383447872 model_utils.py:93]   name = model/transformer/layer_9/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.118115 139690383447872 model_utils.py:93]   name = model/transformer/layer_9/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.118216 139690383447872 model_utils.py:93]   name = model/transformer/layer_9/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0427 10:22:20.118317 139690383447872 model_utils.py:93]   name = model/transformer/layer_9/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0427 10:22:20.118422 139690383447872 model_utils.py:93]   name = model/transformer/layer_9/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0427 10:22:20.118524 139690383447872 model_utils.py:93]   name = model/transformer/layer_9/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.118629 139690383447872 model_utils.py:93]   name = model/transformer/layer_9/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.118730 139690383447872 model_utils.py:93]   name = model/transformer/layer_9/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.118851 139690383447872 model_utils.py:93]   name = model/transformer/layer_9/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.118957 139690383447872 model_utils.py:93]   name = model/transformer/layer_10/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.119072 139690383447872 model_utils.py:93]   name = model/transformer/layer_10/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.119185 139690383447872 model_utils.py:93]   name = model/transformer/layer_10/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.119299 139690383447872 model_utils.py:93]   name = model/transformer/layer_10/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.119411 139690383447872 model_utils.py:93]   name = model/transformer/layer_10/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.119525 139690383447872 model_utils.py:93]   name = model/transformer/layer_10/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.119632 139690383447872 model_utils.py:93]   name = model/transformer/layer_10/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0427 10:22:20.119739 139690383447872 model_utils.py:93]   name = model/transformer/layer_10/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0427 10:22:20.119876 139690383447872 model_utils.py:93]   name = model/transformer/layer_10/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0427 10:22:20.119990 139690383447872 model_utils.py:93]   name = model/transformer/layer_10/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.120107 139690383447872 model_utils.py:93]   name = model/transformer/layer_10/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.120218 139690383447872 model_utils.py:93]   name = model/transformer/layer_10/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.120331 139690383447872 model_utils.py:93]   name = model/transformer/layer_10/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.120443 139690383447872 model_utils.py:93]   name = model/transformer/layer_11/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.120561 139690383447872 model_utils.py:93]   name = model/transformer/layer_11/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.120678 139690383447872 model_utils.py:93]   name = model/transformer/layer_11/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.120796 139690383447872 model_utils.py:93]   name = model/transformer/layer_11/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 10:22:20.120914 139690383447872 model_utils.py:93]   name = model/transformer/layer_11/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.121042 139690383447872 model_utils.py:93]   name = model/transformer/layer_11/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.121149 139690383447872 model_utils.py:93]   name = model/transformer/layer_11/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0427 10:22:20.121255 139690383447872 model_utils.py:93]   name = model/transformer/layer_11/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0427 10:22:20.121367 139690383447872 model_utils.py:93]   name = model/transformer/layer_11/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0427 10:22:20.121474 139690383447872 model_utils.py:93]   name = model/transformer/layer_11/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.121587 139690383447872 model_utils.py:93]   name = model/transformer/layer_11/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.121696 139690383447872 model_utils.py:93]   name = model/transformer/layer_11/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 10:22:20.121804 139690383447872 model_utils.py:93]   name = model/transformer/layer_11/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/sequnece_summary/summary/kernel:0, shape = (768, 768)
+I0427 10:22:20.121911 139690383447872 model_utils.py:93]   name = model/sequnece_summary/summary/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = model/sequnece_summary/summary/bias:0, shape = (768,)
+I0427 10:22:20.122023 139690383447872 model_utils.py:93]   name = model/sequnece_summary/summary/bias:0, shape = (768,)
+INFO:tensorflow:  name = model/classification_sci/logit/kernel:0, shape = (768, 2)
+I0427 10:22:20.122132 139690383447872 model_utils.py:93]   name = model/classification_sci/logit/kernel:0, shape = (768, 2)
+INFO:tensorflow:  name = model/classification_sci/logit/bias:0, shape = (2,)
+I0427 10:22:20.122244 139690383447872 model_utils.py:93]   name = model/classification_sci/logit/bias:0, shape = (2,)
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:98: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+W0427 10:22:20.122431 139690383447872 module_wrapper.py:139] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:98: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:110: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+W0427 10:22:20.125419 139690383447872 module_wrapper.py:139] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:110: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:125: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0427 10:22:20.133531 139690383447872 deprecation.py:323] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:125: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:133: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+W0427 10:22:20.134225 139690383447872 module_wrapper.py:139] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:133: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+INFO:tensorflow:Done calling model_fn.
+I0427 10:22:25.816069 139690383447872 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+I0427 10:22:25.817250 139690383447872 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+I0427 10:22:28.169111 139690383447872 monitored_session.py:240] Graph was finalized.
+2021-04-27 10:22:28.169605: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-04-27 10:22:28.208104: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200000000 Hz
+2021-04-27 10:22:28.212659: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x560e1c91d7f0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-04-27 10:22:28.212693: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-04-27 10:22:28.217756: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-04-27 10:22:29.084559: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x560e1c8b8b90 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-04-27 10:22:29.084589: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-04-27 10:22:29.085352: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:1c:00.0
+2021-04-27 10:22:29.089698: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-04-27 10:22:29.131213: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-04-27 10:22:29.154353: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-04-27 10:22:29.166912: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-04-27 10:22:29.214396: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-04-27 10:22:29.245101: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-04-27 10:22:29.335373: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-04-27 10:22:29.336856: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-04-27 10:22:29.339483: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-04-27 10:22:29.340602: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-04-27 10:22:29.340622: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-04-27 10:22:29.340632: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-04-27 10:22:29.343429: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10320 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:1c:00.0, compute capability: 7.5)
+INFO:tensorflow:Restoring parameters from ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-56000
+I0427 10:22:29.360862 139690383447872 saver.py:1284] Restoring parameters from ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-56000
+WARNING:tensorflow:From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/training/saver.py:1069: get_checkpoint_mtimes (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file utilities to get mtimes.
+W0427 10:22:53.997177 139690383447872 deprecation.py:323] From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/training/saver.py:1069: get_checkpoint_mtimes (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file utilities to get mtimes.
+INFO:tensorflow:Running local_init_op.
+I0427 10:22:55.002667 139690383447872 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0427 10:22:55.301898 139690383447872 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 56000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 10:23:02.120358 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 56000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+2021-04-27 10:23:35.973137: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+INFO:tensorflow:loss = 6.319551e-05, step = 56000
+I0427 10:23:37.445892 139690383447872 basic_session_run_hooks.py:262] loss = 6.319551e-05, step = 56000
+INFO:tensorflow:global_step/sec: 1.61248
+I0427 10:24:39.461310 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.61248
+INFO:tensorflow:loss = 0.00044280526, step = 56100 (62.020 sec)
+I0427 10:24:39.465734 139690383447872 basic_session_run_hooks.py:260] loss = 0.00044280526, step = 56100 (62.020 sec)
+INFO:tensorflow:global_step/sec: 1.83838
+I0427 10:25:33.856837 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.83838
+INFO:tensorflow:loss = 2.9026802e-05, step = 56200 (54.392 sec)
+I0427 10:25:33.858096 139690383447872 basic_session_run_hooks.py:260] loss = 2.9026802e-05, step = 56200 (54.392 sec)
+INFO:tensorflow:global_step/sec: 1.82386
+I0427 10:26:28.685612 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82386
+INFO:tensorflow:loss = 4.072793e-05, step = 56300 (54.829 sec)
+I0427 10:26:28.686979 139690383447872 basic_session_run_hooks.py:260] loss = 4.072793e-05, step = 56300 (54.829 sec)
+INFO:tensorflow:global_step/sec: 1.82076
+I0427 10:27:23.608443 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82076
+INFO:tensorflow:loss = 0.00018991677, step = 56400 (54.927 sec)
+I0427 10:27:23.613871 139690383447872 basic_session_run_hooks.py:260] loss = 0.00018991677, step = 56400 (54.927 sec)
+INFO:tensorflow:Saving checkpoints for 56500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 10:28:17.987916 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 56500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-56500 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 10:28:41.201647 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-56500 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.26154
+I0427 10:28:42.875851 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.26154
+INFO:tensorflow:loss = 0.0006133936, step = 56500 (79.263 sec)
+I0427 10:28:42.876998 139690383447872 basic_session_run_hooks.py:260] loss = 0.0006133936, step = 56500 (79.263 sec)
+INFO:tensorflow:global_step/sec: 1.83839
+I0427 10:29:37.271323 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.83839
+INFO:tensorflow:loss = 3.3874196e-05, step = 56600 (54.397 sec)
+I0427 10:29:37.274454 139690383447872 basic_session_run_hooks.py:260] loss = 3.3874196e-05, step = 56600 (54.397 sec)
+INFO:tensorflow:global_step/sec: 1.82311
+I0427 10:30:32.122507 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82311
+INFO:tensorflow:loss = 0.00026946273, step = 56700 (54.850 sec)
+I0427 10:30:32.123971 139690383447872 basic_session_run_hooks.py:260] loss = 0.00026946273, step = 56700 (54.850 sec)
+INFO:tensorflow:global_step/sec: 1.82136
+I0427 10:31:27.026612 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82136
+INFO:tensorflow:loss = 0.0004355067, step = 56800 (54.904 sec)
+I0427 10:31:27.028026 139690383447872 basic_session_run_hooks.py:260] loss = 0.0004355067, step = 56800 (54.904 sec)
+INFO:tensorflow:global_step/sec: 1.82104
+I0427 10:32:21.940438 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82104
+INFO:tensorflow:loss = 0.003694766, step = 56900 (54.915 sec)
+I0427 10:32:21.942991 139690383447872 basic_session_run_hooks.py:260] loss = 0.003694766, step = 56900 (54.915 sec)
+INFO:tensorflow:Saving checkpoints for 57000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 10:33:16.307942 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 57000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-57000 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 10:33:40.016467 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-57000 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.25381
+I0427 10:33:41.697376 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.25381
+INFO:tensorflow:loss = 8.0103935e-05, step = 57000 (79.755 sec)
+I0427 10:33:41.698464 139690383447872 basic_session_run_hooks.py:260] loss = 8.0103935e-05, step = 57000 (79.755 sec)
+INFO:tensorflow:global_step/sec: 1.83855
+I0427 10:34:36.088310 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.83855
+INFO:tensorflow:loss = 1.9371282e-05, step = 57100 (54.393 sec)
+I0427 10:34:36.091236 139690383447872 basic_session_run_hooks.py:260] loss = 1.9371282e-05, step = 57100 (54.393 sec)
+INFO:tensorflow:global_step/sec: 1.82359
+I0427 10:35:30.925183 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82359
+INFO:tensorflow:loss = 8.6928485e-05, step = 57200 (54.835 sec)
+I0427 10:35:30.926496 139690383447872 basic_session_run_hooks.py:260] loss = 8.6928485e-05, step = 57200 (54.835 sec)
+INFO:tensorflow:global_step/sec: 1.82051
+I0427 10:36:25.854842 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82051
+INFO:tensorflow:loss = 4.9191338e-05, step = 57300 (54.930 sec)
+I0427 10:36:25.856220 139690383447872 basic_session_run_hooks.py:260] loss = 4.9191338e-05, step = 57300 (54.930 sec)
+INFO:tensorflow:global_step/sec: 1.82006
+I0427 10:37:20.798285 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82006
+INFO:tensorflow:loss = 4.6310615e-05, step = 57400 (55.159 sec)
+I0427 10:37:21.015562 139690383447872 basic_session_run_hooks.py:260] loss = 4.6310615e-05, step = 57400 (55.159 sec)
+INFO:tensorflow:Saving checkpoints for 57500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 10:38:15.351653 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 57500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-57500 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 10:38:39.182245 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-57500 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.24807
+I0427 10:38:40.921781 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.24807
+INFO:tensorflow:loss = 0.000265016, step = 57500 (79.907 sec)
+I0427 10:38:40.922719 139690383447872 basic_session_run_hooks.py:260] loss = 0.000265016, step = 57500 (79.907 sec)
+INFO:tensorflow:global_step/sec: 1.83995
+I0427 10:39:35.271395 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.83995
+INFO:tensorflow:loss = 5.854612e-05, step = 57600 (54.351 sec)
+I0427 10:39:35.273994 139690383447872 basic_session_run_hooks.py:260] loss = 5.854612e-05, step = 57600 (54.351 sec)
+INFO:tensorflow:global_step/sec: 1.82532
+I0427 10:40:30.056461 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82532
+INFO:tensorflow:loss = 1.5119549e-05, step = 57700 (54.784 sec)
+I0427 10:40:30.057799 139690383447872 basic_session_run_hooks.py:260] loss = 1.5119549e-05, step = 57700 (54.784 sec)
+INFO:tensorflow:global_step/sec: 1.82236
+I0427 10:41:24.930511 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82236
+INFO:tensorflow:loss = 0.00011542023, step = 57800 (54.874 sec)
+I0427 10:41:24.931921 139690383447872 basic_session_run_hooks.py:260] loss = 0.00011542023, step = 57800 (54.874 sec)
+INFO:tensorflow:global_step/sec: 1.81916
+I0427 10:42:19.900966 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81916
+INFO:tensorflow:loss = 8.861184e-06, step = 57900 (55.158 sec)
+I0427 10:42:20.089636 139690383447872 basic_session_run_hooks.py:260] loss = 8.861184e-06, step = 57900 (55.158 sec)
+INFO:tensorflow:Saving checkpoints for 58000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 10:43:14.561315 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 58000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-58000 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 10:43:37.565801 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-58000 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.25915
+I0427 10:43:39.319453 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.25915
+INFO:tensorflow:loss = 1.0788375e-05, step = 58000 (79.231 sec)
+I0427 10:43:39.320608 139690383447872 basic_session_run_hooks.py:260] loss = 1.0788375e-05, step = 58000 (79.231 sec)
+INFO:tensorflow:global_step/sec: 1.83782
+I0427 10:44:33.732060 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.83782
+INFO:tensorflow:loss = 0.0002519098, step = 58100 (54.414 sec)
+I0427 10:44:33.735004 139690383447872 basic_session_run_hooks.py:260] loss = 0.0002519098, step = 58100 (54.414 sec)
+INFO:tensorflow:global_step/sec: 1.82519
+I0427 10:45:28.520918 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82519
+INFO:tensorflow:loss = 0.5022223, step = 58200 (54.787 sec)
+I0427 10:45:28.522234 139690383447872 basic_session_run_hooks.py:260] loss = 0.5022223, step = 58200 (54.787 sec)
+INFO:tensorflow:global_step/sec: 1.82118
+I0427 10:46:23.430408 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82118
+INFO:tensorflow:loss = 0.0070769135, step = 58300 (54.910 sec)
+I0427 10:46:23.431736 139690383447872 basic_session_run_hooks.py:260] loss = 0.0070769135, step = 58300 (54.910 sec)
+INFO:tensorflow:global_step/sec: 1.81933
+I0427 10:47:18.395737 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81933
+INFO:tensorflow:loss = 5.0522984e-05, step = 58400 (55.120 sec)
+I0427 10:47:18.551666 139690383447872 basic_session_run_hooks.py:260] loss = 5.0522984e-05, step = 58400 (55.120 sec)
+INFO:tensorflow:Saving checkpoints for 58500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 10:48:12.942322 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 58500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-58500 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 10:48:35.952913 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-58500 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.26243
+I0427 10:48:37.607431 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.26243
+INFO:tensorflow:loss = 1.4404331e-05, step = 58500 (79.057 sec)
+I0427 10:48:37.608407 139690383447872 basic_session_run_hooks.py:260] loss = 1.4404331e-05, step = 58500 (79.057 sec)
+INFO:tensorflow:global_step/sec: 1.83653
+I0427 10:49:32.058139 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.83653
+INFO:tensorflow:loss = 1.7503728e-05, step = 58600 (54.453 sec)
+I0427 10:49:32.061707 139690383447872 basic_session_run_hooks.py:260] loss = 1.7503728e-05, step = 58600 (54.453 sec)
+INFO:tensorflow:global_step/sec: 1.82307
+I0427 10:50:26.910746 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82307
+INFO:tensorflow:loss = 0.002097105, step = 58700 (54.850 sec)
+I0427 10:50:26.912190 139690383447872 basic_session_run_hooks.py:260] loss = 0.002097105, step = 58700 (54.850 sec)
+INFO:tensorflow:global_step/sec: 1.81861
+I0427 10:51:21.897735 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81861
+INFO:tensorflow:loss = 2.5251944e-05, step = 58800 (54.987 sec)
+I0427 10:51:21.899074 139690383447872 basic_session_run_hooks.py:260] loss = 2.5251944e-05, step = 58800 (54.987 sec)
+INFO:tensorflow:global_step/sec: 1.82196
+I0427 10:52:16.783641 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82196
+INFO:tensorflow:loss = 3.5662015e-05, step = 58900 (55.107 sec)
+I0427 10:52:17.005986 139690383447872 basic_session_run_hooks.py:260] loss = 3.5662015e-05, step = 58900 (55.107 sec)
+INFO:tensorflow:Saving checkpoints for 59000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 10:53:11.407443 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 59000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-59000 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 10:53:34.264619 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-59000 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.26377
+I0427 10:53:35.911507 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.26377
+INFO:tensorflow:loss = 3.2304415e-05, step = 59000 (78.907 sec)
+I0427 10:53:35.912528 139690383447872 basic_session_run_hooks.py:260] loss = 3.2304415e-05, step = 59000 (78.907 sec)
+INFO:tensorflow:global_step/sec: 1.83937
+I0427 10:54:30.278282 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.83937
+INFO:tensorflow:loss = 0.00019707893, step = 59100 (54.368 sec)
+I0427 10:54:30.281020 139690383447872 basic_session_run_hooks.py:260] loss = 0.00019707893, step = 59100 (54.368 sec)
+INFO:tensorflow:global_step/sec: 1.82291
+I0427 10:55:25.135579 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82291
+INFO:tensorflow:loss = 0.00041025368, step = 59200 (54.856 sec)
+I0427 10:55:25.136995 139690383447872 basic_session_run_hooks.py:260] loss = 0.00041025368, step = 59200 (54.856 sec)
+INFO:tensorflow:global_step/sec: 1.82074
+I0427 10:56:20.058352 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82074
+INFO:tensorflow:loss = 0.00033918055, step = 59300 (54.923 sec)
+I0427 10:56:20.059670 139690383447872 basic_session_run_hooks.py:260] loss = 0.00033918055, step = 59300 (54.923 sec)
+INFO:tensorflow:global_step/sec: 1.82002
+I0427 10:57:15.002839 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82002
+INFO:tensorflow:loss = 2.2609462e-05, step = 59400 (54.946 sec)
+I0427 10:57:15.005819 139690383447872 basic_session_run_hooks.py:260] loss = 2.2609462e-05, step = 59400 (54.946 sec)
+INFO:tensorflow:Saving checkpoints for 59500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 10:58:09.417822 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 59500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-59500 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 10:58:32.261801 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-59500 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.26752
+I0427 10:58:33.897127 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.26752
+INFO:tensorflow:loss = 2.274864e-05, step = 59500 (78.892 sec)
+I0427 10:58:33.898174 139690383447872 basic_session_run_hooks.py:260] loss = 2.274864e-05, step = 59500 (78.892 sec)
+INFO:tensorflow:global_step/sec: 1.83686
+I0427 10:59:28.338060 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.83686
+INFO:tensorflow:loss = 1.7066644e-05, step = 59600 (54.443 sec)
+I0427 10:59:28.340769 139690383447872 basic_session_run_hooks.py:260] loss = 1.7066644e-05, step = 59600 (54.443 sec)
+INFO:tensorflow:global_step/sec: 1.82404
+I0427 11:00:23.161442 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82404
+INFO:tensorflow:loss = 0.000102693615, step = 59700 (54.822 sec)
+I0427 11:00:23.162845 139690383447872 basic_session_run_hooks.py:260] loss = 0.000102693615, step = 59700 (54.822 sec)
+INFO:tensorflow:global_step/sec: 1.81976
+I0427 11:01:18.113731 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81976
+INFO:tensorflow:loss = 6.502157e-05, step = 59800 (54.952 sec)
+I0427 11:01:18.115120 139690383447872 basic_session_run_hooks.py:260] loss = 6.502157e-05, step = 59800 (54.952 sec)
+INFO:tensorflow:global_step/sec: 1.81971
+I0427 11:02:13.067556 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81971
+INFO:tensorflow:loss = 0.00012664373, step = 59900 (54.955 sec)
+I0427 11:02:13.070033 139690383447872 basic_session_run_hooks.py:260] loss = 0.00012664373, step = 59900 (54.955 sec)
+INFO:tensorflow:Saving checkpoints for 60000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 11:03:07.506617 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 60000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-60000 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 11:03:30.509206 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-60000 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.26428
+I0427 11:03:32.163549 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.26428
+INFO:tensorflow:loss = 0.00044848223, step = 60000 (79.095 sec)
+I0427 11:03:32.164531 139690383447872 basic_session_run_hooks.py:260] loss = 0.00044848223, step = 60000 (79.095 sec)
+INFO:tensorflow:global_step/sec: 1.8372
+I0427 11:04:26.594291 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.8372
+INFO:tensorflow:loss = 1.5670031, step = 60100 (54.433 sec)
+I0427 11:04:26.597310 139690383447872 basic_session_run_hooks.py:260] loss = 1.5670031, step = 60100 (54.433 sec)
+INFO:tensorflow:global_step/sec: 1.82342
+I0427 11:05:21.436472 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82342
+INFO:tensorflow:loss = 2.515265e-05, step = 60200 (54.841 sec)
+I0427 11:05:21.437886 139690383447872 basic_session_run_hooks.py:260] loss = 2.515265e-05, step = 60200 (54.841 sec)
+INFO:tensorflow:global_step/sec: 1.81816
+I0427 11:06:16.437033 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81816
+INFO:tensorflow:loss = 2.6007066e-05, step = 60300 (55.000 sec)
+I0427 11:06:16.438314 139690383447872 basic_session_run_hooks.py:260] loss = 2.6007066e-05, step = 60300 (55.000 sec)
+INFO:tensorflow:global_step/sec: 1.81945
+I0427 11:07:11.398843 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81945
+INFO:tensorflow:loss = 1.5775224e-05, step = 60400 (54.964 sec)
+I0427 11:07:11.402157 139690383447872 basic_session_run_hooks.py:260] loss = 1.5775224e-05, step = 60400 (54.964 sec)
+INFO:tensorflow:Saving checkpoints for 60500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 11:08:05.887678 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 60500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-60500 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 11:08:28.875645 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-60500 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.26311
+I0427 11:08:30.568251 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.26311
+INFO:tensorflow:loss = 2.2410948e-05, step = 60500 (79.167 sec)
+I0427 11:08:30.569232 139690383447872 basic_session_run_hooks.py:260] loss = 2.2410948e-05, step = 60500 (79.167 sec)
+INFO:tensorflow:global_step/sec: 1.83594
+I0427 11:09:25.036486 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.83594
+INFO:tensorflow:loss = 2.449715e-05, step = 60600 (54.469 sec)
+I0427 11:09:25.038437 139690383447872 basic_session_run_hooks.py:260] loss = 2.449715e-05, step = 60600 (54.469 sec)
+INFO:tensorflow:global_step/sec: 1.82018
+I0427 11:10:19.976182 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82018
+INFO:tensorflow:loss = 0.00056248467, step = 60700 (54.939 sec)
+I0427 11:10:19.977532 139690383447872 basic_session_run_hooks.py:260] loss = 0.00056248467, step = 60700 (54.939 sec)
+INFO:tensorflow:global_step/sec: 1.81739
+I0427 11:11:15.000112 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81739
+INFO:tensorflow:loss = 0.00018067552, step = 60800 (55.024 sec)
+I0427 11:11:15.001378 139690383447872 basic_session_run_hooks.py:260] loss = 0.00018067552, step = 60800 (55.024 sec)
+INFO:tensorflow:global_step/sec: 1.81864
+I0427 11:12:09.986324 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81864
+INFO:tensorflow:loss = 1.4702356e-05, step = 60900 (54.989 sec)
+I0427 11:12:09.989979 139690383447872 basic_session_run_hooks.py:260] loss = 1.4702356e-05, step = 60900 (54.989 sec)
+INFO:tensorflow:Saving checkpoints for 61000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 11:13:04.418738 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 61000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-61000 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 11:13:27.440700 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-61000 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.2636
+I0427 11:13:29.125498 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.2636
+INFO:tensorflow:loss = 1.5993763e-05, step = 61000 (79.137 sec)
+I0427 11:13:29.126758 139690383447872 basic_session_run_hooks.py:260] loss = 1.5993763e-05, step = 61000 (79.137 sec)
+INFO:tensorflow:global_step/sec: 1.8349
+I0427 11:14:23.624472 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.8349
+INFO:tensorflow:loss = 2.1000442e-05, step = 61100 (54.500 sec)
+I0427 11:14:23.626819 139690383447872 basic_session_run_hooks.py:260] loss = 2.1000442e-05, step = 61100 (54.500 sec)
+INFO:tensorflow:global_step/sec: 1.82277
+I0427 11:15:18.486030 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82277
+INFO:tensorflow:loss = 7.967118e-06, step = 61200 (54.860 sec)
+I0427 11:15:18.487275 139690383447872 basic_session_run_hooks.py:260] loss = 7.967118e-06, step = 61200 (54.860 sec)
+INFO:tensorflow:global_step/sec: 1.81996
+I0427 11:16:13.432468 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81996
+INFO:tensorflow:loss = 8.940652e-06, step = 61300 (54.947 sec)
+I0427 11:16:13.433872 139690383447872 basic_session_run_hooks.py:260] loss = 8.940652e-06, step = 61300 (54.947 sec)
+INFO:tensorflow:global_step/sec: 1.81965
+I0427 11:17:08.388142 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81965
+INFO:tensorflow:loss = 9.357883e-06, step = 61400 (54.968 sec)
+I0427 11:17:08.401998 139690383447872 basic_session_run_hooks.py:260] loss = 9.357883e-06, step = 61400 (54.968 sec)
+INFO:tensorflow:Saving checkpoints for 61500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 11:18:02.877911 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 61500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-61500 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 11:18:25.661288 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-61500 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.26626
+I0427 11:18:27.360780 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.26626
+INFO:tensorflow:loss = 0.00010549065, step = 61500 (78.960 sec)
+I0427 11:18:27.361737 139690383447872 basic_session_run_hooks.py:260] loss = 0.00010549065, step = 61500 (78.960 sec)
+INFO:tensorflow:global_step/sec: 1.83496
+I0427 11:19:21.858180 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.83496
+INFO:tensorflow:loss = 1.3132779e-05, step = 61600 (54.499 sec)
+I0427 11:19:21.860299 139690383447872 basic_session_run_hooks.py:260] loss = 1.3132779e-05, step = 61600 (54.499 sec)
+INFO:tensorflow:global_step/sec: 1.82361
+I0427 11:20:16.694461 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82361
+INFO:tensorflow:loss = 4.966781e-05, step = 61700 (54.835 sec)
+I0427 11:20:16.695698 139690383447872 basic_session_run_hooks.py:260] loss = 4.966781e-05, step = 61700 (54.835 sec)
+INFO:tensorflow:global_step/sec: 1.82207
+I0427 11:21:11.577229 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82207
+INFO:tensorflow:loss = 1.5020231e-05, step = 61800 (54.883 sec)
+I0427 11:21:11.578540 139690383447872 basic_session_run_hooks.py:260] loss = 1.5020231e-05, step = 61800 (54.883 sec)
+INFO:tensorflow:global_step/sec: 1.82088
+I0427 11:22:06.495735 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82088
+INFO:tensorflow:loss = 1.0092978e-05, step = 61900 (54.921 sec)
+I0427 11:22:06.499424 139690383447872 basic_session_run_hooks.py:260] loss = 1.0092978e-05, step = 61900 (54.921 sec)
+INFO:tensorflow:Saving checkpoints for 62000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 11:23:00.878999 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 62000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-62000 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 11:23:23.884359 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-62000 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.26476
+I0427 11:23:25.561713 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.26476
+INFO:tensorflow:loss = 9.784621e-05, step = 62000 (79.063 sec)
+I0427 11:23:25.562662 139690383447872 basic_session_run_hooks.py:260] loss = 9.784621e-05, step = 62000 (79.063 sec)
+INFO:tensorflow:global_step/sec: 1.83743
+I0427 11:24:19.985691 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.83743
+INFO:tensorflow:loss = 0.00018232332, step = 62100 (54.425 sec)
+I0427 11:24:19.987445 139690383447872 basic_session_run_hooks.py:260] loss = 0.00018232332, step = 62100 (54.425 sec)
+INFO:tensorflow:global_step/sec: 1.81995
+I0427 11:25:14.932334 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81995
+INFO:tensorflow:loss = 7.510156e-06, step = 62200 (54.946 sec)
+I0427 11:25:14.933732 139690383447872 basic_session_run_hooks.py:260] loss = 7.510156e-06, step = 62200 (54.946 sec)
+INFO:tensorflow:global_step/sec: 1.81919
+I0427 11:26:09.901927 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81919
+INFO:tensorflow:loss = 1.0589702e-05, step = 62300 (54.970 sec)
+I0427 11:26:09.903318 139690383447872 basic_session_run_hooks.py:260] loss = 1.0589702e-05, step = 62300 (54.970 sec)
+INFO:tensorflow:global_step/sec: 1.82034
+I0427 11:27:04.836648 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82034
+INFO:tensorflow:loss = 5.8412365e-06, step = 62400 (54.937 sec)
+I0427 11:27:04.840153 139690383447872 basic_session_run_hooks.py:260] loss = 5.8412365e-06, step = 62400 (54.937 sec)
+INFO:tensorflow:Saving checkpoints for 62500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 11:27:59.202635 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 62500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-62500 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 11:28:21.306876 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-62500 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.27994
+I0427 11:28:22.964814 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.27994
+INFO:tensorflow:loss = 0.00011419173, step = 62500 (78.126 sec)
+I0427 11:28:22.965872 139690383447872 basic_session_run_hooks.py:260] loss = 0.00011419173, step = 62500 (78.126 sec)
+INFO:tensorflow:global_step/sec: 1.83436
+I0427 11:29:17.480141 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.83436
+INFO:tensorflow:loss = 0.00045395506, step = 62600 (54.516 sec)
+I0427 11:29:17.482050 139690383447872 basic_session_run_hooks.py:260] loss = 0.00045395506, step = 62600 (54.516 sec)
+INFO:tensorflow:global_step/sec: 1.82313
+I0427 11:30:12.330829 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82313
+INFO:tensorflow:loss = 0.00020576135, step = 62700 (54.850 sec)
+I0427 11:30:12.332209 139690383447872 basic_session_run_hooks.py:260] loss = 0.00020576135, step = 62700 (54.850 sec)
+INFO:tensorflow:global_step/sec: 1.81975
+I0427 11:31:07.283405 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81975
+INFO:tensorflow:loss = 5.715364e-05, step = 62800 (54.953 sec)
+I0427 11:31:07.284729 139690383447872 basic_session_run_hooks.py:260] loss = 5.715364e-05, step = 62800 (54.953 sec)
+INFO:tensorflow:global_step/sec: 1.81608
+I0427 11:32:02.346936 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81608
+INFO:tensorflow:loss = 1.025194e-05, step = 62900 (55.066 sec)
+I0427 11:32:02.350456 139690383447872 basic_session_run_hooks.py:260] loss = 1.025194e-05, step = 62900 (55.066 sec)
+INFO:tensorflow:Saving checkpoints for 63000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 11:32:56.825217 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 63000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-63000 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 11:33:19.752600 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-63000 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.26449
+I0427 11:33:21.430073 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.26449
+INFO:tensorflow:loss = 1.5139439e-05, step = 63000 (79.081 sec)
+I0427 11:33:21.431039 139690383447872 basic_session_run_hooks.py:260] loss = 1.5139439e-05, step = 63000 (79.081 sec)
+INFO:tensorflow:global_step/sec: 1.83257
+I0427 11:34:15.998376 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.83257
+INFO:tensorflow:loss = 7.86778e-06, step = 63100 (54.569 sec)
+I0427 11:34:16.000165 139690383447872 basic_session_run_hooks.py:260] loss = 7.86778e-06, step = 63100 (54.569 sec)
+INFO:tensorflow:global_step/sec: 1.82017
+I0427 11:35:10.938344 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82017
+INFO:tensorflow:loss = 9.8982746e-05, step = 63200 (54.940 sec)
+I0427 11:35:10.939691 139690383447872 basic_session_run_hooks.py:260] loss = 9.8982746e-05, step = 63200 (54.940 sec)
+INFO:tensorflow:global_step/sec: 1.81612
+I0427 11:36:06.000909 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81612
+INFO:tensorflow:loss = 0.0003020377, step = 63300 (55.063 sec)
+I0427 11:36:06.002269 139690383447872 basic_session_run_hooks.py:260] loss = 0.0003020377, step = 63300 (55.063 sec)
+INFO:tensorflow:global_step/sec: 1.81791
+I0427 11:37:01.009202 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81791
+INFO:tensorflow:loss = 1.3649312e-05, step = 63400 (55.011 sec)
+I0427 11:37:01.012986 139690383447872 basic_session_run_hooks.py:260] loss = 1.3649312e-05, step = 63400 (55.011 sec)
+INFO:tensorflow:Saving checkpoints for 63500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 11:37:55.422423 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 63500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-63500 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 11:38:18.442025 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-63500 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.26437
+I0427 11:38:20.099553 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.26437
+INFO:tensorflow:loss = 1.5675823e-05, step = 63500 (79.088 sec)
+I0427 11:38:20.100528 139690383447872 basic_session_run_hooks.py:260] loss = 1.5675823e-05, step = 63500 (79.088 sec)
+INFO:tensorflow:global_step/sec: 1.83631
+I0427 11:39:14.556909 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.83631
+INFO:tensorflow:loss = 8.344615e-06, step = 63600 (54.458 sec)
+I0427 11:39:14.558774 139690383447872 basic_session_run_hooks.py:260] loss = 8.344615e-06, step = 63600 (54.458 sec)
+INFO:tensorflow:global_step/sec: 1.82096
+I0427 11:40:09.472869 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82096
+INFO:tensorflow:loss = 0.000262157, step = 63700 (54.915 sec)
+I0427 11:40:09.474218 139690383447872 basic_session_run_hooks.py:260] loss = 0.000262157, step = 63700 (54.915 sec)
+INFO:tensorflow:global_step/sec: 1.81756
+I0427 11:41:04.491674 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81756
+INFO:tensorflow:loss = 5.6822923e-06, step = 63800 (55.019 sec)
+I0427 11:41:04.493021 139690383447872 basic_session_run_hooks.py:260] loss = 5.6822923e-06, step = 63800 (55.019 sec)
+INFO:tensorflow:global_step/sec: 1.81746
+I0427 11:41:59.513407 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81746
+INFO:tensorflow:loss = 0.00013098348, step = 63900 (55.024 sec)
+I0427 11:41:59.517209 139690383447872 basic_session_run_hooks.py:260] loss = 0.00013098348, step = 63900 (55.024 sec)
+INFO:tensorflow:Saving checkpoints for 64000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 11:42:53.949193 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 64000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-64000 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 11:43:16.746899 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-64000 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.26783
+I0427 11:43:18.388008 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.26783
+INFO:tensorflow:loss = 6.7949063e-06, step = 64000 (78.872 sec)
+I0427 11:43:18.388950 139690383447872 basic_session_run_hooks.py:260] loss = 6.7949063e-06, step = 64000 (78.872 sec)
+INFO:tensorflow:global_step/sec: 1.8377
+I0427 11:44:12.804255 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.8377
+INFO:tensorflow:loss = 0.0005083584, step = 64100 (54.418 sec)
+I0427 11:44:12.807447 139690383447872 basic_session_run_hooks.py:260] loss = 0.0005083584, step = 64100 (54.418 sec)
+INFO:tensorflow:global_step/sec: 1.82336
+I0427 11:45:07.647986 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82336
+INFO:tensorflow:loss = 0.0042762673, step = 64200 (54.842 sec)
+I0427 11:45:07.649264 139690383447872 basic_session_run_hooks.py:260] loss = 0.0042762673, step = 64200 (54.842 sec)
+INFO:tensorflow:global_step/sec: 1.81794
+I0427 11:46:02.655210 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81794
+INFO:tensorflow:loss = 0.00014589337, step = 64300 (55.007 sec)
+I0427 11:46:02.656519 139690383447872 basic_session_run_hooks.py:260] loss = 0.00014589337, step = 64300 (55.007 sec)
+INFO:tensorflow:global_step/sec: 1.81766
+I0427 11:46:57.671126 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81766
+INFO:tensorflow:loss = 7.708831e-06, step = 64400 (55.018 sec)
+I0427 11:46:57.674649 139690383447872 basic_session_run_hooks.py:260] loss = 7.708831e-06, step = 64400 (55.018 sec)
+INFO:tensorflow:Saving checkpoints for 64500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 11:47:52.102010 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 64500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-64500 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 11:48:15.107472 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-64500 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.26426
+I0427 11:48:16.768603 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.26426
+INFO:tensorflow:loss = 1.1106201e-05, step = 64500 (79.095 sec)
+I0427 11:48:16.769582 139690383447872 basic_session_run_hooks.py:260] loss = 1.1106201e-05, step = 64500 (79.095 sec)
+INFO:tensorflow:global_step/sec: 1.83723
+I0427 11:49:11.199428 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.83723
+INFO:tensorflow:loss = 0.0002041342, step = 64600 (54.434 sec)
+I0427 11:49:11.204155 139690383447872 basic_session_run_hooks.py:260] loss = 0.0002041342, step = 64600 (54.434 sec)
+INFO:tensorflow:global_step/sec: 1.82463
+I0427 11:50:06.004338 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82463
+INFO:tensorflow:loss = 0.42679444, step = 64700 (54.802 sec)
+I0427 11:50:06.005597 139690383447872 basic_session_run_hooks.py:260] loss = 0.42679444, step = 64700 (54.802 sec)
+INFO:tensorflow:global_step/sec: 1.82127
+I0427 11:51:00.911173 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82127
+INFO:tensorflow:loss = 0.00039589207, step = 64800 (54.907 sec)
+I0427 11:51:00.912506 139690383447872 basic_session_run_hooks.py:260] loss = 0.00039589207, step = 64800 (54.907 sec)
+INFO:tensorflow:global_step/sec: 1.82067
+I0427 11:51:55.835898 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82067
+INFO:tensorflow:loss = 0.00086765765, step = 64900 (54.927 sec)
+I0427 11:51:55.839963 139690383447872 basic_session_run_hooks.py:260] loss = 0.00086765765, step = 64900 (54.927 sec)
+INFO:tensorflow:Saving checkpoints for 65000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 11:52:50.303836 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 65000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-65000 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 11:53:13.010273 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-65000 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.26878
+I0427 11:53:14.651427 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.26878
+INFO:tensorflow:loss = 1.0092983e-05, step = 65000 (78.812 sec)
+I0427 11:53:14.652417 139690383447872 basic_session_run_hooks.py:260] loss = 1.0092983e-05, step = 65000 (78.812 sec)
+INFO:tensorflow:global_step/sec: 1.83981
+I0427 11:54:09.004983 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.83981
+INFO:tensorflow:loss = 1.6232187e-05, step = 65100 (54.354 sec)
+I0427 11:54:09.006749 139690383447872 basic_session_run_hooks.py:260] loss = 1.6232187e-05, step = 65100 (54.354 sec)
+INFO:tensorflow:global_step/sec: 1.82329
+I0427 11:55:03.850894 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82329
+INFO:tensorflow:loss = 2.976128e-05, step = 65200 (54.845 sec)
+I0427 11:55:03.852191 139690383447872 basic_session_run_hooks.py:260] loss = 2.976128e-05, step = 65200 (54.845 sec)
+INFO:tensorflow:global_step/sec: 1.8205
+I0427 11:55:58.780917 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.8205
+INFO:tensorflow:loss = 2.57286e-05, step = 65300 (54.930 sec)
+I0427 11:55:58.782614 139690383447872 basic_session_run_hooks.py:260] loss = 2.57286e-05, step = 65300 (54.930 sec)
+INFO:tensorflow:global_step/sec: 1.81951
+I0427 11:56:53.740775 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81951
+INFO:tensorflow:loss = 1.8874463e-05, step = 65400 (54.962 sec)
+I0427 11:56:53.744576 139690383447872 basic_session_run_hooks.py:260] loss = 1.8874463e-05, step = 65400 (54.962 sec)
+INFO:tensorflow:Saving checkpoints for 65500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 11:57:48.188282 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 65500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-65500 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 11:58:10.720802 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-65500 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.27188
+I0427 11:58:12.364751 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.27188
+INFO:tensorflow:loss = 2.9940134e-05, step = 65500 (78.622 sec)
+I0427 11:58:12.367017 139690383447872 basic_session_run_hooks.py:260] loss = 2.9940134e-05, step = 65500 (78.622 sec)
+INFO:tensorflow:global_step/sec: 1.83746
+I0427 11:59:06.787685 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.83746
+INFO:tensorflow:loss = 3.9218274e-05, step = 65600 (54.423 sec)
+I0427 11:59:06.789695 139690383447872 basic_session_run_hooks.py:260] loss = 3.9218274e-05, step = 65600 (54.423 sec)
+INFO:tensorflow:global_step/sec: 1.82346
+I0427 12:00:01.628463 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82346
+INFO:tensorflow:loss = 0.0070652696, step = 65700 (54.840 sec)
+I0427 12:00:01.629776 139690383447872 basic_session_run_hooks.py:260] loss = 0.0070652696, step = 65700 (54.840 sec)
+INFO:tensorflow:global_step/sec: 1.81801
+I0427 12:00:56.633596 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81801
+INFO:tensorflow:loss = 2.809272e-05, step = 65800 (55.009 sec)
+I0427 12:00:56.639006 139690383447872 basic_session_run_hooks.py:260] loss = 2.809272e-05, step = 65800 (55.009 sec)
+INFO:tensorflow:global_step/sec: 1.81854
+I0427 12:01:51.622635 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81854
+INFO:tensorflow:loss = 0.0002766491, step = 65900 (54.987 sec)
+I0427 12:01:51.626097 139690383447872 basic_session_run_hooks.py:260] loss = 0.0002766491, step = 65900 (54.987 sec)
+INFO:tensorflow:Saving checkpoints for 66000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 12:02:46.078609 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 66000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-66000 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 12:03:09.281500 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-66000 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.26097
+I0427 12:03:10.926727 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.26097
+INFO:tensorflow:loss = 1.1404279e-05, step = 66000 (79.302 sec)
+I0427 12:03:10.927716 139690383447872 basic_session_run_hooks.py:260] loss = 1.1404279e-05, step = 66000 (79.302 sec)
+INFO:tensorflow:global_step/sec: 1.83916
+I0427 12:04:05.299456 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.83916
+INFO:tensorflow:loss = 1.1483758e-05, step = 66100 (54.374 sec)
+I0427 12:04:05.301524 139690383447872 basic_session_run_hooks.py:260] loss = 1.1483758e-05, step = 66100 (54.374 sec)
+INFO:tensorflow:global_step/sec: 1.82233
+I0427 12:05:00.174253 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82233
+INFO:tensorflow:loss = 1.7821556e-05, step = 66200 (54.874 sec)
+I0427 12:05:00.175519 139690383447872 basic_session_run_hooks.py:260] loss = 1.7821556e-05, step = 66200 (54.874 sec)
+INFO:tensorflow:global_step/sec: 1.81776
+I0427 12:05:55.187799 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81776
+INFO:tensorflow:loss = 0.000115515584, step = 66300 (55.015 sec)
+I0427 12:05:55.190936 139690383447872 basic_session_run_hooks.py:260] loss = 0.000115515584, step = 66300 (55.015 sec)
+INFO:tensorflow:global_step/sec: 1.81733
+I0427 12:06:50.212842 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81733
+INFO:tensorflow:loss = 1.0112867e-05, step = 66400 (55.026 sec)
+I0427 12:06:50.216559 139690383447872 basic_session_run_hooks.py:260] loss = 1.0112867e-05, step = 66400 (55.026 sec)
+INFO:tensorflow:Saving checkpoints for 66500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 12:07:44.717208 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 66500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-66500 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 12:08:07.471387 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-66500 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.26705
+I0427 12:08:09.136333 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.26705
+INFO:tensorflow:loss = 0.00014363408, step = 66500 (78.921 sec)
+I0427 12:08:09.137495 139690383447872 basic_session_run_hooks.py:260] loss = 0.00014363408, step = 66500 (78.921 sec)
+INFO:tensorflow:global_step/sec: 1.84059
+I0427 12:09:03.466776 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.84059
+INFO:tensorflow:loss = 0.00030072505, step = 66600 (54.331 sec)
+I0427 12:09:03.468655 139690383447872 basic_session_run_hooks.py:260] loss = 0.00030072505, step = 66600 (54.331 sec)
+INFO:tensorflow:global_step/sec: 1.82451
+I0427 12:09:58.275961 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82451
+INFO:tensorflow:loss = 0.0011142293, step = 66700 (54.809 sec)
+I0427 12:09:58.277513 139690383447872 basic_session_run_hooks.py:260] loss = 0.0011142293, step = 66700 (54.809 sec)
+INFO:tensorflow:global_step/sec: 1.81963
+I0427 12:10:53.232157 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81963
+INFO:tensorflow:loss = 1.6192296e-05, step = 66800 (54.956 sec)
+I0427 12:10:53.233487 139690383447872 basic_session_run_hooks.py:260] loss = 1.6192296e-05, step = 66800 (54.956 sec)
+INFO:tensorflow:global_step/sec: 1.82133
+I0427 12:11:48.137121 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82133
+INFO:tensorflow:loss = 0.001034993, step = 66900 (54.908 sec)
+I0427 12:11:48.141051 139690383447872 basic_session_run_hooks.py:260] loss = 0.001034993, step = 66900 (54.908 sec)
+INFO:tensorflow:Saving checkpoints for 67000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 12:12:42.601866 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 67000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-67000 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 12:13:05.397683 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-67000 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.26719
+I0427 12:13:07.051446 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.26719
+INFO:tensorflow:loss = 8.006849e-06, step = 67000 (78.912 sec)
+I0427 12:13:07.052587 139690383447872 basic_session_run_hooks.py:260] loss = 8.006849e-06, step = 67000 (78.912 sec)
+INFO:tensorflow:global_step/sec: 1.83717
+I0427 12:14:01.483295 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.83717
+INFO:tensorflow:loss = 0.000106206135, step = 67100 (54.433 sec)
+I0427 12:14:01.485156 139690383447872 basic_session_run_hooks.py:260] loss = 0.000106206135, step = 67100 (54.433 sec)
+INFO:tensorflow:global_step/sec: 1.82227
+I0427 12:14:56.359844 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82227
+INFO:tensorflow:loss = 9.377748e-06, step = 67200 (54.876 sec)
+I0427 12:14:56.361263 139690383447872 basic_session_run_hooks.py:260] loss = 9.377748e-06, step = 67200 (54.876 sec)
+INFO:tensorflow:global_step/sec: 1.8197
+I0427 12:15:51.313806 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.8197
+INFO:tensorflow:loss = 2.2629278e-05, step = 67300 (54.954 sec)
+I0427 12:15:51.315140 139690383447872 basic_session_run_hooks.py:260] loss = 2.2629278e-05, step = 67300 (54.954 sec)
+INFO:tensorflow:global_step/sec: 1.81947
+I0427 12:16:46.275001 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81947
+INFO:tensorflow:loss = 4.696386e-05, step = 67400 (54.963 sec)
+I0427 12:16:46.278500 139690383447872 basic_session_run_hooks.py:260] loss = 4.696386e-05, step = 67400 (54.963 sec)
+INFO:tensorflow:Saving checkpoints for 67500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 12:17:40.635759 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 67500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-67500 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 12:18:03.516848 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-67500 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.26764
+I0427 12:18:05.161233 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.26764
+INFO:tensorflow:loss = 9.641618e-05, step = 67500 (78.884 sec)
+I0427 12:18:05.162307 139690383447872 basic_session_run_hooks.py:260] loss = 9.641618e-05, step = 67500 (78.884 sec)
+INFO:tensorflow:global_step/sec: 1.83611
+I0427 12:18:59.624315 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.83611
+INFO:tensorflow:loss = 0.0002951432, step = 67600 (54.464 sec)
+I0427 12:18:59.626329 139690383447872 basic_session_run_hooks.py:260] loss = 0.0002951432, step = 67600 (54.464 sec)
+INFO:tensorflow:global_step/sec: 1.82239
+I0427 12:19:54.497376 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82239
+INFO:tensorflow:loss = 0.00022091302, step = 67700 (54.872 sec)
+I0427 12:19:54.498627 139690383447872 basic_session_run_hooks.py:260] loss = 0.00022091302, step = 67700 (54.872 sec)
+INFO:tensorflow:global_step/sec: 1.81936
+I0427 12:20:49.461853 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.81936
+INFO:tensorflow:loss = 0.00047595077, step = 67800 (54.964 sec)
+I0427 12:20:49.463108 139690383447872 basic_session_run_hooks.py:260] loss = 0.00047595077, step = 67800 (54.964 sec)
+INFO:tensorflow:global_step/sec: 1.82141
+I0427 12:21:44.364362 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82141
+INFO:tensorflow:loss = 2.3920575e-05, step = 67900 (54.905 sec)
+I0427 12:21:44.367786 139690383447872 basic_session_run_hooks.py:260] loss = 2.3920575e-05, step = 67900 (54.905 sec)
+INFO:tensorflow:Saving checkpoints for 68000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 12:22:38.774682 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 68000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-68000 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 12:23:01.721149 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-68000 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.26532
+I0427 12:23:03.395600 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.26532
+INFO:tensorflow:loss = 1.309302e-05, step = 68000 (79.029 sec)
+I0427 12:23:03.396644 139690383447872 basic_session_run_hooks.py:260] loss = 1.309302e-05, step = 68000 (79.029 sec)
+INFO:tensorflow:global_step/sec: 1.83639
+I0427 12:23:57.850458 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.83639
+INFO:tensorflow:loss = 1.8020224e-05, step = 68100 (54.457 sec)
+I0427 12:23:57.853799 139690383447872 basic_session_run_hooks.py:260] loss = 1.8020224e-05, step = 68100 (54.457 sec)
+INFO:tensorflow:global_step/sec: 1.82059
+I0427 12:24:52.777721 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82059
+INFO:tensorflow:loss = 2.1198815e-05, step = 68200 (54.925 sec)
+I0427 12:24:52.779028 139690383447872 basic_session_run_hooks.py:260] loss = 2.1198815e-05, step = 68200 (54.925 sec)
+INFO:tensorflow:global_step/sec: 1.82234
+I0427 12:25:47.652231 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82234
+INFO:tensorflow:loss = 1.8258606e-05, step = 68300 (54.875 sec)
+I0427 12:25:47.653554 139690383447872 basic_session_run_hooks.py:260] loss = 1.8258606e-05, step = 68300 (54.875 sec)
+INFO:tensorflow:global_step/sec: 1.82237
+I0427 12:26:42.525919 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82237
+INFO:tensorflow:loss = 0.00029083257, step = 68400 (54.877 sec)
+I0427 12:26:42.530401 139690383447872 basic_session_run_hooks.py:260] loss = 0.00029083257, step = 68400 (54.877 sec)
+INFO:tensorflow:Saving checkpoints for 68500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 12:27:36.859745 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 68500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-68500 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 12:27:59.514890 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-68500 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.27155
+I0427 12:28:01.169999 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.27155
+INFO:tensorflow:loss = 2.8053348e-05, step = 68500 (78.642 sec)
+I0427 12:28:01.172461 139690383447872 basic_session_run_hooks.py:260] loss = 2.8053348e-05, step = 68500 (78.642 sec)
+INFO:tensorflow:global_step/sec: 1.83859
+I0427 12:28:55.560351 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.83859
+INFO:tensorflow:loss = 1.817922e-05, step = 68600 (54.392 sec)
+I0427 12:28:55.564362 139690383447872 basic_session_run_hooks.py:260] loss = 1.817922e-05, step = 68600 (54.392 sec)
+INFO:tensorflow:global_step/sec: 1.8233
+I0427 12:29:50.405233 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.8233
+INFO:tensorflow:loss = 0.0009783875, step = 68700 (54.842 sec)
+I0427 12:29:50.406503 139690383447872 basic_session_run_hooks.py:260] loss = 0.0009783875, step = 68700 (54.842 sec)
+INFO:tensorflow:global_step/sec: 1.82263
+I0427 12:30:45.270970 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82263
+INFO:tensorflow:loss = 2.382164e-05, step = 68800 (54.866 sec)
+I0427 12:30:45.272272 139690383447872 basic_session_run_hooks.py:260] loss = 2.382164e-05, step = 68800 (54.866 sec)
+INFO:tensorflow:global_step/sec: 1.82153
+I0427 12:31:40.169881 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82153
+INFO:tensorflow:loss = 3.1808322e-05, step = 68900 (54.902 sec)
+I0427 12:31:40.174688 139690383447872 basic_session_run_hooks.py:260] loss = 3.1808322e-05, step = 68900 (54.902 sec)
+INFO:tensorflow:Saving checkpoints for 69000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 12:32:34.539802 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 69000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-69000 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 12:32:57.375049 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-69000 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.26646
+I0427 12:32:59.129742 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.26646
+INFO:tensorflow:loss = 0.00044025914, step = 69000 (78.956 sec)
+I0427 12:32:59.130720 139690383447872 basic_session_run_hooks.py:260] loss = 0.00044025914, step = 69000 (78.956 sec)
+INFO:tensorflow:global_step/sec: 1.83933
+I0427 12:33:53.497486 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.83933
+INFO:tensorflow:loss = 1.0033393e-05, step = 69100 (54.371 sec)
+I0427 12:33:53.501748 139690383447872 basic_session_run_hooks.py:260] loss = 1.0033393e-05, step = 69100 (54.371 sec)
+INFO:tensorflow:global_step/sec: 1.82379
+I0427 12:34:48.329128 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82379
+INFO:tensorflow:loss = 0.00011774587, step = 69200 (54.831 sec)
+I0427 12:34:48.332586 139690383447872 basic_session_run_hooks.py:260] loss = 0.00011774587, step = 69200 (54.831 sec)
+INFO:tensorflow:global_step/sec: 1.82082
+I0427 12:35:43.248766 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82082
+INFO:tensorflow:loss = 6.5679145e-05, step = 69300 (54.918 sec)
+I0427 12:35:43.250052 139690383447872 basic_session_run_hooks.py:260] loss = 6.5679145e-05, step = 69300 (54.918 sec)
+INFO:tensorflow:global_step/sec: 1.82059
+I0427 12:36:38.176115 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82059
+INFO:tensorflow:loss = 7.717884e-05, step = 69400 (54.931 sec)
+I0427 12:36:38.180918 139690383447872 basic_session_run_hooks.py:260] loss = 7.717884e-05, step = 69400 (54.931 sec)
+INFO:tensorflow:Saving checkpoints for 69500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 12:37:32.516645 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 69500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-69500 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 12:37:55.158061 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-69500 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.26992
+I0427 12:37:56.921048 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.26992
+INFO:tensorflow:loss = 2.6860966e-05, step = 69500 (78.742 sec)
+I0427 12:37:56.923112 139690383447872 basic_session_run_hooks.py:260] loss = 2.6860966e-05, step = 69500 (78.742 sec)
+INFO:tensorflow:global_step/sec: 1.83756
+I0427 12:38:51.341377 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.83756
+INFO:tensorflow:loss = 4.4600678e-05, step = 69600 (54.422 sec)
+I0427 12:38:51.344815 139690383447872 basic_session_run_hooks.py:260] loss = 4.4600678e-05, step = 69600 (54.422 sec)
+INFO:tensorflow:global_step/sec: 1.8229
+I0427 12:39:46.199748 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.8229
+INFO:tensorflow:loss = 0.00047248622, step = 69700 (54.857 sec)
+I0427 12:39:46.201873 139690383447872 basic_session_run_hooks.py:260] loss = 0.00047248622, step = 69700 (54.857 sec)
+INFO:tensorflow:global_step/sec: 1.82129
+I0427 12:40:41.105234 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82129
+INFO:tensorflow:loss = 5.1413972e-05, step = 69800 (54.905 sec)
+I0427 12:40:41.106599 139690383447872 basic_session_run_hooks.py:260] loss = 5.1413972e-05, step = 69800 (54.905 sec)
+INFO:tensorflow:global_step/sec: 1.8219
+I0427 12:41:35.992954 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.8219
+INFO:tensorflow:loss = 1.0907563e-05, step = 69900 (54.891 sec)
+I0427 12:41:35.997550 139690383447872 basic_session_run_hooks.py:260] loss = 1.0907563e-05, step = 69900 (54.891 sec)
+INFO:tensorflow:Saving checkpoints for 70000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 12:42:30.355278 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 70000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-70000 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 12:42:53.027609 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-70000 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.27084
+I0427 12:42:54.681015 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.27084
+INFO:tensorflow:loss = 1.3609625e-05, step = 70000 (78.685 sec)
+I0427 12:42:54.682298 139690383447872 basic_session_run_hooks.py:260] loss = 1.3609625e-05, step = 70000 (78.685 sec)
+INFO:tensorflow:global_step/sec: 1.8397
+I0427 12:43:49.038784 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.8397
+INFO:tensorflow:loss = 2.904633e-05, step = 70100 (54.360 sec)
+I0427 12:43:49.042452 139690383447872 basic_session_run_hooks.py:260] loss = 2.904633e-05, step = 70100 (54.360 sec)
+INFO:tensorflow:global_step/sec: 1.82619
+I0427 12:44:43.796898 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82619
+INFO:tensorflow:loss = 0.00021631316, step = 70200 (54.756 sec)
+I0427 12:44:43.798176 139690383447872 basic_session_run_hooks.py:260] loss = 0.00021631316, step = 70200 (54.756 sec)
+INFO:tensorflow:global_step/sec: 1.82187
+I0427 12:45:38.685529 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82187
+INFO:tensorflow:loss = 0.0002461089, step = 70300 (54.889 sec)
+I0427 12:45:38.686822 139690383447872 basic_session_run_hooks.py:260] loss = 0.0002461089, step = 70300 (54.889 sec)
+INFO:tensorflow:global_step/sec: 1.82327
+I0427 12:46:33.531965 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82327
+INFO:tensorflow:loss = 6.2660554e-05, step = 70400 (54.850 sec)
+I0427 12:46:33.536648 139690383447872 basic_session_run_hooks.py:260] loss = 6.2660554e-05, step = 70400 (54.850 sec)
+INFO:tensorflow:Saving checkpoints for 70500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 12:47:27.897904 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 70500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-70500 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 12:47:50.686347 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-70500 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.26929
+I0427 12:47:52.315891 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.26929
+INFO:tensorflow:loss = 1.2179124e-05, step = 70500 (78.780 sec)
+I0427 12:47:52.317034 139690383447872 basic_session_run_hooks.py:260] loss = 1.2179124e-05, step = 70500 (78.780 sec)
+INFO:tensorflow:global_step/sec: 1.84041
+I0427 12:48:46.651563 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.84041
+INFO:tensorflow:loss = 7.52088e-05, step = 70600 (54.337 sec)
+I0427 12:48:46.653864 139690383447872 basic_session_run_hooks.py:260] loss = 7.52088e-05, step = 70600 (54.337 sec)
+INFO:tensorflow:global_step/sec: 1.82604
+I0427 12:49:41.414871 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82604
+INFO:tensorflow:loss = 0.00020431424, step = 70700 (54.762 sec)
+I0427 12:49:41.416238 139690383447872 basic_session_run_hooks.py:260] loss = 0.00020431424, step = 70700 (54.762 sec)
+INFO:tensorflow:global_step/sec: 1.82213
+I0427 12:50:36.295717 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82213
+INFO:tensorflow:loss = 0.0002643524, step = 70800 (54.881 sec)
+I0427 12:50:36.297167 139690383447872 basic_session_run_hooks.py:260] loss = 0.0002643524, step = 70800 (54.881 sec)
+INFO:tensorflow:global_step/sec: 1.82195
+I0427 12:51:31.181844 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82195
+INFO:tensorflow:loss = 1.33910435e-05, step = 70900 (54.889 sec)
+I0427 12:51:31.186374 139690383447872 basic_session_run_hooks.py:260] loss = 1.33910435e-05, step = 70900 (54.889 sec)
+INFO:tensorflow:Saving checkpoints for 71000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 12:52:25.467950 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 71000 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-71000 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 12:52:47.493969 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-71000 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.28278
+I0427 12:52:49.137073 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.28278
+INFO:tensorflow:loss = 0.00018841994, step = 71000 (77.952 sec)
+I0427 12:52:49.138077 139690383447872 basic_session_run_hooks.py:260] loss = 0.00018841994, step = 71000 (77.952 sec)
+INFO:tensorflow:global_step/sec: 1.83941
+I0427 12:53:43.502543 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.83941
+INFO:tensorflow:loss = 7.35845e-05, step = 71100 (54.366 sec)
+I0427 12:53:43.504466 139690383447872 basic_session_run_hooks.py:260] loss = 7.35845e-05, step = 71100 (54.366 sec)
+INFO:tensorflow:global_step/sec: 1.82556
+I0427 12:54:38.280315 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82556
+INFO:tensorflow:loss = 0.0037283206, step = 71200 (54.777 sec)
+I0427 12:54:38.281579 139690383447872 basic_session_run_hooks.py:260] loss = 0.0037283206, step = 71200 (54.777 sec)
+INFO:tensorflow:global_step/sec: 1.82186
+I0427 12:55:33.169386 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82186
+INFO:tensorflow:loss = 0.0002797496, step = 71300 (54.889 sec)
+I0427 12:55:33.170622 139690383447872 basic_session_run_hooks.py:260] loss = 0.0002797496, step = 71300 (54.889 sec)
+INFO:tensorflow:global_step/sec: 1.82089
+I0427 12:56:28.087482 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82089
+INFO:tensorflow:loss = 1.8020253e-05, step = 71400 (54.922 sec)
+I0427 12:56:28.092266 139690383447872 basic_session_run_hooks.py:260] loss = 1.8020253e-05, step = 71400 (54.922 sec)
+INFO:tensorflow:Saving checkpoints for 71500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 12:57:22.494612 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 71500 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-71500 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 12:57:44.491452 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-71500 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:global_step/sec: 1.28121
+I0427 12:57:46.138764 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.28121
+INFO:tensorflow:loss = 1.3927497e-05, step = 71500 (78.048 sec)
+I0427 12:57:46.140492 139690383447872 basic_session_run_hooks.py:260] loss = 1.3927497e-05, step = 71500 (78.048 sec)
+INFO:tensorflow:global_step/sec: 1.83751
+I0427 12:58:40.560397 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.83751
+INFO:tensorflow:loss = 8.18567e-06, step = 71600 (54.422 sec)
+I0427 12:58:40.562338 139690383447872 basic_session_run_hooks.py:260] loss = 8.18567e-06, step = 71600 (54.422 sec)
+INFO:tensorflow:global_step/sec: 1.82316
+I0427 12:59:35.410223 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82316
+INFO:tensorflow:loss = 4.3410397e-05, step = 71700 (54.849 sec)
+I0427 12:59:35.411499 139690383447872 basic_session_run_hooks.py:260] loss = 4.3410397e-05, step = 71700 (54.849 sec)
+INFO:tensorflow:global_step/sec: 1.82202
+I0427 13:00:30.294237 139690383447872 basic_session_run_hooks.py:692] global_step/sec: 1.82202
+INFO:tensorflow:loss = 0.0001421397, step = 71800 (54.884 sec)
+I0427 13:00:30.295482 139690383447872 basic_session_run_hooks.py:260] loss = 0.0001421397, step = 71800 (54.884 sec)
+INFO:tensorflow:Saving checkpoints for 71857 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+I0427 13:01:01.060079 139690383447872 basic_session_run_hooks.py:606] Saving checkpoints for 71857 into ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt.
+INFO:tensorflow:../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-71857 is not in all_model_checkpoint_paths. Manually adding it.
+I0427 13:01:23.730728 139690383447872 checkpoint_management.py:95] ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-71857 is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:Loss for final step: 1.3053313e-05.
+I0427 13:01:25.033076 139690383447872 estimator.py:371] Loss for final step: 1.3053313e-05.
+INFO:tensorflow:Num of eval samples: 61132
+I0427 13:01:27.262062 139690383447872 run_sci_classifier.py:606] Num of eval samples: 61132
+INFO:tensorflow:Input tfrecord file ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/spiece.model.len-512.dev.predict.tf_record
+I0427 13:01:27.262838 139690383447872 run_sci_classifier.py:327] Input tfrecord file ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/spiece.model.len-512.dev.predict.tf_record
+INFO:tensorflow:Calling model_fn.
+I0427 13:01:27.305798 139690383447872 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:memory input None
+I0427 13:01:27.314178 139690383447872 modeling.py:453] memory input None
+INFO:tensorflow:Use float type <dtype: 'float32'>
+I0427 13:01:27.314363 139690383447872 modeling.py:455] Use float type <dtype: 'float32'>
+INFO:tensorflow:#params: 117309698
+I0427 13:01:30.788409 139690383447872 run_sci_classifier.py:395] #params: 117309698
+INFO:tensorflow:Initialize from the ckpt ./model/xlnet_cased_L-12_H-768_A-12/xlnet_model.ckpt
+I0427 13:01:30.788627 139690383447872 model_utils.py:73] Initialize from the ckpt ./model/xlnet_cased_L-12_H-768_A-12/xlnet_model.ckpt
+INFO:tensorflow:**** Global Variables ****
+I0427 13:01:31.242809 139690383447872 model_utils.py:87] **** Global Variables ****
+INFO:tensorflow:  name = model/transformer/r_w_bias:0, shape = (12, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.243003 139690383447872 model_utils.py:93]   name = model/transformer/r_w_bias:0, shape = (12, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/r_r_bias:0, shape = (12, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.243181 139690383447872 model_utils.py:93]   name = model/transformer/r_r_bias:0, shape = (12, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/word_embedding/lookup_table:0, shape = (32000, 768), *INIT_FROM_CKPT*
+I0427 13:01:31.243313 139690383447872 model_utils.py:93]   name = model/transformer/word_embedding/lookup_table:0, shape = (32000, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/r_s_bias:0, shape = (12, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.243436 139690383447872 model_utils.py:93]   name = model/transformer/r_s_bias:0, shape = (12, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/seg_embed:0, shape = (12, 2, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.243554 139690383447872 model_utils.py:93]   name = model/transformer/seg_embed:0, shape = (12, 2, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.243669 139690383447872 model_utils.py:93]   name = model/transformer/layer_0/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.243785 139690383447872 model_utils.py:93]   name = model/transformer/layer_0/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.243913 139690383447872 model_utils.py:93]   name = model/transformer/layer_0/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.244030 139690383447872 model_utils.py:93]   name = model/transformer/layer_0/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.244141 139690383447872 model_utils.py:93]   name = model/transformer/layer_0/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.244252 139690383447872 model_utils.py:93]   name = model/transformer/layer_0/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.244355 139690383447872 model_utils.py:93]   name = model/transformer/layer_0/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0427 13:01:31.244459 139690383447872 model_utils.py:93]   name = model/transformer/layer_0/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0427 13:01:31.244566 139690383447872 model_utils.py:93]   name = model/transformer/layer_0/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0427 13:01:31.244669 139690383447872 model_utils.py:93]   name = model/transformer/layer_0/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.244777 139690383447872 model_utils.py:93]   name = model/transformer/layer_0/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.244879 139690383447872 model_utils.py:93]   name = model/transformer/layer_0/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.244981 139690383447872 model_utils.py:93]   name = model/transformer/layer_0/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.245082 139690383447872 model_utils.py:93]   name = model/transformer/layer_1/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.245192 139690383447872 model_utils.py:93]   name = model/transformer/layer_1/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.245300 139690383447872 model_utils.py:93]   name = model/transformer/layer_1/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.245408 139690383447872 model_utils.py:93]   name = model/transformer/layer_1/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.245517 139690383447872 model_utils.py:93]   name = model/transformer/layer_1/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.245628 139690383447872 model_utils.py:93]   name = model/transformer/layer_1/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.245731 139690383447872 model_utils.py:93]   name = model/transformer/layer_1/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0427 13:01:31.245834 139690383447872 model_utils.py:93]   name = model/transformer/layer_1/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0427 13:01:31.245941 139690383447872 model_utils.py:93]   name = model/transformer/layer_1/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0427 13:01:31.246043 139690383447872 model_utils.py:93]   name = model/transformer/layer_1/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.246150 139690383447872 model_utils.py:93]   name = model/transformer/layer_1/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.246253 139690383447872 model_utils.py:93]   name = model/transformer/layer_1/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.246355 139690383447872 model_utils.py:93]   name = model/transformer/layer_1/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.246456 139690383447872 model_utils.py:93]   name = model/transformer/layer_2/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.246563 139690383447872 model_utils.py:93]   name = model/transformer/layer_2/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.246670 139690383447872 model_utils.py:93]   name = model/transformer/layer_2/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.246776 139690383447872 model_utils.py:93]   name = model/transformer/layer_2/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.246884 139690383447872 model_utils.py:93]   name = model/transformer/layer_2/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.246991 139690383447872 model_utils.py:93]   name = model/transformer/layer_2/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.247092 139690383447872 model_utils.py:93]   name = model/transformer/layer_2/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0427 13:01:31.247195 139690383447872 model_utils.py:93]   name = model/transformer/layer_2/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0427 13:01:31.247305 139690383447872 model_utils.py:93]   name = model/transformer/layer_2/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0427 13:01:31.247406 139690383447872 model_utils.py:93]   name = model/transformer/layer_2/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.247512 139690383447872 model_utils.py:93]   name = model/transformer/layer_2/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.247613 139690383447872 model_utils.py:93]   name = model/transformer/layer_2/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.247714 139690383447872 model_utils.py:93]   name = model/transformer/layer_2/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.247815 139690383447872 model_utils.py:93]   name = model/transformer/layer_3/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.247935 139690383447872 model_utils.py:93]   name = model/transformer/layer_3/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.248064 139690383447872 model_utils.py:93]   name = model/transformer/layer_3/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.248179 139690383447872 model_utils.py:93]   name = model/transformer/layer_3/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.248293 139690383447872 model_utils.py:93]   name = model/transformer/layer_3/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.248407 139690383447872 model_utils.py:93]   name = model/transformer/layer_3/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.248515 139690383447872 model_utils.py:93]   name = model/transformer/layer_3/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0427 13:01:31.248623 139690383447872 model_utils.py:93]   name = model/transformer/layer_3/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0427 13:01:31.248737 139690383447872 model_utils.py:93]   name = model/transformer/layer_3/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0427 13:01:31.248845 139690383447872 model_utils.py:93]   name = model/transformer/layer_3/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.248959 139690383447872 model_utils.py:93]   name = model/transformer/layer_3/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.249074 139690383447872 model_utils.py:93]   name = model/transformer/layer_3/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.249175 139690383447872 model_utils.py:93]   name = model/transformer/layer_3/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.249276 139690383447872 model_utils.py:93]   name = model/transformer/layer_4/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.249383 139690383447872 model_utils.py:93]   name = model/transformer/layer_4/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.249490 139690383447872 model_utils.py:93]   name = model/transformer/layer_4/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.249596 139690383447872 model_utils.py:93]   name = model/transformer/layer_4/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.249704 139690383447872 model_utils.py:93]   name = model/transformer/layer_4/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.249810 139690383447872 model_utils.py:93]   name = model/transformer/layer_4/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.249912 139690383447872 model_utils.py:93]   name = model/transformer/layer_4/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0427 13:01:31.250013 139690383447872 model_utils.py:93]   name = model/transformer/layer_4/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0427 13:01:31.250119 139690383447872 model_utils.py:93]   name = model/transformer/layer_4/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0427 13:01:31.250221 139690383447872 model_utils.py:93]   name = model/transformer/layer_4/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.250327 139690383447872 model_utils.py:93]   name = model/transformer/layer_4/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.250428 139690383447872 model_utils.py:93]   name = model/transformer/layer_4/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.250528 139690383447872 model_utils.py:93]   name = model/transformer/layer_4/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.250631 139690383447872 model_utils.py:93]   name = model/transformer/layer_5/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.250740 139690383447872 model_utils.py:93]   name = model/transformer/layer_5/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.250846 139690383447872 model_utils.py:93]   name = model/transformer/layer_5/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.250953 139690383447872 model_utils.py:93]   name = model/transformer/layer_5/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.251060 139690383447872 model_utils.py:93]   name = model/transformer/layer_5/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.251166 139690383447872 model_utils.py:93]   name = model/transformer/layer_5/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.251266 139690383447872 model_utils.py:93]   name = model/transformer/layer_5/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0427 13:01:31.251367 139690383447872 model_utils.py:93]   name = model/transformer/layer_5/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0427 13:01:31.251473 139690383447872 model_utils.py:93]   name = model/transformer/layer_5/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0427 13:01:31.251574 139690383447872 model_utils.py:93]   name = model/transformer/layer_5/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.251678 139690383447872 model_utils.py:93]   name = model/transformer/layer_5/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.251780 139690383447872 model_utils.py:93]   name = model/transformer/layer_5/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.251889 139690383447872 model_utils.py:93]   name = model/transformer/layer_5/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.251991 139690383447872 model_utils.py:93]   name = model/transformer/layer_6/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.252099 139690383447872 model_utils.py:93]   name = model/transformer/layer_6/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.252206 139690383447872 model_utils.py:93]   name = model/transformer/layer_6/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.252315 139690383447872 model_utils.py:93]   name = model/transformer/layer_6/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.252423 139690383447872 model_utils.py:93]   name = model/transformer/layer_6/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.252530 139690383447872 model_utils.py:93]   name = model/transformer/layer_6/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.252630 139690383447872 model_utils.py:93]   name = model/transformer/layer_6/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0427 13:01:31.252731 139690383447872 model_utils.py:93]   name = model/transformer/layer_6/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0427 13:01:31.252838 139690383447872 model_utils.py:93]   name = model/transformer/layer_6/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0427 13:01:31.252939 139690383447872 model_utils.py:93]   name = model/transformer/layer_6/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.253044 139690383447872 model_utils.py:93]   name = model/transformer/layer_6/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.253146 139690383447872 model_utils.py:93]   name = model/transformer/layer_6/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.253247 139690383447872 model_utils.py:93]   name = model/transformer/layer_6/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.253349 139690383447872 model_utils.py:93]   name = model/transformer/layer_7/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.253456 139690383447872 model_utils.py:93]   name = model/transformer/layer_7/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.253562 139690383447872 model_utils.py:93]   name = model/transformer/layer_7/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.253668 139690383447872 model_utils.py:93]   name = model/transformer/layer_7/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.253774 139690383447872 model_utils.py:93]   name = model/transformer/layer_7/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.253882 139690383447872 model_utils.py:93]   name = model/transformer/layer_7/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.253986 139690383447872 model_utils.py:93]   name = model/transformer/layer_7/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0427 13:01:31.254087 139690383447872 model_utils.py:93]   name = model/transformer/layer_7/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0427 13:01:31.254193 139690383447872 model_utils.py:93]   name = model/transformer/layer_7/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0427 13:01:31.254294 139690383447872 model_utils.py:93]   name = model/transformer/layer_7/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.254400 139690383447872 model_utils.py:93]   name = model/transformer/layer_7/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.254501 139690383447872 model_utils.py:93]   name = model/transformer/layer_7/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.254601 139690383447872 model_utils.py:93]   name = model/transformer/layer_7/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.254701 139690383447872 model_utils.py:93]   name = model/transformer/layer_8/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.254808 139690383447872 model_utils.py:93]   name = model/transformer/layer_8/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.254914 139690383447872 model_utils.py:93]   name = model/transformer/layer_8/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.255021 139690383447872 model_utils.py:93]   name = model/transformer/layer_8/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.255126 139690383447872 model_utils.py:93]   name = model/transformer/layer_8/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.255233 139690383447872 model_utils.py:93]   name = model/transformer/layer_8/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.255334 139690383447872 model_utils.py:93]   name = model/transformer/layer_8/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0427 13:01:31.255436 139690383447872 model_utils.py:93]   name = model/transformer/layer_8/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0427 13:01:31.255542 139690383447872 model_utils.py:93]   name = model/transformer/layer_8/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0427 13:01:31.255645 139690383447872 model_utils.py:93]   name = model/transformer/layer_8/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.255751 139690383447872 model_utils.py:93]   name = model/transformer/layer_8/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.255858 139690383447872 model_utils.py:93]   name = model/transformer/layer_8/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.255961 139690383447872 model_utils.py:93]   name = model/transformer/layer_8/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.256063 139690383447872 model_utils.py:93]   name = model/transformer/layer_9/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.256170 139690383447872 model_utils.py:93]   name = model/transformer/layer_9/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.256278 139690383447872 model_utils.py:93]   name = model/transformer/layer_9/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.256384 139690383447872 model_utils.py:93]   name = model/transformer/layer_9/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.256490 139690383447872 model_utils.py:93]   name = model/transformer/layer_9/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.256596 139690383447872 model_utils.py:93]   name = model/transformer/layer_9/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.256697 139690383447872 model_utils.py:93]   name = model/transformer/layer_9/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0427 13:01:31.256797 139690383447872 model_utils.py:93]   name = model/transformer/layer_9/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0427 13:01:31.256902 139690383447872 model_utils.py:93]   name = model/transformer/layer_9/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0427 13:01:31.257003 139690383447872 model_utils.py:93]   name = model/transformer/layer_9/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.257108 139690383447872 model_utils.py:93]   name = model/transformer/layer_9/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.257211 139690383447872 model_utils.py:93]   name = model/transformer/layer_9/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.257312 139690383447872 model_utils.py:93]   name = model/transformer/layer_9/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.257413 139690383447872 model_utils.py:93]   name = model/transformer/layer_10/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.257522 139690383447872 model_utils.py:93]   name = model/transformer/layer_10/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.257629 139690383447872 model_utils.py:93]   name = model/transformer/layer_10/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.257736 139690383447872 model_utils.py:93]   name = model/transformer/layer_10/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.257843 139690383447872 model_utils.py:93]   name = model/transformer/layer_10/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.257951 139690383447872 model_utils.py:93]   name = model/transformer/layer_10/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.258053 139690383447872 model_utils.py:93]   name = model/transformer/layer_10/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0427 13:01:31.258154 139690383447872 model_utils.py:93]   name = model/transformer/layer_10/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0427 13:01:31.258260 139690383447872 model_utils.py:93]   name = model/transformer/layer_10/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0427 13:01:31.258362 139690383447872 model_utils.py:93]   name = model/transformer/layer_10/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.258467 139690383447872 model_utils.py:93]   name = model/transformer/layer_10/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.258569 139690383447872 model_utils.py:93]   name = model/transformer/layer_10/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.258669 139690383447872 model_utils.py:93]   name = model/transformer/layer_10/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.258769 139690383447872 model_utils.py:93]   name = model/transformer/layer_11/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.258877 139690383447872 model_utils.py:93]   name = model/transformer/layer_11/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.258985 139690383447872 model_utils.py:93]   name = model/transformer/layer_11/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.259091 139690383447872 model_utils.py:93]   name = model/transformer/layer_11/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0427 13:01:31.259198 139690383447872 model_utils.py:93]   name = model/transformer/layer_11/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.259305 139690383447872 model_utils.py:93]   name = model/transformer/layer_11/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.259407 139690383447872 model_utils.py:93]   name = model/transformer/layer_11/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0427 13:01:31.259507 139690383447872 model_utils.py:93]   name = model/transformer/layer_11/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0427 13:01:31.259613 139690383447872 model_utils.py:93]   name = model/transformer/layer_11/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0427 13:01:31.259714 139690383447872 model_utils.py:93]   name = model/transformer/layer_11/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.259819 139690383447872 model_utils.py:93]   name = model/transformer/layer_11/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.259929 139690383447872 model_utils.py:93]   name = model/transformer/layer_11/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0427 13:01:31.260033 139690383447872 model_utils.py:93]   name = model/transformer/layer_11/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/sequnece_summary/summary/kernel:0, shape = (768, 768)
+I0427 13:01:31.260134 139690383447872 model_utils.py:93]   name = model/sequnece_summary/summary/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = model/sequnece_summary/summary/bias:0, shape = (768,)
+I0427 13:01:31.260240 139690383447872 model_utils.py:93]   name = model/sequnece_summary/summary/bias:0, shape = (768,)
+INFO:tensorflow:  name = model/classification_sci/logit/kernel:0, shape = (768, 2)
+I0427 13:01:31.260341 139690383447872 model_utils.py:93]   name = model/classification_sci/logit/kernel:0, shape = (768, 2)
+INFO:tensorflow:  name = model/classification_sci/logit/bias:0, shape = (2,)
+I0427 13:01:31.260447 139690383447872 model_utils.py:93]   name = model/classification_sci/logit/bias:0, shape = (2,)
+INFO:tensorflow:Done calling model_fn.
+I0427 13:01:31.261975 139690383447872 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Graph was finalized.
+I0427 13:01:31.567344 139690383447872 monitored_session.py:240] Graph was finalized.
+2021-04-27 13:01:31.568375: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:1c:00.0
+2021-04-27 13:01:31.568509: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-04-27 13:01:31.568535: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-04-27 13:01:31.568552: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-04-27 13:01:31.568575: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-04-27 13:01:31.568594: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-04-27 13:01:31.568613: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-04-27 13:01:31.568633: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-04-27 13:01:31.569188: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-04-27 13:01:31.569243: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-04-27 13:01:31.569286: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-04-27 13:01:31.569297: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-04-27 13:01:31.569886: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10320 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:1c:00.0, compute capability: 7.5)
+INFO:tensorflow:Restoring parameters from ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-71857
+I0427 13:01:31.574364 139690383447872 saver.py:1284] Restoring parameters from ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold2/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-71857
+INFO:tensorflow:Running local_init_op.
+I0427 13:01:39.756947 139690383447872 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0427 13:01:39.912883 139690383447872 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Predicting submission for example: 0
+I0427 13:01:42.600658 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 0
+INFO:tensorflow:Predicting submission for example: 1000
+I0427 13:02:18.212607 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 1000
+INFO:tensorflow:Predicting submission for example: 2000
+I0427 13:02:54.237545 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 2000
+INFO:tensorflow:Predicting submission for example: 3000
+I0427 13:03:30.463161 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 3000
+INFO:tensorflow:Predicting submission for example: 4000
+I0427 13:04:06.506675 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 4000
+INFO:tensorflow:Predicting submission for example: 5000
+I0427 13:04:42.792785 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 5000
+INFO:tensorflow:Predicting submission for example: 6000
+I0427 13:05:19.076595 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 6000
+INFO:tensorflow:Predicting submission for example: 7000
+I0427 13:05:55.092400 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 7000
+INFO:tensorflow:Predicting submission for example: 8000
+I0427 13:06:31.445450 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 8000
+INFO:tensorflow:Predicting submission for example: 9000
+I0427 13:07:07.759699 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 9000
+INFO:tensorflow:Predicting submission for example: 10000
+I0427 13:07:43.788001 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 10000
+INFO:tensorflow:Predicting submission for example: 11000
+I0427 13:08:20.227149 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 11000
+INFO:tensorflow:Predicting submission for example: 12000
+I0427 13:08:56.548963 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 12000
+INFO:tensorflow:Predicting submission for example: 13000
+I0427 13:09:32.589263 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 13000
+INFO:tensorflow:Predicting submission for example: 14000
+I0427 13:10:08.917635 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 14000
+INFO:tensorflow:Predicting submission for example: 15000
+I0427 13:10:44.990829 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 15000
+INFO:tensorflow:Predicting submission for example: 16000
+I0427 13:11:20.921658 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 16000
+INFO:tensorflow:Predicting submission for example: 17000
+I0427 13:11:57.128327 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 17000
+INFO:tensorflow:Predicting submission for example: 18000
+I0427 13:12:33.260745 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 18000
+INFO:tensorflow:Predicting submission for example: 19000
+I0427 13:13:09.332254 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 19000
+INFO:tensorflow:Predicting submission for example: 20000
+I0427 13:13:45.548134 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 20000
+INFO:tensorflow:Predicting submission for example: 21000
+I0427 13:14:21.740530 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 21000
+INFO:tensorflow:Predicting submission for example: 22000
+I0427 13:14:57.647434 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 22000
+INFO:tensorflow:Predicting submission for example: 23000
+I0427 13:15:33.922591 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 23000
+INFO:tensorflow:Predicting submission for example: 24000
+I0427 13:16:10.079166 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 24000
+INFO:tensorflow:Predicting submission for example: 25000
+I0427 13:16:46.080908 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 25000
+INFO:tensorflow:Predicting submission for example: 26000
+I0427 13:17:22.340311 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 26000
+INFO:tensorflow:Predicting submission for example: 27000
+I0427 13:17:58.420658 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 27000
+INFO:tensorflow:Predicting submission for example: 28000
+I0427 13:18:34.224020 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 28000
+INFO:tensorflow:Predicting submission for example: 29000
+I0427 13:19:10.367646 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 29000
+INFO:tensorflow:Predicting submission for example: 30000
+I0427 13:19:46.427660 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 30000
+INFO:tensorflow:Predicting submission for example: 31000
+I0427 13:20:22.313094 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 31000
+INFO:tensorflow:Predicting submission for example: 32000
+I0427 13:20:58.494984 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 32000
+INFO:tensorflow:Predicting submission for example: 33000
+I0427 13:21:34.627262 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 33000
+INFO:tensorflow:Predicting submission for example: 34000
+I0427 13:22:10.559422 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 34000
+INFO:tensorflow:Predicting submission for example: 35000
+I0427 13:22:46.765559 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 35000
+INFO:tensorflow:Predicting submission for example: 36000
+I0427 13:23:22.929316 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 36000
+INFO:tensorflow:Predicting submission for example: 37000
+I0427 13:23:58.860198 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 37000
+INFO:tensorflow:Predicting submission for example: 38000
+I0427 13:24:35.015573 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 38000
+INFO:tensorflow:Predicting submission for example: 39000
+I0427 13:25:10.929126 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 39000
+INFO:tensorflow:Predicting submission for example: 40000
+I0427 13:25:46.874938 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 40000
+INFO:tensorflow:Predicting submission for example: 41000
+I0427 13:26:23.200600 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 41000
+INFO:tensorflow:Predicting submission for example: 42000
+I0427 13:26:59.445503 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 42000
+INFO:tensorflow:Predicting submission for example: 43000
+I0427 13:27:35.522071 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 43000
+INFO:tensorflow:Predicting submission for example: 44000
+I0427 13:28:11.413759 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 44000
+INFO:tensorflow:Predicting submission for example: 45000
+I0427 13:28:47.637937 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 45000
+INFO:tensorflow:Predicting submission for example: 46000
+I0427 13:29:23.561717 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 46000
+INFO:tensorflow:Predicting submission for example: 47000
+I0427 13:29:59.543787 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 47000
+INFO:tensorflow:Predicting submission for example: 48000
+I0427 13:30:35.907259 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 48000
+INFO:tensorflow:Predicting submission for example: 49000
+I0427 13:31:11.758774 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 49000
+INFO:tensorflow:Predicting submission for example: 50000
+I0427 13:31:47.874314 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 50000
+INFO:tensorflow:Predicting submission for example: 51000
+I0427 13:32:24.013634 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 51000
+INFO:tensorflow:Predicting submission for example: 52000
+I0427 13:32:59.911304 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 52000
+INFO:tensorflow:Predicting submission for example: 53000
+I0427 13:33:35.967952 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 53000
+INFO:tensorflow:Predicting submission for example: 54000
+I0427 13:34:12.126793 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 54000
+INFO:tensorflow:Predicting submission for example: 55000
+I0427 13:34:48.076465 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 55000
+INFO:tensorflow:Predicting submission for example: 56000
+I0427 13:35:24.334303 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 56000
+INFO:tensorflow:Predicting submission for example: 57000
+I0427 13:36:00.450045 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 57000
+INFO:tensorflow:Predicting submission for example: 58000
+I0427 13:36:36.146623 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 58000
+INFO:tensorflow:Predicting submission for example: 59000
+I0427 13:37:12.217893 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 59000
+INFO:tensorflow:Predicting submission for example: 60000
+I0427 13:37:48.478211 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 60000
+INFO:tensorflow:Predicting submission for example: 61000
+I0427 13:38:24.269668 139690383447872 run_sci_classifier.py:708] Predicting submission for example: 61000

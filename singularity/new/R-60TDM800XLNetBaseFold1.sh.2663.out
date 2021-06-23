@@ -1,0 +1,631 @@
+Directory ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold1/models/cased_L-12_H-768_A-12_XLNet/ Exist
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:297: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From run_sci_classifier.py:744: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+WARNING:tensorflow:From run_sci_classifier.py:516: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+W0517 14:05:09.442093 139919164569408 module_wrapper.py:139] From run_sci_classifier.py:516: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+WARNING:tensorflow:From run_sci_classifier.py:516: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+W0517 14:05:09.442442 139919164569408 module_wrapper.py:139] From run_sci_classifier.py:516: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+WARNING:tensorflow:From run_sci_classifier.py:524: The name tf.gfile.Exists is deprecated. Please use tf.io.gfile.exists instead.
+
+W0517 14:05:09.442712 139919164569408 module_wrapper.py:139] From run_sci_classifier.py:524: The name tf.gfile.Exists is deprecated. Please use tf.io.gfile.exists instead.
+
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:29: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+W0517 14:05:09.511320 139919164569408 module_wrapper.py:139] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:29: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:38: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+W0517 14:05:09.511590 139919164569408 module_wrapper.py:139] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:38: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+INFO:tensorflow:Single device mode.
+I0517 14:05:09.511728 139919164569408 model_utils.py:38] Single device mode.
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+W0517 14:05:09.511893 139919164569408 lazy_loader.py:50] 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+INFO:tensorflow:Using config: {'_model_dir': '../data/paperwithcode/60Neg800unk/twofoldwithunk/fold1/models/cased_L-12_H-768_A-12_XLNet/', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': 500, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 0, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f40fadaa4a8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1, '_tpu_config': TPUConfig(iterations_per_loop=500, num_shards=1, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_cluster': None}
+I0517 14:05:11.199059 139919164569408 estimator.py:212] Using config: {'_model_dir': '../data/paperwithcode/60Neg800unk/twofoldwithunk/fold1/models/cased_L-12_H-768_A-12_XLNet/', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': 500, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+, '_keep_checkpoint_max': 0, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7f40fadaa4a8>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1, '_tpu_config': TPUConfig(iterations_per_loop=500, num_shards=1, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_cluster': None}
+WARNING:tensorflow:Estimator's model_fn (<function get_model_fn.<locals>.model_fn at 0x7f40fada2c80>) includes params argument, but params are not passed to Estimator.
+W0517 14:05:11.200423 139919164569408 model_fn.py:630] Estimator's model_fn (<function get_model_fn.<locals>.model_fn at 0x7f40fada2c80>) includes params argument, but params are not passed to Estimator.
+INFO:tensorflow:Use tfrecord file ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold1/models/cased_L-12_H-768_A-12_XLNet/spiece.model.len-512.train.tf_record
+I0517 14:05:11.201050 139919164569408 run_sci_classifier.py:578] Use tfrecord file ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold1/models/cased_L-12_H-768_A-12_XLNet/spiece.model.len-512.train.tf_record
+INFO:tensorflow:Num of train samples: 142396
+I0517 14:05:16.274432 139919164569408 run_sci_classifier.py:582] Num of train samples: 142396
+WARNING:tensorflow:From run_sci_classifier.py:318: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+W0517 14:05:16.275520 139919164569408 module_wrapper.py:139] From run_sci_classifier.py:318: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+INFO:tensorflow:Input tfrecord file ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold1/models/cased_L-12_H-768_A-12_XLNet/spiece.model.len-512.train.tf_record
+I0517 14:05:16.275738 139919164569408 run_sci_classifier.py:327] Input tfrecord file ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold1/models/cased_L-12_H-768_A-12_XLNet/spiece.model.len-512.train.tf_record
+INFO:tensorflow:Skipping training since max_steps has already saved.
+I0517 14:05:21.061717 139919164569408 estimator.py:363] Skipping training since max_steps has already saved.
+INFO:tensorflow:Num of eval samples: 62450
+I0517 14:05:23.047646 139919164569408 run_sci_classifier.py:606] Num of eval samples: 62450
+INFO:tensorflow:Input tfrecord file ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold1/models/cased_L-12_H-768_A-12_XLNet/spiece.model.len-512.dev.predict.tf_record
+I0517 14:05:23.047973 139919164569408 run_sci_classifier.py:327] Input tfrecord file ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold1/models/cased_L-12_H-768_A-12_XLNet/spiece.model.len-512.dev.predict.tf_record
+WARNING:tensorflow:From run_sci_classifier.py:700: The name tf.gfile.Open is deprecated. Please use tf.io.gfile.GFile instead.
+
+W0517 14:05:23.048174 139919164569408 module_wrapper.py:139] From run_sci_classifier.py:700: The name tf.gfile.Open is deprecated. Please use tf.io.gfile.GFile instead.
+
+WARNING:tensorflow:From run_sci_classifier.py:372: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+W0517 14:05:23.095679 139919164569408 deprecation.py:323] From run_sci_classifier.py:372: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+WARNING:tensorflow:From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/contrib/data/python/ops/batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+W0517 14:05:23.095888 139919164569408 deprecation.py:323] From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/contrib/data/python/ops/batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+WARNING:tensorflow:From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+W0517 14:05:23.154031 139919164569408 module_wrapper.py:139] From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+INFO:tensorflow:Calling model_fn.
+I0517 14:05:23.261447 139919164569408 estimator.py:1148] Calling model_fn.
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/xlnet.py:220: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W0517 14:05:23.272664 139919164569408 module_wrapper.py:139] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/xlnet.py:220: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/xlnet.py:220: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+W0517 14:05:23.272835 139919164569408 module_wrapper.py:139] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/xlnet.py:220: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+INFO:tensorflow:memory input None
+I0517 14:05:23.273076 139919164569408 modeling.py:453] memory input None
+INFO:tensorflow:Use float type <dtype: 'float32'>
+I0517 14:05:23.273200 139919164569408 modeling.py:455] Use float type <dtype: 'float32'>
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/modeling.py:460: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+W0517 14:05:23.273420 139919164569408 module_wrapper.py:139] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/modeling.py:460: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/modeling.py:535: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+W0517 14:05:23.320903 139919164569408 deprecation.py:323] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/modeling.py:535: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+WARNING:tensorflow:From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/layers/core.py:271: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W0517 14:05:23.321416 139919164569408 deprecation.py:323] From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/layers/core.py:271: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/modeling.py:67: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+W0517 14:05:23.605791 139919164569408 deprecation.py:323] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/modeling.py:67: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From run_sci_classifier.py:394: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+W0517 14:05:26.815518 139919164569408 module_wrapper.py:139] From run_sci_classifier.py:394: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+INFO:tensorflow:#params: 117309698
+I0517 14:05:26.820680 139919164569408 run_sci_classifier.py:395] #params: 117309698
+INFO:tensorflow:Initialize from the ckpt ./model/xlnet_cased_L-12_H-768_A-12/xlnet_model.ckpt
+I0517 14:05:26.820868 139919164569408 model_utils.py:73] Initialize from the ckpt ./model/xlnet_cased_L-12_H-768_A-12/xlnet_model.ckpt
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:84: The name tf.train.init_from_checkpoint is deprecated. Please use tf.compat.v1.train.init_from_checkpoint instead.
+
+W0517 14:05:26.834561 139919164569408 module_wrapper.py:139] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/XLNet/model_utils.py:84: The name tf.train.init_from_checkpoint is deprecated. Please use tf.compat.v1.train.init_from_checkpoint instead.
+
+INFO:tensorflow:**** Global Variables ****
+I0517 14:05:27.206972 139919164569408 model_utils.py:87] **** Global Variables ****
+INFO:tensorflow:  name = model/transformer/r_w_bias:0, shape = (12, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.207116 139919164569408 model_utils.py:93]   name = model/transformer/r_w_bias:0, shape = (12, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/r_r_bias:0, shape = (12, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.207280 139919164569408 model_utils.py:93]   name = model/transformer/r_r_bias:0, shape = (12, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/word_embedding/lookup_table:0, shape = (32000, 768), *INIT_FROM_CKPT*
+I0517 14:05:27.207410 139919164569408 model_utils.py:93]   name = model/transformer/word_embedding/lookup_table:0, shape = (32000, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/r_s_bias:0, shape = (12, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.207535 139919164569408 model_utils.py:93]   name = model/transformer/r_s_bias:0, shape = (12, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/seg_embed:0, shape = (12, 2, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.207652 139919164569408 model_utils.py:93]   name = model/transformer/seg_embed:0, shape = (12, 2, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.207745 139919164569408 model_utils.py:93]   name = model/transformer/layer_0/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.207848 139919164569408 model_utils.py:93]   name = model/transformer/layer_0/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.207948 139919164569408 model_utils.py:93]   name = model/transformer/layer_0/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.208065 139919164569408 model_utils.py:93]   name = model/transformer/layer_0/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.208178 139919164569408 model_utils.py:93]   name = model/transformer/layer_0/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.208287 139919164569408 model_utils.py:93]   name = model/transformer/layer_0/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.208392 139919164569408 model_utils.py:93]   name = model/transformer/layer_0/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0517 14:05:27.208494 139919164569408 model_utils.py:93]   name = model/transformer/layer_0/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0517 14:05:27.208600 139919164569408 model_utils.py:93]   name = model/transformer/layer_0/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0517 14:05:27.208702 139919164569408 model_utils.py:93]   name = model/transformer/layer_0/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.208806 139919164569408 model_utils.py:93]   name = model/transformer/layer_0/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.208908 139919164569408 model_utils.py:93]   name = model/transformer/layer_0/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_0/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.209012 139919164569408 model_utils.py:93]   name = model/transformer/layer_0/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.209114 139919164569408 model_utils.py:93]   name = model/transformer/layer_1/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.209224 139919164569408 model_utils.py:93]   name = model/transformer/layer_1/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.209331 139919164569408 model_utils.py:93]   name = model/transformer/layer_1/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.209446 139919164569408 model_utils.py:93]   name = model/transformer/layer_1/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.209557 139919164569408 model_utils.py:93]   name = model/transformer/layer_1/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.209666 139919164569408 model_utils.py:93]   name = model/transformer/layer_1/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.209767 139919164569408 model_utils.py:93]   name = model/transformer/layer_1/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0517 14:05:27.209869 139919164569408 model_utils.py:93]   name = model/transformer/layer_1/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0517 14:05:27.209981 139919164569408 model_utils.py:93]   name = model/transformer/layer_1/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0517 14:05:27.210083 139919164569408 model_utils.py:93]   name = model/transformer/layer_1/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.210199 139919164569408 model_utils.py:93]   name = model/transformer/layer_1/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.210304 139919164569408 model_utils.py:93]   name = model/transformer/layer_1/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_1/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.210406 139919164569408 model_utils.py:93]   name = model/transformer/layer_1/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.210507 139919164569408 model_utils.py:93]   name = model/transformer/layer_2/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.210615 139919164569408 model_utils.py:93]   name = model/transformer/layer_2/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.210724 139919164569408 model_utils.py:93]   name = model/transformer/layer_2/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.210832 139919164569408 model_utils.py:93]   name = model/transformer/layer_2/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.210940 139919164569408 model_utils.py:93]   name = model/transformer/layer_2/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.211048 139919164569408 model_utils.py:93]   name = model/transformer/layer_2/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.211150 139919164569408 model_utils.py:93]   name = model/transformer/layer_2/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0517 14:05:27.211257 139919164569408 model_utils.py:93]   name = model/transformer/layer_2/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0517 14:05:27.211365 139919164569408 model_utils.py:93]   name = model/transformer/layer_2/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0517 14:05:27.211468 139919164569408 model_utils.py:93]   name = model/transformer/layer_2/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.211574 139919164569408 model_utils.py:93]   name = model/transformer/layer_2/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.211676 139919164569408 model_utils.py:93]   name = model/transformer/layer_2/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_2/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.211777 139919164569408 model_utils.py:93]   name = model/transformer/layer_2/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.211888 139919164569408 model_utils.py:93]   name = model/transformer/layer_3/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.211999 139919164569408 model_utils.py:93]   name = model/transformer/layer_3/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.212107 139919164569408 model_utils.py:93]   name = model/transformer/layer_3/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.212215 139919164569408 model_utils.py:93]   name = model/transformer/layer_3/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.212324 139919164569408 model_utils.py:93]   name = model/transformer/layer_3/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.212432 139919164569408 model_utils.py:93]   name = model/transformer/layer_3/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.212535 139919164569408 model_utils.py:93]   name = model/transformer/layer_3/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0517 14:05:27.212637 139919164569408 model_utils.py:93]   name = model/transformer/layer_3/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0517 14:05:27.212745 139919164569408 model_utils.py:93]   name = model/transformer/layer_3/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0517 14:05:27.212851 139919164569408 model_utils.py:93]   name = model/transformer/layer_3/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.212959 139919164569408 model_utils.py:93]   name = model/transformer/layer_3/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.213062 139919164569408 model_utils.py:93]   name = model/transformer/layer_3/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_3/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.213164 139919164569408 model_utils.py:93]   name = model/transformer/layer_3/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.213266 139919164569408 model_utils.py:93]   name = model/transformer/layer_4/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.213374 139919164569408 model_utils.py:93]   name = model/transformer/layer_4/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.213482 139919164569408 model_utils.py:93]   name = model/transformer/layer_4/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.213590 139919164569408 model_utils.py:93]   name = model/transformer/layer_4/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.213697 139919164569408 model_utils.py:93]   name = model/transformer/layer_4/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.213806 139919164569408 model_utils.py:93]   name = model/transformer/layer_4/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.213909 139919164569408 model_utils.py:93]   name = model/transformer/layer_4/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0517 14:05:27.214011 139919164569408 model_utils.py:93]   name = model/transformer/layer_4/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0517 14:05:27.214118 139919164569408 model_utils.py:93]   name = model/transformer/layer_4/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0517 14:05:27.214219 139919164569408 model_utils.py:93]   name = model/transformer/layer_4/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.214327 139919164569408 model_utils.py:93]   name = model/transformer/layer_4/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.214429 139919164569408 model_utils.py:93]   name = model/transformer/layer_4/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_4/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.214532 139919164569408 model_utils.py:93]   name = model/transformer/layer_4/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.214635 139919164569408 model_utils.py:93]   name = model/transformer/layer_5/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.214743 139919164569408 model_utils.py:93]   name = model/transformer/layer_5/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.214851 139919164569408 model_utils.py:93]   name = model/transformer/layer_5/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.214959 139919164569408 model_utils.py:93]   name = model/transformer/layer_5/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.215067 139919164569408 model_utils.py:93]   name = model/transformer/layer_5/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.215174 139919164569408 model_utils.py:93]   name = model/transformer/layer_5/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.215277 139919164569408 model_utils.py:93]   name = model/transformer/layer_5/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0517 14:05:27.215380 139919164569408 model_utils.py:93]   name = model/transformer/layer_5/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0517 14:05:27.215488 139919164569408 model_utils.py:93]   name = model/transformer/layer_5/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0517 14:05:27.215590 139919164569408 model_utils.py:93]   name = model/transformer/layer_5/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.215696 139919164569408 model_utils.py:93]   name = model/transformer/layer_5/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.215799 139919164569408 model_utils.py:93]   name = model/transformer/layer_5/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_5/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.215909 139919164569408 model_utils.py:93]   name = model/transformer/layer_5/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.216015 139919164569408 model_utils.py:93]   name = model/transformer/layer_6/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.216122 139919164569408 model_utils.py:93]   name = model/transformer/layer_6/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.216233 139919164569408 model_utils.py:93]   name = model/transformer/layer_6/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.216341 139919164569408 model_utils.py:93]   name = model/transformer/layer_6/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.216449 139919164569408 model_utils.py:93]   name = model/transformer/layer_6/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.216557 139919164569408 model_utils.py:93]   name = model/transformer/layer_6/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.216659 139919164569408 model_utils.py:93]   name = model/transformer/layer_6/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0517 14:05:27.216761 139919164569408 model_utils.py:93]   name = model/transformer/layer_6/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0517 14:05:27.216867 139919164569408 model_utils.py:93]   name = model/transformer/layer_6/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0517 14:05:27.216969 139919164569408 model_utils.py:93]   name = model/transformer/layer_6/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.217075 139919164569408 model_utils.py:93]   name = model/transformer/layer_6/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.217176 139919164569408 model_utils.py:93]   name = model/transformer/layer_6/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_6/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.217278 139919164569408 model_utils.py:93]   name = model/transformer/layer_6/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.217379 139919164569408 model_utils.py:93]   name = model/transformer/layer_7/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.217488 139919164569408 model_utils.py:93]   name = model/transformer/layer_7/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.217596 139919164569408 model_utils.py:93]   name = model/transformer/layer_7/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.217703 139919164569408 model_utils.py:93]   name = model/transformer/layer_7/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.217810 139919164569408 model_utils.py:93]   name = model/transformer/layer_7/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.217920 139919164569408 model_utils.py:93]   name = model/transformer/layer_7/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.218022 139919164569408 model_utils.py:93]   name = model/transformer/layer_7/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0517 14:05:27.218123 139919164569408 model_utils.py:93]   name = model/transformer/layer_7/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0517 14:05:27.218228 139919164569408 model_utils.py:93]   name = model/transformer/layer_7/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0517 14:05:27.218330 139919164569408 model_utils.py:93]   name = model/transformer/layer_7/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.218437 139919164569408 model_utils.py:93]   name = model/transformer/layer_7/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.218539 139919164569408 model_utils.py:93]   name = model/transformer/layer_7/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_7/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.218640 139919164569408 model_utils.py:93]   name = model/transformer/layer_7/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.218742 139919164569408 model_utils.py:93]   name = model/transformer/layer_8/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.218850 139919164569408 model_utils.py:93]   name = model/transformer/layer_8/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.218958 139919164569408 model_utils.py:93]   name = model/transformer/layer_8/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.219066 139919164569408 model_utils.py:93]   name = model/transformer/layer_8/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.219174 139919164569408 model_utils.py:93]   name = model/transformer/layer_8/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.219281 139919164569408 model_utils.py:93]   name = model/transformer/layer_8/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.219383 139919164569408 model_utils.py:93]   name = model/transformer/layer_8/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0517 14:05:27.219486 139919164569408 model_utils.py:93]   name = model/transformer/layer_8/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0517 14:05:27.219594 139919164569408 model_utils.py:93]   name = model/transformer/layer_8/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0517 14:05:27.219696 139919164569408 model_utils.py:93]   name = model/transformer/layer_8/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.219803 139919164569408 model_utils.py:93]   name = model/transformer/layer_8/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.219913 139919164569408 model_utils.py:93]   name = model/transformer/layer_8/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_8/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.220017 139919164569408 model_utils.py:93]   name = model/transformer/layer_8/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.220118 139919164569408 model_utils.py:93]   name = model/transformer/layer_9/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.220226 139919164569408 model_utils.py:93]   name = model/transformer/layer_9/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.220334 139919164569408 model_utils.py:93]   name = model/transformer/layer_9/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.220442 139919164569408 model_utils.py:93]   name = model/transformer/layer_9/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.220550 139919164569408 model_utils.py:93]   name = model/transformer/layer_9/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.220658 139919164569408 model_utils.py:93]   name = model/transformer/layer_9/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.220760 139919164569408 model_utils.py:93]   name = model/transformer/layer_9/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0517 14:05:27.220862 139919164569408 model_utils.py:93]   name = model/transformer/layer_9/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0517 14:05:27.220968 139919164569408 model_utils.py:93]   name = model/transformer/layer_9/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0517 14:05:27.221070 139919164569408 model_utils.py:93]   name = model/transformer/layer_9/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.221178 139919164569408 model_utils.py:93]   name = model/transformer/layer_9/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.221281 139919164569408 model_utils.py:93]   name = model/transformer/layer_9/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_9/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.221382 139919164569408 model_utils.py:93]   name = model/transformer/layer_9/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.221482 139919164569408 model_utils.py:93]   name = model/transformer/layer_10/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.221590 139919164569408 model_utils.py:93]   name = model/transformer/layer_10/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.221697 139919164569408 model_utils.py:93]   name = model/transformer/layer_10/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.221804 139919164569408 model_utils.py:93]   name = model/transformer/layer_10/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.221910 139919164569408 model_utils.py:93]   name = model/transformer/layer_10/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.222018 139919164569408 model_utils.py:93]   name = model/transformer/layer_10/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.222120 139919164569408 model_utils.py:93]   name = model/transformer/layer_10/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0517 14:05:27.222221 139919164569408 model_utils.py:93]   name = model/transformer/layer_10/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0517 14:05:27.222327 139919164569408 model_utils.py:93]   name = model/transformer/layer_10/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0517 14:05:27.222429 139919164569408 model_utils.py:93]   name = model/transformer/layer_10/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.222534 139919164569408 model_utils.py:93]   name = model/transformer/layer_10/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.222636 139919164569408 model_utils.py:93]   name = model/transformer/layer_10/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_10/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.222738 139919164569408 model_utils.py:93]   name = model/transformer/layer_10/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.222841 139919164569408 model_utils.py:93]   name = model/transformer/layer_11/rel_attn/q/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.222950 139919164569408 model_utils.py:93]   name = model/transformer/layer_11/rel_attn/k/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.223057 139919164569408 model_utils.py:93]   name = model/transformer/layer_11/rel_attn/v/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.223165 139919164569408 model_utils.py:93]   name = model/transformer/layer_11/rel_attn/r/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+I0517 14:05:27.223272 139919164569408 model_utils.py:93]   name = model/transformer/layer_11/rel_attn/o/kernel:0, shape = (768, 12, 64), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.223379 139919164569408 model_utils.py:93]   name = model/transformer/layer_11/rel_attn/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.223481 139919164569408 model_utils.py:93]   name = model/transformer/layer_11/rel_attn/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0517 14:05:27.223582 139919164569408 model_utils.py:93]   name = model/transformer/layer_11/ff/layer_1/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0517 14:05:27.223688 139919164569408 model_utils.py:93]   name = model/transformer/layer_11/ff/layer_1/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0517 14:05:27.223790 139919164569408 model_utils.py:93]   name = model/transformer/layer_11/ff/layer_2/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.223904 139919164569408 model_utils.py:93]   name = model/transformer/layer_11/ff/layer_2/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.224009 139919164569408 model_utils.py:93]   name = model/transformer/layer_11/ff/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/transformer/layer_11/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0517 14:05:27.224110 139919164569408 model_utils.py:93]   name = model/transformer/layer_11/ff/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = model/sequnece_summary/summary/kernel:0, shape = (768, 768)
+I0517 14:05:27.224211 139919164569408 model_utils.py:93]   name = model/sequnece_summary/summary/kernel:0, shape = (768, 768)
+INFO:tensorflow:  name = model/sequnece_summary/summary/bias:0, shape = (768,)
+I0517 14:05:27.224319 139919164569408 model_utils.py:93]   name = model/sequnece_summary/summary/bias:0, shape = (768,)
+INFO:tensorflow:  name = model/classification_sci/logit/kernel:0, shape = (768, 2)
+I0517 14:05:27.224422 139919164569408 model_utils.py:93]   name = model/classification_sci/logit/kernel:0, shape = (768, 2)
+INFO:tensorflow:  name = model/classification_sci/logit/bias:0, shape = (2,)
+I0517 14:05:27.224529 139919164569408 model_utils.py:93]   name = model/classification_sci/logit/bias:0, shape = (2,)
+INFO:tensorflow:Done calling model_fn.
+I0517 14:05:27.226045 139919164569408 estimator.py:1150] Done calling model_fn.
+WARNING:tensorflow:From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/ops/array_ops.py:1475: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0517 14:05:27.329477 139919164569408 deprecation.py:323] From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/ops/array_ops.py:1475: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+INFO:tensorflow:Graph was finalized.
+I0517 14:05:27.541600 139919164569408 monitored_session.py:240] Graph was finalized.
+2021-05-17 14:05:27.541920: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-05-17 14:05:27.580265: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200000000 Hz
+2021-05-17 14:05:27.584439: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55ea91b0e990 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-17 14:05:27.584468: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-17 14:05:27.589435: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-17 14:05:28.734451: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55eab89ece00 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-05-17 14:05:28.734480: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Quadro RTX 8000, Compute Capability 7.5
+2021-05-17 14:05:28.736067: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: Quadro RTX 8000 major: 7 minor: 5 memoryClockRate(GHz): 1.77
+pciBusID: 0000:3e:00.0
+2021-05-17 14:05:28.739981: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-17 14:05:28.781791: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-05-17 14:05:28.804089: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-05-17 14:05:28.816067: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-05-17 14:05:28.860076: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-05-17 14:05:28.889144: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-05-17 14:05:28.971988: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-05-17 14:05:28.974956: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-05-17 14:05:28.977266: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-17 14:05:28.979311: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-17 14:05:28.979331: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-05-17 14:05:28.979338: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-05-17 14:05:28.983421: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 46015 MB memory) -> physical GPU (device: 0, name: Quadro RTX 8000, pci bus id: 0000:3e:00.0, compute capability: 7.5)
+INFO:tensorflow:Restoring parameters from ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold1/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-71198
+I0517 14:05:28.986393 139919164569408 saver.py:1284] Restoring parameters from ../data/paperwithcode/60Neg800unk/twofoldwithunk/fold1/models/cased_L-12_H-768_A-12_XLNet/model.ckpt-71198
+INFO:tensorflow:Running local_init_op.
+I0517 14:05:33.937224 139919164569408 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0517 14:05:34.068203 139919164569408 session_manager.py:502] Done running local_init_op.
+2021-05-17 14:05:36.159143: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+INFO:tensorflow:Predicting submission for example: 0
+I0517 14:05:37.641644 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 0
+INFO:tensorflow:Predicting submission for example: 1000
+I0517 14:06:15.409073 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 1000
+INFO:tensorflow:Predicting submission for example: 2000
+I0517 14:06:53.914798 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 2000
+INFO:tensorflow:Predicting submission for example: 3000
+I0517 14:07:31.851196 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 3000
+INFO:tensorflow:Predicting submission for example: 4000
+I0517 14:08:10.515095 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 4000
+INFO:tensorflow:Predicting submission for example: 5000
+I0517 14:08:48.516202 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 5000
+INFO:tensorflow:Predicting submission for example: 6000
+I0517 14:09:27.126278 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 6000
+INFO:tensorflow:Predicting submission for example: 7000
+I0517 14:10:05.178120 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 7000
+INFO:tensorflow:Predicting submission for example: 8000
+I0517 14:10:43.772994 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 8000
+INFO:tensorflow:Predicting submission for example: 9000
+I0517 14:11:21.761649 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 9000
+INFO:tensorflow:Predicting submission for example: 10000
+I0517 14:12:00.375567 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 10000
+INFO:tensorflow:Predicting submission for example: 11000
+I0517 14:12:38.365656 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 11000
+INFO:tensorflow:Predicting submission for example: 12000
+I0517 14:13:16.960566 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 12000
+INFO:tensorflow:Predicting submission for example: 13000
+I0517 14:13:54.977474 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 13000
+INFO:tensorflow:Predicting submission for example: 14000
+I0517 14:14:33.600973 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 14000
+INFO:tensorflow:Predicting submission for example: 15000
+I0517 14:15:11.655772 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 15000
+INFO:tensorflow:Predicting submission for example: 16000
+I0517 14:15:50.267184 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 16000
+INFO:tensorflow:Predicting submission for example: 17000
+I0517 14:16:28.233549 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 17000
+INFO:tensorflow:Predicting submission for example: 18000
+I0517 14:17:06.857356 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 18000
+INFO:tensorflow:Predicting submission for example: 19000
+I0517 14:17:44.809702 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 19000
+INFO:tensorflow:Predicting submission for example: 20000
+I0517 14:18:23.452316 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 20000
+INFO:tensorflow:Predicting submission for example: 21000
+I0517 14:19:01.461461 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 21000
+INFO:tensorflow:Predicting submission for example: 22000
+I0517 14:19:40.062074 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 22000
+INFO:tensorflow:Predicting submission for example: 23000
+I0517 14:20:18.082507 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 23000
+INFO:tensorflow:Predicting submission for example: 24000
+I0517 14:20:56.699678 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 24000
+INFO:tensorflow:Predicting submission for example: 25000
+I0517 14:21:34.723429 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 25000
+INFO:tensorflow:Predicting submission for example: 26000
+I0517 14:22:13.330004 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 26000
+INFO:tensorflow:Predicting submission for example: 27000
+I0517 14:22:51.323011 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 27000
+INFO:tensorflow:Predicting submission for example: 28000
+I0517 14:23:29.948993 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 28000
+INFO:tensorflow:Predicting submission for example: 29000
+I0517 14:24:07.933276 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 29000
+INFO:tensorflow:Predicting submission for example: 30000
+I0517 14:24:46.595424 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 30000
+INFO:tensorflow:Predicting submission for example: 31000
+I0517 14:25:24.539461 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 31000
+INFO:tensorflow:Predicting submission for example: 32000
+I0517 14:26:03.101994 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 32000
+INFO:tensorflow:Predicting submission for example: 33000
+I0517 14:26:41.097906 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 33000
+INFO:tensorflow:Predicting submission for example: 34000
+I0517 14:27:19.713181 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 34000
+INFO:tensorflow:Predicting submission for example: 35000
+I0517 14:27:57.743508 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 35000
+INFO:tensorflow:Predicting submission for example: 36000
+I0517 14:28:36.376397 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 36000
+INFO:tensorflow:Predicting submission for example: 37000
+I0517 14:29:14.372347 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 37000
+INFO:tensorflow:Predicting submission for example: 38000
+I0517 14:29:52.979901 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 38000
+INFO:tensorflow:Predicting submission for example: 39000
+I0517 14:30:30.987578 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 39000
+INFO:tensorflow:Predicting submission for example: 40000
+I0517 14:31:09.615632 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 40000
+INFO:tensorflow:Predicting submission for example: 41000
+I0517 14:31:47.585119 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 41000
+INFO:tensorflow:Predicting submission for example: 42000
+I0517 14:32:26.187131 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 42000
+INFO:tensorflow:Predicting submission for example: 43000
+I0517 14:33:04.224721 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 43000
+INFO:tensorflow:Predicting submission for example: 44000
+I0517 14:33:42.856210 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 44000
+INFO:tensorflow:Predicting submission for example: 45000
+I0517 14:34:20.848113 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 45000
+INFO:tensorflow:Predicting submission for example: 46000
+I0517 14:34:59.403658 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 46000
+INFO:tensorflow:Predicting submission for example: 47000
+I0517 14:35:37.406640 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 47000
+INFO:tensorflow:Predicting submission for example: 48000
+I0517 14:36:16.064297 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 48000
+INFO:tensorflow:Predicting submission for example: 49000
+I0517 14:36:54.043171 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 49000
+INFO:tensorflow:Predicting submission for example: 50000
+I0517 14:37:32.655214 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 50000
+INFO:tensorflow:Predicting submission for example: 51000
+I0517 14:38:10.645947 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 51000
+INFO:tensorflow:Predicting submission for example: 52000
+I0517 14:38:49.220289 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 52000
+INFO:tensorflow:Predicting submission for example: 53000
+I0517 14:39:27.415884 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 53000
+INFO:tensorflow:Predicting submission for example: 54000
+I0517 14:40:06.039705 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 54000
+INFO:tensorflow:Predicting submission for example: 55000
+I0517 14:40:44.073451 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 55000
+INFO:tensorflow:Predicting submission for example: 56000
+I0517 14:41:22.680647 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 56000
+INFO:tensorflow:Predicting submission for example: 57000
+I0517 14:42:00.683087 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 57000
+INFO:tensorflow:Predicting submission for example: 58000
+I0517 14:42:39.299237 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 58000
+INFO:tensorflow:Predicting submission for example: 59000
+I0517 14:43:17.378353 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 59000
+INFO:tensorflow:Predicting submission for example: 60000
+I0517 14:43:55.983112 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 60000
+INFO:tensorflow:Predicting submission for example: 61000
+I0517 14:44:34.037517 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 61000
+INFO:tensorflow:Predicting submission for example: 62000
+I0517 14:45:12.620110 139919164569408 run_sci_classifier.py:708] Predicting submission for example: 62000

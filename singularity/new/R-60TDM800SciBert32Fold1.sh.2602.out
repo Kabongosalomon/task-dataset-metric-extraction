@@ -1,0 +1,1004 @@
+Directory ../data/paperwithcode/new/60Neg800unk/twofoldwithunk/fold1/models/SciBERT/ Created
+mkdir: cannot create directory ‘../data/paperwithcode/new/60Neg800unk/twofoldwithunk/fold1/models/SciBERT/’: No such file or directory
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/BERT/optimization.py:87: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+WARNING:tensorflow:From run_classifier_sci.py:1079: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+WARNING:tensorflow:From run_classifier_sci.py:865: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+W0516 07:37:31.331028 140684855629632 module_wrapper.py:139] From run_classifier_sci.py:865: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+WARNING:tensorflow:From run_classifier_sci.py:865: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+W0516 07:37:31.331389 140684855629632 module_wrapper.py:139] From run_classifier_sci.py:865: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/BERT/modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+W0516 07:37:31.332021 140684855629632 module_wrapper.py:139] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/BERT/modeling.py:93: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+WARNING:tensorflow:From run_classifier_sci.py:890: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+W0516 07:37:31.367131 140684855629632 module_wrapper.py:139] From run_classifier_sci.py:890: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+W0516 07:37:31.485119 140684855629632 lazy_loader.py:50] 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7ff330c4eea0>) includes params argument, but params are not passed to Estimator.
+W0516 07:37:45.295481 140684855629632 estimator.py:1994] Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x7ff330c4eea0>) includes params argument, but params are not passed to Estimator.
+INFO:tensorflow:Using config: {'_model_dir': '../data/paperwithcode/new/60Neg800unk/twofoldwithunk/fold1/models/SciBERT/', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': 1000, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': None, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7ff32d22a9b0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1, '_tpu_config': TPUConfig(iterations_per_loop=1000, num_shards=8, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_cluster': None}
+I0516 07:37:45.296769 140684855629632 estimator.py:212] Using config: {'_model_dir': '../data/paperwithcode/new/60Neg800unk/twofoldwithunk/fold1/models/SciBERT/', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': 1000, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': None, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x7ff32d22a9b0>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1, '_tpu_config': TPUConfig(iterations_per_loop=1000, num_shards=8, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_cluster': None}
+INFO:tensorflow:_TPUContext: eval_on_tpu True
+I0516 07:37:45.297220 140684855629632 tpu_context.py:220] _TPUContext: eval_on_tpu True
+WARNING:tensorflow:eval_on_tpu ignored because use_tpu is False.
+W0516 07:37:45.297597 140684855629632 tpu_context.py:222] eval_on_tpu ignored because use_tpu is False.
+WARNING:tensorflow:From run_classifier_sci.py:561: The name tf.python_io.TFRecordWriter is deprecated. Please use tf.io.TFRecordWriter instead.
+
+W0516 07:37:45.298854 140684855629632 module_wrapper.py:139] From run_classifier_sci.py:561: The name tf.python_io.TFRecordWriter is deprecated. Please use tf.io.TFRecordWriter instead.
+
+WARNING:tensorflow:From run_classifier_sci.py:565: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+W0516 07:37:45.300256 140684855629632 module_wrapper.py:139] From run_classifier_sci.py:565: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+INFO:tensorflow:Writing example 0 of 256008
+I0516 07:37:45.300326 140684855629632 run_classifier_sci.py:565] Writing example 0 of 256008
+INFO:tensorflow:*** Example ***
+I0516 07:37:45.306740 140684855629632 run_classifier_sci.py:538] *** Example ***
+INFO:tensorflow:guid: train-0
+I0516 07:37:45.306856 140684855629632 run_classifier_sci.py:539] guid: train-0
+INFO:tensorflow:tokens: [CLS] semantic segmentation ; night ##time driving ; mi ##ou [SEP] dark model adaptation : semantic image segmentation from daytime to night ##time this work addresses the problem of semantic image segmentation of night ##time scenes . although considerable progress has been made in semantic image segmentation , it is mainly related to daytime scenarios . this paper proposes a novel method to progressive adapt the semantic models trained on daytime scenes , along with large - scale annotations therein , to night ##time scenes via the bridge of tw ##ili ##gh ##t time - the time between daw ##n and sun ##ris ##e , or between sun ##set and du ##sk . the goal of the method is to alleviate the cost of human annotation for night ##time images by transferring knowledge from standard daytime conditions . in addition to the method , an ##ew dataset of road scenes is compiled ; it consists of 35 , 000 images ranging from daytime to tw ##ili ##gh ##t time and to night ##time . also , a subset of the night ##time images are densely annotated for method evaluation . our experiments show that our method is effective for knowledge transfer from daytime scenes to night ##time scenes , without using extra human annotation . according to and the sun ##set time of each recording day , we partition the dataset into five parts : daytime , civil tw ##ili ##gh ##t time , na ##uti ##cal tw ##ili ##gh ##t time , astro ##nom ##ical tw ##ili ##gh ##t time , and night ##time the aforementioned selection is performed manually in order to guarantee that the test set has high diversity , which compensate ##s for its relatively small size in terms of statistical significance of evaluation results we annot ##ate these images with fine pixel ##level semantic annotations using the 19 evaluation classes in addition , we assign the void label to pixels which do not belong to any of the above 19 classes , or the class of which is uncertain due to insufficient illumination every such pixel is ignored for semantic segmentation evaluation the models which are obtained after the initial adaptation step are further fine - tuned on the union of the daytime city ##sc ##apes dataset and the previously segmented tw ##ili ##gh ##t datasets , where the latter sets are labeled by the adapted models one step ahead we evaluate four variants of our method and compare them to the original segmentation model trained on daytime images directly [SEP]
+I0516 07:37:45.307344 140684855629632 run_classifier_sci.py:541] tokens: [CLS] semantic segmentation ; night ##time driving ; mi ##ou [SEP] dark model adaptation : semantic image segmentation from daytime to night ##time this work addresses the problem of semantic image segmentation of night ##time scenes . although considerable progress has been made in semantic image segmentation , it is mainly related to daytime scenarios . this paper proposes a novel method to progressive adapt the semantic models trained on daytime scenes , along with large - scale annotations therein , to night ##time scenes via the bridge of tw ##ili ##gh ##t time - the time between daw ##n and sun ##ris ##e , or between sun ##set and du ##sk . the goal of the method is to alleviate the cost of human annotation for night ##time images by transferring knowledge from standard daytime conditions . in addition to the method , an ##ew dataset of road scenes is compiled ; it consists of 35 , 000 images ranging from daytime to tw ##ili ##gh ##t time and to night ##time . also , a subset of the night ##time images are densely annotated for method evaluation . our experiments show that our method is effective for knowledge transfer from daytime scenes to night ##time scenes , without using extra human annotation . according to and the sun ##set time of each recording day , we partition the dataset into five parts : daytime , civil tw ##ili ##gh ##t time , na ##uti ##cal tw ##ili ##gh ##t time , astro ##nom ##ical tw ##ili ##gh ##t time , and night ##time the aforementioned selection is performed manually in order to guarantee that the test set has high diversity , which compensate ##s for its relatively small size in terms of statistical significance of evaluation results we annot ##ate these images with fine pixel ##level semantic annotations using the 19 evaluation classes in addition , we assign the void label to pixels which do not belong to any of the above 19 classes , or the class of which is uncertain due to insufficient illumination every such pixel is ignored for semantic segmentation evaluation the models which are obtained after the initial adaptation step are further fine - tuned on the union of the daytime city ##sc ##apes dataset and the previously segmented tw ##ili ##gh ##t datasets , where the latter sets are labeled by the adapted models one step ahead we evaluate four variants of our method and compare them to the original segmentation model trained on daytime images directly [SEP]
+INFO:tensorflow:input_ids: 102 5437 6773 1814 9786 2006 7290 1814 4323 3234 103 5856 437 5846 862 5437 1572 6773 263 22394 147 9786 2006 238 697 9154 111 1167 131 5437 1572 6773 131 9786 2006 16612 205 1363 6132 5180 434 528 1827 121 5437 1572 6773 422 256 165 3680 1482 147 22394 5828 205 238 1203 11606 106 3045 551 147 8381 4152 111 5437 1262 7222 191 22394 16612 422 2252 190 1135 579 2211 15522 17978 422 147 9786 2006 16612 2168 111 10105 131 459 3145 11607 30108 532 579 111 532 467 18580 30111 137 5614 4875 30107 422 234 467 5614 2843 137 3108 2791 205 111 3619 131 111 551 165 147 19893 111 1729 131 1168 11116 168 9786 2006 2117 214 20740 1767 263 1235 22394 1245 205 121 867 147 111 551 422 130 756 4813 131 6229 16612 165 17667 1814 256 3685 131 2638 422 8319 2117 6223 263 22394 147 459 3145 11607 30108 532 137 147 9786 2006 205 469 422 106 4651 131 111 9786 2006 2117 220 24944 13783 168 551 2166 205 580 1713 405 198 580 551 165 2115 168 1767 2268 263 22394 16612 147 9786 2006 16612 422 1319 487 5711 1168 11116 205 1425 147 137 111 5614 2843 532 131 535 7809 2181 422 185 5449 111 4813 690 2539 3791 862 22394 422 10454 459 3145 11607 30108 532 422 2431 16349 3538 459 3145 11607 30108 532 422 28648 25429 281 459 3145 11607 30108 532 422 137 9786 2006 111 12803 2516 165 1260 10428 121 993 147 8822 198 111 856 610 434 597 4715 422 334 13389 30113 168 633 2731 952 1243 121 1615 131 2397 4150 131 2166 545 185 5907 217 407 2117 190 6571 6265 3218 5437 15522 487 111 371 2166 3899 121 867 422 185 2655 111 16179 3321 147 6778 334 572 302 4389 147 843 131 111 1431 371 3899 422 234 111 844 131 334 165 3511 1074 147 10119 11566 1795 555 6265 165 13447 168 5437 6773 2166 111 1262 334 220 1151 647 111 1700 5846 1371 220 911 6571 579 15769 191 111 7142 131 111 22394 5523 974 15396 4813 137 111 2049 16773 459 3145 11607 30108 6985 422 582 111 4085 2713 220 6035 214 111 8030 1262 482 1371 15471 185 3138 1379 6042 131 580 551 137 3745 1445 147 111 2592 6773 437 7222 191 22394 2117 2533 103 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0516 07:37:45.307651 140684855629632 run_classifier_sci.py:542] input_ids: 102 5437 6773 1814 9786 2006 7290 1814 4323 3234 103 5856 437 5846 862 5437 1572 6773 263 22394 147 9786 2006 238 697 9154 111 1167 131 5437 1572 6773 131 9786 2006 16612 205 1363 6132 5180 434 528 1827 121 5437 1572 6773 422 256 165 3680 1482 147 22394 5828 205 238 1203 11606 106 3045 551 147 8381 4152 111 5437 1262 7222 191 22394 16612 422 2252 190 1135 579 2211 15522 17978 422 147 9786 2006 16612 2168 111 10105 131 459 3145 11607 30108 532 579 111 532 467 18580 30111 137 5614 4875 30107 422 234 467 5614 2843 137 3108 2791 205 111 3619 131 111 551 165 147 19893 111 1729 131 1168 11116 168 9786 2006 2117 214 20740 1767 263 1235 22394 1245 205 121 867 147 111 551 422 130 756 4813 131 6229 16612 165 17667 1814 256 3685 131 2638 422 8319 2117 6223 263 22394 147 459 3145 11607 30108 532 137 147 9786 2006 205 469 422 106 4651 131 111 9786 2006 2117 220 24944 13783 168 551 2166 205 580 1713 405 198 580 551 165 2115 168 1767 2268 263 22394 16612 147 9786 2006 16612 422 1319 487 5711 1168 11116 205 1425 147 137 111 5614 2843 532 131 535 7809 2181 422 185 5449 111 4813 690 2539 3791 862 22394 422 10454 459 3145 11607 30108 532 422 2431 16349 3538 459 3145 11607 30108 532 422 28648 25429 281 459 3145 11607 30108 532 422 137 9786 2006 111 12803 2516 165 1260 10428 121 993 147 8822 198 111 856 610 434 597 4715 422 334 13389 30113 168 633 2731 952 1243 121 1615 131 2397 4150 131 2166 545 185 5907 217 407 2117 190 6571 6265 3218 5437 15522 487 111 371 2166 3899 121 867 422 185 2655 111 16179 3321 147 6778 334 572 302 4389 147 843 131 111 1431 371 3899 422 234 111 844 131 334 165 3511 1074 147 10119 11566 1795 555 6265 165 13447 168 5437 6773 2166 111 1262 334 220 1151 647 111 1700 5846 1371 220 911 6571 579 15769 191 111 7142 131 111 22394 5523 974 15396 4813 137 111 2049 16773 459 3145 11607 30108 6985 422 582 111 4085 2713 220 6035 214 111 8030 1262 482 1371 15471 185 3138 1379 6042 131 580 551 137 3745 1445 147 111 2592 6773 437 7222 191 22394 2117 2533 103 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0516 07:37:45.307909 140684855629632 run_classifier_sci.py:543] input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0516 07:37:45.308145 140684855629632 run_classifier_sci.py:544] segment_ids: 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:label: true (id = 0)
+I0516 07:37:45.308234 140684855629632 run_classifier_sci.py:545] label: true (id = 0)
+INFO:tensorflow:*** Example ***
+I0516 07:37:45.316050 140684855629632 run_classifier_sci.py:538] *** Example ***
+INFO:tensorflow:guid: train-1
+I0516 07:37:45.316118 140684855629632 run_classifier_sci.py:539] guid: train-1
+INFO:tensorflow:tokens: [CLS] extract ##ive text summar ##ization ; debates ##um ; ro ##uge - l [SEP] dark model adaptation : semantic image segmentation from daytime to night ##time this work addresses the problem of semantic image segmentation of night ##time scenes . although considerable progress has been made in semantic image segmentation , it is mainly related to daytime scenarios . this paper proposes a novel method to progressive adapt the semantic models trained on daytime scenes , along with large - scale annotations therein , to night ##time scenes via the bridge of tw ##ili ##gh ##t time - the time between daw ##n and sun ##ris ##e , or between sun ##set and du ##sk . the goal of the method is to alleviate the cost of human annotation for night ##time images by transferring knowledge from standard daytime conditions . in addition to the method , an ##ew dataset of road scenes is compiled ; it consists of 35 , 000 images ranging from daytime to tw ##ili ##gh ##t time and to night ##time . also , a subset of the night ##time images are densely annotated for method evaluation . our experiments show that our method is effective for knowledge transfer from daytime scenes to night ##time scenes , without using extra human annotation . according to and the sun ##set time of each recording day , we partition the dataset into five parts : daytime , civil tw ##ili ##gh ##t time , na ##uti ##cal tw ##ili ##gh ##t time , astro ##nom ##ical tw ##ili ##gh ##t time , and night ##time the aforementioned selection is performed manually in order to guarantee that the test set has high diversity , which compensate ##s for its relatively small size in terms of statistical significance of evaluation results we annot ##ate these images with fine pixel ##level semantic annotations using the 19 evaluation classes in addition , we assign the void label to pixels which do not belong to any of the above 19 classes , or the class of which is uncertain due to insufficient illumination every such pixel is ignored for semantic segmentation evaluation the models which are obtained after the initial adaptation step are further fine - tuned on the union of the daytime city ##sc ##apes dataset and the previously segmented tw ##ili ##gh ##t datasets , where the latter sets are labeled by the adapted models one step ahead we evaluate four variants of our method and compare them to the original segmentation model trained on daytime images directly [SEP]
+I0516 07:37:45.316307 140684855629632 run_classifier_sci.py:541] tokens: [CLS] extract ##ive text summar ##ization ; debates ##um ; ro ##uge - l [SEP] dark model adaptation : semantic image segmentation from daytime to night ##time this work addresses the problem of semantic image segmentation of night ##time scenes . although considerable progress has been made in semantic image segmentation , it is mainly related to daytime scenarios . this paper proposes a novel method to progressive adapt the semantic models trained on daytime scenes , along with large - scale annotations therein , to night ##time scenes via the bridge of tw ##ili ##gh ##t time - the time between daw ##n and sun ##ris ##e , or between sun ##set and du ##sk . the goal of the method is to alleviate the cost of human annotation for night ##time images by transferring knowledge from standard daytime conditions . in addition to the method , an ##ew dataset of road scenes is compiled ; it consists of 35 , 000 images ranging from daytime to tw ##ili ##gh ##t time and to night ##time . also , a subset of the night ##time images are densely annotated for method evaluation . our experiments show that our method is effective for knowledge transfer from daytime scenes to night ##time scenes , without using extra human annotation . according to and the sun ##set time of each recording day , we partition the dataset into five parts : daytime , civil tw ##ili ##gh ##t time , na ##uti ##cal tw ##ili ##gh ##t time , astro ##nom ##ical tw ##ili ##gh ##t time , and night ##time the aforementioned selection is performed manually in order to guarantee that the test set has high diversity , which compensate ##s for its relatively small size in terms of statistical significance of evaluation results we annot ##ate these images with fine pixel ##level semantic annotations using the 19 evaluation classes in addition , we assign the void label to pixels which do not belong to any of the above 19 classes , or the class of which is uncertain due to insufficient illumination every such pixel is ignored for semantic segmentation evaluation the models which are obtained after the initial adaptation step are further fine - tuned on the union of the daytime city ##sc ##apes dataset and the previously segmented tw ##ili ##gh ##t datasets , where the latter sets are labeled by the adapted models one step ahead we evaluate four variants of our method and compare them to the original segmentation model trained on daytime images directly [SEP]
+INFO:tensorflow:input_ids: 102 4070 1090 3267 4226 640 1814 28578 200 1814 399 11635 579 152 103 5856 437 5846 862 5437 1572 6773 263 22394 147 9786 2006 238 697 9154 111 1167 131 5437 1572 6773 131 9786 2006 16612 205 1363 6132 5180 434 528 1827 121 5437 1572 6773 422 256 165 3680 1482 147 22394 5828 205 238 1203 11606 106 3045 551 147 8381 4152 111 5437 1262 7222 191 22394 16612 422 2252 190 1135 579 2211 15522 17978 422 147 9786 2006 16612 2168 111 10105 131 459 3145 11607 30108 532 579 111 532 467 18580 30111 137 5614 4875 30107 422 234 467 5614 2843 137 3108 2791 205 111 3619 131 111 551 165 147 19893 111 1729 131 1168 11116 168 9786 2006 2117 214 20740 1767 263 1235 22394 1245 205 121 867 147 111 551 422 130 756 4813 131 6229 16612 165 17667 1814 256 3685 131 2638 422 8319 2117 6223 263 22394 147 459 3145 11607 30108 532 137 147 9786 2006 205 469 422 106 4651 131 111 9786 2006 2117 220 24944 13783 168 551 2166 205 580 1713 405 198 580 551 165 2115 168 1767 2268 263 22394 16612 147 9786 2006 16612 422 1319 487 5711 1168 11116 205 1425 147 137 111 5614 2843 532 131 535 7809 2181 422 185 5449 111 4813 690 2539 3791 862 22394 422 10454 459 3145 11607 30108 532 422 2431 16349 3538 459 3145 11607 30108 532 422 28648 25429 281 459 3145 11607 30108 532 422 137 9786 2006 111 12803 2516 165 1260 10428 121 993 147 8822 198 111 856 610 434 597 4715 422 334 13389 30113 168 633 2731 952 1243 121 1615 131 2397 4150 131 2166 545 185 5907 217 407 2117 190 6571 6265 3218 5437 15522 487 111 371 2166 3899 121 867 422 185 2655 111 16179 3321 147 6778 334 572 302 4389 147 843 131 111 1431 371 3899 422 234 111 844 131 334 165 3511 1074 147 10119 11566 1795 555 6265 165 13447 168 5437 6773 2166 111 1262 334 220 1151 647 111 1700 5846 1371 220 911 6571 579 15769 191 111 7142 131 111 22394 5523 974 15396 4813 137 111 2049 16773 459 3145 11607 30108 6985 422 582 111 4085 2713 220 6035 214 111 8030 1262 482 1371 15471 185 3138 1379 6042 131 580 551 137 3745 1445 147 111 2592 6773 437 7222 191 22394 2117 2533 103 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0516 07:37:45.316471 140684855629632 run_classifier_sci.py:542] input_ids: 102 4070 1090 3267 4226 640 1814 28578 200 1814 399 11635 579 152 103 5856 437 5846 862 5437 1572 6773 263 22394 147 9786 2006 238 697 9154 111 1167 131 5437 1572 6773 131 9786 2006 16612 205 1363 6132 5180 434 528 1827 121 5437 1572 6773 422 256 165 3680 1482 147 22394 5828 205 238 1203 11606 106 3045 551 147 8381 4152 111 5437 1262 7222 191 22394 16612 422 2252 190 1135 579 2211 15522 17978 422 147 9786 2006 16612 2168 111 10105 131 459 3145 11607 30108 532 579 111 532 467 18580 30111 137 5614 4875 30107 422 234 467 5614 2843 137 3108 2791 205 111 3619 131 111 551 165 147 19893 111 1729 131 1168 11116 168 9786 2006 2117 214 20740 1767 263 1235 22394 1245 205 121 867 147 111 551 422 130 756 4813 131 6229 16612 165 17667 1814 256 3685 131 2638 422 8319 2117 6223 263 22394 147 459 3145 11607 30108 532 137 147 9786 2006 205 469 422 106 4651 131 111 9786 2006 2117 220 24944 13783 168 551 2166 205 580 1713 405 198 580 551 165 2115 168 1767 2268 263 22394 16612 147 9786 2006 16612 422 1319 487 5711 1168 11116 205 1425 147 137 111 5614 2843 532 131 535 7809 2181 422 185 5449 111 4813 690 2539 3791 862 22394 422 10454 459 3145 11607 30108 532 422 2431 16349 3538 459 3145 11607 30108 532 422 28648 25429 281 459 3145 11607 30108 532 422 137 9786 2006 111 12803 2516 165 1260 10428 121 993 147 8822 198 111 856 610 434 597 4715 422 334 13389 30113 168 633 2731 952 1243 121 1615 131 2397 4150 131 2166 545 185 5907 217 407 2117 190 6571 6265 3218 5437 15522 487 111 371 2166 3899 121 867 422 185 2655 111 16179 3321 147 6778 334 572 302 4389 147 843 131 111 1431 371 3899 422 234 111 844 131 334 165 3511 1074 147 10119 11566 1795 555 6265 165 13447 168 5437 6773 2166 111 1262 334 220 1151 647 111 1700 5846 1371 220 911 6571 579 15769 191 111 7142 131 111 22394 5523 974 15396 4813 137 111 2049 16773 459 3145 11607 30108 6985 422 582 111 4085 2713 220 6035 214 111 8030 1262 482 1371 15471 185 3138 1379 6042 131 580 551 137 3745 1445 147 111 2592 6773 437 7222 191 22394 2117 2533 103 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0516 07:37:45.316636 140684855629632 run_classifier_sci.py:543] input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0516 07:37:45.316780 140684855629632 run_classifier_sci.py:544] segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:label: false (id = 1)
+I0516 07:37:45.316836 140684855629632 run_classifier_sci.py:545] label: false (id = 1)
+INFO:tensorflow:*** Example ***
+I0516 07:37:45.322296 140684855629632 run_classifier_sci.py:538] *** Example ***
+INFO:tensorflow:guid: train-2
+I0516 07:37:45.322360 140684855629632 run_classifier_sci.py:539] guid: train-2
+INFO:tensorflow:tokens: [CLS] action recognition ; something - something v ##1 ; top 5 accuracy [SEP] dark model adaptation : semantic image segmentation from daytime to night ##time this work addresses the problem of semantic image segmentation of night ##time scenes . although considerable progress has been made in semantic image segmentation , it is mainly related to daytime scenarios . this paper proposes a novel method to progressive adapt the semantic models trained on daytime scenes , along with large - scale annotations therein , to night ##time scenes via the bridge of tw ##ili ##gh ##t time - the time between daw ##n and sun ##ris ##e , or between sun ##set and du ##sk . the goal of the method is to alleviate the cost of human annotation for night ##time images by transferring knowledge from standard daytime conditions . in addition to the method , an ##ew dataset of road scenes is compiled ; it consists of 35 , 000 images ranging from daytime to tw ##ili ##gh ##t time and to night ##time . also , a subset of the night ##time images are densely annotated for method evaluation . our experiments show that our method is effective for knowledge transfer from daytime scenes to night ##time scenes , without using extra human annotation . according to and the sun ##set time of each recording day , we partition the dataset into five parts : daytime , civil tw ##ili ##gh ##t time , na ##uti ##cal tw ##ili ##gh ##t time , astro ##nom ##ical tw ##ili ##gh ##t time , and night ##time the aforementioned selection is performed manually in order to guarantee that the test set has high diversity , which compensate ##s for its relatively small size in terms of statistical significance of evaluation results we annot ##ate these images with fine pixel ##level semantic annotations using the 19 evaluation classes in addition , we assign the void label to pixels which do not belong to any of the above 19 classes , or the class of which is uncertain due to insufficient illumination every such pixel is ignored for semantic segmentation evaluation the models which are obtained after the initial adaptation step are further fine - tuned on the union of the daytime city ##sc ##apes dataset and the previously segmented tw ##ili ##gh ##t datasets , where the latter sets are labeled by the adapted models one step ahead we evaluate four variants of our method and compare them to the original segmentation model trained on daytime images directly [SEP]
+I0516 07:37:45.322515 140684855629632 run_classifier_sci.py:541] tokens: [CLS] action recognition ; something - something v ##1 ; top 5 accuracy [SEP] dark model adaptation : semantic image segmentation from daytime to night ##time this work addresses the problem of semantic image segmentation of night ##time scenes . although considerable progress has been made in semantic image segmentation , it is mainly related to daytime scenarios . this paper proposes a novel method to progressive adapt the semantic models trained on daytime scenes , along with large - scale annotations therein , to night ##time scenes via the bridge of tw ##ili ##gh ##t time - the time between daw ##n and sun ##ris ##e , or between sun ##set and du ##sk . the goal of the method is to alleviate the cost of human annotation for night ##time images by transferring knowledge from standard daytime conditions . in addition to the method , an ##ew dataset of road scenes is compiled ; it consists of 35 , 000 images ranging from daytime to tw ##ili ##gh ##t time and to night ##time . also , a subset of the night ##time images are densely annotated for method evaluation . our experiments show that our method is effective for knowledge transfer from daytime scenes to night ##time scenes , without using extra human annotation . according to and the sun ##set time of each recording day , we partition the dataset into five parts : daytime , civil tw ##ili ##gh ##t time , na ##uti ##cal tw ##ili ##gh ##t time , astro ##nom ##ical tw ##ili ##gh ##t time , and night ##time the aforementioned selection is performed manually in order to guarantee that the test set has high diversity , which compensate ##s for its relatively small size in terms of statistical significance of evaluation results we annot ##ate these images with fine pixel ##level semantic annotations using the 19 evaluation classes in addition , we assign the void label to pixels which do not belong to any of the above 19 classes , or the class of which is uncertain due to insufficient illumination every such pixel is ignored for semantic segmentation evaluation the models which are obtained after the initial adaptation step are further fine - tuned on the union of the daytime city ##sc ##apes dataset and the previously segmented tw ##ili ##gh ##t datasets , where the latter sets are labeled by the adapted models one step ahead we evaluate four variants of our method and compare them to the original segmentation model trained on daytime images directly [SEP]
+INFO:tensorflow:input_ids: 102 2517 3512 1814 8973 579 8973 171 30130 1814 1623 305 2683 103 5856 437 5846 862 5437 1572 6773 263 22394 147 9786 2006 238 697 9154 111 1167 131 5437 1572 6773 131 9786 2006 16612 205 1363 6132 5180 434 528 1827 121 5437 1572 6773 422 256 165 3680 1482 147 22394 5828 205 238 1203 11606 106 3045 551 147 8381 4152 111 5437 1262 7222 191 22394 16612 422 2252 190 1135 579 2211 15522 17978 422 147 9786 2006 16612 2168 111 10105 131 459 3145 11607 30108 532 579 111 532 467 18580 30111 137 5614 4875 30107 422 234 467 5614 2843 137 3108 2791 205 111 3619 131 111 551 165 147 19893 111 1729 131 1168 11116 168 9786 2006 2117 214 20740 1767 263 1235 22394 1245 205 121 867 147 111 551 422 130 756 4813 131 6229 16612 165 17667 1814 256 3685 131 2638 422 8319 2117 6223 263 22394 147 459 3145 11607 30108 532 137 147 9786 2006 205 469 422 106 4651 131 111 9786 2006 2117 220 24944 13783 168 551 2166 205 580 1713 405 198 580 551 165 2115 168 1767 2268 263 22394 16612 147 9786 2006 16612 422 1319 487 5711 1168 11116 205 1425 147 137 111 5614 2843 532 131 535 7809 2181 422 185 5449 111 4813 690 2539 3791 862 22394 422 10454 459 3145 11607 30108 532 422 2431 16349 3538 459 3145 11607 30108 532 422 28648 25429 281 459 3145 11607 30108 532 422 137 9786 2006 111 12803 2516 165 1260 10428 121 993 147 8822 198 111 856 610 434 597 4715 422 334 13389 30113 168 633 2731 952 1243 121 1615 131 2397 4150 131 2166 545 185 5907 217 407 2117 190 6571 6265 3218 5437 15522 487 111 371 2166 3899 121 867 422 185 2655 111 16179 3321 147 6778 334 572 302 4389 147 843 131 111 1431 371 3899 422 234 111 844 131 334 165 3511 1074 147 10119 11566 1795 555 6265 165 13447 168 5437 6773 2166 111 1262 334 220 1151 647 111 1700 5846 1371 220 911 6571 579 15769 191 111 7142 131 111 22394 5523 974 15396 4813 137 111 2049 16773 459 3145 11607 30108 6985 422 582 111 4085 2713 220 6035 214 111 8030 1262 482 1371 15471 185 3138 1379 6042 131 580 551 137 3745 1445 147 111 2592 6773 437 7222 191 22394 2117 2533 103 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0516 07:37:45.322679 140684855629632 run_classifier_sci.py:542] input_ids: 102 2517 3512 1814 8973 579 8973 171 30130 1814 1623 305 2683 103 5856 437 5846 862 5437 1572 6773 263 22394 147 9786 2006 238 697 9154 111 1167 131 5437 1572 6773 131 9786 2006 16612 205 1363 6132 5180 434 528 1827 121 5437 1572 6773 422 256 165 3680 1482 147 22394 5828 205 238 1203 11606 106 3045 551 147 8381 4152 111 5437 1262 7222 191 22394 16612 422 2252 190 1135 579 2211 15522 17978 422 147 9786 2006 16612 2168 111 10105 131 459 3145 11607 30108 532 579 111 532 467 18580 30111 137 5614 4875 30107 422 234 467 5614 2843 137 3108 2791 205 111 3619 131 111 551 165 147 19893 111 1729 131 1168 11116 168 9786 2006 2117 214 20740 1767 263 1235 22394 1245 205 121 867 147 111 551 422 130 756 4813 131 6229 16612 165 17667 1814 256 3685 131 2638 422 8319 2117 6223 263 22394 147 459 3145 11607 30108 532 137 147 9786 2006 205 469 422 106 4651 131 111 9786 2006 2117 220 24944 13783 168 551 2166 205 580 1713 405 198 580 551 165 2115 168 1767 2268 263 22394 16612 147 9786 2006 16612 422 1319 487 5711 1168 11116 205 1425 147 137 111 5614 2843 532 131 535 7809 2181 422 185 5449 111 4813 690 2539 3791 862 22394 422 10454 459 3145 11607 30108 532 422 2431 16349 3538 459 3145 11607 30108 532 422 28648 25429 281 459 3145 11607 30108 532 422 137 9786 2006 111 12803 2516 165 1260 10428 121 993 147 8822 198 111 856 610 434 597 4715 422 334 13389 30113 168 633 2731 952 1243 121 1615 131 2397 4150 131 2166 545 185 5907 217 407 2117 190 6571 6265 3218 5437 15522 487 111 371 2166 3899 121 867 422 185 2655 111 16179 3321 147 6778 334 572 302 4389 147 843 131 111 1431 371 3899 422 234 111 844 131 334 165 3511 1074 147 10119 11566 1795 555 6265 165 13447 168 5437 6773 2166 111 1262 334 220 1151 647 111 1700 5846 1371 220 911 6571 579 15769 191 111 7142 131 111 22394 5523 974 15396 4813 137 111 2049 16773 459 3145 11607 30108 6985 422 582 111 4085 2713 220 6035 214 111 8030 1262 482 1371 15471 185 3138 1379 6042 131 580 551 137 3745 1445 147 111 2592 6773 437 7222 191 22394 2117 2533 103 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0516 07:37:45.322859 140684855629632 run_classifier_sci.py:543] input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0516 07:37:45.323100 140684855629632 run_classifier_sci.py:544] segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:label: false (id = 1)
+I0516 07:37:45.323162 140684855629632 run_classifier_sci.py:545] label: false (id = 1)
+INFO:tensorflow:*** Example ***
+I0516 07:37:45.328595 140684855629632 run_classifier_sci.py:538] *** Example ***
+INFO:tensorflow:guid: train-3
+I0516 07:37:45.328802 140684855629632 run_classifier_sci.py:539] guid: train-3
+INFO:tensorflow:tokens: [CLS] multi - object tracking ; mot ##s ##20 ; smo ##ts ##a [SEP] dark model adaptation : semantic image segmentation from daytime to night ##time this work addresses the problem of semantic image segmentation of night ##time scenes . although considerable progress has been made in semantic image segmentation , it is mainly related to daytime scenarios . this paper proposes a novel method to progressive adapt the semantic models trained on daytime scenes , along with large - scale annotations therein , to night ##time scenes via the bridge of tw ##ili ##gh ##t time - the time between daw ##n and sun ##ris ##e , or between sun ##set and du ##sk . the goal of the method is to alleviate the cost of human annotation for night ##time images by transferring knowledge from standard daytime conditions . in addition to the method , an ##ew dataset of road scenes is compiled ; it consists of 35 , 000 images ranging from daytime to tw ##ili ##gh ##t time and to night ##time . also , a subset of the night ##time images are densely annotated for method evaluation . our experiments show that our method is effective for knowledge transfer from daytime scenes to night ##time scenes , without using extra human annotation . according to and the sun ##set time of each recording day , we partition the dataset into five parts : daytime , civil tw ##ili ##gh ##t time , na ##uti ##cal tw ##ili ##gh ##t time , astro ##nom ##ical tw ##ili ##gh ##t time , and night ##time the aforementioned selection is performed manually in order to guarantee that the test set has high diversity , which compensate ##s for its relatively small size in terms of statistical significance of evaluation results we annot ##ate these images with fine pixel ##level semantic annotations using the 19 evaluation classes in addition , we assign the void label to pixels which do not belong to any of the above 19 classes , or the class of which is uncertain due to insufficient illumination every such pixel is ignored for semantic segmentation evaluation the models which are obtained after the initial adaptation step are further fine - tuned on the union of the daytime city ##sc ##apes dataset and the previously segmented tw ##ili ##gh ##t datasets , where the latter sets are labeled by the adapted models one step ahead we evaluate four variants of our method and compare them to the original segmentation model trained on daytime images directly [SEP]
+I0516 07:37:45.329013 140684855629632 run_classifier_sci.py:541] tokens: [CLS] multi - object tracking ; mot ##s ##20 ; smo ##ts ##a [SEP] dark model adaptation : semantic image segmentation from daytime to night ##time this work addresses the problem of semantic image segmentation of night ##time scenes . although considerable progress has been made in semantic image segmentation , it is mainly related to daytime scenarios . this paper proposes a novel method to progressive adapt the semantic models trained on daytime scenes , along with large - scale annotations therein , to night ##time scenes via the bridge of tw ##ili ##gh ##t time - the time between daw ##n and sun ##ris ##e , or between sun ##set and du ##sk . the goal of the method is to alleviate the cost of human annotation for night ##time images by transferring knowledge from standard daytime conditions . in addition to the method , an ##ew dataset of road scenes is compiled ; it consists of 35 , 000 images ranging from daytime to tw ##ili ##gh ##t time and to night ##time . also , a subset of the night ##time images are densely annotated for method evaluation . our experiments show that our method is effective for knowledge transfer from daytime scenes to night ##time scenes , without using extra human annotation . according to and the sun ##set time of each recording day , we partition the dataset into five parts : daytime , civil tw ##ili ##gh ##t time , na ##uti ##cal tw ##ili ##gh ##t time , astro ##nom ##ical tw ##ili ##gh ##t time , and night ##time the aforementioned selection is performed manually in order to guarantee that the test set has high diversity , which compensate ##s for its relatively small size in terms of statistical significance of evaluation results we annot ##ate these images with fine pixel ##level semantic annotations using the 19 evaluation classes in addition , we assign the void label to pixels which do not belong to any of the above 19 classes , or the class of which is uncertain due to insufficient illumination every such pixel is ignored for semantic segmentation evaluation the models which are obtained after the initial adaptation step are further fine - tuned on the union of the daytime city ##sc ##apes dataset and the previously segmented tw ##ili ##gh ##t datasets , where the latter sets are labeled by the adapted models one step ahead we evaluate four variants of our method and compare them to the original segmentation model trained on daytime images directly [SEP]
+INFO:tensorflow:input_ids: 102 869 579 2567 5472 1814 10587 30113 1487 1814 3870 203 30110 103 5856 437 5846 862 5437 1572 6773 263 22394 147 9786 2006 238 697 9154 111 1167 131 5437 1572 6773 131 9786 2006 16612 205 1363 6132 5180 434 528 1827 121 5437 1572 6773 422 256 165 3680 1482 147 22394 5828 205 238 1203 11606 106 3045 551 147 8381 4152 111 5437 1262 7222 191 22394 16612 422 2252 190 1135 579 2211 15522 17978 422 147 9786 2006 16612 2168 111 10105 131 459 3145 11607 30108 532 579 111 532 467 18580 30111 137 5614 4875 30107 422 234 467 5614 2843 137 3108 2791 205 111 3619 131 111 551 165 147 19893 111 1729 131 1168 11116 168 9786 2006 2117 214 20740 1767 263 1235 22394 1245 205 121 867 147 111 551 422 130 756 4813 131 6229 16612 165 17667 1814 256 3685 131 2638 422 8319 2117 6223 263 22394 147 459 3145 11607 30108 532 137 147 9786 2006 205 469 422 106 4651 131 111 9786 2006 2117 220 24944 13783 168 551 2166 205 580 1713 405 198 580 551 165 2115 168 1767 2268 263 22394 16612 147 9786 2006 16612 422 1319 487 5711 1168 11116 205 1425 147 137 111 5614 2843 532 131 535 7809 2181 422 185 5449 111 4813 690 2539 3791 862 22394 422 10454 459 3145 11607 30108 532 422 2431 16349 3538 459 3145 11607 30108 532 422 28648 25429 281 459 3145 11607 30108 532 422 137 9786 2006 111 12803 2516 165 1260 10428 121 993 147 8822 198 111 856 610 434 597 4715 422 334 13389 30113 168 633 2731 952 1243 121 1615 131 2397 4150 131 2166 545 185 5907 217 407 2117 190 6571 6265 3218 5437 15522 487 111 371 2166 3899 121 867 422 185 2655 111 16179 3321 147 6778 334 572 302 4389 147 843 131 111 1431 371 3899 422 234 111 844 131 334 165 3511 1074 147 10119 11566 1795 555 6265 165 13447 168 5437 6773 2166 111 1262 334 220 1151 647 111 1700 5846 1371 220 911 6571 579 15769 191 111 7142 131 111 22394 5523 974 15396 4813 137 111 2049 16773 459 3145 11607 30108 6985 422 582 111 4085 2713 220 6035 214 111 8030 1262 482 1371 15471 185 3138 1379 6042 131 580 551 137 3745 1445 147 111 2592 6773 437 7222 191 22394 2117 2533 103 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0516 07:37:45.329203 140684855629632 run_classifier_sci.py:542] input_ids: 102 869 579 2567 5472 1814 10587 30113 1487 1814 3870 203 30110 103 5856 437 5846 862 5437 1572 6773 263 22394 147 9786 2006 238 697 9154 111 1167 131 5437 1572 6773 131 9786 2006 16612 205 1363 6132 5180 434 528 1827 121 5437 1572 6773 422 256 165 3680 1482 147 22394 5828 205 238 1203 11606 106 3045 551 147 8381 4152 111 5437 1262 7222 191 22394 16612 422 2252 190 1135 579 2211 15522 17978 422 147 9786 2006 16612 2168 111 10105 131 459 3145 11607 30108 532 579 111 532 467 18580 30111 137 5614 4875 30107 422 234 467 5614 2843 137 3108 2791 205 111 3619 131 111 551 165 147 19893 111 1729 131 1168 11116 168 9786 2006 2117 214 20740 1767 263 1235 22394 1245 205 121 867 147 111 551 422 130 756 4813 131 6229 16612 165 17667 1814 256 3685 131 2638 422 8319 2117 6223 263 22394 147 459 3145 11607 30108 532 137 147 9786 2006 205 469 422 106 4651 131 111 9786 2006 2117 220 24944 13783 168 551 2166 205 580 1713 405 198 580 551 165 2115 168 1767 2268 263 22394 16612 147 9786 2006 16612 422 1319 487 5711 1168 11116 205 1425 147 137 111 5614 2843 532 131 535 7809 2181 422 185 5449 111 4813 690 2539 3791 862 22394 422 10454 459 3145 11607 30108 532 422 2431 16349 3538 459 3145 11607 30108 532 422 28648 25429 281 459 3145 11607 30108 532 422 137 9786 2006 111 12803 2516 165 1260 10428 121 993 147 8822 198 111 856 610 434 597 4715 422 334 13389 30113 168 633 2731 952 1243 121 1615 131 2397 4150 131 2166 545 185 5907 217 407 2117 190 6571 6265 3218 5437 15522 487 111 371 2166 3899 121 867 422 185 2655 111 16179 3321 147 6778 334 572 302 4389 147 843 131 111 1431 371 3899 422 234 111 844 131 334 165 3511 1074 147 10119 11566 1795 555 6265 165 13447 168 5437 6773 2166 111 1262 334 220 1151 647 111 1700 5846 1371 220 911 6571 579 15769 191 111 7142 131 111 22394 5523 974 15396 4813 137 111 2049 16773 459 3145 11607 30108 6985 422 582 111 4085 2713 220 6035 214 111 8030 1262 482 1371 15471 185 3138 1379 6042 131 580 551 137 3745 1445 147 111 2592 6773 437 7222 191 22394 2117 2533 103 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0516 07:37:45.329375 140684855629632 run_classifier_sci.py:543] input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0516 07:37:45.329526 140684855629632 run_classifier_sci.py:544] segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:label: false (id = 1)
+I0516 07:37:45.329581 140684855629632 run_classifier_sci.py:545] label: false (id = 1)
+INFO:tensorflow:*** Example ***
+I0516 07:37:45.335036 140684855629632 run_classifier_sci.py:538] *** Example ***
+INFO:tensorflow:guid: train-4
+I0516 07:37:45.335100 140684855629632 run_classifier_sci.py:539] guid: train-4
+INFO:tensorflow:tokens: [CLS] continuous control ; py ##bullet ant ; return [SEP] dark model adaptation : semantic image segmentation from daytime to night ##time this work addresses the problem of semantic image segmentation of night ##time scenes . although considerable progress has been made in semantic image segmentation , it is mainly related to daytime scenarios . this paper proposes a novel method to progressive adapt the semantic models trained on daytime scenes , along with large - scale annotations therein , to night ##time scenes via the bridge of tw ##ili ##gh ##t time - the time between daw ##n and sun ##ris ##e , or between sun ##set and du ##sk . the goal of the method is to alleviate the cost of human annotation for night ##time images by transferring knowledge from standard daytime conditions . in addition to the method , an ##ew dataset of road scenes is compiled ; it consists of 35 , 000 images ranging from daytime to tw ##ili ##gh ##t time and to night ##time . also , a subset of the night ##time images are densely annotated for method evaluation . our experiments show that our method is effective for knowledge transfer from daytime scenes to night ##time scenes , without using extra human annotation . according to and the sun ##set time of each recording day , we partition the dataset into five parts : daytime , civil tw ##ili ##gh ##t time , na ##uti ##cal tw ##ili ##gh ##t time , astro ##nom ##ical tw ##ili ##gh ##t time , and night ##time the aforementioned selection is performed manually in order to guarantee that the test set has high diversity , which compensate ##s for its relatively small size in terms of statistical significance of evaluation results we annot ##ate these images with fine pixel ##level semantic annotations using the 19 evaluation classes in addition , we assign the void label to pixels which do not belong to any of the above 19 classes , or the class of which is uncertain due to insufficient illumination every such pixel is ignored for semantic segmentation evaluation the models which are obtained after the initial adaptation step are further fine - tuned on the union of the daytime city ##sc ##apes dataset and the previously segmented tw ##ili ##gh ##t datasets , where the latter sets are labeled by the adapted models one step ahead we evaluate four variants of our method and compare them to the original segmentation model trained on daytime images directly [SEP]
+I0516 07:37:45.335380 140684855629632 run_classifier_sci.py:541] tokens: [CLS] continuous control ; py ##bullet ant ; return [SEP] dark model adaptation : semantic image segmentation from daytime to night ##time this work addresses the problem of semantic image segmentation of night ##time scenes . although considerable progress has been made in semantic image segmentation , it is mainly related to daytime scenarios . this paper proposes a novel method to progressive adapt the semantic models trained on daytime scenes , along with large - scale annotations therein , to night ##time scenes via the bridge of tw ##ili ##gh ##t time - the time between daw ##n and sun ##ris ##e , or between sun ##set and du ##sk . the goal of the method is to alleviate the cost of human annotation for night ##time images by transferring knowledge from standard daytime conditions . in addition to the method , an ##ew dataset of road scenes is compiled ; it consists of 35 , 000 images ranging from daytime to tw ##ili ##gh ##t time and to night ##time . also , a subset of the night ##time images are densely annotated for method evaluation . our experiments show that our method is effective for knowledge transfer from daytime scenes to night ##time scenes , without using extra human annotation . according to and the sun ##set time of each recording day , we partition the dataset into five parts : daytime , civil tw ##ili ##gh ##t time , na ##uti ##cal tw ##ili ##gh ##t time , astro ##nom ##ical tw ##ili ##gh ##t time , and night ##time the aforementioned selection is performed manually in order to guarantee that the test set has high diversity , which compensate ##s for its relatively small size in terms of statistical significance of evaluation results we annot ##ate these images with fine pixel ##level semantic annotations using the 19 evaluation classes in addition , we assign the void label to pixels which do not belong to any of the above 19 classes , or the class of which is uncertain due to insufficient illumination every such pixel is ignored for semantic segmentation evaluation the models which are obtained after the initial adaptation step are further fine - tuned on the union of the daytime city ##sc ##apes dataset and the previously segmented tw ##ili ##gh ##t datasets , where the latter sets are labeled by the adapted models one step ahead we evaluate four variants of our method and compare them to the original segmentation model trained on daytime images directly [SEP]
+INFO:tensorflow:input_ids: 102 2668 602 1814 5702 25290 4129 1814 3988 103 5856 437 5846 862 5437 1572 6773 263 22394 147 9786 2006 238 697 9154 111 1167 131 5437 1572 6773 131 9786 2006 16612 205 1363 6132 5180 434 528 1827 121 5437 1572 6773 422 256 165 3680 1482 147 22394 5828 205 238 1203 11606 106 3045 551 147 8381 4152 111 5437 1262 7222 191 22394 16612 422 2252 190 1135 579 2211 15522 17978 422 147 9786 2006 16612 2168 111 10105 131 459 3145 11607 30108 532 579 111 532 467 18580 30111 137 5614 4875 30107 422 234 467 5614 2843 137 3108 2791 205 111 3619 131 111 551 165 147 19893 111 1729 131 1168 11116 168 9786 2006 2117 214 20740 1767 263 1235 22394 1245 205 121 867 147 111 551 422 130 756 4813 131 6229 16612 165 17667 1814 256 3685 131 2638 422 8319 2117 6223 263 22394 147 459 3145 11607 30108 532 137 147 9786 2006 205 469 422 106 4651 131 111 9786 2006 2117 220 24944 13783 168 551 2166 205 580 1713 405 198 580 551 165 2115 168 1767 2268 263 22394 16612 147 9786 2006 16612 422 1319 487 5711 1168 11116 205 1425 147 137 111 5614 2843 532 131 535 7809 2181 422 185 5449 111 4813 690 2539 3791 862 22394 422 10454 459 3145 11607 30108 532 422 2431 16349 3538 459 3145 11607 30108 532 422 28648 25429 281 459 3145 11607 30108 532 422 137 9786 2006 111 12803 2516 165 1260 10428 121 993 147 8822 198 111 856 610 434 597 4715 422 334 13389 30113 168 633 2731 952 1243 121 1615 131 2397 4150 131 2166 545 185 5907 217 407 2117 190 6571 6265 3218 5437 15522 487 111 371 2166 3899 121 867 422 185 2655 111 16179 3321 147 6778 334 572 302 4389 147 843 131 111 1431 371 3899 422 234 111 844 131 334 165 3511 1074 147 10119 11566 1795 555 6265 165 13447 168 5437 6773 2166 111 1262 334 220 1151 647 111 1700 5846 1371 220 911 6571 579 15769 191 111 7142 131 111 22394 5523 974 15396 4813 137 111 2049 16773 459 3145 11607 30108 6985 422 582 111 4085 2713 220 6035 214 111 8030 1262 482 1371 15471 185 3138 1379 6042 131 580 551 137 3745 1445 147 111 2592 6773 437 7222 191 22394 2117 2533 103 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0516 07:37:45.335572 140684855629632 run_classifier_sci.py:542] input_ids: 102 2668 602 1814 5702 25290 4129 1814 3988 103 5856 437 5846 862 5437 1572 6773 263 22394 147 9786 2006 238 697 9154 111 1167 131 5437 1572 6773 131 9786 2006 16612 205 1363 6132 5180 434 528 1827 121 5437 1572 6773 422 256 165 3680 1482 147 22394 5828 205 238 1203 11606 106 3045 551 147 8381 4152 111 5437 1262 7222 191 22394 16612 422 2252 190 1135 579 2211 15522 17978 422 147 9786 2006 16612 2168 111 10105 131 459 3145 11607 30108 532 579 111 532 467 18580 30111 137 5614 4875 30107 422 234 467 5614 2843 137 3108 2791 205 111 3619 131 111 551 165 147 19893 111 1729 131 1168 11116 168 9786 2006 2117 214 20740 1767 263 1235 22394 1245 205 121 867 147 111 551 422 130 756 4813 131 6229 16612 165 17667 1814 256 3685 131 2638 422 8319 2117 6223 263 22394 147 459 3145 11607 30108 532 137 147 9786 2006 205 469 422 106 4651 131 111 9786 2006 2117 220 24944 13783 168 551 2166 205 580 1713 405 198 580 551 165 2115 168 1767 2268 263 22394 16612 147 9786 2006 16612 422 1319 487 5711 1168 11116 205 1425 147 137 111 5614 2843 532 131 535 7809 2181 422 185 5449 111 4813 690 2539 3791 862 22394 422 10454 459 3145 11607 30108 532 422 2431 16349 3538 459 3145 11607 30108 532 422 28648 25429 281 459 3145 11607 30108 532 422 137 9786 2006 111 12803 2516 165 1260 10428 121 993 147 8822 198 111 856 610 434 597 4715 422 334 13389 30113 168 633 2731 952 1243 121 1615 131 2397 4150 131 2166 545 185 5907 217 407 2117 190 6571 6265 3218 5437 15522 487 111 371 2166 3899 121 867 422 185 2655 111 16179 3321 147 6778 334 572 302 4389 147 843 131 111 1431 371 3899 422 234 111 844 131 334 165 3511 1074 147 10119 11566 1795 555 6265 165 13447 168 5437 6773 2166 111 1262 334 220 1151 647 111 1700 5846 1371 220 911 6571 579 15769 191 111 7142 131 111 22394 5523 974 15396 4813 137 111 2049 16773 459 3145 11607 30108 6985 422 582 111 4085 2713 220 6035 214 111 8030 1262 482 1371 15471 185 3138 1379 6042 131 580 551 137 3745 1445 147 111 2592 6773 437 7222 191 22394 2117 2533 103 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0516 07:37:45.335749 140684855629632 run_classifier_sci.py:543] input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0516 07:37:45.335913 140684855629632 run_classifier_sci.py:544] segment_ids: 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:label: false (id = 1)
+I0516 07:37:45.335970 140684855629632 run_classifier_sci.py:545] label: false (id = 1)
+INFO:tensorflow:Writing example 10000 of 256008
+I0516 07:38:58.611654 140684855629632 run_classifier_sci.py:565] Writing example 10000 of 256008
+INFO:tensorflow:Writing example 20000 of 256008
+I0516 07:40:10.915728 140684855629632 run_classifier_sci.py:565] Writing example 20000 of 256008
+INFO:tensorflow:Writing example 30000 of 256008
+I0516 07:41:21.045212 140684855629632 run_classifier_sci.py:565] Writing example 30000 of 256008
+INFO:tensorflow:Writing example 40000 of 256008
+I0516 07:42:39.206455 140684855629632 run_classifier_sci.py:565] Writing example 40000 of 256008
+INFO:tensorflow:Writing example 50000 of 256008
+I0516 07:43:52.557852 140684855629632 run_classifier_sci.py:565] Writing example 50000 of 256008
+INFO:tensorflow:Writing example 60000 of 256008
+I0516 07:45:05.528425 140684855629632 run_classifier_sci.py:565] Writing example 60000 of 256008
+INFO:tensorflow:Writing example 70000 of 256008
+I0516 07:46:23.380015 140684855629632 run_classifier_sci.py:565] Writing example 70000 of 256008
+INFO:tensorflow:Writing example 80000 of 256008
+I0516 07:47:37.040825 140684855629632 run_classifier_sci.py:565] Writing example 80000 of 256008
+INFO:tensorflow:Writing example 90000 of 256008
+I0516 07:48:53.931817 140684855629632 run_classifier_sci.py:565] Writing example 90000 of 256008
+INFO:tensorflow:Writing example 100000 of 256008
+I0516 07:50:10.005805 140684855629632 run_classifier_sci.py:565] Writing example 100000 of 256008
+INFO:tensorflow:Writing example 110000 of 256008
+I0516 07:51:19.777242 140684855629632 run_classifier_sci.py:565] Writing example 110000 of 256008
+INFO:tensorflow:Writing example 120000 of 256008
+I0516 07:52:31.770042 140684855629632 run_classifier_sci.py:565] Writing example 120000 of 256008
+INFO:tensorflow:Writing example 130000 of 256008
+I0516 07:53:43.964792 140684855629632 run_classifier_sci.py:565] Writing example 130000 of 256008
+INFO:tensorflow:Writing example 140000 of 256008
+I0516 07:54:56.145167 140684855629632 run_classifier_sci.py:565] Writing example 140000 of 256008
+INFO:tensorflow:Writing example 150000 of 256008
+I0516 07:56:06.102625 140684855629632 run_classifier_sci.py:565] Writing example 150000 of 256008
+INFO:tensorflow:Writing example 160000 of 256008
+I0516 07:57:22.400146 140684855629632 run_classifier_sci.py:565] Writing example 160000 of 256008
+INFO:tensorflow:Writing example 170000 of 256008
+I0516 07:58:35.196616 140684855629632 run_classifier_sci.py:565] Writing example 170000 of 256008
+INFO:tensorflow:Writing example 180000 of 256008
+I0516 07:59:52.818148 140684855629632 run_classifier_sci.py:565] Writing example 180000 of 256008
+INFO:tensorflow:Writing example 190000 of 256008
+I0516 08:01:05.719989 140684855629632 run_classifier_sci.py:565] Writing example 190000 of 256008
+INFO:tensorflow:Writing example 200000 of 256008
+I0516 08:02:23.841117 140684855629632 run_classifier_sci.py:565] Writing example 200000 of 256008
+INFO:tensorflow:Writing example 210000 of 256008
+I0516 08:03:40.448719 140684855629632 run_classifier_sci.py:565] Writing example 210000 of 256008
+INFO:tensorflow:Writing example 220000 of 256008
+I0516 08:04:56.343656 140684855629632 run_classifier_sci.py:565] Writing example 220000 of 256008
+INFO:tensorflow:Writing example 230000 of 256008
+I0516 08:06:12.083757 140684855629632 run_classifier_sci.py:565] Writing example 230000 of 256008
+INFO:tensorflow:Writing example 240000 of 256008
+I0516 08:07:32.805911 140684855629632 run_classifier_sci.py:565] Writing example 240000 of 256008
+INFO:tensorflow:Writing example 250000 of 256008
+I0516 08:08:45.426557 140684855629632 run_classifier_sci.py:565] Writing example 250000 of 256008
+INFO:tensorflow:***** Running training *****
+I0516 08:09:29.244017 140684855629632 run_classifier_sci.py:960] ***** Running training *****
+INFO:tensorflow:  Num examples = 256008
+I0516 08:09:29.244297 140684855629632 run_classifier_sci.py:961]   Num examples = 256008
+INFO:tensorflow:  Batch size = 32
+I0516 08:09:29.245399 140684855629632 run_classifier_sci.py:962]   Batch size = 32
+INFO:tensorflow:  Num steps = 24000
+I0516 08:09:29.245645 140684855629632 run_classifier_sci.py:963]   Num steps = 24000
+WARNING:tensorflow:From run_classifier_sci.py:592: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+W0516 08:09:29.246036 140684855629632 module_wrapper.py:139] From run_classifier_sci.py:592: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+WARNING:tensorflow:From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+W0516 08:09:29.266084 140684855629632 deprecation.py:506] From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+WARNING:tensorflow:From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0516 08:09:29.266544 140684855629632 deprecation.py:323] From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/training/training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+WARNING:tensorflow:From run_classifier_sci.py:628: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+W0516 08:09:29.300359 140684855629632 deprecation.py:323] From run_classifier_sci.py:628: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+WARNING:tensorflow:From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/contrib/data/python/ops/batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+W0516 08:09:29.300562 140684855629632 deprecation.py:323] From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/contrib/data/python/ops/batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+WARNING:tensorflow:From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+W0516 08:09:29.353361 140684855629632 module_wrapper.py:139] From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/autograph/converters/directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+WARNING:tensorflow:From run_classifier_sci.py:608: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+W0516 08:09:29.439841 140684855629632 deprecation.py:323] From run_classifier_sci.py:608: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+INFO:tensorflow:Calling model_fn.
+I0516 08:09:29.453962 140684855629632 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Running train on CPU
+I0516 08:09:29.454115 140684855629632 tpu_estimator.py:3124] Running train on CPU
+INFO:tensorflow:*** Features ***
+I0516 08:09:29.454418 140684855629632 run_classifier_sci.py:708] *** Features ***
+INFO:tensorflow:  name = input_ids, shape = (32, 512)
+I0516 08:09:29.454581 140684855629632 run_classifier_sci.py:710]   name = input_ids, shape = (32, 512)
+INFO:tensorflow:  name = input_mask, shape = (32, 512)
+I0516 08:09:29.454685 140684855629632 run_classifier_sci.py:710]   name = input_mask, shape = (32, 512)
+INFO:tensorflow:  name = is_real_example, shape = (32,)
+I0516 08:09:29.454779 140684855629632 run_classifier_sci.py:710]   name = is_real_example, shape = (32,)
+INFO:tensorflow:  name = label_ids, shape = (32,)
+I0516 08:09:29.454870 140684855629632 run_classifier_sci.py:710]   name = label_ids, shape = (32,)
+INFO:tensorflow:  name = segment_ids, shape = (32, 512)
+I0516 08:09:29.454965 140684855629632 run_classifier_sci.py:710]   name = segment_ids, shape = (32, 512)
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/BERT/modeling.py:172: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W0516 08:09:29.455555 140684855629632 module_wrapper.py:139] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/BERT/modeling.py:172: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/BERT/modeling.py:410: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+W0516 08:09:29.456523 140684855629632 module_wrapper.py:139] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/BERT/modeling.py:410: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/BERT/modeling.py:491: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+W0516 08:09:29.470457 140684855629632 module_wrapper.py:139] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/BERT/modeling.py:491: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/BERT/modeling.py:359: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+W0516 08:09:29.491213 140684855629632 deprecation.py:506] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/BERT/modeling.py:359: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/BERT/modeling.py:672: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+W0516 08:09:29.500146 140684855629632 deprecation.py:323] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/BERT/modeling.py:672: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W0516 08:09:29.501167 140684855629632 deprecation.py:323] From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/layers/core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From run_classifier_sci.py:728: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+W0516 08:09:30.685062 140684855629632 module_wrapper.py:139] From run_classifier_sci.py:728: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+WARNING:tensorflow:From run_classifier_sci.py:742: The name tf.train.init_from_checkpoint is deprecated. Please use tf.compat.v1.train.init_from_checkpoint instead.
+
+W0516 08:09:30.725170 140684855629632 module_wrapper.py:139] From run_classifier_sci.py:742: The name tf.train.init_from_checkpoint is deprecated. Please use tf.compat.v1.train.init_from_checkpoint instead.
+
+INFO:tensorflow:**** Trainable Variables ****
+I0516 08:09:31.071525 140684855629632 run_classifier_sci.py:744] **** Trainable Variables ****
+INFO:tensorflow:  name = bert/embeddings/word_embeddings:0, shape = (31090, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.071705 140684855629632 run_classifier_sci.py:750]   name = bert/embeddings/word_embeddings:0, shape = (31090, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/token_type_embeddings:0, shape = (2, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.071880 140684855629632 run_classifier_sci.py:750]   name = bert/embeddings/token_type_embeddings:0, shape = (2, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/position_embeddings:0, shape = (512, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.072021 140684855629632 run_classifier_sci.py:750]   name = bert/embeddings/position_embeddings:0, shape = (512, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.072157 140684855629632 run_classifier_sci.py:750]   name = bert/embeddings/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/embeddings/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.072256 140684855629632 run_classifier_sci.py:750]   name = bert/embeddings/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.072350 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_0/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.072433 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_0/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.072525 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_0/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.072605 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_0/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.072740 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_0/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.072839 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_0/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.072931 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_0/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.073010 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_0/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.073103 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_0/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.073198 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_0/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0516 08:09:31.073290 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_0/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0516 08:09:31.073370 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_0/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.073462 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_0/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.073541 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_0/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.073616 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_0/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_0/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.073708 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_0/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.073799 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_1/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.073879 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_1/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.073953 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_1/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.074030 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_1/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.074121 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_1/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.074199 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_1/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.074290 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_1/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.074370 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_1/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.074461 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_1/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.074553 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_1/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0516 08:09:31.074645 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_1/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0516 08:09:31.074724 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_1/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.074798 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_1/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.074876 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_1/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.074967 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_1/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_1/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.075058 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_1/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.075149 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_2/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.075229 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_2/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.075319 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_2/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.075402 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_2/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.075492 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_2/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.075569 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_2/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.075658 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_2/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.075757 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_2/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.075849 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_2/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.075941 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_2/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0516 08:09:31.076031 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_2/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0516 08:09:31.076109 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_2/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.076182 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_2/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.076259 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_2/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.076331 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_2/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_2/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.076403 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_2/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.076493 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_3/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.076572 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_3/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.076669 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_3/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.076749 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_3/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.076839 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_3/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.076936 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_3/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.077030 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_3/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.077109 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_3/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.077199 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_3/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.077297 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_3/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0516 08:09:31.077388 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_3/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0516 08:09:31.077466 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_3/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.077555 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_3/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.077634 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_3/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.077707 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_3/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_3/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.077780 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_3/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.077851 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_4/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.077927 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_4/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.078015 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_4/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.078092 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_4/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.078181 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_4/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.078258 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_4/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.078349 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_4/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.078427 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_4/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.078516 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_4/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.078605 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_4/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0516 08:09:31.078696 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_4/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0516 08:09:31.078774 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_4/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.078863 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_4/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.078941 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_4/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.079030 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_4/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_4/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.079119 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_4/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.079207 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_5/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.079283 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_5/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.079356 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_5/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.079432 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_5/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.079504 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_5/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.079581 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_5/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.079672 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_5/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.079750 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_5/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.079822 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_5/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.079894 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_5/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0516 08:09:31.079987 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_5/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0516 08:09:31.080065 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_5/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.080137 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_5/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.080213 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_5/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.080285 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_5/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_5/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.080375 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_5/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.080466 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_6/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.080544 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_6/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.080640 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_6/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.080736 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_6/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.080829 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_6/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.080911 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_6/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.080998 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_6/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.081077 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_6/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.081165 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_6/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.081255 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_6/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0516 08:09:31.081344 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_6/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0516 08:09:31.081421 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_6/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.081494 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_6/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.081569 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_6/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.081657 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_6/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_6/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.081746 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_6/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.081835 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_7/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.081912 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_7/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.082000 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_7/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.082079 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_7/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.082169 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_7/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.082246 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_7/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.082317 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_7/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.082393 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_7/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.082481 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_7/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.082570 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_7/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0516 08:09:31.082662 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_7/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0516 08:09:31.082758 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_7/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.082849 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_7/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.082926 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_7/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.083014 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_7/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_7/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.083103 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_7/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.083191 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_8/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.083269 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_8/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.083358 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_8/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.083437 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_8/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.083508 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_8/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.083584 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_8/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.083655 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_8/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.083730 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_8/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.083819 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_8/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.083908 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_8/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0516 08:09:31.083997 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_8/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0516 08:09:31.084074 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_8/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.084162 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_8/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.084238 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_8/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.084328 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_8/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_8/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.084417 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_8/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.084504 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_9/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.084581 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_9/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.084679 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_9/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.084758 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_9/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.084846 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_9/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.084928 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_9/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.085000 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_9/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.085075 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_9/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.085147 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_9/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.085234 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_9/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0516 08:09:31.085323 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_9/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0516 08:09:31.085400 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_9/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.085473 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_9/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.085548 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_9/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.085620 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_9/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_9/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.085691 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_9/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.085780 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_10/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.085878 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_10/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.085969 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_10/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.086048 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_10/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.086121 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_10/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.086198 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_10/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.086287 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_10/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.086365 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_10/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.086454 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_10/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.086545 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_10/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0516 08:09:31.086633 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_10/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0516 08:09:31.086711 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_10/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.086801 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_10/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.086879 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_10/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.086967 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_10/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_10/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.087057 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_10/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.087147 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_11/attention/self/query/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.087227 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_11/attention/self/query/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.087316 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_11/attention/self/key/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.087395 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_11/attention/self/key/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.087483 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_11/attention/self/value/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.087561 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_11/attention/self/value/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.087651 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_11/attention/output/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.087731 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_11/attention/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.087820 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_11/attention/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.087911 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_11/attention/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+I0516 08:09:31.088005 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_11/intermediate/dense/kernel:0, shape = (768, 3072), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+I0516 08:09:31.088085 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_11/intermediate/dense/bias:0, shape = (3072,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.088175 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_11/output/dense/kernel:0, shape = (3072, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.088254 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_11/output/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.088342 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_11/output/LayerNorm/beta:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/encoder/layer_11/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.088434 140684855629632 run_classifier_sci.py:750]   name = bert/encoder/layer_11/output/LayerNorm/gamma:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/pooler/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+I0516 08:09:31.088524 140684855629632 run_classifier_sci.py:750]   name = bert/pooler/dense/kernel:0, shape = (768, 768), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = bert/pooler/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+I0516 08:09:31.088603 140684855629632 run_classifier_sci.py:750]   name = bert/pooler/dense/bias:0, shape = (768,), *INIT_FROM_CKPT*
+INFO:tensorflow:  name = output_weights:0, shape = (2, 768)
+I0516 08:09:31.088716 140684855629632 run_classifier_sci.py:750]   name = output_weights:0, shape = (2, 768)
+INFO:tensorflow:  name = output_bias:0, shape = (2,)
+I0516 08:09:31.088809 140684855629632 run_classifier_sci.py:750]   name = output_bias:0, shape = (2,)
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/BERT/optimization.py:27: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+W0516 08:09:31.088959 140684855629632 module_wrapper.py:139] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/BERT/optimization.py:27: The name tf.train.get_or_create_global_step is deprecated. Please use tf.compat.v1.train.get_or_create_global_step instead.
+
+WARNING:tensorflow:From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/BERT/optimization.py:32: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+W0516 08:09:31.089559 140684855629632 module_wrapper.py:139] From /nfs/home/kabenamualus/Research/task-dataset-metric-extraction/BERT/optimization.py:32: The name tf.train.polynomial_decay is deprecated. Please use tf.compat.v1.train.polynomial_decay instead.
+
+WARNING:tensorflow:From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/ops/math_grad.py:1375: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0516 08:09:31.229747 140684855629632 deprecation.py:323] From /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/ops/math_grad.py:1375: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+INFO:tensorflow:Done calling model_fn.
+I0516 08:09:34.750262 140684855629632 estimator.py:1150] Done calling model_fn.
+INFO:tensorflow:Create CheckpointSaverHook.
+I0516 08:09:34.751173 140684855629632 basic_session_run_hooks.py:541] Create CheckpointSaverHook.
+INFO:tensorflow:Graph was finalized.
+I0516 08:09:36.831015 140684855629632 monitored_session.py:240] Graph was finalized.
+2021-05-16 08:09:36.831398: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2021-05-16 08:09:36.876828: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2400080000 Hz
+2021-05-16 08:09:36.881895: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5581f8ed5590 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-16 08:09:36.881929: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-16 08:09:36.887224: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-16 08:09:37.077748: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5581f8ec5550 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-05-16 08:09:37.077782: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 3090, Compute Capability 8.6
+2021-05-16 08:09:37.079608: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 3090 major: 8 minor: 6 memoryClockRate(GHz): 1.695
+pciBusID: 0000:61:00.0
+2021-05-16 08:09:37.084735: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-16 08:09:37.160365: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-05-16 08:09:37.195368: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-05-16 08:09:37.212462: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-05-16 08:09:37.290681: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-05-16 08:09:37.338312: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-05-16 08:09:37.488836: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-05-16 08:09:37.493825: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0
+2021-05-16 08:09:37.497032: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-16 08:09:37.499322: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-16 08:09:37.499336: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 
+2021-05-16 08:09:37.499343: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N 
+2021-05-16 08:09:37.504308: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 22811 MB memory) -> physical GPU (device: 0, name: GeForce RTX 3090, pci bus id: 0000:61:00.0, compute capability: 8.6)
+INFO:tensorflow:Running local_init_op.
+I0516 08:12:15.395028 140684855629632 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0516 08:12:15.607767 140684855629632 session_manager.py:502] Done running local_init_op.
+INFO:tensorflow:Saving checkpoints for 0 into ../data/paperwithcode/new/60Neg800unk/twofoldwithunk/fold1/models/SciBERT/model.ckpt.
+I0516 08:12:20.867406 140684855629632 basic_session_run_hooks.py:606] Saving checkpoints for 0 into ../data/paperwithcode/new/60Neg800unk/twofoldwithunk/fold1/models/SciBERT/model.ckpt.
+2021-05-16 08:12:50.404101: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-05-16 08:14:21.532813: E tensorflow/stream_executor/cuda/cuda_blas.cc:428] failed to run cuBLAS routine: CUBLAS_STATUS_EXECUTION_FAILED
+ERROR:tensorflow:Error recorded from training_loop: 2 root error(s) found.
+  (0) Internal: Blas GEMM launch failed : a.shape=(16384, 2), b.shape=(2, 768), m=16384, n=768, k=2
+	 [[node bert/embeddings/MatMul (defined at /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/framework/ops.py:1748) ]]
+	 [[loss/Mean/_4051]]
+  (1) Internal: Blas GEMM launch failed : a.shape=(16384, 2), b.shape=(2, 768), m=16384, n=768, k=2
+	 [[node bert/embeddings/MatMul (defined at /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/framework/ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'bert/embeddings/MatMul':
+  File "run_classifier_sci.py", line 1079, in <module>
+    tf.app.run()
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/absl/app.py", line 303, in run
+    _run_main(main, args)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "run_classifier_sci.py", line 971, in main
+    estimator.train(input_fn=train_input_fn, max_steps=num_train_steps)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py", line 3030, in train
+    saving_listeners=saving_listeners)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 370, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1161, in _train_model
+    return self._train_model_default(input_fn, hooks, saving_listeners)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1191, in _train_model_default
+    features, labels, ModeKeys.TRAIN, self.config)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py", line 2857, in _call_model_fn
+    config)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1149, in _call_model_fn
+    model_fn_results = self._model_fn(features=features, **kwargs)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py", line 3126, in _model_fn
+    features, labels, is_export_mode=is_export_mode)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py", line 1663, in call_without_tpu
+    return self._call_model_fn(features, labels, is_export_mode=is_export_mode)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py", line 1994, in _call_model_fn
+    estimator_spec = self._model_fn(features=features, **kwargs)
+  File "run_classifier_sci.py", line 726, in model_fn
+    num_labels, use_one_hot_embeddings)
+  File "run_classifier_sci.py", line 663, in create_model
+    use_one_hot_embeddings=use_one_hot_embeddings)
+  File "/nfs/home/kabenamualus/Research/task-dataset-metric-extraction/BERT/modeling.py", line 195, in __init__
+    dropout_prob=config.hidden_dropout_prob)
+  File "/nfs/home/kabenamualus/Research/task-dataset-metric-extraction/BERT/modeling.py", line 485, in embedding_postprocessor
+    token_type_embeddings = tf.matmul(one_hot_ids, token_type_table)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/util/dispatch.py", line 180, in wrapper
+    return target(*args, **kwargs)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/ops/math_ops.py", line 2754, in matmul
+    a, b, transpose_a=transpose_a, transpose_b=transpose_b, name=name)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/ops/gen_math_ops.py", line 6136, in mat_mul
+    name=name)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/framework/op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/framework/ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/framework/ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/framework/ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+E0516 08:14:21.802261 140684855629632 error_handling.py:75] Error recorded from training_loop: 2 root error(s) found.
+  (0) Internal: Blas GEMM launch failed : a.shape=(16384, 2), b.shape=(2, 768), m=16384, n=768, k=2
+	 [[node bert/embeddings/MatMul (defined at /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/framework/ops.py:1748) ]]
+	 [[loss/Mean/_4051]]
+  (1) Internal: Blas GEMM launch failed : a.shape=(16384, 2), b.shape=(2, 768), m=16384, n=768, k=2
+	 [[node bert/embeddings/MatMul (defined at /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/framework/ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'bert/embeddings/MatMul':
+  File "run_classifier_sci.py", line 1079, in <module>
+    tf.app.run()
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/absl/app.py", line 303, in run
+    _run_main(main, args)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "run_classifier_sci.py", line 971, in main
+    estimator.train(input_fn=train_input_fn, max_steps=num_train_steps)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py", line 3030, in train
+    saving_listeners=saving_listeners)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 370, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1161, in _train_model
+    return self._train_model_default(input_fn, hooks, saving_listeners)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1191, in _train_model_default
+    features, labels, ModeKeys.TRAIN, self.config)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py", line 2857, in _call_model_fn
+    config)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1149, in _call_model_fn
+    model_fn_results = self._model_fn(features=features, **kwargs)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py", line 3126, in _model_fn
+    features, labels, is_export_mode=is_export_mode)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py", line 1663, in call_without_tpu
+    return self._call_model_fn(features, labels, is_export_mode=is_export_mode)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py", line 1994, in _call_model_fn
+    estimator_spec = self._model_fn(features=features, **kwargs)
+  File "run_classifier_sci.py", line 726, in model_fn
+    num_labels, use_one_hot_embeddings)
+  File "run_classifier_sci.py", line 663, in create_model
+    use_one_hot_embeddings=use_one_hot_embeddings)
+  File "/nfs/home/kabenamualus/Research/task-dataset-metric-extraction/BERT/modeling.py", line 195, in __init__
+    dropout_prob=config.hidden_dropout_prob)
+  File "/nfs/home/kabenamualus/Research/task-dataset-metric-extraction/BERT/modeling.py", line 485, in embedding_postprocessor
+    token_type_embeddings = tf.matmul(one_hot_ids, token_type_table)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/util/dispatch.py", line 180, in wrapper
+    return target(*args, **kwargs)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/ops/math_ops.py", line 2754, in matmul
+    a, b, transpose_a=transpose_a, transpose_b=transpose_b, name=name)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/ops/gen_math_ops.py", line 6136, in mat_mul
+    name=name)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/framework/op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/framework/ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/framework/ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/framework/ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+INFO:tensorflow:training_loop marked as finished
+I0516 08:14:21.809675 140684855629632 error_handling.py:101] training_loop marked as finished
+WARNING:tensorflow:Reraising captured error
+W0516 08:14:21.809880 140684855629632 error_handling.py:135] Reraising captured error
+Traceback (most recent call last):
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/client/session.py", line 1365, in _do_call
+    return fn(*args)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/client/session.py", line 1350, in _run_fn
+    target_list, run_metadata)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/client/session.py", line 1443, in _call_tf_sessionrun
+    run_metadata)
+tensorflow.python.framework.errors_impl.InternalError: 2 root error(s) found.
+  (0) Internal: Blas GEMM launch failed : a.shape=(16384, 2), b.shape=(2, 768), m=16384, n=768, k=2
+	 [[{{node bert/embeddings/MatMul}}]]
+	 [[loss/Mean/_4051]]
+  (1) Internal: Blas GEMM launch failed : a.shape=(16384, 2), b.shape=(2, 768), m=16384, n=768, k=2
+	 [[{{node bert/embeddings/MatMul}}]]
+0 successful operations.
+0 derived errors ignored.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "run_classifier_sci.py", line 1079, in <module>
+    tf.app.run()
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/absl/app.py", line 303, in run
+    _run_main(main, args)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "run_classifier_sci.py", line 971, in main
+    estimator.train(input_fn=train_input_fn, max_steps=num_train_steps)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py", line 3035, in train
+    rendezvous.raise_errors()
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/tpu/error_handling.py", line 136, in raise_errors
+    six.reraise(typ, value, traceback)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/six.py", line 703, in reraise
+    raise value
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py", line 3030, in train
+    saving_listeners=saving_listeners)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 370, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1161, in _train_model
+    return self._train_model_default(input_fn, hooks, saving_listeners)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1195, in _train_model_default
+    saving_listeners)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1494, in _train_with_estimator_spec
+    _, loss = mon_sess.run([estimator_spec.train_op, estimator_spec.loss])
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/training/monitored_session.py", line 754, in run
+    run_metadata=run_metadata)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/training/monitored_session.py", line 1259, in run
+    run_metadata=run_metadata)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/training/monitored_session.py", line 1360, in run
+    raise six.reraise(*original_exc_info)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/six.py", line 703, in reraise
+    raise value
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/training/monitored_session.py", line 1345, in run
+    return self._sess.run(*args, **kwargs)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/training/monitored_session.py", line 1418, in run
+    run_metadata=run_metadata)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/training/monitored_session.py", line 1176, in run
+    return self._sess.run(*args, **kwargs)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/client/session.py", line 956, in run
+    run_metadata_ptr)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/client/session.py", line 1180, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/client/session.py", line 1359, in _do_run
+    run_metadata)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/client/session.py", line 1384, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InternalError: 2 root error(s) found.
+  (0) Internal: Blas GEMM launch failed : a.shape=(16384, 2), b.shape=(2, 768), m=16384, n=768, k=2
+	 [[node bert/embeddings/MatMul (defined at /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/framework/ops.py:1748) ]]
+	 [[loss/Mean/_4051]]
+  (1) Internal: Blas GEMM launch failed : a.shape=(16384, 2), b.shape=(2, 768), m=16384, n=768, k=2
+	 [[node bert/embeddings/MatMul (defined at /opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/framework/ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'bert/embeddings/MatMul':
+  File "run_classifier_sci.py", line 1079, in <module>
+    tf.app.run()
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/absl/app.py", line 303, in run
+    _run_main(main, args)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "run_classifier_sci.py", line 971, in main
+    estimator.train(input_fn=train_input_fn, max_steps=num_train_steps)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py", line 3030, in train
+    saving_listeners=saving_listeners)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 370, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1161, in _train_model
+    return self._train_model_default(input_fn, hooks, saving_listeners)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1191, in _train_model_default
+    features, labels, ModeKeys.TRAIN, self.config)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py", line 2857, in _call_model_fn
+    config)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/estimator.py", line 1149, in _call_model_fn
+    model_fn_results = self._model_fn(features=features, **kwargs)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py", line 3126, in _model_fn
+    features, labels, is_export_mode=is_export_mode)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py", line 1663, in call_without_tpu
+    return self._call_model_fn(features, labels, is_export_mode=is_export_mode)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_estimator/python/estimator/tpu/tpu_estimator.py", line 1994, in _call_model_fn
+    estimator_spec = self._model_fn(features=features, **kwargs)
+  File "run_classifier_sci.py", line 726, in model_fn
+    num_labels, use_one_hot_embeddings)
+  File "run_classifier_sci.py", line 663, in create_model
+    use_one_hot_embeddings=use_one_hot_embeddings)
+  File "/nfs/home/kabenamualus/Research/task-dataset-metric-extraction/BERT/modeling.py", line 195, in __init__
+    dropout_prob=config.hidden_dropout_prob)
+  File "/nfs/home/kabenamualus/Research/task-dataset-metric-extraction/BERT/modeling.py", line 485, in embedding_postprocessor
+    token_type_embeddings = tf.matmul(one_hot_ids, token_type_table)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/util/dispatch.py", line 180, in wrapper
+    return target(*args, **kwargs)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/ops/math_ops.py", line 2754, in matmul
+    a, b, transpose_a=transpose_a, transpose_b=transpose_b, name=name)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/ops/gen_math_ops.py", line 6136, in mat_mul
+    name=name)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/framework/op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/util/deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/framework/ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/framework/ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "/opt/conda/envs/python3/lib/python3.6/site-packages/tensorflow_core/python/framework/ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+srun: error: devbox5: task 0: Exited with exit code 1

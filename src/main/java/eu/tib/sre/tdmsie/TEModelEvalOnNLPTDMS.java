@@ -91,7 +91,7 @@ public class TEModelEvalOnNLPTDMS {
 
     public void evaluateTDMSExtraction() throws IOException, Exception {
     // public void evaluateTDMSExtraction(FileOutputStream fold_stats) throws IOException, Exception {
-        Map<String, String> scorePrediction = getPredictedSore();
+        // Map<String, String> scorePrediction = getPredictedSore();
 
         String file1 = prop.getProperty("projectPath") + "/" + prop.getProperty("test_path");
         String file2 = prop.getProperty("projectPath") + "/" +  prop.getProperty("test_results_path");
@@ -148,10 +148,10 @@ public class TEModelEvalOnNLPTDMS {
                 NLPResult result = new NLPResult(filename, task, dataset);
                 result.setEvaluationMetric(eval);
                 
-                // This is for score 
-                if (scorePrediction.containsKey(filename + "#" + dataset + ":::" + eval)) {
-                    result.setEvaluationScore(scorePrediction.get(filename + "#" + dataset + ":::" + eval).split("#")[0]);
-                }
+                // // This is for score 
+                // if (scorePrediction.containsKey(filename + "#" + dataset + ":::" + eval)) {
+                //     result.setEvaluationScore(scorePrediction.get(filename + "#" + dataset + ":::" + eval).split("#")[0]);
+                // }
 
                 resultsPredictionsTestPapers.get(filename).add(result);
                 }
@@ -182,21 +182,26 @@ public class TEModelEvalOnNLPTDMS {
             }
         }
 
-        logger.info("leaderboard eu.tib.sre.evaluation:");
-        // fold_stats.write(("leaderboard eu.tib.sre.evaluation:").getBytes());
+        // logger.info("leaderboard eu.tib.sre.evaluation:");
+        // // fold_stats.write(("leaderboard eu.tib.sre.evaluation:").getBytes());
 
-        logger.info("per_label:");
-        // fold_stats.write(("per_label:").getBytes());
+        // logger.info("per_label:");
+        // // fold_stats.write(("per_label:").getBytes());
 
-        logger.info(evalMatrix.perLabelEvaluation_Leaderboard_TaskDatasetEvaluationMatrix(resultsPredictionsTestPapers, false, evaluatedLabels));
-        // fold_stats.write((evalMatrix.perLabelEvaluation_Leaderboard_TaskDatasetEvaluationMatrix(resultsPredictionsTestPapers, false, evaluatedLabels)).getBytes());
+        // logger.info(evalMatrix.perLabelEvaluation_Leaderboard_TaskDatasetEvaluationMatrix(resultsPredictionsTestPapers, false, evaluatedLabels));
+        // // fold_stats.write((evalMatrix.perLabelEvaluation_Leaderboard_TaskDatasetEvaluationMatrix(resultsPredictionsTestPapers, false, evaluatedLabels)).getBytes());
         
-        logger.info("per_sample:");
-        // fold_stats.write(("per_sample:").getBytes());
+        // logger.info("per_sample:");
+        // // fold_stats.write(("per_sample:").getBytes());
 
-        logger.info(evalMatrix.perSampleEvaluation_Leaderboard(resultsPredictionsTestPapers, file1));
-        // fold_stats.write((evalMatrix.perSampleEvaluation_Leaderboard(resultsPredictionsTestPapers, file1)).getBytes());
+        // logger.info(evalMatrix.perSampleEvaluation_Leaderboard(resultsPredictionsTestPapers, file1));
+        // // fold_stats.write((evalMatrix.perSampleEvaluation_Leaderboard(resultsPredictionsTestPapers, file1)).getBytes());
         
+        System.out.println("leaderboard eu.tib.sre.evaluation:");
+        // System.out.println("per_label:");
+        // System.out.println(evalMatrix.perLabelEvaluation_Leaderboard_TaskDatasetEvaluationMatrix(resultsPredictionsTestPapers, false, evaluatedLabels));
+        System.out.println("per_sample:");
+        System.out.println(evalMatrix.perSampleEvaluation_Leaderboard(resultsPredictionsTestPapers, file1));
     
     }
     

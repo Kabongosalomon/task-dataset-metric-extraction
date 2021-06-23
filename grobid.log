@@ -23,3 +23,201 @@
 07 Jan 2021 12:06.58 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\date\model.wapiti (size: 102435)
 07 Jan 2021 12:06.58 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\citation\model.wapiti (size: 16235248)
 07 Jan 2021 12:07.00 [INFO ] WapitiModel               - Loading model: D:\ORKG\NLP\task-dataset-metric-extraction\..\grobid-0.5.3\grobid-home\models\reference-segmenter\model.wapiti (size: 4829569)
+23 Jun 2021 14:09.21 [INFO ] TEModelEvalOnNLPTDMS      - leaderboard eu.tib.sre.evaluation:
+23 Jun 2021 14:09.21 [INFO ] TEModelEvalOnNLPTDMS      - per_label:
+23 Jun 2021 14:09.21 [INFO ] TEModelEvalOnNLPTDMS      - Class	TP	FP	FN	TPScore	Prec	Rec	F1	scoreAcc
+relation_prediction:::FB15K-237:::H@1	3	1	0	0	0.750	1.000	0.857	0.000
+word_sense_disambiguation:::SemEval 2013:::F1	3	1	1	0	0.750	0.750	0.750	0.000
+language_modeling:::1B Words / Google Billion Word benchmark:::Test perplexity	0	0	2	0	0.000	0.000	0.000	0.000
+amr_parsing:::LDC2014T12:::F1 on Full	1	0	2	0	1.000	0.333	0.500	0.000
+sentiment_analysis:::SemEval-2014 Task 4 subtask 2 Aspect Term Polarity:::Laptop (acc)	3	3	0	0	0.500	1.000	0.667	0.000
+word_segmentation:::VLSP 2013 word segmentation shared task:::F1	1	1	1	0	0.500	0.500	0.500	0.000
+relation_prediction:::FB15K-237:::MRR	4	0	0	0	1.000	1.000	1.000	0.000
+sentiment_analysis:::IMDb:::Accuracy	1	1	1	0	0.500	0.500	0.500	0.000
+relationship_extraction:::New York Times Corpus:::P@10%	1	2	1	0	0.333	0.500	0.400	0.000
+amr_parsing:::LDC2014T12:::F1 on Newswire	2	0	0	0	1.000	1.000	1.000	0.000
+named_entity_recognition:::VLSP 2016 NER shared task:::F1	0	0	1	0	0.000	0.000	0.000	0.000
+dependency_parsing:::Penn Treebank:::UAS	3	4	5	0	0.429	0.375	0.400	0.000
+language_modeling:::Penn Treebank:::Number of params	4	6	2	0	0.400	0.667	0.500	0.000
+language_modeling:::WikiText-2:::Validation perplexity	2	5	0	0	0.286	1.000	0.444	0.000
+language_modeling:::WikiText-2:::Number of params	2	6	0	0	0.250	1.000	0.400	0.000
+dependency_parsing:::Penn Treebank:::POS	2	2	2	0	0.500	0.500	0.500	0.000
+text_classification:::DBpedia:::Error	0	2	2	0	0.000	0.000	0.000	0.000
+word_sense_disambiguation:::SemEval 2015:::F1	3	1	1	0	0.750	0.750	0.750	0.000
+language_modeling:::Penn Treebank:::Validation perplexity	2	1	0	0	0.667	1.000	0.800	0.000
+question_answering:::SearchQA:::N-gram F1	1	0	1	0	1.000	0.500	0.667	0.000
+machine_translation:::WMT 2014 EN-FR:::BLEU	3	3	0	0	0.500	1.000	0.667	0.000
+language_modeling:::Text8:::Bit per Character (BPC)	3	2	0	0	0.600	1.000	0.750	0.000
+constituency_parsing:::Penn Treebank:::F1	3	4	2	0	0.429	0.600	0.500	0.000
+amr_parsing:::LDC2015E86:::Smatch	2	1	1	0	0.667	0.667	0.667	0.000
+language_modeling:::WikiText-103:::Test perplexity	3	5	0	0	0.375	1.000	0.545	0.000
+summarization:::CNN / Daily Mail (Non-anonymized version):::METEOR	2	9	0	0	0.182	1.000	0.308	0.000
+taxonomy_learning:::SemEval 2018:::P@5	3	1	1	0	0.750	0.750	0.750	0.000
+language_modeling:::Penn Treebank:::Test perplexity	2	6	1	0	0.250	0.667	0.364	0.000
+word_segmentation:::MSR:::F1	3	2	0	0	0.600	1.000	0.750	0.000
+language_modeling:::WikiText-2:::Test perplexity	2	5	0	0	0.286	1.000	0.444	0.000
+word_segmentation:::PKU:::F1	2	2	1	0	0.500	0.667	0.571	0.000
+taxonomy_learning:::SemEval 2018:::MRR	3	0	1	0	1.000	0.750	0.857	0.000
+taxonomy_learning:::SemEval 2018:::MAP	3	1	1	0	0.750	0.750	0.750	0.000
+chunking:::Penn Treebank:::F1	1	0	2	0	1.000	0.333	0.500	0.000
+sentiment_analysis:::SST-2:::Accuracy	0	2	2	0	0.000	0.000	0.000	0.000
+named_entity_recognition:::Ontonotes v5 (English):::F1	0	0	5	0	0.000	0.000	0.000	0.000
+language_modeling:::Penn Treebank:::Bit per Character (BPC)	2	2	2	0	0.500	0.500	0.500	0.000
+relation_prediction:::WN18RR:::H@10	3	2	0	0	0.600	1.000	0.750	0.000
+language_modeling:::Hutter Prize:::Number of params	2	3	1	0	0.400	0.667	0.500	0.000
+word_sense_disambiguation:::Senseval 3:::F1	3	1	1	0	0.750	0.750	0.750	0.000
+text_classification:::TREC:::Error	0	0	4	0	0.000	0.000	0.000	0.000
+question_answering:::SQuAD:::F1	10	4	0	0	0.714	1.000	0.833	0.000
+sentiment_analysis:::SemEval-2014 Task 4 subtask 2 Aspect Term Polarity:::Restaurant (acc)	3	0	0	0	1.000	1.000	1.000	0.000
+word_sense_disambiguation:::Senseval 2:::F1	3	1	1	0	0.750	0.750	0.750	0.000
+question_answering:::SQuAD:::EM	10	3	0	0	0.769	1.000	0.870	0.000
+relation_prediction:::FB15K-237:::H@10	4	0	0	0	1.000	1.000	1.000	0.000
+dependency_parsing:::benchmark Vietnamese dependency treebank VnDT:::LAS	2	4	0	0	0.333	1.000	0.500	0.000
+relation_prediction:::WN18RR:::H@1	2	3	0	0	0.400	1.000	0.571	0.000
+summarization:::CNN / Daily Mail (Anonymized version):::ROUGE-2	5	6	0	0	0.455	1.000	0.625	0.000
+summarization:::CNN / Daily Mail (Anonymized version):::ROUGE-1	5	6	0	0	0.455	1.000	0.625	0.000
+relationship_extraction:::SemEval-2010 Task 8:::F1	6	0	1	0	1.000	0.857	0.923	0.000
+text_classification:::AG News:::Error	0	0	2	0	0.000	0.000	0.000	0.000
+summarization:::CNN / Daily Mail (Anonymized version):::ROUGE-L	5	7	0	0	0.417	1.000	0.588	0.000
+word_segmentation:::Chinese Treebank 6:::F1	3	4	0	0	0.429	1.000	0.600	0.000
+summarization:::Gigaword:::ROUGE-L	6	0	0	0	1.000	1.000	1.000	0.000
+relation_prediction:::WN18RR:::MRR	3	1	0	0	0.750	1.000	0.857	0.000
+question_answering:::Quasar:::EM (Quasar-T)	0	0	2	0	0.000	0.000	0.000	0.000
+word_sense_disambiguation:::SemEval 2007:::F1	3	1	1	0	0.750	0.750	0.750	0.000
+summarization:::DUC 2004 Task 1:::ROUGE-L	3	0	0	0	1.000	1.000	1.000	0.000
+language_modeling:::Text8:::Number of params	2	3	1	0	0.400	0.667	0.500	0.000
+summarization:::Gigaword:::ROUGE-2	6	0	0	0	1.000	1.000	1.000	0.000
+ccg_supertagging:::CCGBank:::Accuracy	2	0	0	0	1.000	1.000	1.000	0.000
+summarization:::Gigaword:::ROUGE-1	6	0	0	0	1.000	1.000	1.000	0.000
+language_modeling:::Hutter Prize:::Bit per Character (BPC)	2	3	1	0	0.400	0.667	0.500	0.000
+summarization:::CNN / Daily Mail (Non-anonymized version):::ROUGE-2	6	4	0	0	0.600	1.000	0.750	0.000
+summarization:::CNN / Daily Mail (Non-anonymized version):::ROUGE-1	6	4	0	0	0.600	1.000	0.750	0.000
+machine_translation:::WMT 2014 EN-DE:::BLEU	3	3	0	0	0.500	1.000	0.667	0.000
+part-of-speech_tagging:::Penn Treebank:::Accuracy	2	1	3	0	0.667	0.400	0.500	0.000
+question_answering:::SearchQA:::Unigram Acc	1	2	1	0	0.333	0.500	0.400	0.000
+dependency_parsing:::benchmark Vietnamese dependency treebank VnDT:::UAS	1	6	1	0	0.143	0.500	0.222	0.000
+summarization:::DUC 2004 Task 1:::ROUGE-1	3	0	0	0	1.000	1.000	1.000	0.000
+summarization:::DUC 2004 Task 1:::ROUGE-2	3	0	0	0	1.000	1.000	1.000	0.000
+named_entity_recognition:::CoNLL 2003 (English):::F1	0	0	6	0	0.000	0.000	0.000	0.000
+question_answering:::Quasar:::F1 (Quasar-T)	0	0	2	0	0.000	0.000	0.000	0.000
+part-of-speech_tagging:::VLSP 2013 POS tagging shared task:::Accuracy	0	3	1	0	0.000	0.000	0.000	0.000
+sentiment_analysis:::SUBJ:::Accuracy	1	0	1	0	1.000	0.500	0.667	0.000
+dependency_parsing:::Penn Treebank:::LAS	1	2	5	0	0.333	0.167	0.222	0.000
+summarization:::CNN / Daily Mail (Non-anonymized version):::ROUGE-L	6	4	0	0	0.600	1.000	0.750	0.000
+Macro-averaged precision: 0.5455 Macro-averaged recall: 0.6953 Macro-averaged F1: 0.5766 Macro-averaged score extraction acc: 0.0000 
+Micro-averaged precision: 0.5610 Micro-averaged recall: 0.7314 Micro-averaged F1: 0.6350 Micro-averaged score extraction acc: 0.0000 
+23 Jun 2021 14:09.21 [INFO ] TEModelEvalOnNLPTDMS      - per_sample:
+23 Jun 2021 14:09.21 [INFO ] TEModelEvalOnNLPTDMS      - relaxEval + 
+Paper	TP	FP	FN	Prec	Rec	F1
+Macro-averaged Precision: 0.6248 Macro-averaged Recall: 0.7515 Macro-averaged fscore: 0.6526 Micro-averaged Precision: 0.6077 Micro-averaged Recall: 0.7676 Micro-averaged fscore: 0.6784 
+
+strictEval
+Paper	TP	FP	FN	Prec	Rec	F1
+Macro-averaged Precision: 0.2305 Macro-averaged Recall: 0.2716 Macro-averaged fscore: 0.2400 Micro-averaged Precision: 0.1065 Micro-averaged Recall: 0.1346 Micro-averaged fscore: 0.1189 
+
+relaxEval(wo_unknow)
+Paper	TP	FP	FN	Prec	Rec	F1
+Macro-averaged Precision: 0.5413 Macro-averaged Recall: 0.6589 Macro-averaged fscore: 0.5664 Micro-averaged Precision: 0.6017 Micro-averaged Recall: 0.7314 Micro-averaged fscore: 0.6603 
+
+strictEval(wo_unknow)
+Paper	TP	FP	FN	Prec	Rec	F1
+Macro-averaged Precision: 0.0000 Macro-averaged Recall: 0.0000 Macro-averaged fscore: 0.0000 Micro-averaged Precision: 0.0000 Micro-averaged Recall: 0.0000 Micro-averaged fscore: 0.0000 
+23 Jun 2021 14:09.32 [INFO ] TEModelEvalOnNLPTDMS      - leaderboard eu.tib.sre.evaluation:
+23 Jun 2021 14:09.32 [INFO ] TEModelEvalOnNLPTDMS      - per_label:
+23 Jun 2021 14:09.32 [INFO ] TEModelEvalOnNLPTDMS      - Class	TP	FP	FN	TPScore	Prec	Rec	F1	scoreAcc
+relation_prediction:::FB15K-237:::H@1	3	1	0	0	0.750	1.000	0.857	0.000
+word_sense_disambiguation:::SemEval 2013:::F1	3	1	1	0	0.750	0.750	0.750	0.000
+language_modeling:::1B Words / Google Billion Word benchmark:::Test perplexity	0	0	2	0	0.000	0.000	0.000	0.000
+amr_parsing:::LDC2014T12:::F1 on Full	1	0	2	0	1.000	0.333	0.500	0.000
+sentiment_analysis:::SemEval-2014 Task 4 subtask 2 Aspect Term Polarity:::Laptop (acc)	3	3	0	0	0.500	1.000	0.667	0.000
+word_segmentation:::VLSP 2013 word segmentation shared task:::F1	1	1	1	0	0.500	0.500	0.500	0.000
+relation_prediction:::FB15K-237:::MRR	4	0	0	0	1.000	1.000	1.000	0.000
+sentiment_analysis:::IMDb:::Accuracy	1	1	1	0	0.500	0.500	0.500	0.000
+relationship_extraction:::New York Times Corpus:::P@10%	1	2	1	0	0.333	0.500	0.400	0.000
+amr_parsing:::LDC2014T12:::F1 on Newswire	2	0	0	0	1.000	1.000	1.000	0.000
+named_entity_recognition:::VLSP 2016 NER shared task:::F1	0	0	1	0	0.000	0.000	0.000	0.000
+dependency_parsing:::Penn Treebank:::UAS	3	4	5	0	0.429	0.375	0.400	0.000
+language_modeling:::Penn Treebank:::Number of params	4	6	2	0	0.400	0.667	0.500	0.000
+language_modeling:::WikiText-2:::Validation perplexity	2	5	0	0	0.286	1.000	0.444	0.000
+language_modeling:::WikiText-2:::Number of params	2	6	0	0	0.250	1.000	0.400	0.000
+dependency_parsing:::Penn Treebank:::POS	2	2	2	0	0.500	0.500	0.500	0.000
+text_classification:::DBpedia:::Error	0	2	2	0	0.000	0.000	0.000	0.000
+word_sense_disambiguation:::SemEval 2015:::F1	3	1	1	0	0.750	0.750	0.750	0.000
+language_modeling:::Penn Treebank:::Validation perplexity	2	1	0	0	0.667	1.000	0.800	0.000
+question_answering:::SearchQA:::N-gram F1	1	0	1	0	1.000	0.500	0.667	0.000
+machine_translation:::WMT 2014 EN-FR:::BLEU	3	3	0	0	0.500	1.000	0.667	0.000
+language_modeling:::Text8:::Bit per Character (BPC)	3	2	0	0	0.600	1.000	0.750	0.000
+constituency_parsing:::Penn Treebank:::F1	3	4	2	0	0.429	0.600	0.500	0.000
+amr_parsing:::LDC2015E86:::Smatch	2	1	1	0	0.667	0.667	0.667	0.000
+language_modeling:::WikiText-103:::Test perplexity	3	5	0	0	0.375	1.000	0.545	0.000
+summarization:::CNN / Daily Mail (Non-anonymized version):::METEOR	2	9	0	0	0.182	1.000	0.308	0.000
+taxonomy_learning:::SemEval 2018:::P@5	3	1	1	0	0.750	0.750	0.750	0.000
+language_modeling:::Penn Treebank:::Test perplexity	2	6	1	0	0.250	0.667	0.364	0.000
+word_segmentation:::MSR:::F1	3	2	0	0	0.600	1.000	0.750	0.000
+language_modeling:::WikiText-2:::Test perplexity	2	5	0	0	0.286	1.000	0.444	0.000
+word_segmentation:::PKU:::F1	2	2	1	0	0.500	0.667	0.571	0.000
+taxonomy_learning:::SemEval 2018:::MRR	3	0	1	0	1.000	0.750	0.857	0.000
+taxonomy_learning:::SemEval 2018:::MAP	3	1	1	0	0.750	0.750	0.750	0.000
+chunking:::Penn Treebank:::F1	1	0	2	0	1.000	0.333	0.500	0.000
+sentiment_analysis:::SST-2:::Accuracy	0	2	2	0	0.000	0.000	0.000	0.000
+named_entity_recognition:::Ontonotes v5 (English):::F1	0	0	5	0	0.000	0.000	0.000	0.000
+language_modeling:::Penn Treebank:::Bit per Character (BPC)	2	2	2	0	0.500	0.500	0.500	0.000
+relation_prediction:::WN18RR:::H@10	3	2	0	0	0.600	1.000	0.750	0.000
+language_modeling:::Hutter Prize:::Number of params	2	3	1	0	0.400	0.667	0.500	0.000
+word_sense_disambiguation:::Senseval 3:::F1	3	1	1	0	0.750	0.750	0.750	0.000
+text_classification:::TREC:::Error	0	0	4	0	0.000	0.000	0.000	0.000
+question_answering:::SQuAD:::F1	10	4	0	0	0.714	1.000	0.833	0.000
+sentiment_analysis:::SemEval-2014 Task 4 subtask 2 Aspect Term Polarity:::Restaurant (acc)	3	0	0	0	1.000	1.000	1.000	0.000
+word_sense_disambiguation:::Senseval 2:::F1	3	1	1	0	0.750	0.750	0.750	0.000
+question_answering:::SQuAD:::EM	10	3	0	0	0.769	1.000	0.870	0.000
+relation_prediction:::FB15K-237:::H@10	4	0	0	0	1.000	1.000	1.000	0.000
+dependency_parsing:::benchmark Vietnamese dependency treebank VnDT:::LAS	2	4	0	0	0.333	1.000	0.500	0.000
+relation_prediction:::WN18RR:::H@1	2	3	0	0	0.400	1.000	0.571	0.000
+summarization:::CNN / Daily Mail (Anonymized version):::ROUGE-2	5	6	0	0	0.455	1.000	0.625	0.000
+summarization:::CNN / Daily Mail (Anonymized version):::ROUGE-1	5	6	0	0	0.455	1.000	0.625	0.000
+relationship_extraction:::SemEval-2010 Task 8:::F1	6	0	1	0	1.000	0.857	0.923	0.000
+text_classification:::AG News:::Error	0	0	2	0	0.000	0.000	0.000	0.000
+summarization:::CNN / Daily Mail (Anonymized version):::ROUGE-L	5	7	0	0	0.417	1.000	0.588	0.000
+word_segmentation:::Chinese Treebank 6:::F1	3	4	0	0	0.429	1.000	0.600	0.000
+summarization:::Gigaword:::ROUGE-L	6	0	0	0	1.000	1.000	1.000	0.000
+relation_prediction:::WN18RR:::MRR	3	1	0	0	0.750	1.000	0.857	0.000
+question_answering:::Quasar:::EM (Quasar-T)	0	0	2	0	0.000	0.000	0.000	0.000
+word_sense_disambiguation:::SemEval 2007:::F1	3	1	1	0	0.750	0.750	0.750	0.000
+summarization:::DUC 2004 Task 1:::ROUGE-L	3	0	0	0	1.000	1.000	1.000	0.000
+language_modeling:::Text8:::Number of params	2	3	1	0	0.400	0.667	0.500	0.000
+summarization:::Gigaword:::ROUGE-2	6	0	0	0	1.000	1.000	1.000	0.000
+ccg_supertagging:::CCGBank:::Accuracy	2	0	0	0	1.000	1.000	1.000	0.000
+summarization:::Gigaword:::ROUGE-1	6	0	0	0	1.000	1.000	1.000	0.000
+language_modeling:::Hutter Prize:::Bit per Character (BPC)	2	3	1	0	0.400	0.667	0.500	0.000
+summarization:::CNN / Daily Mail (Non-anonymized version):::ROUGE-2	6	4	0	0	0.600	1.000	0.750	0.000
+summarization:::CNN / Daily Mail (Non-anonymized version):::ROUGE-1	6	4	0	0	0.600	1.000	0.750	0.000
+machine_translation:::WMT 2014 EN-DE:::BLEU	3	3	0	0	0.500	1.000	0.667	0.000
+part-of-speech_tagging:::Penn Treebank:::Accuracy	2	1	3	0	0.667	0.400	0.500	0.000
+question_answering:::SearchQA:::Unigram Acc	1	2	1	0	0.333	0.500	0.400	0.000
+dependency_parsing:::benchmark Vietnamese dependency treebank VnDT:::UAS	1	6	1	0	0.143	0.500	0.222	0.000
+summarization:::DUC 2004 Task 1:::ROUGE-1	3	0	0	0	1.000	1.000	1.000	0.000
+summarization:::DUC 2004 Task 1:::ROUGE-2	3	0	0	0	1.000	1.000	1.000	0.000
+named_entity_recognition:::CoNLL 2003 (English):::F1	0	0	6	0	0.000	0.000	0.000	0.000
+question_answering:::Quasar:::F1 (Quasar-T)	0	0	2	0	0.000	0.000	0.000	0.000
+part-of-speech_tagging:::VLSP 2013 POS tagging shared task:::Accuracy	0	3	1	0	0.000	0.000	0.000	0.000
+sentiment_analysis:::SUBJ:::Accuracy	1	0	1	0	1.000	0.500	0.667	0.000
+dependency_parsing:::Penn Treebank:::LAS	1	2	5	0	0.333	0.167	0.222	0.000
+summarization:::CNN / Daily Mail (Non-anonymized version):::ROUGE-L	6	4	0	0	0.600	1.000	0.750	0.000
+Macro-averaged precision: 0.5455 Macro-averaged recall: 0.6953 Macro-averaged F1: 0.5766 Macro-averaged score extraction acc: 0.0000 
+Micro-averaged precision: 0.5610 Micro-averaged recall: 0.7314 Micro-averaged F1: 0.6350 Micro-averaged score extraction acc: 0.0000 
+23 Jun 2021 14:09.32 [INFO ] TEModelEvalOnNLPTDMS      - per_sample:
+23 Jun 2021 14:09.32 [INFO ] TEModelEvalOnNLPTDMS      - relaxEval + 
+Paper	TP	FP	FN	Prec	Rec	F1
+Macro-averaged Precision: 0.6248 Macro-averaged Recall: 0.7515 Macro-averaged fscore: 0.6526 Micro-averaged Precision: 0.6077 Micro-averaged Recall: 0.7676 Micro-averaged fscore: 0.6784 
+
+strictEval
+Paper	TP	FP	FN	Prec	Rec	F1
+Macro-averaged Precision: 0.2305 Macro-averaged Recall: 0.2716 Macro-averaged fscore: 0.2400 Micro-averaged Precision: 0.1065 Micro-averaged Recall: 0.1346 Micro-averaged fscore: 0.1189 
+
+relaxEval(wo_unknow)
+Paper	TP	FP	FN	Prec	Rec	F1
+Macro-averaged Precision: 0.5413 Macro-averaged Recall: 0.6589 Macro-averaged fscore: 0.5664 Micro-averaged Precision: 0.6017 Micro-averaged Recall: 0.7314 Micro-averaged fscore: 0.6603 
+
+strictEval(wo_unknow)
+Paper	TP	FP	FN	Prec	Rec	F1
+Macro-averaged Precision: 0.0000 Macro-averaged Recall: 0.0000 Macro-averaged fscore: 0.0000 Micro-averaged Precision: 0.0000 Micro-averaged Recall: 0.0000 Micro-averaged fscore: 0.0000 
