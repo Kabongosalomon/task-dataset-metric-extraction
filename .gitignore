@@ -161,3 +161,8 @@ bin/
 *.classpath
 .project
 grobid.log.*
+
+data/paperwithcode/annotations/TDMs_taxonomy.tsv
+
+data/
+Longformer/
