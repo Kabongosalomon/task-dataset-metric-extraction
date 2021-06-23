@@ -49,56 +49,55 @@ public class Main {
            System.exit(-1);
 
            // Test
-           // java -jar build/libs/task-dataset-metric-extraction-1.0.jar 'test' "/home/salomon/Desktop/task-dataset-metric-extraction/data/50.pdf" "/home/salomon/Desktop/"
            // java -jar build/libs/task-dataset-metric-extraction-1.0.jar 'test' "/nfs/home/kabenamualus/Research/task-dataset-metric-extraction/data/paperwithcode/pdf/1203.1005v3.pdf" "/nfs/home/kabenamualus/Research/task-dataset-metric-extraction/data/paperwithcode/new/60Neg800unk/" "/nfs/home/kabenamualus/Research/task-dataset-metric-extraction/data/paperwithcode/new/60Neg800unk/test/"
            
            // Train
            // java -jar build/libs/task-dataset-metric-extraction-1.0.jar 'train' "/nfs/home/kabenamualus/Research/task-dataset-metric-extraction/data/paperwithcode/pdf/" '5' '10' '20'  "/nfs/home/kabenamualus/Research/task-dataset-metric-extraction/data/paperwithcode/new/"
-           // java -jar build/libs/task-dataset-metric-extraction-1.0.jar 'train' "/home/salomon/Desktop/task-dataset-metric-extraction/data/pdf/" '5' '10' '20' "/home/salomon/Desktop/"
-
       }        
 
 
         // Path to pdfs folder
         String pdfDir = args[1];
-        // String pdfDir = "/nfs/home/kabenamualus/Research/task-dataset-metric-extraction/data/paperwithcode/pdf/";
+        // String pdfDir = "/nfs/home/kabenamualus/Research/task-dataset-metric-extraction/data/pdf_IBM/";
         // String pdfDir = "U:\\Documents\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\pdf\\";
         // String pdfDir = "/nfs/home/kabenamualus/Research/task-dataset-metric-extraction/data/ibm/NLP-TDMS/pdfFile/";
 
-        String preOutput="";
+        // String preOutput="";
         String data_file="";
         String outputDir;
         String pathToTDMGold="";
         String basePath = "";
         Integer threshold = 5;
-        Integer numbNegative = 60;
-        Integer numbUnk = 800;
+        Integer numbNegative = 20;
+        Integer numbUnk = 200;
 
         if (args[0].equals("train")){
+        // if ("train".equals("train")){
             // Only consider leaderboard that have at least 5 papers
             threshold = Integer.parseInt(args[2]);
-            //    Integer threshold = 5;
    
            // This specify the number of negative instances
             numbNegative = Integer.parseInt(args[3]);
-           // Integer numbNegative = 60;
    
            // This specify the number of negative instances
             numbUnk = Integer.parseInt(args[4]);
-           // Integer numbUnk = 800;
    
-           String Subtype = "new/";
+           String Subtype = "";
            // String Subtype = "newFull/";
            // String Subtype = "new_IBM/";
-            preOutput = args[5]+Subtype+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
+
+        //    basePath = "/nfs/home/kabenamualus/Research/task-dataset-metric-extraction/data/paperwithcode/newFull/"+Subtype+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
+           basePath = args[5]+Subtype+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
+
             data_file = args[5]+Subtype+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/trainOutput.tsv";
+            // data_file = basePath+"trainOutput.tsv";
+
             outputDir = args[5]+Subtype+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/twofoldwithunk/";
-            basePath = args[5]+Subtype+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
+            // outputDir = basePath+"twofoldwithunk/";
+            
         }
         else{
-            // data_file = args[3]+Subtype+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/trainOutput.tsv";
             outputDir = args[3];
-            // basePath = args[3]+Subtype+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
             pathToTDMGold =  args[2].toString();
         }
         // Pre-output folder
@@ -106,19 +105,6 @@ public class Main {
         // String preOutput = args[6]+Subtype+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
         // String preOutput = "U:\\Documents\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
         // String preOutput = "/home/salomon/Desktop/task-dataset-metric-extraction/data/paperwithcode/"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
-
-        // Main tsv datafile
-        // data_file = basePath+"trainOutput.tsv";
-        // String data_file = args[6]+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/trainOutput.tsv";
-        // String data_file = "U:\\Documents\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/trainOutput.tsv";
-
-        // fold output folder
-        // outputDir = basePath+"twofoldwithunk/";
-        // String outputDir = args[6]+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/twofoldwithunk/";
-        // String outputDir = "U:\\Documents\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\"+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/twofoldwithunk/";
-
-        // String pathToTDMGold =  args[5].toString();
-        // pathToTDMGold = basePath;
 
         
         // check if the target folder exist if not create it.
@@ -131,16 +117,16 @@ public class Main {
         // if ("train".equals("train")){
 
             // check if the target folder exist if not create it.
-            File theDir = new File(preOutput);
+            File theDir = new File(basePath);
             if (!theDir.exists()){
                 theDir.mkdirs();
             }
 
             // Added this to have the portion of unknown instances
-            FileOutputStream fold_stats = new FileOutputStream(preOutput+"fold_stats.tsv");
+            FileOutputStream fold_stats = new FileOutputStream(basePath+"fold_stats.tsv");
 
             // Generate the training data
-            DatasetGeneration.getTrainData(pdfDir, preOutput, threshold, numbUnk, numbNegative, fold_stats);
+            DatasetGeneration.getTrainData(pdfDir, basePath, threshold, numbUnk, numbNegative, fold_stats);
 
             Map<String, List<String>> data = new HashMap<>();
             // This help to keep track of TDM seen so far

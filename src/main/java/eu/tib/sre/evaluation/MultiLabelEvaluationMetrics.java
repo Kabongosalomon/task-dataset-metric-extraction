@@ -437,12 +437,19 @@ public class MultiLabelEvaluationMetrics {
         double p_micro = precision(tp_all, fp_all);
         double r_micro = recall(tp_all, fn_all);
         double f_micro = f1Score(p_micro, r_micro);
-        sb.append(String.format("Macro-averaged Precision: %.4f ", macroP / prediction.size()));
+        sb.append(String.format("Macro-averaged Precision: %.4f ", (macroP / prediction.size())));
         sb.append(String.format("Macro-averaged Recall: %.4f ", macroR / prediction.size()));
         sb.append(String.format("Macro-averaged fscore: %.4f ", macroF1 / prediction.size()));
         sb.append(String.format("Micro-averaged Precision: %.4f ", p_micro));
         sb.append(String.format("Micro-averaged Recall: %.4f ", r_micro));
         sb.append(String.format("Micro-averaged fscore: %.4f ", f_micro));
+
+        // sb.append(String.format("Macro-averaged Precision: %.4f ", Math.round((macroP / prediction.size())*10d)/10d));
+        // sb.append(String.format("Macro-averaged Recall: %.4f ", Math.round((macroR / prediction.size())*10d)/10d));
+        // sb.append(String.format("Macro-averaged fscore: %.4f ", Math.round((macroF1 / prediction.size())*10d)/10d));
+        // sb.append(String.format("Micro-averaged Precision: %.4f ", Math.round(p_micro*10d)/10d));
+        // sb.append(String.format("Micro-averaged Recall: %.4f ", Math.round(r_micro*10d)/10d));
+        // sb.append(String.format("Micro-averaged fscore: %.4f ", Math.round(f_micro*10d)/10d));
         return sb.toString();
     }
     

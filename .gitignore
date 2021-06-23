@@ -166,3 +166,4 @@ data/paperwithcode/annotations/TDMs_taxonomy.tsv
 
 data/
 Longformer/
+*.out

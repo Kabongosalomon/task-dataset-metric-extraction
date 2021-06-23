@@ -34,7 +34,7 @@ public class TEModelEvalOnNLPTDMS {
 
     public TEModelEvalOnNLPTDMS() throws IOException, Exception {
         prop = new Properties();
-        prop.load(new FileReader("config.properties"));
+        prop.load(new FileReader("config2.properties"));
     }
 
 

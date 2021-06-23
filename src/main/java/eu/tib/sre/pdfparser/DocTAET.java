@@ -45,23 +45,51 @@ public class DocTAET {
 
     }
 
-    public static String getDocTAETRepresentation(String pdfFile) throws IOException, Exception {
+    public static String getDocTAETRepresentation150(String pdfFile) throws IOException, Exception {
         String DocTAETStr = "";
         GrobidPDFProcessor gp = new GrobidPDFProcessor();
 
 //        GrobidPDFProcessor gp = GrobidPDFProcessor.getInstance();
         Map<String, String> sections = gp.getPDFSectionAndText(pdfFile);
         if (sections == null) return "";
+
         DocTAETStr = DocTAETStr + " " + sections.get("title") + " " + sections.get("abstract")
                 + " " + getPdfDatasetContext_Clean_150tokens(sections)
                 + " " + getTableInfo_150tokens(pdfFile);
 
-        // DocTAETStr = DocTAETStr + " " + sections.get("title") + " " + sections.get("abstract")
-        //         + " " + getPdfDatasetContext_Clean_tokens(sections)
-        //         + " " + getTableInfo_tokens(pdfFile);
+        return DocTAETStr.replace("\n", "").trim();
+    }
+
+    public static String getDocTAETRepresentation450(String pdfFile) throws IOException, Exception {
+        String DocTAETStr = "";
+        GrobidPDFProcessor gp = new GrobidPDFProcessor();
+
+//        GrobidPDFProcessor gp = GrobidPDFProcessor.getInstance();
+        Map<String, String> sections = gp.getPDFSectionAndText(pdfFile);
+        if (sections == null) return "";
+
+        DocTAETStr = DocTAETStr + " " + sections.get("title") + " " + sections.get("abstract")
+                + " " + getPdfDatasetContext_Clean_450tokens(sections)
+                + " " + getTableInfo_450tokens(pdfFile);
 
         return DocTAETStr.replace("\n", "").trim();
     }
+
+    public static String getDocTAETRepresentationFull(String pdfFile) throws IOException, Exception {
+        String DocTAETStr = "";
+        GrobidPDFProcessor gp = new GrobidPDFProcessor();
+
+//        GrobidPDFProcessor gp = GrobidPDFProcessor.getInstance();
+        Map<String, String> sections = gp.getPDFSectionAndText(pdfFile);
+        if (sections == null) return "";
+
+        DocTAETStr = DocTAETStr + " " + sections.get("title") + " " + sections.get("abstract")
+                + " " + getPdfDatasetContext_Clean_tokens(sections)
+                + " " + getTableInfo_tokens(pdfFile);
+
+        return DocTAETStr.replace("\n", "").trim();
+    }
+
 
     public static String getDocTAETRepresentationTitleAbstract(String pdfFile) throws IOException, Exception {
         String DocTAETStr = "";
@@ -128,6 +156,37 @@ public class DocTAET {
 
     //first 150 tokens of selected dataset context
     public static String getPdfDatasetContext_Clean_150tokens(Map<String, String> sections) {
+        String datasetContext = "";
+        for (String section : sections.keySet()) {
+            if (section.toLowerCase().matches(".*?(experiment|experiments|evaluation|evaluations|dataset|datasets).*?")) {
+                datasetContext = datasetContext + " " + sections.get(section).replaceAll("\n", " ");
+            }
+        }
+        String datasetContext_clean = "";
+        for (String sent : datasetContext.split("\\. ")) {
+            if (sent.toLowerCase().matches(".*?(experiment on|experiment in|evaluation|evalualtions|evaluate|evaluated|dataset|datasets|corpus|corpora).*?")) {
+                datasetContext_clean = datasetContext_clean + " " + sent;
+            }
+        }
+        String datasetContext_clean_150 = "";
+        int dsCount = 0;
+        for (String s : datasetContext_clean.split(" ")) {
+            if (s.isEmpty()) {
+                continue;
+            }
+            datasetContext_clean_150 = datasetContext_clean_150 + " " + s;
+            dsCount++;
+            // TODO this was originally 150
+            if (dsCount > 150) { 
+                break;
+            }
+        }
+        datasetContext_clean = datasetContext_clean_150.trim();
+        return datasetContext_clean;
+    }
+
+    //first 150 tokens of selected dataset context
+    public static String getPdfDatasetContext_Clean_450tokens(Map<String, String> sections) {
         String datasetContext = "";
         for (String section : sections.keySet()) {
             if (section.toLowerCase().matches(".*?(experiment|experiments|evaluation|evaluations|dataset|datasets).*?")) {
@@ -283,6 +342,47 @@ public class DocTAET {
             tableContext_150 = tableContext_150 + " " + s;
             tableCount++;
             // TODO this was initially 150
+            if (tableCount > 150) {
+                break;
+            }
+        }
+        tableContext = tableContext_150.trim();
+        return tableContext;
+    }
+
+    public static String getTableInfo_450tokens(String pdfFile) throws IOException, Exception {
+        GrobidPDFProcessor gp = GrobidPDFProcessor.getInstance();
+        List<CachedTable> tables = gp.getTableInfoFromPDF(pdfFile);
+        String tableContext = "";
+        for (CachedTable table : tables) {
+            String caption = "";
+            for (String s : table.caption.split("\n")) {
+                if (!caption.isEmpty() && s.isEmpty()) {
+                    break;
+                }
+                if (s.startsWith("Table") || !caption.isEmpty()) {
+                    caption = caption + " " + s;
+                }
+            }
+
+            tableContext = tableContext + " " + caption;
+            for (String mergeCol : table.mergedAllColumns) {
+                tableContext = tableContext + " " + mergeCol;
+            }
+            for (String column : table.columns) {
+                tableContext = tableContext + " " + column;
+            }
+        }
+
+        String tableContext_150 = "";
+        int tableCount = 0;
+        for (String s : tableContext.split(" ")) {
+            if (s.isEmpty()) {
+                continue;
+            }
+            tableContext_150 = tableContext_150 + " " + s;
+            tableCount++;
+            // TODO this was initially 150
             if (tableCount > 450) {
                 break;
             }
@@ -390,7 +490,7 @@ public class DocTAET {
     public static void main(String[] args) throws IOException, Exception {
         String pdfPath = "/home/salomon/Desktop/task-dataset-metric-extraction/data/50.pdf";
 
-        String docTEATStr = DocTAET.getDocTAETRepresentation(pdfPath);
+        String docTEATStr = DocTAET.getDocTAETRepresentation150(pdfPath);
         List<String> numbersAndContext = DocTAET.getTableBoldNumberContext(pdfPath);
 
         System.out.println(">>>>>>>> getTableBoldNumberContex :"  +numbersAndContext);
