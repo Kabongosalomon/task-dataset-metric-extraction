@@ -6,9 +6,9 @@ plugins {
 group 'eu.tib'
 
 // version '1.0'
-// version '150'
+version '150'
 // version '450'
-version 'full'
+// version 'full'
 
 sourceCompatibility = 1.8
 
