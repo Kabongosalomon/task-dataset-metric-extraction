@@ -64,8 +64,8 @@ public class DatasetGeneration {
                 
                 // TODO : File to change for ablation study 
                 // String docTEATStr = DocTAET.getDocTAETRepresentation150(pdf_file);
-                String docTEATStr = DocTAET.getDocTAETRepresentation450(pdf_file);
-                // String docTEATStr = DocTAET.getDocTAETRepresentationFull(pdf_file);
+                // String docTEATStr = DocTAET.getDocTAETRepresentation450(pdf_file);
+                String docTEATStr = DocTAET.getDocTAETRepresentationFull(pdf_file);
                 // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstract(pdf_file);
                 // String docTEATStr = DocTAET.getDocTAETRepresentationAbstract(pdf_file);
                 // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstractExpSetup(pdf_file);
@@ -189,8 +189,8 @@ public class DatasetGeneration {
                 System.out.println(">>>> ("+ progress++ +") Processing file: " + pdf_file);
 
                 // String docTEATStr = DocTAET.getDocTAETRepresentation150(pdf_file);
-                String docTEATStr = DocTAET.getDocTAETRepresentation450(pdf_file);
-                // String docTEATStr = DocTAET.getDocTAETRepresentationFull(pdf_file);
+                // String docTEATStr = DocTAET.getDocTAETRepresentation450(pdf_file);
+                String docTEATStr = DocTAET.getDocTAETRepresentationFull(pdf_file);
                 // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstract(pdf_file);
                 // String docTEATStr = DocTAET.getDocTAETRepresentationAbstract(pdf_file);
                 // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstractExpSetup(pdf_file);
