@@ -144,7 +144,7 @@ public class GrobidPDFProcessor {
         }
 
         String xml = "";
-        String pdf_xml_dir = prop.getProperty("projectPath") + "\\" + prop.getProperty("pdf_xml");
+        String pdf_xml_dir = prop.getProperty("projectPath") + "/" + prop.getProperty("pdf_xml");
         String pdfxmlName = pdfPath.split("/")[pdfPath.split("/").length - 1].replace(".pdf", ".tei.xml");
         String pdfxmlName1 = pdfPath.split("/")[pdfPath.split("/").length - 1].replace(".pdf", ".xml");
         File xmlfile = new File(pdf_xml_dir + "/" + pdfxmlName);
@@ -157,9 +157,17 @@ public class GrobidPDFProcessor {
             GrobidAnalysisConfig config = GrobidAnalysisConfig.defaultInstance();
             try {
                 xml = engine.fullTextToTEI(new File(pdfPath), config);
-//                xml = getPDFTitle(pdfPath);
+                // xml = getPDFTitle(pdfPath);
+
+                // Save .tei.xml 
+                // FileWriter writer = new FileWriter(new File("../task-dataset-metric-nli-extraction/data/ibm/NLP-TDMS/test/test.ie.xml"));
+                FileWriter writer = new FileWriter(new File(pdf_xml_dir+"/"+pdfxmlName));
+                writer.write(xml);
+                writer.close();
+
             } catch (Exception e) {
                 System.out.println(e.toString());
+                System.err.println("can't parse pdf: "+pdfPath);
                 return null;
             }
         }
@@ -245,7 +253,7 @@ public class GrobidPDFProcessor {
         }
 
         String xml = "";
-        String pdf_xml_dir = prop.getProperty("projectPath") + "\\" + prop.getProperty("pdf_xml");
+        String pdf_xml_dir = prop.getProperty("projectPath") + "/" + prop.getProperty("pdf_xml");
 //        String pdf_xml_dir = "D:\\ORKG\\NLP\\Try\\task-dataset-metric-extraction\\data\\pdf_xml";
         String pdfxmlName = pdfPath.split("/")[pdfPath.split("/").length - 1].replace(".pdf", ".tei.xml");
         File xmlfile = new File(pdf_xml_dir + "/" + pdfxmlName);
@@ -453,7 +461,8 @@ public class GrobidPDFProcessor {
 
 //debug info
         } catch (Exception e) {
-            System.err.println("can't parse pdf");
+            System.out.println(e.toString());
+            System.err.println("can't parse pdf: "+pdfPath);
         }
 
         List<NLPLeaderboardTable> cleanedVerifiedTables = new ArrayList();
@@ -575,7 +584,7 @@ public class GrobidPDFProcessor {
     }
     public List<CachedTable> getTableInfoFromPDF(String pdfPath) throws IOException, Exception {
         List<CachedTable> tables = new ArrayList();
-        String pdf_table_dir = prop.getProperty("projectPath") + "\\" + prop.getProperty("pdf_table");
+        String pdf_table_dir = prop.getProperty("projectPath") + "/" + prop.getProperty("pdf_table");
         String pdftableName = pdfPath.split("/")[pdfPath.split("/").length - 1].replace(".pdf", ".json");
         File tableJsonfile = new File(pdf_table_dir + "/" + pdftableName);
         boolean preParsedTableFileExist = false;
@@ -608,7 +617,13 @@ public class GrobidPDFProcessor {
                 }
                 tables.add(ctable);
             }
+            // String json = gson.toJson(ctable, type);
 
+            // OutputStream outputStream = new FileOutputStream(new File("../task-dataset-metric-nli-extraction/data/ibm/NLP-TDMS/test/table.json"));
+            OutputStream outputStream = new FileOutputStream(new File(pdf_table_dir+"/"+pdftableName));
+            Writer writer = new BufferedWriter(new OutputStreamWriter(outputStream));
+            gson.toJson(tables, type, writer);
+            writer.close();
         }
 
         return tables;

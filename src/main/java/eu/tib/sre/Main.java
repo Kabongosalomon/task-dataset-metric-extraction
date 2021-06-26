@@ -59,8 +59,8 @@ public class Main {
         // Path to pdfs folder
         String pdfDir = args[1];
         // String pdfDir = "/nfs/home/kabenamualus/Research/task-dataset-metric-extraction/data/pdf_IBM/";
-        // String pdfDir = "U:\\Documents\\ORKG\\NLP\\task-dataset-metric-extraction\\data\\paperwithcode\\pdf\\";
-        // String pdfDir = "/nfs/home/kabenamualus/Research/task-dataset-metric-extraction/data/ibm/NLP-TDMS/pdfFile/";
+        // String pdfDir = "/nfs/home/kabenamualus/Research/task-dataset-metric-extraction/data/pdf_IBM_Train_Paper_Version/";
+        // String pdfDir = "/nfs/home/kabenamualus/Research/task-dataset-metric-nli-extraction/data/ibm/NLP-TDMS/test/";
 
         // String preOutput="";
         String data_file="";
@@ -68,8 +68,8 @@ public class Main {
         String pathToTDMGold="";
         String basePath = "";
         Integer threshold = 5;
-        Integer numbNegative = 20;
-        Integer numbUnk = 200;
+        Integer numbNegative = 10;
+        Integer numbUnk = 800;
 
         if (args[0].equals("train")){
         // if ("train".equals("train")){
@@ -86,15 +86,14 @@ public class Main {
            // String Subtype = "newFull/";
            // String Subtype = "new_IBM/";
 
-        //    basePath = "/nfs/home/kabenamualus/Research/task-dataset-metric-extraction/data/paperwithcode/newFull/"+Subtype+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
-           basePath = args[5]+Subtype+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
-
+           
+            basePath = args[5]+Subtype+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/";
             data_file = args[5]+Subtype+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/trainOutput.tsv";
-            // data_file = basePath+"trainOutput.tsv";
-
             outputDir = args[5]+Subtype+numbNegative.toString()+"Neg"+numbUnk.toString()+"unk/twofoldwithunk/";
-            // outputDir = basePath+"twofoldwithunk/";
             
+            // basePath = "/nfs/home/kabenamualus/Research/task-dataset-metric-nli-extraction/data/pwc_ibm_short_5_10_800/";
+            // data_file = basePath+"trainOutput.tsv";
+            // outputDir = basePath+"twofoldwithunk/";
         }
         else{
             outputDir = args[3];
