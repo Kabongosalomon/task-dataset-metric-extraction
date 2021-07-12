@@ -6,9 +6,11 @@ plugins {
 group 'eu.tib'
 
 // version '1.0'
-// version '150'
-// version '450'
-version 'full'
+version '150'
+// version '150-Title-Abstract'
+// version '150-Title-Abstract-ExpSetup'
+// version '150-Title-Abstract-TableInfo'
+// version 'full'
 
 sourceCompatibility = 1.8
 

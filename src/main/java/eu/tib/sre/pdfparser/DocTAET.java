@@ -57,6 +57,10 @@ public class DocTAET {
                 + " " + getPdfDatasetContext_Clean_150tokens(sections)
                 + " " + getTableInfo_150tokens(pdfFile);
 
+        // DocTAETStr = DocTAETStr + " " + sections.get("title") + " | " + sections.get("abstract")
+        // + " | " + getPdfDatasetContext_Clean_150tokens(sections)
+        // + " | " + getTableInfo_150tokens(pdfFile);
+
         return DocTAETStr.replace("\n", "").trim();
     }
 
@@ -488,12 +492,12 @@ public class DocTAET {
     }
 
     public static void main(String[] args) throws IOException, Exception {
-        String pdfPath = "/home/salomon/Desktop/task-dataset-metric-extraction/data/50.pdf";
+        String pdfPath = "~/Research/task-dataset-metric-extraction/data/pdf_IBM/D17-1222.pdf";
 
         String docTEATStr = DocTAET.getDocTAETRepresentation150(pdfPath);
         List<String> numbersAndContext = DocTAET.getTableBoldNumberContext(pdfPath);
 
-        System.out.println(">>>>>>>> getTableBoldNumberContex :"  +numbersAndContext);
+        // System.out.println(">>>>>>>> getTableBoldNumberContex :"  +numbersAndContext);
         System.out.println(">>>>>>>> getDocTAETRepresentation :"  +docTEATStr);
     }
 

@@ -49,13 +49,13 @@ public class GenerateTestDataOnPDFPapers {
             if (!filename.contains(".pdf")) {
                 continue;
             }
-            // String docTEATStr = DocTAET.getDocTAETRepresentation150(pdfFile.getAbsolutePath());
-            String docTEATStr = DocTAET.getDocTAETRepresentation450(pdfFile.getAbsolutePath());
+            String docTEATStr = DocTAET.getDocTAETRepresentation150(pdfFile.getAbsolutePath());
+            // String docTEATStr = DocTAET.getDocTAETRepresentation450(pdfFile.getAbsolutePath());
             // String docTEATStr = DocTAET.getDocTAETRepresentationFull(pdfFile.getAbsolutePath());
             // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstract(pdfFile.getAbsolutePath());
-            // String docTEATStr = DocTAET.getDocTAETRepresentationAbstract(pdfFile.getAbsolutePath());
             // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstractExpSetup(pdfFile.getAbsolutePath());
             // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstractTableInfo(pdfFile.getAbsolutePath());
+            // String docTEATStr = DocTAET.getDocTAETRepresentationAbstract(pdfFile.getAbsolutePath());
             for (String TDMLabel : evaluatedLabels) {
                 sb1.append("true" + "\t" + filename + "\t" + TDMLabel + "\t" + docTEATStr).append("\n");
             }
@@ -110,13 +110,14 @@ public class GenerateTestDataOnPDFPapers {
             if (!filename.contains(".pdf")) {
                 continue;
             }
-            // String docTEATStr = DocTAET.getDocTAETRepresentation150(pdfFile.getAbsolutePath());
-            String docTEATStr = DocTAET.getDocTAETRepresentation450(pdfFile.getAbsolutePath());
+            String docTEATStr = DocTAET.getDocTAETRepresentation150(pdfFile.getAbsolutePath());
+            // String docTEATStr = DocTAET.getDocTAETRepresentation450(pdfFile.getAbsolutePath());
             // String docTEATStr = DocTAET.getDocTAETRepresentationFull(pdfFile.getAbsolutePath());
             // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstract(pdfFile.getAbsolutePath());
-            // String docTEATStr = DocTAET.getDocTAETRepresentationAbstract(pdfFile.getAbsolutePath());
             // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstractExpSetup(pdfFile.getAbsolutePath());
             // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstractTableInfo(pdfFile.getAbsolutePath());
+            // String docTEATStr = DocTAET.getDocTAETRepresentationAbstract(pdfFile.getAbsolutePath());
+
             for (String TDMLabel : evaluatedLabels) {
                 sb1.append("true" + "\t" + filename + "\t" + TDMLabel + "\t" + docTEATStr).append("\n");
             }

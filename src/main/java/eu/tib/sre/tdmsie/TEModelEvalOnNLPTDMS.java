@@ -241,7 +241,7 @@ public class TEModelEvalOnNLPTDMS {
             String title;
             if (line0.split("\t")[3].length() <50){
                 title = line0.split("\t")[3];
-                continue;
+                // continue;
             }else{
                 title = line0.split("\t")[3].substring(0, 50);
             }
@@ -255,7 +255,15 @@ public class TEModelEvalOnNLPTDMS {
         }
         while ((line0 = br20.readLine()) != null) {
             String filename = line0.split("\t")[1];
-            String title = line0.split("\t")[3].substring(0, 50);
+            String title;
+            if (line0.split("\t")[3].length() <50){
+                title = line0.split("\t")[3];
+                // continue;
+            }else{
+                title = line0.split("\t")[3].substring(0, 50);
+            }
+
+            // String title = line0.split("\t")[3].substring(0, 50);
             if (testTitle.containsKey(title)) {
                 testTitle.get(title).add(filename);
             } else {
