@@ -49,9 +49,9 @@ public class GenerateTestDataOnPDFPapers {
             if (!filename.contains(".pdf")) {
                 continue;
             }
-            String docTEATStr = DocTAET.getDocTAETRepresentation150(pdfFile.getAbsolutePath());
+            // String docTEATStr = DocTAET.getDocTAETRepresentation150(pdfFile.getAbsolutePath());
             // String docTEATStr = DocTAET.getDocTAETRepresentation450(pdfFile.getAbsolutePath());
-            // String docTEATStr = DocTAET.getDocTAETRepresentationFull(pdfFile.getAbsolutePath());
+            String docTEATStr = DocTAET.getDocTAETRepresentationFull(pdfFile.getAbsolutePath());
             // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstract(pdfFile.getAbsolutePath());
             // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstractExpSetup(pdfFile.getAbsolutePath());
             // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstractTableInfo(pdfFile.getAbsolutePath());
@@ -110,9 +110,9 @@ public class GenerateTestDataOnPDFPapers {
             if (!filename.contains(".pdf")) {
                 continue;
             }
-            String docTEATStr = DocTAET.getDocTAETRepresentation150(pdfFile.getAbsolutePath());
+            // String docTEATStr = DocTAET.getDocTAETRepresentation150(pdfFile.getAbsolutePath());
             // String docTEATStr = DocTAET.getDocTAETRepresentation450(pdfFile.getAbsolutePath());
-            // String docTEATStr = DocTAET.getDocTAETRepresentationFull(pdfFile.getAbsolutePath());
+            String docTEATStr = DocTAET.getDocTAETRepresentationFull(pdfFile.getAbsolutePath());
             // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstract(pdfFile.getAbsolutePath());
             // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstractExpSetup(pdfFile.getAbsolutePath());
             // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstractTableInfo(pdfFile.getAbsolutePath());
@@ -212,7 +212,7 @@ public class GenerateTestDataOnPDFPapers {
                     NLPResult result = new NLPResult(filename, task, dataset);
                     result.setEvaluationMetric(eval);
                     
-                    // TODO: Evaluation, Task, Dataset, Metric ...
+                    // // TODO: Evaluation, Task, Dataset, Metric ...
                     // NLPResult result = new NLPResult(filename, task, "None");
                     // NLPResult result = new NLPResult(filename, "None", dataset);
                     // result.setEvaluationMetric("None");
@@ -278,12 +278,13 @@ public class GenerateTestDataOnPDFPapers {
                 String eval = leaderboard.split(";")[2].trim();
 
                 String title = context.substring(0, 50);
+
                 NLPResult result = new NLPResult(filename, task, dataset);
                 result.setEvaluationMetric(eval);
 
-                // TODO: Evaluation, Task, Dataset, Metric ...
+                // // TODO: Evaluation, Task, Dataset, Metric ...
                 // NLPResult result = new NLPResult(filename, task, "None");
-                // NLPResult result = new NLPResult(filename, "None", dataset);
+                // // NLPResult result = new NLPResult(filename, "None", dataset);
                 // result.setEvaluationMetric("None");
                 // NLPResult result = new NLPResult(filename, "None", "None");
                 // result.setEvaluationMetric(eval);

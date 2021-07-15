@@ -595,8 +595,9 @@ public class MultiLabelEvaluationMetrics {
                     String dataset = leaderboard.split(";")[1].trim();
                     String eval = leaderboard.split(";")[2].trim();
 
-                    // TODO: Evaluation, Task, Dataset, Metric ...
-                    // String task = leaderboard.split(";")[0].trim();
+                    //// TODO: Evaluation, Task, Dataset, Metric ...
+                    //// String task = leaderboard.split(";")[0].trim();
+                    // String task = leaderboard.split(";")[0].replace(" ", "_").trim();
                     // String dataset = "None";
                     // String eval = "None";
 

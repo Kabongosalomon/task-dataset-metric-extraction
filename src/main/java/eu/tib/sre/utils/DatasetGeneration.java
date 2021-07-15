@@ -63,9 +63,9 @@ public class DatasetGeneration {
                 System.out.println(">>>> ("+ progress++ +") Processing file: " + pdf_file);
                 
                 // TODO : File to change for ablation study 
-                String docTEATStr = DocTAET.getDocTAETRepresentation150(pdf_file);
+                // String docTEATStr = DocTAET.getDocTAETRepresentation150(pdf_file);
                 // String docTEATStr = DocTAET.getDocTAETRepresentation450(pdf_file);
-                // String docTEATStr = DocTAET.getDocTAETRepresentationFull(pdf_file);
+                String docTEATStr = DocTAET.getDocTAETRepresentationFull(pdf_file);
                 // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstract(pdf_file);
                 // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstractExpSetup(pdf_file);
                 // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstractTableInfo(pdf_file);
@@ -193,9 +193,9 @@ public class DatasetGeneration {
                 Set<String> trueTDM = new HashSet<String>();
                 System.out.println(">>>> ("+ progress++ +") Processing file: " + pdf_file);
 
-                String docTEATStr = DocTAET.getDocTAETRepresentation150(pdf_file);
+                // String docTEATStr = DocTAET.getDocTAETRepresentation150(pdf_file);
                 // String docTEATStr = DocTAET.getDocTAETRepresentation450(pdf_file);
-                // String docTEATStr = DocTAET.getDocTAETRepresentationFull(pdf_file);
+                String docTEATStr = DocTAET.getDocTAETRepresentationFull(pdf_file);
                 // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstract(pdf_file);
                 // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstractExpSetup(pdf_file);
                 // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstractTableInfo(pdf_file);
@@ -554,9 +554,9 @@ public class DatasetGeneration {
                 System.out.println(">>>> Processing file: " + pdf_file);
 
 
-                String docTEATStr = DocTAET.getDocTAETRepresentation150(pdf_file);
+                // String docTEATStr = DocTAET.getDocTAETRepresentation150(pdf_file);
                 // String docTEATStr = DocTAET.getDocTAETRepresentation450(pdf_file);
-                // String docTEATStr = DocTAET.getDocTAETRepresentationFull(pdf_file);
+                String docTEATStr = DocTAET.getDocTAETRepresentationFull(pdf_file);
                 // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstract(pdf_file);
                 // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstractExpSetup(pdf_file);
                 // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstractTableInfo(pdf_file);
@@ -594,9 +594,9 @@ public class DatasetGeneration {
         System.out.println(">>>> Processing file: " + pdfFile);
 
 
-        String docTEATStr = DocTAET.getDocTAETRepresentation150(pdfFile);
+        // String docTEATStr = DocTAET.getDocTAETRepresentation150(pdfFile);
         // String docTEATStr = DocTAET.getDocTAETRepresentation450(pdfFile);
-        // String docTEATStr = DocTAET.getDocTAETRepresentationFull(pdfFile);
+        String docTEATStr = DocTAET.getDocTAETRepresentationFull(pdfFile);
         // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstract(pdfFile);
         // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstractExpSetup(pdfFile);
         // String docTEATStr = DocTAET.getDocTAETRepresentationTitleAbstractTableInfo(pdfFile);
